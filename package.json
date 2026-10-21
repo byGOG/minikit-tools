@@ -2,7 +2,7 @@
   "name": "minikit-tools",
   "type": "module",
   "version": "1.0.0",
-  "scripts": { "dev": "astro dev", "build": "astro build && node scripts/generate-locales.mjs", "preview": "astro preview", "check": "astro check" },
+  "scripts": { "dev": "astro dev", "build": "astro build && node scripts/generate-locales.mjs && node scripts/generate-tool-pages.mjs", "preview": "astro preview", "check": "astro check" },
   "dependencies": { "@astrojs/tailwind": "^6.0.2", "astro": "^5.14.1", "lucide-astro": "^0.468.0", "qrcode": "^1.5.4", "tailwindcss": "^3.4.17" },
   "devDependencies": { "@astrojs/check": "^0.9.4", "typescript": "^5.7.2" }
 }
