@@ -267,7 +267,7 @@ const offlineLocaleText = {
     "preview": "プレビュー",
     "localColor": "値はすぐに計算されます",
     "whyEyebrow": "手間を減らして、作業を進める",
-    "whyTitle": "ツール探しではなく、<br/>作業そのものに集中。</span>",
+    "whyTitle": "ツール探しではなく、<br/>作業そのものに集中。",
     "whyLead": "小さな作業のたびに別のサイトへ行く必要はありません。MiniKit はよく使う便利なツールを、わかりやすい場所にまとめています。",
     "allTools": "ツールを見る",
     "benefitOneTitle": "本当に速い",
