@@ -1,7 +1,7 @@
 import QRCode from 'qrcode';
 
-type Lang = 'tr' | 'en';
-const translations: Record<Lang, Record<string, string>> = {
+type Lang = string;
+let translations: Record<Lang, Record<string, string>> = {
   tr: {
     announcement: 'Küçük işler, daha kolay. MiniKit şimdi yayında.', explore: 'Keşfet', navTools: 'Araçlar', navWhy: 'Neden MiniKit?', navPrivacy: 'Gizlilik', navCta: 'Araçları keşfet', eyebrow: 'HER GÜN İŞE YARAYAN ARAÇLAR', heroTitle: 'Günlük işler için<br/><span>küçük bir kısayol.</span>', heroLead: 'Görseli dönüştür, QR kod oluştur, metnini say. İhtiyacın olan pratik araçlar, tek bir sakin yerde.', heroCta: 'Ücretsiz araçları dene', heroProof: 'Hesap gerekmez · Hep ücretsiz', privacyLine: 'Dosyaların cihazında kalır. Yükleme yok, hesap yok.', ready: 'Hazır!', quickTools: 'Hızlı araçlar', pickTool: 'Bugün ne yapmak istersin?', compress: 'Görsel sıkıştır', makeQr: 'QR kod oluştur', countWords: 'Kelime say', convertColor: 'Renk dönüştür', privateDevice: '%100 cihazında. Her zaman gizli.', statFast: 'Anında çalışır', statPrivate: 'Gizlilik önce gelir', statFree: 'Ücretsiz ve kolay', statNew: 'Her hafta yeni araçlar', toolsEyebrow: 'ARAÇ KUTUN', toolsTitle: 'İşini gören araçlar.<br/><span>Gereksiz kalabalık yok.</span>', toolsAvailable: 'araç hazır', free: 'ÜCRETSİZ', imageTitle: 'Görsel dönüştürücü', imageDesc: 'Görsellerini WebP, JPEG veya PNG’ye dönüştür ya da boyutunu küçült.', uploadChoose: 'Görsel seç veya sürükle bırak', fileLimit: 'JPG, PNG, WEBP · En fazla 20 MB', outputFormat: 'Çıktı formatı', quality: 'Kalite', convertDownload: 'Dönüştür ve indir', localImage: 'Görselin cihazında işlenir', qrTitle: 'QR kod oluşturucu', qrDesc: 'Bir bağlantı veya kısa metin yaz; QR kodunu indirip paylaş.', qrLabel: 'Bağlantı veya metin', qrEmpty: 'QR kodun burada görünecek', generateQr: 'QR kod oluştur', downloadQr: 'QR kodu indir', localQr: 'Kodun bu cihazda oluşturulur', wordTitle: 'Kelime sayacı', wordDesc: 'Kelime, karakter ve okuma süresi sayını anında öğren.', pasteText: 'Metnini buraya yaz', words: 'Kelime', characters: 'Karakter', readTime: 'Okuma süresi', clearText: 'Metni temizle', localWord: 'Metnin cihazından çıkmaz', colorTitle: 'Renk dönüştürücü', colorDesc: 'HEX, RGB ve HSL değerleri arasında kolayca geçiş yap.', chooseColor: 'Bir renk seç', preview: 'Önizleme', localColor: 'Değerler anında hesaplanır', whyEyebrow: 'DAHA AZ UĞRAŞ, DAHA ÇOK İŞ', whyTitle: 'Araç aramaya<br/>değil, işine odaklan.', whyLead: 'Her küçük iş için başka bir siteye gitmen gerekmiyor. MiniKit, en sık kullandığın pratik araçları temiz ve anlaşılır bir yerde toplar.', allTools: 'Araçları keşfet', benefitOneTitle: 'Gerçekten hızlı', benefitOne: 'Aç, yap, bitir. İndirme yok, kayıt formu yok, beklemek yok.', benefitTwoTitle: 'Önce gizlilik', benefitTwo: 'Dosyaların ve metnin cihazından ayrılmaz. Verilerini saklamayız.', benefitThreeTitle: 'Herkes için basit', benefitThree: 'Kafa karıştıran menüler yok. Aradığın şey, tam da olması gereken yerde.', privacyEyebrow: 'TASARLANDIĞI GİBİ GİZLİ', privacyTitle: 'Dosyaların bize<br/><span>uğramadan işini görür.</span>', privacyLead: 'Görsellerini tarayıcında işleriz. QR kodlarını ve renklerini cihazında oluştururuz. Yazdıkların seninle kalır. Kullanım analitiği veya reklam servisleri eklenirse bu bildirim güncellenir.', privacyStamp: 'GİZLİLİK ÖNCE GELİR', ctaTitle: 'Bir sonraki küçük işin<br/>daha kolay olsun.', ctaLead: 'İlk aracını hemen dene. Ücretsiz, hesapsız, zahmetsiz.', ctaButton: 'Hadi başlayalım', footerLine: 'Günlük işler için küçük kısayollar.', madeWith: 'Dikkatle yapıldı, herkes için.', imageTooLarge: 'Bu dosya 20 MB sınırını aşıyor.', imageInvalid: 'Lütfen geçerli bir görsel seç.', imageConverted: 'Dönüştürme tamamlandı, indirme başladı.', imageFailed: 'Görsel dönüştürülemedi. Başka bir format deneyin.', qrMissing: 'Lütfen bir bağlantı veya metin yazın.', qrReady: 'QR kodun hazır.', qrFailed: 'QR kod oluşturulamadı. Metnini kısaltıp tekrar dene.', copied: 'Panoya kopyalandı.', invalidColor: 'Geçerli bir HEX rengi yazın (ör. #155C42).', menuOpen: 'Menüyü aç', menuClose: 'Menüyü kapat', cleared: 'Metin temizlendi.', sec: 'sn', min: 'dk', copyFail: 'Kopyalanamadı; değeri seçip kopyalayın.'
   },
@@ -11,12 +11,11 @@ const translations: Record<Lang, Record<string, string>> = {
 };
 
 const $ = <T extends HTMLElement>(selector: string) => document.querySelector<T>(selector)!;
-const langLabel = $('#lang-label');
-let lang: Lang = localStorage.getItem('minikit-lang') === 'en' ? 'en' : 'tr';
+let lang: Lang = document.documentElement.lang || 'tr';
 let imageFile: File | null = null;
 let qrDataUrl = '';
 let toastTimer: number;
-const t = (key: string) => translations[lang][key] ?? key;
+const t = (key: string) => translations[lang]?.[key] ?? translations.en[key] ?? key;
 
 function showToast(message: string) {
   const toast = $('#toast'); toast.textContent = message; toast.classList.add('show');
@@ -25,15 +24,16 @@ function showToast(message: string) {
 
 function applyLanguage(next: Lang) {
   lang = next; localStorage.setItem('minikit-lang', lang); document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  const currentTranslations = translations[lang] ?? translations.en;
   document.querySelectorAll<HTMLElement>('[data-i18n]').forEach((el) => {
-    const key = el.dataset.i18n; if (key && translations[lang][key]) el.innerHTML = translations[lang][key];
+    const key = el.dataset.i18n; if (key && currentTranslations[key]) el.innerHTML = currentTranslations[key];
   });
-  langLabel.textContent = lang === 'tr' ? 'EN' : 'TR';
-  $('#language-toggle').setAttribute('aria-label', lang === 'tr' ? 'Switch to English' : 'Türkçeye geç');
+  ($('#language-select') as HTMLSelectElement).value = lang;
   $('#mobile-menu-btn').setAttribute('aria-label', t('menuOpen'));
-  document.title = lang === 'tr' ? 'MiniKit — Günlük işler için ücretsiz araçlar' : 'MiniKit — Free tools for everyday tasks';
+  document.title = t('metaTitle') || (lang === 'tr' ? 'MiniKit — Günlük işler için ücretsiz araçlar' : 'MiniKit — Free tools for everyday tasks');
   const meta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-  if (meta) meta.content = lang === 'tr' ? 'Görselini dönüştür, QR kod oluştur, metnini say ve renklerini çevir. Ücretsiz, hızlı ve gizli.' : 'Convert images, generate QR codes, count words and convert colors. Free, fast and private.';
+  if (meta) meta.content = t('metaDescription') || (lang === 'tr' ? 'Görselini dönüştür, QR kod oluştur, metnini say ve renklerini çevir. Ücretsiz, hızlı ve gizli.' : 'Convert images, generate QR codes, count words and convert colors. Free, fast and private.');
   $('#word-count').textContent = String(countWords($('#word-input').value)); updateReadTime(); updateColorFromHex();
 }
 
@@ -133,7 +133,11 @@ document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((button) => 
   try { await navigator.clipboard.writeText(value); showToast(t('copied')); } catch { showToast(t('copyFail')); }
 }));
 
-$('#language-toggle').addEventListener('click', () => applyLanguage(lang === 'tr' ? 'en' : 'tr'));
+$('#language-select').addEventListener('change', (event) => {
+  const next = (event.target as HTMLSelectElement).value;
+  const base = import.meta.env.BASE_URL;
+  window.location.assign(next === 'tr' ? base : `${base}${next}/`);
+});
 const menuButton = $('#mobile-menu-btn');
 const mobileNav = document.createElement('nav'); mobileNav.className = 'mobile-nav'; mobileNav.setAttribute('aria-label', 'Mobile navigation');
 mobileNav.innerHTML = '<a href="#tools" data-mobile-nav="navTools"></a><a href="#why" data-mobile-nav="navWhy"></a><a href="#privacy" data-mobile-nav="navPrivacy"></a>';
@@ -143,5 +147,15 @@ menuButton.addEventListener('click', () => { const open = mobileNav.classList.to
 mobileNav.addEventListener('click', () => { mobileNav.classList.remove('open'); menuButton.setAttribute('aria-label', t('menuOpen')); });
 const originalApplyLanguage = applyLanguage;
 applyLanguage = (next: Lang) => { originalApplyLanguage(next); updateMobileNav(); };
-updateMobileNav(); applyLanguage(lang); $('#year').textContent = String(new Date().getFullYear());
-
+$('#year').textContent = String(new Date().getFullYear());
+async function loadLocale() {
+  if (lang !== 'tr' && lang !== 'en') {
+    try {
+      const response = await fetch(`${import.meta.env.BASE_URL}locales/${lang}.json`);
+      if (response.ok) translations[lang] = { ...translations.en, ...await response.json() };
+    } catch { /* The statically translated page remains readable when the free translation mirror is unavailable. */ }
+  }
+  updateMobileNav();
+  applyLanguage(lang);
+}
+void loadLocale();
