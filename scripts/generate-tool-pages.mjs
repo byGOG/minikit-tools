@@ -118,7 +118,7 @@ for(const tool of tools){
   ]};
   html=html.replace('</head>','<script type="application/ld+json">'+JSON.stringify(schema).replaceAll('<','\\u003c')+'</script></head>');
   const css='.seo-guide{max-width:1190px;margin:10px auto 36px;padding:26px 24px 30px;background:#eef5e9;border:1px solid #e0eadb;border-radius:18px}.seo-guide nav{font-size:12px;color:#64756a;margin-bottom:18px}.seo-guide h1,.seo-guide h2,.seo-faq h2{font-family:Manrope,sans-serif;letter-spacing:-.7px}.seo-guide h1{font-size:clamp(28px,4vw,42px);margin:0 0 10px;color:#173a2b}.seo-guide>p{max-width:740px;line-height:1.7;color:#526258}.seo-guide h2{font-size:20px;margin:22px 0 10px}.seo-guide ol{padding-left:22px;color:#44544a;line-height:1.9}.format-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.format-grid article{padding:14px;background:#fff;border:1px solid #e7ede4;border-radius:10px}.format-grid p{font-size:12px;line-height:1.6;color:#66746a}.seo-guide .button-primary{margin-top:12px}.seo-faq{max-width:1142px;margin:0 auto 44px;padding:0 24px}.seo-faq details{padding:14px 0;border-bottom:1px solid #e3e9e1}.seo-faq summary{font-size:14px;font-weight:700;cursor:pointer}.seo-faq details p{max-width:800px;color:#66746a;line-height:1.7;font-size:13px}@media(max-width:640px){.seo-guide{margin:10px 16px 28px;padding:20px}.format-grid{grid-template-columns:1fr}.seo-guide h1{font-size:30px}}';
-  html=html.replace('</style>',css+'</style>');
+  html=html.replace('</head>','<style>'+css+'</style></head>');
   const out=join(dist,locale.path,'tools',tool.slug,'index.html');
   await mkdir(join(dist,locale.path,'tools',tool.slug),{recursive:true});
   await writeFile(out,html,'utf8');
