@@ -32,9 +32,15 @@ function applyLanguage(next: Lang) {
   });
   ($('#language-select') as HTMLSelectElement).value = lang;
   $('#mobile-menu-btn').setAttribute('aria-label', t('menuOpen'));
-  document.title = t('metaTitle') || (lang === 'tr' ? 'MiniKit — Günlük işler için ücretsiz araçlar' : 'MiniKit — Free tools for everyday tasks');
+  const localizedTitle = currentTranslations.metaTitle;
+  document.title = localizedTitle && localizedTitle !== 'metaTitle'
+    ? localizedTitle
+    : lang === 'tr' ? 'MiniKit — Günlük işler için ücretsiz araçlar' : 'MiniKit — Free tools for everyday tasks';
   const meta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-  if (meta) meta.content = t('metaDescription') || (lang === 'tr' ? 'Görselini dönüştür, QR kod oluştur, metnini say ve renklerini çevir. Ücretsiz, hızlı ve gizli.' : 'Convert images, generate QR codes, count words and convert colors. Free, fast and private.');
+  const localizedDescription = currentTranslations.metaDescription;
+  if (meta) meta.content = localizedDescription && localizedDescription !== 'metaDescription'
+    ? localizedDescription
+    : lang === 'tr' ? 'Görselini dönüştür, QR kod oluştur, metnini say ve renklerini çevir. Ücretsiz, hızlı ve gizli.' : 'Convert images, generate QR codes, count words and convert colors. Free, fast and private.';
   $('#word-count').textContent = String(countWords($('#word-input').value)); updateReadTime(); updateColorFromHex();
 }
 
