@@ -4,7 +4,7 @@ A lightweight collection of useful browser-based tools. Built with Astro, TypeSc
 
 ## Included in this MVP
 
-- Responsive Turkish and English landing pages, plus build-generated language pages where the free translation mirror supports the language
+- Responsive Turkish and English landing pages, with an optional Spanish machine-translation draft when the free provider quota is available
 - Image converter for WebP, JPEG and PNG with adjustable quality
 - QR code generator with downloadable PNG output
 - Live word, character and reading-time counter
@@ -33,10 +33,10 @@ npm run preview
 
 1. Push this project to the `main` branch of `byGOG/minikit-tools` (or update the `base` setting in `astro.config.mjs` for your repository name).
 2. In the repository, open **Settings → Pages** and select **GitHub Actions** as the build and deployment source if it is not already selected.
-3. The workflow in `.github/workflows/deploy.yml` builds the Astro site, creates English and supported machine-translated pages, then publishes the `dist/` output. The live site is served at `https://bygog.github.io/minikit-tools/` after the workflow succeeds.
+3. The workflow in `.github/workflows/deploy.yml` builds the Astro site, creates English and (when the free provider quota is available) Spanish pages, then publishes the `dist/` output. The live site is served at `https://bygog.github.io/minikit-tools/` after the workflow succeeds.
 4. Future pushes to `main` trigger new deployments automatically.
 
-GitHub Pages is free for public repositories. Translation uses a keyless community LibreTranslate mirror listed in the project's public mirror directory. The build translates only fixed interface copy; visitor files and tool input are never sent to the translation provider. Community mirrors can be unavailable or change their language coverage, so the build skips any locale it cannot translate and keeps Turkish/English available.
+GitHub Pages is free for public repositories. Spanish is generated with the free MyMemory translation endpoint when its anonymous quota allows it. The build translates only fixed interface copy; visitor files and tool input are never sent to the translation provider. The provider has usage limits, so the build skips Spanish if it cannot translate the complete interface and always keeps Turkish/English available.
 
 ## Before a public launch
 
