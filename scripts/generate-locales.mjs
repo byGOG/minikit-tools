@@ -2,9 +2,22 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const provider = 'https://api.mymemory.translated.net';
-// Start with Spanish as the single additional locale. The anonymous provider
-// quota is deliberately kept small; add more languages after reviewing quality.
-const candidates = [['es', 'Español']];
+// Spanish is already cached by the previous deployment. Add ten widely used
+// languages and reuse each published dictionary so free-provider quota is spent
+// only on translations that have not succeeded before.
+const candidates = [
+  ['es', 'Español'],
+  ['de', 'Deutsch'],
+  ['fr', 'Français'],
+  ['pt', 'Português'],
+  ['ru', 'Русский'],
+  ['it', 'Italiano'],
+  ['ar', 'العربية'],
+  ['zh', '简体中文'],
+  ['ja', '日本語'],
+  ['hi', 'हिन्दी'],
+  ['id', 'Bahasa Indonesia'],
+];
 const spanishOverrides = {
   announcement: 'Tareas pequeñas, más sencillas. MiniKit ya está disponible.',
   eyebrow: 'HERRAMIENTAS PRÁCTICAS PARA EL DÍA A DÍA',
@@ -144,6 +157,7 @@ const localeOptions = [{ code: 'tr', name: 'Türkçe' }, { code: 'en', name: 'En
 const localeRoutes = [{ code: 'tr', path: '' }];
 const generated = { en: english };
 
+let providerLimitHit = false;
 try {
   for (const [code, name] of candidates) {
     const dictionary = {};
@@ -161,21 +175,29 @@ try {
         dictionary[key] = await translateEntry(value, code);
         await delay(150);
       } catch (error) {
-        console.warn(`Skipping ${code}: ${error instanceof Error ? error.message : String(error)}`);
+        const message = error instanceof Error ? error.message : String(error);
+        console.warn(`Skipping ${code}: ${message}`);
         failed = true;
+        if (/HTTP (?:402|403|429)|quota|daily limit|limit exceeded|too many requests/i.test(message)) {
+          providerLimitHit = true;
+        }
         break;
       }
     }
     if (code === 'es') Object.assign(dictionary, spanishOverrides);
-    if (failed || Object.keys(dictionary).length !== Object.keys(english).length) continue;
+    if (failed || Object.keys(dictionary).length !== Object.keys(english).length) {
+      if (providerLimitHit) break;
+      continue;
+    }
 
     localeOptions.push({ code, name });
     localeRoutes.push({ code, path: `${code}/` });
     generated[code] = dictionary;
     console.log(`Generated /${code}/ with ${Object.keys(dictionary).length} translated strings.`);
   }
+  if (providerLimitHit) console.warn('Free translation quota reached; publishing all locales translated successfully so far.');
 } catch (error) {
-  console.warn(`Free translation mirror unavailable; keeping the Turkish and English site only. ${error instanceof Error ? error.message : String(error)}`);
+  console.warn(`Free translation mirror unavailable; keeping all locales translated successfully so far. ${error instanceof Error ? error.message : String(error)}`);
 }
 
 // English is available independently of the community translation mirror.
