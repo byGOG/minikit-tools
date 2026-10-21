@@ -12,6 +12,7 @@ let translations: Record<Lang, Record<string, string>> = {
 
 const $ = <T extends HTMLElement>(selector: string) => document.querySelector<T>(selector)!;
 let lang: Lang = document.documentElement.lang || 'tr';
+const siteBase = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 let imageFile: File | null = null;
 let qrDataUrl = '';
 let toastTimer: number;
@@ -135,8 +136,7 @@ document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((button) => 
 
 $('#language-select').addEventListener('change', (event) => {
   const next = (event.target as HTMLSelectElement).value;
-  const base = import.meta.env.BASE_URL;
-  window.location.assign(next === 'tr' ? base : `${base}${next}/`);
+  window.location.assign(next === 'tr' ? siteBase : `${siteBase}${next}/`);
 });
 const menuButton = $('#mobile-menu-btn');
 const mobileNav = document.createElement('nav'); mobileNav.className = 'mobile-nav'; mobileNav.setAttribute('aria-label', 'Mobile navigation');
@@ -151,9 +151,13 @@ $('#year').textContent = String(new Date().getFullYear());
 async function loadLocale() {
   if (lang !== 'tr' && lang !== 'en') {
     try {
-      const response = await fetch(`${import.meta.env.BASE_URL}locales/${lang}.json`);
+      const response = await fetch(`${siteBase}locales/${lang}.json`);
       if (response.ok) translations[lang] = { ...translations.en, ...await response.json() };
     } catch { /* The statically translated page remains readable when the free translation mirror is unavailable. */ }
+    if (!translations[lang]) {
+      updateMobileNav();
+      return; // Keep the localized static HTML if the dictionary cannot be loaded.
+    }
   }
   updateMobileNav();
   applyLanguage(lang);
