@@ -5,6 +5,46 @@ const provider = 'https://api.mymemory.translated.net';
 // Start with Spanish as the single additional locale. The anonymous provider
 // quota is deliberately kept small; add more languages after reviewing quality.
 const candidates = [['es', 'Español']];
+const spanishOverrides = {
+  announcement: 'Tareas pequeñas, más sencillas. MiniKit ya está disponible.',
+  eyebrow: 'HERRAMIENTAS PRÁCTICAS PARA EL DÍA A DÍA',
+  heroTitle: 'Un pequeño atajo<br/><span>para tus tareas diarias.</span>',
+  heroLead: 'Convierte imágenes, crea códigos QR y cuenta palabras. Las herramientas prácticas que necesitas, en un solo lugar.',
+  heroCta: 'Prueba las herramientas gratis',
+  heroProof: 'Sin cuenta · Siempre gratis',
+  privacyLine: 'Tus archivos permanecen en tu dispositivo. Sin subir archivos ni crear una cuenta.',
+  ready: '¡Listo!', quickTools: 'Accesos rápidos', pickTool: '¿Qué quieres hacer hoy?',
+  makeQr: 'Crear código QR', countWords: 'Contar palabras',
+  statPrivate: 'Privacidad ante todo', statFree: 'Gratis y fácil de usar',
+  toolsEyebrow: 'TUS HERRAMIENTAS',
+  toolsTitle: 'Herramientas prácticas.<br/><span>Solo lo que necesitas.</span>',
+  toolsAvailable: 'herramientas disponibles',
+  imageTitle: 'Convertidor de imágenes', imageDesc: 'Convierte imágenes a WebP, JPEG o PNG, o reduce su tamaño.',
+  uploadChoose: 'Elige una imagen o arrástrala aquí', localImage: 'La imagen se procesa en tu dispositivo',
+  qrTitle: 'Generador de códigos QR', qrDesc: 'Escribe un enlace o texto breve y descarga el código QR para compartirlo.',
+  generateQr: 'Crear código QR', downloadQr: 'Descargar código QR', localQr: 'El código se crea en tu dispositivo',
+  wordDesc: 'Consulta al instante el número de palabras, caracteres y el tiempo de lectura.',
+  pasteText: 'Escribe o pega tu texto aquí', characters: 'Caracteres',
+  colorTitle: 'Convertidor de colores', colorDesc: 'Convierte fácilmente entre los formatos HEX, RGB y HSL.',
+  whyEyebrow: 'MENOS ESFUERZO, MÁS RESULTADOS',
+  whyTitle: 'Concéntrate en tu tarea,<br/>no en buscar herramientas.',
+  benefitOneTitle: 'Rápido de verdad', benefitTwo: 'Tus archivos y textos permanecen en tu dispositivo. No guardamos tus datos.',
+  privacyEyebrow: 'PRIVACIDAD DESDE EL DISEÑO',
+  privacyTitle: 'Tus archivos hacen su trabajo<br/><span>sin pasar por nuestros servidores.</span>',
+  privacyLead: 'Las imágenes se procesan en tu navegador. Los códigos QR y los colores se crean en tu dispositivo. Tu texto se queda contigo. Este aviso se actualizará si añadimos servicios de análisis o publicidad.',
+  privacyStamp: 'PRIVACIDAD ANTE TODO',
+  ctaTitle: 'Haz que tu próxima tarea<br/>sea un poco más sencilla.',
+  madeWith: 'Hecho con cuidado, para todos.',
+  imageTooLarge: 'El archivo supera el límite de 20 MB.', imageInvalid: 'Elige un archivo de imagen válido.',
+  imageConverted: 'Conversión lista. La descarga comenzará enseguida.',
+  imageFailed: 'No se pudo convertir la imagen. Prueba con otro formato.',
+  qrMissing: 'Escribe un enlace o un texto.', qrReady: 'Tu código QR está listo.',
+  qrFailed: 'No se pudo crear el código QR. Prueba con un texto más corto.',
+  invalidColor: 'Escribe un color HEX válido (por ejemplo, #155C42).',
+  copyFail: 'No se pudo copiar. Selecciona y copia el valor.',
+  metaTitle: 'MiniKit — Herramientas gratuitas para tus tareas diarias',
+  metaDescription: 'Convierte imágenes, crea códigos QR, cuenta palabras y convierte colores. Gratis, rápido y privado.',
+};
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const htmlEscape = (value) => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 
@@ -108,7 +148,15 @@ try {
   for (const [code, name] of candidates) {
     const dictionary = {};
     let failed = false;
-    for (const [key, value] of Object.entries(english)) {
+    // Reuse the last successful deployment so routine builds do not spend the
+    // provider's anonymous quota translating the same copy again.
+    try {
+      const cached = await fetch(new URL(`locales/${code}.json`, rootUrl), { signal: AbortSignal.timeout(10000) });
+      if (cached.ok) Object.assign(dictionary, await cached.json());
+    } catch { /* A first deployment has no published locale cache yet. */ }
+
+    const missingEntries = Object.entries(english).filter(([key]) => typeof dictionary[key] !== 'string');
+    for (const [key, value] of missingEntries) {
       try {
         dictionary[key] = await translateEntry(value, code);
         await delay(150);
@@ -118,6 +166,7 @@ try {
         break;
       }
     }
+    if (code === 'es') Object.assign(dictionary, spanishOverrides);
     if (failed || Object.keys(dictionary).length !== Object.keys(english).length) continue;
 
     localeOptions.push({ code, name });
