@@ -68,7 +68,7 @@ for(const locale of locales){
  const file=join(dist,locale.path,'index.html');
  let home=await readFile(file,'utf8');
  const prefix=locale.code==='tr'?'':locale.code+'/';
- home=home.replace(/<a class="tool-more" data-tool-page="([^"]+)" href="[^"]*"/g,(_m,slug)=>'<a class="tool-more" data-tool-page="'+slug+'" href="'+siteBase+prefix+'tools/'+slug+'/');
+ home=home.replace(/<a class="tool-more" data-tool-page="([^"]+)" href="[^"]*"/g,(_m,slug)=>'<a class="tool-more" data-tool-page="'+slug+'" href="'+siteBase+prefix+'tools/'+slug+'/">');
  if(privacy[locale.code]){
   dictionaries[locale.code].privacyLead=privacy[locale.code];
   home=home.replace(/(<[^>]*data-i18n="privacyLead"[^>]*>)[\s\S]*?(<\/[^>]+>)/i,'$1'+privacy[locale.code]+'$2');
