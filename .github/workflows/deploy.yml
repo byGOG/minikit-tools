@@ -3,6 +3,8 @@ name: Deploy MiniKit to GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -20,26 +22,36 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v4
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: pnpm
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
+      - name: Check Astro and TypeScript
+        run: pnpm run check
       - name: Build site
-        run: npm run build
+        run: pnpm run build
         env:
           PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
+      - name: Verify all 50 languages and 250 pages
+        run: pnpm run test:locales
       - name: Configure GitHub Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
         with:
           enablement: true
       - name: Upload site artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

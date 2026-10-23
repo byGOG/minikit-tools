@@ -1,14 +1,11 @@
 import QRCode from 'qrcode';
 
+import tr from '../i18n/locales/tr.json';
+import en from '../i18n/locales/en.json';
+import catalog from '../i18n/catalog.json';
+
 type Lang = string;
-let translations: Record<Lang, Record<string, string>> = {
-  tr: {
-    announcement: 'Küçük işler, daha kolay. MiniKit şimdi yayında.', explore: 'Keşfet', navTools: 'Araçlar', navWhy: 'Neden MiniKit?', navPrivacy: 'Gizlilik', navCta: 'Araçları keşfet', eyebrow: 'HER GÜN İŞE YARAYAN ARAÇLAR', heroTitle: 'Günlük işler için<br/><span>küçük bir kısayol.</span>', heroLead: 'Görseli dönüştür, QR kod oluştur, metnini say. İhtiyacın olan pratik araçlar, tek bir sakin yerde.', heroCta: 'Ücretsiz araçları dene', heroProof: 'Hesap gerekmez · Hep ücretsiz', privacyLine: 'Dosyaların cihazında kalır. Yükleme yok, hesap yok.', ready: 'Hazır!', quickTools: 'Hızlı araçlar', pickTool: 'Bugün ne yapmak istersin?', compress: 'Görsel sıkıştır', makeQr: 'QR kod oluştur', countWords: 'Kelime say', convertColor: 'Renk dönüştür', privateDevice: '%100 cihazında. Her zaman gizli.', statFast: 'Anında çalışır', statPrivate: 'Gizlilik önce gelir', statFree: 'Ücretsiz ve kolay', statNew: 'Her hafta yeni araçlar', toolsEyebrow: 'ARAÇ KUTUN', toolsTitle: 'İşini gören araçlar.<br/><span>Gereksiz kalabalık yok.</span>', toolsAvailable: 'araç hazır', free: 'ÜCRETSİZ', imageTitle: 'Görsel dönüştürücü', imageDesc: 'Görsellerini WebP, JPEG veya PNG’ye dönüştür ya da boyutunu küçült.', uploadChoose: 'Görsel seç veya sürükle bırak', fileLimit: 'JPG, PNG, WEBP · En fazla 20 MB', outputFormat: 'Çıktı formatı', quality: 'Kalite', convertDownload: 'Dönüştür ve indir', localImage: 'Görselin cihazında işlenir', qrTitle: 'QR kod oluşturucu', qrDesc: 'Bir bağlantı veya kısa metin yaz; QR kodunu indirip paylaş.', qrLabel: 'Bağlantı veya metin', qrEmpty: 'QR kodun burada görünecek', generateQr: 'QR kod oluştur', downloadQr: 'QR kodu indir', localQr: 'Kodun bu cihazda oluşturulur', wordTitle: 'Kelime sayacı', wordDesc: 'Kelime, karakter ve okuma süresi sayını anında öğren.', pasteText: 'Metnini buraya yaz', words: 'Kelime', characters: 'Karakter', readTime: 'Okuma süresi', clearText: 'Metni temizle', localWord: 'Metnin cihazından çıkmaz', colorTitle: 'Renk dönüştürücü', colorDesc: 'HEX, RGB ve HSL değerleri arasında kolayca geçiş yap.', chooseColor: 'Bir renk seç', preview: 'Önizleme', localColor: 'Değerler anında hesaplanır', whyEyebrow: 'DAHA AZ UĞRAŞ, DAHA ÇOK İŞ', whyTitle: 'Araç aramaya<br/>değil, işine odaklan.', whyLead: 'Her küçük iş için başka bir siteye gitmen gerekmiyor. MiniKit, en sık kullandığın pratik araçları temiz ve anlaşılır bir yerde toplar.', allTools: 'Araçları keşfet', benefitOneTitle: 'Gerçekten hızlı', benefitOne: 'Aç, yap, bitir. İndirme yok, kayıt formu yok, beklemek yok.', benefitTwoTitle: 'Önce gizlilik', benefitTwo: 'Dosyaların ve metnin cihazından ayrılmaz. Verilerini saklamayız.', benefitThreeTitle: 'Herkes için basit', benefitThree: 'Kafa karıştıran menüler yok. Aradığın şey, tam da olması gereken yerde.', privacyEyebrow: 'TASARLANDIĞI GİBİ GİZLİ', privacyTitle: 'Dosyaların bize<br/><span>uğramadan işini görür.</span>', privacyLead: 'Şu anda analiz veya reklam hizmeti kullanmıyoruz. Görseller, QR içeriği, metin ve renk değerleri tarayıcında işlenir; sunucularımıza gönderilmez. Bu durum değişirse gizlilik bildirimini güncelleriz.', privacyStamp: 'GİZLİLİK ÖNCE GELİR', ctaTitle: 'Bir sonraki küçük işin<br/>daha kolay olsun.', ctaLead: 'İlk aracını hemen dene. Ücretsiz, hesapsız, zahmetsiz.', ctaButton: 'Hadi başlayalım', footerLine: 'Günlük işler için küçük kısayollar.', madeWith: 'Dikkatle yapıldı, herkes için.', imageTooLarge: 'Bu dosya 20 MB sınırını aşıyor.', imageInvalid: 'Lütfen geçerli bir görsel seç.', imageConverted: 'Dönüştürme tamamlandı, indirme başladı.', imageFailed: 'Görsel dönüştürülemedi. Başka bir format deneyin.', qrMissing: 'Lütfen bir bağlantı veya metin yazın.', qrReady: 'QR kodun hazır.', qrFailed: 'QR kod oluşturulamadı. Metnini kısaltıp tekrar dene.', copied: 'Panoya kopyalandı.', invalidColor: 'Geçerli bir HEX rengi yazın (ör. #155C42).', menuOpen: 'Menüyü aç', menuClose: 'Menüyü kapat', cleared: 'Metin temizlendi.', sec: 'sn', min: 'dk', copyFail: 'Kopyalanamadı; değeri seçip kopyalayın.'
-  },
-  en: {
-    announcement: 'Small tasks, made easier. MiniKit is now live.', explore: 'Explore', navTools: 'Tools', navWhy: 'Why MiniKit?', navPrivacy: 'Privacy', navCta: 'Explore tools', eyebrow: 'TOOLS FOR EVERYDAY WINS', heroTitle: 'A little shortcut<br/><span>for everyday things.</span>', heroLead: 'Convert an image, make a QR code, count your words. The handy tools you need, all in one calm place.', heroCta: 'Try free tools', heroProof: 'No account needed · Always free', privacyLine: 'Your files stay on your device. No uploads, no account.', ready: 'Ready!', quickTools: 'Quick tools', pickTool: 'What would you like to do today?', compress: 'Compress image', makeQr: 'Make a QR code', countWords: 'Count words', convertColor: 'Convert color', privateDevice: '100% on your device. Always private.', statFast: 'Works instantly', statPrivate: 'Privacy comes first', statFree: 'Free and simple', statNew: 'New tools every week', toolsEyebrow: 'YOUR TOOLKIT', toolsTitle: 'Tools that get it done.<br/><span>Nothing you don’t need.</span>', toolsAvailable: 'tools ready', free: 'FREE', imageTitle: 'Image converter', imageDesc: 'Convert images to WebP, JPEG or PNG, or make the file smaller.', uploadChoose: 'Choose an image or drop it here', fileLimit: 'JPG, PNG, WEBP · Up to 20 MB', outputFormat: 'Output format', quality: 'Quality', convertDownload: 'Convert & download', localImage: 'Image processed on your device', qrTitle: 'QR code generator', qrDesc: 'Enter a link or short text, then download and share your QR code.', qrLabel: 'Link or text', qrEmpty: 'Your QR code will appear here', generateQr: 'Generate QR code', downloadQr: 'Download QR code', localQr: 'Code generated on this device', wordTitle: 'Word counter', wordDesc: 'Instantly check word count, character count and reading time.', pasteText: 'Type your text here', words: 'Words', characters: 'Characters', readTime: 'Read time', clearText: 'Clear text', localWord: 'Your text never leaves your device', colorTitle: 'Color converter', colorDesc: 'Switch easily between HEX, RGB and HSL values.', chooseColor: 'Choose a color', preview: 'Preview', localColor: 'Values calculated instantly', whyEyebrow: 'LESS FUSS, MORE DONE', whyTitle: 'Focus on your task,<br/>not finding a tool.', whyLead: 'You don’t need a different website for every little task. MiniKit brings the practical tools you use most together in one clear, easy place.', allTools: 'Explore the tools', benefitOneTitle: 'Actually fast', benefitOne: 'Open it, do the thing, move on. No downloads, sign-up forms or waiting.', benefitTwoTitle: 'Privacy first', benefitTwo: 'Your files and text stay on your device. We don’t store your data.', benefitThreeTitle: 'Simple for everyone', benefitThree: 'No confusing menus. What you need is right where it should be.', privacyEyebrow: 'PRIVATE BY DESIGN', privacyTitle: 'Your files get the job<br/><span>done without passing through us.</span>', privacyLead: 'We currently use no analytics or advertising services. Images, QR content, text and color values are processed in your browser and are not sent to our servers. We will update this notice if that changes.', privacyStamp: 'PRIVACY FIRST', ctaTitle: 'Make your next little task<br/>a little easier.', ctaLead: 'Try your first tool now. Free, no account, no fuss.', ctaButton: 'Let’s get started', footerLine: 'Little shortcuts for everyday things.', madeWith: 'Made with care, for everyone.', imageTooLarge: 'This file exceeds the 20 MB limit.', imageInvalid: 'Please choose a valid image.', imageConverted: 'Conversion complete. Your download is starting.', imageFailed: 'Could not convert the image. Try another format.', qrMissing: 'Please enter a link or some text.', qrReady: 'Your QR code is ready.', qrFailed: 'Could not make the QR code. Try a shorter text.', copied: 'Copied to clipboard.', invalidColor: 'Enter a valid HEX color (e.g. #155C42).', menuOpen: 'Open menu', menuClose: 'Close menu', cleared: 'Text cleared.', sec: 'sec', min: 'min', copyFail: 'Could not copy; select and copy the value.'
-  }
-};
+const translations: Record<Lang, Record<string, string>> = { tr, en };
 
 const $ = <T extends HTMLElement>(selector: string) => document.querySelector<T>(selector)!;
 let lang: Lang = document.documentElement.lang || 'tr';
@@ -25,11 +22,15 @@ function showToast(message: string) {
 
 function applyLanguage(next: Lang) {
   lang = next; localStorage.setItem('minikit-lang', lang); document.documentElement.lang = lang;
-  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  document.documentElement.dir = catalog.find(({ code }) => code === lang)?.dir ?? 'ltr';
   const currentTranslations = translations[lang] ?? translations.en;
   document.querySelectorAll<HTMLElement>('[data-i18n]').forEach((el) => {
     const key = el.dataset.i18n; if (key && currentTranslations[key]) el.innerHTML = currentTranslations[key];
   });
+  for (const [data, attribute] of [['i18nAria', 'aria-label'], ['i18nPlaceholder', 'placeholder'], ['i18nAlt', 'alt']]) {
+    const selector = attribute === 'aria-label' ? '[data-i18n-aria]' : attribute === 'placeholder' ? '[data-i18n-placeholder]' : '[data-i18n-alt]';
+    document.querySelectorAll<HTMLElement>(selector).forEach((el) => { const key = el.dataset[data]; if (key) el.setAttribute(attribute, t(key)); });
+  }
   ($('#language-select') as HTMLSelectElement).value = lang;
   $('#mobile-menu-btn').setAttribute('aria-label', t('menuOpen'));
   const isToolPage = /\/tools\/[^/]+\/?$/.test(window.location.pathname);
@@ -44,7 +45,8 @@ function applyLanguage(next: Lang) {
       ? localizedDescription
       : lang === 'tr' ? 'Görselini dönüştür, QR kod oluştur, metnini say ve renklerini çevir. Ücretsiz, hızlı ve gizli.' : 'Convert images, generate QR codes, count words and convert colors. Free, fast and private.';
   }
-  $('#word-count').textContent = String(countWords($('#word-input').value)); updateReadTime(); updateColorFromHex();
+  $('#word-count').textContent = String(countWords($<HTMLTextAreaElement>('#word-input').value)); updateReadTime(); updateColorFromHex();
+  updateMobileNav();
 }
 
 type SegmentPart = { segment: string; isWordLike?: boolean };
@@ -59,7 +61,7 @@ function countCharacters(text: string) {
   return Segmenter ? Array.from(new Segmenter(lang, { granularity: 'grapheme' }).segment(text)).length : Array.from(text).length;
 }
 function updateReadTime() {
-  const value = $('#word-input').value;
+  const value = $<HTMLTextAreaElement>('#word-input').value;
   const count = countWords(value);
   const minutes = lang === 'zh' || lang === 'ja' ? countCharacters(value) / 500 : count / 200;
   $('#read-time').textContent = count === 0 ? `0 ${t('sec')}` : minutes < 1 ? `${Math.max(1, Math.ceil(minutes * 60))} ${t('sec')}` : `${Math.ceil(minutes)} ${t('min')}`;
@@ -87,11 +89,11 @@ function rgbToHsl({ r, g, b }: {r:number;g:number;b:number}) {
 }
 
 function updateColorFromHex() {
-  const field = $('#color-hex'); const rgb = hexToRgb(field.value);
+  const field = $<HTMLInputElement>('#color-hex'); const rgb = hexToRgb(field.value);
   if (!rgb) { field.classList.add('invalid'); $('#color-feedback').textContent = field.value ? t('invalidColor') : ''; $('#color-feedback').classList.toggle('error', !!field.value); return; }
   field.classList.remove('invalid'); $('#color-feedback').textContent = ''; $('#color-feedback').classList.remove('error');
   const canonical = `#${field.value.replace(/^#/, '').toUpperCase()}`; const normalized = `#${field.value.replace(/^#/, '')}`;
-  $('#color-picker').value = normalized; $('#swatch').style.background = normalized;
+  $<HTMLInputElement>('#color-picker').value = normalized; $('#swatch').style.background = normalized;
   $('#swatch-label').textContent = canonical; $('#rgb-value').textContent = `${rgb.r}, ${rgb.g}, ${rgb.b}`; $('#hsl-value').textContent = rgbToHsl(rgb);
 }
 
@@ -148,7 +150,7 @@ $('#qr-input').addEventListener('input', () => {
 
 $('#word-input').addEventListener('input', (event) => { const value = (event.target as HTMLTextAreaElement).value; $('#word-count').textContent = String(countWords(value)); $('#char-count').textContent = String(countCharacters(value)); updateReadTime(); });
 $('#clear-text').addEventListener('click', () => { ($('#word-input') as HTMLTextAreaElement).value = ''; $('#word-count').textContent = '0'; $('#char-count').textContent = '0'; updateReadTime(); showToast(t('cleared')); });
-$('#color-picker').addEventListener('input', (event) => { $('#color-hex').value = (event.target as HTMLInputElement).value.toUpperCase(); updateColorFromHex(); });
+$('#color-picker').addEventListener('input', (event) => { $<HTMLInputElement>('#color-hex').value = (event.target as HTMLInputElement).value.toUpperCase(); updateColorFromHex(); });
 $('#color-hex').addEventListener('input', updateColorFromHex);
 document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((button) => button.addEventListener('click', async () => {
   const format = button.dataset.copy; const value = format === 'rgb' ? `rgb(${($('#rgb-value').textContent ?? '').replaceAll(' ', '')})` : `hsl(${($('#hsl-value').textContent ?? '').replaceAll(' ', '')})`;
@@ -162,22 +164,23 @@ $('#language-select').addEventListener('change', (event) => {
   window.location.assign(toolMatch ? `${siteBase}${localePrefix}tools/${toolMatch[1]}/` : next === 'tr' ? siteBase : `${siteBase}${next}/`);
 });
 const menuButton = $('#mobile-menu-btn');
-const mobileNav = document.createElement('nav'); mobileNav.id = 'mobile-nav'; mobileNav.className = 'mobile-nav'; mobileNav.setAttribute('aria-label', 'Mobile navigation');
+const mobileNav = document.createElement('nav'); mobileNav.id = 'mobile-nav'; mobileNav.className = 'mobile-nav'; mobileNav.setAttribute('aria-label', t('mobileNavigation'));
 mobileNav.innerHTML = '<a href="#tools" data-mobile-nav="navTools"></a><a href="#why" data-mobile-nav="navWhy"></a><a href="#privacy" data-mobile-nav="navPrivacy"></a>';
 document.querySelector('.site-header')?.insertAdjacentElement('afterend', mobileNav);
-const updateMobileNav = () => mobileNav.querySelectorAll<HTMLAnchorElement>('[data-mobile-nav]').forEach((a) => { a.textContent = t(a.dataset.mobileNav ?? ''); });
+const updateMobileNav = () => {
+  mobileNav.setAttribute('aria-label', t('mobileNavigation'));
+  mobileNav.querySelectorAll<HTMLAnchorElement>('[data-mobile-nav]').forEach((a) => { a.textContent = t(a.dataset.mobileNav ?? ''); });
+};
 menuButton.addEventListener('click', () => { const open = mobileNav.classList.toggle('open'); menuButton.setAttribute('aria-label', open ? t('menuClose') : t('menuOpen')); menuButton.setAttribute('aria-expanded', String(open)); });
 mobileNav.addEventListener('click', () => { mobileNav.classList.remove('open'); menuButton.setAttribute('aria-label', t('menuOpen')); menuButton.setAttribute('aria-expanded', 'false'); });
 document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && mobileNav.classList.contains('open')) { mobileNav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); menuButton.focus(); } });
-const originalApplyLanguage = applyLanguage;
-applyLanguage = (next: Lang) => { originalApplyLanguage(next); updateMobileNav(); };
 $('#year').textContent = String(new Date().getFullYear());
 async function loadLocale() {
   if (lang !== 'tr' && lang !== 'en') {
     try {
       const response = await fetch(`${siteBase}locales/${lang}.json`);
       if (response.ok) translations[lang] = { ...translations.en, ...await response.json() };
-    } catch { /* The statically translated page remains readable when the free translation mirror is unavailable. */ }
+    } catch { /* The statically translated page remains readable when the locale JSON cannot be fetched. */ }
     if (!translations[lang]) {
       updateMobileNav();
       return; // Keep the localized static HTML if the dictionary cannot be loaded.
