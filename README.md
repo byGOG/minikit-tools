@@ -4,8 +4,8 @@ MiniKit is a privacy-forward collection of free browser tools, built with Astro,
 
 ## Included
 
-- Exactly 50 language homepages and 350 localized tool guides, generated from versioned translation dictionaries. Arabic, Urdu, Persian and Hebrew use right-to-left layouts.
-- Seven browser tools: image converter/compressor (WebP, JPEG and PNG), QR generator, Unicode-aware word/character counter, HEX/RGB/HSL color converter, case converter, duplicate line remover and text sorter.
+- Exactly 50 language homepages and 500 localized tool guides, generated from versioned translation dictionaries. Arabic, Urdu, Persian and Hebrew use right-to-left layouts.
+- Ten browser tools: image converter/compressor (WebP, JPEG and PNG), QR generator, Unicode-aware word/character counter, HEX/RGB/HSL color converter, case converter, duplicate line remover text sorter, JSON formatter, UTF-8 Base64 converter and URL component encoder/decoder.
 - Dedicated localized pages for each tool, with usage steps, FAQs, structured data, canonical/hreflang metadata and sitemap entries.
 - Accessibility support: keyboard skip link, visible focus, reduced-motion support, accessible mobile menu state and live word-count announcements.
 - No third-party analytics, ads, font requests or cookie tracking by default. Tool inputs are processed in the visitor's browser.
@@ -80,7 +80,7 @@ scripts/
 src/i18n/
   catalog.json             50 locales and writing directions
   locales/*.json           Complete versioned translation drafts
-tests/locales.test.mjs      Checks all 400 generated pages and SEO links
+tests/locales.test.mjs      Checks all 550 generated pages and SEO links
 public/
   favicon.svg
   robots.txt
@@ -96,3 +96,7 @@ public/
 ## Text tools
 
 All processing stays in the browser. Case conversion uses the selected site language, including Turkish dotted/dotless I. Duplicate removal keeps the first original line, normalizes Unicode only for comparisons and optionally ignores case or surrounding spaces; repeated blank lines are kept once. Sorting uses locale-aware collation and natural numeric order (2 before 10), preserves duplicate/empty lines and supports both directions. Inputs are limited to 100,000 characters; copy and clear controls are provided. Select the site language matching your text for language-specific behavior.
+
+## Developer tools
+
+JSON formatting validates syntax but preserves number spellings, duplicate keys and escaped strings; it does not parse/stringify the output. Pretty printing uses two spaces; minification removes whitespace outside strings. JSON nesting is limited to 100 levels and generated output to 2 million characters. Base64 uses standard alphabet/padding and UTF-8 text, rejects malformed encodings and is not encryption or a binary-file decoder. URL encoding applies to individual values, not whole URLs; decoding keeps `+` literal and decodes once. Each operation accepts up to 100,000 input characters. All three tools run entirely in the browser, show localized errors, clear stale results when input changes, and support copy/clear controls.
