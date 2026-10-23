@@ -1,4 +1,5 @@
 import QRCode from 'qrcode';
+import { changeCase, removeDuplicateLines, sortLines } from './text-tools';
 
 import tr from '../i18n/locales/tr.json';
 import en from '../i18n/locales/en.json';
@@ -47,6 +48,7 @@ function applyLanguage(next: Lang) {
   }
   $('#word-count').textContent = String(countWords($<HTMLTextAreaElement>('#word-input').value)); updateReadTime(); updateColorFromHex();
   updateMobileNav();
+  updateTextTools();
 }
 
 type SegmentPart = { segment: string; isWordLike?: boolean };
@@ -163,6 +165,44 @@ $('#language-select').addEventListener('change', (event) => {
   const localePrefix = next === 'tr' ? '' : `${next}/`;
   window.location.assign(toolMatch ? `${siteBase}${localePrefix}tools/${toolMatch[1]}/` : next === 'tr' ? siteBase : `${siteBase}${next}/`);
 });
+let caseMode: 'upper' | 'lower' = 'upper';
+function setTextResult(id: string, value: string) {
+  $<HTMLTextAreaElement>(`#${id}`).value = value;
+  $<HTMLButtonElement>(`[data-copy-output="${id}"]`).disabled = value.length === 0;
+}
+function updateTextTools() {
+  setTextResult('case-output', changeCase($<HTMLTextAreaElement>('#case-input').value, caseMode, lang));
+  const deduped = removeDuplicateLines($<HTMLTextAreaElement>('#dedupe-input').value, {
+    ignoreCase: $<HTMLInputElement>('#dedupe-ignore-case').checked,
+    trimSpaces: $<HTMLInputElement>('#dedupe-trim').checked,
+    locale: lang,
+  });
+  setTextResult('dedupe-output', deduped.text);
+  $('#dedupe-removed').textContent = String(deduped.removed);
+  setTextResult('sort-output', sortLines($<HTMLTextAreaElement>('#sort-input').value, lang, $<HTMLSelectElement>('#sort-order').value === 'desc'));
+}
+for (const id of ['case-input', 'dedupe-input', 'sort-input']) $(`#${id}`).addEventListener('input', updateTextTools);
+for (const id of ['dedupe-ignore-case', 'dedupe-trim', 'sort-order']) $(`#${id}`).addEventListener('change', updateTextTools);
+for (const mode of ['upper', 'lower'] as const) {
+  $(`#case-${mode}`).addEventListener('click', () => {
+    caseMode = mode;
+    $('#case-upper').setAttribute('aria-pressed', String(mode === 'upper'));
+    $('#case-lower').setAttribute('aria-pressed', String(mode === 'lower'));
+    updateTextTools();
+  });
+}
+document.querySelectorAll<HTMLButtonElement>('[data-copy-output]').forEach((button) => button.addEventListener('click', async () => {
+  const value = $<HTMLTextAreaElement>(`#${button.dataset.copyOutput}`).value;
+  try { await navigator.clipboard.writeText(value); showToast(t('copied')); }
+  catch { showToast(t('copyFail')); }
+}));
+document.querySelectorAll<HTMLButtonElement>('[data-clear-input]').forEach((button) => button.addEventListener('click', () => {
+  const input = $<HTMLTextAreaElement>(`#${button.dataset.clearInput}`);
+  input.value = '';
+  updateTextTools();
+  input.focus();
+  showToast(t('cleared'));
+}));
 const menuButton = $('#mobile-menu-btn');
 const mobileNav = document.createElement('nav'); mobileNav.id = 'mobile-nav'; mobileNav.className = 'mobile-nav'; mobileNav.setAttribute('aria-label', t('mobileNavigation'));
 mobileNav.innerHTML = '<a href="#tools" data-mobile-nav="navTools"></a><a href="#why" data-mobile-nav="navWhy"></a><a href="#privacy" data-mobile-nav="navPrivacy"></a>';

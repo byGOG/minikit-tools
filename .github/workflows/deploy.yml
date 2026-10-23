@@ -31,13 +31,15 @@ jobs:
           cache: pnpm
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      - name: Test text transformations
+        run: pnpm run test:tools
       - name: Check Astro and TypeScript
         run: pnpm run check
       - name: Build site
         run: pnpm run build
         env:
           PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
-      - name: Verify all 50 languages and 250 pages
+      - name: Verify all languages and tool pages
         run: pnpm run test:locales
       - name: Configure GitHub Pages
         if: github.event_name != 'pull_request'

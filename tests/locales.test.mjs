@@ -4,12 +4,9 @@ import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { catalog, dictionaries, escapeHtml, translatedHtml, localePath, rootUrl, siteBase } from '../scripts/i18n.mjs';
 
-const tools = [
-  ['image-converter', 'imageTitle', 'imageDesc'],
-  ['qr-code-generator', 'qrTitle', 'qrDesc'],
-  ['word-counter', 'wordTitle', 'wordDesc'],
-  ['color-converter', 'colorTitle', 'colorDesc'],
-];
+const toolCatalog = JSON.parse(await readFile(new URL('../src/data/tools.json', import.meta.url), 'utf8'));
+const tools = toolCatalog.map(({slug,title,desc}) => [slug,title,desc]);
+const pageCount = catalog.length * (tools.length + 1);
 const expectedUrls = new Set();
 
 test('all 50 dictionaries are complete and contain balanced allowed markup', () => {
@@ -27,7 +24,7 @@ test('all 50 dictionaries are complete and contain balanced allowed markup', () 
 });
 
 for (const locale of catalog) {
-  test(`${locale.code}: translated homepage, four guides, metadata and language links`, async () => {
+  test(`${locale.code}: translated homepage, all tool guides, metadata and language links`, async () => {
     const d = dictionaries[locale.code];
     const prefix = localePath(locale.code);
     const dictionary = JSON.parse(await readFile(join('dist', 'locales', `${locale.code}.json`), 'utf8'));
@@ -36,6 +33,8 @@ for (const locale of catalog) {
       const path = prefix + (slug ? `tools/${slug}/` : '');
       const html = await readFile(join('dist', path, 'index.html'), 'utf8');
       const url = new URL(path, rootUrl).href;
+      assert.ok(html.includes('id="tool-total">' + String(tools.length).padStart(2, '0') + '</b>'));
+      for (const tool of toolCatalog) assert.ok(html.includes('id="'+tool.anchor+'"'));
       expectedUrls.add(url);
       assert.ok(html.includes(`<html lang="${locale.code}" dir="${locale.dir}">`), `${path}: language/direction`);
       const expectedTitle = d[title] + (slug ? ' — MiniKit' : '');
@@ -54,7 +53,7 @@ for (const locale of catalog) {
       assert.equal([...selector.matchAll(/<option /g)].length, 50, `${path}: selector count`);
       assert.equal([...selector.matchAll(/ selected/g)].length, 1);
       assert.ok(selector.includes(`value="${locale.code}" selected`));
-      for (const key of ['heroTitle', 'imageTitle', 'qrTitle', 'wordTitle', 'colorTitle', 'privacyLead', 'skipTools']) {
+      for (const key of ['heroTitle', 'imageTitle', 'qrTitle', 'wordTitle', 'colorTitle', 'caseTitle', 'dedupeTitle', 'sortTitle', 'privacyLead', 'skipTools']) {
         assert.ok(html.includes(`data-i18n="${key}">${translatedHtml(d[key])}`), `${path}: translated ${key}`);
       }
       assert.ok(html.includes(`aria-label="${escapeHtml(d.chooseLanguage)}"`), `${path}: accessible selector label`);
@@ -73,11 +72,11 @@ for (const locale of catalog) {
   });
 }
 
-test('sitemap lists exactly the 250 generated pages and all published dictionaries exist', async () => {
+test('sitemap lists every generated page and all published dictionaries exist', async () => {
   const xml = await readFile('dist/sitemap.xml', 'utf8');
   const locations = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  assert.equal(locations.length, 250);
-  assert.equal(new Set(locations).size, 250);
+  assert.equal(locations.length, pageCount);
+  assert.equal(new Set(locations).size, pageCount);
   assert.deepEqual(new Set(locations), expectedUrls);
   assert.equal((await readdir('dist/locales')).filter((f) => f.endsWith('.json')).length, 50);
 });
