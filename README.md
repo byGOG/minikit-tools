@@ -4,7 +4,7 @@ MiniKit is a privacy-forward collection of free browser tools, built with Astro,
 
 ## Included
 
-- Turkish and English pages plus up to 11 additional locales: Spanish, German, French, Portuguese, Russian, Italian, Arabic, Chinese, Japanese, Hindi and Indonesian.
+- Exactly 50 language homepages and 200 localized tool guides, generated from versioned translation dictionaries. Arabic, Urdu, Persian and Hebrew use right-to-left layouts.
 - Four browser tools: image converter/compressor (WebP, JPEG and PNG), QR generator, Unicode-aware word/character counter, and HEX/RGB/HSL color converter.
 - Dedicated localized pages for each tool, with usage steps, FAQs, structured data, canonical/hreflang metadata and sitemap entries.
 - Accessibility support: keyboard skip link, visible focus, reduced-motion support, accessible mobile menu state and live word-count announcements.
@@ -13,25 +13,29 @@ MiniKit is a privacy-forward collection of free browser tools, built with Astro,
 
 ## Run locally
 
-Requirements: Node.js 20.3 or newer.
+Requirements: Node.js 22 and pnpm 11.25.0 (`corepack enable` then `corepack prepare pnpm@11.25.0 --activate`, or install that pnpm version).
 
 ```sh
-npm install
-npm run dev
+pnpm install --frozen-lockfile
+pnpm run dev
 ```
 
 Build and preview:
 
 ```sh
-npm run build
-npm run preview
+pnpm run build
+pnpm run test:locales
+pnpm run check
+pnpm run preview
 ```
+
+`dev` serves the Astro source page. Use `build` followed by `preview` to browse all 50 languages at `http://localhost:4321/minikit-tools/`. Language selection preserves the current tool guide.
 
 ## GitHub Pages deployment
 
 1. Push to the `main` branch of `byGOG/minikit-tools`. For another repository, update the `base` value in `astro.config.mjs`.
 2. In **Settings → Pages**, choose **GitHub Actions** as the publishing source.
-3. Each push to `main` builds the localized landing pages and tool pages, sitemap and robots file, then deploys `dist/` to [MiniKit](https://bygog.github.io/minikit-tools/).
+3. Pull requests run type checks, build and locale tests without deploying. Each push to `main` runs the same checks, builds the localized landing pages and tool pages, sitemap and robots file, then deploys `dist/` to [MiniKit](https://bygog.github.io/minikit-tools/).
 4. Share the update after **Deploy MiniKit to GitHub Pages** finishes successfully.
 
 ## Google Search Console
@@ -45,7 +49,15 @@ Analytics and advertising are disabled. Add them only after setting up the relev
 
 ## Translation notes
 
-The supported locale list is Turkish, English, Spanish, German, French, Portuguese, Russian, Italian, Arabic, Chinese, Japanese, Hindi and Indonesian. The free MyMemory service may be used during builds for missing fixed interface strings; visitor files and tool input are never sent to it. Published locale JSON is reused to reduce anonymous translation quota usage. Review machine translations before targeting a market commercially.
+All 50 dictionaries live in `src/i18n/locales/`; `src/i18n/catalog.json` defines language names, routes and text direction. Turkish uses the root route; the other languages use their locale code. These codes represent languages, not regional variants or a verified popularity ranking.
+
+The added translations are machine-generated drafts prepared from fixed English site copy using the free Microsoft translation service; existing project translations were retained. They have not been reviewed by native speakers. Review each target market before treating the copy as final.
+
+Builds and visitor sessions never call a translation provider. The build validates the full key set for every language and fails on missing/empty strings or unexpected HTML instead of silently omitting a language. All titles, descriptions, tool instructions, FAQs and runtime messages are stored locally. Updating English copy requires updating the corresponding dictionaries.
+
+Supported languages:
+
+Türkçe (`tr`), English (`en`), Español (`es`), Deutsch (`de`), Français (`fr`), Português (`pt`), Русский (`ru`), Italiano (`it`), العربية (`ar`), 简体中文 (`zh`), 日本語 (`ja`), हिन्दी (`hi`), Bahasa Indonesia (`id`), বাংলা (`bn`), اردو (`ur`), فارسی (`fa`), עברית (`he`), 한국어 (`ko`), Tiếng Việt (`vi`), ไทย (`th`), Bahasa Melayu (`ms`), Nederlands (`nl`), Polski (`pl`), Українська (`uk`), Română (`ro`), Magyar (`hu`), Čeština (`cs`), Ελληνικά (`el`), Svenska (`sv`), Dansk (`da`), Norsk (`no`), Suomi (`fi`), Български (`bg`), Српски (`sr`), Hrvatski (`hr`), Slovenčina (`sk`), Slovenščina (`sl`), Lietuvių (`lt`), Latviešu (`lv`), Eesti (`et`), தமிழ் (`ta`), తెలుగు (`te`), मराठी (`mr`), ગુજરાતી (`gu`), ಕನ್ನಡ (`kn`), മലയാളം (`ml`), ਪੰਜਾਬੀ (`pa`), Kiswahili (`sw`), Filipino (`fil`), Afrikaans (`af`).
 
 ## Before scaling traffic
 
@@ -64,7 +76,18 @@ src/
 scripts/
   generate-locales.mjs      Language pages and home sitemap
   generate-tool-pages.mjs   Localized tool pages and SEO metadata
+src/i18n/
+  catalog.json             50 locales and writing directions
+  locales/*.json           Complete versioned translation drafts
+tests/locales.test.mjs      Checks all 250 generated pages and SEO links
 public/
   favicon.svg
   robots.txt
 ```
+
+## Free Cloudflare Pages alternative
+
+1. Connect this GitHub repository to a Cloudflare Pages project.
+2. In `astro.config.mjs`, set `site` to your Pages/custom domain and `base` to `/` when serving at the domain root. Keep the existing values for GitHub Pages.
+3. Set Node.js to 22, build command to `pnpm install --frozen-lockfile && pnpm run check && pnpm run build && pnpm run test:locales`, and output directory to `dist`.
+4. Deploy. The build is fully static and requires no server or translation API key.
