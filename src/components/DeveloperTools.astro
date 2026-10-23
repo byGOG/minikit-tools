@@ -1,0 +1,26 @@
+---
+import { Code2, Binary, Link2, Copy, ShieldCheck, ArrowRight } from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const cards = [
+ { id:'json',title:'jsonTitle',desc:'jsonDesc',input:'jsonInput',slug:'json-formatter',Icon:Code2,actions:[['format','jsonFormat'],['minify','jsonMinify']] },
+ { id:'base64',title:'base64Title',desc:'base64Desc',input:'textInput',slug:'base64-converter',Icon:Binary,actions:[['encode','encodeText'],['decode','decodeText']] },
+ { id:'url',title:'urlTitle',desc:'urlDesc',input:'textInput',slug:'url-encoder-decoder',Icon:Link2,actions:[['encode','encodeText'],['decode','decodeText']] },
+] as const;
+---
+{cards.map(({id,title,desc,input,slug,Icon,actions}) => (
+ <article class="tool-card text-tool-card developer-tool-card" id={`${id}-tool`}>
+  <div class="card-top"><span class="tool-icon icon-lilac"><Icon size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n={title}>{tr[title]}</h3><p data-i18n={desc}>{tr[desc]}</p>
+  <label class="field-label" for={`${id}-input`} data-i18n={input}>{tr[input]}</label>
+  <textarea class="text-input textarea" id={`${id}-input`} maxlength="100000" dir={id==='json'?'ltr':'auto'} spellcheck="false" data-i18n-placeholder="devInputHint" placeholder={tr.devInputHint}></textarea>
+  <div class="text-tool-actions" role="group" data-i18n-aria={title} aria-label={tr[title]}>
+   {actions.map(([action,key])=><button class="button-secondary" data-dev-tool={id} data-dev-action={action} data-i18n={key}>{tr[key]}</button>)}
+  </div>
+  <label class="field-label" for={`${id}-output`} data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id={`${id}-output`} dir={id==='json'?'ltr':'auto'} readonly spellcheck="false"></textarea>
+  <p class="tool-feedback" id={`${id}-feedback`} role="status"></p>
+  <div class="text-tool-actions"><button class="button-secondary full" data-copy-output={`${id}-output`} disabled><Copy size={14}/><span data-i18n="copyResult">{tr.copyResult}</span></button><button class="button-secondary full" data-clear-input={`${id}-input`} data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+ </article>
+))}

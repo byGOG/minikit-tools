@@ -1,9 +1,112 @@
 [
-  {"slug":"image-converter","title":"imageTitle","desc":"imageDesc","anchor":"image-tool","steps":["uploadChoose","outputFormat","convertDownload"]},
-  {"slug":"qr-code-generator","title":"qrTitle","desc":"qrDesc","anchor":"qr-tool","steps":["qrLabel","generateQr","downloadQr"]},
-  {"slug":"word-counter","title":"wordTitle","desc":"wordDesc","anchor":"word-tool","steps":["pasteText","words","readTime"]},
-  {"slug":"color-converter","title":"colorTitle","desc":"colorDesc","anchor":"color-tool","steps":["chooseColor","preview","localColor"]},
-  {"slug":"case-converter","title":"caseTitle","desc":"caseDesc","anchor":"case-tool","steps":["textInput","toUppercase","copyResult"]},
-  {"slug":"duplicate-line-remover","title":"dedupeTitle","desc":"dedupeDesc","anchor":"dedupe-tool","steps":["linesHint","ignoreCase","copyResult"]},
-  {"slug":"text-sorter","title":"sortTitle","desc":"sortDesc","anchor":"sort-tool","steps":["linesHint","sortOrder","copyResult"]}
+  {
+    "slug": "image-converter",
+    "title": "imageTitle",
+    "desc": "imageDesc",
+    "anchor": "image-tool",
+    "steps": [
+      "uploadChoose",
+      "outputFormat",
+      "convertDownload"
+    ]
+  },
+  {
+    "slug": "qr-code-generator",
+    "title": "qrTitle",
+    "desc": "qrDesc",
+    "anchor": "qr-tool",
+    "steps": [
+      "qrLabel",
+      "generateQr",
+      "downloadQr"
+    ]
+  },
+  {
+    "slug": "word-counter",
+    "title": "wordTitle",
+    "desc": "wordDesc",
+    "anchor": "word-tool",
+    "steps": [
+      "pasteText",
+      "words",
+      "readTime"
+    ]
+  },
+  {
+    "slug": "color-converter",
+    "title": "colorTitle",
+    "desc": "colorDesc",
+    "anchor": "color-tool",
+    "steps": [
+      "chooseColor",
+      "preview",
+      "localColor"
+    ]
+  },
+  {
+    "slug": "case-converter",
+    "title": "caseTitle",
+    "desc": "caseDesc",
+    "anchor": "case-tool",
+    "steps": [
+      "textInput",
+      "toUppercase",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "duplicate-line-remover",
+    "title": "dedupeTitle",
+    "desc": "dedupeDesc",
+    "anchor": "dedupe-tool",
+    "steps": [
+      "linesHint",
+      "ignoreCase",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "text-sorter",
+    "title": "sortTitle",
+    "desc": "sortDesc",
+    "anchor": "sort-tool",
+    "steps": [
+      "linesHint",
+      "sortOrder",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "json-formatter",
+    "title": "jsonTitle",
+    "desc": "jsonDesc",
+    "anchor": "json-tool",
+    "steps": [
+      "jsonInput",
+      "jsonFormat",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "base64-converter",
+    "title": "base64Title",
+    "desc": "base64Desc",
+    "anchor": "base64-tool",
+    "steps": [
+      "textInput",
+      "encodeText",
+      "decodeText"
+    ]
+  },
+  {
+    "slug": "url-encoder-decoder",
+    "title": "urlTitle",
+    "desc": "urlDesc",
+    "anchor": "url-tool",
+    "steps": [
+      "textInput",
+      "encodeText",
+      "decodeText"
+    ]
+  }
 ]

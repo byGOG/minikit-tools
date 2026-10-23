@@ -1,4 +1,5 @@
 import QRCode from 'qrcode';
+import { formatJson, encodeBase64, decodeBase64, convertUrlComponent } from './developer-tools';
 import { changeCase, removeDuplicateLines, sortLines } from './text-tools';
 
 import tr from '../i18n/locales/tr.json';
@@ -196,10 +197,35 @@ document.querySelectorAll<HTMLButtonElement>('[data-copy-output]').forEach((butt
   try { await navigator.clipboard.writeText(value); showToast(t('copied')); }
   catch { showToast(t('copyFail')); }
 }));
+for (const id of ['json', 'base64', 'url']) {
+  $(`#${id}-input`).addEventListener('input', () => {
+    setTextResult(`${id}-output`, '');
+    $(`#${id}-feedback`).textContent = '';
+    $(`#${id}-feedback`).classList.remove('error');
+  });
+}
+document.querySelectorAll<HTMLButtonElement>('[data-dev-tool]').forEach((button) => button.addEventListener('click', () => {
+  const id = button.dataset.devTool!;
+  const action = button.dataset.devAction;
+  const input = $<HTMLTextAreaElement>(`#${id}-input`).value;
+  const feedback = $(`#${id}-feedback`);
+  setTextResult(`${id}-output`, '');
+  feedback.classList.remove('error');
+  try {
+    const result = id === 'json' ? formatJson(input, action === 'minify')
+      : id === 'base64' ? (action === 'decode' ? decodeBase64(input) : encodeBase64(input))
+      : convertUrlComponent(input, action === 'decode');
+    setTextResult(`${id}-output`, result);
+    feedback.textContent = t(id === 'json' ? 'jsonValid' : 'conversionReady');
+  } catch (error) {
+    feedback.classList.add('error');
+    feedback.textContent = t(error instanceof RangeError ? 'devLimit' : id === 'json' ? 'jsonInvalid' : id === 'base64' ? 'base64Invalid' : 'urlInvalid');
+  }
+}));
 document.querySelectorAll<HTMLButtonElement>('[data-clear-input]').forEach((button) => button.addEventListener('click', () => {
   const input = $<HTMLTextAreaElement>(`#${button.dataset.clearInput}`);
   input.value = '';
-  updateTextTools();
+  input.dispatchEvent(new Event('input', { bubbles: true }));
   input.focus();
   showToast(t('cleared'));
 }));
