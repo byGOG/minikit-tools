@@ -4,8 +4,8 @@ MiniKit is a privacy-forward collection of free browser tools, built with Astro,
 
 ## Included
 
-- Exactly 50 language homepages and 200 localized tool guides, generated from versioned translation dictionaries. Arabic, Urdu, Persian and Hebrew use right-to-left layouts.
-- Four browser tools: image converter/compressor (WebP, JPEG and PNG), QR generator, Unicode-aware word/character counter, and HEX/RGB/HSL color converter.
+- Exactly 50 language homepages and 350 localized tool guides, generated from versioned translation dictionaries. Arabic, Urdu, Persian and Hebrew use right-to-left layouts.
+- Seven browser tools: image converter/compressor (WebP, JPEG and PNG), QR generator, Unicode-aware word/character counter, HEX/RGB/HSL color converter, case converter, duplicate line remover and text sorter.
 - Dedicated localized pages for each tool, with usage steps, FAQs, structured data, canonical/hreflang metadata and sitemap entries.
 - Accessibility support: keyboard skip link, visible focus, reduced-motion support, accessible mobile menu state and live word-count announcements.
 - No third-party analytics, ads, font requests or cookie tracking by default. Tool inputs are processed in the visitor's browser.
@@ -24,6 +24,7 @@ Build and preview:
 
 ```sh
 pnpm run build
+pnpm run test:tools
 pnpm run test:locales
 pnpm run check
 pnpm run preview
@@ -79,7 +80,7 @@ scripts/
 src/i18n/
   catalog.json             50 locales and writing directions
   locales/*.json           Complete versioned translation drafts
-tests/locales.test.mjs      Checks all 250 generated pages and SEO links
+tests/locales.test.mjs      Checks all 400 generated pages and SEO links
 public/
   favicon.svg
   robots.txt
@@ -91,3 +92,7 @@ public/
 2. In `astro.config.mjs`, set `site` to your Pages/custom domain and `base` to `/` when serving at the domain root. Keep the existing values for GitHub Pages.
 3. Set Node.js to 22, build command to `pnpm install --frozen-lockfile && pnpm run check && pnpm run build && pnpm run test:locales`, and output directory to `dist`.
 4. Deploy. The build is fully static and requires no server or translation API key.
+
+## Text tools
+
+All processing stays in the browser. Case conversion uses the selected site language, including Turkish dotted/dotless I. Duplicate removal keeps the first original line, normalizes Unicode only for comparisons and optionally ignores case or surrounding spaces; repeated blank lines are kept once. Sorting uses locale-aware collation and natural numeric order (2 before 10), preserves duplicate/empty lines and supports both directions. Inputs are limited to 100,000 characters; copy and clear controls are provided. Select the site language matching your text for language-specific behavior.

@@ -2,12 +2,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { catalog, dictionaries, escapeHtml as esc, siteBase, rootUrl, localePath } from './i18n.mjs';
 const dist = 'dist';
-const tools = [
- { slug:'image-converter', title:'imageTitle', desc:'imageDesc', anchor:'image-tool', steps:['uploadChoose','outputFormat','convertDownload'] },
- { slug:'qr-code-generator', title:'qrTitle', desc:'qrDesc', anchor:'qr-tool', steps:['qrLabel','generateQr','downloadQr'] },
- { slug:'word-counter', title:'wordTitle', desc:'wordDesc', anchor:'word-tool', steps:['pasteText','words','readTime'] },
- { slug:'color-converter', title:'colorTitle', desc:'colorDesc', anchor:'color-tool', steps:['chooseColor','preview','localColor'] }
-];
+const tools = JSON.parse(await readFile(new URL('../src/data/tools.json', import.meta.url), 'utf8'));
 const locales=catalog.map(({code})=>({code,path:localePath(code)}));
 for (const locale of locales) {
  const file=join(dist,locale.path,'index.html');

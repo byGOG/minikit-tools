@@ -1,0 +1,48 @@
+---
+import { Type, Copy, ListFilter, ListOrdered, ShieldCheck, ArrowRight } from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+---
+<article class="tool-card text-tool-card" id="case-tool">
+  <div class="card-top"><span class="tool-icon icon-lilac"><Type size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="caseTitle">{tr.caseTitle}</h3><p data-i18n="caseDesc">{tr.caseDesc}</p>
+  <label class="field-label" for="case-input" data-i18n="textInput">{tr.textInput}</label>
+  <textarea class="text-input textarea" id="case-input" maxlength="100000" dir="auto" data-i18n-placeholder="pasteText" placeholder={tr.pasteText}></textarea>
+  <div class="text-tool-actions" role="group" data-i18n-aria="caseTitle" aria-label={tr.caseTitle}>
+    <button class="button-secondary" id="case-upper" aria-pressed="true" data-i18n="toUppercase">{tr.toUppercase}</button>
+    <button class="button-secondary" id="case-lower" aria-pressed="false" data-i18n="toLowercase">{tr.toLowercase}</button>
+  </div>
+  <label class="field-label" for="case-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="case-output" dir="auto" readonly></textarea>
+  <div class="text-tool-actions"><button class="button-secondary full" data-copy-output="case-output" disabled><Copy size={14}/><span data-i18n="copyResult">{tr.copyResult}</span></button><button class="button-secondary full" data-clear-input="case-input" data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="case-converter" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
+<article class="tool-card text-tool-card" id="dedupe-tool">
+  <div class="card-top"><span class="tool-icon icon-green"><ListFilter size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="dedupeTitle">{tr.dedupeTitle}</h3><p data-i18n="dedupeDesc">{tr.dedupeDesc}</p>
+  <label class="field-label" for="dedupe-input" data-i18n="textInput">{tr.textInput}</label>
+  <textarea class="text-input textarea" id="dedupe-input" maxlength="100000" dir="auto" data-i18n-placeholder="linesHint" placeholder={tr.linesHint}></textarea>
+  <div class="text-tool-options">
+    <label><input type="checkbox" id="dedupe-ignore-case"/><span data-i18n="ignoreCase">{tr.ignoreCase}</span></label>
+    <label><input type="checkbox" id="dedupe-trim"/><span data-i18n="trimSpaces">{tr.trimSpaces}</span></label>
+  </div>
+  <label class="field-label" for="dedupe-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="dedupe-output" dir="auto" readonly></textarea>
+  <p class="tool-feedback" role="status"><span data-i18n="removedLines">{tr.removedLines}</span>: <b id="dedupe-removed">0</b></p>
+  <div class="text-tool-actions"><button class="button-secondary full" data-copy-output="dedupe-output" disabled><Copy size={14}/><span data-i18n="copyResult">{tr.copyResult}</span></button><button class="button-secondary full" data-clear-input="dedupe-input" data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="duplicate-line-remover" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
+<article class="tool-card text-tool-card" id="sort-tool">
+  <div class="card-top"><span class="tool-icon icon-peach"><ListOrdered size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="sortTitle">{tr.sortTitle}</h3><p data-i18n="sortDesc">{tr.sortDesc}</p>
+  <label class="field-label" for="sort-input" data-i18n="textInput">{tr.textInput}</label>
+  <textarea class="text-input textarea" id="sort-input" maxlength="100000" dir="auto" data-i18n-placeholder="linesHint" placeholder={tr.linesHint}></textarea>
+  <label class="field-label" for="sort-order" data-i18n="sortOrder">{tr.sortOrder}</label>
+  <select class="text-input" id="sort-order"><option value="asc" data-i18n="ascending">{tr.ascending}</option><option value="desc" data-i18n="descending">{tr.descending}</option></select>
+  <label class="field-label" for="sort-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="sort-output" dir="auto" readonly></textarea>
+  <div class="text-tool-actions"><button class="button-secondary full" data-copy-output="sort-output" disabled><Copy size={14}/><span data-i18n="copyResult">{tr.copyResult}</span></button><button class="button-secondary full" data-clear-input="sort-input" data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="text-sorter" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
