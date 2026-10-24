@@ -67,7 +67,7 @@
   "benefitThree": "Ei sekavia valikoita. Tarvitsemasi on juuri siellä missä sen pitääkin olla.",
   "privacyEyebrow": "YKSITYISET TARKOITUKSELLA",
   "privacyTitle": "Tiedostosi saavat työn<br/><span>Se on tehty ilman, että kulkee meidän lävitsemme.</span>",
-  "privacyLead": "Tällä hetkellä emme käytä analytiikka- tai mainospalveluita. Kuvat, QR-sisältö, teksti ja väriarvot käsitellään selaimessasi, eikä niitä lähetetä palvelimillemme. Päivitämme tämän ilmoituksen, jos se muuttuu.",
+  "privacyLead": "Kuvasi, tekstisi, QR-sisältösi ja laskelmasi käsitellään selaimessasi. Lue tietosuojakäytäntömme saadaksesi lisätietoja isännöinnistä, paikallisesta tallennuksesta ja nykyisestä mainonnan tilasta.",
   "privacyStamp": "YKSITYISYYS ENSIN",
   "ctaTitle": "Tee seuraava pieni tehtäväsi<br/>Vähän helpompaa.",
   "ctaLead": "Kokeile ensimmäistä työkaluasi nyt. Ilmainen, ilman tiliä, ei hälinää.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Valitse kelvollinen JPEG-, PNG- tai WebP-kuva rajojen puitteissa. Käytä kokonaisia pikseliarvoja; Rajauksen on pysyttävä alkuperäisen kuvan sisällä.",
   "editorDimensions": "Lähtömitat",
   "editorReset": "Nollaa muokkaukset",
-  "editorEmpty": "Valitse kuva nähdäksesi esikatselun"
+  "editorEmpty": "Valitse kuva nähdäksesi esikatselun",
+  "adLabel": "Mainos",
+  "privacyPolicyLabel": "Tietosuojakäytäntö",
+  "contactLabel": "Yhteystiedot"
 }

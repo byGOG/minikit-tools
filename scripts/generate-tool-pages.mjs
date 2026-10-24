@@ -59,6 +59,7 @@ for(const tool of tools){
   newUrls.push('<url><loc>'+xml(toolUrl)+'</loc>'+alternateTags+'<xhtml:link rel="alternate" hreflang="x-default" href="'+xml(defaultUrl)+'" /></url>');
  }
 }
+for (const page of ['privacy/', 'contact/']) newUrls.push('<url><loc>'+xml(new URL(page, rootUrl).href)+'</loc></url>');
 sitemap=sitemap.replace('</urlset>',newUrls.join('')+'</urlset>');
 await writeFile(sitemapPath,sitemap,'utf8');
 console.log('Generated '+(tools.length*locales.length)+' localized tool pages for '+locales.map((x)=>x.code).join(', ')+'.');

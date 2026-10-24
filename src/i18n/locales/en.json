@@ -67,7 +67,7 @@
   "benefitThree": "No confusing menus. What you need is right where it should be.",
   "privacyEyebrow": "PRIVATE BY DESIGN",
   "privacyTitle": "Your files get the job<br/><span>done without passing through us.</span>",
-  "privacyLead": "We currently use no analytics or advertising services. Images, QR content, text and color values are processed in your browser and are not sent to our servers. We will update this notice if that changes.",
+  "privacyLead": "Your images, text, QR contents and calculations are processed in your browser. Read our privacy policy for details about hosting, local storage and the current advertising status.",
   "privacyStamp": "PRIVACY FIRST",
   "ctaTitle": "Make your next little task<br/>a little easier.",
   "ctaLead": "Try your first tool now. Free, no account, no fuss.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Choose a valid JPEG, PNG or WebP image within the limits. Use whole pixel values; the crop must stay inside the original image.",
   "editorDimensions": "Output dimensions",
   "editorReset": "Reset edits",
-  "editorEmpty": "Choose an image to see a preview"
+  "editorEmpty": "Choose an image to see a preview",
+  "adLabel": "Advertisement",
+  "privacyPolicyLabel": "Privacy policy",
+  "contactLabel": "Contact"
 }

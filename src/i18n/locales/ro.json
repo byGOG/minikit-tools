@@ -67,7 +67,7 @@
   "benefitThree": "Fără meniuri confuze. Ceea ce ai nevoie este exact acolo unde trebuie să fie.",
   "privacyEyebrow": "PRIVAT PRIN DESIGN",
   "privacyTitle": "Dosarele tale primesc slujba<br/><span>făcută fără să treacă prin noi.</span>",
-  "privacyLead": "În prezent nu folosim servicii de analiză sau publicitate. Imaginile, conținutul QR, textul și valorile de culoare sunt procesate în browserul dumneavoastră și nu sunt trimise către serverele noastre. Vom actualiza această notificare dacă acest lucru se schimbă.",
+  "privacyLead": "Imaginile, textul, conținutul QR și calculele tale sunt procesate în browserul tău. Citiți politica noastră de confidențialitate pentru detalii despre găzduire, stocare locală și statusul actual al publicității.",
   "privacyStamp": "CONFIDENȚIALITATEA PE PRIMUL LOC",
   "ctaTitle": "Fă următoarea ta mică sarcină<br/>puțin mai ușor.",
   "ctaLead": "Încearcă primul tău instrument acum. Gratuit, fără cont, fără bătăi de cap.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Alege o imagine JPEG, PNG sau WebP validă în limite. Folosește valori întregi de pixeli; decuparea trebuie să rămână în interiorul imaginii originale.",
   "editorDimensions": "Dimensiuni de ieșire",
   "editorReset": "Resetarea editărilor",
-  "editorEmpty": "Alege o imagine pentru a vedea o previzualizare"
+  "editorEmpty": "Alege o imagine pentru a vedea o previzualizare",
+  "adLabel": "Publicitate",
+  "privacyPolicyLabel": "Politica de confidențialitate",
+  "contactLabel": "Contact"
 }

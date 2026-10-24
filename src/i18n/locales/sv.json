@@ -67,7 +67,7 @@
   "benefitThree": "Inga förvirrande menyer. Det du behöver är precis där det ska vara.",
   "privacyEyebrow": "PRIVAT TILL DESIGN",
   "privacyTitle": "Dina filer får jobbet<br/><span>Gjort utan att passera genom oss.</span>",
-  "privacyLead": "Vi använder för närvarande inga analys- eller reklamtjänster. Bilder, QR-innehåll, text och färgvärden bearbetas i din webbläsare och skickas inte till våra servrar. Vi kommer att uppdatera detta meddelande om det ändras.",
+  "privacyLead": "Dina bilder, text, QR-innehåll och beräkningar bearbetas i din webbläsare. Läs vår integritetspolicy för detaljer om hosting, lokal lagring och aktuell annonsstatus.",
   "privacyStamp": "INTEGRITET FÖRST",
   "ctaTitle": "Gör din nästa lilla uppgift<br/>lite lättare.",
   "ctaLead": "Prova ditt första verktyg nu. Gratis, inget konto, inget krångel.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Välj en giltig JPEG-, PNG- eller WebP-bild inom gränserna. Använd hela pixelvärden; Beskärningen måste stanna kvar i originalbilden.",
   "editorDimensions": "Utgångsdimensioner",
   "editorReset": "Återställda redigeringar",
-  "editorEmpty": "Välj en bild för att se en förhandsvisning"
+  "editorEmpty": "Välj en bild för att se en förhandsvisning",
+  "adLabel": "Annons",
+  "privacyPolicyLabel": "Integritetspolicy",
+  "contactLabel": "Kontakt"
 }

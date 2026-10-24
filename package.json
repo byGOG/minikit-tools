@@ -5,11 +5,11 @@
   "packageManager": "pnpm@11.25.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/generate-locales.mjs && node scripts/generate-tool-pages.mjs",
+    "build": "astro build && node scripts/generate-locales.mjs && node scripts/generate-tool-pages.mjs && node scripts/generate-advertising.mjs",
     "preview": "astro preview",
     "check": "astro check",
     "test:locales": "node --test tests/locales.test.mjs",
-    "test:tools": "node --experimental-strip-types --test tests/text-tools.test.mjs tests/developer-tools.test.mjs tests/everyday-tools.test.mjs tests/image-geometry.test.mjs"
+    "test:tools": "node --experimental-strip-types --test tests/text-tools.test.mjs tests/developer-tools.test.mjs tests/everyday-tools.test.mjs tests/image-geometry.test.mjs tests/advertising.test.mjs"
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",

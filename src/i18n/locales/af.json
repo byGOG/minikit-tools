@@ -67,7 +67,7 @@
   "benefitThree": "Geen verwarrende spyskaarte nie. Wat jy nodig het, is presies waar dit moet wees.",
   "privacyEyebrow": "PRIVAAT DEUR ONTWERP",
   "privacyTitle": "Jou lêers kry die werk<br/><span>gedoen sonder om deur ons te gaan.</span>",
-  "privacyLead": "Ons gebruik tans geen analise- of advertensiedienste nie. Beelde, QR-inhoud, teks en kleurwaardes word in jou blaaier verwerk en nie na ons bedieners gestuur nie. Ons sal hierdie kennisgewing opdateer as dit verander.",
+  "privacyLead": "Jou beelde, teks, QR-inhoud en berekeninge word in jou blaaier verwerk. Lees ons privaatheidsbeleid vir besonderhede oor hosting, plaaslike berging en die huidige advertensiestatus.",
   "privacyStamp": "PRIVAATHEID EERS",
   "ctaTitle": "Maak jou volgende klein taak<br/>'n bietjie makliker.",
   "ctaLead": "Probeer nou jou eerste gereedskap. Gratis, geen rekening, geen moeite nie.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Kies 'n geldige JPEG-, PNG- of WebP-beeld binne die perke. Gebruik hele pixelwaardes; die sny moet binne die oorspronklike beeld bly.",
   "editorDimensions": "Uitsetdimensies",
   "editorReset": "Herstel-wysigings",
-  "editorEmpty": "Kies 'n beeld om 'n voorskou te sien"
+  "editorEmpty": "Kies 'n beeld om 'n voorskou te sien",
+  "adLabel": "Advertensie",
+  "privacyPolicyLabel": "Privaatheidsbeleid",
+  "contactLabel": "Kontak"
 }

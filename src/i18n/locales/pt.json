@@ -67,7 +67,7 @@
   "benefitThree": "Sem menus confusos. O que precisa é de estar onde deve estar.",
   "privacyEyebrow": "PRIVADO POR DESIGN",
   "privacyTitle": "Seus arquivos fazem o trabalho<br/><span>sem passar por nós.</span>",
-  "privacyLead": "Atualmente não usamos análise nem publicidade. Imagens, conteúdo QR, texto e cores são processados no navegador e não enviados aos nossos servidores. Atualizaremos este aviso se isso mudar.",
+  "privacyLead": "Suas imagens, textos, conteúdos QR e cálculos são processados no seu navegador. Leia nossa política de privacidade para detalhes sobre hospedagem, armazenamento local e o status atual da publicidade.",
   "privacyStamp": "PRIVACIDADE EM PRIMEIRO LUGAR",
   "ctaTitle": "Torne a sua próxima pequena tarefa<br/>um pouco mais fácil.",
   "ctaLead": "Experimente a sua primeira ferramenta agora. Grátis, sem conta, sem problemas.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Escolha uma imagem válida em JPEG, PNG ou WebP dentro dos limites. Use valores inteiros de pixels; o corte deve permanecer dentro da imagem original.",
   "editorDimensions": "Dimensões de saída",
   "editorReset": "Resetar edições",
-  "editorEmpty": "Escolha uma imagem para ver uma prévia"
+  "editorEmpty": "Escolha uma imagem para ver uma prévia",
+  "adLabel": "Publicidade",
+  "privacyPolicyLabel": "Política de privacidade",
+  "contactLabel": "Contato"
 }

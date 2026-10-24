@@ -67,7 +67,7 @@
   "benefitThree": "Nincsenek zavaros menük. Amire szükséged van, az pont ott van, ahol lennie kell.",
   "privacyEyebrow": "MAGÁN TERVEZETTŐL",
   "privacyTitle": "A fájljaid megkapják az állást<br/><span>anélkül, hogy áthaladna rajtunk.</span>",
-  "privacyLead": "Jelenleg nem használunk elemző vagy hirdetési szolgáltatásokat. A képek, QR-tartalom, szöveg és színértékek a böngésződben dolgozzák fel, és nem küldik el szervereinket. Frissítjük ezt az értesítést, ha ez változik.",
+  "privacyLead": "A képeid, szöveged, QR tartalmaid és számításaid a böngészőben dolgozzák fel. Olvasd el adatvédelmi szabályzatunkat a hárításról, a helyi tárolásról és a jelenlegi hirdetési státuszról.",
   "privacyStamp": "AZ ELSŐ A MAGÁNÉLET",
   "ctaTitle": "Készítsd el a következő kis feladatodat<br/>Egy kicsit könnyebb.",
   "ctaLead": "Most próbáld ki az első eszközödet. Ingyen, nincs számla, semmi baj.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Válassz érvényes JPEG, PNG vagy WebP képet a megadott keretek között. Teljes pixelértékeket használj; a vágásnak az eredeti képen belül kell maradnia.",
   "editorDimensions": "Kimeneti méretek",
   "editorReset": "Szerkesztések visszaállítása",
-  "editorEmpty": "Válassz képet, hogy előzetest láss"
+  "editorEmpty": "Válassz képet, hogy előzetest láss",
+  "adLabel": "Hirdetés",
+  "privacyPolicyLabel": "Adatvédelmi szabályzat",
+  "contactLabel": "Kapcsolat"
 }

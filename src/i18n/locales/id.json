@@ -67,7 +67,7 @@
   "benefitThree": "Tanpa menu yang membingungkan. Yang Anda perlukan ada di tempatnya.",
   "privacyEyebrow": "Privat sejak dirancang",
   "privacyTitle": "File Anda menyelesaikan tugas<br/><span>tanpa melewati server kami.</span>",
-  "privacyLead": "Saat ini kami tidak menggunakan analitik atau iklan. Gambar, konten QR, teks, dan warna diproses di browser dan tidak dikirim ke server kami. Kami akan memperbarui pemberitahuan ini jika ada perubahan.",
+  "privacyLead": "Gambar, teks, konten QR, dan perhitungan Anda diproses di browser Anda. Baca kebijakan privasi kami untuk detail tentang hosting, penyimpanan lokal, dan status iklan terkini.",
   "privacyStamp": "PRIVASI UTAMA",
   "ctaTitle": "Buat tugas kecil berikutnya<br/>jadi sedikit lebih mudah.",
   "ctaLead": "Coba alat pertama Anda sekarang. Gratis, tanpa akun, tanpa repot.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Pilih gambar JPEG, PNG, atau WebP yang valid dalam batas yang ditentukan. Gunakan nilai piksel utuh; Crop harus tetap berada di dalam gambar asli.",
   "editorDimensions": "Dimensi keluaran",
   "editorReset": "Reset edit",
-  "editorEmpty": "Pilih gambar untuk melihat pratinjau"
+  "editorEmpty": "Pilih gambar untuk melihat pratinjau",
+  "adLabel": "Iklan",
+  "privacyPolicyLabel": "Kebijakan privasi",
+  "contactLabel": "Kontak"
 }

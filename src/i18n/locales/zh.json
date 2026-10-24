@@ -67,7 +67,7 @@
   "benefitThree": "没有复杂菜单。你需要的功能就在该在的位置。",
   "privacyEyebrow": "从设计开始保护隐私",
   "privacyTitle": "你的文件完成任务<br/><span>无需经过我们的服务器。</span>",
-  "privacyLead": "我们目前不使用分析或广告服务。图像、二维码内容、文本和颜色都在浏览器中处理，不会发送到我们的服务器。如有变化，我们会更新此说明。",
+  "privacyLead": "您的图片、文本、二维码内容和计算数据都会在浏览器中处理。请阅读我们的隐私政策，了解托管、本地存储及当前广告状态的详细信息。",
   "privacyStamp": "隐私优先",
   "ctaTitle": "让下一个小任务<br/>变得轻松一点。",
   "ctaLead": "现在试用第一个工具。免费、无需账户、简单省心。",
@@ -197,5 +197,8 @@
   "editorInvalid": "在限制范围内选择有效的JPEG、PNG或WebP图片。使用整像素值;裁剪必须保持在原始图像内部。",
   "editorDimensions": "输出尺寸",
   "editorReset": "重置编辑",
-  "editorEmpty": "选择一张图片预览"
+  "editorEmpty": "选择一张图片预览",
+  "adLabel": "广告",
+  "privacyPolicyLabel": "隐私政策",
+  "contactLabel": "联系方式"
 }
