@@ -240,5 +240,38 @@
       "pdfRange",
       "pdfExtract"
     ]
+  },
+  {
+    "slug": "uuid-generator",
+    "title": "uuidTitle",
+    "desc": "uuidDesc",
+    "anchor": "uuid-tool",
+    "steps": [
+      "uuidCount",
+      "uuidGenerate",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "sha256-hash",
+    "title": "shaTitle",
+    "desc": "shaDesc",
+    "anchor": "sha-tool",
+    "steps": [
+      "textInput",
+      "shaCompute",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "unix-timestamp-converter",
+    "title": "unixTitle",
+    "desc": "unixDesc",
+    "anchor": "unix-tool",
+    "steps": [
+      "unixUnit",
+      "unixTimestamp",
+      "unixToDate"
+    ]
   }
 ]

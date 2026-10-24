@@ -1,0 +1,19 @@
+---
+import{Fingerprint,Hash,Clock,ShieldCheck,ArrowRight}from'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const cards=[{id:'uuid',title:'uuidTitle',desc:'uuidDesc',slug:'uuid-generator',Icon:Fingerprint},{id:'sha',title:'shaTitle',desc:'shaDesc',slug:'sha256-hash',Icon:Hash},{id:'unix',title:'unixTitle',desc:'unixDesc',slug:'unix-timestamp-converter',Icon:Clock}]as const;
+---
+{cards.map(({id,title,desc,slug,Icon})=><article class="tool-card text-tool-card developer-tool-card" id={`${id}-tool`}>
+ <div class="card-top"><span class="tool-icon icon-lilac"><Icon size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div><h3 data-i18n={title}>{tr[title]}</h3><p data-i18n={desc}>{tr[desc]}</p>
+ <div class="developer-extra-options" id={`${id}-extra-options`}>
+ {id==='uuid'&&<><label class="field-label" for="uuid-count" data-i18n="uuidCount">{tr.uuidCount}</label><input class="text-input" id="uuid-count" type="number" min="1" max="100" value="1" step="1"/></>}
+ {id==='sha'&&<><label class="field-label" for="sha-text" data-i18n="textInput">{tr.textInput}</label><textarea class="text-input textarea" id="sha-text" maxlength="100000" dir="auto" spellcheck="false" aria-describedby="sha-hint"></textarea><small class="number-hint" id="sha-hint" data-i18n="shaHint">{tr.shaHint}</small></>}
+ {id==='unix'&&<><label class="field-label" for="unix-unit" data-i18n="unixUnit">{tr.unixUnit}</label><select class="text-input" id="unix-unit"><option value="seconds" data-i18n="unixSeconds">{tr.unixSeconds}</option><option value="milliseconds" data-i18n="unixMilliseconds">{tr.unixMilliseconds}</option></select><label class="field-label" for="unix-timestamp" data-i18n="unixTimestamp">{tr.unixTimestamp}</label><input class="text-input" id="unix-timestamp" type="text" inputmode="text" maxlength="40" value="0" dir="ltr"/><label class="field-label" for="unix-date" data-i18n="unixDate">{tr.unixDate}</label><input class="text-input" id="unix-date" type="datetime-local" step="0.001" min="0001-01-01T00:00" max="9999-12-31T23:59:59.999" value="1970-01-01T00:00" dir="ltr"/><small class="number-hint" data-i18n="unixHint">{tr.unixHint}</small></>}
+ </div>
+ {id==='uuid'&&<button class="button-primary full" id="uuid-generate" data-i18n="uuidGenerate">{tr.uuidGenerate}</button>}
+ {id==='sha'&&<><button class="button-primary full" id="sha-compute" data-i18n="shaCompute">{tr.shaCompute}</button><small class="number-hint" data-i18n="shaSecurity">{tr.shaSecurity}</small></>}
+ {id==='unix'&&<div class="text-tool-actions"><button class="button-secondary" id="unix-to-date" data-i18n="unixToDate">{tr.unixToDate}</button><button class="button-secondary" id="unix-from-date" data-i18n="unixFromDate">{tr.unixFromDate}</button><button class="button-secondary" id="unix-now" data-i18n="unixNow">{tr.unixNow}</button></div>}
+ <label class="field-label" for={`${id}-extra-output`} data-i18n="textResult">{tr.textResult}</label><textarea class="text-input textarea text-result" id={`${id}-extra-output`} readonly dir="ltr" spellcheck="false"></textarea><p class="tool-feedback" id={`${id}-extra-feedback`} role="status"></p><div class="text-tool-actions"><button class="button-secondary full" id={`${id}-extra-copy`} data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id={`${id}-extra-clear`} data-i18n="clearText">{tr.clearText}</button></div>
+ <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="privacyLine">{tr.privacyLine}</span></div><a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>)}
+<style is:global>.developer-extra-options{display:flex;flex-direction:column;gap:7px;margin-bottom:12px}.developer-extra-options input[type=datetime-local]{min-width:0;max-width:100%}.developer-extra-options+.button-primary{margin-bottom:10px}</style>

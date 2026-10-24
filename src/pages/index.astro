@@ -4,6 +4,7 @@ import TextTools from '../components/TextTools.astro';
 import DeveloperTools from '../components/DeveloperTools.astro';
 import EverydayTools from '../components/EverydayTools.astro';
 import AdSlot from '../components/AdSlot.astro';
+import DeveloperExtras from '../components/DeveloperExtras.astro';
 import PdfTools from '../components/PdfTools.astro';
 import ImageExtras from '../components/ImageExtras.astro';
 import ImageEditors from '../components/ImageEditors.astro';
@@ -28,6 +29,7 @@ const publicBase = import.meta.env.BASE_URL.replace(/\/$/, '') + '/';
         <article class="tool-card" id="color-tool"><div class="card-top"><span class="tool-icon icon-blue"><Pipette size={20}/></span><span class="tag-free" data-i18n="free">ÜCRETSİZ</span></div><h3 data-i18n="colorTitle">Renk dönüştürücü</h3><p data-i18n="colorDesc">HEX, RGB ve HSL değerleri arasında kolayca geçiş yap.</p><label class="field-label" for="color-hex" data-i18n="chooseColor">Bir renk seç</label><div class="color-pick-row"><input type="color" id="color-picker" value="#155c42"/><input class="text-input" id="color-hex" value="#155C42" maxlength="7" aria-label="HEX color"/></div><div class="color-values"><div class="color-value"><span>RGB</span><b id="rgb-value">21, 92, 66</b><button data-copy="rgb" aria-label="Copy RGB"><Copy size={15}/></button></div><div class="color-value"><span>HSL</span><b id="hsl-value">159, 63%, 22%</b><button data-copy="hsl" aria-label="Copy HSL"><Copy size={15}/></button></div></div><div class="color-swatch"><span id="swatch"></span><div><b data-i18n="preview">Önizleme</b><small id="swatch-label">#155C42</small></div></div><p class="tool-feedback" id="color-feedback" role="status"></p><div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localColor">Değerler anında hesaplanır</span></div><a class="tool-more" data-tool-page="color-converter" href="#tools"><span data-i18n="navCta">Araçları keşfet</span><ArrowRight size={14}/></a></article>
         <TextTools />
         <DeveloperTools />
+        <DeveloperExtras />
         <EverydayTools />
         <ImageEditors />
         <ImageExtras />
