@@ -67,7 +67,7 @@
   "benefitThree": "Không có menu gây nhầm lẫn. Những gì bạn cần đang ở đúng vị trí của nó.",
   "privacyEyebrow": "RIÊNG TƯ THEO THIẾT KẾ",
   "privacyTitle": "Các tệp của bạn sẽ được nhận nhiệm vụ<br/><span>Làm mà không đi qua chúng tôi.</span>",
-  "privacyLead": "Hiện tại chúng tôi không sử dụng bất kỳ dịch vụ phân tích hay quảng cáo nào. Hình ảnh, nội dung QR, văn bản và giá trị màu sắc sẽ được xử lý trong trình duyệt của bạn và không được gửi đến máy chủ của chúng tôi. Chúng tôi sẽ cập nhật thông báo này nếu có thay đổi.",
+  "privacyLead": "Hình ảnh, văn bản, nội dung QR và phép tính của bạn sẽ được xử lý ngay trên trình duyệt của bạn. Đọc chính sách bảo mật của chúng tôi để biết chi tiết về lưu trữ, lưu trữ cục bộ và trạng thái quảng cáo hiện tại.",
   "privacyStamp": "QUYỀN RIÊNG TƯ LÀ TRÊN HẾT",
   "ctaTitle": "Hãy làm nhiệm vụ nhỏ tiếp theo của bạn<br/>Dễ hơn một chút.",
   "ctaLead": "Hãy thử dụng cụ đầu tiên của bạn ngay bây giờ. Miễn phí, không cần tài khoản, không rắc rối.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Chọn một hình ảnh JPEG, PNG hoặc WebP hợp lệ trong giới hạn. Sử dụng giá trị toàn bộ điểm ảnh; Việc cắt phải nằm trong hình ảnh gốc.",
   "editorDimensions": "Kích thước đầu ra",
   "editorReset": "Đặt lại các chỉnh sửa",
-  "editorEmpty": "Chọn một hình ảnh để xem trước"
+  "editorEmpty": "Chọn một hình ảnh để xem trước",
+  "adLabel": "Quảng cáo",
+  "privacyPolicyLabel": "Chính sách bảo mật",
+  "contactLabel": "Liên hệ"
 }

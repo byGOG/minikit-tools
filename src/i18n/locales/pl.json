@@ -67,7 +67,7 @@
   "benefitThree": "Brak mylących menu. To, czego potrzebujesz, jest dokładnie tam, gdzie powinno być.",
   "privacyEyebrow": "PRYWATNY Z ZAŁOŻENIA",
   "privacyTitle": "Twoje akta dostają zadanie<br/><span>Zrobione bez przechodzenia przez nas.</span>",
-  "privacyLead": "Obecnie nie korzystamy z usług analitycznych ani reklamowych. Obrazy, treści QR, teksty i wartości kolorów są przetwarzane w Twojej przeglądarce i nie są wysyłane na nasze serwery. Zaktualizujemy to powiadomienie, jeśli się zmieni.",
+  "privacyLead": "Twoje obrazy, teksty, zawartość QR i obliczenia są przetwarzane w przeglądarce. Zapoznaj się z naszą polityką prywatności, aby poznać szczegóły dotyczące hostingu, lokalnego przechowywania oraz aktualnego statusu reklam.",
   "privacyStamp": "PRYWATNOŚĆ NA PIERWSZYM MIEJSCU",
   "ctaTitle": "Zrób kolejne małe zadanie<br/>trochę łatwiej.",
   "ctaLead": "Spróbuj teraz swojego pierwszego narzędzia. Za darmo, bez konta, bez problemów.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Wybierz ważny obraz JPEG, PNG lub WebP w granicach limitów. Używaj wartości całych pikseli; kadrowanie musi pozostać w obrębie oryginalnego obrazu.",
   "editorDimensions": "Wymiary wyjściowe",
   "editorReset": "Edycje resetowe",
-  "editorEmpty": "Wybierz obraz, aby zobaczyć podgląd"
+  "editorEmpty": "Wybierz obraz, aby zobaczyć podgląd",
+  "adLabel": "Reklama",
+  "privacyPolicyLabel": "Polityka prywatności",
+  "contactLabel": "Kontakt"
 }

@@ -67,7 +67,7 @@
   "benefitThree": "Jokių painių meniu. Tai, ko tau reikia, yra ten, kur ir turi būti.",
   "privacyEyebrow": "PRIVATUS PAGAL DIZAINĄ",
   "privacyTitle": "Tavo bylos gauna darbą<br/><span>Padaryta nepraėjus pro mus.</span>",
-  "privacyLead": "Šiuo metu nenaudojame jokių analizės ar reklamos paslaugų. Vaizdai, QR turinys, tekstas ir spalvų reikšmės apdorojami jūsų naršyklėje ir nėra siunčiami į mūsų serverius. Jei kas pasikeis, atnaujinsime šį pranešimą.",
+  "privacyLead": "Jūsų vaizdai, tekstas, QR turinys ir skaičiavimai apdorojami naršyklėje. Perskaitykite mūsų privatumo politiką, kad sužinotumėte apie talpinimą, vietinę saugyklą ir dabartinę reklamos būseną.",
   "privacyStamp": "PRIVATUMAS PIRMIAUSIA",
   "ctaTitle": "Padaryk kitą mažą užduotį<br/>Šiek tiek lengviau.",
   "ctaLead": "Išbandykite savo pirmąjį įrankį dabar. Nemokama, be paskyros, be rūpesčių.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Pasirinkite galiojantį JPEG, PNG arba WebP atvaizdą ribose. Naudokite visų pikselių reikšmes; Apkarpymas turi likti originaliame vaizde.",
   "editorDimensions": "Išėjimo matmenys",
   "editorReset": "Atstatymo redagavimai",
-  "editorEmpty": "Pasirinkite paveikslėlį, kad pamatytumėte peržiūrą"
+  "editorEmpty": "Pasirinkite paveikslėlį, kad pamatytumėte peržiūrą",
+  "adLabel": "Reklama",
+  "privacyPolicyLabel": "Privatumo politika",
+  "contactLabel": "Kontaktai"
 }

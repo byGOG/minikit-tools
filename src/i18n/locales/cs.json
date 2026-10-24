@@ -67,7 +67,7 @@
   "benefitThree": "Žádné matoucí menu. Co potřebujete, je přesně tam, kde to má být.",
   "privacyEyebrow": "SOUKROMÝ PODLE ZÁMĚRU",
   "privacyTitle": "Vaše soubory dostanou práci<br/><span>Udělalo to, aniž by prošlo skrz nás.</span>",
-  "privacyLead": "V současnosti nepoužíváme žádné analytické ani reklamní služby. Obrázky, QR obsah, text a barevné hodnoty jsou zpracovávány ve vašem prohlížeči a nejsou odesílány na naše servery. Pokud se to změní, toto oznámení budeme aktualizovat.",
+  "privacyLead": "Vaše obrázky, text, obsah QR kódů a výpočty jsou zpracovávány ve vašem prohlížeči. Přečtěte si naše zásady ochrany soukromí pro podrobnosti o hostingu, lokálním úložišti a aktuálním stavu reklamy.",
   "privacyStamp": "SOUKROMÍ NA PRVNÍM MÍSTĚ",
   "ctaTitle": "Udělej si další malý úkol<br/>Trochu jednodušší.",
   "ctaLead": "Zkus teď svůj první nástroj. Zdarma, bez účtu, bez komplikací.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Vyberte platný obrázek JPEG, PNG nebo WebP v rámci limitů. Používejte hodnoty celých pixelů; ořez musí zůstat uvnitř původního obrázku.",
   "editorDimensions": "Výstupní rozměry",
   "editorReset": "Resetování úprav",
-  "editorEmpty": "Vyberte obrázek pro zobrazení náhledu"
+  "editorEmpty": "Vyberte obrázek pro zobrazení náhledu",
+  "adLabel": "Reklama",
+  "privacyPolicyLabel": "Zásady ochrany soukromí",
+  "contactLabel": "Kontakt"
 }

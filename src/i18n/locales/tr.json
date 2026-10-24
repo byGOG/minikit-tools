@@ -67,7 +67,7 @@
   "benefitThree": "Kafa karıştıran menüler yok. Aradığın şey, tam da olması gereken yerde.",
   "privacyEyebrow": "TASARLANDIĞI GİBİ GİZLİ",
   "privacyTitle": "Dosyaların bize<br/><span>uğramadan işini görür.</span>",
-  "privacyLead": "Şu anda analiz veya reklam hizmeti kullanmıyoruz. Görseller, QR içeriği, metin ve renk değerleri tarayıcında işlenir; sunucularımıza gönderilmez. Bu durum değişirse gizlilik bildirimini güncelleriz.",
+  "privacyLead": "Görsellerin, metnin, QR içeriklerin ve hesaplamaların tarayıcında işlenir. Barındırma, yerel depolama ve güncel reklam durumu için gizlilik politikamızı okuyabilirsin.",
   "privacyStamp": "GİZLİLİK ÖNCE GELİR",
   "ctaTitle": "Bir sonraki küçük işin<br/>daha kolay olsun.",
   "ctaLead": "İlk aracını hemen dene. Ücretsiz, hesapsız, zahmetsiz.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Sınırlar içinde geçerli bir JPEG, PNG veya WebP görsel seç. Tam sayı piksel değerleri kullan; kırpma özgün görselin içinde kalmalı.",
   "editorDimensions": "Çıktı boyutları",
   "editorReset": "Düzenlemeleri sıfırla",
-  "editorEmpty": "Önizleme için bir görsel seç"
+  "editorEmpty": "Önizleme için bir görsel seç",
+  "adLabel": "Reklam",
+  "privacyPolicyLabel": "Gizlilik politikası",
+  "contactLabel": "İletişim"
 }

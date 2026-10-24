@@ -67,7 +67,7 @@
   "benefitThree": "Nav nekādu mulsinošu izvēlņu. Tas, kas tev vajadzīgs, ir tieši tur, kur tam jābūt.",
   "privacyEyebrow": "PRIVĀTS PĒC DIZAINA",
   "privacyTitle": "Tavi faili iegūst darbu<br/><span>Darīts, neiziet cauri mums.</span>",
-  "privacyLead": "Pašlaik mēs neizmantojam analītikas vai reklāmas pakalpojumus. Attēli, QR saturs, teksts un krāsu vērtības tiek apstrādātas jūsu pārlūkprogrammā un netiek nosūtītas uz mūsu serveriem. Mēs atjaunināsim šo paziņojumu, ja tas mainīsies.",
+  "privacyLead": "Jūsu attēli, teksts, QR saturs un aprēķini tiek apstrādāti pārlūkprogrammā. Izlasiet mūsu privātuma politiku, lai uzzinātu vairāk par mitināšanu, lokālo glabāšanu un pašreizējo reklāmas statusu.",
   "privacyStamp": "PRIVĀTUMS PIRMAJĀ VIETĀ",
   "ctaTitle": "Veic savu nākamo uzdevumu<br/>Mazliet vieglāk.",
   "ctaLead": "Pamēģini savu pirmo rīku tagad. Bez maksas, bez konta, bez liekām problēmām.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Izvēlieties derīgu JPEG, PNG vai WebP attēlu noteiktajā laikā. Izmanto veselas pikseļu vērtības; Apgriešanai jāpaliek oriģinālā attēla iekšpusē.",
   "editorDimensions": "Izvades izmēri",
   "editorReset": "Atiestatīšanas rediģējumi",
-  "editorEmpty": "Izvēlieties attēlu, lai redzētu priekšskatījumu"
+  "editorEmpty": "Izvēlieties attēlu, lai redzētu priekšskatījumu",
+  "adLabel": "Reklāma",
+  "privacyPolicyLabel": "Privātuma politika",
+  "contactLabel": "Kontakti"
 }

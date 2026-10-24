@@ -67,7 +67,7 @@
   "benefitThree": "Nema zbunjujućih izbornika. Ono što ti treba je točno tamo gdje treba biti.",
   "privacyEyebrow": "PRIVATNO PO DIZAJNU",
   "privacyTitle": "Tvoji dosjei dobivaju posao<br/><span>Učinjeno bez prolaska kroz nas.</span>",
-  "privacyLead": "Trenutno ne koristimo analitičke niti oglašivačke usluge. Slike, QR sadržaj, tekst i vrijednosti boja obrađuju se u vašem pregledniku i ne šalju se na naše servere. Ažurirat ćemo ovu obavijest ako se to promijeni.",
+  "privacyLead": "Vaše slike, tekst, QR sadržaj i izračuni obrađuju se u vašem pregledniku. Pročitajte našu politiku privatnosti za detalje o hostingu, lokalnom skladištenju i trenutnom statusu oglašavanja.",
   "privacyStamp": "PRIVATNOST NA PRVOM MJESTU",
   "ctaTitle": "Napravi svoj sljedeći mali zadatak<br/>Malo lakše.",
   "ctaLead": "Isprobaj svoj prvi alat sada. Besplatno, bez računa, bez komplikacija.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Odaberite valjanu JPEG, PNG ili WebP sliku unutar ograničenja. Koristi cijele vrijednosti piksela; Izrez mora ostati unutar izvorne slike.",
   "editorDimensions": "Dimenzije izlaza",
   "editorReset": "Resetirane izmjene",
-  "editorEmpty": "Odaberite sliku za pregled"
+  "editorEmpty": "Odaberite sliku za pregled",
+  "adLabel": "Oglas",
+  "privacyPolicyLabel": "Politika privatnosti",
+  "contactLabel": "Kontakt"
 }

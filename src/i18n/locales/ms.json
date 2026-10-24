@@ -67,7 +67,7 @@
   "benefitThree": "Tiada menu yang mengelirukan. Apa yang anda perlukan ada di tempat yang sepatutnya.",
   "privacyEyebrow": "PERIBADI MENGIKUT REKA BENTUK",
   "privacyTitle": "Fail anda mendapat pekerjaan ini<br/><span>Selesai tanpa melalui kami.</span>",
-  "privacyLead": "Kami kini tidak menggunakan sebarang perkhidmatan analitik atau pengiklanan. Imej, kandungan QR, nilai teks dan warna diproses dalam pelayar anda dan tidak dihantar ke pelayan kami. Kami akan mengemas kini notis ini jika ia berubah.",
+  "privacyLead": "Imej, teks, kandungan QR dan pengiraan anda diproses dalam pelayar anda. Baca polisi privasi kami untuk maklumat lanjut mengenai hosting, storan tempatan dan status pengiklanan semasa.",
   "privacyStamp": "PRIVASI UTAMAKAN",
   "ctaTitle": "Buat tugasan kecil anda yang seterusnya<br/>sedikit lebih mudah.",
   "ctaLead": "Cuba alat pertama anda sekarang. Percuma, tiada akaun, tiada kerumitan.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Pilih imej JPEG, PNG atau WebP yang sah dalam had tersebut. Gunakan nilai piksel penuh; Potongan mesti kekal dalam imej asal.",
   "editorDimensions": "Dimensi output",
   "editorReset": "Menetapkan semula suntingan",
-  "editorEmpty": "Pilih imej untuk melihat pratonton"
+  "editorEmpty": "Pilih imej untuk melihat pratonton",
+  "adLabel": "Iklan",
+  "privacyPolicyLabel": "Dasar privasi",
+  "contactLabel": "Hubungi"
 }

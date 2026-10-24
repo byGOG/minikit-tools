@@ -67,7 +67,7 @@
   "benefitThree": "Hakuna menyu za kutatanisha. Unachohitaji ni mahali ambapo inapaswa kuwa.",
   "privacyEyebrow": "BINAFSI KWA MUUNDO",
   "privacyTitle": "Faili zako zinapata kazi<br/><span>imefanywa bila kupita kwetu.</span>",
-  "privacyLead": "Kwa sasa hatutumii huduma za uchanganuzi au utangazaji. Picha, yaliyomo kwenye QR, maandishi na maadili ya rangi huchakatwa kwenye kivinjari chako na hazitumwa kwa seva zetu. Tutasasisha ilani hii ikiwa hiyo itabadilika.",
+  "privacyLead": "Picha zako, maandishi, yaliyomo kwenye QR na mahesabu yanachakatwa kwenye kivinjari chako. Soma sera yetu ya faragha kwa maelezo juu ya mwenyeji, uhifadhi wa ndani na hali ya sasa ya utangazaji.",
   "privacyStamp": "FARAGHA KWANZA",
   "ctaTitle": "Fanya kazi yako ndogo inayofuata<br/>rahisi kidogo.",
   "ctaLead": "Jaribu zana yako ya kwanza sasa. Bure, hakuna akaunti, hakuna fujo.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Chagua picha halali ya JPEG, PNG au WebP ndani ya mipaka. Tumia maadili ya pikseli nzima; mazao lazima yakae ndani ya picha asili.",
   "editorDimensions": "Vipimo vya pato",
   "editorReset": "Weka upya uhariri",
-  "editorEmpty": "Chagua picha ili kuona onyesho la kukagua"
+  "editorEmpty": "Chagua picha ili kuona onyesho la kukagua",
+  "adLabel": "Tangazo",
+  "privacyPolicyLabel": "Sera ya faragha",
+  "contactLabel": "Wasiliana"
 }

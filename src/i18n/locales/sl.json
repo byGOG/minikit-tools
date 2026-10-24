@@ -67,7 +67,7 @@
   "benefitThree": "Brez zmedenih menijev. Kar potrebuješ, je točno tam, kjer mora biti.",
   "privacyEyebrow": "ZASEBNO PO ZASNOVI",
   "privacyTitle": "Tvoji dosjeji dobijo nalogo<br/><span>Storjeno, ne da bi šlo skozi nas.</span>",
-  "privacyLead": "Trenutno ne uporabljamo analitike ali oglaševalskih storitev. Slike, QR vsebine, besedila in barvne vrednosti se obdelujejo v vašem brskalniku in niso poslani na naše strežnike. Obvestilo bomo posodobili, če se to spremeni.",
+  "privacyLead": "Vaše slike, besedila, QR vsebine in izračuni se obdelujejo v vašem brskalniku. Preberite našo politiko zasebnosti za podrobnosti o gostovanju, lokalnem shranjevanju in trenutnem stanju oglaševanja.",
   "privacyStamp": "ZASEBNOST NA PRVEM MESTU",
   "ctaTitle": "Naredi svojo naslednjo majhno nalogo<br/>Malo lažje.",
   "ctaLead": "Preizkusi svoje prvo orodje zdaj. Brezplačno, brez računa, brez težav.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Izberite veljavno sliko JPEG, PNG ali WebP znotraj omejitev. Uporabi vrednosti celih pikslov; obrezovanje mora ostati znotraj izvirne slike.",
   "editorDimensions": "Izhodne dimenzije",
   "editorReset": "Ponovni popravki",
-  "editorEmpty": "Izberite sliko za ogled predgleda"
+  "editorEmpty": "Izberite sliko za ogled predgleda",
+  "adLabel": "Oglas",
+  "privacyPolicyLabel": "Politika zasebnosti",
+  "contactLabel": "Stik"
 }

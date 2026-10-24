@@ -67,7 +67,7 @@
   "benefitThree": "Walang nakakalitong menu. Ang kailangan mo ay nasa tamang lugar kung saan ito dapat naroroon.",
   "privacyEyebrow": "PRIBADO AYON SA DISENYO",
   "privacyTitle": "Ang iyong mga file ang makakakuha ng trabaho<br/><span>Ginawa nang hindi dumadaan sa amin.</span>",
-  "privacyLead": "Sa kasalukuyan, wala kaming ginagamit na analytics o advertising services. Ang mga larawan, nilalaman ng QR, teksto at mga halaga ng kulay ay pinoproseso sa iyong browser at hindi ipinapadala sa aming mga server. Ia-update namin ang paunawang ito kung magbabago ito.",
+  "privacyLead": "Ang iyong mga larawan, teksto, nilalaman ng QR at mga kalkulasyon ay pinoproseso sa iyong browser. Basahin ang aming patakaran sa privacy para sa mga detalye tungkol sa hosting, lokal na imbakan, at kasalukuyang status ng advertising.",
   "privacyStamp": "UNAHIN ANG PRIVACY",
   "ctaTitle": "Gawin ang iyong susunod na maliit na gawain<br/>medyo mas madali.",
   "ctaLead": "Subukan mo na ang unang tool mo. Libre, walang account, walang abala.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Pumili ng valid na JPEG, PNG, o WebP image sa loob ng limitasyon. Gamitin ang buong pixel values; Dapat manatili ang crop sa orihinal na imahe.",
   "editorDimensions": "Sukat ng Output",
   "editorReset": "I-reset ang mga edit",
-  "editorEmpty": "Pumili ng larawan para makita ang preview"
+  "editorEmpty": "Pumili ng larawan para makita ang preview",
+  "adLabel": "Patalastas",
+  "privacyPolicyLabel": "Patakaran sa Privacy",
+  "contactLabel": "Makipag-ugnayan"
 }

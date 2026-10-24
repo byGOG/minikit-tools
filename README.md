@@ -46,7 +46,7 @@ pnpm run preview
 3. Run the workflow again. The build adds Google's verification meta tag only when the secret exists.
 4. In Search Console, submit `https://bygog.github.io/minikit-tools/sitemap.xml`.
 
-Analytics and advertising are disabled. Add them only after setting up the relevant account, providing its ID, and updating the privacy and consent experience for the intended markets.
+Analytics and advertising are disabled by default. AdSense integration is prepared; see `docs/ADSENSE-SETUP.md` before enabling it.
 
 ## Translation notes
 
@@ -64,7 +64,7 @@ Türkçe (`tr`), English (`en`), Español (`es`), Deutsch (`de`), Français (`fr
 
 - Connect Search Console and monitor indexing, queries and sitemap processing.
 - Review translations and search intent for each market.
-- Add a contact and privacy policy page before enabling advertising, analytics or other third-party processing.
+- Bilingual privacy and contact pages are published under `/privacy/` and `/contact/`. Keep their disclosures current when changing services.
 - Check image codec support across target browsers.
 
 ## Project layout
@@ -114,3 +114,7 @@ Percentage modes are A% of B, A/B × 100 and (B−A)/|A| × 100. Zero denominato
 The three image editors accept JPEG/PNG/WebP up to 20 MiB, 16 million pixels and 8192 pixels per side. File signatures and decoded dimensions are checked. Decoding is frozen into an original canvas so edits always use the original pixels and animated sources export a single frame. Exports are PNG and retain transparency; metadata is not carried through canvas export.
 
 Resizing uses whole pixels and optional original-aspect-ratio locking; cropping uses top-left pixel coordinates and a centered-square shortcut. Rotation is clockwise in quarter turns; mirroring applies in original-image axes before rotation. Reset restores the original. Controls, preview and downloads are disabled/cleared during loading or invalid edits. Revision tokens prevent older asynchronous image loads/PNG exports from replacing newer results, and obsolete object URLs are revoked. Images and filenames are not uploaded or stored.
+
+## Advertising
+
+AdSense configuration: `src/data/advertising.json`. No ad scripts, ad placeholders or third-party ad requests are rendered while disabled. A valid publisher ID enables meta-tag verification only; live ads require explicit activation, site approval, two real ad unit IDs, and a published Google CMP message. See `docs/ADSENSE-SETUP.md` for account setup and the root-level ads.txt requirement on GitHub project Pages. There are 852 indexed pages including privacy and contact.

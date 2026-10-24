@@ -4,10 +4,11 @@ import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { catalog, dictionaries, escapeHtml, translatedHtml, localePath, rootUrl, siteBase } from '../scripts/i18n.mjs';
 
+const advertising = JSON.parse(await readFile(new URL('../src/data/advertising.json', import.meta.url), 'utf8'));
 const toolCatalog = JSON.parse(await readFile(new URL('../src/data/tools.json', import.meta.url), 'utf8'));
 const tools = toolCatalog.map(({slug,title,desc}) => [slug,title,desc]);
-const pageCount = catalog.length * (tools.length + 1);
-const expectedUrls = new Set();
+const pageCount = catalog.length * (tools.length + 1) + 2;
+const expectedUrls = new Set(['privacy/', 'contact/'].map(path=>new URL(path, rootUrl).href));
 
 test('all 50 dictionaries are complete and contain balanced allowed markup', () => {
   assert.equal(catalog.length, 50);
@@ -36,6 +37,9 @@ for (const locale of catalog) {
       assert.ok(html.includes('id="tool-total">' + String(tools.length).padStart(2, '0') + '</b>'));
       for (const tool of toolCatalog) assert.ok(html.includes('id="'+tool.anchor+'"'));
       expectedUrls.add(url);
+      for(const page of ['privacy/', 'contact/']) assert.ok(html.includes(`href="${siteBase}${page}"`), `${path}: policy/contact link`);
+      assert.equal(html.includes('googlesyndication.com'), advertising.enabled, `${path}: advertising activation`);
+      assert.equal([...html.matchAll(/class="adsbygoogle"/g)].length, advertising.enabled ? 2 : 0, `${path}: manual ad units`);
       assert.ok(html.includes(`<html lang="${locale.code}" dir="${locale.dir}">`), `${path}: language/direction`);
       const expectedTitle = d[title] + (slug ? ' — MiniKit' : '');
       assert.ok(html.includes(`<title>${escapeHtml(expectedTitle)}</title>`), `${path}: title`);

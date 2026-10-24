@@ -67,7 +67,7 @@
   "benefitThree": "Geen verwarrende menu's. Wat je nodig hebt is precies waar het hoort te zijn.",
   "privacyEyebrow": "PRIVÉ DOOR ONTWERP",
   "privacyTitle": "Jouw dossiers krijgen de juiste klus<br/><span>Zonder dat we door ons heen gaan.</span>",
-  "privacyLead": "We gebruiken momenteel geen analyse- of advertentieservices. Afbeeldingen, QR-inhoud, tekst en kleurwaarden worden in uw browser verwerkt en niet naar onze servers gestuurd. We zullen deze kennisgeving bijwerken als dat verandert.",
+  "privacyLead": "Je afbeeldingen, tekst, QR-inhoud en berekeningen worden verwerkt in je browser. Lees ons privacybeleid voor details over hosting, lokale opslag en de huidige advertentiestatus.",
   "privacyStamp": "PRIVACY EERST",
   "ctaTitle": "Maak je volgende kleine taak<br/>Iets makkelijker.",
   "ctaLead": "Probeer nu je eerste tool. Gratis, geen account, geen gedoe.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Kies een geldige JPEG-, PNG- of WebP-afbeelding binnen de limieten. Gebruik hele pixelwaarden; De bijsnijding moet binnen het originele beeld blijven.",
   "editorDimensions": "Uitvoerafmetingen",
   "editorReset": "Reset-bewerkingen",
-  "editorEmpty": "Kies een afbeelding om een preview te zien"
+  "editorEmpty": "Kies een afbeelding om een preview te zien",
+  "adLabel": "Advertentie",
+  "privacyPolicyLabel": "Privacybeleid",
+  "contactLabel": "Contact"
 }

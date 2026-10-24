@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+const {title, description} = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '') + '/';
+---
+<Layout title={`${title} — MiniKit`} description={description} lang="tr" advertisements={false} canonical={new URL(Astro.url.pathname, Astro.site).href}>
+ <main>
+  <nav><a href={base}>← MiniKit</a><div><a href={`${base}privacy/`}>Gizlilik / Privacy</a><a href={`${base}contact/`}>İletişim / Contact</a></div></nav>
+  <article><h1>{title}</h1><slot /></article>
+  <footer>© {new Date().getFullYear()} MiniKit · Önder GÖG</footer>
+ </main>
+</Layout>
+<style is:global>
+:root{font-family:system-ui,sans-serif;color:#15251e;background:#f8faf7}*{box-sizing:border-box}body{margin:0}main{max-width:860px;margin:auto;padding:24px}nav{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:16px 0 32px}nav div{display:flex;gap:20px;flex-wrap:wrap}a{color:#155c42;text-underline-offset:3px}article{padding:clamp(20px,5vw,48px);background:#fff;border:1px solid #e3e9e1;border-radius:18px}h1{font-size:clamp(27px,4vw,38px);line-height:1.2}h2{font-size:21px;margin-top:32px}p,li{line-height:1.8;overflow-wrap:anywhere;color:#526258}section+section{margin-top:44px;padding-top:20px;border-top:1px solid #e3e9e1}footer{padding:28px 0;color:#64756a;font-size:13px}
+</style>

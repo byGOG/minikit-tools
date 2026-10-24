@@ -67,7 +67,7 @@
   "benefitThree": "Ei mingeid segaseid menüüsid. See, mida vajad, on täpselt seal, kus see peaks olema.",
   "privacyEyebrow": "PRIVAATNE DISAINIGA",
   "privacyTitle": "Sinu failid saavad töö<br/><span>Ilma meist läbi minemata.</span>",
-  "privacyLead": "Praegu ei kasuta me analüütika- ega reklaamiteenuseid. Pildid, QR-sisu, tekst ja värviväärtused töödeldakse teie brauseris ega saadeta meie serveritesse. Uuendame seda teadet, kui see muutub.",
+  "privacyLead": "Sinu pildid, tekst, QR-sisu ja arvutused töödeldakse brauseris. Loe meie privaatsuspoliitikat, et saada teavet majutuse, kohaliku salvestusruumi ja praeguse reklaamistaatuse kohta.",
   "privacyStamp": "PRIVAATSUS ESIKOHAL",
   "ctaTitle": "Tee oma järgmine väike ülesanne<br/>natuke lihtsam.",
   "ctaLead": "Proovi nüüd oma esimest tööriista. Tasuta, ilma kontota, ilma vaevata.",
@@ -197,5 +197,8 @@
   "editorInvalid": "Vali kehtiv JPEG, PNG või WebP pilt piirides. Kasuta terveid piksliväärtusi; Kärpimine peab jääma originaalpildi sisse.",
   "editorDimensions": "Väljundmõõtmed",
   "editorReset": "Muudatuste lähtestamine",
-  "editorEmpty": "Vali pilt, et näha eelvaadet"
+  "editorEmpty": "Vali pilt, et näha eelvaadet",
+  "adLabel": "Reklaam",
+  "privacyPolicyLabel": "Privaatsuspoliitika",
+  "contactLabel": "Kontakt"
 }

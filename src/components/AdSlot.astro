@@ -1,0 +1,17 @@
+---
+import settings from '../data/advertising.json';
+import {validateAdvertising} from '../scripts/advertising-config';
+const config = validateAdvertising(settings);
+const {position} = Astro.props as {position: 'top' | 'bottom'};
+const slot = position === 'top' ? config.topSlot : config.bottomSlot;
+---
+{config.enabled && <aside class="advertisement" aria-label="Advertisement">
+  <p data-i18n="adLabel">Reklam</p>
+  <ins class="adsbygoogle" style="display:block" data-ad-client={config.publisherId} data-ad-slot={slot} data-ad-format="horizontal" data-full-width-responsive="false"></ins>
+  <script is:inline>(window.adsbygoogle = window.adsbygoogle || []).push({});</script>
+</aside>}
+<style>
+.advertisement{max-width:1142px;min-width:0;margin:40px auto;padding:24px 16px;border-block:1px solid #e3e9e1;text-align:center;overflow:hidden}
+.advertisement p{margin:0 0 16px;font-size:11px;color:#67756b;letter-spacing:.06em}
+@media(max-width:640px){.advertisement{margin:32px 16px}}
+</style>
