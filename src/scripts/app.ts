@@ -1,4 +1,5 @@
 import QRCode from 'qrcode';
+import { setupDeveloperExtras } from './developer-extras';
 import { setupPdfTools } from './pdf-tools';
 import { setupImageExtras } from './image-extras';
 import { setupImageEditors } from './image-editors';
@@ -316,4 +317,5 @@ async function loadLocale() {
 setupImageEditors(t);
 setupImageExtras(t);
 setupPdfTools(t);
+setupDeveloperExtras(t);
 void loadLocale();

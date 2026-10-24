@@ -218,5 +218,35 @@
       "heading": "Extract selected PDF pages into a new file",
       "text": "Choose one PDF and enter a selection such as 1-3,5. Entering 3,1-2 produces pages in the order 3,1,2; duplicate selections are included once. The result is one new PDF containing the selected pages. The source file stays unchanged. Empty selections, reversed ranges and non-existent page numbers are rejected."
     }
+  },
+  "uuid-generator": {
+    "tr": {
+      "heading": "Rastgele UUID v4 kimlikleri üretme",
+      "text": "1 ile 100 arasında adet seç ve üret düğmesine bas. Her satır sürüm 4 ve RFC varyant bitleri ayarlanmış ayrı bir UUID’dir. Rastgele baytlar cihazın Web Crypto kaynağından alınır; matematiksel benzersizlik garantisi verilmez. Sonuçları topluca kopyalayabilirsin."
+    },
+    "en": {
+      "heading": "Generate random UUID v4 identifiers",
+      "text": "Choose a count from 1 to 100 and generate. Each line is a separate UUID with version 4 and RFC variant bits. Random bytes come from your device’s Web Crypto source; mathematical uniqueness is not guaranteed. Copy the results as a batch."
+    }
+  },
+  "sha256-hash": {
+    "tr": {
+      "heading": "UTF-8 metnin SHA-256 özetini hesaplama",
+      "text": "Metnini yazıp hesapla düğmesine bas. Sonuç 64 küçük harfli onaltılık karakterdir. Örneğin abc metninin özeti ba7816bf ile başlar. Boş metin de geçerlidir; baştaki/sondaki boşluklar ve satır sonları temizlenmez. Bu metin aracıdır, dosya özeti veya parola saklama sistemi değildir."
+    },
+    "en": {
+      "heading": "Calculate a SHA-256 digest of UTF-8 text",
+      "text": "Enter text and calculate its digest. The result contains 64 lowercase hexadecimal characters. For example, the digest of abc begins with ba7816bf. Empty text is valid; leading/trailing whitespace and line breaks are not trimmed. This tool hashes text, not files, and is not a password storage system."
+    }
+  },
+  "unix-timestamp-converter": {
+    "tr": {
+      "heading": "Saniye veya milisaniye ile UTC tarih dönüştürme",
+      "text": "Önce birimi seç. 0 saniye, 1970-01-01T00:00:00.000Z tarihidir; -0.001 saniye başlangıçtan bir milisaniye öncesidir. Tarih alanındaki değer UTC olarak yorumlanır; Türkiye saati için otomatik üç saat eklenmez. Saniyede üç ondalık basamağa kadar hassasiyet, milisaniyede tam sayılar desteklenir."
+    },
+    "en": {
+      "heading": "Convert seconds or milliseconds to UTC dates",
+      "text": "Choose the unit first. Zero seconds is 1970-01-01T00:00:00.000Z; -0.001 seconds is one millisecond before the epoch. The date field is interpreted as UTC without applying your device’s local timezone. Seconds support up to three decimal places; milliseconds use integers."
+    }
   }
 }
