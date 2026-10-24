@@ -1,4 +1,5 @@
 import QRCode from 'qrcode';
+import { setupPdfTools } from './pdf-tools';
 import { setupImageExtras } from './image-extras';
 import { setupImageEditors } from './image-editors';
 import { generatePassword, UNIT_GROUPS, convertUnit, parseNumeric, calculatePercentage, type UnitCategory, type PercentageMode, type PASSWORD_GROUPS } from './everyday-tools';
@@ -314,4 +315,5 @@ async function loadLocale() {
 }
 setupImageEditors(t);
 setupImageExtras(t);
+setupPdfTools(t);
 void loadLocale();

@@ -9,12 +9,13 @@
     "preview": "astro preview",
     "check": "astro check",
     "test:locales": "node --test tests/locales.test.mjs",
-    "test:tools": "node --experimental-strip-types --test tests/text-tools.test.mjs tests/developer-tools.test.mjs tests/everyday-tools.test.mjs tests/image-geometry.test.mjs tests/advertising.test.mjs tests/image-extras.test.mjs"
+    "test:tools": "node --experimental-strip-types --test tests/text-tools.test.mjs tests/developer-tools.test.mjs tests/everyday-tools.test.mjs tests/image-geometry.test.mjs tests/advertising.test.mjs tests/image-extras.test.mjs tests/pdf-core.test.mjs"
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",
     "astro": "^5.14.1",
     "lucide-astro": "^0.468.0",
+    "pdf-lib": "1.17.1",
     "qrcode": "^1.5.4",
     "tailwindcss": "^3.4.17"
   },

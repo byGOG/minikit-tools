@@ -188,5 +188,35 @@
       "heading": "Create a data URL from the original image",
       "text": "Choose a JPEG, PNG or WebP file up to 5 MB. The result is a data URL including its media-type prefix. Original file bytes and metadata such as EXIF are retained. Base64 is neither encryption nor compression; the text is typically about one third larger than the file. Consider metadata before sharing."
     }
+  },
+  "images-to-pdf": {
+    "tr": {
+      "heading": "Fotoğrafları sıralayıp PDF oluşturma",
+      "text": "Görselleri ekle ve ok düğmeleriyle sayfa sırasını düzenle. A4 seçeneği görseli kenar boşluklarıyla sığdırır; özgün boyut seçeneği piksel boyutlarını PDF noktaları olarak kullanır. Her görsel bir sayfa olur. WebP ve JPEG görselleri tarayıcıda PNG’ye dönüştürülür; OCR yapılmaz, metin aranabilir hale gelmez."
+    },
+    "en": {
+      "heading": "Arrange photos and create a PDF",
+      "text": "Add images and use the arrow buttons to arrange their page order. A4 fits images with margins; original-size pages use image pixel dimensions as PDF points. Each image becomes one page. WebP and JPEG images are decoded to PNG in the browser. No OCR is performed and text does not become searchable."
+    }
+  },
+  "merge-pdf": {
+    "tr": {
+      "heading": "PDF belgelerini seçilen sırayla birleştirme",
+      "text": "En az iki PDF ekle ve dosyaları yukarı/aşağı taşıyarak sırala. Her dosyanın kendi sayfa sırası korunur. Kaynaklar toplamda 200 sayfayı aşmamalıdır. Şifreli, form içeren veya imzalı belgeler kabul edilmez. Çıktı sayfa içeriğini aktarır; yer imleri ve ekler gibi belge düzeyindeki özellikler aktarılmaz."
+    },
+    "en": {
+      "heading": "Combine PDF documents in your chosen order",
+      "text": "Add at least two PDFs and move files up or down to arrange them. Page order within each source is preserved. Sources must not exceed 200 pages in total. Encrypted, form and signed documents are not accepted. The output copies page content, without document-level features such as bookmarks or attachments."
+    }
+  },
+  "split-pdf": {
+    "tr": {
+      "heading": "Seçilen PDF sayfalarını yeni dosyaya ayırma",
+      "text": "Tek PDF seç, ardından 1-3,5 gibi bir seçim yaz. 3,1-2 yazarsan çıktı sırası 3,1,2 olur; tekrarlanan sayfalar bir kez eklenir. Sonuç, seçilen sayfaları içeren tek yeni PDF’dir. Kaynak dosya değişmez. Boş seçim, ters aralık ve kaynakta bulunmayan sayfa numaraları kabul edilmez."
+    },
+    "en": {
+      "heading": "Extract selected PDF pages into a new file",
+      "text": "Choose one PDF and enter a selection such as 1-3,5. Entering 3,1-2 produces pages in the order 3,1,2; duplicate selections are included once. The result is one new PDF containing the selected pages. The source file stays unchanged. Empty selections, reversed ranges and non-existent page numbers are rejected."
+    }
   }
 }

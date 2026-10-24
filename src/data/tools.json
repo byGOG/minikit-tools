@@ -207,5 +207,38 @@
       "image64Convert",
       "copyResult"
     ]
+  },
+  {
+    "slug": "images-to-pdf",
+    "title": "imagesPdfTitle",
+    "desc": "imagesPdfDesc",
+    "anchor": "images-pdf-tool",
+    "steps": [
+      "pdfChooseImages",
+      "pdfPageSize",
+      "pdfCreate"
+    ]
+  },
+  {
+    "slug": "merge-pdf",
+    "title": "mergePdfTitle",
+    "desc": "mergePdfDesc",
+    "anchor": "merge-pdf-tool",
+    "steps": [
+      "pdfChooseFiles",
+      "pdfOrder",
+      "pdfMerge"
+    ]
+  },
+  {
+    "slug": "split-pdf",
+    "title": "splitPdfTitle",
+    "desc": "splitPdfDesc",
+    "anchor": "split-pdf-tool",
+    "steps": [
+      "pdfChooseOne",
+      "pdfRange",
+      "pdfExtract"
+    ]
   }
 ]
