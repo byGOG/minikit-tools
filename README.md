@@ -118,3 +118,7 @@ Resizing uses whole pixels and optional original-aspect-ratio locking; cropping 
 ## Advertising
 
 AdSense configuration: `src/data/advertising.json`. No ad scripts, ad placeholders or third-party ad requests are rendered while disabled. A valid publisher ID enables meta-tag verification only; live ads require explicit activation, site approval, two real ad unit IDs, and a published Google CMP message. See `docs/ADSENSE-SETUP.md` for account setup and the root-level ads.txt requirement on GitHub project Pages. There are 852 indexed pages including privacy and contact.
+
+## minikit.top / Cloudflare Pages
+
+Cloudflare Pages builds (`CF_PAGES=1`) use `https://minikit.top/`; default local/GitHub builds retain the existing GitHub project base. Astro, localized pages and sitemap share `scripts/site-config.mjs`. To build/test the new domain locally, prefix commands with `MINIKIT_DEPLOY_TARGET=cloudflare`. Cloudflare Git integration: production branch `main`, build `pnpm run build`, output `dist`, Node 22 and pnpm per packageManager. The domain uses the free plan. No server or paid hosting is required. Root `ads.txt` is included. DNS, domain activation, certificate and AdSense review must be verified separately.
