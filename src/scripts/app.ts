@@ -1,4 +1,5 @@
 import QRCode from 'qrcode';
+import { setupDateTools } from './date-tools';
 import { setupTextExtras } from './text-extras';
 import { setupDeveloperExtras } from './developer-extras';
 import { setupPdfTools } from './pdf-tools';
@@ -320,4 +321,5 @@ setupImageExtras(t);
 setupPdfTools(t);
 setupDeveloperExtras(t);
 setupTextExtras(t);
+setupDateTools(t);
 void loadLocale();

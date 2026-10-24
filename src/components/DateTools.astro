@@ -1,0 +1,21 @@
+---
+import{Cake,CalendarDays,Timer,ShieldCheck,ArrowRight}from'lucide-astro';
+import tr from'../i18n/locales/tr.json';
+const cards=[{id:'age',title:'ageTitle',desc:'ageDesc',slug:'age-calculator',Icon:Cake},{id:'date-diff',title:'dateDiffTitle',desc:'dateDiffDesc',slug:'date-difference',Icon:CalendarDays},{id:'countdown',title:'countdownTitle',desc:'countdownDesc',slug:'countdown-timer',Icon:Timer}]as const;
+---
+{cards.map(({id,title,desc,slug,Icon})=><article class="tool-card text-tool-card" id={`${id}-tool`}>
+ <div class="card-top"><span class="tool-icon icon-blue"><Icon size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div><h3 data-i18n={title}>{tr[title]}</h3><p data-i18n={desc}>{tr[desc]}</p>
+ <div class="date-tool-options" id={`${id}-date-options`}>
+ {id==='age'&&<><label class="field-label" for="age-birth" data-i18n="dateBirth">{tr.dateBirth}</label><input class="text-input" id="age-birth" type="date" min="0001-01-01" max="9999-12-31"/><label class="field-label" for="age-reference" data-i18n="dateReference">{tr.dateReference}</label><input class="text-input" id="age-reference" type="date" min="0001-01-01" max="9999-12-31"/></>}
+ {id==='date-diff'&&<><label class="field-label" for="date-diff-start" data-i18n="dateStart">{tr.dateStart}</label><input class="text-input" id="date-diff-start" type="date" min="0001-01-01" max="9999-12-31"/><label class="field-label" for="date-diff-end" data-i18n="dateEnd">{tr.dateEnd}</label><input class="text-input" id="date-diff-end" type="date" min="0001-01-01" max="9999-12-31"/><label class="text-tool-options"><input type="checkbox" id="date-diff-inclusive"/><span data-i18n="dateIncludeEnd">{tr.dateIncludeEnd}</span></label></>}
+ {id==='countdown'&&<><label class="field-label" for="countdown-target" data-i18n="countdownTarget">{tr.countdownTarget}</label><input class="text-input" id="countdown-target" type="datetime-local" min="0001-01-01T00:00" max="9999-12-31T23:59:59" step="1" dir="ltr"/></>}
+ </div>
+ <small class="number-hint" data-i18n={id==='age'?'ageHint':id==='date-diff'?'dateDiffHint':'countdownHint'}>{id==='age'?tr.ageHint:id==='date-diff'?tr.dateDiffHint:tr.countdownHint}</small>
+ <button class="button-primary full" id={`${id}-date-apply`} data-i18n={id==='countdown'?'countdownStart':'calculate'}>{id==='countdown'?tr.countdownStart:tr.calculate}</button>
+ {id==='countdown'&&<><button class="button-secondary full" id="countdown-stop" data-i18n="countdownStop" disabled>{tr.countdownStop}</button><div class="date-countdown" role="timer" aria-live="off">{[['days','dateDays'],['hours','dateHours'],['minutes','dateMinutes'],['seconds','dateSeconds']].map(([part,key])=><div><b id={`countdown-${part}`}>—</b><span data-i18n={key}>{tr[key as keyof typeof tr]}</span></div>)}</div></>}
+ <label class="field-label" for={`${id}-date-output`} data-i18n="textResult">{tr.textResult}</label><textarea class="text-input textarea text-result" id={`${id}-date-output`} readonly></textarea><p class="tool-feedback" id={`${id}-date-feedback`} role="status"></p><div class="text-tool-actions"><button class="button-secondary full" id={`${id}-date-copy`} data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id={`${id}-date-clear`} data-i18n="clearText">{tr.clearText}</button></div>
+ <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="privacyLine">{tr.privacyLine}</span></div><a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>)}
+<style is:global>
+ .date-tool-options{display:flex;flex-direction:column;gap:7px;margin-bottom:12px}.date-tool-options input{min-width:0;max-width:100%}.date-countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:12px 0}.date-countdown>div{display:flex;flex-direction:column;align-items:center;background:#f2f7ee;padding:9px 3px;border-radius:7px;min-width:0}.date-countdown b{font-size:16px;overflow-wrap:anywhere;max-width:100%}.date-countdown span{font-size:9px;overflow-wrap:anywhere}.date-countdown+.field-label{margin-top:8px}
+</style>
