@@ -1,4 +1,5 @@
 import { readFile } from 'node:fs/promises';
+import {getSiteConfig} from './site-config.mjs';
 
 export const catalog = JSON.parse(await readFile(new URL('../src/i18n/catalog.json', import.meta.url), 'utf8'));
 export const dictionaries = {};
@@ -34,9 +35,7 @@ export const translatedHtml = (value) => escapeHtml(value)
   .replaceAll('&lt;span&gt;', '<span>').replaceAll('&lt;/span&gt;', '</span>')
   .replace(/&lt;br\s*\/?&gt;/gi, '<br/>');
 
-const config = await readFile(new URL('../astro.config.mjs', import.meta.url), 'utf8');
-const site = config.match(/site:\s*['"]([^'"]+)['"]/i)?.[1];
-export const siteBase = (config.match(/base:\s*['"]([^'"]+)['"]/i)?.[1] ?? '').replace(/\/$/, '') + '/';
-if (!site) throw new Error('Missing public site URL.');
+const {site, base} = getSiteConfig();
+export const siteBase = base.replace(/\/$/, '') + '/';
 export const rootUrl = new URL(siteBase, site);
 export const localePath = (code) => code === 'tr' ? '' : `${code}/`;
