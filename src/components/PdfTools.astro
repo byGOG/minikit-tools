@@ -1,0 +1,23 @@
+---
+import{FileImage,Files,Scissors,ShieldCheck,ArrowRight}from'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const cards=[{id:'images-pdf',title:'imagesPdfTitle',desc:'imagesPdfDesc',slug:'images-to-pdf',Icon:FileImage},{id:'merge-pdf',title:'mergePdfTitle',desc:'mergePdfDesc',slug:'merge-pdf',Icon:Files},{id:'split-pdf',title:'splitPdfTitle',desc:'splitPdfDesc',slug:'split-pdf',Icon:Scissors}] as const;
+---
+{cards.map(({id,title,desc,slug,Icon})=><article class="tool-card text-tool-card pdf-tool-card" id={`${id}-tool`}>
+ <div class="card-top"><span class="tool-icon icon-lilac"><Icon size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div><h3 data-i18n={title}>{tr[title]}</h3><p data-i18n={desc}>{tr[desc]}</p>
+ <label class="field-label" for={`${id}-files`} data-i18n={id==='images-pdf'?'pdfChooseImages':id==='merge-pdf'?'pdfChooseFiles':'pdfChooseOne'}>{id==='images-pdf'?tr.pdfChooseImages:id==='merge-pdf'?tr.pdfChooseFiles:tr.pdfChooseOne}</label>
+ <input class="text-input" id={`${id}-files`} type="file" accept={id==='images-pdf'?'image/png,image/jpeg,image/webp':'application/pdf,.pdf'} multiple={id!=='split-pdf'} aria-describedby={`${id}-limits`}/>
+ <small class="number-hint" id={`${id}-limits`} data-i18n={id==='images-pdf'?'pdfImageLimits':id==='merge-pdf'?'pdfFileLimits':'pdfSplitLimits'}>{id==='images-pdf'?tr.pdfImageLimits:id==='merge-pdf'?tr.pdfFileLimits:tr.pdfSplitLimits}</small>
+ <p class="pdf-file-count"><span data-i18n="pdfFiles">{tr.pdfFiles}</span>: <b id={`${id}-count`}>0</b></p><small class="number-hint" data-i18n="pdfOrder">{tr.pdfOrder}</small><ol class="pdf-file-list" id={`${id}-list`}></ol>
+ <button class="button-secondary full" id={`${id}-clear`} data-i18n="pdfClear">{tr.pdfClear}</button>
+ <div class="pdf-options" id={`${id}-options`}>
+ {id==='images-pdf'&&<><label class="field-label" for="pdf-page-size" data-i18n="pdfPageSize">{tr.pdfPageSize}</label><select class="text-input" id="pdf-page-size"><option value="a4" data-i18n="pdfA4">{tr.pdfA4}</option><option value="original" data-i18n="pdfOriginal">{tr.pdfOriginal}</option></select></>}
+ {id==='split-pdf'&&<><label class="field-label" for="pdf-range" data-i18n="pdfRange">{tr.pdfRange}</label><input class="text-input" id="pdf-range" maxlength="2000" placeholder="1-3,5" aria-describedby="pdf-range-hint"/><small class="number-hint" id="pdf-range-hint" data-i18n="pdfRangeHint">{tr.pdfRangeHint}</small></>}
+ </div>
+ <button class="button-primary full" id={`${id}-apply`} data-i18n={id==='images-pdf'?'pdfCreate':id==='merge-pdf'?'pdfMerge':'pdfExtract'} disabled>{id==='images-pdf'?tr.pdfCreate:id==='merge-pdf'?tr.pdfMerge:tr.pdfExtract}</button>
+ <p class="pdf-file-count"><span data-i18n="pdfPages">{tr.pdfPages}</span>: <b id={`${id}-pages`}>—</b></p><p class="tool-feedback" id={`${id}-feedback`} role="status"></p><button class="button-secondary full" id={`${id}-download`} data-i18n="pdfDownload" disabled>{tr.pdfDownload}</button>
+ <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localImage">{tr.localImage}</span></div><a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>)}
+<style is:global>
+ .pdf-file-list{list-style:none;padding:0;margin:8px 0;max-height:230px;overflow:auto}.pdf-file-list li{display:flex;align-items:center;gap:5px;padding:7px 0;border-bottom:1px solid #e2e9e1}.pdf-file-list li>span{flex:1;min-width:0;overflow-wrap:anywhere;font-size:11px}.pdf-file-action{border:1px solid #dce5db;background:#f5f8f3;border-radius:6px;min-width:28px;height:30px;cursor:pointer;flex-shrink:0}.pdf-file-action:disabled{opacity:.35;cursor:default}.pdf-file-count{font-size:11px!important;min-height:0!important;margin:9px 0!important}.pdf-options{display:flex;flex-direction:column;gap:7px;margin:12px 0}.pdf-tool-card>.number-hint{line-height:1.6}
+</style>

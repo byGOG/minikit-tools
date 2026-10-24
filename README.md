@@ -117,7 +117,7 @@ Resizing uses whole pixels and optional original-aspect-ratio locking; cropping 
 
 ## Advertising
 
-AdSense configuration: `src/data/advertising.json`. No ad scripts, ad placeholders or third-party ad requests are rendered while disabled. A valid publisher ID enables meta-tag verification only; live ads require explicit activation, site approval, two real ad unit IDs, and a published Google CMP message. See `docs/ADSENSE-SETUP.md` for account setup and the root-level ads.txt requirement on GitHub project Pages. There are 1002 generated pages including privacy and contact.
+AdSense configuration: `src/data/advertising.json`. No ad scripts, ad placeholders or third-party ad requests are rendered while disabled. A valid publisher ID enables meta-tag verification only; live ads require explicit activation, site approval, two real ad unit IDs, and a published Google CMP message. See `docs/ADSENSE-SETUP.md` for account setup and the root-level ads.txt requirement on GitHub project Pages. There are 1152 generated pages including privacy and contact.
 
 ## minikit.top / Cloudflare Pages
 
@@ -125,3 +125,6 @@ Cloudflare Pages builds (`CF_PAGES=1`) use `https://minikit.top/`; default local
 
 ### Additional image tools
 Text watermarking exports PNG with adjustable position, opacity and size. The color palette tool samples at most 256 × 256 pixels and returns up to six quantized dominant HEX colors, ignoring mostly transparent pixels. Both accept the existing 20 MiB / 16-million-pixel limits. Image-to-Base64 accepts up to 5 MiB and preserves original bytes and metadata, returning a complete data URL. No image uploads occur. All three have 50-language UI and tool guide URLs.
+
+### Local PDF tools
+Images to PDF supports ordered JPEG/PNG/WebP images, A4 fitting or original pixel dimensions as PDF points. Raster conversion has a 100 MiB cumulative encoded-buffer budget. PDF merge preserves per-file page order; page extraction accepts selections such as `3,1-2` and deduplicates in selection order, producing one PDF. Limits: 20 images (20 MiB each), 10 PDFs, 50 MiB total inputs, 200 source PDF pages. Encrypted PDFs, forms, signed documents and portfolios are rejected; document-level features such as bookmarks and attachments are not copied. No OCR or PDF sanitization is offered. The locally bundled pdf-lib dependency loads only when a PDF operation starts. All 22 tools have 50-language UI; sitemap contains 1152 generated URLs.
