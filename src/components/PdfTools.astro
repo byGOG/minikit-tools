@@ -16,7 +16,7 @@ const cards=[{id:'images-pdf',title:'imagesPdfTitle',desc:'imagesPdfDesc',slug:'
  </div>
  <button class="button-primary full" id={`${id}-apply`} data-i18n={id==='images-pdf'?'pdfCreate':id==='merge-pdf'?'pdfMerge':'pdfExtract'} disabled>{id==='images-pdf'?tr.pdfCreate:id==='merge-pdf'?tr.pdfMerge:tr.pdfExtract}</button>
  <p class="pdf-file-count"><span data-i18n="pdfPages">{tr.pdfPages}</span>: <b id={`${id}-pages`}>—</b></p><p class="tool-feedback" id={`${id}-feedback`} role="status"></p><button class="button-secondary full" id={`${id}-download`} data-i18n="pdfDownload" disabled>{tr.pdfDownload}</button>
- <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localImage">{tr.localImage}</span></div><a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+ <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="privacyLine">{tr.privacyLine}</span></div><a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
 </article>)}
 <style is:global>
  .pdf-file-list{list-style:none;padding:0;margin:8px 0;max-height:230px;overflow:auto}.pdf-file-list li{display:flex;align-items:center;gap:5px;padding:7px 0;border-bottom:1px solid #e2e9e1}.pdf-file-list li>span{flex:1;min-width:0;overflow-wrap:anywhere;font-size:11px}.pdf-file-action{border:1px solid #dce5db;background:#f5f8f3;border-radius:6px;min-width:28px;height:30px;cursor:pointer;flex-shrink:0}.pdf-file-action:disabled{opacity:.35;cursor:default}.pdf-file-count{font-size:11px!important;min-height:0!important;margin:9px 0!important}.pdf-options{display:flex;flex-direction:column;gap:7px;margin:12px 0}.pdf-tool-card>.number-hint{line-height:1.6}
