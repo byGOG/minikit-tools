@@ -174,5 +174,38 @@
       "rotationAngle",
       "downloadPng"
     ]
+  },
+  {
+    "slug": "image-watermark",
+    "title": "watermarkTitle",
+    "desc": "watermarkDesc",
+    "anchor": "watermark-tool",
+    "steps": [
+      "editorFile",
+      "watermarkText",
+      "watermarkApply"
+    ]
+  },
+  {
+    "slug": "image-color-palette",
+    "title": "paletteTitle",
+    "desc": "paletteDesc",
+    "anchor": "palette-tool",
+    "steps": [
+      "editorFile",
+      "paletteExtract",
+      "paletteDownload"
+    ]
+  },
+  {
+    "slug": "image-to-base64",
+    "title": "image64Title",
+    "desc": "image64Desc",
+    "anchor": "image64-tool",
+    "steps": [
+      "editorFile",
+      "image64Convert",
+      "copyResult"
+    ]
   }
 ]

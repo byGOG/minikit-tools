@@ -1,4 +1,5 @@
 import QRCode from 'qrcode';
+import { setupImageExtras } from './image-extras';
 import { setupImageEditors } from './image-editors';
 import { generatePassword, UNIT_GROUPS, convertUnit, parseNumeric, calculatePercentage, type UnitCategory, type PercentageMode, type PASSWORD_GROUPS } from './everyday-tools';
 import { formatJson, encodeBase64, decodeBase64, convertUrlComponent } from './developer-tools';
@@ -312,4 +313,5 @@ async function loadLocale() {
   applyLanguage(lang);
 }
 setupImageEditors(t);
+setupImageExtras(t);
 void loadLocale();
