@@ -4,8 +4,8 @@ MiniKit is a privacy-forward collection of free browser tools, built with Astro,
 
 ## Included
 
-- Exactly 50 language homepages and 650 localized tool guides, generated from versioned translation dictionaries. Arabic, Urdu, Persian and Hebrew use right-to-left layouts.
-- Thirteen browser tools: image converter/compressor (WebP, JPEG and PNG), QR generator, Unicode-aware word/character counter, HEX/RGB/HSL color converter, case converter, duplicate line remover, text sorter, JSON formatter, UTF-8 Base64 converter URL component encoder/decoder, random password generator, measurement unit converter and percentage calculator.
+- Exactly 50 language homepages and 800 localized tool guides, generated from versioned translation dictionaries. Arabic, Urdu, Persian and Hebrew use right-to-left layouts.
+- Sixteen browser tools: image converter/compressor (WebP, JPEG and PNG), QR generator, Unicode-aware word/character counter, HEX/RGB/HSL color converter, case converter, duplicate line remover, text sorter, JSON formatter, UTF-8 Base64 converter URL component encoder/decoder, random password generator, measurement unit converter percentage calculator, image resizer, cropper and rotator/mirror.
 - Dedicated localized pages for each tool, with usage steps, FAQs, structured data, canonical/hreflang metadata and sitemap entries.
 - Accessibility support: keyboard skip link, visible focus, reduced-motion support, accessible mobile menu state and live word-count announcements.
 - No third-party analytics, ads, font requests or cookie tracking by default. Tool inputs are processed in the visitor's browser.
@@ -80,7 +80,7 @@ scripts/
 src/i18n/
   catalog.json             50 locales and writing directions
   locales/*.json           Complete versioned translation drafts
-tests/locales.test.mjs      Checks all 700 generated pages and SEO links
+tests/locales.test.mjs      Checks all 850 generated pages and SEO links
 public/
   favicon.svg
   robots.txt
@@ -108,3 +108,9 @@ Passwords use Web Crypto `getRandomValues` with rejection sampling for bounded r
 Unit conversion covers length, mass, temperature, US liquid volume and speed; temperatures below absolute zero and nonfinite results are rejected. Unit definitions follow [NIST conversion factors](https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8); US liquid gallon is 231 cubic inches and 128 US fluid ounces. Results use 12 significant digits. Numeric fields accept decimal dot/comma and exponent notation, without thousands separators.
 
 Percentage modes are A% of B, A/B × 100 and (B−A)/|A| × 100. Zero denominators/baselines and nonfinite results are errors. These are floating-point utility calculations, rounded to 12 significant digits. Results and errors remain on the device.
+
+## Image editors
+
+The three image editors accept JPEG/PNG/WebP up to 20 MiB, 16 million pixels and 8192 pixels per side. File signatures and decoded dimensions are checked. Decoding is frozen into an original canvas so edits always use the original pixels and animated sources export a single frame. Exports are PNG and retain transparency; metadata is not carried through canvas export.
+
+Resizing uses whole pixels and optional original-aspect-ratio locking; cropping uses top-left pixel coordinates and a centered-square shortcut. Rotation is clockwise in quarter turns; mirroring applies in original-image axes before rotation. Reset restores the original. Controls, preview and downloads are disabled/cleared during loading or invalid edits. Revision tokens prevent older asynchronous image loads/PNG exports from replacing newer results, and obsolete object URLs are revoked. Images and filenames are not uploaded or stored.

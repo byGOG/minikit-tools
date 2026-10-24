@@ -1,4 +1,5 @@
 import QRCode from 'qrcode';
+import { setupImageEditors } from './image-editors';
 import { generatePassword, UNIT_GROUPS, convertUnit, parseNumeric, calculatePercentage, type UnitCategory, type PercentageMode, type PASSWORD_GROUPS } from './everyday-tools';
 import { formatJson, encodeBase64, decodeBase64, convertUrlComponent } from './developer-tools';
 import { changeCase, removeDuplicateLines, sortLines } from './text-tools';
@@ -310,4 +311,5 @@ async function loadLocale() {
   updateMobileNav();
   applyLanguage(lang);
 }
+setupImageEditors(t);
 void loadLocale();

@@ -141,5 +141,38 @@
       "valueA",
       "calculate"
     ]
+  },
+  {
+    "slug": "image-resizer",
+    "title": "resizeTitle",
+    "desc": "resizeDesc",
+    "anchor": "resize-tool",
+    "steps": [
+      "editorFile",
+      "pixelWidth",
+      "downloadPng"
+    ]
+  },
+  {
+    "slug": "image-cropper",
+    "title": "cropTitle",
+    "desc": "cropDesc",
+    "anchor": "crop-tool",
+    "steps": [
+      "editorFile",
+      "cropX",
+      "downloadPng"
+    ]
+  },
+  {
+    "slug": "image-rotator",
+    "title": "rotateTitle",
+    "desc": "rotateDesc",
+    "anchor": "rotate-tool",
+    "steps": [
+      "editorFile",
+      "rotationAngle",
+      "downloadPng"
+    ]
   }
 ]

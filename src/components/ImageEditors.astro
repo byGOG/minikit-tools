@@ -1,0 +1,43 @@
+---
+import {Scaling, Crop, RotateCw, ShieldCheck, ArrowRight} from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const cards=[
+ {id:'resize',title:'resizeTitle',desc:'resizeDesc',slug:'image-resizer',Icon:Scaling},
+ {id:'crop',title:'cropTitle',desc:'cropDesc',slug:'image-cropper',Icon:Crop},
+ {id:'rotate',title:'rotateTitle',desc:'rotateDesc',slug:'image-rotator',Icon:RotateCw},
+] as const;
+---
+{cards.map(({id,title,desc,slug,Icon})=>(
+ <article class="tool-card text-tool-card image-editor-card" id={`${id}-tool`}>
+  <div class="card-top"><span class="tool-icon icon-green"><Icon size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n={title}>{tr[title]}</h3><p data-i18n={desc}>{tr[desc]}</p>
+  <label class="field-label" for={`${id}-file`} data-i18n="editorFile">{tr.editorFile}</label>
+  <input class="text-input editor-file" id={`${id}-file`} type="file" accept="image/png,image/jpeg,image/webp" aria-describedby={`${id}-limits`}/>
+  <small class="number-hint" id={`${id}-limits`} data-i18n="editorLimits">{tr.editorLimits}</small>
+  <p class="editor-selected" id={`${id}-selected`}></p>
+  <fieldset class="editor-controls" id={`${id}-controls`} disabled>
+   {id==='crop' && <div class="editor-fields">
+    <div><label class="field-label" for="crop-x" data-i18n="cropX">{tr.cropX}</label><input class="text-input" id="crop-x" type="number" min="0" max="8192" step="1" value="0"/></div>
+    <div><label class="field-label" for="crop-y" data-i18n="cropY">{tr.cropY}</label><input class="text-input" id="crop-y" type="number" min="0" max="8192" step="1" value="0"/></div>
+   </div>}
+   {id!=='rotate' && <div class="editor-fields">
+    <div><label class="field-label" for={`${id}-width`} data-i18n="pixelWidth">{tr.pixelWidth}</label><input class="text-input" id={`${id}-width`} type="number" min="1" max="8192" step="1" value="1"/></div>
+    <div><label class="field-label" for={`${id}-height`} data-i18n="pixelHeight">{tr.pixelHeight}</label><input class="text-input" id={`${id}-height`} type="number" min="1" max="8192" step="1" value="1"/></div>
+   </div>}
+   {id==='resize' && <div class="text-tool-options"><label><input type="checkbox" id="resize-ratio" checked/><span data-i18n="keepRatio">{tr.keepRatio}</span></label></div>}
+   {id==='crop' && <button class="button-secondary full" id="crop-square" data-i18n="centerSquare">{tr.centerSquare}</button>}
+   {id==='rotate' && <>
+    <label class="field-label" for="rotate-angle" data-i18n="rotationAngle">{tr.rotationAngle}</label>
+    <select class="text-input" id="rotate-angle"><option value="0">0°</option><option value="90">90°</option><option value="180">180°</option><option value="270">270°</option></select>
+    <div class="text-tool-options"><label><input type="checkbox" id="rotate-horizontal"/><span data-i18n="mirrorHorizontal">{tr.mirrorHorizontal}</span></label><label><input type="checkbox" id="rotate-vertical"/><span data-i18n="mirrorVertical">{tr.mirrorVertical}</span></label></div>
+   </>}
+   <button class="button-secondary full" id={`${id}-reset`} data-i18n="editorReset">{tr.editorReset}</button>
+  </fieldset>
+  <div class="editor-preview"><span id={`${id}-empty`} data-i18n="editorEmpty">{tr.editorEmpty}</span><img id={`${id}-preview`} data-i18n-alt={title} alt={tr[title]} hidden/></div>
+  <p class="editor-size"><span data-i18n="editorDimensions">{tr.editorDimensions}</span>: <b id={`${id}-size`}>—</b></p>
+  <p class="tool-feedback" id={`${id}-feedback`} role="status"></p>
+  <button class="button-primary full" id={`${id}-download`} data-i18n="downloadPng" disabled>{tr.downloadPng}</button>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localImage">{tr.localImage}</span></div>
+  <a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+ </article>
+))}
