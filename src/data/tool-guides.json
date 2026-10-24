@@ -158,5 +158,35 @@
       "heading": "Rotate and mirror an image",
       "text": "Use 90, 180 or 270 degree rotation and horizontal or vertical mirroring. Check the orientation in the preview and download the PNG. Rotation can swap the image width and height."
     }
+  },
+  "image-watermark": {
+    "tr": {
+      "heading": "Görsele görünür metin filigranı ekleme",
+      "text": "Görselini seç, filigran metnini yaz ve konumunu belirle. Metin boyutu kısa kenara göre hesaplanır; uzun metin genişliğe sığdırılır. Ayar değiştirdikten sonra yeniden uygula. PNG çıktısı özgün görseli değiştirmez. Görünür filigran, kopyalamayı veya silinmeyi engellemez."
+    },
+    "en": {
+      "heading": "Add a visible text watermark",
+      "text": "Choose an image, enter text and select its position. Font size is relative to the shorter edge; long text is fitted to the width. Apply again after changing settings. The PNG output does not change your original file. A visible watermark cannot prevent copying or removal."
+    }
+  },
+  "image-color-palette": {
+    "tr": {
+      "heading": "Baskın HEX renklerini çıkarma",
+      "text": "JPEG, PNG veya WebP görselini seçip renkleri çıkar. Palet, en fazla 256 × 256 piksellik örnek üzerindeki yaklaşık renk gruplarından oluşur. Saydam pikseller atlanır; bu nedenle bazı görseller altıdan az renk verebilir. HEX listesini kopyalayabilir veya metin dosyası olarak indirebilirsin."
+    },
+    "en": {
+      "heading": "Extract dominant HEX colors",
+      "text": "Choose a JPEG, PNG or WebP image and extract colors. The palette uses approximate color groups from a sample of up to 256 × 256 pixels. Transparent pixels are skipped, so some images produce fewer than six colors. Copy the HEX list or download it as a text file."
+    }
+  },
+  "image-to-base64": {
+    "tr": {
+      "heading": "Özgün görselden veri URL’si oluşturma",
+      "text": "En fazla 5 MB boyutundaki JPEG, PNG veya WebP dosyasını seç. Sonuç, veri türü ön ekiyle birlikte bir veri URL’sidir. Özgün dosya baytları ve EXIF gibi üst veriler korunur. Base64 şifreleme veya sıkıştırma değildir; metin genellikle dosyadan yaklaşık üçte bir daha büyük olur. Paylaşmadan önce üst verileri değerlendir."
+    },
+    "en": {
+      "heading": "Create a data URL from the original image",
+      "text": "Choose a JPEG, PNG or WebP file up to 5 MB. The result is a data URL including its media-type prefix. Original file bytes and metadata such as EXIF are retained. Base64 is neither encryption nor compression; the text is typically about one third larger than the file. Consider metadata before sharing."
+    }
   }
 }

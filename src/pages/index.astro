@@ -4,6 +4,7 @@ import TextTools from '../components/TextTools.astro';
 import DeveloperTools from '../components/DeveloperTools.astro';
 import EverydayTools from '../components/EverydayTools.astro';
 import AdSlot from '../components/AdSlot.astro';
+import ImageExtras from '../components/ImageExtras.astro';
 import ImageEditors from '../components/ImageEditors.astro';
 import tools from '../data/tools.json';
 import { Image, QrCode, Type, Pipette, ArrowRight, ShieldCheck, Zap, Globe2, Menu, Sparkles, Check, Download, Upload, Copy, RotateCcw } from 'lucide-astro';
@@ -28,6 +29,7 @@ const publicBase = import.meta.env.BASE_URL.replace(/\/$/, '') + '/';
         <DeveloperTools />
         <EverydayTools />
         <ImageEditors />
+        <ImageExtras />
       </div>
     </section>
     <section class="why-section" id="why"><div class="why-copy"><div class="eyebrow"><span class="eyebrow-mark">✳</span><span data-i18n="whyEyebrow">DAHA AZ UĞRAŞ, DAHA ÇOK İŞ</span></div><h2 data-i18n="whyTitle">Araç aramaya<br/>değil, işine odaklan.</h2><p data-i18n="whyLead">Her küçük iş için başka bir siteye gitmen gerekmiyor. MiniKit, en sık kullandığın pratik araçları temiz ve anlaşılır bir yerde toplar.</p><a class="text-link" href="#tools"><span data-i18n="allTools">Araçları keşfet</span><ArrowRight size={16}/></a></div><div class="benefit-list"><article><span class="benefit-number">01</span><div><h3 data-i18n="benefitOneTitle">Gerçekten hızlı</h3><p data-i18n="benefitOne">Aç, yap, bitir. İndirme yok, kayıt formu yok, beklemek yok.</p></div><span class="benefit-icon"><Zap size={18}/></span></article><article><span class="benefit-number">02</span><div><h3 data-i18n="benefitTwoTitle">Önce gizlilik</h3><p data-i18n="benefitTwo">Dosyaların ve metnin cihazından ayrılmaz. Verilerini saklamayız.</p></div><span class="benefit-icon"><ShieldCheck size={18}/></span></article><article><span class="benefit-number">03</span><div><h3 data-i18n="benefitThreeTitle">Herkes için basit</h3><p data-i18n="benefitThree">Kafa karıştıran menüler yok. Aradığın şey, tam da olması gereken yerde.</p></div><span class="benefit-icon"><Sparkles size={18}/></span></article></div></section>
