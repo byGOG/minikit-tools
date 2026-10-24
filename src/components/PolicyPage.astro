@@ -7,7 +7,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '') + '/';
  <main>
   <nav><a href={base}>← MiniKit</a><div><a href={`${base}privacy/`}>Gizlilik / Privacy</a><a href={`${base}contact/`}>İletişim / Contact</a></div></nav>
   <article><h1>{title}</h1><slot /></article>
-  <footer>© {new Date().getFullYear()} MiniKit · Önder GÖG</footer>
+  <footer>© {new Date().getFullYear()} MiniKit</footer>
  </main>
 </Layout>
 <style is:global>
