@@ -248,5 +248,35 @@
       "heading": "Convert seconds or milliseconds to UTC dates",
       "text": "Choose the unit first. Zero seconds is 1970-01-01T00:00:00.000Z; -0.001 seconds is one millisecond before the epoch. The date field is interpreted as UTC without applying your device’s local timezone. Seconds support up to three decimal places; milliseconds use integers."
     }
+  },
+  "find-and-replace": {
+    "tr": {
+      "heading": "Metinde bul ve değiştir",
+      "text": "Düz metnin büyük/küçük harfe duyarlı tüm eşleşmelerini değiştir. Değiştirme metni aynen kullanılır; düzenli ifade yoktur. En fazla 100.000 girdi karakteri. Arama/değiştirme: en fazla 10.000 karakter. Sonuç en fazla 1.000.000 karakter olabilir."
+    },
+    "en": {
+      "heading": "Find and replace text",
+      "text": "Replace every exact, case-sensitive occurrence of plain text. Replacement text is literal; no regular expressions. Up to 100,000 input characters. Search/replacement: up to 10,000 characters. Results are limited to 1,000,000 characters."
+    }
+  },
+  "text-diff": {
+    "tr": {
+      "heading": "Metin karşılaştır",
+      "text": "İki metni satır satır karşılaştır; eklenen, kaldırılan ve değişmeyen satırları gör. Harf ve boşluk farkları önemlidir. Metin başına en fazla 500 satır ve 100.000 karakter. CRLF/CR satır sonları LF olarak değerlendirilir. Farklar tek tek karakterlerde değil, bütün satırlar halinde gösterilir."
+    },
+    "en": {
+      "heading": "Compare texts",
+      "text": "Compare two texts line by line and see added, removed and unchanged lines. Case and spaces matter. Up to 500 lines and 100,000 characters per text. CRLF/CR line endings are treated as LF. Differences are shown by whole lines, not individual characters."
+    }
+  },
+  "line-numbering": {
+    "tr": {
+      "heading": "Satır numaralandır",
+      "text": "Boş satırlar dahil her satırı numaralandır. Başlangıç numarası ve isteğe bağlı baştaki sıfırları seç. En fazla 10.000 satır ve 100.000 girdi karakteri. Satır sonları LF olur. Sondaki satır sonu boş bir son satır oluşturur; boş girdide satır yoktur."
+    },
+    "en": {
+      "heading": "Add line numbers",
+      "text": "Number each line, including empty lines. Choose a starting number and optional leading zeros. Up to 10,000 lines and 100,000 input characters. Line endings become LF. A final line break creates an empty last line; empty input has no lines."
+    }
   }
 }

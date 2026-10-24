@@ -273,5 +273,38 @@
       "unixTimestamp",
       "unixToDate"
     ]
+  },
+  {
+    "slug": "find-and-replace",
+    "title": "replaceTitle",
+    "desc": "replaceDesc",
+    "anchor": "replace-tool",
+    "steps": [
+      "textInput",
+      "findText",
+      "replaceApply"
+    ]
+  },
+  {
+    "slug": "text-diff",
+    "title": "diffTitle",
+    "desc": "diffDesc",
+    "anchor": "diff-tool",
+    "steps": [
+      "diffOriginal",
+      "diffUpdated",
+      "diffApply"
+    ]
+  },
+  {
+    "slug": "line-numbering",
+    "title": "lineNumberTitle",
+    "desc": "lineNumberDesc",
+    "anchor": "line-numbering-tool",
+    "steps": [
+      "textInput",
+      "lineStart",
+      "lineApply"
+    ]
   }
 ]

@@ -1,0 +1,22 @@
+---
+import{Replace,GitCompare,ListOrdered,ShieldCheck,ArrowRight}from'lucide-astro';
+import tr from'../i18n/locales/tr.json';
+const cards=[{id:'replace',title:'replaceTitle',desc:'replaceDesc',slug:'find-and-replace',Icon:Replace},{id:'diff',title:'diffTitle',desc:'diffDesc',slug:'text-diff',Icon:GitCompare},{id:'line-numbering',title:'lineNumberTitle',desc:'lineNumberDesc',slug:'line-numbering',Icon:ListOrdered}]as const;
+---
+{cards.map(({id,title,desc,slug,Icon})=><article class="tool-card text-tool-card" id={`${id}-tool`}>
+ <div class="card-top"><span class="tool-icon icon-peach"><Icon size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div><h3 data-i18n={title}>{tr[title]}</h3><p data-i18n={desc}>{tr[desc]}</p>
+ <div class="text-extra-options" id={`${id}-extra-options`}>
+ {id!=='diff'&&<><label class="field-label" for={`${id}-text`} data-i18n="textInput">{tr.textInput}</label><textarea class="text-input textarea" id={`${id}-text`} maxlength="100000" dir="auto" spellcheck="false"></textarea></>}
+ {id==='replace'&&<><label class="field-label" for="replace-find" data-i18n="findText">{tr.findText}</label><input class="text-input" id="replace-find" maxlength="10000" dir="auto"/><label class="field-label" for="replace-with" data-i18n="replacementText">{tr.replacementText}</label><textarea class="text-input textarea" id="replace-with" maxlength="10000" dir="auto" spellcheck="false"></textarea></>}
+ {id==='diff'&&<><label class="field-label" for="diff-original" data-i18n="diffOriginal">{tr.diffOriginal}</label><textarea class="text-input textarea" id="diff-original" maxlength="100000" dir="auto" spellcheck="false"></textarea><label class="field-label" for="diff-updated" data-i18n="diffUpdated">{tr.diffUpdated}</label><textarea class="text-input textarea" id="diff-updated" maxlength="100000" dir="auto" spellcheck="false"></textarea></>}
+ {id==='line-numbering'&&<><label class="field-label" for="line-numbering-start" data-i18n="lineStart">{tr.lineStart}</label><input class="text-input" id="line-numbering-start" type="number" value="1" min="1" max="1000000000" step="1"/><label class="text-tool-options"><input type="checkbox" id="line-numbering-pad"/><span data-i18n="linePad">{tr.linePad}</span></label></>}
+ </div>
+ <small class="number-hint" data-i18n={id==='replace'?'replaceHint':id==='diff'?'diffHint':'lineHint'}>{id==='replace'?tr.replaceHint:id==='diff'?tr.diffHint:tr.lineHint}</small><button class="button-primary full" id={`${id}-apply`} data-i18n={id==='replace'?'replaceApply':id==='diff'?'diffApply':'lineApply'}>{id==='replace'?tr.replaceApply:id==='diff'?tr.diffApply:tr.lineApply}</button>
+ <p class="text-extra-summary" id={`${id}-summary`} role="status"></p>
+ {id==='diff'&&<><div class="diff-legend"><span data-i18n="diffAdded">{tr.diffAdded}</span> (+) · <span data-i18n="diffRemoved">{tr.diffRemoved}</span> (−)</div><ol id="diff-view" class="diff-view" data-i18n-aria="diffTitle" aria-label={tr.diffTitle}></ol></>}
+ <label class="field-label" for={`${id}-extra-output`} data-i18n="textResult">{tr.textResult}</label><textarea class="text-input textarea text-result" id={`${id}-extra-output`} readonly dir="auto" spellcheck="false"></textarea><p class="tool-feedback" id={`${id}-extra-feedback`} role="status"></p><div class="text-tool-actions"><button class="button-secondary full" id={`${id}-extra-copy`} data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id={`${id}-extra-clear`} data-i18n="clearText">{tr.clearText}</button></div>
+ <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div><a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>)}
+<style is:global>
+ .text-extra-options{display:flex;flex-direction:column;gap:7px;margin-bottom:10px}.text-extra-summary,.diff-legend{font-size:11px!important;min-height:0!important;line-height:1.6}.diff-view{list-style:none;padding:0;margin:10px 0;max-height:260px;overflow:auto;border:1px solid #e2e9e1;border-radius:7px}.diff-view:empty{display:none}.diff-line{display:flex;padding:5px 7px;gap:7px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px;line-height:1.6}.diff-line>span{flex:0 0 12px}.diff-line code{min-width:0;white-space:pre-wrap;overflow-wrap:anywhere}.diff-add{background:#e3f4e8;color:#15512c}.diff-remove{background:#fae7e3;color:#87392b}.diff-equal{color:#526258}
+</style>
