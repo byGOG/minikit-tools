@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "test:locales": "node --test tests/locales.test.mjs",
-    "test:tools": "node --experimental-strip-types --test tests/text-tools.test.mjs tests/developer-tools.test.mjs"
+    "test:tools": "node --experimental-strip-types --test tests/text-tools.test.mjs tests/developer-tools.test.mjs tests/everyday-tools.test.mjs"
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",

@@ -108,5 +108,38 @@
       "encodeText",
       "decodeText"
     ]
+  },
+  {
+    "slug": "password-generator",
+    "title": "passwordTitle",
+    "desc": "passwordDesc",
+    "anchor": "password-tool",
+    "steps": [
+      "passwordLength",
+      "generatePassword",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "unit-converter",
+    "title": "unitTitle",
+    "desc": "unitDesc",
+    "anchor": "unit-tool",
+    "steps": [
+      "unitCategory",
+      "numericValue",
+      "calculate"
+    ]
+  },
+  {
+    "slug": "percentage-calculator",
+    "title": "percentTitle",
+    "desc": "percentDesc",
+    "anchor": "percent-tool",
+    "steps": [
+      "percentMode",
+      "valueA",
+      "calculate"
+    ]
   }
 ]

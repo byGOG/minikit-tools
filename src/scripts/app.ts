@@ -1,4 +1,5 @@
 import QRCode from 'qrcode';
+import { generatePassword, UNIT_GROUPS, convertUnit, parseNumeric, calculatePercentage, type UnitCategory, type PercentageMode, type PASSWORD_GROUPS } from './everyday-tools';
 import { formatJson, encodeBase64, decodeBase64, convertUrlComponent } from './developer-tools';
 import { changeCase, removeDuplicateLines, sortLines } from './text-tools';
 
@@ -230,6 +231,60 @@ document.querySelectorAll<HTMLButtonElement>('[data-clear-input]').forEach((butt
   showToast(t('cleared'));
 }));
 const menuButton = $('#mobile-menu-btn');
+function clearEverydayResult(id: string) {
+  setTextResult(`${id}-output`, '');
+  $(`#${id}-feedback`).textContent = '';
+  $(`#${id}-feedback`).classList.remove('error');
+}
+function showEverydayError(id: string, key: string) {
+  $(`#${id}-feedback`).textContent = t(key);
+  $(`#${id}-feedback`).classList.add('error');
+}
+const formatNumericResult = (value: number) => new Intl.NumberFormat(lang, { maximumSignificantDigits: 12, useGrouping: false }).format(value);
+for (const id of ['password-length','password-upper','password-lower','password-digits','password-symbols']) {
+  $(`#${id}`).addEventListener('input', () => clearEverydayResult('password'));
+}
+$('#generate-password').addEventListener('click', () => {
+  clearEverydayResult('password');
+  try {
+    const groups = (['upper','lower','digits','symbols'] as (keyof typeof PASSWORD_GROUPS)[]).filter(group => $<HTMLInputElement>(`#password-${group}`).checked);
+    setTextResult('password-output', generatePassword(Number($<HTMLInputElement>('#password-length').value), groups));
+    $('#password-feedback').textContent = t('ready');
+  } catch { showEverydayError('password', 'passwordInvalid'); }
+});
+const unitLabel = (unit: string) => unit === 'C' ? '°C' : unit === 'F' ? '°F' : unit;
+function populateUnits() {
+  const category = $<HTMLSelectElement>('#unit-category').value as UnitCategory;
+  const units = Object.keys(UNIT_GROUPS[category]);
+  for (const id of ['unit-from','unit-to']) {
+    const select = $<HTMLSelectElement>(`#${id}`);
+    select.replaceChildren(...units.map(unit => { const option = document.createElement('option'); option.value = unit; option.textContent = unitLabel(unit); return option; }));
+    select.value = units[id === 'unit-from' ? 0 : 1];
+  }
+  clearEverydayResult('unit');
+}
+populateUnits();
+$('#unit-category').addEventListener('change', populateUnits);
+for (const id of ['unit-from','unit-to','unit-value']) $(`#${id}`).addEventListener('input', () => clearEverydayResult('unit'));
+$('#convert-unit').addEventListener('click', () => {
+  clearEverydayResult('unit');
+  try {
+    const to = $<HTMLSelectElement>('#unit-to').value;
+    const result = convertUnit(parseNumeric($<HTMLInputElement>('#unit-value').value), $<HTMLSelectElement>('#unit-category').value as UnitCategory, $<HTMLSelectElement>('#unit-from').value, to);
+    setTextResult('unit-output', `${formatNumericResult(result)} ${unitLabel(to)}`);
+    $('#unit-feedback').textContent = t('ready');
+  } catch { showEverydayError('unit', 'unitInvalid'); }
+});
+for (const id of ['percent-mode','percent-a','percent-b']) $(`#${id}`).addEventListener('input', () => clearEverydayResult('percent'));
+$('#calculate-percent').addEventListener('click', () => {
+  clearEverydayResult('percent');
+  try {
+    const mode = $<HTMLSelectElement>('#percent-mode').value as PercentageMode;
+    const result = calculatePercentage(parseNumeric($<HTMLInputElement>('#percent-a').value), parseNumeric($<HTMLInputElement>('#percent-b').value), mode);
+    setTextResult('percent-output', formatNumericResult(result) + (mode === 'of' ? '' : '%'));
+    $('#percent-feedback').textContent = t('ready');
+  } catch { showEverydayError('percent', 'percentInvalid'); }
+});
 const mobileNav = document.createElement('nav'); mobileNav.id = 'mobile-nav'; mobileNav.className = 'mobile-nav'; mobileNav.setAttribute('aria-label', t('mobileNavigation'));
 mobileNav.innerHTML = '<a href="#tools" data-mobile-nav="navTools"></a><a href="#why" data-mobile-nav="navWhy"></a><a href="#privacy" data-mobile-nav="navPrivacy"></a>';
 document.querySelector('.site-header')?.insertAdjacentElement('afterend', mobileNav);
