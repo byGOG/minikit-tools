@@ -63,12 +63,17 @@ for (const locale of catalog) {
       assert.ok(html.includes(`aria-label="${escapeHtml(d.chooseLanguage)}"`), `${path}: accessible selector label`);
       assert.ok(html.includes(`placeholder="${escapeHtml(d.pasteText)}"`), `${path}: translated text placeholder`);
       for (const [tool] of tools) assert.ok(html.includes(`href="${siteBase}${prefix}tools/${tool}/"`), `${path}: tool link ${tool}`);
+      assert.equal([...html.matchAll(/<h1[\s>]/g)].length,1,`${path}: one primary heading`);
+      assert.ok(html.includes(`property="og:url" content="${url}"`),`${path}: share URL`);
       if (slug) {
         assert.ok(html.includes(`<h2>${escapeHtml(d.guideHow)}</h2>`));
         assert.ok(html.includes(`<h2>${escapeHtml(d.guideFaq)}</h2>`));
         const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => JSON.parse(m[1]));
         const graph = schemas.find((s) => s['@graph'])?.['@graph'];
         assert.equal(graph?.[0].name, d[title]);
+        assert.equal(graph?.[0].url,url);
+        assert.equal(graph?.[2]['@type'],'BreadcrumbList');
+        assert.equal(graph?.[2].itemListElement[1].item,url);
         assert.equal(graph?.[1].mainEntity[0].name, d.guidePrivacyQuestion);
         assert.equal(graph?.[1].mainEntity[0].acceptedAnswer.text, d.privacyLead);
       }
@@ -84,3 +89,5 @@ test('sitemap lists every generated page and all published dictionaries exist', 
   assert.deepEqual(new Set(locations), expectedUrls);
   assert.equal((await readdir('dist/locales')).filter((f) => f.endsWith('.json')).length, 50);
 });
+
+test('404 page exists and does not advertise',async()=>{const html=await readFile('dist/404.html','utf8');assert.ok(html.includes('404'));assert.ok(!html.includes('googlesyndication.com'));});

@@ -4,7 +4,7 @@ import {validateAdvertising} from '../scripts/advertising-config';
 const advertising = validateAdvertising(settings);
 const { advertisements = true, canonical } = Astro.props;
 const { title = 'MiniKit — Useful tools, beautifully simple', description = 'Free, private online tools for everyday tasks.', lang = 'tr' } = Astro.props;
-const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || '8K9Ztxk2nPpLHGa3kvZN2pRl_p17WoNTTNkgb612X2c';
 ---
 <!doctype html>
 <html lang={lang}>
@@ -19,6 +19,7 @@ const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/favicon.svg`} />
     {canonical && <link rel="canonical" href={canonical} />}
     <title>{title}</title>
