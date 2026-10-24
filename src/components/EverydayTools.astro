@@ -1,0 +1,49 @@
+---
+import {KeyRound, Ruler, Percent, Copy, ShieldCheck, ArrowRight} from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const cards=[
+ {id:'password',title:'passwordTitle',desc:'passwordDesc',slug:'password-generator',Icon:KeyRound},
+ {id:'unit',title:'unitTitle',desc:'unitDesc',slug:'unit-converter',Icon:Ruler},
+ {id:'percent',title:'percentTitle',desc:'percentDesc',slug:'percentage-calculator',Icon:Percent},
+] as const;
+---
+{cards.map(({id,title,desc,slug,Icon})=>(
+ <article class="tool-card text-tool-card everyday-tool-card" id={`${id}-tool`}>
+  <div class="card-top"><span class="tool-icon icon-green"><Icon size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n={title}>{tr[title]}</h3><p data-i18n={desc}>{tr[desc]}</p>
+  {id==='password' && <>
+   <label class="field-label" for="password-length" data-i18n="passwordLength">{tr.passwordLength}</label>
+   <input class="text-input" type="number" id="password-length" min="8" max="128" step="1" value="20"/>
+   <div class="text-tool-options">
+    <label><input type="checkbox" id="password-upper" checked/><span data-i18n="passwordUpper">{tr.passwordUpper}</span></label>
+    <label><input type="checkbox" id="password-lower" checked/><span data-i18n="passwordLower">{tr.passwordLower}</span></label>
+    <label><input type="checkbox" id="password-digits" checked/><span data-i18n="passwordDigits">{tr.passwordDigits}</span></label>
+    <label><input type="checkbox" id="password-symbols" checked/><span data-i18n="passwordSymbols">{tr.passwordSymbols}</span></label>
+   </div>
+   <button class="button-primary full" id="generate-password" data-i18n="generatePassword">{tr.generatePassword}</button>
+  </>}
+  {id==='unit' && <>
+   <label class="field-label" for="unit-category" data-i18n="unitCategory">{tr.unitCategory}</label>
+   <select class="text-input" id="unit-category"><option value="length" data-i18n="unitLength">{tr.unitLength}</option><option value="mass" data-i18n="unitMass">{tr.unitMass}</option><option value="temperature" data-i18n="unitTemperature">{tr.unitTemperature}</option><option value="volume" data-i18n="unitVolume">{tr.unitVolume}</option><option value="speed" data-i18n="unitSpeed">{tr.unitSpeed}</option></select>
+   <label class="field-label" for="unit-value" data-i18n="numericValue">{tr.numericValue}</label><input class="text-input" id="unit-value" type="text" inputmode="decimal" maxlength="100" value="1" aria-describedby="unit-number-hint"/>
+   <small id="unit-number-hint" class="number-hint" data-i18n="numberHint">{tr.numberHint}</small>
+   <label class="field-label" for="unit-from" data-i18n="fromUnit">{tr.fromUnit}</label><select class="text-input" id="unit-from"><option value="m">m</option><option value="km">km</option></select>
+   <label class="field-label" for="unit-to" data-i18n="toUnit">{tr.toUnit}</label><select class="text-input" id="unit-to"><option value="m">m</option><option value="km" selected>km</option></select>
+   <button class="button-primary full" id="convert-unit" data-i18n="calculate">{tr.calculate}</button>
+  </>}
+  {id==='percent' && <>
+   <label class="field-label" for="percent-mode" data-i18n="percentMode">{tr.percentMode}</label>
+   <select class="text-input" id="percent-mode"><option value="of" data-i18n="percentOf">{tr.percentOf}</option><option value="ratio" data-i18n="percentRatio">{tr.percentRatio}</option><option value="change" data-i18n="percentChange">{tr.percentChange}</option></select>
+   <label class="field-label" for="percent-a" data-i18n="valueA">{tr.valueA}</label><input class="text-input" id="percent-a" type="text" inputmode="decimal" maxlength="100" value="15" aria-describedby="percent-number-hint"/>
+   <label class="field-label" for="percent-b" data-i18n="valueB">{tr.valueB}</label><input class="text-input" id="percent-b" type="text" inputmode="decimal" maxlength="100" value="200" aria-describedby="percent-number-hint"/>
+   <small id="percent-number-hint" class="number-hint" data-i18n="numberHint">{tr.numberHint}</small>
+   <button class="button-primary full" id="calculate-percent" data-i18n="calculate">{tr.calculate}</button>
+  </>}
+  <label class="field-label" for={`${id}-output`} data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id={`${id}-output`} dir="ltr" readonly spellcheck="false" autocomplete="off"></textarea>
+  <p class="tool-feedback" id={`${id}-feedback`} role="status"></p>
+  <button class="button-secondary full" data-copy-output={`${id}-output`} disabled><Copy size={14}/><span data-i18n="copyResult">{tr.copyResult}</span></button>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n={id==='password'?'passwordLocal':'localColor'}>{id==='password'?tr.passwordLocal:tr.localColor}</span></div>
+  <a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+ </article>
+))}

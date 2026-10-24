@@ -4,8 +4,8 @@ MiniKit is a privacy-forward collection of free browser tools, built with Astro,
 
 ## Included
 
-- Exactly 50 language homepages and 500 localized tool guides, generated from versioned translation dictionaries. Arabic, Urdu, Persian and Hebrew use right-to-left layouts.
-- Ten browser tools: image converter/compressor (WebP, JPEG and PNG), QR generator, Unicode-aware word/character counter, HEX/RGB/HSL color converter, case converter, duplicate line remover text sorter, JSON formatter, UTF-8 Base64 converter and URL component encoder/decoder.
+- Exactly 50 language homepages and 650 localized tool guides, generated from versioned translation dictionaries. Arabic, Urdu, Persian and Hebrew use right-to-left layouts.
+- Thirteen browser tools: image converter/compressor (WebP, JPEG and PNG), QR generator, Unicode-aware word/character counter, HEX/RGB/HSL color converter, case converter, duplicate line remover, text sorter, JSON formatter, UTF-8 Base64 converter URL component encoder/decoder, random password generator, measurement unit converter and percentage calculator.
 - Dedicated localized pages for each tool, with usage steps, FAQs, structured data, canonical/hreflang metadata and sitemap entries.
 - Accessibility support: keyboard skip link, visible focus, reduced-motion support, accessible mobile menu state and live word-count announcements.
 - No third-party analytics, ads, font requests or cookie tracking by default. Tool inputs are processed in the visitor's browser.
@@ -80,7 +80,7 @@ scripts/
 src/i18n/
   catalog.json             50 locales and writing directions
   locales/*.json           Complete versioned translation drafts
-tests/locales.test.mjs      Checks all 550 generated pages and SEO links
+tests/locales.test.mjs      Checks all 700 generated pages and SEO links
 public/
   favicon.svg
   robots.txt
@@ -100,3 +100,11 @@ All processing stays in the browser. Case conversion uses the selected site lang
 ## Developer tools
 
 JSON formatting validates syntax but preserves number spellings, duplicate keys and escaped strings; it does not parse/stringify the output. Pretty printing uses two spaces; minification removes whitespace outside strings. JSON nesting is limited to 100 levels and generated output to 2 million characters. Base64 uses standard alphabet/padding and UTF-8 text, rejects malformed encodings and is not encryption or a binary-file decoder. URL encoding applies to individual values, not whole URLs; decoding keeps `+` literal and decodes once. Each operation accepts up to 100,000 input characters. All three tools run entirely in the browser, show localized errors, clear stale results when input changes, and support copy/clear controls.
+
+## Everyday tools
+
+Passwords use Web Crypto `getRandomValues` with rejection sampling for bounded random choices, guaranteed selected-group coverage and a cryptographic Fisher–Yates shuffle. Length is 8–128 (default 20). No Math.random fallback, password persistence or automatic transmission is used; changing options clears the previous result. The set of constrained passwords is not claimed to be uniformly distributed.
+
+Unit conversion covers length, mass, temperature, US liquid volume and speed; temperatures below absolute zero and nonfinite results are rejected. Unit definitions follow [NIST conversion factors](https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8); US liquid gallon is 231 cubic inches and 128 US fluid ounces. Results use 12 significant digits. Numeric fields accept decimal dot/comma and exponent notation, without thousands separators.
+
+Percentage modes are A% of B, A/B × 100 and (B−A)/|A| × 100. Zero denominators/baselines and nonfinite results are errors. These are floating-point utility calculations, rounded to 12 significant digits. Results and errors remain on the device.
