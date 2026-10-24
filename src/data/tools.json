@@ -306,5 +306,38 @@
       "lineStart",
       "lineApply"
     ]
+  },
+  {
+    "slug": "age-calculator",
+    "title": "ageTitle",
+    "desc": "ageDesc",
+    "anchor": "age-tool",
+    "steps": [
+      "dateBirth",
+      "dateReference",
+      "calculate"
+    ]
+  },
+  {
+    "slug": "date-difference",
+    "title": "dateDiffTitle",
+    "desc": "dateDiffDesc",
+    "anchor": "date-diff-tool",
+    "steps": [
+      "dateStart",
+      "dateEnd",
+      "calculate"
+    ]
+  },
+  {
+    "slug": "countdown-timer",
+    "title": "countdownTitle",
+    "desc": "countdownDesc",
+    "anchor": "countdown-tool",
+    "steps": [
+      "countdownTarget",
+      "countdownStart",
+      "countdownStop"
+    ]
   }
 ]
