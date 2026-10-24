@@ -46,3 +46,12 @@ const pages = alternatives.map(({ url }) => `<url><loc>${url}</loc>${alternateXm
 await writeFile(join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${pages}</urlset>\n`);
 await writeFile(join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${new URL('sitemap.xml', rootUrl)}\n`);
 console.log(`Built ${catalog.length} static language pages without translation network requests.`);
+
+// Share metadata follows the final localized URL and translated title.
+for (const {code} of catalog) {
+ const file=join('dist',localePath(code),'index.html');
+ let page=await readFile(file,'utf8');
+ const canonical=page.match(/rel="canonical" href="([^"]+)"/)?.[1];
+ page=page.replace('</head>','<meta property="og:url" content="'+canonical+'" /></head>');
+ await writeFile(file,page,'utf8');
+}

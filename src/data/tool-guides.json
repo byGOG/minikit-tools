@@ -1,0 +1,162 @@
+{
+  "image-converter": {
+    "tr": {
+      "heading": "WebP, JPEG ve PNG arasında dönüştürme",
+      "text": "WebP, JPEG veya PNG çıktısı seç. Kalite kaydırıcısı kayıplı biçimlerde dosya boyutunu etkiler; PNG kalite düşürerek sıkıştırılmaz. Saydam görselleri JPEG olarak kaydederken saydamlık korunmaz. Giriş dosyası en fazla 20 MB olmalıdır."
+    },
+    "en": {
+      "heading": "Convert between WebP, JPEG and PNG",
+      "text": "Choose WebP, JPEG or PNG output. Quality affects lossy formats; PNG does not use lossy quality compression. JPEG cannot preserve transparency. The input file must be no larger than 20 MB."
+    }
+  },
+  "qr-code-generator": {
+    "tr": {
+      "heading": "Bağlantıdan indirilebilir QR kod",
+      "text": "Tam bağlantıyı https:// ile birlikte yazıp kodu oluştur. İndirdiğin PNG dosyasını paylaşmadan veya bastırmadan önce telefonunla tarayıp hedefi kontrol et. QR kod bağlantıyı saklar; hedef sitenin açık kalmasını garanti etmez."
+    },
+    "en": {
+      "heading": "Create a downloadable QR code",
+      "text": "Enter the complete link including https:// and generate the code. Scan the downloaded PNG with your phone before sharing or printing it. A QR code stores the link; it cannot keep the destination website online."
+    }
+  },
+  "word-counter": {
+    "tr": {
+      "heading": "Metindeki kelime ve karakterleri sayma",
+      "text": "Metnini yazdığında sonuçlar güncellenir. Boşlukla ayrılan kelimeler, karakterler ve tahmini okuma süresi gösterilir. Okuma süresi yaklaşık bir değerdir; metnin dili ve okuyucunun hızı sonucu değiştirebilir."
+    },
+    "en": {
+      "heading": "Count words and characters in text",
+      "text": "Results update as you type. The tool shows whitespace-separated words, characters and an estimated reading time. Reading time is approximate and depends on the language and the reader’s pace."
+    }
+  },
+  "color-converter": {
+    "tr": {
+      "heading": "HEX rengini RGB ve HSL olarak görme",
+      "text": "#155C42 gibi altı haneli bir HEX değeri gir veya renk seçiciyi kullan. Aynı rengin RGB ve HSL karşılıklarını kopyalayabilirsin. Ekran kalibrasyonu ve baskı renkleri önizlemeden farklı görünebilir."
+    },
+    "en": {
+      "heading": "Convert a HEX color to RGB and HSL",
+      "text": "Enter a six-digit HEX value such as #155C42 or use the color picker. Copy the RGB or HSL representation of the same color. Screen calibration and print colors can differ from the preview."
+    }
+  },
+  "case-converter": {
+    "tr": {
+      "heading": "Türkçe harflerle büyük ve küçük harf",
+      "text": "Metni yapıştır, istediğin harf dönüşümünü seç ve sonucu kopyala. Dil seçimi özellikle Türkçedeki i, İ, ı ve I harflerinin dönüşümünü etkiler. Biçimlendirilmiş belgeler yerine düz metin kullanılır."
+    },
+    "en": {
+      "heading": "Change text case with language rules",
+      "text": "Paste text, choose a case transformation and copy the result. Language selection affects letters such as Turkish i, İ, ı and I. The tool works with plain text rather than formatted documents."
+    }
+  },
+  "duplicate-line-remover": {
+    "tr": {
+      "heading": "Tekrarlayan satırları ayıklama",
+      "text": "Her kaydı ayrı satıra koy. Büyük/küçük harfi yok sayma seçeneği, aynı metnin farklı harflerle yazılmış kopyalarını birlikte değerlendirir. Sonucu kullanmadan önce boşluk seçeneğini kontrol et."
+    },
+    "en": {
+      "heading": "Remove repeated lines",
+      "text": "Place each record on its own line. Ignoring case treats differently capitalized versions as duplicates. Check the whitespace option before using the result."
+    }
+  },
+  "text-sorter": {
+    "tr": {
+      "heading": "Satır satır metin sıralama",
+      "text": "Öğeleri ayrı satırlara yazıp artan veya azalan sıralamayı seç. Sayı içeren etiketlerde doğal sıralama uygulanır. Dil seçimi harflerin sırasını etkileyebilir."
+    },
+    "en": {
+      "heading": "Sort a list of text lines",
+      "text": "Enter one item per line and choose ascending or descending order. Natural sorting is applied to labels containing numbers. The selected language can affect the ordering of letters."
+    }
+  },
+  "json-formatter": {
+    "tr": {
+      "heading": "JSON doğrulama, biçimlendirme ve küçültme",
+      "text": "JSON metnini yapıştırıp biçimlendir veya küçült. JSON anahtarları çift tırnakla yazılmalı; yorumlar ve sonda fazladan virgül geçersizdir. Bu araç sayı metinlerini ve yinelenen anahtarları korur; yapı doğrulaması bir API şeması doğrulaması değildir."
+    },
+    "en": {
+      "heading": "Validate, format and minify JSON",
+      "text": "Paste JSON and choose format or minify. Keys need double quotes; comments and trailing commas are invalid JSON. The tool preserves number lexemes and duplicate keys. Syntax validation does not validate an API schema."
+    }
+  },
+  "base64-converter": {
+    "tr": {
+      "heading": "UTF-8 metni Base64 ile kodlama",
+      "text": "Örneğin Merhaba metnini kodlayıp yeniden çözebilirsin. Türkçe karakterler UTF-8 olarak işlenir. Base64 şifreleme değildir; kodlanan veriyi herkes çözebilir. Bu araç metin içindir, dosya dönüştürücü değildir."
+    },
+    "en": {
+      "heading": "Encode UTF-8 text as Base64",
+      "text": "Encode text such as Hello, then decode it again. Non-ASCII characters use UTF-8. Base64 is not encryption: anyone can decode the result. This tool handles text, not file conversion."
+    }
+  },
+  "url-encoder-decoder": {
+    "tr": {
+      "heading": "URL parametrelerini güvenli kodlama",
+      "text": "Bir parametre değeri veya metin parçası gir. Boşluk %20, & işareti %26 olarak kodlanır. Araç encodeURIComponent mantığını kullanır; tam URL’yi kodlamak bağlantının ayraçlarını da dönüştürür."
+    },
+    "en": {
+      "heading": "Encode URL parameter values",
+      "text": "Enter a parameter value or a text component. Spaces become %20 and ampersands become %26. The tool uses encodeURIComponent semantics; encoding a complete URL also encodes its separators."
+    }
+  },
+  "password-generator": {
+    "tr": {
+      "heading": "Rastgele şifre oluşturma",
+      "text": "Uzunluğu ve kullanılacak karakter gruplarını seç. Şifre cihazındaki Web Crypto rastgelelik kaynağıyla üretilir. Her hesapta farklı şifre kullan ve sonucu güvenilir bir şifre yöneticisinde sakla."
+    },
+    "en": {
+      "heading": "Generate a random password",
+      "text": "Choose the length and character groups. Passwords are generated with your device’s Web Crypto random source. Use a different password for each account and store it in a trusted password manager."
+    }
+  },
+  "unit-converter": {
+    "tr": {
+      "heading": "Uzunluk, ağırlık ve sıcaklık dönüştürme",
+      "text": "Kategoriyi, kaynak birimi ve hedef birimi seç. Örneğin 1 kilometre 1000 metredir; 0 °C, 32 °F eder. Ondalık sonuçlarda yuvarlama olabilir; ölçüm cihazının hassasiyeti ayrıca değerlendirilmelidir."
+    },
+    "en": {
+      "heading": "Convert length, mass and temperature",
+      "text": "Choose a category, source unit and target unit. For example, 1 kilometre is 1000 metres and 0 °C is 32 °F. Decimal results may be rounded; measurement accuracy also depends on the measuring device."
+    }
+  },
+  "percentage-calculator": {
+    "tr": {
+      "heading": "Yüzde, oran ve değişim hesaplama",
+      "text": "Bir sayının yüzdesini, iki sayının oranını veya yüzde değişimini seç. Örneğin 200’ün %15’i 30’dur. 100’den 120’ye çıkış %20 artıştır. Başlangıç değeri sıfırsa yüzde değişimi tanımlı değildir."
+    },
+    "en": {
+      "heading": "Calculate percentages, ratios and changes",
+      "text": "Choose percentage of a number, ratio of two numbers or percentage change. For example, 15% of 200 is 30. Going from 100 to 120 is a 20% increase. Percentage change is undefined when the initial value is zero."
+    }
+  },
+  "image-resizer": {
+    "tr": {
+      "heading": "Piksel boyutlarını değiştirme",
+      "text": "Görseli seçip hedef genişliği ve yüksekliği piksel olarak gir. En-boy oranını kilitlemek görüntünün esnemesini önler. Küçük bir görseli büyütmek yeni ayrıntı üretmez. Sonuç PNG olarak indirilir."
+    },
+    "en": {
+      "heading": "Resize an image in pixels",
+      "text": "Choose an image and enter the target width and height in pixels. Lock the aspect ratio to avoid stretching. Enlarging a small image does not create new detail. The result downloads as PNG."
+    }
+  },
+  "image-cropper": {
+    "tr": {
+      "heading": "Görselin belirli alanını kırpma",
+      "text": "X ve Y sol üst köşeyi, genişlik ve yükseklik tutulacak alanı belirler. Değerleri görselin sınırları içinde tut. Kırpma dışarıda kalan alanı çıktıdan çıkarır; sonuç PNG olarak kaydedilir."
+    },
+    "en": {
+      "heading": "Crop a selected image region",
+      "text": "X and Y define the top-left corner; width and height define the area to keep. Keep the selection inside the image bounds. Cropping removes the surrounding area from the output, which downloads as PNG."
+    }
+  },
+  "image-rotator": {
+    "tr": {
+      "heading": "Görsel döndürme ve aynalama",
+      "text": "90, 180 veya 270 derece döndürme ve yatay/dikey aynalama seçeneklerini kullan. Önizlemede yönü kontrol edip PNG çıktısını indir. Döndürme görselin genişlik ve yüksekliğini değiştirebilir."
+    },
+    "en": {
+      "heading": "Rotate and mirror an image",
+      "text": "Use 90, 180 or 270 degree rotation and horizontal or vertical mirroring. Check the orientation in the preview and download the PNG. Rotation can swap the image width and height."
+    }
+  }
+}

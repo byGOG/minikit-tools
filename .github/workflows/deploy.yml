@@ -41,6 +41,9 @@ jobs:
           PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
       - name: Verify all languages and tool pages
         run: pnpm run test:locales
+      - name: Redirect legacy addresses to minikit.top
+        if: github.event_name != 'pull_request'
+        run: node scripts/redirect-legacy.mjs
       - name: Configure GitHub Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
