@@ -1,0 +1,17 @@
+---
+import{FileCode,Table,Braces,ShieldCheck,ArrowRight}from'lucide-astro';
+import tr from'../i18n/locales/tr.json';
+const cards=[{id:'css-min',title:'cssMinTitle',desc:'cssMinDesc',slug:'css-minifier',Icon:FileCode},{id:'json-csv',title:'jsonCsvTitle',desc:'jsonCsvDesc',slug:'json-to-csv',Icon:Table},{id:'csv-json',title:'csvJsonTitle',desc:'csvJsonDesc',slug:'csv-to-json',Icon:Braces}]as const;
+---
+{cards.map(({id,title,desc,slug,Icon})=><article class="tool-card text-tool-card" id={`${id}-tool`}>
+ <div class="card-top"><span class="tool-icon icon-lilac"><Icon size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div><h3 data-i18n={title}>{tr[title]}</h3><p data-i18n={desc}>{tr[desc]}</p>
+ <div class="data-converter-options" id={`${id}-options`}><label class="field-label" for={`${id}-input`} data-i18n="textInput">{tr.textInput}</label><textarea class="text-input textarea" id={`${id}-input`} maxlength="100000" dir="ltr" spellcheck="false"></textarea>
+ {id!=='css-min'&&<><label class="field-label" for={`${id}-delimiter`} data-i18n="csvDelimiter">{tr.csvDelimiter}</label><select class="text-input" id={`${id}-delimiter`}><option value="," data-i18n="csvComma">{tr.csvComma}</option><option value=";" data-i18n="csvSemicolon">{tr.csvSemicolon}</option><option value="&#9;" data-i18n="csvTab">{tr.csvTab}</option></select></>}
+ {id==='json-csv'&&<><label class="text-tool-options"><input type="checkbox" id="csv-protect" checked/><span data-i18n="csvProtect">{tr.csvProtect}</span></label><small class="number-hint" data-i18n="csvProtectHint">{tr.csvProtectHint}</small><label class="text-tool-options"><input type="checkbox" id="csv-bom" checked/><span data-i18n="csvBom">{tr.csvBom}</span></label></>}
+ </div>
+ <small class="number-hint" data-i18n={id==='css-min'?'cssMinHint':'csvRules'}>{id==='css-min'?tr.cssMinHint:tr.csvRules}</small>{id==='json-csv'&&<small class="number-hint" data-i18n="jsonCsvHint">{tr.jsonCsvHint}</small>}
+ <button class="button-primary full" id={`${id}-apply`} data-i18n={id==='css-min'?'cssMinApply':id==='json-csv'?'jsonCsvApply':'csvJsonApply'}>{id==='css-min'?tr.cssMinApply:id==='json-csv'?tr.jsonCsvApply:tr.csvJsonApply}</button>
+ <label class="field-label" for={`${id}-output`} data-i18n="textResult">{tr.textResult}</label><textarea class="text-input textarea text-result" id={`${id}-output`} readonly dir="ltr" spellcheck="false"></textarea><p class="tool-feedback" id={`${id}-feedback`} role="status"></p><div class="text-tool-actions"><button class="button-secondary full" id={`${id}-copy`} data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id={`${id}-clear`} data-i18n="clearText">{tr.clearText}</button></div><button class="button-secondary full" id={`${id}-download`} data-i18n="transformDownload" disabled>{tr.transformDownload}</button>
+ <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="privacyLine">{tr.privacyLine}</span></div><a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>)}
+<style is:global>.data-converter-options{display:flex;flex-direction:column;gap:7px;margin-bottom:10px}.data-converter-options .text-tool-options{line-height:1.6}.data-converter-options~.number-hint{line-height:1.65}</style>

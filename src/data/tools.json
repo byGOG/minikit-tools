@@ -405,5 +405,38 @@
       "avatarSize",
       "effectApply"
     ]
+  },
+  {
+    "slug": "css-minifier",
+    "title": "cssMinTitle",
+    "desc": "cssMinDesc",
+    "anchor": "css-min-tool",
+    "steps": [
+      "textInput",
+      "cssMinApply",
+      "transformDownload"
+    ]
+  },
+  {
+    "slug": "json-to-csv",
+    "title": "jsonCsvTitle",
+    "desc": "jsonCsvDesc",
+    "anchor": "json-csv-tool",
+    "steps": [
+      "textInput",
+      "csvDelimiter",
+      "jsonCsvApply"
+    ]
+  },
+  {
+    "slug": "csv-to-json",
+    "title": "csvJsonTitle",
+    "desc": "csvJsonDesc",
+    "anchor": "csv-json-tool",
+    "steps": [
+      "textInput",
+      "csvDelimiter",
+      "csvJsonApply"
+    ]
   }
 ]
