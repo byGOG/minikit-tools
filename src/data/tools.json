@@ -339,5 +339,38 @@
       "countdownStart",
       "countdownStop"
     ]
+  },
+  {
+    "slug": "html-encoder-decoder",
+    "title": "htmlTitle",
+    "desc": "htmlDesc",
+    "anchor": "html-tool",
+    "steps": [
+      "textInput",
+      "htmlEncode",
+      "htmlDecode"
+    ]
+  },
+  {
+    "slug": "jwt-viewer",
+    "title": "jwtTitle",
+    "desc": "jwtDesc",
+    "anchor": "jwt-tool",
+    "steps": [
+      "jwtInput",
+      "jwtInspect",
+      "jwtWarning"
+    ]
+  },
+  {
+    "slug": "number-base-converter",
+    "title": "baseTitle",
+    "desc": "baseDesc",
+    "anchor": "number-base-tool",
+    "steps": [
+      "baseInput",
+      "baseSource",
+      "baseConvert"
+    ]
   }
 ]
