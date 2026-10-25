@@ -728,5 +728,95 @@
       "heading": "Tarihe gün ekle",
       "text": "Bir takvim tarihini ileri veya geri taşı. Hafta sonları dahil tam takvim günleri ekler. ±3.652.058 güne kadar pozitif/negatif değer desteklenir. Başlangıç ve sonuç 0001–9999 yılları arasında olmalı. UTC hesabı yaz saati kaymalarını önler; sonuç YYYY-MM-DD biçimindedir."
     }
+  },
+  "trim-audio": {
+    "en": {
+      "heading": "Trim audio",
+      "text": "Keep a selected time range and download WAV. Enter start/end in seconds. Selection rounds to the nearest sample; end must follow start and fit the track. Output is re-encoded WAV, not a lossless copy of compressed source bytes. Browser-supported complete audio files only (codec support varies). At most 20 MiB each / 40 MiB total; 120 decoded seconds total, mono or stereo. Resampled to 44.1 kHz and exported as 16-bit PCM WAV without metadata. Files stay local."
+    },
+    "tr": {
+      "heading": "Ses kesme",
+      "text": "Seçtiğin zaman aralığını tut ve WAV indir. Başlangıç/bitişi saniye olarak gir. Seçim en yakın örneğe yuvarlanır; bitiş başlangıçtan sonra ve parça içinde olmalı. Çıktı yeniden kodlanmış WAV’dır; sıkıştırılmış kaynağın baytlarını aynen korumaz. Tarayıcının desteklediği tam ses dosyaları kabul edilir; kodek desteği değişebilir. Dosya başına en fazla 20 MiB / toplam 40 MiB; toplam 120 saniye, mono veya stereo. 44,1 kHz’e yeniden örneklenir ve meta verisiz 16 bit PCM WAV çıkarılır. Dosyalar cihazda kalır."
+    }
+  },
+  "join-audio": {
+    "en": {
+      "heading": "Join audio",
+      "text": "Join tracks in order into one WAV file. Choose up to 5 tracks, then reorder with arrows. Concatenates without fades or overlaps. If any track is stereo, mono tracks are copied to both channels. Combined duration must not exceed 120 seconds. Browser-supported complete audio files only (codec support varies). At most 20 MiB each / 40 MiB total; 120 decoded seconds total, mono or stereo. Resampled to 44.1 kHz and exported as 16-bit PCM WAV without metadata. Files stay local."
+    },
+    "tr": {
+      "heading": "Ses dosyalarını birleştir",
+      "text": "Parçaları sırayla tek WAV dosyasında birleştir. En fazla 5 parça seç, oklarla sırala. Geçiş efekti veya üst üste bindirme olmadan birleştirir. Bir parça stereo ise mono parçalar iki kanala kopyalanır. Toplam süre 120 saniyeyi aşamaz. Tarayıcının desteklediği tam ses dosyaları kabul edilir; kodek desteği değişebilir. Dosya başına en fazla 20 MiB / toplam 40 MiB; toplam 120 saniye, mono veya stereo. 44,1 kHz’e yeniden örneklenir ve meta verisiz 16 bit PCM WAV çıkarılır. Dosyalar cihazda kalır."
+    }
+  },
+  "normalize-audio": {
+    "en": {
+      "heading": "Normalize audio level",
+      "text": "Adjust the global peak level and download WAV. Peak normalization from −12 to 0 dBFS across all channels; default −1 dBFS. This is not perceptual loudness normalization. Silent audio stays silent. Browser-supported complete audio files only (codec support varies). At most 20 MiB each / 40 MiB total; 120 decoded seconds total, mono or stereo. Resampled to 44.1 kHz and exported as 16-bit PCM WAV without metadata. Files stay local."
+    },
+    "tr": {
+      "heading": "Ses seviyesini normalleştir",
+      "text": "Genel tepe seviyesini ayarla ve WAV indir. Tüm kanallarda −12 ile 0 dBFS arasında tepe normalleştirmesi; varsayılan −1 dBFS. Algısal ses yüksekliği normalleştirmesi değildir. Sessiz kayıt sessiz kalır. Tarayıcının desteklediği tam ses dosyaları kabul edilir; kodek desteği değişebilir. Dosya başına en fazla 20 MiB / toplam 40 MiB; toplam 120 saniye, mono veya stereo. 44,1 kHz’e yeniden örneklenir ve meta verisiz 16 bit PCM WAV çıkarılır. Dosyalar cihazda kalır."
+    }
+  },
+  "prime-number-checker": {
+    "en": {
+      "heading": "Prime number checker",
+      "text": "Check whether a whole number is prime. Exact result for decimal integers from 0 to 1 trillion. No decimal separators or exponents. 0 and 1 are not prime."
+    },
+    "tr": {
+      "heading": "Asal sayı kontrolü",
+      "text": "Bir tam sayının asal olup olmadığını kontrol et. 0–1 trilyon arasındaki onluk tam sayılar için kesin sonuç verir. Ondalık ayıracı veya üs yazımı kullanma. 0 ve 1 asal değildir."
+    }
+  },
+  "prime-factorization": {
+    "en": {
+      "heading": "Prime factorization",
+      "text": "Write a number as a product of prime powers. Exact factorization for decimal integers from 2 to 1 trillion. The ^ symbol means exponent. No decimal separators or exponents in the input."
+    },
+    "tr": {
+      "heading": "Asal çarpanlara ayırma",
+      "text": "Sayıyı asal sayı kuvvetlerinin çarpımı olarak yaz. 2–1 trilyon arasındaki onluk tam sayıları kesin olarak çarpanlarına ayırır. ^ işareti üssü belirtir. Girdide ondalık ayıracı veya üs yazımı kullanma."
+    }
+  },
+  "gcd-lcm-calculator": {
+    "en": {
+      "heading": "GCD and LCM calculator",
+      "text": "Find the greatest common divisor and least common multiple. Two signed decimal integers, up to 100 digits each. Results use absolute values and exact integer arithmetic. Convention: GCD(0,0)=0; LCM is 0 if either input is 0."
+    },
+    "tr": {
+      "heading": "EBOB ve EKOK hesaplayıcı",
+      "text": "En büyük ortak böleni ve en küçük ortak katı bul. Her biri en fazla 100 basamaklı, işaretli iki onluk tam sayı. Mutlak değerler ve kesin tam sayı aritmetiği kullanılır. Kabul: EBOB(0,0)=0; girdilerden biri 0 ise EKOK 0’dır."
+    }
+  },
+  "ipv4-subnet-calculator": {
+    "en": {
+      "heading": "IPv4 subnet calculator",
+      "text": "Find the network, mask and address range from CIDR. Enter dotted-decimal IPv4/prefix, from /0 to /32. Leading-zero octets are rejected. /31 treats both addresses as point-to-point hosts; /32 has one address and no broadcast. Host counts are theoretical and do not prove routability or availability. No network requests."
+    },
+    "tr": {
+      "heading": "IPv4 alt ağ hesaplayıcı",
+      "text": "CIDR’den ağı, maskeyi ve adres aralığını bul. Noktalı onluk IPv4/ön ek gir; /0–/32 desteklenir. Başında sıfır bulunan oktetler reddedilir. /31’de iki adres de noktadan noktaya uç adresidir; /32 tek adrestir ve yayın adresi yoktur. Konak sayısı kuramsaldır; yönlendirilebilirlik veya kullanılabilirlik kanıtlamaz. Ağ isteği yapılmaz."
+    }
+  },
+  "ipv6-compress-expand": {
+    "en": {
+      "heading": "IPv6 compress / expand",
+      "text": "Convert IPv6 to expanded and compact notation. Accepts hex IPv6 with optional :: and an IPv4 dotted-decimal tail. No brackets, ports or zone IDs. Uses lowercase and the first longest zero run (at least two groups). IPv4-mapped addresses use a dotted-decimal tail in compact output. No network requests."
+    },
+    "tr": {
+      "heading": "IPv6 kısaltma / genişletme",
+      "text": "IPv6 adresini açık ve kısa gösterime dönüştür. Onaltılık IPv6, isteğe bağlı :: ve noktalı onluk IPv4 son eki kabul edilir. Köşeli ayraç, port veya bölge kimliği kabul edilmez. Küçük harf ve en uzun ilk sıfır dizisi (en az iki grup) kullanılır. IPv4 eşlemeli kısa çıktıda noktalı onluk son ek kullanılır. Ağ isteği yapılmaz."
+    }
+  },
+  "ip-in-cidr": {
+    "en": {
+      "heading": "Check IP in CIDR",
+      "text": "Check whether an IPv4 or IPv6 address belongs to a range. IP and CIDR must use the same address family. Host bits in the range are normalized to the network. Supports /0–32 for IPv4 and /0–128 for IPv6; rejects brackets, zones and ports. This is a local numeric check, not a connectivity test."
+    },
+    "tr": {
+      "heading": "IP, CIDR aralığında mı?",
+      "text": "IPv4 veya IPv6 adresinin bir aralığa ait olup olmadığını bul. IP ve CIDR aynı adres ailesinde olmalı. Aralığın konak bitleri ağ adresine normalleştirilir. IPv4 için /0–32, IPv6 için /0–128 desteklenir; köşeli ayraç, bölge ve port reddedilir. Bağlantı testi değil, cihazda sayısal kontroldür."
+    }
   }
 }
