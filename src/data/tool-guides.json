@@ -368,5 +368,35 @@
       "heading": "Round profile image",
       "text": "Center-crop an image into a circle and download a square PNG with transparent corners. Uses the largest centered square of the source, clipped to a circle. Corners stay transparent in PNG; enlarging a small source does not add detail."
     }
+  },
+  "css-minifier": {
+    "tr": {
+      "heading": "CSS küçültücü",
+      "text": "Stil dosyasını CSSO ile küçült; yapısal kural yeniden düzenlemesi kapalıdır. CSS metin olarak işlenir, bu sayfaya uygulanmaz. En fazla 100.000 girdi ve 2.000.000 çıktı karakteri. /*! önemli yorumlar */ korunur. Sözdizimi desteği CSSO’ya bağlıdır; yeni CSS sözdizimini ve çıktıyı hedef tarayıcılarında kontrol et."
+    },
+    "en": {
+      "heading": "CSS minifier",
+      "text": "Minify a stylesheet with CSSO, with structural rule restructuring disabled. CSS is processed as text and never applied to this page. Up to 100,000 input and 2,000,000 output characters. Preserves /*! important comments */. Syntax support follows CSSO; review newer CSS syntax and the output in your target browsers."
+    }
+  },
+  "json-to-csv": {
+    "tr": {
+      "heading": "JSON → CSV",
+      "text": "Düz JSON nesnelerinden oluşan diziyi CSV’ye dönüştür. Sütunlar anahtarların ilk görülme sırasını izler; eksik değerler ve null boş hücre olur. Yalnız metin, sayı, boolean veya null değerli düz nesneler. İç içe değerler, tekrarlı/boş anahtarlar ve sütunsuz satırlar reddedilir. JSON sayı yazımı korunur; CSV JSON türlerini korumaz. Tüm hücreler tırnaklanır. Boşluktan sonra =, +, − veya @ ile başlayan metin hücreleri ve başlıklarına kesme işareti ekler. Bu değerleri değiştirir; metnin aynen korunması gerektiğinde kapat."
+    },
+    "en": {
+      "heading": "JSON to CSV",
+      "text": "Convert an array of flat JSON objects into CSV. Columns follow first-seen key order; missing values and null become empty cells. Flat objects with string, number, boolean or null values only. Nested values, duplicate/empty keys and columnless rows are rejected. Numeric JSON spelling is retained; CSV does not preserve JSON types. All cells are quoted. Prefixes string cells and headers beginning with =, +, − or @ (after whitespace) with an apostrophe. This changes those values; turn it off when exact text is required."
+    }
+  },
+  "csv-to-json": {
+    "tr": {
+      "heading": "CSV → JSON",
+      "text": "Başlıklı CSV tablosunu JSON nesnelerine dönüştür. Her hücre metin kalır; baştaki sıfırlar ve büyük sayı metinleri korunur. En fazla 100.000 girdi, 2.000.000 çıktı karakteri, 1.000 veri satırı, 100 sütun ve 10.000 veri hücresi. CSV çıktısı tırnaklı alanlar ve CRLF kullanır. Girdide tırnak içi ayraç, kaçırılmış tırnak ve çok satırlı hücreler desteklenir; satır genişlikleri eşit, başlıklar dolu ve benzersiz olmalıdır."
+    },
+    "en": {
+      "heading": "CSV to JSON",
+      "text": "Convert a header-based CSV table to JSON objects. Every cell stays a string, preserving leading zeros and large integer text. Up to 100,000 input and 2,000,000 output characters, 1,000 data rows, 100 columns and 10,000 data cells. CSV uses quoted fields and CRLF output. CSV input supports quoted delimiters, escaped quotes and multiline cells; rows must have equal width and headers must be nonempty and unique."
+    }
   }
 }
