@@ -1,6 +1,6 @@
 const LIMIT=100000;
 function validate(text:string){if(text.length>LIMIT)throw Error('Input limit');for(const char of text)if(char.length===1&&/[\uD800-\uDFFF]/u.test(char))throw Error('Invalid Unicode');}
-export function makeSlug(text:string){validate(text);return text.replace(/[ıİ]/g,'i').replace(/[ßẞ]/g,'ss').replace(/[æÆ]/g,'ae').replace(/[œŒ]/g,'oe').replace(/[øØ]/g,'o').replace(/[łŁ]/g,'l').replace(/[đĐðÐ]/g,'d').replace(/[þÞ]/g,'th').normalize('NFKD').replace(/\p{M}+/gu,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'-').replace(/^-+|-+$/g,'');}
+export function makeSlug(text:string){validate(text);return text.replace(/[ıİ]/g,'i').replace(/[ßẞ]/g,'ss').replace(/[æÆ]/g,'ae').replace(/[œŒ]/g,'oe').replace(/[øØ]/g,'o').replace(/[łŁ]/g,'l').replace(/[đĐðÐ]/g,'d').replace(/[þÞ]/g,'th').normalize('NFKD').replace(/(\p{Script=Latin})\p{M}+/gu,'$1').normalize('NFC').toLowerCase().replace(/[^\p{L}\p{M}\p{N}]+/gu,'-').replace(/^-+|-+$/g,'');}
 export function reverseText(text:string){validate(text);if(typeof Intl.Segmenter!=='function')throw Error('Segmenter unavailable');return Array.from(new Intl.Segmenter(undefined,{granularity:'grapheme'}).segment(text),part=>part.segment).reverse().join('');}
 export function cleanWhitespace(text:string,preserveLines=true){validate(text);if(!preserveLines)return text.replace(/\s+/gu,' ').trim();return text.replace(/\r\n?/g,'\n').split('\n').map(line=>line.replace(/[^\S\n]+/gu,' ').trim()).join('\n').replace(/^\n+|\n+$/g,'');}
 export function setupTextUtilities(t:(key:string)=>string){
