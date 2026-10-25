@@ -1,0 +1,19 @@
+---
+import{Code,KeyRound,Binary,ShieldCheck,ArrowRight}from'lucide-astro';
+import tr from'../i18n/locales/tr.json';
+const cards=[{id:'html',title:'htmlTitle',desc:'htmlDesc',slug:'html-encoder-decoder',Icon:Code},{id:'jwt',title:'jwtTitle',desc:'jwtDesc',slug:'jwt-viewer',Icon:KeyRound},{id:'number-base',title:'baseTitle',desc:'baseDesc',slug:'number-base-converter',Icon:Binary}]as const;
+---
+{cards.map(({id,title,desc,slug,Icon})=><article class="tool-card text-tool-card" id={`${id}-tool`}>
+ <div class="card-top"><span class="tool-icon icon-lilac"><Icon size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div><h3 data-i18n={title}>{tr[title]}</h3><p data-i18n={desc}>{tr[desc]}</p>
+ {id==='jwt'&&<p class="jwt-warning" id="jwt-warning" data-i18n="jwtWarning">{tr.jwtWarning}</p>}
+ <div class="encoding-options" id={`${id}-encoding-options`}>
+ <label class="field-label" for={`${id}-encoding-input`} data-i18n={id==='jwt'?'jwtInput':id==='number-base'?'baseInput':'textInput'}>{id==='jwt'?tr.jwtInput:id==='number-base'?tr.baseInput:tr.textInput}</label><textarea class="text-input textarea" id={`${id}-encoding-input`} maxlength={id==='number-base'?'4097':'100000'} dir={id==='html'?'auto':'ltr'} spellcheck="false" aria-describedby={id==='jwt'?'jwt-warning':`${id}-encoding-hint`}></textarea>
+ {id==='number-base'&&<><label class="field-label" for="base-source" data-i18n="baseSource">{tr.baseSource}</label><input class="text-input" id="base-source" type="number" min="2" max="36" step="1" value="10"/><label class="field-label" for="base-target" data-i18n="baseTarget">{tr.baseTarget}</label><input class="text-input" id="base-target" type="number" min="2" max="36" step="1" value="16"/></>}
+ </div>
+ <small class="number-hint" id={`${id}-encoding-hint`} data-i18n={id==='jwt'?'jwtHint':id==='number-base'?'baseHint':'htmlHint'}>{id==='jwt'?tr.jwtHint:id==='number-base'?tr.baseHint:tr.htmlHint}</small>
+ <div class="text-tool-actions"><button class="button-primary" id={`${id}-encoding-apply`} data-i18n={id==='jwt'?'jwtInspect':id==='number-base'?'baseConvert':'htmlEncode'}>{id==='jwt'?tr.jwtInspect:id==='number-base'?tr.baseConvert:tr.htmlEncode}</button>{id==='html'&&<button class="button-secondary" id="html-encoding-decode" data-i18n="htmlDecode">{tr.htmlDecode}</button>}</div>
+ {id==='jwt'&&<><label class="field-label" for="jwt-header" data-i18n="jwtHeader">{tr.jwtHeader}</label><textarea class="text-input textarea text-result" id="jwt-header" readonly dir="ltr" spellcheck="false"></textarea><label class="field-label" for="jwt-payload" data-i18n="jwtPayload">{tr.jwtPayload}</label><textarea class="text-input textarea text-result" id="jwt-payload" readonly dir="ltr" spellcheck="false"></textarea></>}
+ <label class="field-label" for={`${id}-encoding-output`} data-i18n="textResult">{tr.textResult}</label><textarea class="text-input textarea text-result" id={`${id}-encoding-output`} readonly dir={id==='html'?'auto':'ltr'} spellcheck="false"></textarea><p class="tool-feedback" id={`${id}-encoding-feedback`} role="status"></p><div class="text-tool-actions"><button class="button-secondary full" id={`${id}-encoding-copy`} data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id={`${id}-encoding-clear`} data-i18n="clearText">{tr.clearText}</button></div>
+ <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div><a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>)}
+<style is:global>.encoding-options{display:flex;flex-direction:column;gap:7px;margin-bottom:10px}.jwt-warning{padding:12px;background:#fff3df;border:1px solid #edcf99;border-radius:8px;color:#744a13!important;font-size:11px!important;line-height:1.65;min-height:0!important}.encoding-options+.number-hint{line-height:1.65}</style>

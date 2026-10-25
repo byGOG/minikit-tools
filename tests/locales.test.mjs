@@ -57,7 +57,7 @@ for (const locale of catalog) {
       assert.equal([...selector.matchAll(/<option /g)].length, 50, `${path}: selector count`);
       assert.equal([...selector.matchAll(/ selected/g)].length, 1);
       assert.ok(selector.includes(`value="${locale.code}" selected`));
-      for (const key of ['heroTitle', 'imageTitle', 'qrTitle', 'wordTitle', 'colorTitle', 'caseTitle', 'dedupeTitle', 'sortTitle', 'jsonTitle', 'base64Title', 'urlTitle', 'passwordTitle', 'unitTitle', 'percentTitle', 'resizeTitle', 'cropTitle', 'rotateTitle', 'watermarkTitle', 'paletteTitle', 'image64Title', 'imagesPdfTitle', 'mergePdfTitle', 'splitPdfTitle', 'uuidTitle', 'shaTitle', 'unixTitle', 'replaceTitle', 'diffTitle', 'lineNumberTitle', 'ageTitle', 'dateDiffTitle', 'countdownTitle', 'privacyLead', 'skipTools']) {
+      for (const key of ['heroTitle', 'imageTitle', 'qrTitle', 'wordTitle', 'colorTitle', 'caseTitle', 'dedupeTitle', 'sortTitle', 'jsonTitle', 'base64Title', 'urlTitle', 'passwordTitle', 'unitTitle', 'percentTitle', 'resizeTitle', 'cropTitle', 'rotateTitle', 'watermarkTitle', 'paletteTitle', 'image64Title', 'imagesPdfTitle', 'mergePdfTitle', 'splitPdfTitle', 'uuidTitle', 'shaTitle', 'unixTitle', 'replaceTitle', 'diffTitle', 'lineNumberTitle', 'ageTitle', 'dateDiffTitle', 'countdownTitle', 'htmlTitle', 'jwtTitle', 'baseTitle', 'privacyLead', 'skipTools']) {
         assert.ok(html.includes(`data-i18n="${key}">${translatedHtml(d[key])}`), `${path}: translated ${key}`);
       }
       assert.ok(html.includes(`aria-label="${escapeHtml(d.chooseLanguage)}"`), `${path}: accessible selector label`);

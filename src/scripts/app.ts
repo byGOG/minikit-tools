@@ -1,4 +1,5 @@
 import QRCode from 'qrcode';
+import { setupEncodingTools } from './encoding-tools';
 import { setupDateTools } from './date-tools';
 import { setupTextExtras } from './text-extras';
 import { setupDeveloperExtras } from './developer-extras';
@@ -322,4 +323,5 @@ setupPdfTools(t);
 setupDeveloperExtras(t);
 setupTextExtras(t);
 setupDateTools(t);
+setupEncodingTools(t);
 void loadLocale();
