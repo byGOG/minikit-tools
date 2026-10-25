@@ -355,5 +355,19 @@
   "baseConvert": "Konvertavimo numeris",
   "baseHint": "Iki 4 096 skaitmenų, su pasirenkamu + arba − ženklu. Naudokite skaitmenis 0–9 ir raides a–z; nėra priešdėlių (0x/0b), trupmenų ar grupavimo separatorių. Neigiami rezultatai naudoja minuso ženklą, o ne dvejetų papildinį.",
   "encodingInvalid": "Patikrinkite HTML dydį, JWT struktūrą/kodavimą, skaitmenis ir pasirinktas bazes. Įvestis gali viršyti nurodytas ribas.",
-  "encodingCopyFailed": "Kopija nepavyko. Pasirinkite ir nukopijuokite rezultatą rankiniu būdu."
+  "encodingCopyFailed": "Kopija nepavyko. Pasirinkite ir nukopijuokite rezultatą rankiniu būdu.",
+  "toneTitle": "Vaizdo ryškumas ir kontrastas",
+  "toneDesc": "Ryškumą ir kontrastą reguliuokite vietoje. Peržiūrėkite rezultatą ir atsisiųskite PNG failą nekeisdami originalo.",
+  "grayscaleTitle": "Juodai baltas vaizdas",
+  "grayscaleDesc": "Konvertuokite spalvotą vaizdą į pilkų atspalvių naudodami svorinį šviesumą. Išsaugomas skaidrumas ir originalūs matmenys.",
+  "avatarTitle": "Apvalaus profilio vaizdas",
+  "avatarDesc": "Centro apkarpykite vaizdą į apskritimą ir atsisiųskite kvadratinį PNG su permatomais kampais.",
+  "toneBrightness": "Ryškumas (−100–100)",
+  "toneContrast": "Kontrastas (−100 iki 100)",
+  "effectApply": "Kandidatuokite ir peržiūrėkite",
+  "toneHint": "RGB kanalų ryškumas sudaro ±255. Kontrastas sumažina jų atstumą nuo 128 vidurio 0–2 kartus. Apkarpytų šviesių vietų/šešėlių atkurti neįmanoma.",
+  "grayscaleHint": "Naudojant svorinį RGB šviesumą sukuria pilkų atspalvių ir išlaiko alfa skaidrumą. Joks failas nėra įkeltas.",
+  "avatarSize": "Išvesties dydis (kvadratiniai pikseliai)",
+  "avatarHint": "Naudoja didžiausią šaltinio centrinį kvadratą, pritvirtintą prie apskritimo. Kampai PNG išlieka skaidrūs; Mažo šaltinio padidinimas detalių neprideda.",
+  "effectInvalid": "Pasirinkite galiojantį JPEG, PNG arba WebP pagal ribas ir patikrinkite efektų nustatymus."
 }

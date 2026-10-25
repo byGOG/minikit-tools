@@ -355,5 +355,19 @@
   "baseConvert": "Badilisha nambari",
   "baseHint": "Hadi tarakimu 4,096, na ishara ya hiari ya + au −. Tumia tarakimu 0-9 na herufi a-z; hakuna viambishi awali (0x/0b), sehemu au vitenganishi vya vikundi. Matokeo hasi hutumia ishara ya kuondoa, sio inayosaidia mbili.",
   "encodingInvalid": "Angalia saizi ya HTML, muundo/usimbuaji wa JWT, tarakimu na besi zilizochaguliwa. Pembejeo inaweza kuzidi mipaka iliyotajwa.",
-  "encodingCopyFailed": "Nakala imeshindwa. Chagua na unakili matokeo kwa mikono."
+  "encodingCopyFailed": "Nakala imeshindwa. Chagua na unakili matokeo kwa mikono.",
+  "toneTitle": "Mwangaza wa picha na utofautishaji",
+  "toneDesc": "Rekebisha mwangaza na utofautishe ndani ya nchi. Hakiki matokeo na upakue PNG bila kubadilisha asili.",
+  "grayscaleTitle": "Picha nyeusi na nyeupe",
+  "grayscaleDesc": "Badilisha picha ya rangi kuwa kijivu kwa kutumia mwangaza wenye uzani. Uwazi na vipimo vya asili huhifadhiwa.",
+  "avatarTitle": "Picha ya wasifu wa pande zote",
+  "avatarDesc": "Punguza picha katikati kwenye duara na upakue PNG ya mraba na pembe za uwazi.",
+  "toneBrightness": "Mwangaza (-100 hadi 100)",
+  "toneContrast": "Tofauti (-100 hadi 100)",
+  "effectApply": "Omba na uhakiki",
+  "toneHint": "Mwangaza huongeza hadi ±255 kwa chaneli za RGB. Tofauti hupunguza umbali wao kutoka katikati ya 128 kwa sababu ya 0-2. Vivutio/vivuli vilivyokatwa haviwezi kurejeshwa.",
+  "grayscaleHint": "Hutoa vivuli vya kijivu kwa kutumia mwangaza wa RGB wenye uzani na huhifadhi uwazi wa alpha. Hakuna faili iliyopakiwa.",
+  "avatarSize": "Ukubwa wa pato (saizi za mraba)",
+  "avatarHint": "Hutumia mraba mkubwa zaidi wa chanzo, uliokatwa kwenye duara. Pembe hukaa wazi katika PNG; Kupanua chanzo kidogo hakuongezi maelezo.",
+  "effectInvalid": "Chagua JPEG halali, PNG au WebP ndani ya mipaka na uangalie mipangilio ya athari."
 }

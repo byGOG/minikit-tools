@@ -355,5 +355,19 @@
   "baseConvert": "Konvertovať číslo",
   "baseHint": "Až do 4 096 číslic, s voliteľným znamienkom + alebo −. Použite číslice 0–9 a písmená a–z; žiadne prefixy (0x/0b), zlomky ani separátory na zoskupenie. Negatívne výsledky používajú mínusové znamienko, nie dvojkový komplement.",
   "encodingInvalid": "Skontrolujte veľkosť HTML, štruktúru/kódovanie JWT, číslice a vybrané bázy. Vstup môže prekročiť uvedené limity.",
-  "encodingCopyFailed": "Kopírovanie zlyhalo. Vyberte a skopírujte výsledok manuálne."
+  "encodingCopyFailed": "Kopírovanie zlyhalo. Vyberte a skopírujte výsledok manuálne.",
+  "toneTitle": "Jas a kontrast obrazu",
+  "toneDesc": "Nastavte jas a kontrast lokálne. Ukážte si výsledok a stiahnite si PNG bez zmeny originálu.",
+  "grayscaleTitle": "Čiernobiely obraz",
+  "grayscaleDesc": "Preveďte farebný obrázok do odtieňov sivej pomocou váženej luminancie. Priehľadnosť a pôvodné rozmery sú zachované.",
+  "avatarTitle": "Guľatý profilový obrázok",
+  "avatarDesc": "Orežte obrázok do kruhu a stiahnite štvorcový PNG s priehľadnými rohmi.",
+  "toneBrightness": "Jas (−100 až 100)",
+  "toneContrast": "Kontrast (−100 až 100)",
+  "effectApply": "Prihlásiť sa a ukázať",
+  "toneHint": "Jas sa sčíta na ±255 v RGB kanáloch. Kontrast škáluje ich vzdialenosť od stredu 128 faktorom 0–2. Orezané zvýraznenia/tiene sa nedajú obnoviť.",
+  "grayscaleHint": "Vytvára odtiene sivej pomocou váženého RGB jasu a zachováva alfa priehľadnosť. Žiadny súbor sa nenahráva.",
+  "avatarSize": "Výstupná veľkosť (štvorcové pixely)",
+  "avatarHint": "Používa najväčší stredový štvorec zdroja, orezaný na kruh. Rohy zostávajú priehľadné v PNG; Zväčšovanie malého zdroja nepridáva detaily.",
+  "effectInvalid": "Vyberte platný JPEG, PNG alebo WebP v rámci limitov a skontrolujte nastavenia efektov."
 }

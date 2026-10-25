@@ -355,5 +355,19 @@
   "baseConvert": "Număr de conversie",
   "baseHint": "Până la 4.096 de cifre, cu opțional semn + sau −. Folosiți cifrele 0–9 și literele a–z; fără prefixe (0x/0b), fracții sau separatori de grupare. Rezultatele negative folosesc semnul minus, nu complementul de doi.",
   "encodingInvalid": "Verifică dimensiunea HTML, structura/codarea JWT, cifrele și bazele selectate. Intrarea poate depăși limitele declarate.",
-  "encodingCopyFailed": "Copierea a eșuat. Selectează și copiază manual rezultatul."
+  "encodingCopyFailed": "Copierea a eșuat. Selectează și copiază manual rezultatul.",
+  "toneTitle": "Luminozitatea și contrastul imaginii",
+  "toneDesc": "Ajustează luminozitatea și contrastul local. Previzualizează rezultatul și descarcă un PNG fără să schimbi originalul.",
+  "grayscaleTitle": "Imagine alb-negru",
+  "grayscaleDesc": "Convertiți o imagine color în tonuri de gri folosind luminanță ponderată. Transparența și dimensiunile originale sunt păstrate.",
+  "avatarTitle": "Imagine de profil rotunde",
+  "avatarDesc": "Decupează o imagine într-un cerc și descarcă un PNG pătrat cu colțuri transparente.",
+  "toneBrightness": "Luminozitate (−100 până la 100)",
+  "toneContrast": "Contrast (−100 până la 100)",
+  "effectApply": "Aplică și previzualizează",
+  "toneHint": "Luminozitatea se adună până la ±255 pe canalele RGB. Contrastul scalează distanța lor de la mijlocul 128 cu un factor de 0–2. Luminele/umbrele tăiate nu pot fi restaurate.",
+  "grayscaleHint": "Produce nuanțe de gri folosind luminanță RGB ponderată și păstrează transparența alfa. Niciun fișier nu este încărcat.",
+  "avatarSize": "Dimensiunea ieșirii (pixeli pătrați)",
+  "avatarHint": "Folosește cel mai mare pătrat centrat al sursei, decupat într-un cerc. Colțurile rămân transparente în PNG; Mărirea unei surse mici nu adaugă detalii.",
+  "effectInvalid": "Alege un JPEG, PNG sau WebP valabil în limitele acestora și verifică setările efectelor."
 }

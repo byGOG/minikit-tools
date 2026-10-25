@@ -355,5 +355,19 @@
   "baseConvert": "Konverter nummer",
   "baseHint": "Opptil 4 096 sifre, med et valgfritt + eller −-tegn. Bruk sifrene 0–9 og bokstavene a–z; ingen prefikser (0x/0b), brøker eller grupperingsseparatorer. Negative resultater bruker et minustegn, ikke to-komplement.",
   "encodingInvalid": "Sjekk HTML-størrelse, JWT-struktur/koding, sifre og valgte baser. Inngangen kan overskride de angitte grensene.",
-  "encodingCopyFailed": "Kopien feilet. Velg og kopier resultatet manuelt."
+  "encodingCopyFailed": "Kopien feilet. Velg og kopier resultatet manuelt.",
+  "toneTitle": "Bildelysstyrke og kontrast",
+  "toneDesc": "Juster lysstyrke og kontrast lokalt. Forhåndsvis resultatet og last ned en PNG uten å endre originalen.",
+  "grayscaleTitle": "Svart-hvitt-bilde",
+  "grayscaleDesc": "Konverter et fargebilde til gråtoner ved å bruke vektet luminans. Gjennomsiktighet og opprinnelige mål bevares.",
+  "avatarTitle": "Rundt profilbilde",
+  "avatarDesc": "Sentrer et bilde til en sirkel og last ned en kvadratisk PNG med gjennomsiktige hjørner.",
+  "toneBrightness": "Lysstyrke (−100 til 100)",
+  "toneContrast": "Kontrast (−100 til 100)",
+  "effectApply": "Søk og forhåndsvisning",
+  "toneHint": "Lysstyrken summerer seg til ±255 til RGB-kanaler. Kontrasten skalerer avstanden deres fra midtpunkt 128 med en faktor på 0–2. Klippede høylys/skygger kan ikke gjenopprettes.",
+  "grayscaleHint": "Produserer gråtoner ved bruk av vektet RGB-luminans og bevarer alfatransparens. Ingen fil lastes opp.",
+  "avatarSize": "Utgangsstørrelse (kvadratiske piksler)",
+  "avatarHint": "Bruker det største sentrerte kvadratet i kilden, festet til en sirkel. Hjørnene forblir transparente i PNG; Å forstørre en liten kilde tilfører ikke detaljer.",
+  "effectInvalid": "Velg en gyldig JPEG, PNG eller WebP innenfor grensene og sjekk effektinnstillingene."
 }

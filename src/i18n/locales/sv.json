@@ -355,5 +355,19 @@
   "baseConvert": "Konvertera nummer",
   "baseHint": "Upp till 4 096 siffror, med ett valfritt + eller −-tecken. Använd siffrorna 0–9 och bokstäverna a–z; inga prefix (0x/0b), bråkdelar eller grupperingsseparatorer. Negativa resultat använder ett minustecken, inte tvåkomplement.",
   "encodingInvalid": "Kontrollera HTML-storlek, JWT-struktur/kodning, siffror och valda baser. Ingången kan överstiga de angivna gränserna.",
-  "encodingCopyFailed": "Kopian misslyckades. Välj och kopiera resultatet manuellt."
+  "encodingCopyFailed": "Kopian misslyckades. Välj och kopiera resultatet manuellt.",
+  "toneTitle": "Bildljusstyrka och kontrast",
+  "toneDesc": "Justera ljusstyrka och kontrast lokalt. Förhandsgranska resultatet och ladda ner en PNG utan att ändra originalet.",
+  "grayscaleTitle": "Svartvit bild",
+  "grayscaleDesc": "Konvertera en färgbild till gråskala med viktad luminans. Transparens och ursprungliga mått bevaras.",
+  "avatarTitle": "Rund profilbild",
+  "avatarDesc": "Centrera en bild till en cirkel och ladda ner en kvadratisk PNG med transparenta hörn.",
+  "toneBrightness": "Ljusstyrka (−100 till 100)",
+  "toneContrast": "Kontrast (−100 till 100)",
+  "effectApply": "Ansök och förhandsgranska",
+  "toneHint": "Ljusstyrkan blir ±255 till RGB-kanalerna. Kontrasten skalar deras avstånd från mittpunkt 128 med en faktor 0–2. Klippta högdagrar/skuggor kan inte återställas.",
+  "grayscaleHint": "Producerar gråtoner med viktad RGB-luminans och bevarar alfatransparens. Ingen fil laddas upp.",
+  "avatarSize": "Utdata (kvadratiska pixlar)",
+  "avatarHint": "Använder den största centrerade kvadraten i källan, fastklippt till en cirkel. Hörnen förblir transparenta i PNG; Att förstora en liten källa tillför inte detaljer.",
+  "effectInvalid": "Välj en giltig JPEG, PNG eller WebP inom gränserna och kontrollera effektinställningarna."
 }

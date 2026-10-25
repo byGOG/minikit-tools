@@ -355,5 +355,19 @@
   "baseConvert": "Przelicz liczbę",
   "baseHint": "Do 4 096 cyfr, z opcjonalnym znakiem + lub −. Używaj cyfr od 0 do 9 oraz liter a–z; brak prefiksów (0x/0b), ułamków ani separatorów grupowania. Wyniki negatywne używają znaku minus, a nie doplątku dwójki.",
   "encodingInvalid": "Sprawdź rozmiar HTML, strukturę/kodowanie JWT, cyfry i wybrane bazy. Dane wejściowe mogą przekraczać podane limity.",
-  "encodingCopyFailed": "Kopia nie powiodła. Wybierz i skopiuj wynik ręcznie."
+  "encodingCopyFailed": "Kopia nie powiodła. Wybierz i skopiuj wynik ręcznie.",
+  "toneTitle": "Jasność obrazu i kontrast",
+  "toneDesc": "Dostosuj jasność i kontrast lokalnie. Podgląd wynik i pobierz PNG bez zmiany oryginału.",
+  "grayscaleTitle": "Obraz czarno-biały",
+  "grayscaleDesc": "Przekonwertuj kolorowy obraz na skalę szarości, używając ważonej luminancji. Zachowano przezroczystość i oryginalne wymiary.",
+  "avatarTitle": "Okrągły obraz profilowy",
+  "avatarDesc": "Przyciń obraz na środek w okrąg i pobierz kwadratowy PNG z przezroczystymi narożnikami.",
+  "toneBrightness": "Jasność (−100 do 100)",
+  "toneContrast": "Kontrast (−100 do 100)",
+  "effectApply": "Aplikuj i podgląd",
+  "toneHint": "Jasność łączy się do ±255 dla kanałów RGB. Kontrast skaluje ich odległość od środka 128 o czynnik 0–2. Przycięte światła/cienie nie mogą zostać przywrócone.",
+  "grayscaleHint": "Generuje odcienie szarości dzięki ważonej luminancji RGB i zachowuje przezroczystość alfa. Nie przesyłano żadnego pliku.",
+  "avatarSize": "Rozmiar wyjścia (piksele kwadratowe)",
+  "avatarHint": "Wykorzystuje największy wyśrodkowany kwadrat źródła, przycięty do okręgu. Narożniki pozostają przezroczyste w PNG; Powiększanie małego źródła nie dodaje szczegółów.",
+  "effectInvalid": "Wybierz ważny JPEG, PNG lub WebP w granicach limitów i sprawdź ustawienia efektów."
 }

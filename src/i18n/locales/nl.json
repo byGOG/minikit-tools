@@ -355,5 +355,19 @@
   "baseConvert": "Converteer nummer",
   "baseHint": "Tot 4.096 cijfers, met een optioneel + of − teken. Gebruik cijfers 0–9 en letters a–z; Geen voorvoegsels (0x/0b), breuken of groeperingsscheiders. Negatieve resultaten gebruiken een minteken, niet het complement van de twee.",
   "encodingInvalid": "Controleer de HTML-grootte, JWT-structuur/codering, cijfers en geselecteerde bases. De ingang kan de aangegeven limieten overschrijden.",
-  "encodingCopyFailed": "Kopie mislukt. Selecteer en kopieer het resultaat handmatig."
+  "encodingCopyFailed": "Kopie mislukt. Selecteer en kopieer het resultaat handmatig.",
+  "toneTitle": "Beeldhelderheid en contrast",
+  "toneDesc": "Pas de helderheid en het contrast lokaal aan. Bekijk het resultaat en download een PNG zonder het origineel te wijzigen.",
+  "grayscaleTitle": "Zwart-witafbeelding",
+  "grayscaleDesc": "Zet een kleurenbeeld om naar grijswaarden met behulp van gewogen luminantie. Transparantie en originele afmetingen blijven behouden.",
+  "avatarTitle": "Ronde profielafbeelding",
+  "avatarDesc": "Snijd een afbeelding in een cirkel en download een vierkant PNG met transparante hoeken.",
+  "toneBrightness": "Helderheid (−100 tot 100)",
+  "toneContrast": "Contrast (−100 tot 100)",
+  "effectApply": "Aanvragen en previewen",
+  "toneHint": "De helderheid komt op tot ±255 voor RGB-kanalen. Contrast schaalt hun afstand vanaf middenpunt 128 met een factor 0–2. Geknipte hooglichten/schaduwen kunnen niet worden hersteld.",
+  "grayscaleHint": "Produceert grijstinten met gewogen RGB-luminantie en behoudt alfa-transparantie. Er wordt geen bestand geüpload.",
+  "avatarSize": "Uitvoergrootte (vierkante pixels)",
+  "avatarHint": "Gebruikt het grootste gecentreerde vierkant van de bron, vastgeklemd aan een cirkel. Hoeken blijven transparant in PNG; Het vergroten van een kleine bron voegt geen details toe.",
+  "effectInvalid": "Kies een geldig JPEG, PNG of WebP binnen de limieten en controleer de effectinstellingen."
 }

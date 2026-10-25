@@ -355,5 +355,19 @@
   "baseConvert": "Chuyển đổi số",
   "baseHint": "Tối đa 4.096 chữ số, với ký hiệu + hoặc − tùy chọn. Sử dụng các chữ số 0–9 và chữ cái a–z; không có tiền tố (0x/0b), phân số hay dấu phân nhóm. Kết quả âm tính sử dụng dấu trừ, không dùng dấu hai.",
   "encodingInvalid": "Kiểm tra kích thước HTML, cấu trúc/mã hóa JWT, số và các base đã chọn. Đầu vào có thể vượt quá giới hạn đã nêu.",
-  "encodingCopyFailed": "Sao chép thất bại. Chọn và sao chép kết quả thủ công."
+  "encodingCopyFailed": "Sao chép thất bại. Chọn và sao chép kết quả thủ công.",
+  "toneTitle": "Độ sáng và độ tương phản hình ảnh",
+  "toneDesc": "Điều chỉnh độ sáng và độ tương phản cục bộ. Xem trước kết quả và tải về bản PNG mà không thay đổi bản gốc.",
+  "grayscaleTitle": "Hình ảnh đen trắng",
+  "grayscaleDesc": "Chuyển đổi hình ảnh màu sang thang độ xám sử dụng độ sáng có trọng số. Độ trong suốt và kích thước ban đầu được giữ nguyên.",
+  "avatarTitle": "Hình ảnh nghiêng tròn",
+  "avatarDesc": "Cắt ghép hình ảnh vào giữa thành vòng tròn và tải về bản PNG vuông với các góc trong suốt.",
+  "toneBrightness": "Độ sáng (−100 đến 100)",
+  "toneContrast": "Độ tương phản (−100 đến 100)",
+  "effectApply": "Áp dụng và xem trước",
+  "toneHint": "Độ sáng cộng dồn lên đến ±255 kênh RGB. Contrast điều chỉnh khoảng cách từ điểm giữa 128 theo hệ số 0–2. Các vùng sáng/bóng bị cắt không thể phục hồi.",
+  "grayscaleHint": "Tạo các sắc thái xám bằng cách sử dụng độ sáng RGB có trọng số và giữ nguyên độ trong suốt alpha. Không có tệp nào được tải lên.",
+  "avatarSize": "Kích thước đầu ra (pixel vuông)",
+  "avatarHint": "Sử dụng hình vuông tâm lớn nhất của nguồn, được cắt thành hình tròn. Các góc vẫn giữ trong suốt trong PNG; phóng to một nguồn nhỏ không làm tăng chi tiết.",
+  "effectInvalid": "Chọn file JPEG, PNG hoặc WebP hợp lệ trong giới hạn và kiểm tra cài đặt hiệu ứng."
 }

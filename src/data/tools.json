@@ -372,5 +372,38 @@
       "baseSource",
       "baseConvert"
     ]
+  },
+  {
+    "slug": "image-brightness-contrast",
+    "title": "toneTitle",
+    "desc": "toneDesc",
+    "anchor": "tone-tool",
+    "steps": [
+      "editorFile",
+      "toneBrightness",
+      "effectApply"
+    ]
+  },
+  {
+    "slug": "image-grayscale",
+    "title": "grayscaleTitle",
+    "desc": "grayscaleDesc",
+    "anchor": "grayscale-tool",
+    "steps": [
+      "editorFile",
+      "effectApply",
+      "downloadPng"
+    ]
+  },
+  {
+    "slug": "round-profile-image",
+    "title": "avatarTitle",
+    "desc": "avatarDesc",
+    "anchor": "avatar-tool",
+    "steps": [
+      "editorFile",
+      "avatarSize",
+      "effectApply"
+    ]
   }
 ]

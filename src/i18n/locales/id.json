@@ -355,5 +355,19 @@
   "baseConvert": "Jumlah konversi",
   "baseHint": "Hingga 4.096 digit, dengan tanda opsional + atau −. Gunakan digit 0–9 dan huruf a–z; Tidak ada awalan (0x/0b), pecahan, atau pemisah pengelompokan. Hasil negatif menggunakan tanda minus, bukan komplemen dua.",
   "encodingInvalid": "Periksa ukuran HTML, struktur/pengkodean JWT, digit, dan basis yang dipilih. Input dapat melebihi batas yang ditentukan.",
-  "encodingCopyFailed": "Salin gagal. Pilih dan salin hasilnya secara manual."
+  "encodingCopyFailed": "Salin gagal. Pilih dan salin hasilnya secara manual.",
+  "toneTitle": "Kecerahan dan kontras gambar",
+  "toneDesc": "Sesuaikan kecerahan dan kontras secara lokal. Pratinjau hasilnya dan unduh PNG tanpa mengubah versi aslinya.",
+  "grayscaleTitle": "Gambar hitam-putih",
+  "grayscaleDesc": "Konversi gambar berwarna ke skala abu-abu menggunakan luminansi berbobot. Transparansi dan dimensi asli tetap dipertahankan.",
+  "avatarTitle": "Gambar profil bulat",
+  "avatarDesc": "Potong gambar di tengah menjadi lingkaran dan unduh PNG persegi dengan sudut transparan.",
+  "toneBrightness": "Kecerahan (−100 hingga 100)",
+  "toneContrast": "Kontras (−100 hingga 100)",
+  "effectApply": "Terapkan dan pratinjau",
+  "toneHint": "Kecerahan berjumlah ±255 untuk saluran RGB. Kontras memperbesar jarak mereka dari titik tengah 128 dengan faktor 0–2. Highlight/bayangan yang terpotong tidak dapat dipulihkan.",
+  "grayscaleHint": "Menghasilkan nuansa abu-abu menggunakan luminansi RGB berbobot dan mempertahankan transparansi alfa. Tidak ada file yang diunggah.",
+  "avatarSize": "Ukuran output (piksel persegi)",
+  "avatarHint": "Menggunakan kotak terbesar yang terpusat dari sumber, dipotong ke lingkaran. Sudut tetap transparan di PNG; Memperbesar sumber kecil tidak menambah detail.",
+  "effectInvalid": "Pilih JPEG, PNG, atau WebP yang valid dalam batas dan periksa pengaturan efeknya."
 }

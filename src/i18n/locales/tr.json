@@ -355,5 +355,19 @@
   "baseConvert": "Sayıyı dönüştür",
   "baseHint": "İsteğe bağlı + veya − işaretiyle en fazla 4.096 basamak. 0–9 ve a–z kullan; ön ek (0x/0b), kesir veya binlik ayırıcı kullanma. Negatif sonuçlar ikiye tümleyen yerine eksi işaretiyle gösterilir.",
   "encodingInvalid": "HTML boyutunu, JWT yapısını/kodlamasını, basamakları ve seçili tabanları kontrol et. Girdi belirtilen sınırları aşmış olabilir.",
-  "encodingCopyFailed": "Kopyalanamadı. Sonucu seçip elle kopyalayabilirsin."
+  "encodingCopyFailed": "Kopyalanamadı. Sonucu seçip elle kopyalayabilirsin.",
+  "toneTitle": "Görsel parlaklık ve kontrast",
+  "toneDesc": "Parlaklık ve kontrastı cihazında ayarla. Sonucu önizle ve özgün dosyayı değiştirmeden PNG olarak indir.",
+  "grayscaleTitle": "Siyah-beyaz görsel",
+  "grayscaleDesc": "Renkli görseli ağırlıklı parlaklıkla gri tonlarına dönüştür. Şeffaflık ve özgün boyutlar korunur.",
+  "avatarTitle": "Yuvarlak profil görseli",
+  "avatarDesc": "Görseli ortadan daire şeklinde kırp; köşeleri şeffaf kare bir PNG olarak indir.",
+  "toneBrightness": "Parlaklık (−100 ile 100)",
+  "toneContrast": "Kontrast (−100 ile 100)",
+  "effectApply": "Uygula ve önizle",
+  "toneHint": "Parlaklık RGB kanallarına en fazla ±255 ekler. Kontrast, 128 orta noktasına uzaklığı 0–2 katsayısıyla değiştirir. Kırpılan açık/koyu ayrıntılar geri getirilemez.",
+  "grayscaleHint": "RGB parlaklık ağırlıklarıyla gri tonları üretir, alfa şeffaflığını korur. Dosya yüklenmez.",
+  "avatarSize": "Çıktı boyutu (kare piksel)",
+  "avatarHint": "Kaynağın ortasındaki en büyük kare kullanılır ve daireye kırpılır. PNG köşeleri şeffaf kalır; küçük bir kaynağı büyütmek ayrıntı eklemez.",
+  "effectInvalid": "Sınırlar içinde geçerli JPEG, PNG veya WebP seç ve efekt ayarlarını kontrol et."
 }

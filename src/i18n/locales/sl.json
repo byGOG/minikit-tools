@@ -355,5 +355,19 @@
   "baseConvert": "Pretvori številko",
   "baseHint": "Do 4.096 številk, z opcijskim znakom + ali −. Uporabite števke od 0 do 9 in črke a–z; brez predpon (0x/0b), ulomkov ali ločeval za skupine. Negativni rezultati uporabljajo minus, ne dopolnila dveh.",
   "encodingInvalid": "Preverite velikost HTML, JWT strukturo/kodiranje, števke in izbrane osnove. Vhod lahko preseže navedene meje.",
-  "encodingCopyFailed": "Kopija ni uspela. Rezultat izberite in kopirajte ročno."
+  "encodingCopyFailed": "Kopija ni uspela. Rezultat izberite in kopirajte ročno.",
+  "toneTitle": "Svetlost in kontrast slike",
+  "toneDesc": "Lokalno prilagodite svetlost in kontrast. Predogled rezultata in prenos PNG-ja brez spreminjanja izvirnika.",
+  "grayscaleTitle": "Črno-bela slika",
+  "grayscaleDesc": "Pretvorite barvno sliko v sivine z uporabo utežene luminance. Ohranjena sta prosojnost in izvirne dimenzije.",
+  "avatarTitle": "Okrogla profilna slika",
+  "avatarDesc": "Orezujte sliko v krog in prenesite kvadratni PNG s prozornimi vogali.",
+  "toneBrightness": "Svetlost (−100 do 100)",
+  "toneContrast": "Kontrast (−100 do 100)",
+  "effectApply": "Prijava in predogled",
+  "toneHint": "Svetlost se sešteje do ±255 za RGB kanale. Kontrast poveča njihovo razdaljo od sredine 128 za faktor 0–2. Odrezanih poudarkov/senc ni mogoče obnoviti.",
+  "grayscaleHint": "Proizvede odtenke sive z uteženo RGB svetlostjo in ohranja alfa prosojnost. Nobena datoteka ni naložena.",
+  "avatarSize": "Velikost izhoda (kvadratni piksli)",
+  "avatarHint": "Uporablja največji osrednji kvadrat vira, prirezan na krog. Koti ostanejo prozorni v PNG; Povečanje majhnega vira ne doda podrobnosti.",
+  "effectInvalid": "Izberite veljaven JPEG, PNG ali WebP znotraj omejitev in preverite nastavitve učinkov."
 }

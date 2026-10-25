@@ -1,0 +1,18 @@
+---
+import{SlidersHorizontal,Contrast,CircleUserRound,ShieldCheck,ArrowRight}from'lucide-astro';
+import tr from'../i18n/locales/tr.json';
+const cards=[{id:'tone',title:'toneTitle',desc:'toneDesc',slug:'image-brightness-contrast',Icon:SlidersHorizontal},{id:'grayscale',title:'grayscaleTitle',desc:'grayscaleDesc',slug:'image-grayscale',Icon:Contrast},{id:'avatar',title:'avatarTitle',desc:'avatarDesc',slug:'round-profile-image',Icon:CircleUserRound}]as const;
+---
+{cards.map(({id,title,desc,slug,Icon})=><article class="tool-card text-tool-card image-editor-card" id={`${id}-tool`}>
+ <div class="card-top"><span class="tool-icon icon-green"><Icon size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div><h3 data-i18n={title}>{tr[title]}</h3><p data-i18n={desc}>{tr[desc]}</p>
+ <label class="field-label" for={`${id}-effect-file`} data-i18n="editorFile">{tr.editorFile}</label><input class="text-input" id={`${id}-effect-file`} type="file" accept="image/png,image/jpeg,image/webp" aria-describedby={`${id}-effect-limits`}/><small class="number-hint" id={`${id}-effect-limits`} data-i18n="editorLimits">{tr.editorLimits}</small><p class="editor-selected" id={`${id}-effect-selected`}></p>
+ <fieldset class="editor-controls effect-options" id={`${id}-effect-options`} disabled>
+ {id==='tone'&&<><label class="field-label" for="tone-brightness" data-i18n="toneBrightness">{tr.toneBrightness}</label><input class="text-input" id="tone-brightness" type="number" min="-100" max="100" step="1" value="0"/><label class="field-label" for="tone-contrast" data-i18n="toneContrast">{tr.toneContrast}</label><input class="text-input" id="tone-contrast" type="number" min="-100" max="100" step="1" value="0"/></>}
+ {id==='avatar'&&<><label class="field-label" for="avatar-size" data-i18n="avatarSize">{tr.avatarSize}</label><select class="text-input" id="avatar-size">{[128,256,512,1024].map(size=><option value={size} selected={size===512}>{size} × {size}</option>)}</select></>}
+ <button class="button-secondary full" id={`${id}-effect-reset`} data-i18n="editorReset">{tr.editorReset}</button>
+ </fieldset>
+ <small class="number-hint" data-i18n={id==='tone'?'toneHint':id==='avatar'?'avatarHint':'grayscaleHint'}>{id==='tone'?tr.toneHint:id==='avatar'?tr.avatarHint:tr.grayscaleHint}</small><button class="button-primary full" id={`${id}-effect-apply`} data-i18n="effectApply" disabled>{tr.effectApply}</button>
+ <div class="editor-preview"><img id={`${id}-effect-preview`} hidden alt={tr[title]} data-i18n-alt={title}/></div><p class="editor-size"><span data-i18n="editorDimensions">{tr.editorDimensions}</span>: <b id={`${id}-effect-size`}>—</b></p><p class="tool-feedback" id={`${id}-effect-feedback`} role="status"></p><button class="button-secondary full" id={`${id}-effect-download`} data-i18n="downloadPng" disabled>{tr.downloadPng}</button>
+ <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localImage">{tr.localImage}</span></div><a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>)}
+<style is:global>.effect-options{gap:7px}.image-editor-card .editor-preview img[hidden]{display:none}</style>

@@ -355,5 +355,19 @@
   "baseConvert": "Número de conversão",
   "baseHint": "Até 4.096 dígitos, com um sinal opcional + ou −. Use os dígitos 0–9 e as letras a–z; sem prefixos (0x/0b), frações ou separadores de agrupamento. Resultados negativos usam um sinal de menos, não o complemento de dois.",
   "encodingInvalid": "Verifique o tamanho do HTML, estrutura/codificação do JWT, dígitos e bases selecionadas. A entrada pode exceder os limites declarados.",
-  "encodingCopyFailed": "Cópia falhou. Selecione e copie o resultado manualmente."
+  "encodingCopyFailed": "Cópia falhou. Selecione e copie o resultado manualmente.",
+  "toneTitle": "Brilho e contraste da imagem",
+  "toneDesc": "Ajuste o brilho e o contraste localmente. Pré-visualize o resultado e baixe um PNG sem alterar o original.",
+  "grayscaleTitle": "Imagem em preto e branco",
+  "grayscaleDesc": "Converta uma imagem colorida para escala de cinza usando luminância ponderada. Transparência e dimensões originais são preservadas.",
+  "avatarTitle": "Imagem de perfil redonda",
+  "avatarDesc": "Corte uma imagem ao centro em um círculo e baixe um PNG quadrado com cantos transparentes.",
+  "toneBrightness": "Brilho (−100 a 100)",
+  "toneContrast": "Contraste (−100 a 100)",
+  "effectApply": "Inscreva-se e prévia",
+  "toneHint": "O brilho soma ±255 para os canais RGB. O contraste escala a distância deles a partir do ponto médio 128 por um fator de 0–2. Luzes/sombras cortadas não podem ser restauradas.",
+  "grayscaleHint": "Produz tons de cinza usando luminância RGB ponderada e preserva a transparência alfa. Nenhum arquivo é enviado.",
+  "avatarSize": "Tamanho da saída (pixels quadrados)",
+  "avatarHint": "Usa o maior quadrado centrado da fonte, recortado a um círculo. Os cantos permanecem transparentes em PNG; Ampliar uma fonte pequena não adiciona detalhes.",
+  "effectInvalid": "Escolha um JPEG, PNG ou WebP válido dentro dos limites e verifique as configurações de efeitos."
 }

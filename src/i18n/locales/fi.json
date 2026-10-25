@@ -355,5 +355,19 @@
   "baseConvert": "Muunnosluku",
   "baseHint": "Enintään 4 096 numeroa, ja valinnainen + tai − merkki. Käytä numeroita 0–9 ja kirjaimia a–z; ei etuliitteitä (0x/0b), murtolukuja tai ryhmittelyerottimia. Negatiivisissa tuloksissa käytetään miinusmerkkiä, ei kahden komplementtia.",
   "encodingInvalid": "Tarkista HTML-koko, JWT-rakenne/koodaus, numerot ja valitut kannat. Syöte voi ylittää ilmoitetut rajat.",
-  "encodingCopyFailed": "Kopio epäonnistui. Valitse ja kopioi tulos manuaalisesti."
+  "encodingCopyFailed": "Kopio epäonnistui. Valitse ja kopioi tulos manuaalisesti.",
+  "toneTitle": "Kuvan kirkkaus ja kontrasti",
+  "toneDesc": "Säädä kirkkautta ja kontrastia paikallisesti. Katso tulos esikatselussa ja lataa PNG muuttamatta alkuperäistä.",
+  "grayscaleTitle": "Mustavalkoinen kuva",
+  "grayscaleDesc": "Muunna värikuva harmaasävyiseksi painotetun luminanssin avulla. Läpinäkyvyys ja alkuperäiset mitat säilyvät.",
+  "avatarTitle": "Pyöreä profiilikuva",
+  "avatarDesc": "Rajaa kuva keskellä ympyrän muotoon ja lataa neliönmuotoinen PNG, jossa on läpinäkyvät kulmat.",
+  "toneBrightness": "Kirkkaus (−100–100)",
+  "toneContrast": "Kontrasti (−100–100)",
+  "effectApply": "Hae ja esikatselu",
+  "toneHint": "Kirkkaus kertoo ±255 RGB-kanaville. Kontrasti skaalaa niiden etäisyyttä keskipisteestä 128 kertoimella 0–2. Leikattuja korostuksia/varjoja ei voi palauttaa.",
+  "grayscaleHint": "Tuottaa harmaan sävyjä painotetulla RGB-luminanssilla ja säilyttää alfa-läpinäkyvyys. Yhtään tiedostoa ei ladata.",
+  "avatarSize": "Ulostulokoko (neliöpikselit)",
+  "avatarHint": "Käyttää lähteen suurinta keskitettyä neliötä, joka on kiinnitetty ympyräksi. Kulmat pysyvät läpinäkyvinä PNG:ssä; pienen lähteen suurentaminen ei tuo yksityiskohtia.",
+  "effectInvalid": "Valitse kelvollinen JPEG, PNG tai WebP rajojen sisällä ja tarkista efektiasetukset."
 }

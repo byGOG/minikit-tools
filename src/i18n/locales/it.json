@@ -355,5 +355,19 @@
   "baseConvert": "Numero di conversione",
   "baseHint": "Fino a 4.096 cifre, con un segno opzionale + o −. Usare le cifre 0–9 e le lettere a–z; nessun prefisso (0x/0b), frazioni o separatori di raggruppamento. I risultati negativi usano un segno meno, non il complemento di due.",
   "encodingInvalid": "Controlla la dimensione HTML, la struttura/codifica JWT, le cifre e le basi selezionate. L'input può superare i limiti indicati.",
-  "encodingCopyFailed": "Copia fallita. Seleziona e copia manualmente il risultato."
+  "encodingCopyFailed": "Copia fallita. Seleziona e copia manualmente il risultato.",
+  "toneTitle": "Luminosità e contrasto dell'immagine",
+  "toneDesc": "Regola luminosità e contrasto localmente. Visualizza il risultato in anteprima e scarica un PNG senza cambiare l'originale.",
+  "grayscaleTitle": "Immagine in bianco e nero",
+  "grayscaleDesc": "Converti un'immagine a colori in scala di grigi usando la luminanza ponderata. La trasparenza e le dimensioni originali sono conservate.",
+  "avatarTitle": "Immagine profilo rotonda",
+  "avatarDesc": "Ritaglia al centro un'immagine in un cerchio e scarica un quadrato PNG con angoli trasparenti.",
+  "toneBrightness": "Luminosità (−100 a 100)",
+  "toneContrast": "Contrasto (−100 a 100)",
+  "effectApply": "Candidati e anteprima",
+  "toneHint": "La luminosità arriva a ±255 nei canali RGB. Il contrasto scala la loro distanza da metà 128 di un fattore 0–2. Le luci o ombre tagliate non possono essere ripristinate.",
+  "grayscaleHint": "Produce sfumature di grigio usando luminanza RGB ponderata e mantiene la trasparenza alfa. Nessun file viene caricato.",
+  "avatarSize": "Dimensione di uscita (pixel quadrati)",
+  "avatarHint": "Utilizza il quadrato centrato più grande della sorgente, tagliato a un cerchio. Gli angoli rimangono trasparenti in PNG; Ingrandire una piccola sorgente non aggiunge dettagli.",
+  "effectInvalid": "Scegli un JPEG, PNG o WebP valido entro i limiti e controlla le impostazioni degli effetti."
 }
