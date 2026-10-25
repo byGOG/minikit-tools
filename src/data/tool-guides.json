@@ -548,5 +548,95 @@
       "heading": "Görsel köşelerini yuvarla",
       "text": "Saydam yuvarlak köşeler oluştur ve PNG indir. Yarıçap 0–4.096 piksel olabilir; kısa kenarın yarısıyla sınırlandırılır. Boyutlar korunur, köşeler saydamlaştırılır. Hareketli görsellerin tek karesi kullanılır; meta veriler kopyalanmaz."
     }
+  },
+  "rotate-pdf-pages": {
+    "en": {
+      "heading": "Rotate PDF pages",
+      "text": "Rotate every page or selected pages clockwise. Adds 90°, 180° or 270° clockwise to existing page rotation. Select all pages or enter ranges such as 1-3,5. Output copies page content; bookmarks, attachments and document metadata are not retained. Not a PDF sanitizer."
+    },
+    "tr": {
+      "heading": "PDF sayfalarını döndür",
+      "text": "Tüm sayfaları veya seçtiğin sayfaları saat yönünde döndür. Mevcut sayfa açısına saat yönünde 90°, 180° veya 270° ekler. Tüm sayfaları seç veya 1-3,5 gibi aralık gir. Çıktı sayfa içeriğini kopyalar; yer imleri, ekler ve belge meta verileri korunmaz. PDF güvenlik temizleyicisi değildir."
+    }
+  },
+  "reorder-pdf-pages": {
+    "en": {
+      "heading": "Reorder PDF pages",
+      "text": "Arrange PDF pages in the exact order you choose. Enter every page exactly once, for example 3,1-2 for a 3-page file. Missing and duplicate pages are rejected. Bookmarks, attachments and document metadata are not retained. Not a PDF sanitizer."
+    },
+    "tr": {
+      "heading": "PDF sayfalarını sırala",
+      "text": "PDF sayfalarını istediğin sıraya yerleştir. Her sayfayı tam bir kez yaz; 3 sayfalı dosya için örneğin 3,1-2. Eksik veya tekrarlanan sayfalar reddedilir. Yer imleri, ekler ve belge meta verileri korunmaz. PDF güvenlik temizleyicisi değildir."
+    }
+  },
+  "delete-pdf-pages": {
+    "en": {
+      "heading": "Delete PDF pages",
+      "text": "Remove selected pages and download a new PDF. Enter pages to remove, such as 1-3,5. At least one page must remain. The original file stays unchanged. Bookmarks, attachments and document metadata are not retained. Not a PDF sanitizer."
+    },
+    "tr": {
+      "heading": "PDF sayfalarını sil",
+      "text": "Seçili sayfaları kaldır ve yeni PDF indir. Kaldırılacak sayfaları 1-3,5 gibi yaz. En az bir sayfa kalmalı. Özgün dosya değişmez. Yer imleri, ekler ve belge meta verileri korunmaz. PDF güvenlik temizleyicisi değildir."
+    }
+  },
+  "json-to-yaml": {
+    "en": {
+      "heading": "JSON to YAML",
+      "text": "Convert JSON data into readable YAML. Converts values, not original formatting. Duplicate JSON keys are rejected. Strings stay strings; comments and numeric spelling are not preserved."
+    },
+    "tr": {
+      "heading": "JSON → YAML",
+      "text": "JSON verisini okunabilir YAML biçimine dönüştür. Özgün biçimi değil, değerleri dönüştürür. Yinelenen JSON anahtarları reddedilir. Metinler metin olarak kalır; yorumlar ve sayıların özgün yazımı korunmaz."
+    }
+  },
+  "yaml-to-json": {
+    "en": {
+      "heading": "YAML to JSON",
+      "text": "Convert a single YAML 1.2 document into JSON. Supports core JSON-compatible values with string mapping keys. Anchors, aliases, merge expansion, custom tags, multiple documents and non-finite numbers are unsupported. Comments and formatting are discarded."
+    },
+    "tr": {
+      "heading": "YAML → JSON",
+      "text": "Tek bir YAML 1.2 belgesini JSON biçimine dönüştür. Metin anahtarlı eşlemeler ve JSON ile uyumlu temel değerler desteklenir. Çapa, takma ad, birleştirme genişletmesi, özel etiket, çoklu belge ve sonlu olmayan sayılar desteklenmez. Yorumlar ve biçim atılır."
+    }
+  },
+  "json-compare": {
+    "en": {
+      "heading": "JSON comparison",
+      "text": "Compare JSON values and list structural differences. Object key order is ignored; array order matters. Reports added, removed and changed values using JSON Pointer paths (empty path means root). Up to 1,000 differences; no partial result on overflow."
+    },
+    "tr": {
+      "heading": "JSON karşılaştırma",
+      "text": "JSON değerlerini karşılaştır ve yapısal farkları listele. Nesne anahtar sırası önemsenmez; dizi sırası önemlidir. Eklenen, silinen ve değişen değerler JSON Pointer yollarıyla gösterilir; boş yol kökü belirtir. En fazla 1.000 fark; sınır aşılırsa kısmi çıktı verilmez."
+    }
+  },
+  "stopwatch": {
+    "en": {
+      "heading": "Stopwatch",
+      "text": "Measure elapsed time with start, pause and reset. Shows tenths of a second; maximum just under 100 hours. Continues while the tab is open. Reloading or closing the page resets it. Background updates can be delayed."
+    },
+    "tr": {
+      "heading": "Kronometre",
+      "text": "Başlat, duraklat ve sıfırla düğmeleriyle geçen süreyi ölç. Saniyenin onda birini gösterir; üst sınır 100 saatin hemen altıdır. Sekme açıkken çalışmayı sürdürür. Sayfayı yenilemek veya kapatmak sıfırlar. Arka planda ekran güncellemeleri gecikebilir."
+    }
+  },
+  "pomodoro-timer": {
+    "en": {
+      "heading": "Pomodoro timer",
+      "text": "Plan a focus session or a short break. Focus 1–180 minutes, break 1–60 minutes. Start or pause the selected phase; completion stops the timer. Switch phases manually. Changing settings resets the timer. No sound or notifications; page reload resets it."
+    },
+    "tr": {
+      "heading": "Pomodoro sayacı",
+      "text": "Bir odaklanma süresi veya kısa mola planla. Odak 1–180, mola 1–60 dakika olabilir. Seçili aşamayı başlat veya duraklat; süre bitince sayaç durur. Aşamayı elle değiştir. Ayar değişikliği sayacı sıfırlar. Ses veya bildirim yoktur; sayfa yenilenince sıfırlanır."
+    }
+  },
+  "coin-and-dice": {
+    "en": {
+      "heading": "Coin flip and dice",
+      "text": "Flip a coin or roll a six-sided die. Generates 1–100 independent draws using browser cryptographic randomness. Outcomes can repeat."
+    },
+    "tr": {
+      "heading": "Yazı-tura ve zar",
+      "text": "Yazı-tura at veya altı yüzlü zar kullan. Tarayıcının kriptografik rastgelelik kaynağıyla 1–100 bağımsız çekiliş yapar. Sonuçlar tekrarlanabilir."
+    }
   }
 }
