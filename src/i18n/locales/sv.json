@@ -391,5 +391,17 @@
   "cssMinHint": "Upp till 100 000 inmatningstecken och 2 000 000 utmatningstecken. Konserver /*! Viktiga kommentarer */. Syntaxstöd följer CSSO; granska nyare CSS-syntax och utdata i dina målwebbläsare.",
   "transformDownload": "Nedladdningsresultat",
   "transformInvalid": "Kontrollera CSS/JSON/CSV-syntax, stödd dataform, avgränsare, headers och angivna gränser.",
-  "transformCopyFailed": "Kopian misslyckades. Välj och kopiera resultatet manuellt."
+  "transformCopyFailed": "Kopian misslyckades. Välj och kopiera resultatet manuellt.",
+  "slugTitle": "Sluggenerator",
+  "slugDesc": "Gör en titel till en läsbar URL-slug.",
+  "slugHint": "Gemener, accenter borttagna, interpunktion ersatt med bindestreck. Turkiska bokstäver stöds; andra skript stannar i Unicode. Upp till 100 000 tecken.",
+  "reverseTitle": "Bakåttext",
+  "reverseDesc": "Vänd text samtidigt som emoji och kombinerade tecken hålls tillsammans.",
+  "reverseHint": "Vänder hela texten med synliga teckengrupper, inklusive radordning. Kräver en webbläsare med Intl.Segmenter. Upp till 100 000 tecken.",
+  "whitespaceTitle": "Whitespace-rengörare",
+  "whitespaceDesc": "Ta bort extra mellanslag och städa texten i ett steg.",
+  "whitespaceHint": "Kollapsar det vita utrymmet och trimmar kanterna. Bevara radbrytningar för att behålla interna tomma rader; Stäng av den för en enda linje. Upp till 100 000 tecken.",
+  "whitespaceLines": "Bevara radbrytningar",
+  "utilityApply": "Transformera text",
+  "utilityInvalid": "Kontrollera inmatningsgränsen och webbläsarstödet. Ogiltig Unicode stöds inte."
 }

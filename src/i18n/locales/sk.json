@@ -391,5 +391,17 @@
   "cssMinHint": "Až 100 000 vstupných a 2 000 000 výstupných znakov. Zachováva /*! Dôležité komentáre */. Podpora syntaxe nasleduje CSSO; Prezrite si novšiu syntax CSS a výstupy vo vašich cieľových prehliadačoch.",
   "transformDownload": "Výsledok stiahnutia",
   "transformInvalid": "Skontrolujte syntax CSS/JSON/CSV, podporovaný tvar dát, oddeľovač, hlavičky a uvedené limity.",
-  "transformCopyFailed": "Kopírovanie zlyhalo. Vyberte a skopírujte výsledok manuálne."
+  "transformCopyFailed": "Kopírovanie zlyhalo. Vyberte a skopírujte výsledok manuálne.",
+  "slugTitle": "Generátor slugov",
+  "slugDesc": "Premeňte názov na čitateľný URL slug.",
+  "slugHint": "Malé písmená, odstránené prízvuky, interpunkcia nahradená pomlčkami. Turecké písmená sú podporované; iné skripty zostávajú v Unicode. Až do 100 000 znakov.",
+  "reverseTitle": "Reverzný text",
+  "reverseDesc": "Text obrátiť, pričom emoji a spojené znaky zostanú spolu.",
+  "reverseHint": "Obráti celý text podľa viditeľných znakových skupín, vrátane poradia riadkov. Vyžaduje prehliadač s Intl.Segmenter. Až do 100 000 znakov.",
+  "whitespaceTitle": "Čistič bieleho priestoru",
+  "whitespaceDesc": "Odstráňte zbytočné medzery a upratajte text jedným krokom.",
+  "whitespaceHint": "Zrušuje biely priestor a orezáva okraje. Zachovať zalomenia riadkov, aby sa zachovali vnútorné prázdne riadky; Vypni to na jednu čiaru. Až do 100 000 znakov.",
+  "whitespaceLines": "Zachovať zalomenia riadkov",
+  "utilityApply": "Transformovať text",
+  "utilityInvalid": "Skontrolujte limit vstupu a podporu prehliadača. Neplatný Unicode nie je podporovaný."
 }

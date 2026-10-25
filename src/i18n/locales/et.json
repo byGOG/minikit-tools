@@ -391,5 +391,17 @@
   "cssMinHint": "Kuni 100 000 sisendit ja 2 000 000 väljundmärki. Säilitavad /*! Olulised kommentaarid */. Süntaksi tugi järgneb CSSO-le; Vaata üle uuem CSS süntaksis ja väljund oma sihtbrauserites.",
   "transformDownload": "Laadi tulemus alla",
   "transformInvalid": "Kontrolli CSS/JSON/CSV süntaksit, toetatud andmekuju, eraldajat, päisi ja määratud piire.",
-  "transformCopyFailed": "Kopeerimine ebaõnnestus. Vali ja kopeeri tulemus käsitsi."
+  "transformCopyFailed": "Kopeerimine ebaõnnestus. Vali ja kopeeri tulemus käsitsi.",
+  "slugTitle": "Slug-generaator",
+  "slugDesc": "Muuda pealkiri loetavaks URL-i slugiks.",
+  "slugHint": "Väikesed tähed, aktsendid eemaldatud, kirjavahemärgid asendatud sidekriipsudega. Türgi tähed on toetatud; teised skriptid jäävad Unicode'i. Kuni 100 000 tähemärki.",
+  "reverseTitle": "Tagatekst",
+  "reverseDesc": "Pööra tekst tagasi, hoides samal ajal emotikonid ja kombineeritud tähed koos.",
+  "reverseHint": "Pöörab kogu teksti tagasi nähtavate märgigruppide kaupa, sealhulgas ridade järjekorraga. Vajab brauserit Intl.Segmenteriga. Kuni 100 000 tähemärki.",
+  "whitespaceTitle": "Valge ruumi puhastaja",
+  "whitespaceDesc": "Eemalda lisakohad ja korrasta tekst ühe sammuga.",
+  "whitespaceHint": "Kokkuvariseb valge ruumi ja kärbib servi. Säilita reavahetused, et säilitada sisemised tühjad read; Lülita see ühe rea jaoks välja. Kuni 100 000 tähemärki.",
+  "whitespaceLines": "Säilita reavahetused",
+  "utilityApply": "Teisendustekst",
+  "utilityInvalid": "Kontrolli sisendi limiiti ja brauseri tuge. Kehtetu Unicode ei ole toetatud."
 }

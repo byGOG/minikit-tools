@@ -391,5 +391,17 @@
   "cssMinHint": "最多可容纳100,000个输入字符和2,000,000个输出字符。保存 /*！重要评论 */。语法支持遵循CSSO标准;在目标浏览器中检查更新的CSS语法和输出。",
   "transformDownload": "下载结果",
   "transformInvalid": "检查CSS/JSON/CSV语法、支持的数据形状、分隔符、头部和说明限制。",
-  "transformCopyFailed": "复制失败。手动选择并复制结果。"
+  "transformCopyFailed": "复制失败。手动选择并复制结果。",
+  "slugTitle": "弹头发生器",
+  "slugDesc": "把标题变成一个可读的网址标签。",
+  "slugHint": "小写，去除重音符号，标点符号改为连字符。支持土耳其字母;其他文字则保留在Unicode中。最多可达10万字符。",
+  "reverseTitle": "反向文本",
+  "reverseDesc": "反向文本，同时保留表情符号和合成字符。",
+  "reverseHint": "按可见字符组（包括行序）反转整个文本。需要带有 Intl.Segmenter 的浏览器。最多可达10万字符。",
+  "whitespaceTitle": "空白清理器",
+  "whitespaceDesc": "一步一步去除多余空格和整理文字。",
+  "whitespaceHint": "压缩空白并裁剪边缘。保留换行以保留内部空白行;只为一条线路关闭它。最多可达10万字符。",
+  "whitespaceLines": "保留换行",
+  "utilityApply": "转换文本",
+  "utilityInvalid": "检查输入限制和浏览器支持。不支持无效的Unicode。"
 }

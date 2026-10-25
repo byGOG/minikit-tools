@@ -391,5 +391,17 @@
   "cssMinHint": "Bis zu 100.000 Eingabe- und 2.000.000 Ausgabezeichen. Konserven /*! Wichtige Kommentare */. Die Syntaxunterstützung folgt CSSO; Überprüfen Sie die neuere CSS-Syntax und die Ausgabe in Ihren Zielbrowsern.",
   "transformDownload": "Download-Ergebnis",
   "transformInvalid": "Überprüfe die CSS/JSON/CSV-Syntax, unterstützte Datenform, Trennzeichen, Header und angegebene Grenzwerte.",
-  "transformCopyFailed": "Kopie fehlgeschlagen. Wählen und kopieren Sie das Ergebnis manuell."
+  "transformCopyFailed": "Kopie fehlgeschlagen. Wählen und kopieren Sie das Ergebnis manuell.",
+  "slugTitle": "Slug-Generator",
+  "slugDesc": "Verwandle einen Titel in einen lesbaren URL-Slug.",
+  "slugHint": "Kleinbuchstaben, Akzente entfernt, Satzzeichen durch Bindestriche ersetzt. Türkische Buchstaben werden unterstützt; andere Skripte bleiben in Unicode. Bis zu 100.000 Zeichen.",
+  "reverseTitle": "Rückwärtstext",
+  "reverseDesc": "Drehe den Text um, während Emoji und kombinierte Zeichen zusammenbleiben.",
+  "reverseHint": "Kehrt den gesamten Text durch sichtbare Zeichengruppen um, einschließlich der Zeilenreihenfolge. Erfordert einen Browser mit Intl.Segmenter. Bis zu 100.000 Zeichen.",
+  "whitespaceTitle": "Weißraumreiniger",
+  "whitespaceDesc": "Entfernen Sie zusätzliche Leerzeichen und ordne den Text in einem Schritt.",
+  "whitespaceHint": "Lässt den Weißraum kollabieren und schneidet die Kanten. Zeilenumbrüche bewahren, um interne leere Zeilen zu erhalten; Schalte es für eine einzelne Zeile aus. Bis zu 100.000 Zeichen.",
+  "whitespaceLines": "Zeilenumbrüche erhalten",
+  "utilityApply": "Text transformieren",
+  "utilityInvalid": "Überprüfe die Eingabebegrenzung und den Browser-Support. Ungültiger Unicode wird nicht unterstützt."
 }

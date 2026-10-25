@@ -391,5 +391,17 @@
   "cssMinHint": "Op til 100.000 input- og 2.000.000 output-tegn. Konserver /*! Vigtige kommentarer */. Syntaxunderstøttelse følger CSSO; gennemgå nyere CSS-syntaks og output i dine målbrowsere.",
   "transformDownload": "Download resultat",
   "transformInvalid": "Tjek CSS/JSON/CSV-syntaksen, understøttet dataform, afgrænser, headers og angivne grænser.",
-  "transformCopyFailed": "Kopien fejlede. Vælg og kopier resultatet manuelt."
+  "transformCopyFailed": "Kopien fejlede. Vælg og kopier resultatet manuelt.",
+  "slugTitle": "Slug-generator",
+  "slugDesc": "Gør en titel til en læsbar URL-slug.",
+  "slugHint": "Små bogstaver, accenter fjernet, tegnsætning erstattet med bindestreger. Tyrkiske bogstaver understøttes; andre scripts forbliver i Unicode. Op til 100.000 tegn.",
+  "reverseTitle": "Omvendt tekst",
+  "reverseDesc": "Vend teksten om, mens emoji og kombinerede tegn holdes sammen.",
+  "reverseHint": "Vender hele teksten om ved synlige tegngrupper, inklusive linjerækkefølge. Kræver en browser med Intl.Segmenter. Op til 100.000 tegn.",
+  "whitespaceTitle": "Hvid plads-renser",
+  "whitespaceDesc": "Fjern ekstra mellemrum og rydd op i teksten i ét trin.",
+  "whitespaceHint": "Kollapser hvidt rum og trimmer kanter. Bevar linjeskift for at bevare interne tomme linjer; Sluk for en enkelt linje. Op til 100.000 tegn.",
+  "whitespaceLines": "Bevar linjeskift",
+  "utilityApply": "Transformér tekst",
+  "utilityInvalid": "Tjek inputgrænsen og browserunderstøttelse. Ugyldig Unicode understøttes ikke."
 }

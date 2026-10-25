@@ -391,5 +391,17 @@
   "cssMinHint": "Sehingga 100,000 aksara input dan 2,000,000 aksara output. Diawet /*! Komen penting */. Sokongan sintaks mengikuti CSSO; semak sintaks CSS yang lebih baru dan output dalam pelayar sasaran anda.",
   "transformDownload": "Muat turun hasil",
   "transformInvalid": "Periksa sintaks CSS/JSON/CSV, bentuk data yang disokong, pemisah, pengepala dan had yang dinyatakan.",
-  "transformCopyFailed": "Salinan gagal. Pilih dan salin hasil secara manual."
+  "transformCopyFailed": "Salinan gagal. Pilih dan salin hasil secara manual.",
+  "slugTitle": "Penjana siput",
+  "slugDesc": "Tukar tajuk menjadi URL slug yang boleh dibaca.",
+  "slugHint": "Huruf kecil, aksen dibuang, tanda baca digantikan dengan tanda sempang. Huruf Turki disokong; skrip lain kekal dalam Unicode. Sehingga 100,000 aksara.",
+  "reverseTitle": "Teks terbalik",
+  "reverseDesc": "Terbalikkan teks sambil mengekalkan emoji dan aksara gabungan bersama.",
+  "reverseHint": "Membalikkan keseluruhan teks mengikut kumpulan aksara yang kelihatan, termasuk susunan baris. Memerlukan pelayar dengan Intl.Segmenter. Sehingga 100,000 aksara.",
+  "whitespaceTitle": "Pembersih ruang putih",
+  "whitespaceDesc": "Buang ruang tambahan dan kemas teks dalam satu langkah.",
+  "whitespaceHint": "Meruntuhkan ruang putih dan memotong tepi. Kekalkan pemisah baris untuk mengekalkan baris kosong dalaman; Matikan untuk satu baris. Sehingga 100,000 aksara.",
+  "whitespaceLines": "Kekalkan pemisahan baris",
+  "utilityApply": "Tukar teks",
+  "utilityInvalid": "Semak had input dan sokongan pelayar. Unicode tidak sah tidak disokong."
 }

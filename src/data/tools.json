@@ -438,5 +438,38 @@
       "csvDelimiter",
       "csvJsonApply"
     ]
+  },
+  {
+    "slug": "slug-generator",
+    "title": "slugTitle",
+    "desc": "slugDesc",
+    "anchor": "slug-utility-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "reverse-text",
+    "title": "reverseTitle",
+    "desc": "reverseDesc",
+    "anchor": "reverse-utility-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "whitespace-cleaner",
+    "title": "whitespaceTitle",
+    "desc": "whitespaceDesc",
+    "anchor": "whitespace-utility-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
   }
 ]

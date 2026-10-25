@@ -391,5 +391,17 @@
   "cssMinHint": "Até 100.000 caracteres de entrada e 2.000.000 de caracteres de saída. Conservas /*! Comentários importantes */. O suporte à sintaxe segue o CSSO; Revise a sintaxe CSS mais recente e a saída nos seus navegadores de destino.",
   "transformDownload": "Resultado do download",
   "transformInvalid": "Verifique a sintaxe CSS/JSON/CSV, formato de dados suportado, delimitador, cabeçalhos e limites declarados.",
-  "transformCopyFailed": "Cópia falhou. Selecione e copie o resultado manualmente."
+  "transformCopyFailed": "Cópia falhou. Selecione e copie o resultado manualmente.",
+  "slugTitle": "Gerador de slug",
+  "slugDesc": "Transforme um título em um slug de URL legível.",
+  "slugHint": "Em minúsculas, acentos removidos, pontuação substituída por hífens. Letras turcas são apoiadas; outros sistemas de escritura permanecem no Unicode. Até 100.000 caracteres.",
+  "reverseTitle": "Texto invertido",
+  "reverseDesc": "Inverta o texto mantendo emojis e caracteres combinados juntos.",
+  "reverseHint": "Inverte todo o texto por grupos de caracteres visíveis, incluindo a ordem das linhas. É necessário um navegador com Intl.Segmenter. Até 100.000 caracteres.",
+  "whitespaceTitle": "Limpador de espaços em branco",
+  "whitespaceDesc": "Remova espaços extras e organize o texto em uma única etapa.",
+  "whitespaceHint": "Colapsa espaços em branco e corta bordas. Preserve quebras de linha para manter linhas internas em branco; Desligue por uma única linha. Até 100.000 caracteres.",
+  "whitespaceLines": "Preservar quebras de linha",
+  "utilityApply": "Texto transformado",
+  "utilityInvalid": "Verifique o limite de entrada e o suporte ao navegador. Unicode inválido não é suportado."
 }

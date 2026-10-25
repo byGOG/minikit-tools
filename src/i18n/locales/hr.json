@@ -391,5 +391,17 @@
   "cssMinHint": "Do 100.000 ulaznih i 2.000.000 izlaznih znakova. Čuva /*! Važni komentari */. Podrška sintakse slijedi CSSO; Pregledajte noviju CSS sintaksu i izlaz u vašim ciljanim preglednicima.",
   "transformDownload": "Rezultat preuzimanja",
   "transformInvalid": "Provjerite CSS/JSON/CSV sintaksu, podržani oblik podataka, delimiter, zaglavlja i navedene limite.",
-  "transformCopyFailed": "Kopiranje nije uspjelo. Odaberite i kopirajte rezultat ručno."
+  "transformCopyFailed": "Kopiranje nije uspjelo. Odaberite i kopirajte rezultat ručno.",
+  "slugTitle": "Generator slugova",
+  "slugDesc": "Pretvorite naslov u čitljivi URL slug.",
+  "slugHint": "Mala slova, uklonjeni naglasci, interpunkcija zamijenjena crticom. Podržana su turska slova; ostale skripte ostaju u Unicodeu. Do 100.000 znakova.",
+  "reverseTitle": "Obrnuti tekst",
+  "reverseDesc": "Obrnuti tekst, ali zadržati emoji i spojene znakove zajedno.",
+  "reverseHint": "Obrće cijeli tekst prema vidljivim skupinama znakova, uključujući redoslijed redaka. Zahtijeva preglednik s Intl.Segmenterom. Do 100.000 znakova.",
+  "whitespaceTitle": "Čistač bijelog prostora",
+  "whitespaceDesc": "Uklonite dodatne razmake i uredite tekst u jednom koraku.",
+  "whitespaceHint": "Zatvara bijeli prostor i odrezuje rubove. Sačuvajte prijelome redaka kako biste zadržali unutarnje prazne linije; Isključi ga za jednu liniju. Do 100.000 znakova.",
+  "whitespaceLines": "Sačuvajte prijelome redaka",
+  "utilityApply": "Transformacija teksta",
+  "utilityInvalid": "Provjerite ulazni limit i podršku za preglednik. Nevažeći Unicode nije podržan."
 }

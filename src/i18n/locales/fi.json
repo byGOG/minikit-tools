@@ -391,5 +391,17 @@
   "cssMinHint": "Enintään 100 000 sisääntuloa ja 2 000 000 lähtömerkkiä. Säilöt /*! Tärkeitä kommentteja */. Syntaksituki seuraa CSSO:ta; Tarkista uudempi CSS-syntaksi ja tulostus kohdeselaimissasi.",
   "transformDownload": "Lataa tulos",
   "transformInvalid": "Tarkista CSS/JSON/CSV-syntaksi, tuettu datamuoto, erottaja, otsikot ja ilmoitetut rajat.",
-  "transformCopyFailed": "Kopio epäonnistui. Valitse ja kopioi tulos manuaalisesti."
+  "transformCopyFailed": "Kopio epäonnistui. Valitse ja kopioi tulos manuaalisesti.",
+  "slugTitle": "Slug-generaattori",
+  "slugDesc": "Muuta otsikko luettavaksi URL-slugiksi.",
+  "slugHint": "Pienkirjaimet, aksentit poistettu, välimerkit korvattu yhdysviivoilla. Turkkilaiset kirjaimet ovat tuettuja; muut skriptit pysyvät Unicodessa. Jopa 100 000 merkkiä.",
+  "reverseTitle": "Kääntöteksti",
+  "reverseDesc": "Käännä teksti ja pidä emojit sekä yhdistetyt merkit yhdessä.",
+  "reverseHint": "Kääntää koko tekstin näkyvien merkkiryhmien mukaan, mukaan lukien rivijärjestys. Vaatii selaimen, jossa on Intl.Segmenter. Jopa 100 000 merkkiä.",
+  "whitespaceTitle": "Valkoisen tilan puhdistaja",
+  "whitespaceDesc": "Poista ylimääräiset välit ja siisti teksti yhdellä askeleella.",
+  "whitespaceHint": "Se kaventaa valkoista tilaa ja leikkaa reunoja. Säilytä rivinvaihdot, jotta sisäiset tyhjät rivit pysyvät; Sammuta se yhdeksi riviksi. Jopa 100 000 merkkiä.",
+  "whitespaceLines": "Säilytä rivinvaihdot",
+  "utilityApply": "Muunnosteksti",
+  "utilityInvalid": "Tarkista syöttöraja ja selaimen tuki. Virheellinen Unicode ei ole tuettu."
 }

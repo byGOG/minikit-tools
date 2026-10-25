@@ -1,0 +1,12 @@
+---
+import{Link,FlipHorizontal,Space,ShieldCheck,ArrowRight}from'lucide-astro';
+import tr from'../i18n/locales/tr.json';
+const cards=[{id:'slug',title:'slugTitle',desc:'slugDesc',hint:'slugHint',slug:'slug-generator',Icon:Link},{id:'reverse',title:'reverseTitle',desc:'reverseDesc',hint:'reverseHint',slug:'reverse-text',Icon:FlipHorizontal},{id:'whitespace',title:'whitespaceTitle',desc:'whitespaceDesc',hint:'whitespaceHint',slug:'whitespace-cleaner',Icon:Space}]as const;
+---
+{cards.map(({id,title,desc,hint,slug,Icon})=><article class="tool-card text-tool-card" id={`${id}-utility-tool`}>
+<div class="card-top"><span class="tool-icon icon-peach"><Icon size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div><h3 data-i18n={title}>{tr[title]}</h3><p data-i18n={desc}>{tr[desc]}</p>
+<label class="field-label" for={`${id}-utility-input`} data-i18n="textInput">{tr.textInput}</label><textarea class="text-input textarea" id={`${id}-utility-input`} maxlength="100000" dir="auto" spellcheck="false"></textarea>
+{id==='whitespace'&&<label class="text-tool-options"><input type="checkbox" id="whitespace-lines" checked/><span data-i18n="whitespaceLines">{tr.whitespaceLines}</span></label>}
+<small class="number-hint" data-i18n={hint}>{tr[hint]}</small><button class="button-primary full" id={`${id}-utility-apply`} data-i18n="utilityApply">{tr.utilityApply}</button>
+<label class="field-label" for={`${id}-utility-output`} data-i18n="textResult">{tr.textResult}</label><textarea class="text-input textarea text-result" id={`${id}-utility-output`} readonly dir="auto" spellcheck="false"></textarea><p class="tool-feedback" id={`${id}-utility-feedback`} role="status"></p><div class="text-tool-actions"><button class="button-secondary full" id={`${id}-utility-copy`} data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id={`${id}-utility-clear`} data-i18n="clearText">{tr.clearText}</button></div>
+<div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div><a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a></article>)}

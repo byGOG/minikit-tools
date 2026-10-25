@@ -391,5 +391,17 @@
   "cssMinHint": "Legfeljebb 100 000 bemenet és 2 000 000 kimeneti karakter. Tartósít /*! Fontos megjegyzések */. A szintaxistámogatás a CSSO-t követi; Nézd át az újabb CSS szintaxist és a célböngészők kimenetét.",
   "transformDownload": "Letöltési eredmény",
   "transformInvalid": "Nézd meg a CSS/JSON/CSV szintaxist, a támogatott adatformát, a határolót, fejléceket és a megadott korlátokat.",
-  "transformCopyFailed": "A másolat meghibásodott. Válaszd ki és másold le az eredményt kézzel."
+  "transformCopyFailed": "A másolat meghibásodott. Válaszd ki és másold le az eredményt kézzel.",
+  "slugTitle": "Slug generátor",
+  "slugDesc": "Alakíts egy címet olvasható URL-slugná.",
+  "slugHint": "Kisbetűkkel, akcentusok eltávolításával, írásjeleket kötőjelekkel helyettesítve. A török betűk is támogatott; más szkriptek Unicode-ban maradnak. Akár 100 000 karakter.",
+  "reverseTitle": "Visszaoldali szöveg",
+  "reverseDesc": "Fordítsd meg a szöveget, miközben az emojikat és az egyesített karaktereket együtt tartjuk.",
+  "reverseHint": "Az egész szöveget látható karaktercsoportok szerint fordítja, beleértve a sorrendet is. Böngésző szükséges Intl.Segmenterrel. Akár 100 000 karakter.",
+  "whitespaceTitle": "Fehérterek tisztító",
+  "whitespaceDesc": "Távolítsd el a plusz helyeket, és egy lépéssel rendezd meg a szöveget.",
+  "whitespaceHint": "Összeomlik a fehér tereket és levágja a széleket. Tartsd meg a sortöréseket, hogy belső üres sorok maradjanak; Kapcsold ki egyetlen sorra. Akár 100 000 karakter.",
+  "whitespaceLines": "Sormegszakítások megőrzése",
+  "utilityApply": "Transzformációs szöveg",
+  "utilityInvalid": "Ellenőrizd a bemeneti limitet és a böngésző támogatását. Az érvénytelen Unicode nem támogatott."
 }

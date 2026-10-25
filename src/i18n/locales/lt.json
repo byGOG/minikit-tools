@@ -391,5 +391,17 @@
   "cssMinHint": "Iki 100 000 įvesties ir 2 000 000 išvesties simbolių. Išsaugo /*! Svarbūs komentarai */. Sintaksės palaikymas seka CSSO; Peržiūrėkite naujesnę CSS sintaksę ir išvestį savo tikslinėse naršyklėse.",
   "transformDownload": "Atsisiuntimo rezultatas",
   "transformInvalid": "Patikrinkite CSS/JSON/CSV sintaksę, palaikomą duomenų formą, skyriklį, antraštes ir nurodytas ribas.",
-  "transformCopyFailed": "Kopija nepavyko. Pasirinkite ir nukopijuokite rezultatą rankiniu būdu."
+  "transformCopyFailed": "Kopija nepavyko. Pasirinkite ir nukopijuokite rezultatą rankiniu būdu.",
+  "slugTitle": "Slug generatorius",
+  "slugDesc": "Paverskite pavadinimą lengvai skaitomu URL šliužu.",
+  "slugHint": "Mažosiomis raidėmis, be akcentų, skyryba pakeista brūkšneliais. Palaikomi turkiški laiškai; kiti rašmenys lieka Unicode formatu. Iki 100 000 simbolių.",
+  "reverseTitle": "Atvirkštinis tekstas",
+  "reverseDesc": "Atvirkštinis tekstas, išlaikant jaustukus ir sujungtus simbolius kartu.",
+  "reverseHint": "Apverčia visą tekstą matomų simbolių grupėmis, įskaitant eilučių tvarką. Reikalinga naršyklė su Intl.Segmenter. Iki 100 000 simbolių.",
+  "whitespaceTitle": "Tarpo valiklis",
+  "whitespaceDesc": "Pašalinkite papildomas tarpas ir tvarkingą tekstą vienu žingsniu.",
+  "whitespaceHint": "Suspaudžia baltąsias erdves ir apkerpa kraštus. Išsaugoti eilučių pertraukas, kad vidinės linijos liktų tuščios; Išjunkite jį vienai linijai. Iki 100 000 simbolių.",
+  "whitespaceLines": "Išsaugoti eilučių pertraukas",
+  "utilityApply": "Transformuoti tekstą",
+  "utilityInvalid": "Patikrinkite įvesties limitą ir naršyklės palaikymą. Neteisingas Unicode nėra palaikomas."
 }
