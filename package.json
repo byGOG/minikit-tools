@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "test:locales": "node --test tests/locales.test.mjs",
-    "test:tools": "node --experimental-strip-types --test tests/text-tools.test.mjs tests/developer-tools.test.mjs tests/everyday-tools.test.mjs tests/image-geometry.test.mjs tests/advertising.test.mjs tests/image-extras.test.mjs tests/pdf-core.test.mjs tests/developer-extras.test.mjs tests/text-extras.test.mjs tests/date-tools.test.mjs tests/encoding-tools.test.mjs tests/image-effects.test.mjs tests/data-converters.test.mjs tests/text-utilities.test.mjs tests/daily-calculators.test.mjs tests/utility-pack.test.mjs tests/expansion.test.mjs"
+    "test:tools": "node --experimental-strip-types --test tests/text-tools.test.mjs tests/developer-tools.test.mjs tests/everyday-tools.test.mjs tests/image-geometry.test.mjs tests/advertising.test.mjs tests/image-extras.test.mjs tests/pdf-core.test.mjs tests/developer-extras.test.mjs tests/text-extras.test.mjs tests/date-tools.test.mjs tests/encoding-tools.test.mjs tests/image-effects.test.mjs tests/data-converters.test.mjs tests/text-utilities.test.mjs tests/daily-calculators.test.mjs tests/utility-pack.test.mjs tests/expansion.test.mjs tests/practical.test.mjs"
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",
@@ -17,14 +17,17 @@
     "csso": "5.0.5",
     "entities": "6.0.1",
     "lucide-astro": "^0.468.0",
+    "marked": "^18.1.1",
     "pdf-lib": "1.17.1",
     "qrcode": "^1.5.4",
     "tailwindcss": "^3.4.17",
+    "turndown": "^7.2.4",
     "yaml": "2.9.1"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "@types/qrcode": "^1.5.6",
+    "@types/turndown": "^5.0.6",
     "typescript": "^5.7.2"
   }
 }
