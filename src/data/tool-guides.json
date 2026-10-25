@@ -458,5 +458,95 @@
       "heading": "Hız, mesafe ve süre",
       "text": "Diğer iki değeri ve istediğin birimleri kullanarak eksik değeri bul. Bulunacak değeri seç; o alanın girdisi kullanılmaz. Duraksama olmadan sabit ortalama hız kullanılır. Sıfıra bölme yapılamaz. h = saat, min = dakika, s = saniye; mi = mil. Ondalık için nokta veya virgül kullan; binlik ayracı kullanma. Mutlak girdi değeri en fazla 1 trilyon olabilir. Oran ve yol sonuçları en fazla 12 anlamlı basamakla gösterilir; mutlak sonuç sınırı 1 katrilyondur. Hesaplamalar yaklaşık sonuç verir."
     }
+  },
+  "reading-time": {
+    "en": {
+      "heading": "Reading time",
+      "text": "Estimate reading time from a text and your reading speed. Uses browser word segmentation, 80–1,000 words/minute and rounds up to whole seconds. An estimate, not a reading assessment. Up to 100,000 characters."
+    },
+    "tr": {
+      "heading": "Okuma süresi",
+      "text": "Metin ve okuma hızından tahmini okuma süresini bul. Tarayıcının kelime bölümlemesini kullanır; hız 80–1.000 kelime/dakika olabilir. Sonuç tam saniyeye yukarı yuvarlanır. Bir tahmindir, okuma becerisi değerlendirmesi değildir. En fazla 100.000 karakter."
+    }
+  },
+  "word-frequency": {
+    "en": {
+      "heading": "Word frequency",
+      "text": "Find the most frequent words in your text. Top 100 words, case-insensitive with Unicode normalization. Uses the page language for segmentation and case conversion; includes common words and numbers. Up to 100,000 characters."
+    },
+    "tr": {
+      "heading": "Kelime sıklığı",
+      "text": "Metninde en sık geçen kelimeleri bul. Unicode normalleştirme ve büyük/küçük harf eşitlemesiyle ilk 100 kelimeyi listeler. Bölümleme ve harf dönüşümü için sayfa dilini kullanır; yaygın kelimeler ve sayılar dahildir. En fazla 100.000 karakter."
+    }
+  },
+  "random-list-picker": {
+    "en": {
+      "heading": "Random list picker",
+      "text": "Choose random entries from a list, one entry per line. Blank lines are ignored and edges trimmed. Select 1–100 entries from up to 10,000 lines / 100,000 characters. Lines are selected without replacement; duplicate text on different lines can repeat. Uses browser cryptographic randomness."
+    },
+    "tr": {
+      "heading": "Rastgele liste seçici",
+      "text": "Her satıra bir seçenek yazarak rastgele seçim yap. Boş satırlar atlanır, kenar boşlukları temizlenir. En fazla 10.000 satır / 100.000 karakterden 1–100 satır seçilir. Aynı satır tekrar seçilmez; farklı satırlardaki aynı metin tekrarlanabilir. Tarayıcının kriptografik rastgelelik kaynağını kullanır."
+    }
+  },
+  "xml-formatter": {
+    "en": {
+      "heading": "XML formatter",
+      "text": "Validate and indent XML locally in your browser. Up to 100,000 characters, 10,000 nodes and 100 levels. DTDs/entities are unsupported. Mixed content and xml:space are preserved; whitespace between element-only children is reindented. Not a schema validator or byte-preserving editor."
+    },
+    "tr": {
+      "heading": "XML biçimlendirici",
+      "text": "XML sözdizimini tarayıcıda kontrol et ve girintile. En fazla 100.000 karakter, 10.000 düğüm ve 100 seviye. DTD ve özel varlık tanımları desteklenmez. Karma içerik ve xml:space korunur; yalnızca eleman içeren bölümlerin boşlukları yeniden girintilenir. Şema doğrulayıcı veya baytları aynen koruyan düzenleyici değildir."
+    }
+  },
+  "url-parser": {
+    "en": {
+      "heading": "URL parser",
+      "text": "Inspect a web address without opening it. Accepts absolute HTTP/HTTPS URLs up to 100,000 characters, without unescaped spaces. Query parameters keep duplicate entries. Credentials are omitted; encoded paths/fragments stay encoded. Nothing is fetched."
+    },
+    "tr": {
+      "heading": "URL ayrıştırıcı",
+      "text": "Bir web adresini açmadan bileşenlerini incele. Kaçışsız boşluk içermeyen, en fazla 100.000 karakterlik mutlak HTTP/HTTPS adreslerini kabul eder. Yinelenen sorgu parametreleri korunur. Giriş bilgileri çıktıya eklenmez; kodlanmış yol ve bölüm işareti kodlanmış kalır. Ağ isteği yapılmaz."
+    }
+  },
+  "color-contrast-checker": {
+    "en": {
+      "heading": "Color contrast checker",
+      "text": "Check text contrast between two opaque sRGB colors. WCAG text contrast: AA normal 4.5:1 / large 3:1; AAA normal 7:1 / large 4.5:1. Large text: at least 18pt, or 14pt bold. Decisions use the unrounded ratio. Not a complete accessibility audit."
+    },
+    "tr": {
+      "heading": "Renk kontrastı kontrolü",
+      "text": "İki opak sRGB rengi arasındaki metin kontrastını kontrol et. WCAG metin kontrastı: AA normal 4,5:1 / büyük 3:1; AAA normal 7:1 / büyük 4,5:1. Büyük metin en az 18 punto veya kalın 14 puntodur. Karar yuvarlanmamış oranla verilir. Tam erişilebilirlik denetimi değildir."
+    }
+  },
+  "flip-image": {
+    "en": {
+      "heading": "Flip image",
+      "text": "Mirror an image horizontally, vertically or both. Keeps the original dimensions and transparency. Downloads PNG; animated images use one decoded frame. Metadata is not copied."
+    },
+    "tr": {
+      "heading": "Görseli yansıt",
+      "text": "Görseli yatay, dikey veya her iki yönde çevir. Boyutları ve saydamlığı korur. PNG indirilir; hareketli görsellerin tek karesi kullanılır. Meta veriler kopyalanmaz."
+    }
+  },
+  "image-border": {
+    "en": {
+      "heading": "Add image border",
+      "text": "Add a solid-color outer border to your image. Adds 0–512 pixels on each side; output dimensions grow. Original transparent pixels stay transparent. Output also obeys the image size limits. Downloads PNG without metadata."
+    },
+    "tr": {
+      "heading": "Görsele kenarlık ekle",
+      "text": "Görselinin dışına düz renkli kenarlık ekle. Her kenara 0–512 piksel ekler; çıktı boyutları büyür. Görseldeki saydam pikseller saydam kalır. Çıktı da görsel boyut sınırlarına uymalıdır. Meta verisiz PNG indirilir."
+    }
+  },
+  "round-image-corners": {
+    "en": {
+      "heading": "Round image corners",
+      "text": "Create transparent rounded corners and download PNG. Radius 0–4,096 pixels, capped at half the shorter side. Preserves dimensions and cuts corners to transparency. Animated images use one frame; metadata is not copied."
+    },
+    "tr": {
+      "heading": "Görsel köşelerini yuvarla",
+      "text": "Saydam yuvarlak köşeler oluştur ve PNG indir. Yarıçap 0–4.096 piksel olabilir; kısa kenarın yarısıyla sınırlandırılır. Boyutlar korunur, köşeler saydamlaştırılır. Hareketli görsellerin tek karesi kullanılır; meta veriler kopyalanmaz."
+    }
   }
 }

@@ -1,0 +1,19 @@
+---
+import{SlidersHorizontal,ScanFace,ShieldCheck,ArrowRight}from'lucide-astro';
+import tr from'../i18n/locales/tr.json';
+const cards=[{id:'flip',title:'flipTitle',desc:'flipDesc',slug:'flip-image',Icon:SlidersHorizontal},{id:'border',title:'borderTitle',desc:'borderDesc',slug:'image-border',Icon:ScanFace},{id:'rounded',title:'roundedTitle',desc:'roundedDesc',slug:'round-image-corners',Icon:ScanFace}]as const;
+---
+{cards.map(({id,title,desc,slug,Icon})=><article class="tool-card text-tool-card image-editor-card" id={`${id}-tool`}>
+ <div class="card-top"><span class="tool-icon icon-green"><Icon size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div><h3 data-i18n={title}>{tr[title]}</h3><p data-i18n={desc}>{tr[desc]}</p>
+ <label class="field-label" for={`${id}-decorate-file`} data-i18n="editorFile">{tr.editorFile}</label><input class="text-input" id={`${id}-decorate-file`} type="file" accept="image/png,image/jpeg,image/webp" aria-describedby={`${id}-decorate-limits`}/><small class="number-hint" id={`${id}-decorate-limits`} data-i18n="editorLimits">{tr.editorLimits}</small><p class="editor-selected" id={`${id}-decorate-selected`}></p>
+ <fieldset class="editor-controls decorate-options" id={`${id}-decorate-options`} disabled>
+ {id==='flip'&&<><label class="field-label" for="flip-axis" data-i18n="flipAxis">{tr.flipAxis}</label><select class="text-input" id="flip-axis"><option value="horizontal" data-i18n="flipHorizontal">{tr.flipHorizontal}</option><option value="vertical" data-i18n="flipVertical">{tr.flipVertical}</option><option value="both" data-i18n="flipBoth">{tr.flipBoth}</option></select></>}
+ {id==='border'&&<><label class="field-label" for="border-width" data-i18n="borderWidth">{tr.borderWidth}</label><input class="text-input" id="border-width" type="number" min="0" max="512" step="1" value="10"/><label class="field-label" for="border-color" data-i18n="borderColor">{tr.borderColor}</label><input class="text-input" id="border-color" type="color" value="#ffffff"/></>}
+ {id==='rounded'&&<><label class="field-label" for="rounded-radius" data-i18n="roundedRadius">{tr.roundedRadius}</label><input class="text-input" id="rounded-radius" type="number" min="0" max="4096" value="32"/></>}
+ <button class="button-secondary full" id={`${id}-decorate-reset`} data-i18n="editorReset">{tr.editorReset}</button>
+ </fieldset>
+ <small class="number-hint" data-i18n={id==='flip'?'flipHint':id==='border'?'borderHint':'roundedHint'}>{id==='flip'?tr.flipHint:id==='border'?tr.borderHint:tr.roundedHint}</small><button class="button-primary full" id={`${id}-decorate-apply`} data-i18n="effectApply" disabled>{tr.effectApply}</button>
+ <div class="editor-preview"><img id={`${id}-decorate-preview`} hidden alt={tr[title]} data-i18n-alt={title}/></div><p class="editor-size"><span data-i18n="editorDimensions">{tr.editorDimensions}</span>: <b id={`${id}-decorate-size`}>—</b></p><p class="tool-feedback" id={`${id}-decorate-feedback`} role="status"></p><button class="button-secondary full" id={`${id}-decorate-download`} data-i18n="downloadPng" disabled>{tr.downloadPng}</button>
+ <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localImage">{tr.localImage}</span></div><a class="tool-more" data-tool-page={slug} href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>)}
+<style is:global>.decorate-options{gap:7px}.image-editor-card .editor-preview img[hidden]{display:none}</style>

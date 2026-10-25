@@ -504,5 +504,104 @@
       "calculate",
       "copyResult"
     ]
+  },
+  {
+    "slug": "reading-time",
+    "title": "readingTitle",
+    "desc": "readingDesc",
+    "anchor": "reading-pack-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "word-frequency",
+    "title": "frequencyTitle",
+    "desc": "frequencyDesc",
+    "anchor": "frequency-pack-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "random-list-picker",
+    "title": "pickerTitle",
+    "desc": "pickerDesc",
+    "anchor": "picker-pack-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "xml-formatter",
+    "title": "xmlformatTitle",
+    "desc": "xmlformatDesc",
+    "anchor": "xmlformat-pack-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "url-parser",
+    "title": "urlparseTitle",
+    "desc": "urlparseDesc",
+    "anchor": "urlparse-pack-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "color-contrast-checker",
+    "title": "contrastTitle",
+    "desc": "contrastDesc",
+    "anchor": "contrast-pack-tool",
+    "steps": [
+      "contrastForeground",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "flip-image",
+    "title": "flipTitle",
+    "desc": "flipDesc",
+    "anchor": "flip-tool",
+    "steps": [
+      "editorFile",
+      "effectApply",
+      "downloadPng"
+    ]
+  },
+  {
+    "slug": "image-border",
+    "title": "borderTitle",
+    "desc": "borderDesc",
+    "anchor": "border-tool",
+    "steps": [
+      "editorFile",
+      "effectApply",
+      "downloadPng"
+    ]
+  },
+  {
+    "slug": "round-image-corners",
+    "title": "roundedTitle",
+    "desc": "roundedDesc",
+    "anchor": "rounded-tool",
+    "steps": [
+      "editorFile",
+      "effectApply",
+      "downloadPng"
+    ]
   }
 ]
