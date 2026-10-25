@@ -1,3 +1,5 @@
+import { setupUtilityPack } from './utility-pack';
+import { setupImageDecoration } from './image-decoration';
 import { setupDailyCalculators } from './daily-calculators';
 import { setupTextUtilities } from './text-utilities';
 import QRCode from 'qrcode';
@@ -332,4 +334,6 @@ setupImageEffects(t);
 setupDataConverters(t);
 setupTextUtilities(t);
 setupDailyCalculators(t);
+setupUtilityPack(t);
+setupImageDecoration(t);
 void loadLocale();

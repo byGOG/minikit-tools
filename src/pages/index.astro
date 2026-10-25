@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import UtilityPack from '../components/UtilityPack.astro';
+import ImageDecoration from '../components/ImageDecoration.astro';
 import DailyCalculators from '../components/DailyCalculators.astro';
 import TextUtilities from '../components/TextUtilities.astro';
 import DataConverters from '../components/DataConverters.astro';
@@ -42,6 +44,8 @@ const publicBase = import.meta.env.BASE_URL.replace(/\/$/, '') + '/';
         <DataConverters />
         <TextUtilities />
         <DailyCalculators />
+        <UtilityPack />
+        <ImageDecoration />
         <EverydayTools />
         <DateTools />
         <ImageEditors />
