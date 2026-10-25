@@ -1,3 +1,4 @@
+import { setupExpansionTools } from './expansion-tools';
 import { setupUtilityPack } from './utility-pack';
 import { setupImageDecoration } from './image-decoration';
 import { setupDailyCalculators } from './daily-calculators';
@@ -335,5 +336,6 @@ setupDataConverters(t);
 setupTextUtilities(t);
 setupDailyCalculators(t);
 setupUtilityPack(t);
+setupExpansionTools(t);
 setupImageDecoration(t);
 void loadLocale();

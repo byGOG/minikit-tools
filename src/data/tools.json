@@ -603,5 +603,104 @@
       "effectApply",
       "downloadPng"
     ]
+  },
+  {
+    "slug": "rotate-pdf-pages",
+    "title": "pdfrotateTitle",
+    "desc": "pdfrotateDesc",
+    "anchor": "pdfrotate-new-tool",
+    "steps": [
+      "pdfChooseOne",
+      "pdfEditApply",
+      "pdfDownload"
+    ]
+  },
+  {
+    "slug": "reorder-pdf-pages",
+    "title": "pdfreorderTitle",
+    "desc": "pdfreorderDesc",
+    "anchor": "pdfreorder-new-tool",
+    "steps": [
+      "pdfChooseOne",
+      "pdfEditApply",
+      "pdfDownload"
+    ]
+  },
+  {
+    "slug": "delete-pdf-pages",
+    "title": "pdfdeleteTitle",
+    "desc": "pdfdeleteDesc",
+    "anchor": "pdfdelete-new-tool",
+    "steps": [
+      "pdfChooseOne",
+      "pdfEditApply",
+      "pdfDownload"
+    ]
+  },
+  {
+    "slug": "json-to-yaml",
+    "title": "jsonyamlTitle",
+    "desc": "jsonyamlDesc",
+    "anchor": "jsonyaml-new-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "yaml-to-json",
+    "title": "yamljsonTitle",
+    "desc": "yamljsonDesc",
+    "anchor": "yamljson-new-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "json-compare",
+    "title": "jsondiffTitle",
+    "desc": "jsondiffDesc",
+    "anchor": "jsondiff-new-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "stopwatch",
+    "title": "stopwatchTitle",
+    "desc": "stopwatchDesc",
+    "anchor": "stopwatch-new-tool",
+    "steps": [
+      "timerStart",
+      "timerPause",
+      "editorReset"
+    ]
+  },
+  {
+    "slug": "pomodoro-timer",
+    "title": "pomodoroTitle",
+    "desc": "pomodoroDesc",
+    "anchor": "pomodoro-new-tool",
+    "steps": [
+      "timerStart",
+      "timerPause",
+      "editorReset"
+    ]
+  },
+  {
+    "slug": "coin-and-dice",
+    "title": "chanceTitle",
+    "desc": "chanceDesc",
+    "anchor": "chance-new-tool",
+    "steps": [
+      "chanceMode",
+      "chanceDraw",
+      "copyResult"
+    ]
   }
 ]
