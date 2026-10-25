@@ -391,5 +391,17 @@
   "cssMinHint": "Do 100.000 vhodnih in 2.000.000 izhodnih znakov. Ohranja /*! pomembni komentarji */. Podpora sintakse sledi CSSO; Preglejte novejšo CSS sintakso in izhod v vaših ciljnih brskalnikih.",
   "transformDownload": "Rezultat prenosa",
   "transformInvalid": "Preverite sintakso CSS/JSON/CSV, podprto obliko podatkov, ločilo, glave in navedene omejitve.",
-  "transformCopyFailed": "Kopija ni uspela. Rezultat izberite in kopirajte ročno."
+  "transformCopyFailed": "Kopija ni uspela. Rezultat izberite in kopirajte ročno.",
+  "slugTitle": "Generator polžev",
+  "slugDesc": "Spremenite naslov v berljiv URL slug.",
+  "slugHint": "Majhne črke, poudarki odstranjeni, ločila zamenjana z vezaji. Turška pisma so podprta; druge skripte ostanejo v Unicode. Do 100.000 znakov.",
+  "reverseTitle": "Obratno besedilo",
+  "reverseDesc": "Obratno besedilo, pri tem pa ohranite emoji in združene znake skupaj.",
+  "reverseHint": "Celotno besedilo obrne po vidnih skupinah znakov, vključno z vrstnim redom vrstic. Zahteva brskalnik z Intl.Segmenter. Do 100.000 znakov.",
+  "whitespaceTitle": "Čistilec belega prostora",
+  "whitespaceDesc": "Odstranite odvečne presledke in uredite besedilo v enem koraku.",
+  "whitespaceHint": "Zruši beli prostor in obreže robove. Ohranite prelome vrstic, da ohranite notranje prazne vrstice; Izklopite za eno vrstico. Do 100.000 znakov.",
+  "whitespaceLines": "Ohranite prelome vrstic",
+  "utilityApply": "Pretvorba besedila",
+  "utilityInvalid": "Preverite omejitev vnosa in podporo brskalniku. Neveljaven Unicode ni podprt."
 }

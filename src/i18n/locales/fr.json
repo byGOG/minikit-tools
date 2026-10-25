@@ -391,5 +391,17 @@
   "cssMinHint": "Jusqu’à 100 000 caractères d’entrée et 2 000 000 de caractères de sortie. Conserves /* ! Commentaires importants */. Le support syntaxique suit le CSSO ; Examinez la syntaxe CSS plus récente et la sortie dans vos navigateurs cibles.",
   "transformDownload": "Résultat de téléchargement",
   "transformInvalid": "Vérifiez la syntaxe CSS/JSON/CSV, la forme des données prise en charge, le délimiteur, les en-têtes et les limites indiquées.",
-  "transformCopyFailed": "Copie échouée. Sélectionnez et copiez le résultat manuellement."
+  "transformCopyFailed": "Copie échouée. Sélectionnez et copiez le résultat manuellement.",
+  "slugTitle": "Générateur de slug",
+  "slugDesc": "Transformez un titre en un slug d’URL lisible.",
+  "slugHint": "Minuscules, accents supprimés, ponctuation remplacée par des traits d’union. Les lettres turques sont soutenues ; d’autres scripts restent dans Unicode. Jusqu’à 100 000 caractères.",
+  "reverseTitle": "Texte inversé",
+  "reverseDesc": "Texte inversé tout en gardant les emojis et les personnages combinés ensemble.",
+  "reverseHint": "Inverse tout le texte selon les groupes de caractères visibles, y compris l’ordre des lignes. Nécessite un navigateur avec Intl.Segmenter. Jusqu’à 100 000 caractères.",
+  "whitespaceTitle": "Nettoyeur d’espaces blancs",
+  "whitespaceDesc": "Supprimez les espaces supplémentaires et le texte ordonné en une seule étape.",
+  "whitespaceHint": "Efface les espaces blancs et coupe les bords. Préserver les sauts de ligne pour conserver les lignes vides internes ; Éteins-le pour une seule ligne. Jusqu’à 100 000 caractères.",
+  "whitespaceLines": "Préserver les ruptures de ligne",
+  "utilityApply": "Texte transformé",
+  "utilityInvalid": "Vérifie la limite d’entrée et le support du navigateur. L’Unicode invalide n’est pas pris en charge."
 }

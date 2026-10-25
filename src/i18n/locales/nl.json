@@ -391,5 +391,17 @@
   "cssMinHint": "Tot 100.000 invoer- en 2.000.000 uitvoertekens. Conserven /*! Belangrijke opmerkingen */. Syntaxondersteuning volgt CSSO; bekijk de nieuwere CSS-syntax en de output in je doelbrowsers.",
   "transformDownload": "Download resultaat",
   "transformInvalid": "Controleer de CSS/JSON/CSV-syntaxis, ondersteunde datavorm, scheidingsteken, headers en aangegeven limieten.",
-  "transformCopyFailed": "Kopie mislukt. Selecteer en kopieer het resultaat handmatig."
+  "transformCopyFailed": "Kopie mislukt. Selecteer en kopieer het resultaat handmatig.",
+  "slugTitle": "Sluggenerator",
+  "slugDesc": "Verander een titel in een leesbare URL-slug.",
+  "slugHint": "Kleine letter, accenten verwijderd, interpunctie vervangen door koppeltekens. Turkse letters worden ondersteund; andere scripts blijven in Unicode. Tot 100.000 tekens.",
+  "reverseTitle": "Omgekeerde tekst",
+  "reverseDesc": "Draai de tekst om terwijl je emoji en gecombineerde karakters bij elkaar houdt.",
+  "reverseHint": "Draait de hele tekst om met zichtbare tekengroepen, inclusief regelvolgorde. Vereist een browser met Intl.Segmenter. Tot 100.000 tekens.",
+  "whitespaceTitle": "Witruimtereiniger",
+  "whitespaceDesc": "Verwijder extra ruimtes en ruim tekst in één stap op.",
+  "whitespaceHint": "Zakt de witruimte in en snijdt randen bij. Behoud regelafbrekingen om interne lege regels te behouden; Zet hem uit voor één lijn. Tot 100.000 tekens.",
+  "whitespaceLines": "Behoud regelafbrekingen",
+  "utilityApply": "Transformeer tekst",
+  "utilityInvalid": "Controleer de invoerlimiet en de ondersteuning van de browser. Ongeldige Unicode wordt niet ondersteund."
 }

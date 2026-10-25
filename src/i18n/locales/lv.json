@@ -391,5 +391,17 @@
   "cssMinHint": "Līdz 100 000 ievades un 2 000 000 izvades rakstzīmēm. Saglabā /*! Svarīgi komentāri */. Sintakses atbalsts seko CSSO; Pārskatiet jaunāko CSS sintaksi un rezultātus mērķa pārlūkprogrammās.",
   "transformDownload": "Lejupielādes rezultāts",
   "transformInvalid": "Pārbaudiet CSS/JSON/CSV sintaksi, atbalstīto datu formu, atdalītāju, galvenes un norādītās robežas.",
-  "transformCopyFailed": "Kopija neizdevās. Izvēlies un nokopē rezultātu manuāli."
+  "transformCopyFailed": "Kopija neizdevās. Izvēlies un nokopē rezultātu manuāli.",
+  "slugTitle": "Slug ģenerators",
+  "slugDesc": "Pārvērt virsrakstu par lasāmu URL fragmentu.",
+  "slugHint": "Mazie burti, uzsvērumi noņemti, pieturzīmes aizstātas ar defisēm. Turku vēstules tiek atbalstītas; citi skripti paliek Unicode. Līdz pat 100 000 rakstzīmēm.",
+  "reverseTitle": "Reversais teksts",
+  "reverseDesc": "Apgriezt tekstu, saglabājot emocijzīmes un apvienotos simbolus kopā.",
+  "reverseHint": "Apgriež visu tekstu pēc redzamām rakstzīmju grupām, ieskaitot rindu secību. Nepieciešams pārlūks ar Intl.Segmenter. Līdz pat 100 000 rakstzīmēm.",
+  "whitespaceTitle": "Baltās vietas tīrītājs",
+  "whitespaceDesc": "Noņemiet liekas atstarpes un sakārtojiet tekstu vienā solī.",
+  "whitespaceHint": "Sapludina baltās vietas un apgriež malas. Saglabāt rindu pārtraukumus, lai iekšējās līnijas būtu tukšas; Izslēdz to uz vienu līniju. Līdz pat 100 000 rakstzīmēm.",
+  "whitespaceLines": "Saglabāt rindas pārtraukumus",
+  "utilityApply": "Transformēt tekstu",
+  "utilityInvalid": "Pārbaudi ievades limitu un pārlūkprogrammas atbalstu. Nederīgs Unicode netiek atbalstīts."
 }

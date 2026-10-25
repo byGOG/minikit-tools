@@ -391,5 +391,17 @@
   "cssMinHint": "Până la 100.000 de caractere de intrare și 2.000.000 de caractere de ieșire. Conserve /*! Comentarii importante */. Suportul pentru sintaxă urmează CSSO; Revizuiește sintaxa CSS mai nouă și ieșirea din browserele țintă.",
   "transformDownload": "Rezultatul descărcării",
   "transformInvalid": "Verifică sintaxa CSS/JSON/CSV, forma datelor suportate, delimitatorul, antetele și limitele declarate.",
-  "transformCopyFailed": "Copierea a eșuat. Selectează și copiază manual rezultatul."
+  "transformCopyFailed": "Copierea a eșuat. Selectează și copiază manual rezultatul.",
+  "slugTitle": "Generator de slug",
+  "slugDesc": "Transformă un titlu într-un slug URL lizibil.",
+  "slugHint": "Litere mici, accentele eliminate, punctuația înlocuită cu cratimă. Literele turcești sunt susținute; alte scripturi rămân în Unicode. Până la 100.000 de caractere.",
+  "reverseTitle": "Text invers",
+  "reverseDesc": "Inversează textul, păstrând emoji-urile și personajele combinate împreună.",
+  "reverseHint": "Inversează întregul text cu grupuri vizibile de caractere, inclusiv ordinea liniilor. Necesită un browser cu Intl.Segmenter. Până la 100.000 de caractere.",
+  "whitespaceTitle": "Curățător de spații albe",
+  "whitespaceDesc": "Elimină spațiile suplimentare și un text ordonat într-un singur pas.",
+  "whitespaceHint": "Colapsează spațiul alb și taie marginile. Păstrează întreruperile de linie pentru a păstra liniile interne goale; Oprește-l pentru o singură linie. Până la 100.000 de caractere.",
+  "whitespaceLines": "Păstrarea întreruperilor de linie",
+  "utilityApply": "Text de transformare",
+  "utilityInvalid": "Verifică limita de intrare și suportul pentru browser. Unicode invalid nu este suportat."
 }

@@ -391,5 +391,17 @@
   "cssMinHint": "Až 100 000 vstupních a 2 000 000 výstupních znaků. Uchovává /*! Důležité komentáře */. Podpora syntaxe následuje CSSO; Projděte si novější syntaxi CSS a výstupy ve svých cílových prohlížečích.",
   "transformDownload": "Výsledek stažení",
   "transformInvalid": "Zkontrolujte syntaxi CSS/JSON/CSV, podporovaný tvar dat, oddělovač, hlavičky a uvedené limity.",
-  "transformCopyFailed": "Kopie selhala. Vyberte a zkopírujte výsledek ručně."
+  "transformCopyFailed": "Kopie selhala. Vyberte a zkopírujte výsledek ručně.",
+  "slugTitle": "Generátor slugů",
+  "slugDesc": "Přeměněte název na čitelný URL slug.",
+  "slugHint": "Malá písmena, přízvuky odstraněny, interpunkce nahrazena pomlčkou. Turecké dopisy jsou podpořeny; ostatní skripty zůstávají v Unicode. Až 100 000 znaků.",
+  "reverseTitle": "Text na opačné straně",
+  "reverseDesc": "Text obráceně, ale emoji a spojené znaky zůstaňte dohromady.",
+  "reverseHint": "Celý text se obrátí podle viditelných skupin znaků, včetně pořadí řádků. Vyžaduje prohlížeč s Intl.Segmenter. Až 100 000 znaků.",
+  "whitespaceTitle": "Čistič bílého prostoru",
+  "whitespaceDesc": "Odstraňte přebytečné mezery a uklizený text jedním krokem.",
+  "whitespaceHint": "Zhroutí bílý prostor a ořeže okraje. Zachovat zalomení řádků, aby se zachovaly vnitřní prázdné řádky; Vypni to na jednu linku. Až 100 000 znaků.",
+  "whitespaceLines": "Zachovat zalomení řádků",
+  "utilityApply": "Transformace textu",
+  "utilityInvalid": "Zkontrolujte limit vstupu a podporu prohlížeče. Neplatný Unicode není podporován."
 }

@@ -391,5 +391,17 @@
   "cssMinHint": "Hadi pembejeo 100,000 na herufi 2,000,000 za pato. Inahifadhi /*! maoni muhimu */. Msaada wa sintaksia unafuata CSSO; kagua sintaksia mpya ya CSS na pato katika vivinjari vyako lengwa.",
   "transformDownload": "Pakua matokeo",
   "transformInvalid": "Angalia sintaksia ya CSS/JSON/CSV, umbo la data linalotumika, kikomo, vichwa na mipaka iliyotajwa.",
-  "transformCopyFailed": "Nakala imeshindwa. Chagua na unakili matokeo kwa mikono."
+  "transformCopyFailed": "Nakala imeshindwa. Chagua na unakili matokeo kwa mikono.",
+  "slugTitle": "Jenereta ya koa",
+  "slugDesc": "Geuza kichwa kuwa slug ya URL inayoweza kusomeka.",
+  "slugHint": "Herufi ndogo, lafudhi imeondolewa, uakifishaji umebadilishwa na hyphens. Barua za Kituruki zinaungwa mkono; hati zingine hukaa kwenye Unicode. Hadi herufi 100,000.",
+  "reverseTitle": "Badilisha maandishi",
+  "reverseDesc": "Badilisha maandishi huku ukiweka emoji na herufi zilizounganishwa pamoja.",
+  "reverseHint": "Hubadilisha maandishi yote kwa vikundi vya herufi zinazoonekana, pamoja na mpangilio wa mstari. Inahitaji kivinjari na Intl.Segmenter. Hadi herufi 100,000.",
+  "whitespaceTitle": "Kisafishaji cha nafasi nyeupe",
+  "whitespaceDesc": "Ondoa nafasi za ziada na maandishi nadhifu kwa hatua moja.",
+  "whitespaceHint": "Huanguka nafasi nyeupe na kupunguza kingo. Hifadhi mapumziko ya mstari ili kuweka mistari tupu ya ndani; Zima kwa mstari mmoja. Hadi herufi 100,000.",
+  "whitespaceLines": "Hifadhi mapumziko ya mstari",
+  "utilityApply": "Badilisha maandishi",
+  "utilityInvalid": "Angalia kikomo cha pembejeo na usaidizi wa kivinjari. Unicode batili haitumiki."
 }

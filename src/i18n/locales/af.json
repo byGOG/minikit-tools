@@ -391,5 +391,17 @@
   "cssMinHint": "Tot 100 000 invoer- en 2 000 000 uitsetkarakters. Bewaring /*! Belangrike kommentaar */. Sintaksisondersteuning volg CSSO; hersien nuwer CSS-sintaksis en die uitset in jou teikenblaaiers.",
   "transformDownload": "Laai die resultaat af",
   "transformInvalid": "Kyk na die CSS/JSON/CSV-sintaksis, ondersteunde datavorm, afbakenaar, opskrifte en aangeduide limiete.",
-  "transformCopyFailed": "Kopie het misluk. Kies en kopieer die resultaat handmatig."
+  "transformCopyFailed": "Kopie het misluk. Kies en kopieer die resultaat handmatig.",
+  "slugTitle": "Slakgenerator",
+  "slugDesc": "Verander 'n titel in 'n leesbare URL-slug.",
+  "slugHint": "Kleinletters, aksente verwyder, leestekens vervang met koppeltekens. Turkse letters word ondersteun; ander skripte bly in Unicode. Tot 100 000 karakters.",
+  "reverseTitle": "Omgekeerde teks",
+  "reverseDesc": "Draai teks om terwyl jy emoji en gekombineerde karakters bymekaar hou.",
+  "reverseHint": "Keer die hele teks om deur sigbare karaktergroepe, insluitend reëlvolgorde. Dit vereis 'n blaaier met Intl.Segmenter. Tot 100 000 karakters.",
+  "whitespaceTitle": "Witspasie-skoonmaker",
+  "whitespaceDesc": "Verwyder ekstra spasies en netjies teks in een stap.",
+  "whitespaceHint": "Dit vou witruimte in en sny kante af. Bewaar reëlbreuke om interne leë lyne te behou; Skakel dit af vir 'n enkele lyn. Tot 100 000 karakters.",
+  "whitespaceLines": "Bewaar reëlbreuke",
+  "utilityApply": "Transformeer teks",
+  "utilityInvalid": "Kontroleer die invoerlimiet en blaaierondersteuning. Ongeldige Unicode word nie ondersteun nie."
 }

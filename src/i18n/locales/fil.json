@@ -391,5 +391,17 @@
   "cssMinHint": "Hanggang 100,000 input at 2,000,000 output na karakter. Preserves /*! mahahalagang komento */. Ang suporta sa syntax ay sumusunod sa CSSO; suriin ang mas bagong CSS syntax at ang output sa iyong target na browser.",
   "transformDownload": "I-download ang resulta",
   "transformInvalid": "Suriin ang CSS/JSON/CSV syntax, suportadong hugis ng data, delimiter, headers at nakasaad na limitasyon.",
-  "transformCopyFailed": "Nabigo ang kopya. Piliin at kopyahin ang resulta nang manu-mano."
+  "transformCopyFailed": "Nabigo ang kopya. Piliin at kopyahin ang resulta nang manu-mano.",
+  "slugTitle": "Slug generator",
+  "slugDesc": "Gawing URL slug na mababasa ang isang pamagat.",
+  "slugHint": "Maliit na titik, tinanggal ang mga accent, pinalitan ang bantas ng gitling. Sinusuportahan ang mga letrang Turko; ang ibang mga script ay nananatili sa Unicode. Hanggang 100,000 karakter.",
+  "reverseTitle": "Baliktad na teksto",
+  "reverseDesc": "Baliktarin ang teksto habang pinagsasama ang emoji at pinagsamang mga karakter.",
+  "reverseHint": "Binabaliktad ang buong teksto gamit ang nakikitang mga grupo ng karakter, kabilang ang pagkakasunod-sunod ng linya. Nangangailangan ng browser na may Intl.Segmenter. Hanggang 100,000 karakter.",
+  "whitespaceTitle": "Panglinis ng puting espasyo",
+  "whitespaceDesc": "Alisin ang mga dagdag na espasyo at ayusin ang teksto sa isang hakbang.",
+  "whitespaceHint": "Pinapababa ang whitespace at tinatanggal ang mga gilid. Panatilihin ang mga line break upang mapanatili ang mga internal na blangkong linya; Patayin ito ng isang linya lang. Hanggang 100,000 karakter.",
+  "whitespaceLines": "Panatilihin ang mga line break",
+  "utilityApply": "I-transform ang teksto",
+  "utilityInvalid": "Suriin ang input limit at suporta sa browser. Hindi suportado ang invalid Unicode."
 }

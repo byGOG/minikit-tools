@@ -391,5 +391,17 @@
   "cssMinHint": "Do 100 000 znaków wejściowych i 2 000 000 znaków wyjściowych. Konserwuje /*! Ważne komentarze */. Wsparcie składniowe podąża za CSSO; Przejrzyj nowszą składnię CSS i wyniki w docelowych przeglądarkach.",
   "transformDownload": "Rezultat pobrania",
   "transformInvalid": "Sprawdź składnię CSS/JSON/CSV, obsługiwany kształt danych, ogranicznik, nagłówki i określone limity.",
-  "transformCopyFailed": "Kopia nie powiodła. Wybierz i skopiuj wynik ręcznie."
+  "transformCopyFailed": "Kopia nie powiodła. Wybierz i skopiuj wynik ręcznie.",
+  "slugTitle": "Generator ślimaków",
+  "slugDesc": "Zamień tytuł w czytelny URL slug.",
+  "slugHint": "Małe litery, usunięte akcenty, interpunkcja zastąpiona myślnikami. Literatura turecka jest poparta; inne skrypty pozostają w Unicode. Do 100 000 znaków.",
+  "reverseTitle": "Tekst odwrotny",
+  "reverseDesc": "Odwracam tekst, zachowując emoji i połączone znaki.",
+  "reverseHint": "Odwraca cały tekst o widoczne grupy znaków, w tym kolejność linii. Wymaga przeglądarki z Intl.Segmenter. Do 100 000 znaków.",
+  "whitespaceTitle": "Czyściciel przestrzeni",
+  "whitespaceDesc": "Usuń dodatkowe spale i uporządkuj tekst jednym krokiem.",
+  "whitespaceHint": "Zapada się biele przestrzenie i przycina krawędzie. Zachowaj podziały linii, aby zachować wewnętrzne puste linije; Wyłącz to na jedną linię. Do 100 000 znaków.",
+  "whitespaceLines": "Zachowaj przerwy w liniach",
+  "utilityApply": "Tekst transformacji",
+  "utilityInvalid": "Sprawdź limit wejścia i wsparcie dla przeglądarki. Nieprawidłowy Unicode nie jest obsługiwany."
 }

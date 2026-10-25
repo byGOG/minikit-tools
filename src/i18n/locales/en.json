@@ -391,5 +391,17 @@
   "cssMinHint": "Up to 100,000 input and 2,000,000 output characters. Preserves /*! important comments */. Syntax support follows CSSO; review newer CSS syntax and the output in your target browsers.",
   "transformDownload": "Download result",
   "transformInvalid": "Check the CSS/JSON/CSV syntax, supported data shape, delimiter, headers and stated limits.",
-  "transformCopyFailed": "Copy failed. Select and copy the result manually."
+  "transformCopyFailed": "Copy failed. Select and copy the result manually.",
+  "slugTitle": "Slug generator",
+  "slugDesc": "Turn a title into a readable URL slug.",
+  "slugHint": "Lowercase, accents removed, punctuation replaced with hyphens. Turkish letters are supported; other scripts stay in Unicode. Up to 100,000 characters.",
+  "reverseTitle": "Reverse text",
+  "reverseDesc": "Reverse text while keeping emoji and combined characters together.",
+  "reverseHint": "Reverses the entire text by visible character groups, including line order. Requires a browser with Intl.Segmenter. Up to 100,000 characters.",
+  "whitespaceTitle": "Whitespace cleaner",
+  "whitespaceDesc": "Remove extra spaces and tidy text in one step.",
+  "whitespaceHint": "Collapses whitespace and trims edges. Preserve line breaks to keep internal blank lines; turn it off for a single line. Up to 100,000 characters.",
+  "whitespaceLines": "Preserve line breaks",
+  "utilityApply": "Transform text",
+  "utilityInvalid": "Check the input limit and browser support. Invalid Unicode is not supported."
 }

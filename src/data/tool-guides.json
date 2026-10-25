@@ -398,5 +398,35 @@
       "heading": "CSV to JSON",
       "text": "Convert a header-based CSV table to JSON objects. Every cell stays a string, preserving leading zeros and large integer text. Up to 100,000 input and 2,000,000 output characters, 1,000 data rows, 100 columns and 10,000 data cells. CSV uses quoted fields and CRLF output. CSV input supports quoted delimiters, escaped quotes and multiline cells; rows must have equal width and headers must be nonempty and unique."
     }
+  },
+  "slug-generator": {
+    "tr": {
+      "heading": "Slug oluşturucu",
+      "text": "Başlığı okunabilir bir URL kısa adına dönüştür. Küçük harfe çevirir, aksanları kaldırır ve noktalama yerine tire kullanır. Türkçe harfler desteklenir; diğer alfabeler Unicode olarak kalır. En fazla 100.000 karakter."
+    },
+    "en": {
+      "heading": "Slug generator",
+      "text": "Turn a title into a readable URL slug. Lowercase, accents removed, punctuation replaced with hyphens. Turkish letters are supported; other scripts stay in Unicode. Up to 100,000 characters."
+    }
+  },
+  "reverse-text": {
+    "tr": {
+      "heading": "Metni ters çevir",
+      "text": "Emoji ve birleşik karakterleri koruyarak metni ters çevir. Satır sırası dahil tüm metni görünür karakter gruplarına göre ters çevirir. Intl.Segmenter destekleyen tarayıcı gerekir. En fazla 100.000 karakter."
+    },
+    "en": {
+      "heading": "Reverse text",
+      "text": "Reverse text while keeping emoji and combined characters together. Reverses the entire text by visible character groups, including line order. Requires a browser with Intl.Segmenter. Up to 100,000 characters."
+    }
+  },
+  "whitespace-cleaner": {
+    "tr": {
+      "heading": "Boşluk temizleyici",
+      "text": "Fazla boşlukları kaldır ve metni tek adımda düzenle. Ardışık boşlukları birleştirir, kenarları temizler. Satır sonlarını koruyarak içteki boş satırları tutabilir veya kapatarak tek satır elde edebilirsin. En fazla 100.000 karakter."
+    },
+    "en": {
+      "heading": "Whitespace cleaner",
+      "text": "Remove extra spaces and tidy text in one step. Collapses whitespace and trims edges. Preserve line breaks to keep internal blank lines; turn it off for a single line. Up to 100,000 characters."
+    }
   }
 }

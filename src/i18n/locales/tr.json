@@ -391,5 +391,17 @@
   "cssMinHint": "En fazla 100.000 girdi ve 2.000.000 çıktı karakteri. /*! önemli yorumlar */ korunur. Sözdizimi desteği CSSO’ya bağlıdır; yeni CSS sözdizimini ve çıktıyı hedef tarayıcılarında kontrol et.",
   "transformDownload": "Sonucu indir",
   "transformInvalid": "CSS/JSON/CSV sözdizimini, desteklenen veri yapısını, ayracı, başlıkları ve belirtilen sınırları kontrol et.",
-  "transformCopyFailed": "Kopyalanamadı. Sonucu seçip elle kopyalayabilirsin."
+  "transformCopyFailed": "Kopyalanamadı. Sonucu seçip elle kopyalayabilirsin.",
+  "slugTitle": "Slug oluşturucu",
+  "slugDesc": "Başlığı okunabilir bir URL kısa adına dönüştür.",
+  "slugHint": "Küçük harfe çevirir, aksanları kaldırır ve noktalama yerine tire kullanır. Türkçe harfler desteklenir; diğer alfabeler Unicode olarak kalır. En fazla 100.000 karakter.",
+  "reverseTitle": "Metni ters çevir",
+  "reverseDesc": "Emoji ve birleşik karakterleri koruyarak metni ters çevir.",
+  "reverseHint": "Satır sırası dahil tüm metni görünür karakter gruplarına göre ters çevirir. Intl.Segmenter destekleyen tarayıcı gerekir. En fazla 100.000 karakter.",
+  "whitespaceTitle": "Boşluk temizleyici",
+  "whitespaceDesc": "Fazla boşlukları kaldır ve metni tek adımda düzenle.",
+  "whitespaceHint": "Ardışık boşlukları birleştirir, kenarları temizler. Satır sonlarını koruyarak içteki boş satırları tutabilir veya kapatarak tek satır elde edebilirsin. En fazla 100.000 karakter.",
+  "whitespaceLines": "Satır sonlarını koru",
+  "utilityApply": "Metni dönüştür",
+  "utilityInvalid": "Girdi sınırını ve tarayıcı desteğini kontrol et. Geçersiz Unicode desteklenmez."
 }

@@ -391,5 +391,17 @@
   "cssMinHint": "Lên đến 100.000 ký tự đầu vào và 2.000.000 ký tự đầu ra. Bảo quản /*! Những nhận xét quan trọng */. Hỗ trợ cú pháp tuân theo CSSO; xem lại cú pháp CSS mới hơn và kết quả trong các trình duyệt mục tiêu của bạn.",
   "transformDownload": "Tải kết quả",
   "transformInvalid": "Kiểm tra cú pháp CSS/JSON/CSV, hình dạng dữ liệu được hỗ trợ, dấu phân cách, tiêu đề và giới hạn đã nêu.",
-  "transformCopyFailed": "Sao chép thất bại. Chọn và sao chép kết quả thủ công."
+  "transformCopyFailed": "Sao chép thất bại. Chọn và sao chép kết quả thủ công.",
+  "slugTitle": "Máy phát slug",
+  "slugDesc": "Biến tiêu đề thành một slug URL dễ đọc.",
+  "slugHint": "Chữ thường, bỏ dấu dấu, thay dấu câu bằng dấu gạch nối. Chữ cái Thổ Nhĩ Kỳ được hỗ trợ; các script khác vẫn giữ nguyên Unicode. Lên đến 100.000 ký tự.",
+  "reverseTitle": "Văn bản đảo ngược",
+  "reverseDesc": "Đảo ngược văn bản mà vẫn giữ emoji và ký tự kết hợp cùng nhau.",
+  "reverseHint": "Đảo ngược toàn bộ văn bản theo các nhóm ký tự hiển thị, bao gồm cả thứ tự dòng. Yêu cầu trình duyệt có Intl.Segmenter. Lên đến 100.000 ký tự.",
+  "whitespaceTitle": "Trình dọn dẹp khoảng trắng",
+  "whitespaceDesc": "Loại bỏ khoảng trắng thừa và dọn dẹp văn bản chỉ trong một bước.",
+  "whitespaceHint": "Thu gọn khoảng trắng và cắt cạnh. Giữ nguyên ngắt dòng để giữ các dòng trống bên trong; Tắt nó cho một dòng duy nhất. Lên đến 100.000 ký tự.",
+  "whitespaceLines": "Giữ nguyên ngắt dòng",
+  "utilityApply": "Biến đổi văn bản",
+  "utilityInvalid": "Kiểm tra giới hạn đầu vào và hỗ trợ trình duyệt. Unicode không hợp lệ không được hỗ trợ."
 }

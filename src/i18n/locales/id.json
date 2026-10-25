@@ -391,5 +391,17 @@
   "cssMinHint": "Hingga 100.000 karakter input dan 2.000.000 karakter output. Pengawet /*! Komentar penting */. Dukungan sintaks mengikuti CSSO; tinjau sintaks CSS yang lebih baru dan output di browser target Anda.",
   "transformDownload": "Unduh hasil",
   "transformInvalid": "Periksa sintaks CSS/JSON/CSV, bentuk data yang didukung, delimiter, header, dan batas yang dinyatakan.",
-  "transformCopyFailed": "Salin gagal. Pilih dan salin hasilnya secara manual."
+  "transformCopyFailed": "Salin gagal. Pilih dan salin hasilnya secara manual.",
+  "slugTitle": "Generator slug",
+  "slugDesc": "Ubah judul menjadi URL slug yang mudah dibaca.",
+  "slugHint": "Huruf kecil, aksen dihapus, tanda baca diganti dengan tanda hubung. Huruf Turki didukung; skrip lain tetap di Unicode. Hingga 100.000 karakter.",
+  "reverseTitle": "Teks balik",
+  "reverseDesc": "Membalik teks sambil menjaga emoji dan karakter gabungan tetap bersama.",
+  "reverseHint": "Membalik seluruh teks berdasarkan grup karakter yang terlihat, termasuk urutan baris. Memerlukan browser dengan Intl.Segmenter. Hingga 100.000 karakter.",
+  "whitespaceTitle": "Pembersih ruang kosong",
+  "whitespaceDesc": "Hapus spasi ekstra dan rapikan teks dalam satu langkah.",
+  "whitespaceHint": "Menutup ruang kosong dan memangkas tepi. Pertahankan pemisah baris untuk mempertahankan baris kosong internal; Matikan untuk satu baris. Hingga 100.000 karakter.",
+  "whitespaceLines": "Pertahankan pemisah baris",
+  "utilityApply": "Transformasi teks",
+  "utilityInvalid": "Periksa batas input dan dukungan browser. Unicode tidak valid tidak didukung."
 }
