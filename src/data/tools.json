@@ -471,5 +471,38 @@
       "utilityApply",
       "copyResult"
     ]
+  },
+  {
+    "slug": "discount-calculator",
+    "title": "discountTitle",
+    "desc": "discountDesc",
+    "anchor": "discount-daily-tool",
+    "steps": [
+      "discountTitle",
+      "calculate",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "proportion-calculator",
+    "title": "proportionTitle",
+    "desc": "proportionDesc",
+    "anchor": "proportion-daily-tool",
+    "steps": [
+      "proportionTitle",
+      "calculate",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "speed-distance-time",
+    "title": "travelTitle",
+    "desc": "travelDesc",
+    "anchor": "travel-daily-tool",
+    "steps": [
+      "travelTitle",
+      "calculate",
+      "copyResult"
+    ]
   }
 ]

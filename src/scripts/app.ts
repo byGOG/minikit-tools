@@ -1,3 +1,4 @@
+import { setupDailyCalculators } from './daily-calculators';
 import { setupTextUtilities } from './text-utilities';
 import QRCode from 'qrcode';
 import { setupDataConverters } from './data-converters';
@@ -330,4 +331,5 @@ setupEncodingTools(t);
 setupImageEffects(t);
 setupDataConverters(t);
 setupTextUtilities(t);
+setupDailyCalculators(t);
 void loadLocale();
