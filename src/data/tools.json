@@ -801,5 +801,104 @@
       "calculate",
       "copyResult"
     ]
+  },
+  {
+    "slug": "trim-audio",
+    "title": "audiotrimTitle",
+    "desc": "audiotrimDesc",
+    "anchor": "audiotrim-lab-tool",
+    "steps": [
+      "audioChoose",
+      "audioProcess",
+      "audioDownload"
+    ]
+  },
+  {
+    "slug": "join-audio",
+    "title": "audiojoinTitle",
+    "desc": "audiojoinDesc",
+    "anchor": "audiojoin-lab-tool",
+    "steps": [
+      "audioChoose",
+      "audioProcess",
+      "audioDownload"
+    ]
+  },
+  {
+    "slug": "normalize-audio",
+    "title": "audionormalTitle",
+    "desc": "audionormalDesc",
+    "anchor": "audionormal-lab-tool",
+    "steps": [
+      "audioChoose",
+      "audioProcess",
+      "audioDownload"
+    ]
+  },
+  {
+    "slug": "prime-number-checker",
+    "title": "primecheckTitle",
+    "desc": "primecheckDesc",
+    "anchor": "primecheck-lab-tool",
+    "steps": [
+      "primecheckTitle",
+      "calculate",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "prime-factorization",
+    "title": "factorizeTitle",
+    "desc": "factorizeDesc",
+    "anchor": "factorize-lab-tool",
+    "steps": [
+      "factorizeTitle",
+      "calculate",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "gcd-lcm-calculator",
+    "title": "gcdlcmTitle",
+    "desc": "gcdlcmDesc",
+    "anchor": "gcdlcm-lab-tool",
+    "steps": [
+      "gcdlcmTitle",
+      "calculate",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "ipv4-subnet-calculator",
+    "title": "ipv4subnetTitle",
+    "desc": "ipv4subnetDesc",
+    "anchor": "ipv4subnet-lab-tool",
+    "steps": [
+      "ipv4subnetTitle",
+      "calculate",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "ipv6-compress-expand",
+    "title": "ipv6formatTitle",
+    "desc": "ipv6formatDesc",
+    "anchor": "ipv6format-lab-tool",
+    "steps": [
+      "ipv6formatTitle",
+      "calculate",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "ip-in-cidr",
+    "title": "cidrcheckTitle",
+    "desc": "cidrcheckDesc",
+    "anchor": "cidrcheck-lab-tool",
+    "steps": [
+      "cidrcheckTitle",
+      "calculate",
+      "copyResult"
+    ]
   }
 ]

@@ -1,3 +1,5 @@
+import { setupAudioTools } from './audio-tools';
+import { setupMathNetworkTools } from './math-network-tools';
 import { setupPracticalTools } from './practical-tools';
 import { setupCreativeImages } from './creative-images';
 import { setupCombineImages } from './combine-images';
@@ -341,6 +343,8 @@ setupDailyCalculators(t);
 setupUtilityPack(t);
 setupExpansionTools(t);
 setupPracticalTools(t);
+setupAudioTools(t);
+setupMathNetworkTools(t);
 setupCreativeImages(t);
 setupCombineImages(t);
 setupImageDecoration(t);
