@@ -1,4 +1,5 @@
 import QRCode from 'qrcode';
+import { setupImageEffects } from './image-effects';
 import { setupEncodingTools } from './encoding-tools';
 import { setupDateTools } from './date-tools';
 import { setupTextExtras } from './text-extras';
@@ -324,4 +325,5 @@ setupDeveloperExtras(t);
 setupTextExtras(t);
 setupDateTools(t);
 setupEncodingTools(t);
+setupImageEffects(t);
 void loadLocale();

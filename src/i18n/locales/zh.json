@@ -355,5 +355,19 @@
   "baseConvert": "转换数",
   "baseHint": "最多可达4,096位数字，可选使用+或−号。使用数字0–9和字母a–z;无前缀（0x/0b）、分数或分组分隔符。阴性结果使用负号，而非二补数。",
   "encodingInvalid": "检查HTML大小、JWT结构/编码、数字和选中的底数。输入可能超过规定的限制。",
-  "encodingCopyFailed": "复制失败。手动选择并复制结果。"
+  "encodingCopyFailed": "复制失败。手动选择并复制结果。",
+  "toneTitle": "图像亮度与对比度",
+  "toneDesc": "局部调整亮度和对比度。预览结果并下载一个不更改原始内容的PNG文件。",
+  "grayscaleTitle": "黑白图像",
+  "grayscaleDesc": "用加权亮度将彩色图像转换为灰度。透明度和原始尺寸得以保留。",
+  "avatarTitle": "圆形侧面图像",
+  "avatarDesc": "将图像置中裁剪成圆形，下载一个带有透明角的方形PNG。",
+  "toneBrightness": "亮度（−100到100）",
+  "toneContrast": "对比度（−100到100）",
+  "effectApply": "应用与预览",
+  "toneHint": "RGB通道的亮度加起来可达±255。对比法将它们从中点128的距离放大0–2倍。裁剪的高光/阴影无法恢复。",
+  "grayscaleHint": "利用加权RGB亮度产生灰度，并保持阿尔法透明度。没有上传任何文件。",
+  "avatarSize": "输出尺寸（方形像素）",
+  "avatarHint": "使用源中最大的中心正方形，并剪裁成圆形。PNG中的角落保持透明;放大一个小源并不会增加细节。",
+  "effectInvalid": "在限制范围内选择有效的JPEG、PNG或WebP，并检查特效设置。"
 }

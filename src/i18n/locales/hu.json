@@ -355,5 +355,19 @@
   "baseConvert": "Konvertálási szám",
   "baseHint": "Legfeljebb 4 096 számjegy, opcionális + vagy − jellel. 0–9 számjegyeket és a–z betűket használ; Nincsenek előtagok (0x/0b), törtek vagy csoportosító elválasztók. A negatív eredmények mínuszt használnak, nem kettő komplementjét.",
   "encodingInvalid": "Ellenőrizd a HTML méretet, JWT szerkezetet/kódolást, számjegyeket és kiválasztott bázisokat. A bemenet meghaladhatja a megadott határokat.",
-  "encodingCopyFailed": "A másolat meghibásodott. Válaszd ki és másold le az eredményt kézzel."
+  "encodingCopyFailed": "A másolat meghibásodott. Válaszd ki és másold le az eredményt kézzel.",
+  "toneTitle": "Kép fényessége és kontraszt",
+  "toneDesc": "Állítsd be a fényerőt és a kontrasztot helyben. Előnézett az eredmény, és töltsd le egy PNG-t anélkül, hogy megváltoztatná az eredetit.",
+  "grayscaleTitle": "Fekete-fehér kép",
+  "grayscaleDesc": "Alakítsd át a színes képet szürkeárnyalatossá súlyozott luminanciával. Az átlátszóság és az eredeti méretek megmaradtak.",
+  "avatarTitle": "Kör profilkép",
+  "avatarDesc": "Középre vágj egy képet körbe, és tölts le egy átlátszó sarkakkal ellátott négyzet alakú PNG-t.",
+  "toneBrightness": "Fényerő (−100-tól 100-ig)",
+  "toneContrast": "Kontraszt (−100 és 100)",
+  "effectApply": "Jelentkezz és előnézet",
+  "toneHint": "Az RGB csatornák fényerő összesen ±255-re telik fel. A kontraszt 0–2-szorosan skálázza a távolságukat a 128-as középponttól. A levágott fénypontok/árnyékok nem állíthatók vissza.",
+  "grayscaleHint": "Szürke árnyalatokat hoz létre súlyozott RGB luminanciával, és megőrzi az alfa átlátszóságot. Nincs feltöltve fájl.",
+  "avatarSize": "Kimeneti méret (négyzet pixelek)",
+  "avatarHint": "A forrás legnagyobb középső négyzetét használja, amely egy körhöz vágva. A kanyarok átlátszóak maradnak PNG-ben; Egy kis forrás bővítése nem ad részleteket.",
+  "effectInvalid": "Válassz érvényes JPEG-et, PNG-t vagy WebP-t a határokon belül, és ellenőrizd a hatásbeállításokat."
 }

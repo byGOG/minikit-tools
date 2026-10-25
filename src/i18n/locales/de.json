@@ -355,5 +355,19 @@
   "baseConvert": "Zahl umrechnen",
   "baseHint": "Bis zu 4.096 Ziffern, mit einem optionalen +- oder −-Zeichen. Verwenden Sie die Ziffern 0–9 und die Buchstaben a–z; keine Präfixe (0x/0b), Brüche oder Gruppierungstrenner. Negative Ergebnisse verwenden ein Minuszeichen, nicht das Zweierkomplement.",
   "encodingInvalid": "Überprüfe die HTML-Größe, JWT-Struktur/-Codierung, Ziffern und ausgewählte Basen. Der Eingang kann die angegebenen Grenzen überschreiten.",
-  "encodingCopyFailed": "Kopie fehlgeschlagen. Wählen und kopieren Sie das Ergebnis manuell."
+  "encodingCopyFailed": "Kopie fehlgeschlagen. Wählen und kopieren Sie das Ergebnis manuell.",
+  "toneTitle": "Bildhelligkeit und Kontrast",
+  "toneDesc": "Stellen Sie Helligkeit und Kontrast lokal ein. Schauen Sie das Ergebnis vor und laden Sie eine PNG herunter, ohne das Original zu ändern.",
+  "grayscaleTitle": "Schwarz-Weiß-Bild",
+  "grayscaleDesc": "Konvertiere ein Farbbild in Graustufen mit gewichteter Luminanz. Transparenz und Originalmaße bleiben erhalten.",
+  "avatarTitle": "Rundes Profilbild",
+  "avatarDesc": "Schneiden Sie ein Bild in einen Kreis aus der Mitte und laden Sie ein quadratisches PNG mit transparenten Ecken herunter.",
+  "toneBrightness": "Helligkeit (−100 bis 100)",
+  "toneContrast": "Kontrast (−100 bis 100)",
+  "effectApply": "Bewerbung und Vorschau",
+  "toneHint": "Die Helligkeit summiert sich zu ±255 zu RGB-Kanälen. Contrast skaliert ihren Abstand vom Mittelpunkt 128 um den Faktor 0–2. Abgeschnittene Lichter/Schatten können nicht wiederhergestellt werden.",
+  "grayscaleHint": "Erzeugt Grautöne mit gewichteter RGB-Luminanz und bewahrt Alpha-Transparenz. Es wird keine Datei hochgeladen.",
+  "avatarSize": "Ausgabegröße (quadratische Pixel)",
+  "avatarHint": "Verwendet das größte zentrierte Quadrat der Quelle, das an einen Kreis geclippt ist. Die Ecken bleiben in PNG transparent; Eine kleine Quelle zu vergrößern fügt keine Details hinzu.",
+  "effectInvalid": "Wählen Sie innerhalb der Grenzen ein gültiges JPEG, PNG oder WebP und prüfen Sie die Effekteinstellungen."
 }

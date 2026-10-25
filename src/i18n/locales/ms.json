@@ -355,5 +355,19 @@
   "baseConvert": "Tukar nombor",
   "baseHint": "Sehingga 4,096 digit, dengan pilihan tanda + atau −. Gunakan digit 0–9 dan huruf a–z; tiada awalan (0x/0b), pecahan atau pemisah pengelompokan. Keputusan negatif menggunakan tanda tolak, bukan komplemen dua.",
   "encodingInvalid": "Semak saiz HTML, struktur/pengekodan JWT, digit dan asas yang dipilih. Input mungkin melebihi had yang dinyatakan.",
-  "encodingCopyFailed": "Salinan gagal. Pilih dan salin hasil secara manual."
+  "encodingCopyFailed": "Salinan gagal. Pilih dan salin hasil secara manual.",
+  "toneTitle": "Kecerahan dan kontras imej",
+  "toneDesc": "Laraskan kecerahan dan kontras secara tempatan. Pratonton hasil dan muat turun PNG tanpa menukar yang asal.",
+  "grayscaleTitle": "Imej hitam-putih",
+  "grayscaleDesc": "Tukar imej berwarna kepada skala kelabu menggunakan luminans berwajaran. Ketelusan dan dimensi asal dikekalkan.",
+  "avatarTitle": "Imej profil bulat",
+  "avatarDesc": "Potong imej di tengah menjadi bulatan dan muat turun PNG segi empat dengan sudut lutsinar.",
+  "toneBrightness": "Kecerahan (−100 hingga 100)",
+  "toneContrast": "Kontras (−100 hingga 100)",
+  "effectApply": "Mohon dan pratonton",
+  "toneHint": "Kecerahan bertambah sehingga ±255 ke saluran RGB. Kontras menskala jarak mereka dari titik tengah 128 dengan faktor 0–2. Sorotan/bayang yang dipotong tidak boleh dipulihkan.",
+  "grayscaleHint": "Menghasilkan rona kelabu menggunakan luminans RGB berwajaran dan mengekalkan ketelusan alfa. Tiada fail dimuat naik.",
+  "avatarSize": "Saiz output (piksel segi empat sama)",
+  "avatarHint": "Menggunakan segi empat sama terbesar yang dipusatkan pada sumber, dipotong pada bulatan. Sudut kekal lutsinar dalam PNG; Membesarkan sumber kecil tidak menambah perincian.",
+  "effectInvalid": "Pilih JPEG, PNG atau WebP yang sah dalam had dan periksa tetapan kesan."
 }

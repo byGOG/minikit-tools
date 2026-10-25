@@ -355,5 +355,19 @@
   "baseConvert": "Convert number",
   "baseHint": "Up to 4,096 digits, with an optional + or − sign. Use digits 0–9 and letters a–z; no prefixes (0x/0b), fractions or grouping separators. Negative results use a minus sign, not two’s complement.",
   "encodingInvalid": "Check the HTML size, JWT structure/encoding, digits and selected bases. The input may exceed the stated limits.",
-  "encodingCopyFailed": "Copy failed. Select and copy the result manually."
+  "encodingCopyFailed": "Copy failed. Select and copy the result manually.",
+  "toneTitle": "Image brightness and contrast",
+  "toneDesc": "Adjust brightness and contrast locally. Preview the result and download a PNG without changing the original.",
+  "grayscaleTitle": "Black-and-white image",
+  "grayscaleDesc": "Convert a color image to grayscale using weighted luminance. Transparency and original dimensions are preserved.",
+  "avatarTitle": "Round profile image",
+  "avatarDesc": "Center-crop an image into a circle and download a square PNG with transparent corners.",
+  "toneBrightness": "Brightness (−100 to 100)",
+  "toneContrast": "Contrast (−100 to 100)",
+  "effectApply": "Apply and preview",
+  "toneHint": "Brightness adds up to ±255 to RGB channels. Contrast scales their distance from midpoint 128 by a factor of 0–2. Clipped highlights/shadows cannot be restored.",
+  "grayscaleHint": "Produces shades of gray using weighted RGB luminance and preserves alpha transparency. No file is uploaded.",
+  "avatarSize": "Output size (square pixels)",
+  "avatarHint": "Uses the largest centered square of the source, clipped to a circle. Corners stay transparent in PNG; enlarging a small source does not add detail.",
+  "effectInvalid": "Choose a valid JPEG, PNG or WebP within the limits and check the effect settings."
 }

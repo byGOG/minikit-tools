@@ -355,5 +355,19 @@
   "baseConvert": "Skakel die nommer om",
   "baseHint": "Tot 4 096 syfers, met 'n opsionele + of − teken. Gebruik syfers 0–9 en letters a–z; geen voorfikse (0x/0b), breuke of groeperingsskeiers nie. Negatiewe resultate gebruik 'n minusteken, nie 'n twee-komplement nie.",
   "encodingInvalid": "Kontroleer die HTML-grootte, JWT-struktuur/kodering, syfers en geselekteerde basisse. Die inset mag die gestelde limiete oorskry.",
-  "encodingCopyFailed": "Kopie het misluk. Kies en kopieer die resultaat handmatig."
+  "encodingCopyFailed": "Kopie het misluk. Kies en kopieer die resultaat handmatig.",
+  "toneTitle": "Beeldhelderheid en kontras",
+  "toneDesc": "Pas die helderheid en kontras plaaslik aan. Kyk die resultaat voor en laai 'n PNG af sonder om die oorspronklike te verander.",
+  "grayscaleTitle": "Swart-en-wit beeld",
+  "grayscaleDesc": "Skakel 'n kleurbeeld om na gryskaal met gewigte luminansie. Deursigtigheid en oorspronklike afmetings word behou.",
+  "avatarTitle": "Ronde profielbeeld",
+  "avatarDesc": "Sny 'n beeld in die middel in 'n sirkel en laai 'n vierkantige PNG met deursigtige hoeke af.",
+  "toneBrightness": "Helderheid (−100 tot 100)",
+  "toneContrast": "Kontras (−100 tot 100)",
+  "effectApply": "Aansoek en voorskou",
+  "toneHint": "Helderheid tel op tot ±255 tot RGB-kanale. Contrast skaal hul afstand vanaf middelpunt 128 met 'n faktor van 0–2. Geknipte hoogtepunte/skaduwees kan nie herstel word nie.",
+  "grayscaleHint": "Produseer skakerings van grys deur gebruik te maak van gewigte RGB-luminansie en behou alfa-deursigtigheid. Geen lêer word opgelaai nie.",
+  "avatarSize": "Uitsetgrootte (vierkantige pixels)",
+  "avatarHint": "Gebruik die grootste gesentreerde vierkant van die bron, vasgeknip aan 'n sirkel. Hoeke bly deursigtig in PNG; Om 'n klein bron te vergroot voeg nie detail by nie.",
+  "effectInvalid": "Kies 'n geldige JPEG, PNG of WebP binne die perke en kyk na die effekinstellings."
 }

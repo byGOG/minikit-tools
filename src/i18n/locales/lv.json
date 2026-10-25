@@ -355,5 +355,19 @@
   "baseConvert": "Pārveidošanas numurs",
   "baseHint": "Līdz 4 096 cipariem, ar izvēles + vai − zīmi. Izmantojiet ciparus 0–9 un burtus a–z; nav prefiksu (0x/0b), daļskaitļu vai grupēšanas atdalītāju. Negatīvos rezultātos izmanto mīnusa zīmi, nevis divnieku komplementu.",
   "encodingInvalid": "Pārbaudiet HTML izmēru, JWT struktūru/kodējumu, ciparus un izvēlētās bāzes. Ievade var pārsniegt norādītos ierobežojumus.",
-  "encodingCopyFailed": "Kopija neizdevās. Izvēlies un nokopē rezultātu manuāli."
+  "encodingCopyFailed": "Kopija neizdevās. Izvēlies un nokopē rezultātu manuāli.",
+  "toneTitle": "Attēla spilgtums un kontrasts",
+  "toneDesc": "Regulē spilgtumu un kontrastu lokāli. Priekšskatiet rezultātu un lejupielādējiet PNG, nemainot oriģinālu.",
+  "grayscaleTitle": "Melnbaltais attēls",
+  "grayscaleDesc": "Pārvērt krāsainu attēlu pelēktoņos, izmantojot svērto luminanci. Caurspīdīgums un oriģinālie izmēri tiek saglabāti.",
+  "avatarTitle": "Apaļā profila attēls",
+  "avatarDesc": "Centrēti apgrieziet attēlu aplī un lejupielādējiet kvadrātveida PNG ar caurspīdīgiem stūriem.",
+  "toneBrightness": "Spilgtums (−100 līdz 100)",
+  "toneContrast": "Kontrasts (−100 līdz 100)",
+  "effectApply": "Pieteikties un priekšskatīt",
+  "toneHint": "Spilgtums RGB kanālos kopā veido ±255. Kontrasts mēro attālumu no 128. viduspunkta ar 0–2 reižu. Apgrieztus izgaismojumus/ēnas nevar atjaunot.",
+  "grayscaleHint": "Rada pelēkos toņus, izmantojot svarotu RGB luminanci, un saglabā alfa caurspīdīgumu. Fails netiek augšupielādēts.",
+  "avatarSize": "Izvades izmērs (kvadrātveida pikseļi)",
+  "avatarHint": "Izmanto lielāko avota centrēto kvadrātu, kas ir piestiprināts pie apļa. Stūri PNG paliek caurspīdīgi; maza avota palielināšana nepievieno detaļas.",
+  "effectInvalid": "Izvēlieties derīgu JPEG, PNG vai WebP ierobežojumu robežās un pārbaudiet efektu iestatījumus."
 }

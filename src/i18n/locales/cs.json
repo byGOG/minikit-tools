@@ -355,5 +355,19 @@
   "baseConvert": "Převod čísla",
   "baseHint": "Až 4 096 číslic, s volitelným znaménkem + nebo −. Použijte číslice 0–9 a písmena a–z; žádné předpony (0x/0b), zlomky ani seskupovací separátory. Záporné výsledky používají záporné znaménko, nikoli dvojkový doplněk.",
   "encodingInvalid": "Zkontrolujte velikost HTML, strukturu/kódování JWT, číslice a vybrané báze. Vstup může překročit stanovené limity.",
-  "encodingCopyFailed": "Kopie selhala. Vyberte a zkopírujte výsledek ručně."
+  "encodingCopyFailed": "Kopie selhala. Vyberte a zkopírujte výsledek ručně.",
+  "toneTitle": "Jas a kontrast obrazu",
+  "toneDesc": "Upravte jas a kontrast lokálně. Zobrazte si výsledek a stáhněte si PNG bez změny originálu.",
+  "grayscaleTitle": "Černobílý obraz",
+  "grayscaleDesc": "Převeďte barevný obrázek do odstínů šedi pomocí vážené jas. Průhlednost a původní rozměry jsou zachovány.",
+  "avatarTitle": "Kulatý profilový obrázek",
+  "avatarDesc": "Ořízněte obrázek do kruhu a stáhněte čtvercovou PNG s průhlednými rohy.",
+  "toneBrightness": "Jas (−100 až 100)",
+  "toneContrast": "Kontrast (−100 až 100)",
+  "effectApply": "Přihlásit se a nahlédnout",
+  "toneHint": "Jas se na RGB kanály součítá až ±255. Kontrast škáluje jejich vzdálenost od středu 128 faktorem 0–2. Oříznuté zvýraznění/stíny nelze obnovit.",
+  "grayscaleHint": "Vytváří odstíny šedi pomocí vážené RGB luminance a zachovává alfa průhlednost. Žádný soubor se nenahrává.",
+  "avatarSize": "Velikost výstupu (čtvercové pixely)",
+  "avatarHint": "Používá největší středový čtverec zdroje, oříznutý na kruh. Rohy zůstávají v PNG průhledné; Zvětšování malého zdroje nepřidává detaily.",
+  "effectInvalid": "Vyberte platný JPEG, PNG nebo WebP v rámci limitů a zkontrolujte nastavení efektů."
 }

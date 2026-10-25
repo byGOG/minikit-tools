@@ -355,5 +355,19 @@
   "baseConvert": "Pretvori broj",
   "baseHint": "Do 4.096 znamenki, s opcionalnim znakom + ili −. Koristite znamenke od 0 do 9 i slova a–z; bez prefiksa (0x/0b), razlomaka ili separatora grupiranja. Negativni rezultati koriste minus, a ne komplement dvojke.",
   "encodingInvalid": "Provjerite HTML veličinu, JWT strukturu/kodiranje, znamenke i odabrane baze. Ulaz može premašiti navedene granice.",
-  "encodingCopyFailed": "Kopiranje nije uspjelo. Odaberite i kopirajte rezultat ručno."
+  "encodingCopyFailed": "Kopiranje nije uspjelo. Odaberite i kopirajte rezultat ručno.",
+  "toneTitle": "Svjetlina i kontrast slike",
+  "toneDesc": "Podešavajte svjetlinu i kontrast lokalno. Pregledajte rezultat i preuzmite PNG bez mijenjanja originala.",
+  "grayscaleTitle": "Crno-bijela slika",
+  "grayscaleDesc": "Pretvorite sliku u boji u sivu skalu koristeći ponderiranu luminanciju. Prozirnost i izvorne dimenzije su sačuvane.",
+  "avatarTitle": "Okrugla profilna slika",
+  "avatarDesc": "Izrezujte sliku u krug i preuzmite kvadratni PNG s prozirnim kutovima.",
+  "toneBrightness": "Svjetlina (−100 do 100)",
+  "toneContrast": "Kontrast (−100 do 100)",
+  "effectApply": "Prijava i pregled",
+  "toneHint": "Svjetlina se zbraja na ±255 za RGB kanale. Kontrast skalira njihovu udaljenost od sredine 128 za faktor 0–2. Izrezani istaknuti dijelovi/sjene se ne mogu vratiti.",
+  "grayscaleHint": "Proizvodi nijanse sive koristeći ponderiranu RGB luminanciju i čuva alfa prozirnost. Nijedna datoteka se ne učitava.",
+  "avatarSize": "Veličina izlaza (kvadratni pikseli)",
+  "avatarHint": "Koristi najveći centrirani kvadrat izvora, izrezan na krug. Kutovi ostaju prozirni u PNG-u; Povećanje malog izvora ne dodaje detalje.",
+  "effectInvalid": "Odaberite valjani JPEG, PNG ili WebP unutar ograničenja i provjerite postavke efekta."
 }

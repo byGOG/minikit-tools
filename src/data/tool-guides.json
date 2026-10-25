@@ -338,5 +338,35 @@
       "heading": "Number base converter",
       "text": "Convert signed integers between bases 2–36 without JavaScript floating-point rounding. Uses exact BigInt arithmetic. Up to 4,096 digits, with an optional + or − sign. Use digits 0–9 and letters a–z; no prefixes (0x/0b), fractions or grouping separators. Negative results use a minus sign, not two’s complement."
     }
+  },
+  "image-brightness-contrast": {
+    "tr": {
+      "heading": "Görsel parlaklık ve kontrast",
+      "text": "Parlaklık ve kontrastı cihazında ayarla. Sonucu önizle ve özgün dosyayı değiştirmeden PNG olarak indir. Parlaklık RGB kanallarına en fazla ±255 ekler. Kontrast, 128 orta noktasına uzaklığı 0–2 katsayısıyla değiştirir. Kırpılan açık/koyu ayrıntılar geri getirilemez."
+    },
+    "en": {
+      "heading": "Image brightness and contrast",
+      "text": "Adjust brightness and contrast locally. Preview the result and download a PNG without changing the original. Brightness adds up to ±255 to RGB channels. Contrast scales their distance from midpoint 128 by a factor of 0–2. Clipped highlights/shadows cannot be restored."
+    }
+  },
+  "image-grayscale": {
+    "tr": {
+      "heading": "Siyah-beyaz görsel",
+      "text": "Renkli görseli ağırlıklı parlaklıkla gri tonlarına dönüştür. Şeffaflık ve özgün boyutlar korunur. RGB parlaklık ağırlıklarıyla gri tonları üretir, alfa şeffaflığını korur. Dosya yüklenmez."
+    },
+    "en": {
+      "heading": "Black-and-white image",
+      "text": "Convert a color image to grayscale using weighted luminance. Transparency and original dimensions are preserved. Produces shades of gray using weighted RGB luminance and preserves alpha transparency. No file is uploaded."
+    }
+  },
+  "round-profile-image": {
+    "tr": {
+      "heading": "Yuvarlak profil görseli",
+      "text": "Görseli ortadan daire şeklinde kırp; köşeleri şeffaf kare bir PNG olarak indir. Kaynağın ortasındaki en büyük kare kullanılır ve daireye kırpılır. PNG köşeleri şeffaf kalır; küçük bir kaynağı büyütmek ayrıntı eklemez."
+    },
+    "en": {
+      "heading": "Round profile image",
+      "text": "Center-crop an image into a circle and download a square PNG with transparent corners. Uses the largest centered square of the source, clipped to a circle. Corners stay transparent in PNG; enlarging a small source does not add detail."
+    }
   }
 }

@@ -355,5 +355,19 @@
   "baseConvert": "I-convert ang numero",
   "baseHint": "Hanggang 4,096 na digit, na may opsyonal na + o − na palatandaan. Gamitin ang mga digit 0–9 at mga letra a–z; Walang prefix (0x/0b), fraction o grouping separators. Ang negatibong resulta ay gumagamit ng minus sign, hindi dalawa's complement.",
   "encodingInvalid": "Suriin ang laki ng HTML, JWT structure/encoding, mga digit at napiling base. Maaaring lumampas ang input sa itinakdang limitasyon.",
-  "encodingCopyFailed": "Nabigo ang kopya. Piliin at kopyahin ang resulta nang manu-mano."
+  "encodingCopyFailed": "Nabigo ang kopya. Piliin at kopyahin ang resulta nang manu-mano.",
+  "toneTitle": "Liwanag at contrast ng imahe",
+  "toneDesc": "I-adjust ang liwanag at contrast nang lokal. I-preview ang resulta at mag-download ng PNG nang hindi binabago ang orihinal.",
+  "grayscaleTitle": "Itim-at-puting imahe",
+  "grayscaleDesc": "I-convert ang isang kulay na imahe sa grayscale gamit ang weighted luminance. Pinananatili ang transparency at orihinal na sukat.",
+  "avatarTitle": "Bilog na larawan ng profile",
+  "avatarDesc": "I-center crop ang imahe sa bilog at mag-download ng parisukat na PNG na may transparent na mga sulok.",
+  "toneBrightness": "Liwanag (−100 hanggang 100)",
+  "toneContrast": "Contrast (−100 hanggang 100)",
+  "effectApply": "Mag-apply at mag-preview",
+  "toneHint": "Ang liwanag ay umaabot hanggang ±255 sa mga RGB channel. Sinusukat ng contrast ang kanilang distansya mula sa gitnang punto 128 ng isang beses na 0–2. Hindi na maibabalik ang mga clippped highlights/shadows.",
+  "grayscaleHint": "Gumagawa ng mga shade ng gray gamit ang weighted RGB luminance at pinapanatili ang alpha transparency. Walang file na na-upload.",
+  "avatarSize": "Laki ng output (parisukat na pixel)",
+  "avatarHint": "Ginagamit ang pinakamalaking gitnang parisukat ng pinagmulan, na naka-clip sa isang bilog. Ang mga sulok ay nananatiling transparent sa PNG; Ang pagpapalaki ng maliit na pinagmulan ay hindi nagdadagdag ng detalye.",
+  "effectInvalid": "Pumili ng valid na JPEG, PNG o WebP sa loob ng limitasyon at tingnan ang effect settings."
 }

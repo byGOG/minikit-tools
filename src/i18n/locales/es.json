@@ -355,5 +355,19 @@
   "baseConvert": "Número de conversión",
   "baseHint": "Hasta 4.096 dígitos, con un signo opcional + o −. Utiliza los dígitos 0–9 y las letras de la a a la z; sin prefijos (0x/0b), fracciones ni separadores de agrupación. Los resultados negativos usan un signo menos, no el complemento de dos.",
   "encodingInvalid": "Comprueba el tamaño HTML, la estructura/codificación de JWT, los dígitos y las bases seleccionadas. La entrada puede superar los límites establecidos.",
-  "encodingCopyFailed": "Copia fallida. Selecciona y copia el resultado manualmente."
+  "encodingCopyFailed": "Copia fallida. Selecciona y copia el resultado manualmente.",
+  "toneTitle": "Brillo y contraste de imagen",
+  "toneDesc": "Ajusta el brillo y el contraste localmente. Previsualiza el resultado y descarga un PNG sin cambiar el original.",
+  "grayscaleTitle": "Imagen en blanco y negro",
+  "grayscaleDesc": "Convierte una imagen en color a escala de grises usando luminancia ponderada. Se conservan la transparencia y las dimensiones originales.",
+  "avatarTitle": "Imagen de perfil redonda",
+  "avatarDesc": "Recorta una imagen en el centro en un círculo y descarga un PNG cuadrado con esquinas transparentes.",
+  "toneBrightness": "Brillo (−100 a 100)",
+  "toneContrast": "Contraste (−100 a 100)",
+  "effectApply": "Solicitar y previsualizar",
+  "toneHint": "El brillo suma ±255 a los canales RGB. El contraste escala su distancia desde el punto medio 128 por un factor de 0–2. Las luces o sombras recortadas no se pueden restaurar.",
+  "grayscaleHint": "Produce tonos de gris usando luminancia RGB ponderada y preserva la transparencia alfa. No se sube ningún archivo.",
+  "avatarSize": "Tamaño de salida (píxeles cuadrados)",
+  "avatarHint": "Utiliza el cuadrado centrado más grande de la fuente, recortado a un círculo. Las esquinas se mantienen transparentes en PNG; ampliar una fuente pequeña no añade detalle.",
+  "effectInvalid": "Elige un JPEG, PNG o WebP válido dentro de los límites y revisa la configuración de efectos."
 }

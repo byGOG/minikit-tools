@@ -355,5 +355,19 @@
   "baseConvert": "Teisendamise number",
   "baseHint": "Kuni 4 096 numbrit, valikulise + või − märgiga. Kasuta numbreid 0–9 ja tähti a–z; Ei prefikseid (0x/0b), murde ega grupeerimiseraldusi. Negatiivsete tulemuste puhul kasutatakse miinusmärki, mitte kahe komplementi.",
   "encodingInvalid": "Kontrolli HTML suurust, JWT struktuuri/kodeerimist, numbreid ja valitud aluseid. Sisend võib ületada lubatud piirid.",
-  "encodingCopyFailed": "Kopeerimine ebaõnnestus. Vali ja kopeeri tulemus käsitsi."
+  "encodingCopyFailed": "Kopeerimine ebaõnnestus. Vali ja kopeeri tulemus käsitsi.",
+  "toneTitle": "Pildi heledus ja kontrastsus",
+  "toneDesc": "Reguleeri heledust ja kontrasti kohapeal. Eelvaade tulemust ja laadi PNG alla ilma originaali muutmata.",
+  "grayscaleTitle": "Mustvalge pilt",
+  "grayscaleDesc": "Teisenda värviline pilt halltooniks, kasutades kaalutud luminantsi. Läbipaistvus ja algsed mõõtmed on säilinud.",
+  "avatarTitle": "Ümmargune profiilipilt",
+  "avatarDesc": "Lõika pilt keskelt ringiks ja laadi alla ruudukujuline PNG läbipaistvate nurkadega.",
+  "toneBrightness": "Heledus (−100 kuni 100)",
+  "toneContrast": "Kontrast (−100 kuni 100)",
+  "effectApply": "Kandideeri ja eelvaade",
+  "toneHint": "Heledus võib kokku ulatuda ±255 RGB kanaliteni. Kontrast skaleerib nende kaugust keskpunktist 128 0–2 korda. Kärbitud esiletõstmisi/varje ei saa taastada.",
+  "grayscaleHint": "Toodab halltoone kaalutud RGB luminantsi abil ja säilitab alfa läbipaistvuse. Ühtegi faili ei laeta üles.",
+  "avatarSize": "Väljundsuurus (ruudukujulised pikslid)",
+  "avatarHint": "Kasutab allika suurimat keskset ruutu, mis on kinnitatud ringile. Nurgad jäävad PNG-s läbipaistvaks; Väikese allika suurendamine ei lisa detaile.",
+  "effectInvalid": "Vali kehtiv JPEG, PNG või WebP piirangute sees ja kontrolli efektiseadeid."
 }

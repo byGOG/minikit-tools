@@ -355,5 +355,19 @@
   "baseConvert": "Nombre de conversion",
   "baseHint": "Jusqu’à 4 096 chiffres, avec un signe optionnel + ou −. Utilisez les chiffres 0 à 9 et les lettres a–z ; Pas de préfixes (0x/0b), de fractions ou de séparateurs de groupement. Les résultats négatifs utilisent un signe moins, pas le complément de deux.",
   "encodingInvalid": "Vérifiez la taille du HTML, la structure/encodage JWT, les chiffres et les bases sélectionnées. L’entrée peut dépasser les limites indiquées.",
-  "encodingCopyFailed": "Copie échouée. Sélectionnez et copiez le résultat manuellement."
+  "encodingCopyFailed": "Copie échouée. Sélectionnez et copiez le résultat manuellement.",
+  "toneTitle": "Luminosité et contraste de l’image",
+  "toneDesc": "Ajustez la luminosité et le contraste localement. Prévisualisez le résultat et téléchargez un PNG sans changer l’original.",
+  "grayscaleTitle": "Image en noir et blanc",
+  "grayscaleDesc": "Convertir une image couleur en niveaux de gris en utilisant la luminance pondérée. La transparence et les dimensions originales sont conservées.",
+  "avatarTitle": "Image de profil du tour",
+  "avatarDesc": "Recadrez une image au centre en cercle et téléchargez un PNG carré avec des coins transparents.",
+  "toneBrightness": "Luminosité (−100 à 100)",
+  "toneContrast": "Contraste (−100 à 100)",
+  "effectApply": "Postuler et prévisualiser",
+  "toneHint": "La luminosité totalise ±255 pour les canaux RGB. Le contraste fait passer leur distance à partir du point médian de 128 par un facteur 0–2. Les hautes lumières/ombres découpées ne peuvent pas être restaurées.",
+  "grayscaleHint": "Produit des nuances de gris en utilisant la luminance RGB pondérée et préserve la transparence alpha. Aucun fichier n’est téléchargé.",
+  "avatarSize": "Taille de sortie (pixels carrés)",
+  "avatarHint": "Utilise le plus grand carré centré de la source, découpé à un cercle. Les coins restent transparents en PNG ; Agrandir une petite source n’ajoute pas de détails.",
+  "effectInvalid": "Choisissez un JPEG, PNG ou WebP valide dans les limites et vérifiez les paramètres d’effets."
 }
