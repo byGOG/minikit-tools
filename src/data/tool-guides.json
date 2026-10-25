@@ -428,5 +428,35 @@
       "heading": "Whitespace cleaner",
       "text": "Remove extra spaces and tidy text in one step. Collapses whitespace and trims edges. Preserve line breaks to keep internal blank lines; turn it off for a single line. Up to 100,000 characters."
     }
+  },
+  "discount-calculator": {
+    "en": {
+      "heading": "Discount calculator",
+      "text": "Calculate the sale price and how much you save. Price from 0 to 1 trillion; discount from 0 to 100%. Results rounded to 2 decimals, in the same currency as your input. No tax or additional fees. Use a dot or comma for decimals, without thousands separators. Absolute input values up to 1 trillion. Proportion and travel results use up to 12 significant digits; maximum absolute result 1 quadrillion. Calculations are approximate."
+    },
+    "tr": {
+      "heading": "İndirim hesaplayıcı",
+      "text": "İndirimli fiyatı ve ne kadar tasarruf ettiğini hesapla. Fiyat 0–1 trilyon, indirim %0–100 arasında olmalı. Sonuçlar girdinle aynı para biriminde, 2 ondalığa yuvarlanır. Vergi ve ek ücret dahil değildir. Ondalık için nokta veya virgül kullan; binlik ayracı kullanma. Mutlak girdi değeri en fazla 1 trilyon olabilir. Oran ve yol sonuçları en fazla 12 anlamlı basamakla gösterilir; mutlak sonuç sınırı 1 katrilyondur. Hesaplamalar yaklaşık sonuç verir."
+    }
+  },
+  "proportion-calculator": {
+    "en": {
+      "heading": "Proportion calculator",
+      "text": "Find the missing value in A / B = C / D. Leave exactly one field empty. B and D cannot be zero. Only a unique finite solution is accepted. Use a dot or comma for decimals, without thousands separators. Absolute input values up to 1 trillion. Proportion and travel results use up to 12 significant digits; maximum absolute result 1 quadrillion. Calculations are approximate."
+    },
+    "tr": {
+      "heading": "Oran hesaplayıcı",
+      "text": "A / B = C / D eşitliğinde eksik değeri bul. Tam olarak bir alanı boş bırak. B ve D sıfır olamaz. Yalnızca tek ve sonlu çözüm kabul edilir. Ondalık için nokta veya virgül kullan; binlik ayracı kullanma. Mutlak girdi değeri en fazla 1 trilyon olabilir. Oran ve yol sonuçları en fazla 12 anlamlı basamakla gösterilir; mutlak sonuç sınırı 1 katrilyondur. Hesaplamalar yaklaşık sonuç verir."
+    }
+  },
+  "speed-distance-time": {
+    "en": {
+      "heading": "Speed, distance and time",
+      "text": "Find one value using the other two and your preferred units. Choose the value to find; its input is ignored. Uses constant average speed, without stops. Division by zero is not allowed. h = hours, min = minutes, s = seconds; mi = miles. Use a dot or comma for decimals, without thousands separators. Absolute input values up to 1 trillion. Proportion and travel results use up to 12 significant digits; maximum absolute result 1 quadrillion. Calculations are approximate."
+    },
+    "tr": {
+      "heading": "Hız, mesafe ve süre",
+      "text": "Diğer iki değeri ve istediğin birimleri kullanarak eksik değeri bul. Bulunacak değeri seç; o alanın girdisi kullanılmaz. Duraksama olmadan sabit ortalama hız kullanılır. Sıfıra bölme yapılamaz. h = saat, min = dakika, s = saniye; mi = mil. Ondalık için nokta veya virgül kullan; binlik ayracı kullanma. Mutlak girdi değeri en fazla 1 trilyon olabilir. Oran ve yol sonuçları en fazla 12 anlamlı basamakla gösterilir; mutlak sonuç sınırı 1 katrilyondur. Hesaplamalar yaklaşık sonuç verir."
+    }
   }
 }
