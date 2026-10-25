@@ -1,3 +1,6 @@
+import { setupPracticalTools } from './practical-tools';
+import { setupCreativeImages } from './creative-images';
+import { setupCombineImages } from './combine-images';
 import { setupExpansionTools } from './expansion-tools';
 import { setupUtilityPack } from './utility-pack';
 import { setupImageDecoration } from './image-decoration';
@@ -44,8 +47,8 @@ function applyLanguage(next: Lang) {
   document.querySelectorAll<HTMLElement>('[data-i18n]').forEach((el) => {
     const key = el.dataset.i18n; if (key && currentTranslations[key]) el.innerHTML = currentTranslations[key];
   });
-  for (const [data, attribute] of [['i18nAria', 'aria-label'], ['i18nPlaceholder', 'placeholder'], ['i18nAlt', 'alt']]) {
-    const selector = attribute === 'aria-label' ? '[data-i18n-aria]' : attribute === 'placeholder' ? '[data-i18n-placeholder]' : '[data-i18n-alt]';
+  for (const [data, attribute] of [['i18nAria', 'aria-label'], ['i18nPlaceholder', 'placeholder'], ['i18nAlt', 'alt'], ['i18nTitle', 'title']]) {
+    const selector = attribute === 'aria-label' ? '[data-i18n-aria]' : attribute === 'placeholder' ? '[data-i18n-placeholder]' : attribute === 'title' ? '[data-i18n-title]' : '[data-i18n-alt]';
     document.querySelectorAll<HTMLElement>(selector).forEach((el) => { const key = el.dataset[data]; if (key) el.setAttribute(attribute, t(key)); });
   }
   ($('#language-select') as HTMLSelectElement).value = lang;
@@ -337,5 +340,8 @@ setupTextUtilities(t);
 setupDailyCalculators(t);
 setupUtilityPack(t);
 setupExpansionTools(t);
+setupPracticalTools(t);
+setupCreativeImages(t);
+setupCombineImages(t);
 setupImageDecoration(t);
 void loadLocale();

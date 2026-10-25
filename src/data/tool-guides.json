@@ -638,5 +638,95 @@
       "heading": "Yazı-tura ve zar",
       "text": "Yazı-tura at veya altı yüzlü zar kullan. Tarayıcının kriptografik rastgelelik kaynağıyla 1–100 bağımsız çekiliş yapar. Sonuçlar tekrarlanabilir."
     }
+  },
+  "combine-images": {
+    "en": {
+      "heading": "Combine images",
+      "text": "Join images horizontally or vertically into one PNG. Choose up to 10 JPEG/PNG/WebP files, at most 20 MiB each and 50 MiB total. Reorder with arrows. Images keep their sizes, aligned top/left on transparency. Combined source and output limits: 16 million pixels and 8,192 pixels per side. Animated images use one frame; metadata is not copied."
+    },
+    "tr": {
+      "heading": "Görselleri birleştir",
+      "text": "Görselleri yatay veya dikey olarak tek PNG’de birleştir. En fazla 10 JPEG/PNG/WebP seç; dosya başına 20 MiB, toplam 50 MiB. Oklarla sırala. Görseller boyutlarını korur, saydam zemin üzerinde üst/sol kenara hizalanır. Kaynak toplamı ve çıktı en fazla 16 milyon piksel, kenarlar 8.192 piksel olabilir. Hareketli görsellerin tek karesi kullanılır; meta veriler kopyalanmaz."
+    }
+  },
+  "blur-image": {
+    "en": {
+      "heading": "Blur image",
+      "text": "Apply a soft blur and download a PNG. Blur radius 0–50 pixels; keeps dimensions. Edges and transparency may soften. Requires Canvas filter support. Animated images use one frame; metadata is not copied."
+    },
+    "tr": {
+      "heading": "Görseli bulanıklaştır",
+      "text": "Görsele yumuşak bulanıklık uygula ve PNG indir. Bulanıklık yarıçapı 0–50 piksel; boyutlar korunur. Kenarlar ve saydamlık yumuşayabilir. Canvas filtre desteği gerekir. Hareketli görsellerin tek karesi kullanılır; meta veriler kopyalanmaz."
+    }
+  },
+  "invert-image-colors": {
+    "en": {
+      "heading": "Invert image colors",
+      "text": "Create a color negative while keeping transparency. Each RGB channel becomes 255 minus its original value. Alpha and dimensions stay the same. Downloads PNG; animated images use one frame, without copied metadata."
+    },
+    "tr": {
+      "heading": "Görsel renklerini ters çevir",
+      "text": "Saydamlığı koruyarak görselin negatifini oluştur. Her RGB kanalı 255 eksi özgün değer olur. Alfa ve boyutlar korunur. PNG indirilir; hareketli görsellerin tek karesi kullanılır, meta veriler kopyalanmaz."
+    }
+  },
+  "regex-tester": {
+    "en": {
+      "heading": "Regex tester",
+      "text": "Test a JavaScript regular expression against text. JavaScript syntax; supported flags depend on your browser. Pattern up to 1,000 characters, text up to 100,000. Runs in a worker with about a 1-second timeout. Up to 1,000 matches / 2 million output characters. Indexes use UTF-16; no partial output on limit. Empty matches advance safely."
+    },
+    "tr": {
+      "heading": "Regex test aracı",
+      "text": "JavaScript düzenli ifadesini metin üzerinde dene. JavaScript sözdizimi; desteklenen bayraklar tarayıcıya bağlıdır. Desen en fazla 1.000, metin 100.000 karakter. Yaklaşık 1 saniye süre sınırıyla ayrı iş parçacığında çalışır. En fazla 1.000 eşleşme / 2 milyon çıktı karakteri. İndeksler UTF-16 kullanır; sınır aşımında kısmi çıktı verilmez. Boş eşleşmelerde güvenle ilerler."
+    }
+  },
+  "html-to-markdown": {
+    "en": {
+      "heading": "HTML to Markdown",
+      "text": "Convert basic HTML into Markdown text. Up to 100,000 input characters / 2 million output characters. Supports headings, lists, links, quotes and code. Scripts, forms and styles are removed; images become alt text. Only absolute HTTP(S) links are retained. Tables and complex layouts may lose formatting. No resources are fetched."
+    },
+    "tr": {
+      "heading": "HTML → Markdown",
+      "text": "Temel HTML içeriğini Markdown metnine dönüştür. En fazla 100.000 girdi / 2 milyon çıktı karakteri. Başlık, liste, bağlantı, alıntı ve kod desteklenir. Betik, form ve stiller kaldırılır; görseller alternatif metne çevrilir. Yalnızca mutlak HTTP(S) bağlantıları korunur. Tablo ve karmaşık düzenlerde biçim kaybı olabilir. Dış kaynak yüklenmez."
+    }
+  },
+  "markdown-preview": {
+    "en": {
+      "heading": "Markdown preview",
+      "text": "Preview Markdown and copy the cleaned HTML. Up to 100,000 characters, with about a 2-second parsing timeout. Cleaned HTML is shown in an isolated preview; scripts, styles, image loads and active links are disabled. GFM tables are supported; not every HTML feature is retained."
+    },
+    "tr": {
+      "heading": "Markdown önizleme",
+      "text": "Markdown içeriğini önizle ve temizlenmiş HTML’yi kopyala. En fazla 100.000 karakter, yaklaşık 2 saniyelik ayrıştırma sınırı. Temizlenmiş HTML yalıtılmış önizlemede gösterilir; betikler, stiller, görsel yüklemeleri ve etkin bağlantılar kapalıdır. GFM tabloları desteklenir; tüm HTML özellikleri korunmaz."
+    }
+  },
+  "tip-split-calculator": {
+    "en": {
+      "heading": "Tip and bill split",
+      "text": "Add a tip and divide the total equally. Bill 0–1 trillion; tip 0–100%; 1–1,000 people. Uses the currency of your input. Results round to 2 decimals; rounded shares may not sum exactly to the total. No added tax. Use decimal dot/comma, without thousands separators."
+    },
+    "tr": {
+      "heading": "Bahşiş ve hesap bölüşme",
+      "text": "Bahşiş ekle ve toplamı eşit olarak bölüştür. Hesap 0–1 trilyon, bahşiş %0–100, kişi sayısı 1–1.000 olabilir. Girdiğin para birimi kullanılır. Sonuçlar 2 ondalığa yuvarlanır; yuvarlanmış payların toplamı küçük fark gösterebilir. Ek vergi eklenmez. Ondalık için nokta/virgül kullan; binlik ayracı kullanma."
+    }
+  },
+  "fuel-cost-calculator": {
+    "en": {
+      "heading": "Fuel cost calculator",
+      "text": "Estimate fuel used and trip cost. Distance 0–1 billion km, consumption 0–1,000 L/100 km, price 0–1 million per liter. Cost uses your currency, capped at 1 quadrillion. Estimate excludes tolls and other costs; no live prices. Results round to 2 decimals. Decimal dot/comma accepted, no thousands separators."
+    },
+    "tr": {
+      "heading": "Yakıt maliyeti hesaplayıcı",
+      "text": "Yakıt ihtiyacını ve yolculuk maliyetini tahmin et. Mesafe 0–1 milyar km, tüketim 0–1.000 L/100 km, litre fiyatı 0–1 milyon olabilir. Maliyet girdinin para birimindedir; üst sınır 1 katrilyondur. Geçiş ve diğer giderler dahil değildir; canlı fiyat kullanılmaz. Sonuçlar 2 ondalığa yuvarlanır. Ondalık nokta/virgül kabul edilir; binlik ayracı kullanılmaz."
+    }
+  },
+  "add-days-to-date": {
+    "en": {
+      "heading": "Add days to a date",
+      "text": "Move a calendar date forward or backward. Adds whole calendar days, including weekends. Positive and negative counts supported, up to ±3,652,058 days. Start and result must be within years 0001–9999. UTC arithmetic avoids daylight-saving shifts; result is YYYY-MM-DD."
+    },
+    "tr": {
+      "heading": "Tarihe gün ekle",
+      "text": "Bir takvim tarihini ileri veya geri taşı. Hafta sonları dahil tam takvim günleri ekler. ±3.652.058 güne kadar pozitif/negatif değer desteklenir. Başlangıç ve sonuç 0001–9999 yılları arasında olmalı. UTC hesabı yaz saati kaymalarını önler; sonuç YYYY-MM-DD biçimindedir."
+    }
   }
 }

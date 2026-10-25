@@ -702,5 +702,104 @@
       "chanceDraw",
       "copyResult"
     ]
+  },
+  {
+    "slug": "combine-images",
+    "title": "combineTitle",
+    "desc": "combineDesc",
+    "anchor": "combine-creative-tool",
+    "steps": [
+      "editorFile",
+      "effectApply",
+      "downloadPng"
+    ]
+  },
+  {
+    "slug": "blur-image",
+    "title": "blurTitle",
+    "desc": "blurDesc",
+    "anchor": "blur-creative-tool",
+    "steps": [
+      "editorFile",
+      "effectApply",
+      "downloadPng"
+    ]
+  },
+  {
+    "slug": "invert-image-colors",
+    "title": "invertTitle",
+    "desc": "invertDesc",
+    "anchor": "invert-creative-tool",
+    "steps": [
+      "editorFile",
+      "effectApply",
+      "downloadPng"
+    ]
+  },
+  {
+    "slug": "regex-tester",
+    "title": "regexTitle",
+    "desc": "regexDesc",
+    "anchor": "regex-suite-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "html-to-markdown",
+    "title": "htmlmdTitle",
+    "desc": "htmlmdDesc",
+    "anchor": "htmlmd-suite-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "markdown-preview",
+    "title": "mdpreviewTitle",
+    "desc": "mdpreviewDesc",
+    "anchor": "mdpreview-suite-tool",
+    "steps": [
+      "textInput",
+      "utilityApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "tip-split-calculator",
+    "title": "tipcalcTitle",
+    "desc": "tipcalcDesc",
+    "anchor": "tipcalc-suite-tool",
+    "steps": [
+      "tipcalcTitle",
+      "calculate",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "fuel-cost-calculator",
+    "title": "fuelcalcTitle",
+    "desc": "fuelcalcDesc",
+    "anchor": "fuelcalc-suite-tool",
+    "steps": [
+      "fuelcalcTitle",
+      "calculate",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "add-days-to-date",
+    "title": "dateaddTitle",
+    "desc": "dateaddDesc",
+    "anchor": "dateadd-suite-tool",
+    "steps": [
+      "dateaddTitle",
+      "calculate",
+      "copyResult"
+    ]
   }
 ]

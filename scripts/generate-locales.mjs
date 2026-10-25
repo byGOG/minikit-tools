@@ -12,7 +12,7 @@ function localizeHtml(dictionary, locale) {
     const expression = new RegExp(`(<([a-z][\\w:-]*)\\b[^>]*\\bdata-i18n=["']${key}["'][^>]*>)([\\s\\S]*?)(<\\/\\2>)`, 'gi');
     html = html.replace(expression, (_all, opening, _tag, _old, closing) => opening + translatedHtml(value) + closing);
   }
-  for (const [data, attr] of [['aria', 'aria-label'], ['placeholder', 'placeholder'], ['alt', 'alt']]) {
+  for (const [data, attr] of [['aria', 'aria-label'], ['placeholder', 'placeholder'], ['alt', 'alt'], ['title', 'title']]) {
     const expression = new RegExp(`<[^>]+data-i18n-${data}="([^"]+)"[^>]*>`, 'gi');
     html = html.replace(expression, (tag, key) => {
       if (!dictionary[key]) throw new Error(`Missing attribute translation: ${key}`);
