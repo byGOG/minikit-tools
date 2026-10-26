@@ -1,3 +1,4 @@
+import { setupTextChecks } from './text-checks';
 import { setupAudioTools } from './audio-tools';
 import { setupMathNetworkTools } from './math-network-tools';
 import { setupPracticalTools } from './practical-tools';
@@ -345,6 +346,7 @@ setupExpansionTools(t);
 setupPracticalTools(t);
 setupAudioTools(t);
 setupMathNetworkTools(t);
+setupTextChecks(t);
 setupCreativeImages(t);
 setupCombineImages(t);
 setupImageDecoration(t);
