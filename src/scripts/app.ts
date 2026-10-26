@@ -1,24 +1,4 @@
-import { setupTextChecks } from './text-checks';
-import { setupAudioTools } from './audio-tools';
-import { setupMathNetworkTools } from './math-network-tools';
-import { setupPracticalTools } from './practical-tools';
-import { setupCreativeImages } from './creative-images';
-import { setupCombineImages } from './combine-images';
-import { setupExpansionTools } from './expansion-tools';
-import { setupUtilityPack } from './utility-pack';
-import { setupImageDecoration } from './image-decoration';
-import { setupDailyCalculators } from './daily-calculators';
-import { setupTextUtilities } from './text-utilities';
-import QRCode from 'qrcode';
-import { setupDataConverters } from './data-converters';
-import { setupImageEffects } from './image-effects';
-import { setupEncodingTools } from './encoding-tools';
-import { setupDateTools } from './date-tools';
-import { setupTextExtras } from './text-extras';
-import { setupDeveloperExtras } from './developer-extras';
-import { setupPdfTools } from './pdf-tools';
-import { setupImageExtras } from './image-extras';
-import { setupImageEditors } from './image-editors';
+import { validRasterHeader, validateImageSize } from './image-geometry';
 import { generatePassword, UNIT_GROUPS, convertUnit, parseNumeric, calculatePercentage, type UnitCategory, type PercentageMode, type PASSWORD_GROUPS } from './everyday-tools';
 import { formatJson, encodeBase64, decodeBase64, convertUrlComponent } from './developer-tools';
 import { changeCase, removeDuplicateLines, sortLines } from './text-tools';
@@ -34,6 +14,7 @@ const $ = <T extends HTMLElement>(selector: string) => document.querySelector<T>
 let lang: Lang = document.documentElement.lang || 'tr';
 const siteBase = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 let imageFile: File | null = null;
+let imageRevision = 0;
 let qrDataUrl = '';
 let toastTimer: number;
 const t = (key: string) => translations[lang]?.[key] ?? translations.en[key] ?? key;
@@ -44,7 +25,9 @@ function showToast(message: string) {
 }
 
 function applyLanguage(next: Lang) {
-  lang = next; localStorage.setItem('minikit-lang', lang); document.documentElement.lang = lang;
+  lang = next;
+  try { localStorage.setItem('minikit-lang', lang); } catch { /* Language navigation also works without browser storage. */ }
+  document.documentElement.lang = lang;
   document.documentElement.dir = catalog.find(({ code }) => code === lang)?.dir ?? 'ltr';
   const currentTranslations = translations[lang] ?? translations.en;
   document.querySelectorAll<HTMLElement>('[data-i18n]').forEach((el) => {
@@ -68,7 +51,8 @@ function applyLanguage(next: Lang) {
       ? localizedDescription
       : lang === 'tr' ? 'Görselini dönüştür, QR kod oluştur, metnini say ve renklerini çevir. Ücretsiz, hızlı ve gizli.' : 'Convert images, generate QR codes, count words and convert colors. Free, fast and private.';
   }
-  $('#word-count').textContent = String(countWords($<HTMLTextAreaElement>('#word-input').value)); updateReadTime(); updateColorFromHex();
+  if ($('#word-input')) { $('#word-count').textContent = String(countWords($<HTMLTextAreaElement>('#word-input').value)); updateReadTime(); }
+  if ($('#color-hex')) updateColorFromHex();
   updateMobileNav();
   updateTextTools();
 }
@@ -122,46 +106,62 @@ function updateColorFromHex() {
 }
 
 function setImage(file: File) {
+  imageRevision++; imageFile = null;
   const feedback = $('#image-feedback'); feedback.classList.remove('error');
-  if (!file.type.startsWith('image/')) { feedback.textContent = t('imageInvalid'); feedback.classList.add('error'); return; }
+  $('#image-controls').classList.add('hidden'); $('#selected-file').textContent = '';
+  if (!['image/png', 'image/jpeg', 'image/webp'].includes(file.type) || file.size === 0) { feedback.textContent = t('imageInvalid'); feedback.classList.add('error'); return; }
   if (file.size > 20 * 1024 * 1024) { feedback.textContent = t('imageTooLarge'); feedback.classList.add('error'); return; }
   imageFile = file; $('#selected-file').textContent = `${file.name} · ${(file.size / 1024 / 1024).toFixed(2)} MB`;
   $('#image-controls').classList.remove('hidden'); feedback.textContent = '';
+  $<HTMLButtonElement>('#convert-image').disabled = false;
+}
+if ($('#image-file')) {
+  const fileInput = $<HTMLInputElement>('#image-file');
+  fileInput.accept = 'image/png,image/jpeg,image/webp';
+  fileInput.addEventListener('change', () => { const file = fileInput.files?.[0]; if (file) setImage(file); else { imageRevision++; imageFile = null; $('#image-controls').classList.add('hidden'); } });
+  const uploadZone = $('.upload-zone');
+  uploadZone.addEventListener('dragover', (event) => { event.preventDefault(); uploadZone.classList.add('dragging'); });
+  uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('dragging'));
+  uploadZone.addEventListener('drop', (event) => { event.preventDefault(); uploadZone.classList.remove('dragging'); const file = (event as DragEvent).dataTransfer?.files[0]; if (file) setImage(file); });
+  $('#image-quality').addEventListener('input', (event) => { $('#quality-value').textContent = `${(event.target as HTMLInputElement).value}%`; });
+  $('#image-controls').addEventListener('input', () => { imageRevision++; $<HTMLButtonElement>('#convert-image').disabled = false; });
+  $('#convert-image').addEventListener('click', async () => {
+    const source = imageFile; if (!source) return;
+    const ticket = ++imageRevision;
+    const feedback = $('#image-feedback'), button = $<HTMLButtonElement>('#convert-image');
+    const mime = $<HTMLSelectElement>('#image-format').value;
+    const quality = Number($<HTMLInputElement>('#image-quality').value) / 100;
+    feedback.textContent = ''; feedback.classList.remove('error'); button.disabled = true;
+    let sourceUrl = '';
+    try {
+      if (!validRasterHeader(new Uint8Array(await source.slice(0, 12).arrayBuffer()), source.type)) throw Error('Image header');
+      if (ticket !== imageRevision) return;
+      sourceUrl = URL.createObjectURL(source);
+      const image = new Image(); image.src = sourceUrl; await image.decode();
+      validateImageSize(image.naturalWidth, image.naturalHeight);
+      if (ticket !== imageRevision) return;
+      const canvas = document.createElement('canvas'); canvas.width = image.naturalWidth; canvas.height = image.naturalHeight;
+      const context = canvas.getContext('2d'); if (!context) throw Error('Canvas unavailable');
+      context.drawImage(image, 0, 0);
+      const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, mime, quality));
+      if (ticket !== imageRevision) return;
+      if (!blob || blob.type !== mime) throw Error('Conversion unsupported');
+      const url = URL.createObjectURL(blob), anchor = document.createElement('a');
+      anchor.href = url; anchor.download = `${source.name.replace(/\.[^.]+$/, '')}.${mime.split('/')[1]}`; anchor.click();
+      window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+      feedback.textContent = `${t('imageConverted')} ${(blob.size / 1024 / 1024).toFixed(2)} MB`;
+    } catch { if (ticket === imageRevision) { feedback.textContent = t('imageFailed') + ' ' + t('editorLimits'); feedback.classList.add('error'); } }
+    finally { if (sourceUrl) URL.revokeObjectURL(sourceUrl); if (ticket === imageRevision) button.disabled = false; }
+  });
 }
 
-const fileInput = $('#image-file') as HTMLInputElement;
-fileInput.addEventListener('change', () => { const file = fileInput.files?.[0]; if (file) setImage(file); });
-const uploadZone = $('.upload-zone');
-uploadZone.addEventListener('dragover', (event) => { event.preventDefault(); uploadZone.classList.add('dragging'); });
-uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('dragging'));
-uploadZone.addEventListener('drop', (event) => { event.preventDefault(); uploadZone.classList.remove('dragging'); const file = (event as DragEvent).dataTransfer?.files[0]; if (file) setImage(file); });
-$('#image-quality').addEventListener('input', (event) => { $('#quality-value').textContent = `${(event.target as HTMLInputElement).value}%`; });
-$('#convert-image').addEventListener('click', async () => {
-  if (!imageFile) return;
-  const feedback = $('#image-feedback'); feedback.classList.remove('error');
-  try {
-    const sourceUrl = URL.createObjectURL(imageFile);
-    const image = new Image(); image.src = sourceUrl;
-    await new Promise<void>((resolve, reject) => { image.onload = () => resolve(); image.onerror = () => reject(new Error('Image decode failed')); });
-    const canvas = document.createElement('canvas'); canvas.width = image.naturalWidth; canvas.height = image.naturalHeight;
-    const context = canvas.getContext('2d'); if (!context) throw new Error('Canvas unavailable');
-    context.drawImage(image, 0, 0); URL.revokeObjectURL(sourceUrl);
-    const mime = ($('#image-format') as HTMLSelectElement).value;
-    const quality = Number(($('#image-quality') as HTMLInputElement).value) / 100;
-    const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, mime, quality));
-    if (!blob) throw new Error('Conversion unsupported');
-    const url = URL.createObjectURL(blob); const ext = mime.split('/')[1]; const anchor = document.createElement('a');
-    anchor.href = url; anchor.download = `${imageFile.name.replace(/\.[^.]+$/, '')}.${ext}`; anchor.click();
-    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
-    feedback.textContent = `${t('imageConverted')} ${(blob.size / 1024 / 1024).toFixed(2)} MB`;
-  } catch { feedback.textContent = t('imageFailed'); feedback.classList.add('error'); }
-});
-
+if ($('#qr-input')) {
 $('#generate-qr').addEventListener('click', async () => {
   const value = ($('#qr-input') as HTMLInputElement).value.trim(); const feedback = $('#qr-feedback');
   feedback.classList.remove('error');
   if (!value) { feedback.textContent = t('qrMissing'); feedback.classList.add('error'); return; }
   try {
+    const { default: QRCode } = await import('qrcode');
     qrDataUrl = await QRCode.toDataURL(value, { width: 400, margin: 2, errorCorrectionLevel: 'M', color: { dark: '#15251e', light: '#ffffff' } });
     const image = $('#qr-image') as HTMLImageElement; image.alt = t('qrTitle'); image.src = qrDataUrl; image.classList.remove('hidden'); $('.qr-empty').classList.add('hidden');
     $('#download-qr').classList.remove('hidden'); $('#generate-qr').classList.add('hidden'); feedback.textContent = t('qrReady');
@@ -172,8 +172,12 @@ $('#qr-input').addEventListener('input', () => {
   $('#qr-feedback').textContent = ''; if (qrDataUrl) { qrDataUrl = ''; $('#qr-image').classList.add('hidden'); $('.qr-empty').classList.remove('hidden'); $('#download-qr').classList.add('hidden'); $('#generate-qr').classList.remove('hidden'); }
 });
 
+}
+if ($('#word-input')) {
 $('#word-input').addEventListener('input', (event) => { const value = (event.target as HTMLTextAreaElement).value; $('#word-count').textContent = String(countWords(value)); $('#char-count').textContent = String(countCharacters(value)); updateReadTime(); });
 $('#clear-text').addEventListener('click', () => { ($('#word-input') as HTMLTextAreaElement).value = ''; $('#word-count').textContent = '0'; $('#char-count').textContent = '0'; updateReadTime(); showToast(t('cleared')); });
+}
+if ($('#color-hex')) {
 $('#color-picker').addEventListener('input', (event) => { $<HTMLInputElement>('#color-hex').value = (event.target as HTMLInputElement).value.toUpperCase(); updateColorFromHex(); });
 $('#color-hex').addEventListener('input', updateColorFromHex);
 document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((button) => button.addEventListener('click', async () => {
@@ -181,6 +185,7 @@ document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((button) => 
   try { await navigator.clipboard.writeText(value); showToast(t('copied')); } catch { showToast(t('copyFail')); }
 }));
 
+}
 $('#language-select').addEventListener('change', (event) => {
   const next = (event.target as HTMLSelectElement).value;
   const toolMatch = window.location.pathname.match(/\/tools\/([^/]+)\/?$/);
@@ -193,7 +198,8 @@ function setTextResult(id: string, value: string) {
   $<HTMLButtonElement>(`[data-copy-output="${id}"]`).disabled = value.length === 0;
 }
 function updateTextTools() {
-  setTextResult('case-output', changeCase($<HTMLTextAreaElement>('#case-input').value, caseMode, lang));
+  if ($('#case-input')) setTextResult('case-output', changeCase($<HTMLTextAreaElement>('#case-input').value, caseMode, lang));
+  if ($('#dedupe-input')) {
   const deduped = removeDuplicateLines($<HTMLTextAreaElement>('#dedupe-input').value, {
     ignoreCase: $<HTMLInputElement>('#dedupe-ignore-case').checked,
     trimSpaces: $<HTMLInputElement>('#dedupe-trim').checked,
@@ -201,12 +207,13 @@ function updateTextTools() {
   });
   setTextResult('dedupe-output', deduped.text);
   $('#dedupe-removed').textContent = String(deduped.removed);
-  setTextResult('sort-output', sortLines($<HTMLTextAreaElement>('#sort-input').value, lang, $<HTMLSelectElement>('#sort-order').value === 'desc'));
+  }
+  if ($('#sort-input')) setTextResult('sort-output', sortLines($<HTMLTextAreaElement>('#sort-input').value, lang, $<HTMLSelectElement>('#sort-order').value === 'desc'));
 }
-for (const id of ['case-input', 'dedupe-input', 'sort-input']) $(`#${id}`).addEventListener('input', updateTextTools);
-for (const id of ['dedupe-ignore-case', 'dedupe-trim', 'sort-order']) $(`#${id}`).addEventListener('change', updateTextTools);
+for (const id of ['case-input', 'dedupe-input', 'sort-input']) $(`#${id}`)?.addEventListener('input', updateTextTools);
+for (const id of ['dedupe-ignore-case', 'dedupe-trim', 'sort-order']) $(`#${id}`)?.addEventListener('change', updateTextTools);
 for (const mode of ['upper', 'lower'] as const) {
-  $(`#case-${mode}`).addEventListener('click', () => {
+  $(`#case-${mode}`)?.addEventListener('click', () => {
     caseMode = mode;
     $('#case-upper').setAttribute('aria-pressed', String(mode === 'upper'));
     $('#case-lower').setAttribute('aria-pressed', String(mode === 'lower'));
@@ -219,7 +226,7 @@ document.querySelectorAll<HTMLButtonElement>('[data-copy-output]').forEach((butt
   catch { showToast(t('copyFail')); }
 }));
 for (const id of ['json', 'base64', 'url']) {
-  $(`#${id}-input`).addEventListener('input', () => {
+  $(`#${id}-input`)?.addEventListener('input', () => {
     setTextResult(`${id}-output`, '');
     $(`#${id}-feedback`).textContent = '';
     $(`#${id}-feedback`).classList.remove('error');
@@ -262,9 +269,9 @@ function showEverydayError(id: string, key: string) {
 }
 const formatNumericResult = (value: number) => new Intl.NumberFormat(lang, { maximumSignificantDigits: 12, useGrouping: false }).format(value);
 for (const id of ['password-length','password-upper','password-lower','password-digits','password-symbols']) {
-  $(`#${id}`).addEventListener('input', () => clearEverydayResult('password'));
+  $(`#${id}`)?.addEventListener('input', () => clearEverydayResult('password'));
 }
-$('#generate-password').addEventListener('click', () => {
+$('#generate-password')?.addEventListener('click', () => {
   clearEverydayResult('password');
   try {
     const groups = (['upper','lower','digits','symbols'] as (keyof typeof PASSWORD_GROUPS)[]).filter(group => $<HTMLInputElement>(`#password-${group}`).checked);
@@ -283,10 +290,10 @@ function populateUnits() {
   }
   clearEverydayResult('unit');
 }
-populateUnits();
-$('#unit-category').addEventListener('change', populateUnits);
-for (const id of ['unit-from','unit-to','unit-value']) $(`#${id}`).addEventListener('input', () => clearEverydayResult('unit'));
-$('#convert-unit').addEventListener('click', () => {
+if ($('#unit-category')) populateUnits();
+$('#unit-category')?.addEventListener('change', populateUnits);
+for (const id of ['unit-from','unit-to','unit-value']) $(`#${id}`)?.addEventListener('input', () => clearEverydayResult('unit'));
+$('#convert-unit')?.addEventListener('click', () => {
   clearEverydayResult('unit');
   try {
     const to = $<HTMLSelectElement>('#unit-to').value;
@@ -295,8 +302,8 @@ $('#convert-unit').addEventListener('click', () => {
     $('#unit-feedback').textContent = t('ready');
   } catch { showEverydayError('unit', 'unitInvalid'); }
 });
-for (const id of ['percent-mode','percent-a','percent-b']) $(`#${id}`).addEventListener('input', () => clearEverydayResult('percent'));
-$('#calculate-percent').addEventListener('click', () => {
+for (const id of ['percent-mode','percent-a','percent-b']) $(`#${id}`)?.addEventListener('input', () => clearEverydayResult('percent'));
+$('#calculate-percent')?.addEventListener('click', () => {
   clearEverydayResult('percent');
   try {
     const mode = $<HTMLSelectElement>('#percent-mode').value as PercentageMode;
@@ -330,24 +337,66 @@ async function loadLocale() {
   updateMobileNav();
   applyLanguage(lang);
 }
-setupImageEditors(t);
-setupImageExtras(t);
-setupPdfTools(t);
-setupDeveloperExtras(t);
-setupTextExtras(t);
-setupDateTools(t);
-setupEncodingTools(t);
-setupImageEffects(t);
-setupDataConverters(t);
-setupTextUtilities(t);
-setupDailyCalculators(t);
-setupUtilityPack(t);
-setupExpansionTools(t);
-setupPracticalTools(t);
-setupAudioTools(t);
-setupMathNetworkTools(t);
-setupTextChecks(t);
-setupCreativeImages(t);
-setupCombineImages(t);
-setupImageDecoration(t);
-void loadLocale();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+async function initialize() {
+  await loadLocale();
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#anagram-check-tool,#palindrome-check-tool,#emailextract-check-tool')) (await import('./text-checks')).setupTextChecks(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#audiotrim-lab-tool,#audiojoin-lab-tool,#audionormal-lab-tool')) (await import('./audio-tools')).setupAudioTools(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#primecheck-lab-tool,#factorize-lab-tool,#gcdlcm-lab-tool,#ipv4subnet-lab-tool,#ipv6format-lab-tool,#cidrcheck-lab-tool')) (await import('./math-network-tools')).setupMathNetworkTools(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#regex-suite-tool,#htmlmd-suite-tool,#mdpreview-suite-tool,#tipcalc-suite-tool,#fuelcalc-suite-tool,#dateadd-suite-tool')) (await import('./practical-tools')).setupPracticalTools(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#blur-creative-tool,#invert-creative-tool')) (await import('./creative-images')).setupCreativeImages(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#combine-creative-tool')) (await import('./combine-images')).setupCombineImages(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#pdfrotate-new-tool,#pdfreorder-new-tool,#pdfdelete-new-tool,#jsonyaml-new-tool,#yamljson-new-tool,#jsondiff-new-tool,#stopwatch-new-tool,#pomodoro-new-tool,#chance-new-tool')) (await import('./expansion-tools')).setupExpansionTools(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#reading-pack-tool,#frequency-pack-tool,#picker-pack-tool,#xmlformat-pack-tool,#urlparse-pack-tool,#contrast-pack-tool')) (await import('./utility-pack')).setupUtilityPack(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#flip-tool,#border-tool,#rounded-tool')) (await import('./image-decoration')).setupImageDecoration(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#discount-daily-tool,#proportion-daily-tool,#travel-daily-tool')) (await import('./daily-calculators')).setupDailyCalculators(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#slug-utility-tool,#reverse-utility-tool,#whitespace-utility-tool')) (await import('./text-utilities')).setupTextUtilities(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#css-min-tool,#json-csv-tool,#csv-json-tool')) (await import('./data-converters')).setupDataConverters(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#tone-tool,#grayscale-tool,#avatar-tool')) (await import('./image-effects')).setupImageEffects(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#html-tool,#jwt-tool,#number-base-tool')) (await import('./encoding-tools')).setupEncodingTools(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#age-tool,#date-diff-tool,#countdown-tool')) (await import('./date-tools')).setupDateTools(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#replace-tool,#diff-tool,#line-numbering-tool')) (await import('./text-extras')).setupTextExtras(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#uuid-tool,#sha-tool,#unix-tool')) (await import('./developer-extras')).setupDeveloperExtras(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#images-pdf-tool,#merge-pdf-tool,#split-pdf-tool')) (await import('./pdf-tools')).setupPdfTools(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#watermark-tool,#palette-tool,#image64-tool')) (await import('./image-extras')).setupImageExtras(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#resize-tool,#crop-tool,#rotate-tool')) (await import('./image-editors')).setupImageEditors(t);
+  document.documentElement.dataset.toolsReady = "true";
+}
+void initialize();
+
+const search = document.querySelector<HTMLInputElement>('#tool-search');
+const category = document.querySelector<HTMLSelectElement>('#tool-category');
+if (search && category) {
+  search.form?.addEventListener('submit', event => event.preventDefault());
+  const cards = [...document.querySelectorAll<HTMLElement>('.directory-card')];
+  const normalize = (value: string) => value.normalize('NFKC').toLocaleLowerCase(lang).normalize('NFD').replace(/\p{M}/gu, '');
+  const filter = () => {
+    const terms = normalize(search.value.trim()).split(/\s+/u).filter(Boolean);
+    let visible = 0;
+    for (const card of cards) {
+      const matches = (category.value === 'all' || card.dataset.category === category.value) && terms.every(term => normalize(card.textContent ?? '').includes(term));
+      card.hidden = !matches; if (matches) visible++;
+    }
+    $('#directory-count').textContent = `${visible} / ${cards.length}`;
+  };
+  search.addEventListener('input', filter); category.addEventListener('change', filter);
+}

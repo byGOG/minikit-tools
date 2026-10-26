@@ -2,11 +2,11 @@
   "image-converter": {
     "tr": {
       "heading": "WebP, JPEG ve PNG arasında dönüştürme",
-      "text": "WebP, JPEG veya PNG çıktısı seç. Kalite kaydırıcısı kayıplı biçimlerde dosya boyutunu etkiler; PNG kalite düşürerek sıkıştırılmaz. Saydam görselleri JPEG olarak kaydederken saydamlık korunmaz. Giriş dosyası en fazla 20 MB olmalıdır."
+      "text": "WebP, JPEG veya PNG çıktısı seç. Kalite kaydırıcısı kayıplı biçimlerde dosya boyutunu etkiler; PNG kalite düşürerek sıkıştırılmaz. Saydam görselleri JPEG olarak kaydederken saydamlık korunmaz. Giriş dosyası en fazla 20 MB olmalıdır. JPEG, PNG ve WebP girişleri desteklenir; kenar uzunluğu en fazla 8192 piksel, toplam alan 16 milyon pikseldir. İşlem sırasında dosya veya ayar değişirse önceki sonuç iptal edilir."
     },
     "en": {
       "heading": "Convert between WebP, JPEG and PNG",
-      "text": "Choose WebP, JPEG or PNG output. Quality affects lossy formats; PNG does not use lossy quality compression. JPEG cannot preserve transparency. The input file must be no larger than 20 MB."
+      "text": "Choose WebP, JPEG or PNG output. Quality affects lossy formats; PNG does not use lossy quality compression. JPEG cannot preserve transparency. The input file must be no larger than 20 MB. JPEG, PNG and WebP inputs are supported, with at most 8192 pixels per side and 16 million pixels total. Changing the file or settings cancels the previous result."
     }
   },
   "qr-code-generator": {

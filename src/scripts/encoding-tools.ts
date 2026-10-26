@@ -1,5 +1,4 @@
 import{decodeBase64,formatJson}from'./developer-tools.ts';
-export{convertHtmlEntities}from'./html-entities.ts';
 export function inspectJwt(value:string){
  if(value.length>100000)throw Error('Token limit');const parts=value.trim().split('.');if(parts.length!==3||!parts[0]||!parts[1]||parts.some((part,index)=>!(/^[A-Za-z0-9_-]*$/).test(part)||(index<2&&part.length%4===1))||parts[2].length%4===1)throw Error('JWT compact structure');
  const texts=parts.slice(0,2).map(part=>decodeBase64(part.replaceAll('-','+').replaceAll('_','/')));

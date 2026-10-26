@@ -35,7 +35,9 @@ for (const locale of catalog) {
       const html = await readFile(join('dist', path, 'index.html'), 'utf8');
       const url = new URL(path, rootUrl).href;
       assert.ok(html.includes('id="tool-total">' + String(tools.length).padStart(2, '0') + '</b>'));
-      for (const tool of toolCatalog) assert.ok(html.includes('id="'+tool.anchor+'"'));
+      for (const tool of toolCatalog) assert.equal(html.includes('id="'+tool.anchor+'"'), !slug || tool.slug===slug, path+': only selected form');
+      assert.equal([...html.matchAll(/<article[^>]*class="tool-card/g)].length,slug?1:0,path+': form count');
+      if(!slug){assert.ok(html.includes('id="tool-search"'));assert.ok(html.includes('id="tool-category"'));}
       expectedUrls.add(url);
       for(const page of ['privacy/', 'contact/']) assert.ok(html.includes(`href="${siteBase}${page}"`), `${path}: policy/contact link`);
       assert.equal(html.includes('googlesyndication.com'), advertising.enabled, `${path}: advertising activation`);
@@ -58,11 +60,11 @@ for (const locale of catalog) {
       assert.equal([...selector.matchAll(/ selected/g)].length, 1);
       assert.ok(selector.includes(`value="${locale.code}" selected`));
       for (const key of ['heroTitle', 'imageTitle', 'qrTitle', 'wordTitle', 'colorTitle', 'caseTitle', 'dedupeTitle', 'sortTitle', 'jsonTitle', 'base64Title', 'urlTitle', 'passwordTitle', 'unitTitle', 'percentTitle', 'resizeTitle', 'cropTitle', 'rotateTitle', 'watermarkTitle', 'paletteTitle', 'image64Title', 'imagesPdfTitle', 'mergePdfTitle', 'splitPdfTitle', 'uuidTitle', 'shaTitle', 'unixTitle', 'replaceTitle', 'diffTitle', 'lineNumberTitle', 'ageTitle', 'dateDiffTitle', 'countdownTitle', 'htmlTitle', 'jwtTitle', 'baseTitle', 'toneTitle', 'grayscaleTitle', 'avatarTitle', 'anagramTitle', 'palindromeTitle', 'emailextractTitle', 'audiotrimTitle', 'audiojoinTitle', 'audionormalTitle', 'primecheckTitle', 'factorizeTitle', 'gcdlcmTitle', 'ipv4subnetTitle', 'ipv6formatTitle', 'cidrcheckTitle', 'combineTitle', 'blurTitle', 'invertTitle', 'regexTitle', 'htmlmdTitle', 'mdpreviewTitle', 'tipcalcTitle', 'fuelcalcTitle', 'dateaddTitle', 'pdfrotateTitle', 'pdfreorderTitle', 'pdfdeleteTitle', 'jsonyamlTitle', 'yamljsonTitle', 'jsondiffTitle', 'stopwatchTitle', 'pomodoroTitle', 'chanceTitle', 'readingTitle', 'frequencyTitle', 'pickerTitle', 'xmlformatTitle', 'urlparseTitle', 'contrastTitle', 'flipTitle', 'borderTitle', 'roundedTitle', 'discountTitle', 'proportionTitle', 'travelTitle', 'slugTitle', 'reverseTitle', 'whitespaceTitle', 'cssMinTitle', 'jsonCsvTitle', 'csvJsonTitle', 'privacyLead', 'skipTools']) {
-        assert.ok(html.includes(`data-i18n="${key}">${translatedHtml(d[key])}`), `${path}: translated ${key}`);
+        if ((!slug && key==='heroTitle') || (slug && (key===title || key==='privacyLead' || key==='skipTools'))) assert.ok(html.includes(`data-i18n="${key}">${translatedHtml(d[key]).replaceAll('<br/>','<br>').replaceAll('<br />','<br>').replaceAll('&quot;', String.fromCharCode(34)).replaceAll('&#39;', String.fromCharCode(39))}`), `${path}: translated ${key}`);
       }
       assert.ok(html.includes(`aria-label="${escapeHtml(d.chooseLanguage)}"`), `${path}: accessible selector label`);
-      assert.ok(html.includes(`placeholder="${escapeHtml(d.pasteText)}"`), `${path}: translated text placeholder`);
-      for (const [tool] of tools) assert.ok(html.includes(`href="${siteBase}${prefix}tools/${tool}/"`), `${path}: tool link ${tool}`);
+      if(slug==='word-counter') assert.ok(html.includes(`placeholder="${escapeHtml(d.pasteText)}"`), `${path}: translated text placeholder`);
+      if(!slug) for (const [tool] of tools) assert.ok(html.includes(`href="${siteBase}${prefix}tools/${tool}/"`), `${path}: tool link ${tool}`);
       assert.equal([...html.matchAll(/<h1[\s>]/g)].length,1,`${path}: one primary heading`);
       assert.ok(html.includes(`property="og:url" content="${url}"`),`${path}: share URL`);
       if (slug) {
@@ -82,7 +84,11 @@ for (const locale of catalog) {
 }
 
 test('sitemap lists every generated page and all published dictionaries exist', async () => {
-  const xml = await readFile('dist/sitemap.xml', 'utf8');
+  const index = await readFile('dist/sitemap.xml', 'utf8');
+  assert.ok(index.includes('<sitemapindex'));
+  const sitemapPaths=[...index.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>new URL(m[1]).pathname.split('/').at(-1));
+  const xml=(await Promise.all(sitemapPaths.map(path=>readFile(join('dist',path),'utf8')))).join('');
+  assert.ok(!xml.includes('xhtml:link'),'hreflang is provided in HTML');
   const locations = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
   assert.equal(locations.length, pageCount);
   assert.equal(new Set(locations).size, pageCount);

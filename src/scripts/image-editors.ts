@@ -5,6 +5,7 @@ export function setupImageEditors(t: Translator) {
   const get = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
   const number = (id: string) => get<HTMLInputElement>(id).valueAsNumber;
   for (const id of ['resize','crop','rotate'] as const) {
+    if (!document.getElementById(id+'-file')) continue;
     let source: HTMLCanvasElement | null = null;
     let revision = 0;
     let outputUrl = '';

@@ -160,3 +160,30 @@ Additional tools: combine1–10rasters (20MiB each/50MiB total/16M source and ou
 Audio trim/join/peak normalization use browser codecs and OfflineAudioContext resampling to44.1kHz, WAVPCM16 export without metadata; max20MiB/file,40MiBtotal,5joinfiles,120decodedseconds total,mono/stereo. Metadata checked before decode; source arrays immutable, mono duplicated forstereojoin, globalpeak target-12..0dBFS/silenceunchanged. Not perceptual loudness normalization. Prime/factor exactdecimal0or2..1e12; GCD/LCM signed100digitBigInt,zero conventions explicit. IPv4CIDR/IPv6compress-expand/IPinCIDR are strict localBigInt calculations, /31point-to-point and /32singleaddress, canonicalfirst-longestzero run>=2, mappedIPv6mixednotation, nozones/brackets/ports ornetworkrequests. References: https://www.rfc-editor.org/rfc/rfc3021.html , https://www.rfc-editor.org/rfc/rfc4291.html , https://www.rfc-editor.org/rfc/rfc5952.html .
 
 Anagram/palindrome checks use NFC, locale lowercase and Intl.Segmenter grapheme groups, optional letter/number/mark filtering, no accent stripping and no empty filtered input. Email extraction scans bounded @ windows for practical ASCII/punycode forms (not full RFC validation/deliverability), first-seen order, domain-lowercase/local-case preserved and optional duplicate removal. Inputs100k,5000candidates,1000results; no partial result on overflow and no network requests.
+
+## Quality and performance release (October 2026)
+
+- Node 24.22.1 (`.node-version`), Astro 7, Tailwind 3 through PostCSS. Cloudflare Pages reads `.node-version`; if the dashboard has a `NODE_VERSION` override, keep it consistent.
+- Build with `MINIKIT_DEPLOY_TARGET=cloudflare pnpm run build`. The generation pipeline keeps full forms only as intermediate templates. Published homepages contain a searchable, categorized directory; tool pages contain exactly one form and up to four related links.
+- Tool groups load only on their own pages. When adding a tool, update `src/data/tools.json` (including category), the setup registry in `src/scripts/app.ts`, translations, guide and browser coverage.
+- HTML provides the 50-language hreflang links. `sitemap.xml` is an index of canonical-only child sitemaps, with at most 1,000 URLs per child. IndexNow follows the index before submitting URLs.
+- `public/_headers` adds security headers and immutable hashed-asset caching on Cloudflare Pages. CSP is report-only so third-party advertising, workers and browser-generated previews can be checked before enforcement. Review console CSP reports when enabling advertising; the report-only policy does not block content.
+- Domain redirects must be configured in Cloudflare Rules (host-based redirects are not supported by Pages `_redirects`). Preserve paths and query strings when redirecting www and the production pages.dev hostname to minikit.top; keep preview deployment hosts available for testing.
+- Cloudflare Web Analytics already tracks page views by path. Separate tool URLs now make tool-page popularity meaningful. A page view is not proof of a completed tool operation; no new input, filename or tool-result telemetry has been added.
+
+Verification:
+
+```sh
+pnpm install --frozen-lockfile
+pnpm run check
+pnpm run test:tools
+MINIKIT_DEPLOY_TARGET=cloudflare pnpm run build
+MINIKIT_DEPLOY_TARGET=cloudflare pnpm run test:locales
+pnpm exec playwright install chromium webkit
+pnpm run test:browser
+pnpm run audit:security
+```
+
+Browser tests run against a local-only static server and cover all isolated tool forms, search/category filters, mobile layout, RTL, keyboard order, language navigation, image downloads, cancellation, invalid-image cleanup, QR, JSON, HEX, PDF creation and dates. Set `PLAYWRIGHT_CHROMIUM_CHANNEL=chrome` to use installed Chrome locally, or `PLAYWRIGHT_BASE_URL` to verify an existing deployment. CI runs Chromium and WebKit before publishing legacy GitHub redirects. Weekly Dependabot checks cover package updates and monthly checks cover Actions.
+
+Security overrides for esbuild and postcss-selector-parser select patched releases; review and remove overrides when upstream ranges include the fixes. `pnpm audit --prod` is a dependency advisory check, not proof that every potential vulnerability has been eliminated.
