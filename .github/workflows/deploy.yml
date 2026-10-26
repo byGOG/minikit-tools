@@ -19,9 +19,14 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    container:
+      image: mcr.microsoft.com/playwright:v1.64.1-noble@sha256:47b510dd9230bf0b9bfc9b20102241e577ea7a99334ab4c3ca19f19770e9b8ea
+      options: --shm-size=1gb
     env:
       MINIKIT_DEPLOY_TARGET: cloudflare
-      ASTRO_TELEMETRY_DISABLED: 1
+      ASTRO_TELEMETRY_DISABLED: "1"
+      PLAYWRIGHT_BROWSERS_PATH: /ms-playwright
     steps:
       - name: Check out source
         uses: actions/checkout@v4
@@ -44,8 +49,6 @@ jobs:
           PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
       - name: Verify all languages and tool pages
         run: pnpm run test:locales
-      - name: Install browser test engines
-        run: pnpm exec playwright install --with-deps chromium webkit
       - name: Test real browser workflows
         run: pnpm run test:browser
       - name: Audit production dependencies

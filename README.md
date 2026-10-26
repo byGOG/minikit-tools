@@ -187,3 +187,5 @@ pnpm run audit:security
 Browser tests run against a local-only static server and cover all isolated tool forms, search/category filters, mobile layout, RTL, keyboard order, language navigation, image downloads, cancellation, invalid-image cleanup, QR, JSON, HEX, PDF creation and dates. Set `PLAYWRIGHT_CHROMIUM_CHANNEL=chrome` to use installed Chrome locally, or `PLAYWRIGHT_BASE_URL` to verify an existing deployment. CI runs Chromium and WebKit before publishing legacy GitHub redirects. Weekly Dependabot checks cover package updates and monthly checks cover Actions.
 
 Security overrides for esbuild and postcss-selector-parser select patched releases; review and remove overrides when upstream ranges include the fixes. `pnpm audit --prod` is a dependency advisory check, not proof that every potential vulnerability has been eliminated.
+
+CI uses the official Microsoft Playwright image pinned by digest, with Chromium/WebKit and OS libraries already installed. This avoids installing 181 Ubuntu packages on every run. Keep its image version aligned with `@playwright/test` when upgrading. The browser suite has a 10-minute limit and the build job a 20-minute limit.
