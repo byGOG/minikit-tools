@@ -16,7 +16,7 @@
   "dependencies": {
     "astro": "^7.4.2",
     "csso": "5.0.5",
-    "entities": "6.0.1",
+    "entities": "8.1.0",
     "lucide-astro": "^0.468.0",
     "marked": "^18.1.1",
     "pdf-lib": "1.17.1",
