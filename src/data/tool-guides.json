@@ -818,5 +818,35 @@
       "heading": "IP, CIDR aralığında mı?",
       "text": "IPv4 veya IPv6 adresinin bir aralığa ait olup olmadığını bul. IP ve CIDR aynı adres ailesinde olmalı. Aralığın konak bitleri ağ adresine normalleştirilir. IPv4 için /0–32, IPv6 için /0–128 desteklenir; köşeli ayraç, bölge ve port reddedilir. Bağlantı testi değil, cihazda sayısal kontroldür."
     }
+  },
+  "anagram-checker": {
+    "en": {
+      "heading": "Anagram checker",
+      "text": "Check whether two texts contain the same character groups. Up to 100,000 characters per text. Uses Unicode NFC and visible character groups. Optional lowercase conversion follows the page language; accents are retained. Filtering keeps letters, numbers and combining marks. Identical texts also match. Empty filtered text is rejected."
+    },
+    "tr": {
+      "heading": "Anagram kontrolü",
+      "text": "İki metnin aynı karakter gruplarından oluşup oluşmadığını bul. Metin başına en fazla 100.000 karakter. Unicode NFC ve görünür karakter grupları kullanılır. İsteğe bağlı küçük harf dönüşümü sayfa diline göredir; aksanlar korunur. Filtre harf, sayı ve birleştirici işaretleri tutar. Aynı metinler de eşleşir. Filtre sonrası boş metin reddedilir."
+    }
+  },
+  "palindrome-checker": {
+    "en": {
+      "heading": "Palindrome checker",
+      "text": "Check whether text reads the same forward and backward. Up to 100,000 characters. Compares visible character groups with Unicode NFC, keeping accents. Optional lowercase conversion follows the page language; filtering removes everything except letters, numbers and combining marks. Empty filtered text is rejected."
+    },
+    "tr": {
+      "heading": "Palindrom kontrolü",
+      "text": "Metnin baştan ve sondan aynı okunup okunmadığını bul. En fazla 100.000 karakter. Görünür karakter grupları Unicode NFC ile karşılaştırılır; aksanlar korunur. Küçük harf dönüşümü sayfa diline göredir; filtre harf, sayı ve birleştirici işaretler dışındakileri kaldırır. Filtre sonrası boş metin reddedilir."
+    }
+  },
+  "email-extractor": {
+    "en": {
+      "heading": "Email address extractor",
+      "text": "Find email-like addresses in a text and copy the list. Up to 100,000 characters, 5,000 @ candidates and 1,000 results. Practical ASCII/punycode extraction, not full RFC validation; quoted and internationalized local parts are unsupported. Domains are lowercased; local-part case is retained. Keeps first-seen order. No delivery check or network requests. Limit overflow returns no partial list."
+    },
+    "tr": {
+      "heading": "E-posta adreslerini çıkar",
+      "text": "Metindeki e-posta benzeri adresleri bul ve listeyi kopyala. En fazla 100.000 karakter, 5.000 @ adayı ve 1.000 sonuç. Pratik ASCII/punycode çıkarımıdır; tam RFC doğrulaması değildir. Tırnaklı ve uluslararası yerel bölümler desteklenmez. Alan adı küçük harfe çevrilir; yerel bölümün harf durumu korunur. İlk görülme sırası korunur. Teslimat kontrolü veya ağ isteği yapılmaz. Sınır aşımında kısmi liste verilmez."
+    }
   }
 }

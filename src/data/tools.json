@@ -900,5 +900,38 @@
       "calculate",
       "copyResult"
     ]
+  },
+  {
+    "slug": "anagram-checker",
+    "title": "anagramTitle",
+    "desc": "anagramDesc",
+    "anchor": "anagram-check-tool",
+    "steps": [
+      "textInput",
+      "checkTextApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "palindrome-checker",
+    "title": "palindromeTitle",
+    "desc": "palindromeDesc",
+    "anchor": "palindrome-check-tool",
+    "steps": [
+      "textInput",
+      "checkTextApply",
+      "copyResult"
+    ]
+  },
+  {
+    "slug": "email-extractor",
+    "title": "emailextractTitle",
+    "desc": "emailextractDesc",
+    "anchor": "emailextract-check-tool",
+    "steps": [
+      "textInput",
+      "checkTextApply",
+      "copyResult"
+    ]
   }
 ]
