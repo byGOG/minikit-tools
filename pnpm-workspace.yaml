@@ -2,3 +2,6 @@ enableGlobalVirtualStore: false
 allowBuilds:
   esbuild: true
   sharp: true
+overrides:
+  esbuild: ^0.28.1
+  postcss-selector-parser: ^7.1.6

@@ -1,4 +1,5 @@
-import test from'node:test';import assert from'node:assert/strict';import{convertHtmlEntities,inspectJwt,convertNumberBase}from'../src/scripts/encoding-tools.ts';
+import {convertHtmlEntities} from '../src/scripts/html-entities.ts';
+import test from'node:test';import assert from'node:assert/strict';import{inspectJwt,convertNumberBase}from'../src/scripts/encoding-tools.ts';
 const b64=text=>Buffer.from(text,'utf8').toString('base64url');const token=(header,payload,signature='AA')=>b64(header)+'.'+b64(payload)+'.'+signature;
 test('HTML5 entities round-trip Unicode and decode once as data',()=>{
  const value='<script>"İ 😀" & \'x\'</script>';assert.equal(convertHtmlEntities(convertHtmlEntities(value),true),value);assert.equal(convertHtmlEntities('&copy; &#x1F600; &NotEqualTilde;',true),'© 😀 ≂̸');assert.equal(convertHtmlEntities('&amp;lt;',true),'&lt;');assert.equal(convertHtmlEntities('&lt;img src=x onerror=alert(1)&gt;',true),'<img src=x onerror=alert(1)>');assert.throws(()=>convertHtmlEntities('x'.repeat(100001)));

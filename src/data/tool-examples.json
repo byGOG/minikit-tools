@@ -1,0 +1,198 @@
+{
+  "image-converter": [
+    "PNG · 800 × 600",
+    "WebP · 800 × 600"
+  ],
+  "qr-code-generator": [
+    "https://minikit.top/",
+    "QR · PNG"
+  ],
+  "word-counter": [
+    "one two three",
+    "3"
+  ],
+  "color-converter": [
+    "#FF0000",
+    "RGB: 255, 0, 0\nHSL: 0, 100%, 50%"
+  ],
+  "case-converter": [
+    "MiniKit",
+    "MINIKIT"
+  ],
+  "duplicate-line-remover": [
+    "A\nA\nB",
+    "A\nB"
+  ],
+  "text-sorter": [
+    "B\nA",
+    "A\nB"
+  ],
+  "json-formatter": [
+    "{\"a\":1}",
+    "{\n  \"a\": 1\n}"
+  ],
+  "base64-converter": [
+    "hello",
+    "aGVsbG8="
+  ],
+  "url-encoder-decoder": [
+    "a b&c",
+    "a%20b%26c"
+  ],
+  "unit-converter": [
+    "1 km → m",
+    "1000 m"
+  ],
+  "percentage-calculator": [
+    "200 × 15%",
+    "30"
+  ],
+  "image-resizer": [
+    "800 × 600 → 400 × ?",
+    "400 × 300"
+  ],
+  "image-cropper": [
+    "800 × 600; x=0, y=0, w=400, h=300",
+    "400 × 300"
+  ],
+  "image-rotator": [
+    "800 × 600; 90°",
+    "600 × 800"
+  ],
+  "image-to-base64": [
+    "PNG",
+    "data:image/png;base64,…"
+  ],
+  "images-to-pdf": [
+    "PNG + JPEG",
+    "PDF"
+  ],
+  "uuid-generator": [
+    "UUID v4",
+    "xxxxxxxx-xxxx-4xxx-[89ab]xxx-xxxxxxxxxxxx"
+  ],
+  "sha256-hash": [
+    "abc",
+    "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+  ],
+  "unix-timestamp-converter": [
+    "0 s",
+    "1970-01-01T00:00:00.000Z"
+  ],
+  "find-and-replace": [
+    "hello world; world → MiniKit",
+    "hello MiniKit"
+  ],
+  "line-numbering": [
+    "A\nB",
+    "1. A\n2. B"
+  ],
+  "date-difference": [
+    "2026-01-01 → 2026-01-02",
+    "1"
+  ],
+  "html-encoder-decoder": [
+    "<b>A</b>",
+    "&lt;b&gt;A&lt;/b&gt;"
+  ],
+  "number-base-converter": [
+    "255 (10) → (16)",
+    "ff"
+  ],
+  "json-to-csv": [
+    "[{\"a\":1,\"b\":2}]",
+    "\"a\",\"b\"\r\n\"1\",\"2\""
+  ],
+  "csv-to-json": [
+    "a,b\n1,2",
+    "[\n  {\n    \"a\": \"1\",\n    \"b\": \"2\"\n  }\n]"
+  ],
+  "slug-generator": [
+    "Hello World",
+    "hello-world"
+  ],
+  "reverse-text": [
+    "ABC",
+    "CBA"
+  ],
+  "whitespace-cleaner": [
+    "  A   B  ",
+    "A B"
+  ],
+  "discount-calculator": [
+    "100; 20%",
+    "80"
+  ],
+  "proportion-calculator": [
+    "2 / 4 = 3 / x",
+    "6"
+  ],
+  "speed-distance-time": [
+    "100 km; 2 h",
+    "50 km/h"
+  ],
+  "color-contrast-checker": [
+    "#000000 / #FFFFFF",
+    "21:1"
+  ],
+  "json-to-yaml": [
+    "{\"a\":1}",
+    "a: 1"
+  ],
+  "yaml-to-json": [
+    "a: 1",
+    "{\n  \"a\": 1\n}"
+  ],
+  "json-compare": [
+    "{\"a\":1} ↔ {\"a\":2}",
+    "a: 1 → 2"
+  ],
+  "html-to-markdown": [
+    "<h1>Hello</h1>",
+    "# Hello"
+  ],
+  "markdown-preview": [
+    "**Hello**",
+    "<strong>Hello</strong>"
+  ],
+  "add-days-to-date": [
+    "2026-01-01 + 7",
+    "2026-01-08"
+  ],
+  "prime-number-checker": [
+    "17",
+    "17: ✓"
+  ],
+  "prime-factorization": [
+    "60",
+    "2² × 3 × 5"
+  ],
+  "gcd-lcm-calculator": [
+    "12, 18",
+    "GCD: 6 · LCM: 36"
+  ],
+  "ipv4-subnet-calculator": [
+    "192.168.1.10/24",
+    "192.168.1.0/24"
+  ],
+  "ipv6-compress-expand": [
+    "2001:0db8:0000:0000:0000:0000:0000:0001",
+    "2001:db8::1"
+  ],
+  "ip-in-cidr": [
+    "192.168.1.10 ∈ 192.168.1.0/24",
+    "✓"
+  ],
+  "anagram-checker": [
+    "listen ↔ silent",
+    "✓"
+  ],
+  "palindrome-checker": [
+    "radar",
+    "✓"
+  ],
+  "email-extractor": [
+    "A <user@example.com>",
+    "user@example.com"
+  ]
+}

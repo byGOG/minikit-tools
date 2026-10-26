@@ -1,19 +1,19 @@
 # MiniKit
 
-MiniKit is a privacy-forward collection of free browser tools, built with Astro, TypeScript and Tailwind CSS and published on GitHub Pages.
+MiniKit is a privacy-forward collection of free browser tools, built with Astro, TypeScript and Tailwind CSS and published at https://minikit.top on Cloudflare Pages. GitHub Pages preserves legacy redirects.
 
 ## Included
 
-- Exactly 50 language homepages and 800 localized tool guides, generated from versioned translation dictionaries. Arabic, Urdu, Persian and Hebrew use right-to-left layouts.
-- Sixteen browser tools: image converter/compressor (WebP, JPEG and PNG), QR generator, Unicode-aware word/character counter, HEX/RGB/HSL color converter, case converter, duplicate line remover, text sorter, JSON formatter, UTF-8 Base64 converter URL component encoder/decoder, random password generator, measurement unit converter percentage calculator, image resizer, cropper and rotator/mirror.
+- Exactly 50 language homepages and 4,250 localized tool guides, generated from versioned translation dictionaries. Arabic, Urdu, Persian and Hebrew use right-to-left layouts.
+- 85 browser tools for images/colors, PDF, audio, text, development, calculations and time. The homepage is a searchable category directory; each tool has its own isolated form.
 - Dedicated localized pages for each tool, with usage steps, FAQs, structured data, canonical/hreflang metadata and sitemap entries.
 - Accessibility support: keyboard skip link, visible focus, reduced-motion support, accessible mobile menu state and live word-count announcements.
-- No third-party analytics, ads, font requests or cookie tracking by default. Tool inputs are processed in the visitor's browser.
+- Tool inputs stay in the visitor's browser. Cloudflare Web Analytics is enabled on the production domain; Google advertising is disabled until the approval and consent requirements in the advertising configuration are met. See `/privacy/` for the current disclosures.
 - Optional Google Search Console verification via GitHub Actions secret.
 
 ## Run locally
 
-Requirements: Node.js 22 and pnpm 11.25.0 (`corepack enable` then `corepack prepare pnpm@11.25.0 --activate`, or install that pnpm version).
+Requirements: Node.js 22.23.4 or newer (24.22.1 is pinned in `.node-version`) and pnpm 11.25.0 (`corepack enable` then `corepack prepare pnpm@11.25.0 --activate`, or install that pnpm version).
 
 ```sh
 pnpm install --frozen-lockfile
@@ -23,30 +23,30 @@ pnpm run dev
 Build and preview:
 
 ```sh
-pnpm run build
+MINIKIT_DEPLOY_TARGET=cloudflare pnpm run build
 pnpm run test:tools
-pnpm run test:locales
+MINIKIT_DEPLOY_TARGET=cloudflare pnpm run test:locales
 pnpm run check
-pnpm run preview
+MINIKIT_DEPLOY_TARGET=cloudflare pnpm run preview
 ```
 
-`dev` serves the Astro source page. Use `build` followed by `preview` to browse all 50 languages at `http://localhost:4321/minikit-tools/`. Language selection preserves the current tool guide.
+`dev` serves the full-form Astro source template. Use the Cloudflare build/preview commands above to browse the generated directory and isolated tool pages in all 50 languages at `http://localhost:4321/`. Without the deployment-target variable, the historical `/minikit-tools/` base is used. Language selection preserves the current tool guide.
 
-## GitHub Pages deployment
+## Legacy GitHub Pages redirects
 
-1. Push to the `main` branch of `byGOG/minikit-tools`. For another repository, update the `base` value in `astro.config.mjs`.
+1. Push reviewed changes to `main` in `byGOG/minikit-tools`. Cloudflare separately builds that production branch.
 2. In **Settings → Pages**, choose **GitHub Actions** as the publishing source.
-3. Pull requests run type checks, build and locale tests without deploying. Each push to `main` runs the same checks, builds the localized landing pages and tool pages, sitemap and robots file, then deploys `dist/` to [MiniKit](https://bygog.github.io/minikit-tools/).
+3. Pull requests run unit/type/locale/browser checks and the security audit. The main-branch workflow then replaces generated HTML with redirects to https://minikit.top and publishes those redirects to the legacy GitHub Pages project.
 4. Share the update after **Deploy MiniKit to GitHub Pages** finishes successfully.
 
 ## Google Search Console
 
 1. Add a repository secret named `GOOGLE_SITE_VERIFICATION` under **Settings → Secrets and variables → Actions → New repository secret**.
 2. Paste the verification token supplied by Search Console.
-3. Run the workflow again. The build adds Google's verification meta tag only when the secret exists.
-4. In Search Console, submit `https://bygog.github.io/minikit-tools/sitemap.xml`.
+3. Run the workflow again. The build uses this optional value to override the existing public verification token in `src/layouts/Layout.astro`; configure the same variable in Cloudflare Pages when changing the production token.
+4. In Search Console, submit `https://minikit.top/sitemap.xml`.
 
-Analytics and advertising are disabled by default. AdSense integration is prepared; see `docs/ADSENSE-SETUP.md` before enabling it.
+Production page-view analytics uses Cloudflare. Advertising remains disabled in the current configuration. AdSense integration is prepared; see `docs/ADSENSE-SETUP.md` before enabling it.
 
 ## Translation notes
 
@@ -80,17 +80,17 @@ scripts/
 src/i18n/
   catalog.json             50 locales and writing directions
   locales/*.json           Complete versioned translation drafts
-tests/locales.test.mjs      Checks all 850 generated pages and SEO links
+tests/locales.test.mjs      Checks all 4,302 canonical pages and SEO links
 public/
   favicon.svg
   robots.txt
 ```
 
-## Free Cloudflare Pages alternative
+## Production Cloudflare Pages deployment
 
 1. Connect this GitHub repository to a Cloudflare Pages project.
-2. In `astro.config.mjs`, set `site` to your Pages/custom domain and `base` to `/` when serving at the domain root. Keep the existing values for GitHub Pages.
-3. Set Node.js to 22, build command to `pnpm install --frozen-lockfile && pnpm run check && pnpm run build && pnpm run test:locales`, and output directory to `dist`.
+2. `CF_PAGES=1` selects the production site/base automatically through `scripts/site-config.mjs`. For local production builds set `MINIKIT_DEPLOY_TARGET=cloudflare`.
+3. Use Node.js 22.23.4 or newer (24.22.1 recommended), build command to `pnpm install --frozen-lockfile && pnpm run check && pnpm run build && pnpm run test:locales`, and output directory to `dist`.
 4. Deploy. The build is fully static and requires no server or translation API key.
 
 ## Text tools
@@ -121,7 +121,7 @@ AdSense configuration: `src/data/advertising.json`. No ad scripts, ad placeholde
 
 ## minikit.top / Cloudflare Pages
 
-Cloudflare Pages builds (`CF_PAGES=1`) use `https://minikit.top/`; default local/GitHub builds retain the existing GitHub project base. Astro, localized pages and sitemap share `scripts/site-config.mjs`. To build/test the new domain locally, prefix commands with `MINIKIT_DEPLOY_TARGET=cloudflare`. Cloudflare Git integration: production branch `main`, build `pnpm run build`, output `dist`, Node 22 and pnpm per packageManager. The domain uses the free plan. No server or paid hosting is required. Root `ads.txt` is included. DNS, domain activation, certificate and AdSense review must be verified separately.
+Cloudflare Pages builds (`CF_PAGES=1`) use `https://minikit.top/`; default local/GitHub builds retain the existing GitHub project base. Astro, localized pages and sitemap share `scripts/site-config.mjs`. To build/test the new domain locally, prefix commands with `MINIKIT_DEPLOY_TARGET=cloudflare`. Cloudflare Git integration: production branch `main`, build `pnpm run build`, output `dist`, Node 22.23.4 or newer and pnpm per packageManager. The domain uses the free plan. No server or paid hosting is required. Root `ads.txt` is included. DNS, domain activation, certificate and AdSense review must be verified separately.
 
 ### Additional image tools
 Text watermarking exports PNG with adjustable position, opacity and size. The color palette tool samples at most 256 × 256 pixels and returns up to six quantized dominant HEX colors, ignoring mostly transparent pixels. Both accept the existing 20 MiB / 16-million-pixel limits. Image-to-Base64 accepts up to 5 MiB and preserves original bytes and metadata, returning a complete data URL. No image uploads occur. All three have 50-language UI and tool guide URLs.
@@ -160,3 +160,32 @@ Additional tools: combine1–10rasters (20MiB each/50MiB total/16M source and ou
 Audio trim/join/peak normalization use browser codecs and OfflineAudioContext resampling to44.1kHz, WAVPCM16 export without metadata; max20MiB/file,40MiBtotal,5joinfiles,120decodedseconds total,mono/stereo. Metadata checked before decode; source arrays immutable, mono duplicated forstereojoin, globalpeak target-12..0dBFS/silenceunchanged. Not perceptual loudness normalization. Prime/factor exactdecimal0or2..1e12; GCD/LCM signed100digitBigInt,zero conventions explicit. IPv4CIDR/IPv6compress-expand/IPinCIDR are strict localBigInt calculations, /31point-to-point and /32singleaddress, canonicalfirst-longestzero run>=2, mappedIPv6mixednotation, nozones/brackets/ports ornetworkrequests. References: https://www.rfc-editor.org/rfc/rfc3021.html , https://www.rfc-editor.org/rfc/rfc4291.html , https://www.rfc-editor.org/rfc/rfc5952.html .
 
 Anagram/palindrome checks use NFC, locale lowercase and Intl.Segmenter grapheme groups, optional letter/number/mark filtering, no accent stripping and no empty filtered input. Email extraction scans bounded @ windows for practical ASCII/punycode forms (not full RFC validation/deliverability), first-seen order, domain-lowercase/local-case preserved and optional duplicate removal. Inputs100k,5000candidates,1000results; no partial result on overflow and no network requests.
+
+## Quality and performance release (October 2026)
+
+- Node 24.22.1 (`.node-version`), Astro 7, Tailwind 3 through PostCSS. CI reads `.node-version`. Ensure the Cloudflare dashboard runtime override, if present, also meets the package engine requirement (the preview build was verified on Node 22.23.4).
+- Build with `MINIKIT_DEPLOY_TARGET=cloudflare pnpm run build`. The generation pipeline keeps full forms only as intermediate templates. Published homepages contain a searchable, categorized directory; tool pages contain exactly one form and up to four related links.
+- Tool groups load only on their own pages. When adding a tool, update `src/data/tools.json` (including category), the setup registry in `src/scripts/app.ts`, translations, guide and browser coverage.
+- HTML provides the 50-language hreflang links. `sitemap.xml` is an index of canonical-only child sitemaps, with at most 1,000 URLs per child. IndexNow follows the index before submitting URLs.
+- `public/_headers` adds security headers and immutable hashed-asset caching on Cloudflare Pages. CSP is report-only so third-party advertising, workers and browser-generated previews can be checked before enforcement. Review console CSP reports when enabling advertising; the report-only policy does not block content.
+- Domain redirects must be configured in Cloudflare Rules (host-based redirects are not supported by Pages `_redirects`). Preserve paths and query strings when redirecting www and the production pages.dev hostname to minikit.top; keep preview deployment hosts available for testing.
+- Cloudflare Web Analytics already tracks page views by path. Separate tool URLs now make tool-page popularity meaningful. A page view is not proof of a completed tool operation; no new input, filename or tool-result telemetry has been added.
+
+Verification:
+
+```sh
+pnpm install --frozen-lockfile
+pnpm run check
+pnpm run test:tools
+MINIKIT_DEPLOY_TARGET=cloudflare pnpm run build
+MINIKIT_DEPLOY_TARGET=cloudflare pnpm run test:locales
+pnpm exec playwright install chromium webkit
+pnpm run test:browser
+pnpm run audit:security
+```
+
+Browser tests run against a local-only static server and cover all isolated tool forms, search/category filters, mobile layout, RTL, keyboard order, language navigation, image downloads, cancellation, invalid-image cleanup, QR, JSON, HEX, PDF creation and dates. Set `PLAYWRIGHT_CHROMIUM_CHANNEL=chrome` to use installed Chrome locally, or `PLAYWRIGHT_BASE_URL` to verify an existing deployment. CI runs Chromium and WebKit before publishing legacy GitHub redirects. Weekly Dependabot checks cover package updates and monthly checks cover Actions.
+
+Security overrides for esbuild and postcss-selector-parser select patched releases; review and remove overrides when upstream ranges include the fixes. `pnpm audit --prod` is a dependency advisory check, not proof that every potential vulnerability has been eliminated.
+
+CI uses the official Microsoft Playwright image pinned by digest, with Chromium/WebKit and OS libraries already installed. This avoids installing 181 Ubuntu packages on every run. Keep its image version aligned with `@playwright/test` when upgrading. The browser suite has a 10-minute limit and the build job a 20-minute limit.
