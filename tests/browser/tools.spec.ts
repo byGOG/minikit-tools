@@ -53,6 +53,7 @@ test('keyboard order reaches selected tool and language switch preserves it', as
 
 test('Arabic directory retains RTL and functional filters', async ({ page }) => {
   await open(page, '/ar/'); await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
+  await expect(page.locator('.hero h1')).toHaveCSS('letter-spacing', 'normal');
   await page.locator('#tool-category').selectOption('audio');
   await expect(page.locator('.directory-card:visible')).toHaveCount(3);
 });
