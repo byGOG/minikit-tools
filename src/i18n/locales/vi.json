@@ -645,5 +645,17 @@
   "anagramNo": "Các văn bản không phải là đảo chữ.",
   "palindromeYes": "Văn bản là một biểu tượng đối xứng.",
   "palindromeNo": "Văn bản không phải là đối xứng.",
-  "textCheckInvalid": "Kiểm tra đầu vào và giới hạn. Văn bản so sánh không được để trống sau khi lọc; trình duyệt phải hỗ trợ phân đoạn Unicode."
+  "textCheckInvalid": "Kiểm tra đầu vào và giới hạn. Văn bản so sánh không được để trống sau khi lọc; trình duyệt phải hỗ trợ phân đoạn Unicode.",
+  "fileHashTitle": "Kiểm tra SHA-256 của tệp",
+  "fileHashDesc": "Tính cục bộ mã băm từ các byte gốc của tệp và so sánh với mã được cung cấp. Trùng khớp không đảm bảo an toàn.",
+  "fileHashFile": "Tệp",
+  "fileHashLimits": "Một tệp, tối đa 50 MiB. Chấp nhận tệp rỗng; toàn bộ tệp được nạp vào bộ nhớ.",
+  "fileHashExpected": "SHA-256 mong đợi (không bắt buộc)",
+  "fileHashWorking": "Đang tính mã băm của tệp…",
+  "fileHashMatch": "Các mã băm trùng khớp.",
+  "fileHashMismatch": "Các mã băm không trùng khớp.",
+  "fileHashInvalidExpected": "Mã băm mong đợi phải có đúng 64 ký tự thập lục phân.",
+  "fileHashInvalidFile": "Chọn một tệp có dung lượng tối đa 50 MiB.",
+  "fileHashFailed": "Không thể hoàn tất. Hãy dùng trình duyệt mới hỗ trợ Web Crypto và HTTPS.",
+  "fileHashClear": "Xóa"
 }

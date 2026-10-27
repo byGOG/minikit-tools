@@ -645,5 +645,17 @@
   "anagramNo": "Tekstai nėra anagramos.",
   "palindromeYes": "Tekstas yra palindromas.",
   "palindromeNo": "Tekstas nėra palindromas.",
-  "textCheckInvalid": "Patikrinkite įvestį ir ribas. Palyginimo tekstas po filtravimo neturi būti tuščias; naršyklė privalo palaikyti Unicode segmentavimą."
+  "textCheckInvalid": "Patikrinkite įvestį ir ribas. Palyginimo tekstas po filtravimo neturi būti tuščias; naršyklė privalo palaikyti Unicode segmentavimą.",
+  "fileHashTitle": "Failo SHA-256 tikrinimas",
+  "fileHashDesc": "Vietoje apskaičiuokite pradinių failo baitų maišą ir palyginkite su pateikta maiša. Atitiktis negarantuoja saugumo.",
+  "fileHashFile": "Failas",
+  "fileHashLimits": "Vienas failas iki 50 MiB. Tušti failai galioja; visas failas įkeliamas į atmintį.",
+  "fileHashExpected": "Tikėtina SHA-256 maiša (nebūtina)",
+  "fileHashWorking": "Skaičiuojama failo maiša…",
+  "fileHashMatch": "Maišos sutampa.",
+  "fileHashMismatch": "Maišos nesutampa.",
+  "fileHashInvalidExpected": "Tikėtiną maišą turi sudaryti tiksliai 64 šešioliktainiai simboliai.",
+  "fileHashInvalidFile": "Pasirinkite vieną failą iki 50 MiB.",
+  "fileHashFailed": "Nepavyko užbaigti veiksmo. Naudokite naują naršyklę su Web Crypto ir HTTPS.",
+  "fileHashClear": "Išvalyti"
 }

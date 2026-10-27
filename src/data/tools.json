@@ -1018,5 +1018,17 @@
       "copyResult"
     ],
     "category": "text"
+  },
+  {
+    "slug": "file-sha256-checker",
+    "title": "fileHashTitle",
+    "desc": "fileHashDesc",
+    "anchor": "file-checksum-tool",
+    "steps": [
+      "fileHashFile",
+      "calculate",
+      "copyResult"
+    ],
+    "category": "developer"
   }
 ]

@@ -645,5 +645,17 @@
   "anagramNo": "De teksten zijn geen anagrammen.",
   "palindromeYes": "De tekst is een palindroom.",
   "palindromeNo": "De tekst is geen palindroom.",
-  "textCheckInvalid": "Controleer de input en limieten. Vergelijkingstekst mag niet leeg zijn na het filteren; de browser moet Unicode-segmentatie ondersteunen."
+  "textCheckInvalid": "Controleer de input en limieten. Vergelijkingstekst mag niet leeg zijn na het filteren; de browser moet Unicode-segmentatie ondersteunen.",
+  "fileHashTitle": "SHA-256-bestandscontrole",
+  "fileHashDesc": "Bereken lokaal de hash van de oorspronkelijke bestandsbytes en vergelijk deze met een opgegeven hash. Een overeenkomst garandeert geen veiligheid.",
+  "fileHashFile": "Bestand",
+  "fileHashLimits": "Eén bestand, maximaal 50 MiB. Lege bestanden zijn geldig; het hele bestand wordt in het geheugen geladen.",
+  "fileHashExpected": "Verwachte SHA-256 (optioneel)",
+  "fileHashWorking": "Bestandshash berekenen…",
+  "fileHashMatch": "De hashes komen overeen.",
+  "fileHashMismatch": "De hashes komen niet overeen.",
+  "fileHashInvalidExpected": "De verwachte hash moet precies 64 hexadecimale tekens bevatten.",
+  "fileHashInvalidFile": "Kies één bestand van maximaal 50 MiB.",
+  "fileHashFailed": "De bewerking kon niet worden voltooid. Gebruik een actuele browser met Web Crypto en HTTPS.",
+  "fileHashClear": "Wissen"
 }

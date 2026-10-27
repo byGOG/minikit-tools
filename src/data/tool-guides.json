@@ -848,5 +848,15 @@
       "heading": "E-posta adreslerini çıkar",
       "text": "Metindeki e-posta benzeri adresleri bul ve listeyi kopyala. En fazla 100.000 karakter, 5.000 @ adayı ve 1.000 sonuç. Pratik ASCII/punycode çıkarımıdır; tam RFC doğrulaması değildir. Tırnaklı ve uluslararası yerel bölümler desteklenmez. Alan adı küçük harfe çevrilir; yerel bölümün harf durumu korunur. İlk görülme sırası korunur. Teslimat kontrolü veya ağ isteği yapılmaz. Sınır aşımında kısmi liste verilmez."
     }
+  },
+  "file-sha256-checker": {
+    "tr": {
+      "heading": "Dosya baytlarını SHA-256 ile karşılaştırma",
+      "text": "Tek bir dosya seç; araç metne dönüştürmeden özgün dosya baytlarının SHA-256 özetini tarayıcında hesaplar. Dosya ve dosya adı sunucuya gönderilmez. Boş dosya geçerlidir; sınır 50 MiB’dir (52.428.800 bayt). Dosyanın tamamı belleğe alındığından bellek kullanımı artabilir. İstersen güvenilir bir kaynaktan ayrı olarak aldığın, tam 64 onaltılık karakterden oluşan beklenen özeti gir. Özetleri aynı güvenilmez kaynaktan almak dosyanın gerçekliğini doğrulamaz. Eşleşme yalnız bayt tutarlılığını gösterir; dosyanın zararsız veya kaynağının güvenilir olduğuna dair garanti değildir. İçerikteki ya da dosyanın içinde saklanan meta verideki bir bayt değişikliği özeti değiştirir; yalnız dosya adını değiştirmek dosya baytlarını değiştirmez. SHA-256 şifreleme veya parola saklama yöntemi değildir. Dosyayı veya beklenen özeti değiştirmek ya da Temizle’ye basmak önceki sonucu geçersiz kılar. Bu mantıksal iptal, başlamış Web Crypto hesabını fiziksel olarak durdurmaz; eski sonuç gösterilmez. Web Crypto destekleyen güncel tarayıcı ve HTTPS gerekir."
+    },
+    "en": {
+      "heading": "Compare file bytes with SHA-256",
+      "text": "Choose one file; the tool calculates SHA-256 from its original bytes in your browser without converting them to text. The file and its name are not sent to a server. Empty files are valid; the limit is 50 MiB (52,428,800 bytes). The entire file is loaded into memory, so memory use may increase. Optionally enter an expected digest of exactly 64 hexadecimal characters obtained separately from a trusted source. Taking both the file and digest from the same untrusted source does not establish authenticity. A match shows byte consistency only; it does not guarantee that the file is harmless or its source trustworthy. A one-byte change in content or metadata stored inside the file changes the digest; renaming the file alone does not change its bytes. SHA-256 is not encryption or a password-storage method. Changing the file or expected digest, or pressing Clear, invalidates the previous result. This logical cancellation does not physically stop an already started Web Crypto calculation; its stale result is discarded. A current browser with Web Crypto support and HTTPS is required."
+    }
   }
 }

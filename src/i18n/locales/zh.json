@@ -645,5 +645,17 @@
   "anagramNo": "这些文本不是字谜。",
   "palindromeYes": "文本是回文。",
   "palindromeNo": "文本不是回文。",
-  "textCheckInvalid": "检查输入和限制。筛选后比较文本不得为空;浏览器必须支持 Unicode 分段。"
+  "textCheckInvalid": "检查输入和限制。筛选后比较文本不得为空;浏览器必须支持 Unicode 分段。",
+  "fileHashTitle": "文件 SHA-256 校验器",
+  "fileHashDesc": "在本地计算文件原始字节的哈希，并与提供的哈希比较。匹配不代表文件安全。",
+  "fileHashFile": "文件",
+  "fileHashLimits": "单个文件，最大 50 MiB。支持空文件；整个文件会载入内存。",
+  "fileHashExpected": "预期 SHA-256（可选）",
+  "fileHashWorking": "正在计算文件哈希…",
+  "fileHashMatch": "哈希匹配。",
+  "fileHashMismatch": "哈希不匹配。",
+  "fileHashInvalidExpected": "预期哈希必须恰好包含 64 个十六进制字符。",
+  "fileHashInvalidFile": "请选择一个不超过 50 MiB 的文件。",
+  "fileHashFailed": "无法完成操作。请使用支持 Web Crypto 的新版浏览器及 HTTPS 连接。",
+  "fileHashClear": "清除"
 }

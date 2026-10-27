@@ -32,3 +32,11 @@ Yeni araç geliştirme işine başlarken katalogda bulunmayan adaylar ürün ara
 Koordinatörün PR/CI ve canlı yayın doğrulaması sonuç raporunda saklanır.
 
 Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, dosya/rol adı eşleşmesi, doküman bağlantıları ve üç uzman sınırı doğrulandı. Geliştirme, içerik ve kalite ajanları rol sınırlarını salt okunur olarak inceledi; gerekli bir düzeltme bulmadı. Bu tur uygulama kodunu veya araç kataloğunu değiştirmez.
+
+## Yeni araç turu — 27 Ekim 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| TOOL-001 | Yeni araç geliştirici + içerik + kalite | Dosya SHA-256: en fazla 50 MiB, boş/ikili dosya, isteğe bağlı 64 HEX özet, eski işlem sonucunu geçersiz kılma; 50 dil ve rehber. 113 birim + 53 dil + 204 tarayıcı testi geçti. | Yerel doğrulama tamamlandı; yayın bekleniyor |
+
+Ürün araştırması dosya SHA-256 doğrulayıcıyı seçti. Mevcut SHA aracı yalnız UTF-8 metin işler; yeni araç dosyanın özgün baytları için ayrı kullanım sağlar. Trafik/gelir üstünlüğü iddiası yok.

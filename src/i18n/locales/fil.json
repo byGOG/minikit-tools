@@ -645,5 +645,17 @@
   "anagramNo": "Hindi anagram ang mga teksto.",
   "palindromeYes": "Ang teksto ay isang palindrome.",
   "palindromeNo": "Ang teksto ay hindi palindrome.",
-  "textCheckInvalid": "Suriin ang input at limitasyon. Hindi dapat walang laman ang teksto ng paghahambing pagkatapos ng pag-filter; dapat suportahan ng browser ang Unicode segmentation."
+  "textCheckInvalid": "Suriin ang input at limitasyon. Hindi dapat walang laman ang teksto ng paghahambing pagkatapos ng pag-filter; dapat suportahan ng browser ang Unicode segmentation.",
+  "fileHashTitle": "Tagasuri ng SHA-256 ng file",
+  "fileHashDesc": "Kalkulahin nang lokal ang hash ng orihinal na mga byte ng file at ihambing sa ibinigay na hash. Hindi garantiya ng kaligtasan ang pagtugma.",
+  "fileHashFile": "File",
+  "fileHashLimits": "Isang file, hanggang 50 MiB. Tinatanggap ang walang laman na file; buong file ang inilalagay sa memorya.",
+  "fileHashExpected": "Inaasahang SHA-256 (opsyonal)",
+  "fileHashWorking": "Kinakalkula ang hash ng file…",
+  "fileHashMatch": "Magkatugma ang mga hash.",
+  "fileHashMismatch": "Hindi magkatugma ang mga hash.",
+  "fileHashInvalidExpected": "Dapat eksaktong 64 na hexadecimal na character ang inaasahang hash.",
+  "fileHashInvalidFile": "Pumili ng isang file na hanggang 50 MiB.",
+  "fileHashFailed": "Hindi natapos ang proseso. Gumamit ng bagong browser na may Web Crypto at HTTPS.",
+  "fileHashClear": "Burahin"
 }

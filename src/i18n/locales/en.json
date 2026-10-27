@@ -645,5 +645,17 @@
   "anagramNo": "The texts are not anagrams.",
   "palindromeYes": "The text is a palindrome.",
   "palindromeNo": "The text is not a palindrome.",
-  "textCheckInvalid": "Check the input and limits. Comparison text must not be empty after filtering; the browser must support Unicode segmentation."
+  "textCheckInvalid": "Check the input and limits. Comparison text must not be empty after filtering; the browser must support Unicode segmentation.",
+  "fileHashTitle": "File SHA-256 checker",
+  "fileHashDesc": "Calculate a file’s original byte digest locally and compare it with a supplied digest. A match is not a safety guarantee.",
+  "fileHashFile": "File",
+  "fileHashLimits": "One file, up to 50 MiB. Empty files are valid; the entire file is loaded into memory.",
+  "fileHashExpected": "Expected SHA-256 (optional)",
+  "fileHashWorking": "Calculating file digest…",
+  "fileHashMatch": "Digests match.",
+  "fileHashMismatch": "Digests do not match.",
+  "fileHashInvalidExpected": "The expected digest must contain exactly 64 hexadecimal characters.",
+  "fileHashInvalidFile": "Choose one file up to 50 MiB.",
+  "fileHashFailed": "Could not complete the operation. Use a current browser with Web Crypto support and HTTPS.",
+  "fileHashClear": "Clear"
 }

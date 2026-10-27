@@ -645,5 +645,17 @@
   "anagramNo": "Tekstit eivät ole anagrammeja.",
   "palindromeYes": "Teksti on palindromi.",
   "palindromeNo": "Teksti ei ole palindromi.",
-  "textCheckInvalid": "Tarkista syötteet ja rajat. Vertailuteksti ei saa olla tyhjä suodatuksen jälkeen; selaimen on tuettava Unicode-segmentointia."
+  "textCheckInvalid": "Tarkista syötteet ja rajat. Vertailuteksti ei saa olla tyhjä suodatuksen jälkeen; selaimen on tuettava Unicode-segmentointia.",
+  "fileHashTitle": "Tiedoston SHA-256-tarkistus",
+  "fileHashDesc": "Laske tiedoston alkuperäisten tavujen tiiviste paikallisesti ja vertaa annettuun tiivisteeseen. Täsmääminen ei takaa turvallisuutta.",
+  "fileHashFile": "Tiedosto",
+  "fileHashLimits": "Yksi tiedosto, enintään 50 MiB. Tyhjät tiedostot kelpaavat; koko tiedosto ladataan muistiin.",
+  "fileHashExpected": "Odotettu SHA-256 (valinnainen)",
+  "fileHashWorking": "Lasketaan tiedoston tiivistettä…",
+  "fileHashMatch": "Tiivisteet täsmäävät.",
+  "fileHashMismatch": "Tiivisteet eivät täsmää.",
+  "fileHashInvalidExpected": "Odotetussa tiivisteessä on oltava täsmälleen 64 heksadesimaalimerkkiä.",
+  "fileHashInvalidFile": "Valitse yksi enintään 50 MiB:n tiedosto.",
+  "fileHashFailed": "Toimintoa ei voitu suorittaa. Käytä ajantasaista selainta, joka tukee Web Cryptoa, sekä HTTPS-yhteyttä.",
+  "fileHashClear": "Tyhjennä"
 }

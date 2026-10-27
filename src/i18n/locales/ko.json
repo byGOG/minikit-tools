@@ -645,5 +645,17 @@
   "anagramNo": "텍스트는 애너그램이 아닙니다.",
   "palindromeYes": "텍스트는 회문이다.",
   "palindromeNo": "이 텍스트는 회문이 아닙니다.",
-  "textCheckInvalid": "입력과 한계를 확인하세요. 필터링 후 비교 텍스트는 비어 있어서는 안 됩니다; 브라우저는 유니코드 세분화를 지원해야 합니다."
+  "textCheckInvalid": "입력과 한계를 확인하세요. 필터링 후 비교 텍스트는 비어 있어서는 안 됩니다; 브라우저는 유니코드 세분화를 지원해야 합니다.",
+  "fileHashTitle": "파일 SHA-256 검증기",
+  "fileHashDesc": "파일 원본 바이트의 해시를 로컬에서 계산하고 입력한 해시와 비교합니다. 일치해도 안전성을 보장하지 않습니다.",
+  "fileHashFile": "파일",
+  "fileHashLimits": "파일 1개, 최대 50 MiB. 빈 파일도 유효하며 파일 전체를 메모리에 불러옵니다.",
+  "fileHashExpected": "예상 SHA-256 (선택 사항)",
+  "fileHashWorking": "파일 해시 계산 중…",
+  "fileHashMatch": "해시가 일치합니다.",
+  "fileHashMismatch": "해시가 일치하지 않습니다.",
+  "fileHashInvalidExpected": "예상 해시는 정확히 64자의 16진수여야 합니다.",
+  "fileHashInvalidFile": "50 MiB 이하의 파일 하나를 선택하세요.",
+  "fileHashFailed": "작업을 완료하지 못했습니다. Web Crypto를 지원하는 최신 브라우저와 HTTPS를 사용하세요.",
+  "fileHashClear": "지우기"
 }

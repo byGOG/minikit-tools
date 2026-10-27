@@ -645,5 +645,17 @@
   "anagramNo": "Teksty nie są anagramami.",
   "palindromeYes": "Tekst to palindrom.",
   "palindromeNo": "Tekst nie jest palindromem.",
-  "textCheckInvalid": "Sprawdź wejście i limity. Tekst porównawczy nie może być pusty po filtracji; przeglądarka musi obsługiwać segmentację Unicode."
+  "textCheckInvalid": "Sprawdź wejście i limity. Tekst porównawczy nie może być pusty po filtracji; przeglądarka musi obsługiwać segmentację Unicode.",
+  "fileHashTitle": "Weryfikator SHA-256 plików",
+  "fileHashDesc": "Oblicz lokalnie skrót oryginalnych bajtów pliku i porównaj go z podanym skrótem. Zgodność nie gwarantuje bezpieczeństwa.",
+  "fileHashFile": "Plik",
+  "fileHashLimits": "Jeden plik do 50 MiB. Puste pliki są prawidłowe; cały plik jest wczytywany do pamięci.",
+  "fileHashExpected": "Oczekiwany SHA-256 (opcjonalnie)",
+  "fileHashWorking": "Obliczanie skrótu pliku…",
+  "fileHashMatch": "Skróty są zgodne.",
+  "fileHashMismatch": "Skróty nie są zgodne.",
+  "fileHashInvalidExpected": "Oczekiwany skrót musi zawierać dokładnie 64 znaki szesnastkowe.",
+  "fileHashInvalidFile": "Wybierz jeden plik do 50 MiB.",
+  "fileHashFailed": "Nie udało się ukończyć operacji. Użyj aktualnej przeglądarki z Web Crypto i HTTPS.",
+  "fileHashClear": "Wyczyść"
 }

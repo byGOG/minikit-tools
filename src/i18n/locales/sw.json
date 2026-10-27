@@ -645,5 +645,17 @@
   "anagramNo": "Maandishi sio anagrams.",
   "palindromeYes": "Maandishi ni palindrome.",
   "palindromeNo": "Maandishi sio palindrome.",
-  "textCheckInvalid": "Angalia pembejeo na mipaka. Maandishi ya kulinganisha hayapaswi kuwa tupu baada ya kuchuja; kivinjari lazima kiunge mkono sehemu ya Unicode."
+  "textCheckInvalid": "Angalia pembejeo na mipaka. Maandishi ya kulinganisha hayapaswi kuwa tupu baada ya kuchuja; kivinjari lazima kiunge mkono sehemu ya Unicode.",
+  "fileHashTitle": "Kikagua SHA-256 cha faili",
+  "fileHashDesc": "Kokotoa hashi ya baiti asili za faili kwenye kifaa na ulinganishe na hashi iliyotolewa. Kulingana hakuhakikishi usalama.",
+  "fileHashFile": "Faili",
+  "fileHashLimits": "Faili moja, hadi 50 MiB. Faili tupu inakubalika; faili nzima hupakiwa kwenye kumbukumbu.",
+  "fileHashExpected": "SHA-256 inayotarajiwa (si lazima)",
+  "fileHashWorking": "Inakokotoa hashi ya faili…",
+  "fileHashMatch": "Hashi zinalingana.",
+  "fileHashMismatch": "Hashi hazilingani.",
+  "fileHashInvalidExpected": "Hashi inayotarajiwa lazima iwe na vibambo 64 vya heksadesimali kamili.",
+  "fileHashInvalidFile": "Chagua faili moja yenye ukubwa usiozidi 50 MiB.",
+  "fileHashFailed": "Imeshindwa kukamilisha. Tumia kivinjari cha kisasa chenye Web Crypto na HTTPS.",
+  "fileHashClear": "Futa"
 }

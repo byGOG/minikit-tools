@@ -68,6 +68,12 @@ for (const locale of catalog) {
       assert.equal([...html.matchAll(/<h1[\s>]/g)].length,1,`${path}: one primary heading`);
       assert.ok(html.includes(`property="og:url" content="${url}"`),`${path}: share URL`);
       if (slug) {
+        if (slug === 'file-sha256-checker') {
+          for (const key of ['fileHashTitle','fileHashDesc','fileHashFile','fileHashLimits','fileHashExpected','fileHashClear']) {
+            assert.equal(typeof d[key], 'string', `${path}: ${key} translation exists`);
+            assert.ok(html.includes(escapeHtml(d[key])), `${path}: ${key} is published`);
+          }
+        }
         if (['json-to-yaml','yaml-to-json','json-compare'].includes(slug)) {
           assert.ok(html.includes('<p class="guide-limits">'+escapeHtml(d.structuredLimits)+'</p>'), `${path}: localized precision and input limits`);
         }

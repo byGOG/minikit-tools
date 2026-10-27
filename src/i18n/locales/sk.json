@@ -645,5 +645,17 @@
   "anagramNo": "Texty nie sú anagramy.",
   "palindromeYes": "Text je palindróm.",
   "palindromeNo": "Text nie je palindróm.",
-  "textCheckInvalid": "Skontrolujte vstup a limity. Porovnávacie texty nesmú byť po filtrovaní prázdne; prehliadač musí podporovať segmentáciu Unicode."
+  "textCheckInvalid": "Skontrolujte vstup a limity. Porovnávacie texty nesmú byť po filtrovaní prázdne; prehliadač musí podporovať segmentáciu Unicode.",
+  "fileHashTitle": "Kontrola SHA-256 súboru",
+  "fileHashDesc": "Vypočítajte lokálne odtlačok pôvodných bajtov súboru a porovnajte ho so zadaným odtlačkom. Zhoda nezaručuje bezpečnosť.",
+  "fileHashFile": "Súbor",
+  "fileHashLimits": "Jeden súbor do 50 MiB. Prázdne súbory sú platné; celý súbor sa načíta do pamäte.",
+  "fileHashExpected": "Očakávaný SHA-256 (voliteľné)",
+  "fileHashWorking": "Výpočet odtlačku súboru…",
+  "fileHashMatch": "Odtlačky sa zhodujú.",
+  "fileHashMismatch": "Odtlačky sa nezhodujú.",
+  "fileHashInvalidExpected": "Očakávaný odtlačok musí obsahovať presne 64 šestnástkových znakov.",
+  "fileHashInvalidFile": "Vyberte jeden súbor do 50 MiB.",
+  "fileHashFailed": "Operáciu sa nepodarilo dokončiť. Použite aktuálny prehliadač s Web Crypto a HTTPS.",
+  "fileHashClear": "Vymazať"
 }

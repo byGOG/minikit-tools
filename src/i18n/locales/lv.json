@@ -645,5 +645,17 @@
   "anagramNo": "Teksti nav anagrammas.",
   "palindromeYes": "Teksts ir palindroms.",
   "palindromeNo": "Teksts nav palindroms.",
-  "textCheckInvalid": "Pārbaudiet ievadi un limitus. Salīdzināšanas teksts nedrīkst būt tukšs pēc filtrēšanas; pārlūkprogrammai jāatbalsta Unicode segmentācija."
+  "textCheckInvalid": "Pārbaudiet ievadi un limitus. Salīdzināšanas teksts nedrīkst būt tukšs pēc filtrēšanas; pārlūkprogrammai jāatbalsta Unicode segmentācija.",
+  "fileHashTitle": "Faila SHA-256 pārbaude",
+  "fileHashDesc": "Lokāli aprēķiniet faila sākotnējo baitu jaucējvērtību un salīdziniet ar norādīto. Sakritība negarantē drošību.",
+  "fileHashFile": "Fails",
+  "fileHashLimits": "Viens fails līdz 50 MiB. Tukši faili ir derīgi; viss fails tiek ielādēts atmiņā.",
+  "fileHashExpected": "Sagaidāmais SHA-256 (neobligāti)",
+  "fileHashWorking": "Aprēķina faila jaucējvērtību…",
+  "fileHashMatch": "Jaucējvērtības sakrīt.",
+  "fileHashMismatch": "Jaucējvērtības nesakrīt.",
+  "fileHashInvalidExpected": "Sagaidāmajai jaucējvērtībai jāsatur tieši 64 heksadecimālās rakstzīmes.",
+  "fileHashInvalidFile": "Izvēlieties vienu failu līdz 50 MiB.",
+  "fileHashFailed": "Darbību neizdevās pabeigt. Izmantojiet atjauninātu pārlūku ar Web Crypto un HTTPS.",
+  "fileHashClear": "Notīrīt"
 }

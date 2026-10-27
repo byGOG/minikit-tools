@@ -38,7 +38,7 @@ test('mobile directory search and category filtering', async ({ page }) => {
   await open(page, '/'); await page.locator('#tool-category').selectOption('pdf');
   await expect(page.locator('.directory-card:visible')).toHaveCount(6);
   await page.locator('#tool-search').fill('no-such-tool-8392');
-  await expect(page.locator('#directory-count')).toHaveText('0 / 85');
+  await expect(page.locator('#directory-count')).toHaveText(`0 / ${tools.length}`);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 

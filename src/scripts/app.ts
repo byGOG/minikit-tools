@@ -412,6 +412,7 @@ async function initialize() {
   if (document.body.dataset.page !== 'directory' && document.querySelector('#images-pdf-tool,#merge-pdf-tool,#split-pdf-tool')) (await import('./pdf-tools')).setupPdfTools(t);
   if (document.body.dataset.page !== 'directory' && document.querySelector('#watermark-tool,#palette-tool,#image64-tool')) (await import('./image-extras')).setupImageExtras(t);
   if (document.body.dataset.page !== 'directory' && document.querySelector('#resize-tool,#crop-tool,#rotate-tool')) (await import('./image-editors')).setupImageEditors(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#file-checksum-tool')) (await import('./file-checksum')).setupFileChecksum(t);
   document.documentElement.dataset.toolsReady = "true";
 }
 void initialize();

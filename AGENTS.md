@@ -14,7 +14,7 @@ Carry existing user authorization forward. Agent review and CI are engineering c
 
 ## Product contracts
 
-- Keep all 85 tools and 50 locale routes working unless the user changes scope. Derive current counts from `src/data/tools.json` and `src/i18n/catalog.json` when tools are added.
+- Preserve existing tools and all 50 locale routes when adding features. Derive current counts from `src/data/tools.json` and `src/i18n/catalog.json` when tools are added.
 - Published homepages are searchable directories. Each tool page contains one form plus related links; do not restore all forms to every page.
 - Tool input, file contents, filenames and generated results stay in the browser. Do not add telemetry containing them.
 - Use existing dictionaries and translated limit messages. Examples must match actual tool behavior, including locale-sensitive case conversion and exact numbers.

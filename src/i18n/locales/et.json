@@ -645,5 +645,17 @@
   "anagramNo": "Tekstid ei ole anagrammid.",
   "palindromeYes": "Tekst on palindroom.",
   "palindromeNo": "Tekst ei ole palindroom.",
-  "textCheckInvalid": "Kontrolli sisendit ja piire. Võrdlustekst ei tohi pärast filtreerimist tühi olla; brauser peab toetama Unicode'i segmenteerimist."
+  "textCheckInvalid": "Kontrolli sisendit ja piire. Võrdlustekst ei tohi pärast filtreerimist tühi olla; brauser peab toetama Unicode'i segmenteerimist.",
+  "fileHashTitle": "Faili SHA-256 kontroll",
+  "fileHashDesc": "Arvuta faili algsete baitide räsi kohapeal ja võrdle seda etteantud räsiga. Vastavus ei taga ohutust.",
+  "fileHashFile": "Fail",
+  "fileHashLimits": "Üks fail, kuni 50 MiB. Tühjad failid sobivad; kogu fail laaditakse mällu.",
+  "fileHashExpected": "Oodatud SHA-256 (valikuline)",
+  "fileHashWorking": "Faili räsi arvutamine…",
+  "fileHashMatch": "Räsid ühtivad.",
+  "fileHashMismatch": "Räsid ei ühti.",
+  "fileHashInvalidExpected": "Oodatud räsi peab sisaldama täpselt 64 kuueteistkümnendsüsteemi märki.",
+  "fileHashInvalidFile": "Vali üks kuni 50 MiB fail.",
+  "fileHashFailed": "Toimingut ei saanud lõpetada. Kasuta ajakohast Web Crypto toega brauserit ja HTTPS-i.",
+  "fileHashClear": "Tühjenda"
 }
