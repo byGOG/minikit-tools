@@ -63,6 +63,7 @@ for(const tool of tools){
   const intro='<section class="seo-guide" aria-labelledby="guide-title"><nav aria-label="Breadcrumb"><a href="'+siteBase+locale.path+'">'+esc(d.navCta||dictionaries.en.navCta)+'</a> / '+esc(titleText)+'</nav><h1 id="guide-title">'+esc(titleText)+'</h1><p>'+esc(descText)+'</p><h2>'+esc(words[0])+'</h2><ol>'+steps+'</ol>'+
    (tool.slug==='image-converter'?'<h2>'+esc(words[4])+'</h2><div class="format-grid"><article><b>WebP</b><p>'+esc(words[5])+'</p></article><article><b>JPEG</b><p>'+esc(words[6])+'</p></article><article><b>PNG</b><p>'+esc(words[7])+'</p></article></div>':'')+
    (guides[tool.slug]?.[locale.code]?'<h2>'+esc(guides[tool.slug][locale.code].heading)+'</h2><p>'+esc(guides[tool.slug][locale.code].text)+'</p>':'')+
+   (['json-to-yaml','yaml-to-json','json-compare'].includes(tool.slug)?'<p class="guide-limits">'+esc(d.structuredLimits)+'</p>':'')+
    '<a class="button-primary" href="'+target+'">'+esc(d.navCta||dictionaries.en.navCta)+'</a></section>';
   html=html.replace('<main id="top">','<main id="top">'+intro);
   const privacyAnswer=d.privacyLead;

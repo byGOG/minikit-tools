@@ -16,8 +16,8 @@
     "RGB: 255, 0, 0\nHSL: 0, 100%, 50%"
   ],
   "case-converter": [
-    "MiniKit",
-    "MINIKIT"
+    "hello",
+    "HELLO"
   ],
   "duplicate-line-remover": [
     "A\nA\nB",
@@ -145,7 +145,7 @@
   ],
   "json-compare": [
     "{\"a\":1} ↔ {\"a\":2}",
-    "a: 1 → 2"
+    "[\n  {\n    \"path\": \"/a\",\n    \"kind\": \"changed\",\n    \"before\": 1,\n    \"after\": 2\n  }\n]"
   ],
   "html-to-markdown": [
     "<h1>Hello</h1>",
