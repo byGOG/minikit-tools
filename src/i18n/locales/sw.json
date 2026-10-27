@@ -664,5 +664,14 @@
   "loremWordsPerParagraph": "Maneno kwa aya",
   "loremLimits": "Aya 1–50, kila moja maneno 5–200; hadi maneno 10,000. Matokeo ni maandishi ya mfano ya Kilatini bila kujali lugha ya kiolesura.",
   "loremGenerate": "Tengeneza maandishi",
-  "loremInvalid": "Weka namba kamili: aya 1–50 na maneno 5–200 kwa kila aya."
+  "loremInvalid": "Weka namba kamili: aya 1–50 na maneno 5–200 kwa kila aya.",
+  "romanTitle": "Kibadilishaji cha nambari za Kirumi",
+  "romanDesc": "Badilisha nambari kamili 1–3999 kuwa nambari za Kirumi na kurudi kwenye kifaa.",
+  "romanMode": "Mwelekeo wa ubadilishaji",
+  "romanToRoman": "Nambari kwenda Kirumi",
+  "romanToDecimal": "Kirumi kwenda nambari",
+  "romanInput": "Thamani ya kubadilisha",
+  "romanLimits": "Nambari kamili 1–3999; nambari za Kirumi sanifu I–MMMCMXCIX. Hadi vibambo 100 vya ingizo. Tarakimu/herufi za ASCII pekee; herufi ndogo zinakubaliwa.",
+  "romanConvert": "Badilisha",
+  "romanInvalid": "Weka nambari kamili 1–3999 au nambari halali ya Kirumi sanifu kwa mwelekeo uliochaguliwa. Hadi vibambo 100; bila ishara, sehemu au mistari ya juu."
 }

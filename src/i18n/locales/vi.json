@@ -664,5 +664,14 @@
   "loremWordsPerParagraph": "Số từ mỗi đoạn",
   "loremLimits": "1–50 đoạn, mỗi đoạn 5–200 từ; tối đa 10.000 từ. Kết quả là văn bản mẫu tiếng Latin, bất kể ngôn ngữ giao diện.",
   "loremGenerate": "Tạo văn bản",
-  "loremInvalid": "Nhập số nguyên: 1–50 đoạn và 5–200 từ mỗi đoạn."
+  "loremInvalid": "Nhập số nguyên: 1–50 đoạn và 5–200 từ mỗi đoạn.",
+  "romanTitle": "Chuyển đổi số La Mã",
+  "romanDesc": "Chuyển đổi cục bộ số nguyên 1–3999 sang số La Mã và ngược lại.",
+  "romanMode": "Chiều chuyển đổi",
+  "romanToRoman": "Số sang số La Mã",
+  "romanToDecimal": "Số La Mã sang số",
+  "romanInput": "Giá trị cần chuyển",
+  "romanLimits": "Số nguyên 1–3999; số La Mã chuẩn I–MMMCMXCIX. Tối đa 100 ký tự đầu vào. Chỉ chữ số/chữ cái ASCII; chấp nhận chữ thường.",
+  "romanConvert": "Chuyển đổi",
+  "romanInvalid": "Nhập số nguyên 1–3999 hoặc số La Mã chuẩn hợp lệ theo chiều đã chọn. Tối đa 100 ký tự; không có dấu, phân số hoặc gạch trên."
 }

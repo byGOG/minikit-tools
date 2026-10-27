@@ -664,5 +664,14 @@
   "loremWordsPerParagraph": "Sõnu lõigus",
   "loremLimits": "1–50 lõiku, igaühes 5–200 sõna; kuni 10 000 sõna. Väljund on ladinakeelne kohatäitetekst olenemata liidese keelest.",
   "loremGenerate": "Loo tekst",
-  "loremInvalid": "Sisesta täisarvud: 1–50 lõiku ja 5–200 sõna lõigus."
+  "loremInvalid": "Sisesta täisarvud: 1–50 lõiku ja 5–200 sõna lõigus.",
+  "romanTitle": "Rooma numbrite teisendaja",
+  "romanDesc": "Teisenda täisarve 1–3999 kohapeal Rooma numbriteks ja tagasi.",
+  "romanMode": "Teisenduse suund",
+  "romanToRoman": "Arv Rooma numbriteks",
+  "romanToDecimal": "Rooma numbrid arvuks",
+  "romanInput": "Teisendatav väärtus",
+  "romanLimits": "Täisarvud 1–3999; standardsed Rooma numbrid I–MMMCMXCIX. Kuni 100 sisendmärki. Ainult ASCII numbrid/tähed; väiketähed sobivad.",
+  "romanConvert": "Teisenda",
+  "romanInvalid": "Sisesta valitud suunas täisarv 1–3999 või kehtiv standardne Rooma arv. Kuni 100 märki; ilma märkide, murdude ja ülakriipsudeta."
 }

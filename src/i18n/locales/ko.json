@@ -664,5 +664,14 @@
   "loremWordsPerParagraph": "문단당 단어 수",
   "loremLimits": "1–50개 문단, 문단당 5–200단어, 최대 10,000단어. 인터페이스 언어와 관계없이 라틴어 자리 채움 텍스트가 출력됩니다.",
   "loremGenerate": "텍스트 생성",
-  "loremInvalid": "정수를 입력하세요: 1–50개 문단, 문단당 5–200단어."
+  "loremInvalid": "정수를 입력하세요: 1–50개 문단, 문단당 5–200단어.",
+  "romanTitle": "로마 숫자 변환기",
+  "romanDesc": "1–3999의 정수를 로마 숫자로, 또는 그 반대로 로컬에서 변환합니다.",
+  "romanMode": "변환 방향",
+  "romanToRoman": "정수를 로마 숫자로",
+  "romanToDecimal": "로마 숫자를 정수로",
+  "romanInput": "변환할 값",
+  "romanLimits": "정수 1–3999, 표준 로마 숫자 I–MMMCMXCIX. 입력 최대 100자. ASCII 숫자와 영문자만 허용하며 소문자도 가능합니다.",
+  "romanConvert": "변환",
+  "romanInvalid": "선택한 방향에 맞게 1–3999의 정수 또는 유효한 표준 로마 숫자를 입력하세요. 최대 100자이며 부호, 분수, 윗줄은 허용되지 않습니다."
 }

@@ -664,5 +664,14 @@
   "loremWordsPerParagraph": "Woorde per paragraaf",
   "loremLimits": "1–50 paragrawe, elk 5–200 woorde; hoogstens 10 000 woorde. Die uitvoer is Latynse plekhouerteks, ongeag die koppelvlaktaal.",
   "loremGenerate": "Skep teks",
-  "loremInvalid": "Voer heelgetalle in: 1–50 paragrawe en 5–200 woorde per paragraaf."
+  "loremInvalid": "Voer heelgetalle in: 1–50 paragrawe en 5–200 woorde per paragraaf.",
+  "romanTitle": "Romeinse syferomskakelaar",
+  "romanDesc": "Skakel heelgetalle 1–3999 plaaslik na Romeinse syfers en terug om.",
+  "romanMode": "Omskakelrigting",
+  "romanToRoman": "Getal na Romeinse syfers",
+  "romanToDecimal": "Romeinse syfers na getal",
+  "romanInput": "Waarde om om te skakel",
+  "romanLimits": "Heelgetalle 1–3999; standaard Romeinse syfers I–MMMCMXCIX. Hoogstens 100 invoerkarakters. Slegs ASCII-syfers/letters; kleinletters word aanvaar.",
+  "romanConvert": "Skakel om",
+  "romanInvalid": "Voer ’n heelgetal 1–3999 of geldige standaard Romeinse syfers in die gekose rigting in. Hoogstens 100 karakters; geen tekens, breuke of bostrepe nie."
 }

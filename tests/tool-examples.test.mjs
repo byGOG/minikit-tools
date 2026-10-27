@@ -4,6 +4,7 @@ import {readFile} from 'node:fs/promises';
 import {changeCase} from '../src/scripts/text-tools.ts';
 import {compareJson} from '../src/scripts/structured-core.ts';
 import {generateLoremIpsum} from '../src/scripts/lorem-ipsum-core.ts';
+import {convertRoman} from '../src/scripts/roman-numerals-core.ts';
 
 const examples=JSON.parse(await readFile(new URL('../src/data/tool-examples.json',import.meta.url),'utf8'));
 const locales=JSON.parse(await readFile(new URL('../src/i18n/catalog.json',import.meta.url),'utf8'));
@@ -26,4 +27,10 @@ test('published Lorem Ipsum example matches the generated text',()=>{
  const [input,expected]=examples['lorem-ipsum-generator'];
  assert.equal(input,'1 × 5');
  assert.equal(generateLoremIpsum(1,5),expected);
+});
+
+test('published Roman numeral example works in both directions',()=>{
+ const [input,expected]=examples['roman-numeral-converter'];
+ assert.equal(convertRoman(input,'to-roman'),expected);
+ assert.equal(convertRoman(expected,'to-decimal'),input);
 });

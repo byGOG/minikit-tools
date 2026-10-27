@@ -664,5 +664,14 @@
   "loremWordsPerParagraph": "Palabras por párrafo",
   "loremLimits": "1–50 párrafos de 5–200 palabras; máximo 10.000 palabras. El resultado es texto de relleno en latín, independientemente del idioma de la interfaz.",
   "loremGenerate": "Generar texto",
-  "loremInvalid": "Introduce números enteros: 1–50 párrafos y 5–200 palabras por párrafo."
+  "loremInvalid": "Introduce números enteros: 1–50 párrafos y 5–200 palabras por párrafo.",
+  "romanTitle": "Conversor de números romanos",
+  "romanDesc": "Convierte localmente números enteros del 1 al 3999 a números romanos y viceversa.",
+  "romanMode": "Dirección de conversión",
+  "romanToRoman": "Número a números romanos",
+  "romanToDecimal": "Números romanos a número",
+  "romanInput": "Valor a convertir",
+  "romanLimits": "Enteros 1–3999; números romanos estándar I–MMMCMXCIX. Hasta 100 caracteres de entrada. Solo dígitos/letras ASCII; se aceptan minúsculas.",
+  "romanConvert": "Convertir",
+  "romanInvalid": "Introduce un entero 1–3999 o un número romano estándar válido en la dirección seleccionada. Hasta 100 caracteres; sin signos, fracciones ni rayas superiores."
 }

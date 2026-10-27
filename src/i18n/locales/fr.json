@@ -664,5 +664,14 @@
   "loremWordsPerParagraph": "Mots par paragraphe",
   "loremLimits": "1–50 paragraphes de 5–200 mots ; au maximum 10 000 mots. Le résultat reste du texte de remplissage en latin, quelle que soit la langue de l’interface.",
   "loremGenerate": "Générer le texte",
-  "loremInvalid": "Saisissez des nombres entiers : 1–50 paragraphes et 5–200 mots par paragraphe."
+  "loremInvalid": "Saisissez des nombres entiers : 1–50 paragraphes et 5–200 mots par paragraphe.",
+  "romanTitle": "Convertisseur de chiffres romains",
+  "romanDesc": "Convertissez localement les entiers de 1 à 3999 en chiffres romains et inversement.",
+  "romanMode": "Sens de conversion",
+  "romanToRoman": "Nombre vers chiffres romains",
+  "romanToDecimal": "Chiffres romains vers nombre",
+  "romanInput": "Valeur à convertir",
+  "romanLimits": "Entiers 1–3999 ; chiffres romains standard I–MMMCMXCIX. Jusqu’à 100 caractères en entrée. Chiffres/lettres ASCII uniquement ; minuscules acceptées.",
+  "romanConvert": "Convertir",
+  "romanInvalid": "Saisissez un entier 1–3999 ou un nombre romain standard valide dans le sens choisi. Jusqu’à 100 caractères ; sans signes, fractions ni barres supérieures."
 }

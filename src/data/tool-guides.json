@@ -868,5 +868,15 @@
       "heading": "Exact paragraph and word counts for layout mockups",
       "text": "Lorem Ipsum fills text areas in page and application mockups; it is not a factual article or a Latin translation. Output remains Latin placeholder text regardless of the interface language. Enter whole numbers: 1–50 paragraphs and 5–200 words per paragraph, up to 10,000 words total. Words are counted as whitespace-separated tokens; paragraphs are separated by a blank line. The same settings produce the same text. Defaults are 3 paragraphs with 50 words each. Generation runs locally in your browser; no text is uploaded. Changing an input invalidates the old output. Copy the text, or use Clear to remove the output and restore the 3/50 defaults."
     }
+  },
+  "roman-numeral-converter": {
+    "tr": {
+      "heading": "Standart Roma rakamları ve 1–3999 arası tam sayılar",
+      "text": "Yönü seçip dönüştürülecek değeri gir. Araç yalnız 1–3999 arası pozitif tam sayıları ve I–MMMCMXCIX arası standart Roma rakamlarını destekler; tüm tarihsel yazım çeşitlerini kapsamaz. Sıfır, negatif sayı, kesir, işaret ve üst çizgili gösterim desteklenmez. Sayı yönünde yalnız ASCII 0–9 rakamları kabul edilir; baştaki sıfırlar geçerlidir: 0026 → XXVI. Roma rakamları yönünde ASCII I, V, X, L, C, D, M harfleri büyük veya küçük yazılabilir; baştaki ve sondaki boşluklar kırpılır. Yalnız IV, IX, XL, XC, CD ve CM çıkarımlarıyla standart yazım geçerlidir; IIII, IL, IC, VV, IIV ve MMMM reddedilir. Unicode Roma rakamı simgeleri desteklenmez. Ham giriş boşluklar dâhil en fazla 100 karakter olabilir. İşlem tarayıcıda yerel yapılır; giriş sunucuya gönderilmez. Giriş veya yön değişince önceki sonuç geçersiz olur. Temizle, girişi ve sonucu silip sayıdan Roma rakamına yönünü geri yükler."
+    },
+    "en": {
+      "heading": "Standard Roman numerals and whole numbers from 1 to 3999",
+      "text": "Choose a direction and enter the value to convert. This tool supports only positive whole numbers 1–3999 and standard Roman numerals I–MMMCMXCIX; it does not cover every historical notation variant. Zero, negative numbers, fractions, signs and overline notation are unsupported. Number input accepts only ASCII digits 0–9; leading zeros are allowed: 0026 → XXVI. Roman input accepts the ASCII letters I, V, X, L, C, D and M in either case; leading and trailing whitespace is trimmed. Only standard notation with the subtractive pairs IV, IX, XL, XC, CD and CM is accepted; IIII, IL, IC, VV, IIV and MMMM are rejected. Unicode Roman numeral symbols are unsupported. Raw input, including whitespace, is limited to 100 characters. Conversion runs locally in your browser; input is not sent to a server. Changing the input or direction invalidates the previous result. Clear removes input and output and restores the number-to-Roman direction."
+    }
   }
 }

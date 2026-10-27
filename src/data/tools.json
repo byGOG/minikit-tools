@@ -1042,5 +1042,17 @@
       "loremGenerate"
     ],
     "category": "text"
+  },
+  {
+    "slug": "roman-numeral-converter",
+    "title": "romanTitle",
+    "desc": "romanDesc",
+    "anchor": "roman-numeral-tool",
+    "steps": [
+      "romanMode",
+      "romanInput",
+      "romanConvert"
+    ],
+    "category": "daily"
   }
 ]
