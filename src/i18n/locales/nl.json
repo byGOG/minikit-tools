@@ -682,5 +682,14 @@
   "morseInput": "Invoer",
   "morseLimits": "Tekst: maximaal 1000 tekens, alleen A–Z en 0–9. Morse: maximaal 6000 tekens. Scheid letters met spaties en woorden met /. Gedecodeerde tekst is in hoofdletters.",
   "morseConvert": "Omzetten",
-  "morseInvalid": "Controleer richting, tekens en grenzen: 1000 teksttekens, 6000 morsetekens. Gebruik spaties tussen lettercodes en / tussen woorden."
+  "morseInvalid": "Controleer richting, tekens en grenzen: 1000 teksttekens, 6000 morsetekens. Gebruik spaties tussen lettercodes en / tussen woorden.",
+  "gradientTitle": "CSS-kleurverloopgenerator",
+  "gradientDesc": "Maak een lineair verloop met twee kleuren, bekijk het voorbeeld en kopieer de CSS lokaal.",
+  "gradientStart": "Beginkleur",
+  "gradientEnd": "Eindkleur",
+  "gradientAngle": "Hoek in graden",
+  "gradientLimits": "Gebruik HEX-kleuren #RGB of #RRGGBB en een gehele hoek van 0–360°. Twee ondoorzichtige kleuren; alleen lineaire verlopen.",
+  "gradientGenerate": "Verloop genereren",
+  "gradientPreview": "Voorbeeld van verloop",
+  "gradientInvalid": "Voer geldige #RGB/#RRGGBB-kleuren en een gehele hoek van 0–360° in. Elke kleurinvoer mag maximaal 32 tekens bevatten."
 }

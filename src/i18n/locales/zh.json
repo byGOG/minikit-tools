@@ -682,5 +682,14 @@
   "morseInput": "输入",
   "morseLimits": "文本：最多 1000 个字符，仅限 A–Z 和 0–9。电码：最多 6000 个字符。字母编码间用空格，单词间用 /。解码文本为大写。",
   "morseConvert": "转换",
-  "morseInvalid": "请检查方向、支持字符和限制：文本 1000 个字符，电码 6000 个字符。字母编码间用空格，单词间用 /。"
+  "morseInvalid": "请检查方向、支持字符和限制：文本 1000 个字符，电码 6000 个字符。字母编码间用空格，单词间用 /。",
+  "gradientTitle": "CSS 渐变生成器",
+  "gradientDesc": "创建双色线性渐变，在本地预览并复制 CSS。",
+  "gradientStart": "起始颜色",
+  "gradientEnd": "结束颜色",
+  "gradientAngle": "角度（度）",
+  "gradientLimits": "使用 #RGB 或 #RRGGBB HEX 颜色及 0–360° 整数角度。仅支持两种不透明颜色的线性渐变。",
+  "gradientGenerate": "生成渐变",
+  "gradientPreview": "渐变预览",
+  "gradientInvalid": "请输入有效的 #RGB/#RRGGBB 颜色及 0–360° 整数角度。每个颜色输入最多 32 个字符。"
 }

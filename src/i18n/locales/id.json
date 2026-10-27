@@ -682,5 +682,14 @@
   "morseInput": "Masukan",
   "morseLimits": "Teks: maksimal 1000 karakter, hanya A–Z dan 0–9. Morse: maksimal 6000 karakter. Pisahkan huruf dengan spasi dan kata dengan /. Teks hasil dekode memakai huruf besar.",
   "morseConvert": "Konversi",
-  "morseInvalid": "Periksa arah, karakter dan batas: 1000 karakter teks, 6000 karakter Morse. Gunakan spasi antar kode huruf dan / antar kata."
+  "morseInvalid": "Periksa arah, karakter dan batas: 1000 karakter teks, 6000 karakter Morse. Gunakan spasi antar kode huruf dan / antar kata.",
+  "gradientTitle": "Pembuat gradien CSS",
+  "gradientDesc": "Buat gradien linear dua warna, pratinjau dan salin CSS secara lokal.",
+  "gradientStart": "Warna awal",
+  "gradientEnd": "Warna akhir",
+  "gradientAngle": "Sudut dalam derajat",
+  "gradientLimits": "Gunakan warna HEX #RGB atau #RRGGBB dan sudut bilangan bulat 0–360°. Dua warna opak; hanya gradien linear.",
+  "gradientGenerate": "Buat gradien",
+  "gradientPreview": "Pratinjau gradien",
+  "gradientInvalid": "Masukkan warna #RGB/#RRGGBB yang valid dan sudut bilangan bulat 0–360°. Setiap masukan warna maksimal 32 karakter."
 }

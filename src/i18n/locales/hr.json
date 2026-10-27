@@ -682,5 +682,14 @@
   "morseInput": "Unos",
   "morseLimits": "Tekst: do 1000 znakova, samo A–Z i 0–9. Morse: do 6000 znakova. Slova odvojite razmacima, riječi znakom /. Dekodirani tekst je velikim slovima.",
   "morseConvert": "Pretvori",
-  "morseInvalid": "Provjerite smjer, znakove i ograničenja: 1000 tekstualnih znakova, 6000 Morseovih znakova. Razmaci između kodova slova, / između riječi."
+  "morseInvalid": "Provjerite smjer, znakove i ograničenja: 1000 tekstualnih znakova, 6000 Morseovih znakova. Razmaci između kodova slova, / između riječi.",
+  "gradientTitle": "Generator CSS prijelaza boja",
+  "gradientDesc": "Izradite linearni prijelaz s dvije boje, pregledajte ga i lokalno kopirajte CSS.",
+  "gradientStart": "Početna boja",
+  "gradientEnd": "Završna boja",
+  "gradientAngle": "Kut u stupnjevima",
+  "gradientLimits": "Upotrijebite HEX boje #RGB ili #RRGGBB i cjelobrojni kut 0–360°. Dvije neprozirne boje; samo linearni prijelazi.",
+  "gradientGenerate": "Generiraj prijelaz",
+  "gradientPreview": "Pregled prijelaza",
+  "gradientInvalid": "Unesite valjane boje #RGB/#RRGGBB i cjelobrojni kut 0–360°. Svaki unos boje smije imati najviše 32 znaka."
 }

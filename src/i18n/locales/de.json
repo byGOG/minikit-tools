@@ -682,5 +682,14 @@
   "morseInput": "Eingabe",
   "morseLimits": "Text: bis zu 1000 Zeichen, nur A–Z und 0–9. Morse: bis zu 6000 Zeichen. Buchstaben mit Leerzeichen, Wörter mit / trennen. Decodierter Text ist in Großbuchstaben.",
   "morseConvert": "Umwandeln",
-  "morseInvalid": "Prüfe Richtung, Zeichen und Grenzen: 1000 Textzeichen, 6000 Morsezeichen. Leerzeichen zwischen Buchstabencodes und / zwischen Wörtern verwenden."
+  "morseInvalid": "Prüfe Richtung, Zeichen und Grenzen: 1000 Textzeichen, 6000 Morsezeichen. Leerzeichen zwischen Buchstabencodes und / zwischen Wörtern verwenden.",
+  "gradientTitle": "CSS-Farbverlaufsgenerator",
+  "gradientDesc": "Erstelle einen linearen Verlauf mit zwei Farben, zeige die Vorschau und kopiere das CSS lokal.",
+  "gradientStart": "Startfarbe",
+  "gradientEnd": "Endfarbe",
+  "gradientAngle": "Winkel in Grad",
+  "gradientLimits": "Nutze HEX-Farben im Format #RGB oder #RRGGBB und einen ganzzahligen Winkel von 0–360°. Zwei deckende Farben; nur lineare Verläufe.",
+  "gradientGenerate": "Verlauf erstellen",
+  "gradientPreview": "Verlaufsvorschau",
+  "gradientInvalid": "Gib gültige #RGB/#RRGGBB-Farben und einen ganzzahligen Winkel von 0–360° ein. Jede Farbeingabe darf höchstens 32 Zeichen enthalten."
 }

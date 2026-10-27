@@ -57,4 +57,10 @@ Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, do
 
 | İş | Sahip | Kabul ölçütü | Durum |
 |---|---|---|---|
-| TOOL-004 | Yeni araç geliştirici + içerik + kalite | A–Z/0–9 iki yönlü Mors, ham 1000/6000 karakter sınırı, boş kelime ve bilinmeyen kodu reddetme, 50 dil, rehber, bağımsız test ve canlı kontrol | Kod, 130 birim ve 53 dil testi tamam; yeni Mors tarayıcı kontrolleri geçti. Tam Linux CI ve canlı yayın kanıtı sonuç raporunda. |
+| TOOL-004 | Yeni araç geliştirici + içerik + kalite | A–Z/0–9 iki yönlü Mors, ham 1000/6000 karakter sınırı, boş kelime ve bilinmeyen kodu reddetme, 50 dil, rehber, bağımsız test ve canlı kontrol | Tamamlandı; PR #43 birleştirildi. Linux CI 130 birim + 53 dil + 238 tarayıcı, önizleme ve canlıda 10’ar kontrol geçti. |
+
+## CSS renk geçişi turu — 27 Ekim 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| TOOL-005 | Yeni araç geliştirici + içerik + kalite | İki HEX renk ve 0–360° tam sayı açı, güvenli önizleme/CSS kopyalama, renk seçici eşitleme, 50 dil, rehber, bağımsız test ve canlı kontrol | Kod, 134 birim, 53 dil ve yeni araca ait 10 tarayıcı kontrolü tamam; tam Linux CI ve canlı yayın kanıtı sonuç raporunda. |

@@ -682,5 +682,14 @@
   "morseInput": "Indata",
   "morseLimits": "Text: högst 1000 tecken, endast A–Z och 0–9. Morse: högst 6000 tecken. Skilj bokstäver med mellanslag och ord med /. Avkodad text är i versaler.",
   "morseConvert": "Omvandla",
-  "morseInvalid": "Kontrollera riktning, tecken och gränser: 1000 texttecken, 6000 morsetecken. Använd mellanslag mellan bokstavskoder och / mellan ord."
+  "morseInvalid": "Kontrollera riktning, tecken och gränser: 1000 texttecken, 6000 morsetecken. Använd mellanslag mellan bokstavskoder och / mellan ord.",
+  "gradientTitle": "CSS-gradientgenerator",
+  "gradientDesc": "Skapa en linjär gradient med två färger, förhandsvisa den och kopiera CSS lokalt.",
+  "gradientStart": "Startfärg",
+  "gradientEnd": "Slutfärg",
+  "gradientAngle": "Vinkel i grader",
+  "gradientLimits": "Använd HEX-färger #RGB eller #RRGGBB och en heltalsvinkel på 0–360°. Två ogenomskinliga färger; endast linjära gradienter.",
+  "gradientGenerate": "Generera gradient",
+  "gradientPreview": "Förhandsvisning av gradient",
+  "gradientInvalid": "Ange giltiga #RGB/#RRGGBB-färger och en heltalsvinkel på 0–360°. Varje färginmatning får innehålla högst 32 tecken."
 }

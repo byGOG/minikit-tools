@@ -682,5 +682,14 @@
   "morseInput": "Intrare",
   "morseLimits": "Text: cel mult 1000 de caractere, doar A–Z și 0–9. Morse: cel mult 6000 de caractere. Separă literele prin spații și cuvintele prin /. Textul decodat este cu majuscule.",
   "morseConvert": "Convertește",
-  "morseInvalid": "Verifică direcția, caracterele și limitele: 1000 de caractere text, 6000 Morse. Spații între codurile literelor și / între cuvinte."
+  "morseInvalid": "Verifică direcția, caracterele și limitele: 1000 de caractere text, 6000 Morse. Spații între codurile literelor și / între cuvinte.",
+  "gradientTitle": "Generator de gradiente CSS",
+  "gradientDesc": "Creează un gradient liniar cu două culori, previzualizează-l și copiază CSS local.",
+  "gradientStart": "Culoare inițială",
+  "gradientEnd": "Culoare finală",
+  "gradientAngle": "Unghi în grade",
+  "gradientLimits": "Folosește culori HEX #RGB sau #RRGGBB și un unghi întreg 0–360°. Două culori opace; doar gradiente liniare.",
+  "gradientGenerate": "Generează gradient",
+  "gradientPreview": "Previzualizare gradient",
+  "gradientInvalid": "Introdu culori #RGB/#RRGGBB valide și un unghi întreg 0–360°. Fiecare intrare de culoare poate avea cel mult 32 de caractere."
 }

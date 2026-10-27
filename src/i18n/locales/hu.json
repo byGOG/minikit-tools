@@ -682,5 +682,14 @@
   "morseInput": "Bemenet",
   "morseLimits": "Szöveg: legfeljebb 1000 karakter, csak A–Z és 0–9. Morze: legfeljebb 6000 karakter. Betűk között szóköz, szavak között / legyen. A dekódolt szöveg nagybetűs.",
   "morseConvert": "Átalakítás",
-  "morseInvalid": "Ellenőrizze az irányt, karaktereket és korlátokat: 1000 szövegkarakter, 6000 morzekarakter. Betűkódok között szóköz, szavak között / legyen."
+  "morseInvalid": "Ellenőrizze az irányt, karaktereket és korlátokat: 1000 szövegkarakter, 6000 morzekarakter. Betűkódok között szóköz, szavak között / legyen.",
+  "gradientTitle": "CSS színátmenet-generátor",
+  "gradientDesc": "Készítsen kétszínű lineáris átmenetet, tekintse meg, és másolja a CSS-t helyben.",
+  "gradientStart": "Kezdőszín",
+  "gradientEnd": "Végszín",
+  "gradientAngle": "Szög fokban",
+  "gradientLimits": "Használjon #RGB vagy #RRGGBB HEX színeket és 0–360° közötti egész szöget. Két átlátszatlan szín; csak lineáris átmenetek.",
+  "gradientGenerate": "Átmenet létrehozása",
+  "gradientPreview": "Átmenet előnézete",
+  "gradientInvalid": "Adjon meg érvényes #RGB/#RRGGBB színeket és 0–360° közötti egész szöget. Színenként legfeljebb 32 karakter adható meg."
 }

@@ -682,5 +682,14 @@
   "morseInput": "Input",
   "morseLimits": "Tekst: højst 1000 tegn, kun A–Z og 0–9. Morse: højst 6000 tegn. Adskil bogstaver med mellemrum og ord med /. Afkodet tekst er med store bogstaver.",
   "morseConvert": "Konvertér",
-  "morseInvalid": "Kontrollér retning, tegn og grænser: 1000 teksttegn, 6000 morsetegn. Brug mellemrum mellem bogstavkoder og / mellem ord."
+  "morseInvalid": "Kontrollér retning, tegn og grænser: 1000 teksttegn, 6000 morsetegn. Brug mellemrum mellem bogstavkoder og / mellem ord.",
+  "gradientTitle": "CSS-gradientgenerator",
+  "gradientDesc": "Opret en lineær gradient med to farver, se forhåndsvisning og kopiér CSS lokalt.",
+  "gradientStart": "Startfarve",
+  "gradientEnd": "Slutfarve",
+  "gradientAngle": "Vinkel i grader",
+  "gradientLimits": "Brug HEX-farver som #RGB eller #RRGGBB og en heltalsvinkel på 0–360°. To uigennemsigtige farver; kun lineære gradienter.",
+  "gradientGenerate": "Generér gradient",
+  "gradientPreview": "Forhåndsvisning af gradient",
+  "gradientInvalid": "Indtast gyldige #RGB/#RRGGBB-farver og en heltalsvinkel på 0–360°. Hver farveindtastning må højst indeholde 32 tegn."
 }

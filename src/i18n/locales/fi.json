@@ -682,5 +682,14 @@
   "morseInput": "Syöte",
   "morseLimits": "Teksti: enintään 1000 merkkiä, vain A–Z ja 0–9. Morse: enintään 6000 merkkiä. Erota kirjaimet välilyönneillä ja sanat merkillä /. Purettu teksti on suuraakkosin.",
   "morseConvert": "Muunna",
-  "morseInvalid": "Tarkista suunta, merkit ja rajat: 1000 tekstimerkkiä, 6000 morsemerkkiä. Erota kirjainkoodit välilyönneillä ja sanat merkillä /."
+  "morseInvalid": "Tarkista suunta, merkit ja rajat: 1000 tekstimerkkiä, 6000 morsemerkkiä. Erota kirjainkoodit välilyönneillä ja sanat merkillä /.",
+  "gradientTitle": "CSS-liukuvärigeneraattori",
+  "gradientDesc": "Luo kaksivärinen lineaarinen liukuväri, esikatsele se ja kopioi CSS paikallisesti.",
+  "gradientStart": "Alkuväri",
+  "gradientEnd": "Loppuväri",
+  "gradientAngle": "Kulma asteina",
+  "gradientLimits": "Käytä HEX-värejä #RGB tai #RRGGBB ja kokonaislukukulmaa 0–360°. Kaksi peittävää väriä; vain lineaariset liukuvärit.",
+  "gradientGenerate": "Luo liukuväri",
+  "gradientPreview": "Liukuvärin esikatselu",
+  "gradientInvalid": "Anna kelvolliset #RGB/#RRGGBB-värit ja kokonaislukukulma 0–360°. Kukin värisyöte saa sisältää enintään 32 merkkiä."
 }

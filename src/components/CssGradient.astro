@@ -1,0 +1,37 @@
+---
+import { Palette, ShieldCheck, ArrowRight } from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const str = (key: string) => (tr as Record<string, string>)[key] ?? key;
+---
+<article class="tool-card css-gradient-card" id="css-gradient-tool">
+  <div class="card-top"><span class="tool-icon icon-blue"><Palette size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="gradientTitle">{str('gradientTitle')}</h3>
+  <p data-i18n="gradientDesc">{str('gradientDesc')}</p>
+  <div class="gradient-options">
+    <div><label class="field-label" for="gradient-start" data-i18n="gradientStart">{str('gradientStart')}</label><div class="gradient-color-pair"><input class="text-input" id="gradient-start" type="text" value="#155c42" dir="ltr" autocomplete="off" spellcheck="false" aria-describedby="gradient-limits"/><input id="gradient-start-picker" type="color" value="#155c42" aria-label={str('gradientStart')} data-i18n-aria="gradientStart"/></div></div>
+    <div><label class="field-label" for="gradient-end" data-i18n="gradientEnd">{str('gradientEnd')}</label><div class="gradient-color-pair"><input class="text-input" id="gradient-end" type="text" value="#c7f36b" dir="ltr" autocomplete="off" spellcheck="false" aria-describedby="gradient-limits"/><input id="gradient-end-picker" type="color" value="#c7f36b" aria-label={str('gradientEnd')} data-i18n-aria="gradientEnd"/></div></div>
+  </div>
+  <label class="field-label" for="gradient-angle" data-i18n="gradientAngle">{str('gradientAngle')}</label>
+  <input class="text-input" id="gradient-angle" type="number" min="0" max="360" step="1" value="90" required aria-describedby="gradient-limits"/>
+  <small class="gradient-hint" id="gradient-limits" data-i18n="gradientLimits">{str('gradientLimits')}</small>
+  <button class="button-primary full" id="gradient-generate" data-i18n="gradientGenerate">{str('gradientGenerate')}</button>
+  <p class="field-label gradient-result-label" data-i18n="gradientPreview">{str('gradientPreview')}</p>
+  <div id="gradient-preview" class="gradient-preview" role="img" aria-label={str('gradientPreview')} data-i18n-aria="gradientPreview"></div>
+  <label class="field-label gradient-result-label" for="gradient-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="gradient-output" readonly dir="ltr" spellcheck="false"></textarea>
+  <p class="tool-feedback" id="gradient-feedback" role="status" aria-live="polite"></p>
+  <div class="text-tool-actions"><button class="button-secondary full" id="gradient-copy" data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id="gradient-clear" data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="css-gradient-generator" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
+<style is:global>
+.gradient-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.gradient-color-pair{display:flex;align-items:center;gap:8px}
+.gradient-color-pair .text-input{width:100%;min-width:0}
+.gradient-color-pair input[type=color]{width:44px;height:42px;flex-shrink:0;border:1px solid #cbd5ce;border-radius:8px;background:#fff;padding:3px;cursor:pointer}
+.gradient-hint{display:block;font-size:12px;line-height:1.65;color:#526258;margin:10px 0 14px}
+.gradient-preview{height:160px;min-width:0;border:1px solid #cbd5ce;border-radius:12px;background-color:#e5e7eb;background-image:none}
+.gradient-result-label{margin-top:14px}
+.css-gradient-card textarea{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;min-height:100px;overflow-wrap:anywhere}
+@media(max-width:440px){.gradient-options{grid-template-columns:1fr}}
+</style>

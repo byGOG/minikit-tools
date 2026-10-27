@@ -682,5 +682,14 @@
   "morseInput": "Input",
   "morseLimits": "Teksto: hanggang 1000 character, A–Z at 0–9 lang. Morse: hanggang 6000 character. Paghiwalayin ang mga titik gamit ang espasyo at salita gamit ang /. Malalaking titik ang na-decode na teksto.",
   "morseConvert": "I-convert",
-  "morseInvalid": "Suriin ang direksiyon, character at limitasyon: 1000 character ng teksto, 6000 ng Morse. Gumamit ng espasyo sa pagitan ng code ng mga titik at / sa pagitan ng mga salita."
+  "morseInvalid": "Suriin ang direksiyon, character at limitasyon: 1000 character ng teksto, 6000 ng Morse. Gumamit ng espasyo sa pagitan ng code ng mga titik at / sa pagitan ng mga salita.",
+  "gradientTitle": "Tagabuo ng CSS gradient",
+  "gradientDesc": "Gumawa ng dalawang-kulay na linear gradient, tingnan ang preview at kopyahin ang CSS nang lokal.",
+  "gradientStart": "Panimulang kulay",
+  "gradientEnd": "Pangwakas na kulay",
+  "gradientAngle": "Anggulo sa degree",
+  "gradientLimits": "Gumamit ng #RGB o #RRGGBB HEX na kulay at buong bilang na anggulong 0–360°. Dalawang hindi transparent na kulay; linear gradient lang.",
+  "gradientGenerate": "Bumuo ng gradient",
+  "gradientPreview": "Preview ng gradient",
+  "gradientInvalid": "Maglagay ng wastong #RGB/#RRGGBB na kulay at buong bilang na anggulong 0–360°. Hanggang 32 character bawat input ng kulay."
 }

@@ -682,5 +682,14 @@
   "morseInput": "Ingizo",
   "morseLimits": "Maandishi: hadi vibambo 1000, A–Z na 0–9 pekee. Morse: hadi vibambo 6000. Tenganisha herufi kwa nafasi na maneno kwa /. Maandishi yaliyofasiriwa yana herufi kubwa.",
   "morseConvert": "Badilisha",
-  "morseInvalid": "Kagua mwelekeo, vibambo na mipaka: vibambo 1000 vya maandishi, 6000 vya Morse. Nafasi kati ya misimbo ya herufi na / kati ya maneno."
+  "morseInvalid": "Kagua mwelekeo, vibambo na mipaka: vibambo 1000 vya maandishi, 6000 vya Morse. Nafasi kati ya misimbo ya herufi na / kati ya maneno.",
+  "gradientTitle": "Kizalishaji cha mpito wa rangi wa CSS",
+  "gradientDesc": "Unda mpito wa mstari wa rangi mbili, uone hakikisho na unakili CSS kwenye kifaa.",
+  "gradientStart": "Rangi ya mwanzo",
+  "gradientEnd": "Rangi ya mwisho",
+  "gradientAngle": "Pembe kwa digrii",
+  "gradientLimits": "Tumia rangi za HEX #RGB au #RRGGBB na pembe kamili 0–360°. Rangi mbili zisizopitisha mwanga; mipito ya mstari pekee.",
+  "gradientGenerate": "Unda mpito",
+  "gradientPreview": "Hakikisho la mpito",
+  "gradientInvalid": "Weka rangi halali za #RGB/#RRGGBB na pembe kamili 0–360°. Kila ingizo la rangi lina hadi vibambo 32."
 }

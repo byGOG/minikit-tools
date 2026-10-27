@@ -682,5 +682,14 @@
   "morseInput": "Ievade",
   "morseLimits": "Teksts: līdz 1000 rakstzīmēm, tikai A–Z un 0–9. Morze: līdz 6000 rakstzīmēm. Burtus atdaliet ar atstarpēm, vārdus ar /. Atkodētais teksts ir lielajiem burtiem.",
   "morseConvert": "Pārveidot",
-  "morseInvalid": "Pārbaudiet virzienu, rakstzīmes un ierobežojumus: 1000 teksta rakstzīmes, 6000 Morzes rakstzīmes. Atstarpes starp burtu kodiem, / starp vārdiem."
+  "morseInvalid": "Pārbaudiet virzienu, rakstzīmes un ierobežojumus: 1000 teksta rakstzīmes, 6000 Morzes rakstzīmes. Atstarpes starp burtu kodiem, / starp vārdiem.",
+  "gradientTitle": "CSS gradientu ģenerators",
+  "gradientDesc": "Izveidojiet divu krāsu lineāru gradientu, priekšskatiet to un lokāli kopējiet CSS.",
+  "gradientStart": "Sākuma krāsa",
+  "gradientEnd": "Beigu krāsa",
+  "gradientAngle": "Leņķis grādos",
+  "gradientLimits": "Izmantojiet HEX krāsas #RGB vai #RRGGBB un veselu leņķi 0–360°. Divas necaurspīdīgas krāsas; tikai lineāri gradienti.",
+  "gradientGenerate": "Ģenerēt gradientu",
+  "gradientPreview": "Gradienta priekšskatījums",
+  "gradientInvalid": "Ievadiet derīgas #RGB/#RRGGBB krāsas un veselu leņķi 0–360°. Katra krāsas ievade drīkst saturēt līdz 32 rakstzīmēm."
 }

@@ -416,6 +416,7 @@ async function initialize() {
   if (document.body.dataset.page !== 'directory' && document.querySelector('#lorem-ipsum-tool')) (await import('./lorem-ipsum')).setupLoremIpsum(t);
   if (document.body.dataset.page !== 'directory' && document.querySelector('#roman-numeral-tool')) (await import('./roman-numerals')).setupRomanNumerals(t);
   if (document.body.dataset.page !== 'directory' && document.querySelector('#morse-code-tool')) (await import('./morse-code')).setupMorseCode(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#css-gradient-tool')) (await import('./css-gradient')).setupCSSGradient(t);
   document.documentElement.dataset.toolsReady = "true";
 }
 void initialize();

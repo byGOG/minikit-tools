@@ -682,5 +682,14 @@
   "morseInput": "Đầu vào",
   "morseLimits": "Văn bản: tối đa 1000 ký tự, chỉ A–Z và 0–9. Morse: tối đa 6000 ký tự. Tách chữ bằng khoảng trắng và từ bằng /. Văn bản giải mã là chữ hoa.",
   "morseConvert": "Chuyển đổi",
-  "morseInvalid": "Kiểm tra chiều, ký tự và giới hạn: 1000 ký tự văn bản, 6000 ký tự Morse. Khoảng trắng giữa mã chữ cái và / giữa các từ."
+  "morseInvalid": "Kiểm tra chiều, ký tự và giới hạn: 1000 ký tự văn bản, 6000 ký tự Morse. Khoảng trắng giữa mã chữ cái và / giữa các từ.",
+  "gradientTitle": "Trình tạo chuyển màu CSS",
+  "gradientDesc": "Tạo chuyển màu tuyến tính hai màu, xem trước và sao chép CSS cục bộ.",
+  "gradientStart": "Màu đầu",
+  "gradientEnd": "Màu cuối",
+  "gradientAngle": "Góc theo độ",
+  "gradientLimits": "Dùng màu HEX #RGB hoặc #RRGGBB và góc nguyên 0–360°. Hai màu đục; chỉ chuyển màu tuyến tính.",
+  "gradientGenerate": "Tạo chuyển màu",
+  "gradientPreview": "Xem trước chuyển màu",
+  "gradientInvalid": "Nhập màu #RGB/#RRGGBB hợp lệ và góc nguyên 0–360°. Mỗi ô màu chứa tối đa 32 ký tự."
 }

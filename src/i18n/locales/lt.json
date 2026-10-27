@@ -682,5 +682,14 @@
   "morseInput": "Įvestis",
   "morseLimits": "Tekstas: iki 1000 ženklų, tik A–Z ir 0–9. Morzė: iki 6000 ženklų. Raides atskirkite tarpais, žodžius – /. Dekoduotas tekstas rašomas didžiosiomis raidėmis.",
   "morseConvert": "Konvertuoti",
-  "morseInvalid": "Patikrinkite kryptį, ženklus ir ribas: 1000 teksto ženklų, 6000 Morzės ženklų. Tarp raidžių kodų naudokite tarpus, tarp žodžių – /."
+  "morseInvalid": "Patikrinkite kryptį, ženklus ir ribas: 1000 teksto ženklų, 6000 Morzės ženklų. Tarp raidžių kodų naudokite tarpus, tarp žodžių – /.",
+  "gradientTitle": "CSS gradientų generatorius",
+  "gradientDesc": "Sukurkite dviejų spalvų tiesinį gradientą, peržiūrėkite ir vietoje nukopijuokite CSS.",
+  "gradientStart": "Pradinė spalva",
+  "gradientEnd": "Galinė spalva",
+  "gradientAngle": "Kampas laipsniais",
+  "gradientLimits": "Naudokite HEX spalvas #RGB arba #RRGGBB ir sveikąjį kampą 0–360°. Dvi nepermatomos spalvos; tik tiesiniai gradientai.",
+  "gradientGenerate": "Kurti gradientą",
+  "gradientPreview": "Gradiento peržiūra",
+  "gradientInvalid": "Įveskite galiojančias #RGB/#RRGGBB spalvas ir sveikąjį kampą 0–360°. Kiekviena spalvos įvestis gali turėti iki 32 ženklų."
 }

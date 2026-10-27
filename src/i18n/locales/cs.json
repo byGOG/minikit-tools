@@ -682,5 +682,14 @@
   "morseInput": "Vstup",
   "morseLimits": "Text: nejvýše 1000 znaků, pouze A–Z a 0–9. Morse: nejvýše 6000 znaků. Písmena oddělujte mezerami a slova /. Dekódovaný text je velkými písmeny.",
   "morseConvert": "Převést",
-  "morseInvalid": "Zkontrolujte směr, znaky a limity: 1000 znaků textu, 6000 znaků Morseovy abecedy. Mezi kódy písmen patří mezery, mezi slova /."
+  "morseInvalid": "Zkontrolujte směr, znaky a limity: 1000 znaků textu, 6000 znaků Morseovy abecedy. Mezi kódy písmen patří mezery, mezi slova /.",
+  "gradientTitle": "Generátor CSS přechodů",
+  "gradientDesc": "Vytvořte dvoubarevný lineární přechod, zobrazte náhled a místně zkopírujte CSS.",
+  "gradientStart": "Počáteční barva",
+  "gradientEnd": "Koncová barva",
+  "gradientAngle": "Úhel ve stupních",
+  "gradientLimits": "Použijte HEX barvy #RGB nebo #RRGGBB a celočíselný úhel 0–360°. Dvě neprůhledné barvy; pouze lineární přechody.",
+  "gradientGenerate": "Vytvořit přechod",
+  "gradientPreview": "Náhled přechodu",
+  "gradientInvalid": "Zadejte platné barvy #RGB/#RRGGBB a celočíselný úhel 0–360°. Každý barevný vstup může mít nejvýše 32 znaků."
 }

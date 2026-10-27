@@ -682,5 +682,14 @@
   "morseInput": "Input",
   "morseLimits": "Teks: sehingga 1000 aksara, A–Z dan 0–9 sahaja. Morse: sehingga 6000 aksara. Pisahkan huruf dengan ruang dan perkataan dengan /. Teks dinyahkod menggunakan huruf besar.",
   "morseConvert": "Tukar",
-  "morseInvalid": "Semak arah, aksara dan had: 1000 aksara teks, 6000 aksara Morse. Gunakan ruang antara kod huruf dan / antara perkataan."
+  "morseInvalid": "Semak arah, aksara dan had: 1000 aksara teks, 6000 aksara Morse. Gunakan ruang antara kod huruf dan / antara perkataan.",
+  "gradientTitle": "Penjana gradien CSS",
+  "gradientDesc": "Cipta gradien linear dua warna, pratonton dan salin CSS secara setempat.",
+  "gradientStart": "Warna mula",
+  "gradientEnd": "Warna akhir",
+  "gradientAngle": "Sudut dalam darjah",
+  "gradientLimits": "Gunakan warna HEX #RGB atau #RRGGBB dan sudut nombor bulat 0–360°. Dua warna legap; gradien linear sahaja.",
+  "gradientGenerate": "Jana gradien",
+  "gradientPreview": "Pratonton gradien",
+  "gradientInvalid": "Masukkan warna #RGB/#RRGGBB yang sah dan sudut nombor bulat 0–360°. Setiap input warna maksimum 32 aksara."
 }
