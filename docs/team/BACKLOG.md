@@ -37,6 +37,12 @@ Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, do
 
 | İş | Sahip | Kabul ölçütü | Durum |
 |---|---|---|---|
-| TOOL-001 | Yeni araç geliştirici + içerik + kalite | Dosya SHA-256: en fazla 50 MiB, boş/ikili dosya, isteğe bağlı 64 HEX özet, eski işlem sonucunu geçersiz kılma; 50 dil ve rehber. 113 birim + 53 dil + 204 tarayıcı testi geçti. | Yerel doğrulama tamamlandı; yayın bekleniyor |
+| TOOL-001 | Yeni araç geliştirici + içerik + kalite | Dosya SHA-256: en fazla 50 MiB, boş/ikili dosya, isteğe bağlı 64 HEX özet, eski işlem sonucunu geçersiz kılma; 50 dil ve rehber. 113 birim + 53 dil + 204 tarayıcı testi geçti. | Tamamlandı; PR #40 birleştirildi, canlıda 10 tarayıcı kontrolü geçti |
 
 Ürün araştırması dosya SHA-256 doğrulayıcıyı seçti. Mevcut SHA aracı yalnız UTF-8 metin işler; yeni araç dosyanın özgün baytları için ayrı kullanım sağlar. Trafik/gelir üstünlüğü iddiası yok.
+
+## Lorem Ipsum turu — 27 Ekim 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| TOOL-002 | Yeni araç geliştirici + içerik + kalite | Lorem Ipsum: 1–50 paragraf × 5–200 kelime, en fazla 10.000 kelime; tam sayım, girdi doğrulama, 50 dil, rehber, bağımsız testler ve canlı kontrol | Kod ve yerel doğrulama tamam: 118 birim + 53 dil + 214 tarayıcı testi. CI ve canlı yayın kanıtı sonuç raporunda. |

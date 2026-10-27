@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Forventet hash må inneholde nøyaktig 64 heksadesimale tegn.",
   "fileHashInvalidFile": "Velg én fil på opptil 50 MiB.",
   "fileHashFailed": "Handlingen kunne ikke fullføres. Bruk en oppdatert nettleser med Web Crypto og HTTPS.",
-  "fileHashClear": "Tøm"
+  "fileHashClear": "Tøm",
+  "loremTitle": "Lorem Ipsum-generator",
+  "loremDesc": "Lag latinsk plassholdertekst for oppsett lokalt med nøyaktig antall avsnitt og ord.",
+  "loremParagraphs": "Avsnitt",
+  "loremWordsPerParagraph": "Ord per avsnitt",
+  "loremLimits": "1–50 avsnitt med 5–200 ord hver; høyst 10 000 ord. Resultatet er latinsk plassholdertekst uansett språk i grensesnittet.",
+  "loremGenerate": "Generer tekst",
+  "loremInvalid": "Skriv inn heltall: 1–50 avsnitt og 5–200 ord per avsnitt."
 }

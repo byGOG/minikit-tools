@@ -198,5 +198,9 @@
   "file-sha256-checker": [
     "empty.bin · 0 B",
     "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  ],
+  "lorem-ipsum-generator": [
+    "1 × 5",
+    "Lorem ipsum dolor sit amet."
   ]
 }

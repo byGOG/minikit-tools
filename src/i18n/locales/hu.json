@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "A várt lenyomatnak pontosan 64 hexadecimális karakterből kell állnia.",
   "fileHashInvalidFile": "Válasszon egy legfeljebb 50 MiB méretű fájlt.",
   "fileHashFailed": "A művelet nem fejezhető be. Használjon korszerű, Web Crypto-t támogató böngészőt és HTTPS-t.",
-  "fileHashClear": "Törlés"
+  "fileHashClear": "Törlés",
+  "loremTitle": "Lorem Ipsum-generátor",
+  "loremDesc": "Készítsen helyben latin kitöltőszöveget elrendezésekhez, pontos bekezdés- és szószámmal.",
+  "loremParagraphs": "Bekezdések",
+  "loremWordsPerParagraph": "Szavak bekezdésenként",
+  "loremLimits": "1–50 bekezdés, egyenként 5–200 szó; legfeljebb 10 000 szó. A kimenet a felület nyelvétől függetlenül latin kitöltőszöveg.",
+  "loremGenerate": "Szöveg létrehozása",
+  "loremInvalid": "Adjon meg egész számokat: 1–50 bekezdés és bekezdésenként 5–200 szó."
 }

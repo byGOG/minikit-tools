@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "ਉਮੀਦ ਕੀਤੇ ਹੈਸ਼ ਵਿੱਚ ਠੀਕ 64 ਹੈਕਸਾਡੈਸੀਮਲ ਅੱਖਰ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ।",
   "fileHashInvalidFile": "ਵੱਧ ਤੋਂ ਵੱਧ 50 MiB ਦੀ ਇੱਕ ਫਾਈਲ ਚੁਣੋ।",
   "fileHashFailed": "ਕਾਰਵਾਈ ਪੂਰੀ ਨਹੀਂ ਹੋਈ। Web Crypto ਸਮਰਥਿਤ ਨਵਾਂ ਬ੍ਰਾਊਜ਼ਰ ਅਤੇ HTTPS ਵਰਤੋ।",
-  "fileHashClear": "ਸਾਫ਼ ਕਰੋ"
+  "fileHashClear": "ਸਾਫ਼ ਕਰੋ",
+  "loremTitle": "Lorem Ipsum ਬਣਾਉਣ ਵਾਲਾ",
+  "loremDesc": "ਲੇਆਉਟ ਲਈ ਪੈਰਿਆਂ ਅਤੇ ਸ਼ਬਦਾਂ ਦੀ ਸਹੀ ਗਿਣਤੀ ਵਾਲਾ ਲਾਤੀਨੀ ਨਮੂਨਾ ਟੈਕਸਟ ਸਥਾਨਕ ਤੌਰ 'ਤੇ ਬਣਾਓ।",
+  "loremParagraphs": "ਪੈਰੇ",
+  "loremWordsPerParagraph": "ਪ੍ਰਤੀ ਪੈਰਾ ਸ਼ਬਦ",
+  "loremLimits": "1–50 ਪੈਰੇ, ਹਰੇਕ ਵਿੱਚ 5–200 ਸ਼ਬਦ; ਵੱਧ ਤੋਂ ਵੱਧ 10,000 ਸ਼ਬਦ। ਇੰਟਰਫੇਸ ਦੀ ਭਾਸ਼ਾ ਜੋ ਵੀ ਹੋਵੇ, ਨਤੀਜਾ ਲਾਤੀਨੀ ਨਮੂਨਾ ਟੈਕਸਟ ਹੈ।",
+  "loremGenerate": "ਟੈਕਸਟ ਬਣਾਓ",
+  "loremInvalid": "ਪੂਰਨ ਅੰਕ ਦਿਓ: 1–50 ਪੈਰੇ ਅਤੇ ਪ੍ਰਤੀ ਪੈਰਾ 5–200 ਸ਼ਬਦ।"
 }

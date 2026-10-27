@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Očekivani sažetak mora sadržavati točno 64 heksadekadska znaka.",
   "fileHashInvalidFile": "Odaberite jednu datoteku do 50 MiB.",
   "fileHashFailed": "Postupak nije dovršen. Upotrijebite ažuriran preglednik s podrškom za Web Crypto i HTTPS.",
-  "fileHashClear": "Očisti"
+  "fileHashClear": "Očisti",
+  "loremTitle": "Generator Lorem Ipsum teksta",
+  "loremDesc": "Lokalno izradite latinski zamjenski tekst za rasporede s točnim brojem odlomaka i riječi.",
+  "loremParagraphs": "Odlomci",
+  "loremWordsPerParagraph": "Riječi po odlomku",
+  "loremLimits": "1–50 odlomaka s po 5–200 riječi; najviše 10.000 riječi. Rezultat je latinski zamjenski tekst bez obzira na jezik sučelja.",
+  "loremGenerate": "Generiraj tekst",
+  "loremInvalid": "Unesite cijele brojeve: 1–50 odlomaka i 5–200 riječi po odlomku."
 }

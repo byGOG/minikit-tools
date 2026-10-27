@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "예상 해시는 정확히 64자의 16진수여야 합니다.",
   "fileHashInvalidFile": "50 MiB 이하의 파일 하나를 선택하세요.",
   "fileHashFailed": "작업을 완료하지 못했습니다. Web Crypto를 지원하는 최신 브라우저와 HTTPS를 사용하세요.",
-  "fileHashClear": "지우기"
+  "fileHashClear": "지우기",
+  "loremTitle": "Lorem Ipsum 생성기",
+  "loremDesc": "정확한 문단 수와 단어 수로 레이아웃용 라틴어 자리 채움 텍스트를 로컬에서 생성합니다.",
+  "loremParagraphs": "문단 수",
+  "loremWordsPerParagraph": "문단당 단어 수",
+  "loremLimits": "1–50개 문단, 문단당 5–200단어, 최대 10,000단어. 인터페이스 언어와 관계없이 라틴어 자리 채움 텍스트가 출력됩니다.",
+  "loremGenerate": "텍스트 생성",
+  "loremInvalid": "정수를 입력하세요: 1–50개 문단, 문단당 5–200단어."
 }

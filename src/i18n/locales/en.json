@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "The expected digest must contain exactly 64 hexadecimal characters.",
   "fileHashInvalidFile": "Choose one file up to 50 MiB.",
   "fileHashFailed": "Could not complete the operation. Use a current browser with Web Crypto support and HTTPS.",
-  "fileHashClear": "Clear"
+  "fileHashClear": "Clear",
+  "loremTitle": "Lorem Ipsum generator",
+  "loremDesc": "Create Latin placeholder text for layouts with an exact paragraph and word count, generated locally.",
+  "loremParagraphs": "Paragraphs",
+  "loremWordsPerParagraph": "Words per paragraph",
+  "loremLimits": "1–50 paragraphs, 5–200 words each; at most 10,000 words. Output is Latin placeholder text, regardless of interface language.",
+  "loremGenerate": "Generate text",
+  "loremInvalid": "Enter whole numbers: 1–50 paragraphs and 5–200 words per paragraph."
 }

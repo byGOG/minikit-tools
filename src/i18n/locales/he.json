@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "הגיבוב הצפוי חייב להכיל בדיוק 64 תווים הקסדצימליים.",
   "fileHashInvalidFile": "בחרו קובץ אחד בגודל עד 50 MiB.",
   "fileHashFailed": "לא ניתן להשלים את הפעולה. השתמשו בדפדפן עדכני התומך ב-Web Crypto ובחיבור HTTPS.",
-  "fileHashClear": "ניקוי"
+  "fileHashClear": "ניקוי",
+  "loremTitle": "מחולל Lorem Ipsum",
+  "loremDesc": "צרו מקומית טקסט מילוי בלטינית לעיצובי פריסה, עם מספר מדויק של פסקאות ומילים.",
+  "loremParagraphs": "פסקאות",
+  "loremWordsPerParagraph": "מילים לפסקה",
+  "loremLimits": "1–50 פסקאות, 5–200 מילים בכל אחת; עד 10,000 מילים. הפלט הוא טקסט מילוי בלטינית ללא קשר לשפת הממשק.",
+  "loremGenerate": "יצירת טקסט",
+  "loremInvalid": "הזינו מספרים שלמים: 1–50 פסקאות ו-5–200 מילים לפסקה."
 }

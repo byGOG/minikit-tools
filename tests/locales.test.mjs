@@ -68,6 +68,12 @@ for (const locale of catalog) {
       assert.equal([...html.matchAll(/<h1[\s>]/g)].length,1,`${path}: one primary heading`);
       assert.ok(html.includes(`property="og:url" content="${url}"`),`${path}: share URL`);
       if (slug) {
+        if (slug === 'lorem-ipsum-generator') {
+          for (const key of ['loremTitle','loremDesc','loremParagraphs','loremWordsPerParagraph','loremLimits','loremGenerate']) {
+            assert.equal(typeof d[key], 'string', `${path}: ${key} translation exists`);
+            assert.ok(html.includes(escapeHtml(d[key])), `${path}: ${key} is published`);
+          }
+        }
         if (slug === 'file-sha256-checker') {
           for (const key of ['fileHashTitle','fileHashDesc','fileHashFile','fileHashLimits','fileHashExpected','fileHashClear']) {
             assert.equal(typeof d[key], 'string', `${path}: ${key} translation exists`);

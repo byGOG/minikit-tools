@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Odotetussa tiivisteessä on oltava täsmälleen 64 heksadesimaalimerkkiä.",
   "fileHashInvalidFile": "Valitse yksi enintään 50 MiB:n tiedosto.",
   "fileHashFailed": "Toimintoa ei voitu suorittaa. Käytä ajantasaista selainta, joka tukee Web Cryptoa, sekä HTTPS-yhteyttä.",
-  "fileHashClear": "Tyhjennä"
+  "fileHashClear": "Tyhjennä",
+  "loremTitle": "Lorem Ipsum -generaattori",
+  "loremDesc": "Luo paikallisesti latinankielistä paikkamerkkitekstiä asetteluihin tarkalla kappale- ja sanamäärällä.",
+  "loremParagraphs": "Kappaleet",
+  "loremWordsPerParagraph": "Sanoja kappaleessa",
+  "loremLimits": "1–50 kappaletta, jokaisessa 5–200 sanaa; enintään 10 000 sanaa. Tulos on latinankielistä paikkamerkkitekstiä käyttöliittymän kielestä riippumatta.",
+  "loremGenerate": "Luo teksti",
+  "loremInvalid": "Anna kokonaisluvut: 1–50 kappaletta ja 5–200 sanaa kappaleessa."
 }

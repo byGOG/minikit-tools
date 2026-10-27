@@ -5,7 +5,7 @@ MiniKit is a privacy-forward collection of free browser tools, built with Astro,
 ## Included
 
 - Exactly 50 language homepages and 4,250 localized tool guides, generated from versioned translation dictionaries. Arabic, Urdu, Persian and Hebrew use right-to-left layouts.
-- 86 browser tools for images/colors, PDF, audio, text, development, calculations and time. The homepage is a searchable category directory; each tool has its own isolated form.
+- 87 browser tools for images/colors, PDF, audio, text, development, calculations and time. The homepage is a searchable category directory; each tool has its own isolated form.
 - Dedicated localized pages for each tool, with usage steps, FAQs, structured data, canonical/hreflang metadata and sitemap entries.
 - Accessibility support: keyboard skip link, visible focus, reduced-motion support, accessible mobile menu state and live word-count announcements.
 - Tool inputs stay in the visitor's browser. Cloudflare Web Analytics is enabled on the production domain; Google advertising is disabled until the approval and consent requirements in the advertising configuration are met. See `/privacy/` for the current disclosures.
@@ -117,7 +117,7 @@ Resizing uses whole pixels and optional original-aspect-ratio locking; cropping 
 
 ## Advertising
 
-AdSense configuration: `src/data/advertising.json`. No ad scripts, ad placeholders or third-party ad requests are rendered while disabled. A valid publisher ID enables meta-tag verification only; live ads require explicit activation, site approval, two real ad unit IDs, and a published Google CMP message. See `docs/ADSENSE-SETUP.md` for account setup and the root-level ads.txt requirement on GitHub project Pages. There are 4352 generated pages including privacy and contact.
+AdSense configuration: `src/data/advertising.json`. No ad scripts, ad placeholders or third-party ad requests are rendered while disabled. A valid publisher ID enables meta-tag verification only; live ads require explicit activation, site approval, two real ad unit IDs, and a published Google CMP message. See `docs/ADSENSE-SETUP.md` for account setup and the root-level ads.txt requirement on GitHub project Pages. There are 4402 generated pages including privacy and contact.
 
 ## minikit.top / Cloudflare Pages
 
@@ -127,10 +127,10 @@ Cloudflare Pages builds (`CF_PAGES=1`) use `https://minikit.top/`; default local
 Text watermarking exports PNG with adjustable position, opacity and size. The color palette tool samples at most 256 × 256 pixels and returns up to six quantized dominant HEX colors, ignoring mostly transparent pixels. Both accept the existing 20 MiB / 16-million-pixel limits. Image-to-Base64 accepts up to 5 MiB and preserves original bytes and metadata, returning a complete data URL. No image uploads occur. All three have 50-language UI and tool guide URLs.
 
 ### Local PDF tools
-Images to PDF supports ordered JPEG/PNG/WebP images, A4 fitting or original pixel dimensions as PDF points. Raster conversion has a 100 MiB cumulative encoded-buffer budget. PDF merge preserves per-file page order; page extraction accepts selections such as `3,1-2` and deduplicates in selection order, producing one PDF. Limits: 20 images (20 MiB each), 10 PDFs, 50 MiB total inputs, 200 source PDF pages. Encrypted PDFs, forms, signed documents and portfolios are rejected; document-level features such as bookmarks and attachments are not copied. No OCR or PDF sanitization is offered. The locally bundled pdf-lib dependency loads only when a PDF operation starts. All 86 tools have 50-language UI; sitemap contains 4352 generated URLs.
+Images to PDF supports ordered JPEG/PNG/WebP images, A4 fitting or original pixel dimensions as PDF points. Raster conversion has a 100 MiB cumulative encoded-buffer budget. PDF merge preserves per-file page order; page extraction accepts selections such as `3,1-2` and deduplicates in selection order, producing one PDF. Limits: 20 images (20 MiB each), 10 PDFs, 50 MiB total inputs, 200 source PDF pages. Encrypted PDFs, forms, signed documents and portfolios are rejected; document-level features such as bookmarks and attachments are not copied. No OCR or PDF sanitization is offered. The locally bundled pdf-lib dependency loads only when a PDF operation starts. All 87 tools have 50-language UI; sitemap contains 4402 generated URLs.
 
 ### UUID, SHA-256 and Unix tools
-UUID v4 supports batches of 1–100 using Web Crypto randomness. SHA-256 hashes up to 100,000 UTF-16 code units as UTF-8, preserving whitespace and normalization form and rejecting malformed surrogate input; it is not a file hash or password storage tool. Unix conversion is explicit UTC with seconds (up to3 fractional digits) or integer milliseconds, years0001–9999, negative/subsecond values and exact decimal parsing with BigInt. No device timezone is applied. Total: 86 tools and 4352 sitemap URLs.
+UUID v4 supports batches of 1–100 using Web Crypto randomness. SHA-256 hashes up to 100,000 UTF-16 code units as UTF-8, preserving whitespace and normalization form and rejecting malformed surrogate input; it is not a file hash or password storage tool. Unix conversion is explicit UTC with seconds (up to3 fractional digits) or integer milliseconds, years0001–9999, negative/subsecond values and exact decimal parsing with BigInt. No device timezone is applied. Total: 87 tools and 4402 sitemap URLs.
 
 ### Additional text tools
 Find-and-replace uses case-sensitive, non-overlapping literal matching and literal replacements (including dollar signs), with empty replacement allowed. Input is capped at 100,000 characters, search/replacement at 10,000 and output at 1,000,000. Line diff uses a bounded longest-common-subsequence comparison: max 500 lines/100,000 characters per input, CRLF/CR normalized to LF. It displays whole-line changes with color and plus/minus markers using inert DOM text. Line numbering includes empty/trailing rows, optional zero padding, max 10,000 lines and starting numbers 1 to 1,000,000,000. All inputs stay local.
@@ -199,3 +199,8 @@ Seven project-scoped roles are defined in `.codex/agents/`: maintenance developm
 `/tools/file-sha256-checker/` hashes the original file bytes locally and optionally compares an expected 64-digit hexadecimal SHA-256 value. It supports one file up to 50 MiB, including empty files. The expected digest is trimmed and case-insensitive. A matching hash only confirms consistency with the supplied value; obtain that value from a trusted source. This is not malware detection or proof of publisher identity.
 
 The browser reads the whole file into memory for Web Crypto; no file is uploaded and no dependency or API service is added. Changing a file, expected digest or clearing the form invalidates stale results. Crypto operations already in progress cannot be physically interrupted, but their stale results are discarded. Requires Web Crypto in a secure context. UI and the isolated tool page are available in all 50 languages.
+
+
+## Lorem Ipsum generator
+
+Create deterministic Latin placeholder text for layout mockups: 1–50 paragraphs and 5–200 whitespace-separated words per paragraph (10,000 words maximum). Defaults are 3 paragraphs with 50 words each. Input changes clear the previous result; clear restores the defaults. UI labels and limits cover all 50 languages; the generated placeholder remains Latin. The generator works locally without new dependencies or network requests.

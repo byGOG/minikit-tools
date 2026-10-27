@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Očakávaný odtlačok musí obsahovať presne 64 šestnástkových znakov.",
   "fileHashInvalidFile": "Vyberte jeden súbor do 50 MiB.",
   "fileHashFailed": "Operáciu sa nepodarilo dokončiť. Použite aktuálny prehliadač s Web Crypto a HTTPS.",
-  "fileHashClear": "Vymazať"
+  "fileHashClear": "Vymazať",
+  "loremTitle": "Generátor Lorem Ipsum",
+  "loremDesc": "Vytvorte lokálne latinský zástupný text pre rozloženia s presným počtom odsekov a slov.",
+  "loremParagraphs": "Odseky",
+  "loremWordsPerParagraph": "Slová na odsek",
+  "loremLimits": "1–50 odsekov, každý s 5–200 slovami; najviac 10 000 slov. Výstup je latinský zástupný text bez ohľadu na jazyk rozhrania.",
+  "loremGenerate": "Vygenerovať text",
+  "loremInvalid": "Zadajte celé čísla: 1–50 odsekov a 5–200 slov na odsek."
 }

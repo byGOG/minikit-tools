@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "L’impronta attesa deve contenere esattamente 64 caratteri esadecimali.",
   "fileHashInvalidFile": "Scegli un file di massimo 50 MiB.",
   "fileHashFailed": "Impossibile completare l’operazione. Usa un browser aggiornato con Web Crypto e HTTPS.",
-  "fileHashClear": "Cancella"
+  "fileHashClear": "Cancella",
+  "loremTitle": "Generatore di Lorem Ipsum",
+  "loremDesc": "Crea localmente testo segnaposto in latino per impaginazioni con un numero esatto di paragrafi e parole.",
+  "loremParagraphs": "Paragrafi",
+  "loremWordsPerParagraph": "Parole per paragrafo",
+  "loremLimits": "1–50 paragrafi di 5–200 parole ciascuno; massimo 10.000 parole. Il risultato è testo segnaposto in latino, indipendentemente dalla lingua dell’interfaccia.",
+  "loremGenerate": "Genera testo",
+  "loremInvalid": "Inserisci numeri interi: 1–50 paragrafi e 5–200 parole per paragrafo."
 }
