@@ -156,22 +156,55 @@ if ($('#image-file')) {
 }
 
 if ($('#qr-input')) {
-$('#generate-qr').addEventListener('click', async () => {
-  const value = ($('#qr-input') as HTMLInputElement).value.trim(); const feedback = $('#qr-feedback');
-  feedback.classList.remove('error');
-  if (!value) { feedback.textContent = t('qrMissing'); feedback.classList.add('error'); return; }
-  try {
-    const { default: QRCode } = await import('qrcode');
-    qrDataUrl = await QRCode.toDataURL(value, { width: 400, margin: 2, errorCorrectionLevel: 'M', color: { dark: '#15251e', light: '#ffffff' } });
-    const image = $('#qr-image') as HTMLImageElement; image.alt = t('qrTitle'); image.src = qrDataUrl; image.classList.remove('hidden'); $('.qr-empty').classList.add('hidden');
-    $('#download-qr').classList.remove('hidden'); $('#generate-qr').classList.add('hidden'); feedback.textContent = t('qrReady');
-  } catch { feedback.textContent = t('qrFailed'); feedback.classList.add('error'); }
-});
-$('#download-qr').addEventListener('click', () => { if (!qrDataUrl) return; const a = document.createElement('a'); a.href = qrDataUrl; a.download = 'minikit-qr.png'; a.click(); });
-$('#qr-input').addEventListener('input', () => {
-  $('#qr-feedback').textContent = ''; if (qrDataUrl) { qrDataUrl = ''; $('#qr-image').classList.add('hidden'); $('.qr-empty').classList.remove('hidden'); $('#download-qr').classList.add('hidden'); $('#generate-qr').classList.remove('hidden'); }
-});
+  const input = $<HTMLInputElement>('#qr-input');
+  const feedback = $('#qr-feedback');
+  const image = $<HTMLImageElement>('#qr-image');
+  const generate = $<HTMLButtonElement>('#generate-qr');
+  const download = $<HTMLButtonElement>('#download-qr');
+  let revision = 0;
 
+  function resetQr() {
+    revision++;
+    qrDataUrl = '';
+    image.classList.add('hidden'); image.removeAttribute('src');
+    $('.qr-empty').classList.remove('hidden');
+    download.classList.add('hidden'); download.disabled = true;
+    generate.classList.remove('hidden'); generate.disabled = false;
+    feedback.textContent = ''; feedback.classList.remove('error');
+    return revision;
+  }
+
+  generate.addEventListener('click', async () => {
+    const ticket = resetQr();
+    const source = input.value;
+    const value = source.trim();
+    if (!value || source.length > 1200) {
+      feedback.textContent = t(!value ? 'qrMissing' : 'qrFailed');
+      feedback.classList.add('error');
+      return;
+    }
+    generate.disabled = true;
+    try {
+      const { default: QRCode } = await import('qrcode');
+      if (ticket !== revision) return;
+      const result = await QRCode.toDataURL(value, { width: 400, margin: 2, errorCorrectionLevel: 'M', color: { dark: '#15251e', light: '#ffffff' } });
+      if (ticket !== revision) return;
+      qrDataUrl = result;
+      image.alt = t('qrTitle'); image.src = result; image.classList.remove('hidden');
+      $('.qr-empty').classList.add('hidden');
+      download.classList.remove('hidden'); download.disabled = false;
+      generate.classList.add('hidden'); feedback.textContent = t('qrReady');
+    } catch {
+      if (ticket === revision) { feedback.textContent = t('qrFailed'); feedback.classList.add('error'); }
+    } finally {
+      if (ticket === revision) generate.disabled = false;
+    }
+  });
+  download.addEventListener('click', () => {
+    if (!qrDataUrl || download.disabled) return;
+    const anchor = document.createElement('a'); anchor.href = qrDataUrl; anchor.download = 'minikit-qr.png'; anchor.click();
+  });
+  input.addEventListener('input', resetQr);
 }
 if ($('#word-input')) {
 $('#word-input').addEventListener('input', (event) => { const value = (event.target as HTMLTextAreaElement).value; $('#word-count').textContent = String(countWords(value)); $('#char-count').textContent = String(countCharacters(value)); updateReadTime(); });

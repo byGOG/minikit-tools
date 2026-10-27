@@ -68,6 +68,9 @@ for (const locale of catalog) {
       assert.equal([...html.matchAll(/<h1[\s>]/g)].length,1,`${path}: one primary heading`);
       assert.ok(html.includes(`property="og:url" content="${url}"`),`${path}: share URL`);
       if (slug) {
+        if (['json-to-yaml','yaml-to-json','json-compare'].includes(slug)) {
+          assert.ok(html.includes('<p class="guide-limits">'+escapeHtml(d.structuredLimits)+'</p>'), `${path}: localized precision and input limits`);
+        }
         assert.ok(html.includes(`<h2>${escapeHtml(d.guideHow)}</h2>`));
         assert.ok(html.includes(`<h2>${escapeHtml(d.guideFaq)}</h2>`));
         const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => JSON.parse(m[1]));

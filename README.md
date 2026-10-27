@@ -189,3 +189,7 @@ Browser tests run against a local-only static server and cover all isolated tool
 Security overrides for esbuild and postcss-selector-parser select patched releases; review and remove overrides when upstream ranges include the fixes. `pnpm audit --prod` is a dependency advisory check, not proof that every potential vulnerability has been eliminated.
 
 CI uses the official Microsoft Playwright image pinned by digest, with Chromium/WebKit and OS libraries already installed. This avoids installing 181 Ubuntu packages on every run. Keep its image version aligned with `@playwright/test` when upgrading. The browser suite has a 10-minute limit and the build job a 20-minute limit.
+
+## MiniKit agent team
+
+Three project-scoped roles are defined in `.codex/agents/`: development, SEO/content, and quality/security. Model and reasoning settings inherit from the coordinator; `.codex/config.toml` caps concurrent specialists at three. Read `AGENTS.md` and `docs/team/TEAM.md` for file ownership and verification rules. `docs/team/BACKLOG.md` records the current work. These profiles are reusable task definitions, not continuously running services or scheduled jobs. Open this repository as the project root for automatic custom-profile discovery; a parent-workspace coordinator can also load these instructions into specialist prompts.
