@@ -645,5 +645,17 @@
   "anagramNo": "Textele nu sunt anagrame.",
   "palindromeYes": "Textul este un palindrom.",
   "palindromeNo": "Textul nu este un palindrom.",
-  "textCheckInvalid": "Verifică intrarea și limitele. Textul de comparație nu trebuie să fie gol după filtrare; browserul trebuie să suporte segmentarea Unicode."
+  "textCheckInvalid": "Verifică intrarea și limitele. Textul de comparație nu trebuie să fie gol după filtrare; browserul trebuie să suporte segmentarea Unicode.",
+  "fileHashTitle": "Verificator SHA-256 pentru fișiere",
+  "fileHashDesc": "Calculează local amprenta octeților originali ai fișierului și compar-o cu una furnizată. Potrivirea nu garantează siguranța.",
+  "fileHashFile": "Fișier",
+  "fileHashLimits": "Un fișier de cel mult 50 MiB. Fișierele goale sunt valide; întregul fișier este încărcat în memorie.",
+  "fileHashExpected": "SHA-256 așteptat (opțional)",
+  "fileHashWorking": "Se calculează amprenta fișierului…",
+  "fileHashMatch": "Amprentele corespund.",
+  "fileHashMismatch": "Amprentele nu corespund.",
+  "fileHashInvalidExpected": "Amprenta așteptată trebuie să conțină exact 64 de caractere hexazecimale.",
+  "fileHashInvalidFile": "Alege un fișier de cel mult 50 MiB.",
+  "fileHashFailed": "Operația nu a putut fi finalizată. Folosește un browser actualizat cu Web Crypto și HTTPS.",
+  "fileHashClear": "Șterge"
 }

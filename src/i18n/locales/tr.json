@@ -645,5 +645,17 @@
   "anagramNo": "Metinler anagram değil.",
   "palindromeYes": "Metin palindrom.",
   "palindromeNo": "Metin palindrom değil.",
-  "textCheckInvalid": "Girdiyi ve sınırları kontrol et. Karşılaştırılacak metin filtre sonrası boş olamaz; tarayıcı Unicode bölümlemeyi desteklemelidir."
+  "textCheckInvalid": "Girdiyi ve sınırları kontrol et. Karşılaştırılacak metin filtre sonrası boş olamaz; tarayıcı Unicode bölümlemeyi desteklemelidir.",
+  "fileHashTitle": "Dosya SHA-256 doğrulayıcı",
+  "fileHashDesc": "Dosyanın özgün baytlarının özetini yerel olarak hesapla ve verilen özetle karşılaştır. Eşleşme güvenlik garantisi değildir.",
+  "fileHashFile": "Dosya",
+  "fileHashLimits": "Tek dosya, en fazla 50 MiB. Boş dosya geçerlidir; dosyanın tamamı belleğe alınır.",
+  "fileHashExpected": "Beklenen SHA-256 (isteğe bağlı)",
+  "fileHashWorking": "Dosya özeti hesaplanıyor…",
+  "fileHashMatch": "Özetler eşleşiyor.",
+  "fileHashMismatch": "Özetler eşleşmiyor.",
+  "fileHashInvalidExpected": "Beklenen özet tam 64 onaltılık karakter olmalı.",
+  "fileHashInvalidFile": "En fazla 50 MiB boyutunda tek dosya seç.",
+  "fileHashFailed": "İşlem tamamlanamadı. Web Crypto destekleyen güncel tarayıcı ve HTTPS bağlantısı kullan.",
+  "fileHashClear": "Temizle"
 }

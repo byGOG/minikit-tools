@@ -645,5 +645,17 @@
   "anagramNo": "Les textes ne sont pas des anagrammes.",
   "palindromeYes": "Le texte est un palindrome.",
   "palindromeNo": "Le texte n’est pas un palindrome.",
-  "textCheckInvalid": "Vérifie l’entrée et les limites. Le texte de comparaison ne doit pas être vide après filtrage ; le navigateur doit prendre en charge la segmentation Unicode."
+  "textCheckInvalid": "Vérifie l’entrée et les limites. Le texte de comparaison ne doit pas être vide après filtrage ; le navigateur doit prendre en charge la segmentation Unicode.",
+  "fileHashTitle": "Vérificateur SHA-256 de fichiers",
+  "fileHashDesc": "Calculez localement l’empreinte des octets d’origine du fichier et comparez-la à une empreinte fournie. Une correspondance ne garantit pas la sécurité.",
+  "fileHashFile": "Fichier",
+  "fileHashLimits": "Un fichier, jusqu’à 50 MiB. Les fichiers vides sont acceptés ; le fichier entier est chargé en mémoire.",
+  "fileHashExpected": "SHA-256 attendu (facultatif)",
+  "fileHashWorking": "Calcul de l’empreinte du fichier…",
+  "fileHashMatch": "Les empreintes correspondent.",
+  "fileHashMismatch": "Les empreintes ne correspondent pas.",
+  "fileHashInvalidExpected": "L’empreinte attendue doit contenir exactement 64 caractères hexadécimaux.",
+  "fileHashInvalidFile": "Choisissez un fichier de 50 MiB maximum.",
+  "fileHashFailed": "Impossible de terminer l’opération. Utilisez un navigateur récent prenant en charge Web Crypto et HTTPS.",
+  "fileHashClear": "Effacer"
 }

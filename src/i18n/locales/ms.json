@@ -645,5 +645,17 @@
   "anagramNo": "Teks-teks itu bukan anagram.",
   "palindromeYes": "Teks itu adalah palindrom.",
   "palindromeNo": "Teks itu bukan palindrom.",
-  "textCheckInvalid": "Periksa input dan had. Teks perbandingan tidak boleh kosong selepas penapisan; pelayar mesti menyokong segmentasi Unicode."
+  "textCheckInvalid": "Periksa input dan had. Teks perbandingan tidak boleh kosong selepas penapisan; pelayar mesti menyokong segmentasi Unicode.",
+  "fileHashTitle": "Penyemak SHA-256 fail",
+  "fileHashDesc": "Kira hash bait asal fail secara setempat dan bandingkan dengan hash yang diberikan. Padanan bukan jaminan keselamatan.",
+  "fileHashFile": "Fail",
+  "fileHashLimits": "Satu fail, maksimum 50 MiB. Fail kosong sah; seluruh fail dimuatkan ke memori.",
+  "fileHashExpected": "SHA-256 dijangka (pilihan)",
+  "fileHashWorking": "Mengira hash fail…",
+  "fileHashMatch": "Hash sepadan.",
+  "fileHashMismatch": "Hash tidak sepadan.",
+  "fileHashInvalidExpected": "Hash dijangka mesti mengandungi tepat 64 aksara perenambelasan.",
+  "fileHashInvalidFile": "Pilih satu fail sehingga 50 MiB.",
+  "fileHashFailed": "Operasi tidak dapat diselesaikan. Gunakan pelayar terkini dengan sokongan Web Crypto dan HTTPS.",
+  "fileHashClear": "Kosongkan"
 }

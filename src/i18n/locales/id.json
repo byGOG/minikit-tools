@@ -645,5 +645,17 @@
   "anagramNo": "Teks-teks itu bukan anagram.",
   "palindromeYes": "Teks itu adalah palindrom.",
   "palindromeNo": "Teks itu bukan palindrom.",
-  "textCheckInvalid": "Periksa input dan batasannya. Teks perbandingan tidak boleh kosong setelah difilter; browser harus mendukung segmentasi Unicode."
+  "textCheckInvalid": "Periksa input dan batasannya. Teks perbandingan tidak boleh kosong setelah difilter; browser harus mendukung segmentasi Unicode.",
+  "fileHashTitle": "Pemeriksa SHA-256 berkas",
+  "fileHashDesc": "Hitung hash byte asli berkas secara lokal dan bandingkan dengan hash yang diberikan. Kecocokan bukan jaminan keamanan.",
+  "fileHashFile": "Berkas",
+  "fileHashLimits": "Satu berkas, maksimal 50 MiB. Berkas kosong valid; seluruh berkas dimuat ke memori.",
+  "fileHashExpected": "SHA-256 yang diharapkan (opsional)",
+  "fileHashWorking": "Menghitung hash berkas…",
+  "fileHashMatch": "Hash cocok.",
+  "fileHashMismatch": "Hash tidak cocok.",
+  "fileHashInvalidExpected": "Hash yang diharapkan harus tepat 64 karakter heksadesimal.",
+  "fileHashInvalidFile": "Pilih satu berkas berukuran maksimal 50 MiB.",
+  "fileHashFailed": "Operasi tidak dapat diselesaikan. Gunakan peramban terkini yang mendukung Web Crypto dan HTTPS.",
+  "fileHashClear": "Bersihkan"
 }

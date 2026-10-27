@@ -645,5 +645,17 @@
   "anagramNo": "A szövegek nem anagrammák.",
   "palindromeYes": "A szöveg egy palindrom.",
   "palindromeNo": "A szöveg nem palindróm.",
-  "textCheckInvalid": "Nézd meg a bemenetet és a limiteket. Az összehasonlító szöveg nem szabad üresnek lennie a szűrés után; a böngészőnek támogatnia kell az Unicode szegmentálást."
+  "textCheckInvalid": "Nézd meg a bemenetet és a limiteket. Az összehasonlító szöveg nem szabad üresnek lennie a szűrés után; a böngészőnek támogatnia kell az Unicode szegmentálást.",
+  "fileHashTitle": "Fájl SHA-256 ellenőrzése",
+  "fileHashDesc": "Számítsa ki helyben a fájl eredeti bájtjainak lenyomatát, és vesse össze a megadott lenyomattal. Az egyezés nem garantál biztonságot.",
+  "fileHashFile": "Fájl",
+  "fileHashLimits": "Egy fájl, legfeljebb 50 MiB. Üres fájl is megadható; a teljes fájl a memóriába kerül.",
+  "fileHashExpected": "Várt SHA-256 (nem kötelező)",
+  "fileHashWorking": "Fájl lenyomatának kiszámítása…",
+  "fileHashMatch": "A lenyomatok egyeznek.",
+  "fileHashMismatch": "A lenyomatok nem egyeznek.",
+  "fileHashInvalidExpected": "A várt lenyomatnak pontosan 64 hexadecimális karakterből kell állnia.",
+  "fileHashInvalidFile": "Válasszon egy legfeljebb 50 MiB méretű fájlt.",
+  "fileHashFailed": "A művelet nem fejezhető be. Használjon korszerű, Web Crypto-t támogató böngészőt és HTTPS-t.",
+  "fileHashClear": "Törlés"
 }

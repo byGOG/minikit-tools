@@ -1,0 +1,32 @@
+---
+import { FileCheck, ShieldCheck, ArrowRight } from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const str = (key: string) => (tr as Record<string, string>)[key] ?? key;
+---
+<article class="tool-card file-checksum-card" id="file-checksum-tool">
+  <div class="card-top"><span class="tool-icon icon-blue"><FileCheck size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="fileHashTitle">{str('fileHashTitle')}</h3>
+  <p data-i18n="fileHashDesc">{str('fileHashDesc')}</p>
+  <div class="file-checksum-options">
+    <label class="field-label" for="filehash-file" data-i18n="fileHashFile">{str('fileHashFile')}</label>
+    <input class="text-input" id="filehash-file" type="file" aria-describedby="filehash-limits"/>
+    <small class="number-hint" id="filehash-limits" data-i18n="fileHashLimits">{str('fileHashLimits')}</small>
+    <label class="field-label" for="filehash-expected" data-i18n="fileHashExpected">{str('fileHashExpected')}</label>
+    <input class="text-input" id="filehash-expected" type="text" dir="ltr" autocomplete="off" autocapitalize="off" spellcheck="false"/>
+  </div>
+  <button class="button-primary full" id="filehash-apply" data-i18n="calculate" disabled>{tr.calculate}</button>
+  <label class="field-label file-checksum-result-label" for="filehash-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="filehash-output" readonly dir="ltr" spellcheck="false"></textarea>
+  <p class="tool-feedback" id="filehash-feedback" role="status" aria-live="polite"></p>
+  <div class="text-tool-actions"><button class="button-secondary full" id="filehash-copy" data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id="filehash-clear" data-i18n="fileHashClear">{str('fileHashClear')}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="file-sha256-checker" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
+<style is:global>
+.file-checksum-options{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.file-checksum-options .field-label{margin:0}
+.file-checksum-options .number-hint{font-size:12px;line-height:1.65;color:#526258;margin-bottom:6px}
+.file-checksum-options input[type=file]{font-size:13px;max-width:100%;min-width:0}
+.file-checksum-result-label{margin-top:14px}
+.file-checksum-card textarea{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere;word-break:break-all;min-height:95px}
+</style>

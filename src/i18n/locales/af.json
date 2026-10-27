@@ -645,5 +645,17 @@
   "anagramNo": "Die tekste is nie anagramme nie.",
   "palindromeYes": "Die teks is 'n palindroom.",
   "palindromeNo": "Die teks is nie 'n palindroom nie.",
-  "textCheckInvalid": "Kontroleer die insette en perke. Vergelykingstekst mag nie leeg wees na filtrering nie; die blaaier moet Unicode-segmentering ondersteun."
+  "textCheckInvalid": "Kontroleer die insette en perke. Vergelykingstekst mag nie leeg wees na filtrering nie; die blaaier moet Unicode-segmentering ondersteun.",
+  "fileHashTitle": "Lêer-SHA-256-kontroleerder",
+  "fileHashDesc": "Bereken die lêer se oorspronklike grepe se opsomming plaaslik en vergelyk dit met ’n gegewe opsomming. ’n Passing waarborg nie veiligheid nie.",
+  "fileHashFile": "Lêer",
+  "fileHashLimits": "Een lêer, hoogstens 50 MiB. Leë lêers is geldig; die hele lêer word in die geheue gelaai.",
+  "fileHashExpected": "Verwagte SHA-256 (opsioneel)",
+  "fileHashWorking": "Lêeropsomming word bereken…",
+  "fileHashMatch": "Opsommings stem ooreen.",
+  "fileHashMismatch": "Opsommings stem nie ooreen nie.",
+  "fileHashInvalidExpected": "Die verwagte opsomming moet presies 64 heksadesimale karakters bevat.",
+  "fileHashInvalidFile": "Kies een lêer van hoogstens 50 MiB.",
+  "fileHashFailed": "Die bewerking kon nie voltooi word nie. Gebruik ’n moderne blaaier met Web Crypto en HTTPS.",
+  "fileHashClear": "Maak skoon"
 }

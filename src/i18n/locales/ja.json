@@ -645,5 +645,17 @@
   "anagramNo": "テキストはアナグラムではありません。",
   "palindromeYes": "テキストは回文です。",
   "palindromeNo": "このテキストは回文ではありません。",
-  "textCheckInvalid": "入力とリミットを確認してください。比較テキストはフィルタリング後に空であってはなりません。ブラウザはUnicodeのセグメンテーションをサポートしなければなりません。"
+  "textCheckInvalid": "入力とリミットを確認してください。比較テキストはフィルタリング後に空であってはなりません。ブラウザはUnicodeのセグメンテーションをサポートしなければなりません。",
+  "fileHashTitle": "ファイルSHA-256検証",
+  "fileHashDesc": "ファイルの元のバイト列のハッシュをローカルで計算し、指定されたハッシュと比較します。一致しても安全性は保証されません。",
+  "fileHashFile": "ファイル",
+  "fileHashLimits": "1ファイル、最大50 MiB。空のファイルも有効です。ファイル全体をメモリに読み込みます。",
+  "fileHashExpected": "期待するSHA-256（任意）",
+  "fileHashWorking": "ファイルのハッシュを計算中…",
+  "fileHashMatch": "ハッシュが一致しました。",
+  "fileHashMismatch": "ハッシュが一致しません。",
+  "fileHashInvalidExpected": "期待するハッシュは正確に64桁の16進文字で入力してください。",
+  "fileHashInvalidFile": "50 MiB以下のファイルを1つ選択してください。",
+  "fileHashFailed": "処理を完了できませんでした。Web Crypto対応の最新ブラウザとHTTPSを使用してください。",
+  "fileHashClear": "クリア"
 }

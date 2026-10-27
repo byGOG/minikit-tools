@@ -645,5 +645,17 @@
   "anagramNo": "Teksterne er ikke anagrammer.",
   "palindromeYes": "Teksten er et palindrom.",
   "palindromeNo": "Teksten er ikke et palindrom.",
-  "textCheckInvalid": "Tjek input og grænser. Sammenligningstekst må ikke være tom efter filtrering; browseren skal understøtte Unicode-segmentering."
+  "textCheckInvalid": "Tjek input og grænser. Sammenligningstekst må ikke være tom efter filtrering; browseren skal understøtte Unicode-segmentering.",
+  "fileHashTitle": "SHA-256-kontrol af filer",
+  "fileHashDesc": "Beregn lokalt et hash af filens oprindelige bytes, og sammenlign med et angivet hash. Et match garanterer ikke sikkerhed.",
+  "fileHashFile": "Fil",
+  "fileHashLimits": "Én fil på højst 50 MiB. Tomme filer er gyldige; hele filen indlæses i hukommelsen.",
+  "fileHashExpected": "Forventet SHA-256 (valgfrit)",
+  "fileHashWorking": "Beregner filens hash…",
+  "fileHashMatch": "Hashværdierne matcher.",
+  "fileHashMismatch": "Hashværdierne matcher ikke.",
+  "fileHashInvalidExpected": "Den forventede hashværdi skal indeholde præcis 64 hexadecimale tegn.",
+  "fileHashInvalidFile": "Vælg én fil på højst 50 MiB.",
+  "fileHashFailed": "Handlingen kunne ikke fuldføres. Brug en opdateret browser med Web Crypto og HTTPS.",
+  "fileHashClear": "Ryd"
 }

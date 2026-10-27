@@ -645,5 +645,17 @@
   "anagramNo": "Texterna är inte anagram.",
   "palindromeYes": "Texten är ett palindrom.",
   "palindromeNo": "Texten är inte ett palindrom.",
-  "textCheckInvalid": "Kontrollera inmatning och gränser. Jämförelsetext får inte vara tom efter filtrering; webbläsaren måste stödja Unicode-segmentering."
+  "textCheckInvalid": "Kontrollera inmatning och gränser. Jämförelsetext får inte vara tom efter filtrering; webbläsaren måste stödja Unicode-segmentering.",
+  "fileHashTitle": "SHA-256-kontroll av filer",
+  "fileHashDesc": "Beräkna hashen av filens ursprungliga byte lokalt och jämför med en angiven hash. En matchning garanterar inte säkerhet.",
+  "fileHashFile": "Fil",
+  "fileHashLimits": "En fil, högst 50 MiB. Tomma filer är giltiga; hela filen läses in i minnet.",
+  "fileHashExpected": "Förväntad SHA-256 (valfritt)",
+  "fileHashWorking": "Beräknar filens hash…",
+  "fileHashMatch": "Hashvärdena matchar.",
+  "fileHashMismatch": "Hashvärdena matchar inte.",
+  "fileHashInvalidExpected": "Förväntad hash måste innehålla exakt 64 hexadecimala tecken.",
+  "fileHashInvalidFile": "Välj en fil på högst 50 MiB.",
+  "fileHashFailed": "Åtgärden kunde inte slutföras. Använd en uppdaterad webbläsare med Web Crypto och HTTPS.",
+  "fileHashClear": "Rensa"
 }

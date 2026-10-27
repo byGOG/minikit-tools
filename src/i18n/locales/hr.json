@@ -645,5 +645,17 @@
   "anagramNo": "Tekstovi nisu anagrami.",
   "palindromeYes": "Tekst je palindrom.",
   "palindromeNo": "Tekst nije palindrom.",
-  "textCheckInvalid": "Provjeri ulaz i granice. Usporedni tekst ne smije biti prazan nakon filtriranja; preglednik mora podržavati Unicode segmentaciju."
+  "textCheckInvalid": "Provjeri ulaz i granice. Usporedni tekst ne smije biti prazan nakon filtriranja; preglednik mora podržavati Unicode segmentaciju.",
+  "fileHashTitle": "Provjera SHA-256 datoteke",
+  "fileHashDesc": "Lokalno izračunajte sažetak izvornih bajtova datoteke i usporedite ga sa zadanim sažetkom. Podudaranje ne jamči sigurnost.",
+  "fileHashFile": "Datoteka",
+  "fileHashLimits": "Jedna datoteka do 50 MiB. Prazne datoteke su valjane; cijela se datoteka učitava u memoriju.",
+  "fileHashExpected": "Očekivani SHA-256 (neobavezno)",
+  "fileHashWorking": "Izračunavanje sažetka datoteke…",
+  "fileHashMatch": "Sažeci se podudaraju.",
+  "fileHashMismatch": "Sažeci se ne podudaraju.",
+  "fileHashInvalidExpected": "Očekivani sažetak mora sadržavati točno 64 heksadekadska znaka.",
+  "fileHashInvalidFile": "Odaberite jednu datoteku do 50 MiB.",
+  "fileHashFailed": "Postupak nije dovršen. Upotrijebite ažuriran preglednik s podrškom za Web Crypto i HTTPS.",
+  "fileHashClear": "Očisti"
 }
