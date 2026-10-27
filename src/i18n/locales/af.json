@@ -691,5 +691,18 @@
   "gradientLimits": "Gebruik #RGB- of #RRGGBB-HEX-kleure en ’n heelgetalhoek van 0–360°. Twee ondeursigtige kleure; slegs lineêre verlope.",
   "gradientGenerate": "Skep verloop",
   "gradientPreview": "Verloopvoorskou",
-  "gradientInvalid": "Voer geldige #RGB/#RRGGBB-kleure en ’n heelgetalhoek van 0–360° in. Elke kleurinvoer mag hoogstens 32 karakters bevat."
+  "gradientInvalid": "Voer geldige #RGB/#RRGGBB-kleure en ’n heelgetalhoek van 0–360° in. Elke kleurinvoer mag hoogstens 32 karakters bevat.",
+  "shadowTitle": "CSS-boksskaduskepper",
+  "shadowDesc": "Verstel ’n boksskadu, bekyk dit en kopieer die CSS plaaslik.",
+  "shadowOffsetX": "Horisontale verskuiwing (px)",
+  "shadowOffsetY": "Vertikale verskuiwing (px)",
+  "shadowBlur": "Vervaagradius (px)",
+  "shadowSpread": "Spreiding (px)",
+  "shadowColor": "Skadukleur",
+  "shadowOpacity": "Ondeursigtigheid (%)",
+  "shadowInset": "Binneskadu",
+  "shadowLimits": "Heelgetalle: verskuiwing/spreiding −100–100 px, vervaging 0–200 px, ondeursigtigheid 0–100%. HEX #RGB/#RRGGBB-kleure. Groot skaduwees word by die voorskouraam afgesny.",
+  "shadowGenerate": "Skep skadu",
+  "shadowPreview": "Skaduvoorskou",
+  "shadowInvalid": "Kontroleer HEX-kleur en heelgetalgrense: verskuiwing/spreiding −100–100, vervaging 0–200, ondeursigtigheid 0–100. Kleurinvoer: hoogstens 32 karakters."
 }

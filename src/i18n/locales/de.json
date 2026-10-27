@@ -691,5 +691,18 @@
   "gradientLimits": "Nutze HEX-Farben im Format #RGB oder #RRGGBB und einen ganzzahligen Winkel von 0–360°. Zwei deckende Farben; nur lineare Verläufe.",
   "gradientGenerate": "Verlauf erstellen",
   "gradientPreview": "Verlaufsvorschau",
-  "gradientInvalid": "Gib gültige #RGB/#RRGGBB-Farben und einen ganzzahligen Winkel von 0–360° ein. Jede Farbeingabe darf höchstens 32 Zeichen enthalten."
+  "gradientInvalid": "Gib gültige #RGB/#RRGGBB-Farben und einen ganzzahligen Winkel von 0–360° ein. Jede Farbeingabe darf höchstens 32 Zeichen enthalten.",
+  "shadowTitle": "CSS-Box-Shadow-Generator",
+  "shadowDesc": "Passe einen Boxschatten an, zeige die Vorschau und kopiere das CSS lokal.",
+  "shadowOffsetX": "Horizontaler Versatz (px)",
+  "shadowOffsetY": "Vertikaler Versatz (px)",
+  "shadowBlur": "Weichzeichnungsradius (px)",
+  "shadowSpread": "Ausbreitung (px)",
+  "shadowColor": "Schattenfarbe",
+  "shadowOpacity": "Deckkraft (%)",
+  "shadowInset": "Innerer Schatten",
+  "shadowLimits": "Ganze Zahlen: Versatz/Ausbreitung −100–100 px, Weichzeichnung 0–200 px, Deckkraft 0–100 %. HEX-Farben #RGB/#RRGGBB. Große Schatten werden am Vorschaurahmen abgeschnitten.",
+  "shadowGenerate": "Schatten erstellen",
+  "shadowPreview": "Schattenvorschau",
+  "shadowInvalid": "Prüfe HEX-Farbe und Ganzzahlgrenzen: Versatz/Ausbreitung −100–100, Weichzeichnung 0–200, Deckkraft 0–100. Farbeingabe: höchstens 32 Zeichen."
 }

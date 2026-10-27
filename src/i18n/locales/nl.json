@@ -691,5 +691,18 @@
   "gradientLimits": "Gebruik HEX-kleuren #RGB of #RRGGBB en een gehele hoek van 0–360°. Twee ondoorzichtige kleuren; alleen lineaire verlopen.",
   "gradientGenerate": "Verloop genereren",
   "gradientPreview": "Voorbeeld van verloop",
-  "gradientInvalid": "Voer geldige #RGB/#RRGGBB-kleuren en een gehele hoek van 0–360° in. Elke kleurinvoer mag maximaal 32 tekens bevatten."
+  "gradientInvalid": "Voer geldige #RGB/#RRGGBB-kleuren en een gehele hoek van 0–360° in. Elke kleurinvoer mag maximaal 32 tekens bevatten.",
+  "shadowTitle": "CSS-boxschaduwgenerator",
+  "shadowDesc": "Pas een boxschaduw aan, bekijk het voorbeeld en kopieer de CSS lokaal.",
+  "shadowOffsetX": "Horizontale verschuiving (px)",
+  "shadowOffsetY": "Verticale verschuiving (px)",
+  "shadowBlur": "Vervagingsstraal (px)",
+  "shadowSpread": "Spreiding (px)",
+  "shadowColor": "Schaduwkleur",
+  "shadowOpacity": "Dekking (%)",
+  "shadowInset": "Binnenschaduw",
+  "shadowLimits": "Gehele getallen: verschuiving/spreiding −100–100 px, vervaging 0–200 px, dekking 0–100%. HEX-kleuren #RGB/#RRGGBB. Grote schaduwen worden bij het voorbeeldkader afgesneden.",
+  "shadowGenerate": "Schaduw genereren",
+  "shadowPreview": "Schaduwvoorbeeld",
+  "shadowInvalid": "Controleer HEX-kleur en gehele grenzen: verschuiving/spreiding −100–100, vervaging 0–200, dekking 0–100. Kleurinvoer: maximaal 32 tekens."
 }

@@ -691,5 +691,18 @@
   "gradientLimits": "Izmantojiet HEX krāsas #RGB vai #RRGGBB un veselu leņķi 0–360°. Divas necaurspīdīgas krāsas; tikai lineāri gradienti.",
   "gradientGenerate": "Ģenerēt gradientu",
   "gradientPreview": "Gradienta priekšskatījums",
-  "gradientInvalid": "Ievadiet derīgas #RGB/#RRGGBB krāsas un veselu leņķi 0–360°. Katra krāsas ievade drīkst saturēt līdz 32 rakstzīmēm."
+  "gradientInvalid": "Ievadiet derīgas #RGB/#RRGGBB krāsas un veselu leņķi 0–360°. Katra krāsas ievade drīkst saturēt līdz 32 rakstzīmēm.",
+  "shadowTitle": "CSS kastes ēnas ģenerators",
+  "shadowDesc": "Pielāgojiet kastes ēnu, priekšskatiet un lokāli kopējiet CSS.",
+  "shadowOffsetX": "Horizontālā nobīde (px)",
+  "shadowOffsetY": "Vertikālā nobīde (px)",
+  "shadowBlur": "Izpludināšanas rādiuss (px)",
+  "shadowSpread": "Izplešanās (px)",
+  "shadowColor": "Ēnas krāsa",
+  "shadowOpacity": "Necaurspīdīgums (%)",
+  "shadowInset": "Iekšējā ēna",
+  "shadowLimits": "Veseli skaitļi: nobīde/izplešanās −100–100 px, izpludinājums 0–200 px, necaurspīdīgums 0–100%. HEX krāsas #RGB/#RRGGBB. Lielas ēnas tiek apgrieztas priekšskatījuma rāmī.",
+  "shadowGenerate": "Ģenerēt ēnu",
+  "shadowPreview": "Ēnas priekšskatījums",
+  "shadowInvalid": "Pārbaudiet HEX krāsu un veselo skaitļu robežas: nobīde/izplešanās −100–100, izpludinājums 0–200, necaurspīdīgums 0–100. Krāsas ievade: līdz 32 rakstzīmēm."
 }

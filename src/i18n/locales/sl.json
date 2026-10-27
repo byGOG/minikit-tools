@@ -691,5 +691,18 @@
   "gradientLimits": "Uporabite HEX barve #RGB ali #RRGGBB in celoštevilski kot 0–360°. Dve neprozorni barvi; samo linearni prelivi.",
   "gradientGenerate": "Ustvari preliv",
   "gradientPreview": "Predogled preliva",
-  "gradientInvalid": "Vnesite veljavne barve #RGB/#RRGGBB in celoštevilski kot 0–360°. Vsak barvni vnos ima lahko največ 32 znakov."
+  "gradientInvalid": "Vnesite veljavne barve #RGB/#RRGGBB in celoštevilski kot 0–360°. Vsak barvni vnos ima lahko največ 32 znakov.",
+  "shadowTitle": "Generator senc CSS",
+  "shadowDesc": "Prilagodite senco polja, oglejte si predogled in lokalno kopirajte CSS.",
+  "shadowOffsetX": "Vodoravni odmik (px)",
+  "shadowOffsetY": "Navpični odmik (px)",
+  "shadowBlur": "Polmer zameglitve (px)",
+  "shadowSpread": "Razširitev (px)",
+  "shadowColor": "Barva sence",
+  "shadowOpacity": "Neprosojnost (%)",
+  "shadowInset": "Notranja senca",
+  "shadowLimits": "Cela števila: odmik/razširitev −100–100 px, zameglitev 0–200 px, neprosojnost 0–100%. HEX barve #RGB/#RRGGBB. Velike sence so odrezane z okvirjem predogleda.",
+  "shadowGenerate": "Ustvari senco",
+  "shadowPreview": "Predogled sence",
+  "shadowInvalid": "Preverite HEX barvo in celoštevilske meje: odmik/razširitev −100–100, zameglitev 0–200, neprosojnost 0–100. Barva: največ 32 znakov."
 }

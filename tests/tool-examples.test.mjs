@@ -7,6 +7,7 @@ import {generateLoremIpsum} from '../src/scripts/lorem-ipsum-core.ts';
 import {convertRoman} from '../src/scripts/roman-numerals-core.ts';
 import {convertMorse} from '../src/scripts/morse-code-core.ts';
 import {createGradient} from '../src/scripts/gradient-core.ts';
+import {createBoxShadow} from '../src/scripts/box-shadow-core.ts';
 
 const examples=JSON.parse(await readFile(new URL('../src/data/tool-examples.json',import.meta.url),'utf8'));
 const locales=JSON.parse(await readFile(new URL('../src/i18n/catalog.json',import.meta.url),'utf8'));
@@ -47,4 +48,10 @@ test('published CSS gradient example matches the real declaration',()=>{
  const [input,expected]=examples['css-gradient-generator'];
  assert.equal(input,'#155c42 → #c7f36b · 90°');
  assert.equal(createGradient('#155c42','#c7f36b',90).css,expected);
+});
+
+test('published CSS box-shadow example matches the real declaration',()=>{
+ const [input,expected]=examples['css-box-shadow-generator'];
+ assert.equal(input,'0px · 8px · 24px · 0px · #000000 · 20%');
+ assert.equal(createBoxShadow({x:0,y:8,blur:24,spread:0,color:'#000000',opacity:20,inset:false}).css,expected);
 });

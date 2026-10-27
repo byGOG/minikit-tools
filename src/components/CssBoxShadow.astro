@@ -1,0 +1,45 @@
+---
+import { Square, ShieldCheck, ArrowRight } from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const str = (key: string) => (tr as Record<string, string>)[key] ?? key;
+const fields = [
+  { id: 'x', key: 'shadowOffsetX', min: -100, max: 100, value: 0 },
+  { id: 'y', key: 'shadowOffsetY', min: -100, max: 100, value: 8 },
+  { id: 'blur', key: 'shadowBlur', min: 0, max: 200, value: 24 },
+  { id: 'spread', key: 'shadowSpread', min: -100, max: 100, value: 0 },
+  { id: 'opacity', key: 'shadowOpacity', min: 0, max: 100, value: 20 },
+];
+---
+<article class="tool-card css-shadow-card" id="css-shadow-tool">
+  <div class="card-top"><span class="tool-icon icon-blue"><Square size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="shadowTitle">{str('shadowTitle')}</h3>
+  <p data-i18n="shadowDesc">{str('shadowDesc')}</p>
+  <div class="shadow-options">
+    {fields.map(field => <div><label class="field-label" for={`shadow-${field.id}`} data-i18n={field.key}>{str(field.key)}</label><input class="text-input" id={`shadow-${field.id}`} type="number" min={field.min} max={field.max} step="1" value={field.value} required aria-describedby="shadow-limits"/></div>)}
+    <div><label class="field-label" for="shadow-color" data-i18n="shadowColor">{str('shadowColor')}</label><div class="shadow-color-pair"><input class="text-input" id="shadow-color" type="text" value="#000000" dir="ltr" autocomplete="off" spellcheck="false" aria-describedby="shadow-limits"/><input id="shadow-color-picker" type="color" value="#000000" aria-label={str('shadowColor')} data-i18n-aria="shadowColor"/></div></div>
+  </div>
+  <label class="shadow-inset-label" for="shadow-inset"><input type="checkbox" id="shadow-inset"/><span data-i18n="shadowInset">{str('shadowInset')}</span></label>
+  <small class="shadow-hint" id="shadow-limits" data-i18n="shadowLimits">{str('shadowLimits')}</small>
+  <button class="button-primary full" id="shadow-generate" data-i18n="shadowGenerate">{str('shadowGenerate')}</button>
+  <p class="field-label shadow-result-label" data-i18n="shadowPreview">{str('shadowPreview')}</p>
+  <div id="shadow-preview" class="shadow-preview" role="img" aria-label={str('shadowPreview')} data-i18n-aria="shadowPreview"><div id="shadow-target" aria-hidden="true"></div></div>
+  <label class="field-label shadow-result-label" for="shadow-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="shadow-output" readonly dir="ltr" spellcheck="false"></textarea>
+  <p class="tool-feedback" id="shadow-feedback" role="status" aria-live="polite"></p>
+  <div class="text-tool-actions"><button class="button-secondary full" id="shadow-copy" data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id="shadow-clear" data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="css-box-shadow-generator" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
+<style is:global>
+.shadow-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.shadow-options input{width:100%;min-width:0}
+.shadow-color-pair{display:flex;align-items:center;gap:8px}
+.shadow-color-pair input[type=color]{width:44px;height:42px;flex-shrink:0;border:1px solid #cbd5ce;border-radius:8px;background:#fff;padding:3px;cursor:pointer}
+.shadow-inset-label{display:flex;align-items:center;gap:8px;margin-top:14px;font-size:14px}
+.shadow-hint{display:block;font-size:12px;line-height:1.65;color:#526258;margin:10px 0 14px}
+.shadow-preview{height:220px;min-width:0;display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid #cbd5ce;border-radius:12px;background:#e5e7eb}
+#shadow-target{width:120px;max-width:60%;height:90px;background:#fff;border-radius:8px;box-shadow:none}
+.shadow-result-label{margin-top:14px}
+.css-shadow-card textarea{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;min-height:100px;overflow-wrap:anywhere}
+@media(max-width:440px){.shadow-options{grid-template-columns:1fr}}
+</style>

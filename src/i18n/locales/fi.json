@@ -691,5 +691,18 @@
   "gradientLimits": "Käytä HEX-värejä #RGB tai #RRGGBB ja kokonaislukukulmaa 0–360°. Kaksi peittävää väriä; vain lineaariset liukuvärit.",
   "gradientGenerate": "Luo liukuväri",
   "gradientPreview": "Liukuvärin esikatselu",
-  "gradientInvalid": "Anna kelvolliset #RGB/#RRGGBB-värit ja kokonaislukukulma 0–360°. Kukin värisyöte saa sisältää enintään 32 merkkiä."
+  "gradientInvalid": "Anna kelvolliset #RGB/#RRGGBB-värit ja kokonaislukukulma 0–360°. Kukin värisyöte saa sisältää enintään 32 merkkiä.",
+  "shadowTitle": "CSS-laatikkovarjogeneraattori",
+  "shadowDesc": "Säädä laatikon varjoa, esikatsele ja kopioi CSS paikallisesti.",
+  "shadowOffsetX": "Vaakasiirtymä (px)",
+  "shadowOffsetY": "Pystysiirtymä (px)",
+  "shadowBlur": "Sumennussäde (px)",
+  "shadowSpread": "Leviäminen (px)",
+  "shadowColor": "Varjon väri",
+  "shadowOpacity": "Peittävyys (%)",
+  "shadowInset": "Sisävarjo",
+  "shadowLimits": "Kokonaisluvut: siirtymä/leviäminen −100–100 px, sumennus 0–200 px, peittävyys 0–100 %. HEX-värit #RGB/#RRGGBB. Suuret varjot rajataan esikatselukehykseen.",
+  "shadowGenerate": "Luo varjo",
+  "shadowPreview": "Varjon esikatselu",
+  "shadowInvalid": "Tarkista HEX-väri ja kokonaislukurajat: siirtymä/leviäminen −100–100, sumennus 0–200, peittävyys 0–100. Värisyöte: enintään 32 merkkiä."
 }

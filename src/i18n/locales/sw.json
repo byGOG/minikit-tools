@@ -691,5 +691,18 @@
   "gradientLimits": "Tumia rangi za HEX #RGB au #RRGGBB na pembe kamili 0–360°. Rangi mbili zisizopitisha mwanga; mipito ya mstari pekee.",
   "gradientGenerate": "Unda mpito",
   "gradientPreview": "Hakikisho la mpito",
-  "gradientInvalid": "Weka rangi halali za #RGB/#RRGGBB na pembe kamili 0–360°. Kila ingizo la rangi lina hadi vibambo 32."
+  "gradientInvalid": "Weka rangi halali za #RGB/#RRGGBB na pembe kamili 0–360°. Kila ingizo la rangi lina hadi vibambo 32.",
+  "shadowTitle": "Kizalishaji cha kivuli cha kisanduku cha CSS",
+  "shadowDesc": "Rekebisha kivuli cha kisanduku, uone hakikisho na unakili CSS kwenye kifaa.",
+  "shadowOffsetX": "Uhamisho mlalo (px)",
+  "shadowOffsetY": "Uhamisho wima (px)",
+  "shadowBlur": "Kipenyo nusu cha ukungu (px)",
+  "shadowSpread": "Kuenea (px)",
+  "shadowColor": "Rangi ya kivuli",
+  "shadowOpacity": "Kutopitisha mwanga (%)",
+  "shadowInset": "Kivuli cha ndani",
+  "shadowLimits": "Nambari kamili: uhamisho/kuenea −100–100 px, ukungu 0–200 px, kutopitisha mwanga 0–100%. Rangi za HEX #RGB/#RRGGBB. Vivuli vikubwa hukatwa kwenye fremu ya hakikisho.",
+  "shadowGenerate": "Unda kivuli",
+  "shadowPreview": "Hakikisho la kivuli",
+  "shadowInvalid": "Kagua rangi ya HEX na mipaka kamili: uhamisho/kuenea −100–100, ukungu 0–200, kutopitisha mwanga 0–100. Ingizo la rangi: hadi vibambo 32."
 }

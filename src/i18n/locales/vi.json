@@ -691,5 +691,18 @@
   "gradientLimits": "Dùng màu HEX #RGB hoặc #RRGGBB và góc nguyên 0–360°. Hai màu đục; chỉ chuyển màu tuyến tính.",
   "gradientGenerate": "Tạo chuyển màu",
   "gradientPreview": "Xem trước chuyển màu",
-  "gradientInvalid": "Nhập màu #RGB/#RRGGBB hợp lệ và góc nguyên 0–360°. Mỗi ô màu chứa tối đa 32 ký tự."
+  "gradientInvalid": "Nhập màu #RGB/#RRGGBB hợp lệ và góc nguyên 0–360°. Mỗi ô màu chứa tối đa 32 ký tự.",
+  "shadowTitle": "Trình tạo bóng hộp CSS",
+  "shadowDesc": "Chỉnh bóng hộp, xem trước và sao chép CSS cục bộ.",
+  "shadowOffsetX": "Độ lệch ngang (px)",
+  "shadowOffsetY": "Độ lệch dọc (px)",
+  "shadowBlur": "Bán kính làm mờ (px)",
+  "shadowSpread": "Độ lan (px)",
+  "shadowColor": "Màu bóng",
+  "shadowOpacity": "Độ đục (%)",
+  "shadowInset": "Bóng trong",
+  "shadowLimits": "Số nguyên: độ lệch/độ lan −100–100 px, làm mờ 0–200 px, độ đục 0–100%. Màu HEX #RGB/#RRGGBB. Bóng lớn bị cắt tại khung xem trước.",
+  "shadowGenerate": "Tạo bóng",
+  "shadowPreview": "Xem trước bóng",
+  "shadowInvalid": "Kiểm tra màu HEX và giới hạn số nguyên: độ lệch/độ lan −100–100, làm mờ 0–200, độ đục 0–100. Ô màu: tối đa 32 ký tự."
 }

@@ -691,5 +691,18 @@
   "gradientLimits": "Használjon #RGB vagy #RRGGBB HEX színeket és 0–360° közötti egész szöget. Két átlátszatlan szín; csak lineáris átmenetek.",
   "gradientGenerate": "Átmenet létrehozása",
   "gradientPreview": "Átmenet előnézete",
-  "gradientInvalid": "Adjon meg érvényes #RGB/#RRGGBB színeket és 0–360° közötti egész szöget. Színenként legfeljebb 32 karakter adható meg."
+  "gradientInvalid": "Adjon meg érvényes #RGB/#RRGGBB színeket és 0–360° közötti egész szöget. Színenként legfeljebb 32 karakter adható meg.",
+  "shadowTitle": "CSS dobozárnyék-generátor",
+  "shadowDesc": "Állítsa be a doboz árnyékát, tekintse meg, és másolja a CSS-t helyben.",
+  "shadowOffsetX": "Vízszintes eltolás (px)",
+  "shadowOffsetY": "Függőleges eltolás (px)",
+  "shadowBlur": "Elmosási sugár (px)",
+  "shadowSpread": "Kiterjedés (px)",
+  "shadowColor": "Árnyék színe",
+  "shadowOpacity": "Fedettség (%)",
+  "shadowInset": "Belső árnyék",
+  "shadowLimits": "Egész számok: eltolás/kiterjedés −100–100 px, elmosás 0–200 px, fedettség 0–100%. HEX színek: #RGB/#RRGGBB. A nagy árnyékokat az előnézet kerete levágja.",
+  "shadowGenerate": "Árnyék létrehozása",
+  "shadowPreview": "Árnyék előnézete",
+  "shadowInvalid": "Ellenőrizze a HEX színt és egész korlátokat: eltolás/kiterjedés −100–100, elmosás 0–200, fedettség 0–100. Színbevitel: legfeljebb 32 karakter."
 }

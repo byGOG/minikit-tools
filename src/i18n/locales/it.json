@@ -691,5 +691,18 @@
   "gradientLimits": "Usa colori HEX #RGB o #RRGGBB e un angolo intero di 0–360°. Due colori opachi; solo sfumature lineari.",
   "gradientGenerate": "Genera sfumatura",
   "gradientPreview": "Anteprima della sfumatura",
-  "gradientInvalid": "Inserisci colori #RGB/#RRGGBB validi e un angolo intero di 0–360°. Ogni campo colore ammette al massimo 32 caratteri."
+  "gradientInvalid": "Inserisci colori #RGB/#RRGGBB validi e un angolo intero di 0–360°. Ogni campo colore ammette al massimo 32 caratteri.",
+  "shadowTitle": "Generatore di ombre CSS",
+  "shadowDesc": "Regola un’ombra del riquadro, visualizza l’anteprima e copia il CSS localmente.",
+  "shadowOffsetX": "Spostamento orizzontale (px)",
+  "shadowOffsetY": "Spostamento verticale (px)",
+  "shadowBlur": "Raggio di sfocatura (px)",
+  "shadowSpread": "Espansione (px)",
+  "shadowColor": "Colore dell’ombra",
+  "shadowOpacity": "Opacità (%)",
+  "shadowInset": "Ombra interna",
+  "shadowLimits": "Interi: spostamento/espansione −100–100 px, sfocatura 0–200 px, opacità 0–100%. Colori HEX #RGB/#RRGGBB. Le ombre grandi vengono ritagliate nella cornice di anteprima.",
+  "shadowGenerate": "Genera ombra",
+  "shadowPreview": "Anteprima dell’ombra",
+  "shadowInvalid": "Controlla colore HEX e limiti interi: spostamento/espansione −100–100, sfocatura 0–200, opacità 0–100. Colore: massimo 32 caratteri."
 }

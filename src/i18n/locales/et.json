@@ -691,5 +691,18 @@
   "gradientLimits": "Kasuta HEX-värve #RGB või #RRGGBB ja täisarvulist nurka 0–360°. Kaks läbipaistmatut värvi; ainult lineaarsed üleminekud.",
   "gradientGenerate": "Loo üleminek",
   "gradientPreview": "Ülemineku eelvaade",
-  "gradientInvalid": "Sisesta kehtivad #RGB/#RRGGBB värvid ja täisarvuline nurk 0–360°. Iga värvisisend võib sisaldada kuni 32 märki."
+  "gradientInvalid": "Sisesta kehtivad #RGB/#RRGGBB värvid ja täisarvuline nurk 0–360°. Iga värvisisend võib sisaldada kuni 32 märki.",
+  "shadowTitle": "CSS-kastivarju generaator",
+  "shadowDesc": "Seadista kastivari, vaata eelvaadet ja kopeeri CSS kohapeal.",
+  "shadowOffsetX": "Horisontaalne nihe (px)",
+  "shadowOffsetY": "Vertikaalne nihe (px)",
+  "shadowBlur": "Hägustuse raadius (px)",
+  "shadowSpread": "Laienemine (px)",
+  "shadowColor": "Varju värv",
+  "shadowOpacity": "Läbipaistmatus (%)",
+  "shadowInset": "Sisemine vari",
+  "shadowLimits": "Täisarvud: nihe/laienemine −100–100 px, hägusus 0–200 px, läbipaistmatus 0–100%. HEX-värvid #RGB/#RRGGBB. Suured varjud lõigatakse eelvaateraamiga.",
+  "shadowGenerate": "Loo vari",
+  "shadowPreview": "Varju eelvaade",
+  "shadowInvalid": "Kontrolli HEX-värvi ja täisarvupiire: nihe/laienemine −100–100, hägusus 0–200, läbipaistmatus 0–100. Värvisisend: kuni 32 märki."
 }

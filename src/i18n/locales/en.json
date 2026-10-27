@@ -691,5 +691,18 @@
   "gradientLimits": "Use #RGB or #RRGGBB HEX colors and a whole-number angle 0–360°. Two opaque colors; linear gradients only.",
   "gradientGenerate": "Generate gradient",
   "gradientPreview": "Gradient preview",
-  "gradientInvalid": "Enter valid #RGB/#RRGGBB colors and a whole-number angle 0–360°. Each color input may contain at most 32 characters."
+  "gradientInvalid": "Enter valid #RGB/#RRGGBB colors and a whole-number angle 0–360°. Each color input may contain at most 32 characters.",
+  "shadowTitle": "CSS box-shadow generator",
+  "shadowDesc": "Adjust a box shadow, preview it and copy the CSS locally.",
+  "shadowOffsetX": "Horizontal offset (px)",
+  "shadowOffsetY": "Vertical offset (px)",
+  "shadowBlur": "Blur radius (px)",
+  "shadowSpread": "Spread (px)",
+  "shadowColor": "Shadow color",
+  "shadowOpacity": "Opacity (%)",
+  "shadowInset": "Inner shadow",
+  "shadowLimits": "Whole numbers: offsets/spread −100–100 px, blur 0–200 px, opacity 0–100%. HEX #RGB/#RRGGBB colors. Large shadows are clipped to the preview frame.",
+  "shadowGenerate": "Generate shadow",
+  "shadowPreview": "Shadow preview",
+  "shadowInvalid": "Check HEX color and whole-number limits: offsets/spread −100–100, blur 0–200, opacity 0–100. Color input: at most 32 characters."
 }
