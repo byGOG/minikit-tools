@@ -673,5 +673,14 @@
   "romanInput": "Verdi som skal konverteres",
   "romanLimits": "Heltall 1–3999; standard romertall I–MMMCMXCIX. Opptil 100 inndatategn. Bare ASCII-sifre/-bokstaver; små bokstaver godtas.",
   "romanConvert": "Konverter",
-  "romanInvalid": "Skriv inn et heltall 1–3999 eller et gyldig standard romertall i valgt retning. Opptil 100 tegn; ingen fortegn, brøker eller overstreker."
+  "romanInvalid": "Skriv inn et heltall 1–3999 eller et gyldig standard romertall i valgt retning. Opptil 100 tegn; ingen fortegn, brøker eller overstreker.",
+  "morseTitle": "Morsekodeoversetter",
+  "morseDesc": "Konverter bokstavene A–Z og sifrene 0–9 til morsekode og tilbake lokalt.",
+  "morseMode": "Konverteringsretning",
+  "morseEncode": "Tekst til morsekode",
+  "morseDecode": "Morsekode til tekst",
+  "morseInput": "Inndata",
+  "morseLimits": "Tekst: opptil 1000 tegn, bare A–Z og 0–9. Morse: opptil 6000 tegn. Skill bokstaver med mellomrom og ord med /. Dekodet tekst er i store bokstaver.",
+  "morseConvert": "Konverter",
+  "morseInvalid": "Sjekk retning, tegn og grenser: 1000 teksttegn, 6000 morsetegn. Bruk mellomrom mellom bokstavkoder og / mellom ord."
 }

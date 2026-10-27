@@ -673,5 +673,14 @@
   "romanInput": "Värde att omvandla",
   "romanLimits": "Heltal 1–3999; vanliga romerska tal I–MMMCMXCIX. Högst 100 inmatade tecken. Endast ASCII-siffror/-bokstäver; gemener godtas.",
   "romanConvert": "Omvandla",
-  "romanInvalid": "Ange ett heltal 1–3999 eller ett giltigt vanligt romerskt tal i vald riktning. Högst 100 tecken; inga förtecken, bråk eller överstreck."
+  "romanInvalid": "Ange ett heltal 1–3999 eller ett giltigt vanligt romerskt tal i vald riktning. Högst 100 tecken; inga förtecken, bråk eller överstreck.",
+  "morseTitle": "Morsekodöversättare",
+  "morseDesc": "Omvandla bokstäverna A–Z och siffrorna 0–9 till morsekod och tillbaka lokalt.",
+  "morseMode": "Omvandlingsriktning",
+  "morseEncode": "Text till morsekod",
+  "morseDecode": "Morsekod till text",
+  "morseInput": "Indata",
+  "morseLimits": "Text: högst 1000 tecken, endast A–Z och 0–9. Morse: högst 6000 tecken. Skilj bokstäver med mellanslag och ord med /. Avkodad text är i versaler.",
+  "morseConvert": "Omvandla",
+  "morseInvalid": "Kontrollera riktning, tecken och gränser: 1000 texttecken, 6000 morsetecken. Använd mellanslag mellan bokstavskoder och / mellan ord."
 }

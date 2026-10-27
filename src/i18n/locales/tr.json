@@ -673,5 +673,14 @@
   "romanInput": "Dönüştürülecek değer",
   "romanLimits": "1–3999 arası tam sayılar; standart Roma rakamları I–MMMCMXCIX. En fazla 100 giriş karakteri. Yalnız ASCII rakam/harfleri; küçük harf kabul edilir.",
   "romanConvert": "Dönüştür",
-  "romanInvalid": "Seçilen yönde 1–3999 arası tam sayı veya geçerli standart Roma rakamı gir. En fazla 100 karakter; işaret, kesir veya üst çizgi kullanma."
+  "romanInvalid": "Seçilen yönde 1–3999 arası tam sayı veya geçerli standart Roma rakamı gir. En fazla 100 karakter; işaret, kesir veya üst çizgi kullanma.",
+  "morseTitle": "Mors kodu çevirici",
+  "morseDesc": "A–Z harflerini ve 0–9 rakamlarını Mors koduna ve tersine yerel olarak dönüştür.",
+  "morseMode": "Dönüştürme yönü",
+  "morseEncode": "Metinden Mors koduna",
+  "morseDecode": "Mors kodundan metne",
+  "morseInput": "Girdi",
+  "morseLimits": "Metin: en fazla 1000 karakter, yalnız A–Z ve 0–9. Mors: en fazla 6000 karakter. Harfleri boşlukla, kelimeleri / ile ayır. Çözülen metin büyük harflidir.",
+  "morseConvert": "Dönüştür",
+  "morseInvalid": "Yönü, desteklenen karakterleri ve sınırları kontrol et: 1000 metin, 6000 Mors karakteri. Harf kodlarını boşlukla, kelimeleri / ile ayır."
 }

@@ -673,5 +673,14 @@
   "romanInput": "Nilai untuk ditukar",
   "romanLimits": "Integer 1–3999; angka Rom standard I–MMMCMXCIX. Sehingga 100 aksara input. Digit/huruf ASCII sahaja; huruf kecil diterima.",
   "romanConvert": "Tukar",
-  "romanInvalid": "Masukkan integer 1–3999 atau angka Rom standard yang sah mengikut arah dipilih. Sehingga 100 aksara; tanpa tanda, pecahan atau garis atas."
+  "romanInvalid": "Masukkan integer 1–3999 atau angka Rom standard yang sah mengikut arah dipilih. Sehingga 100 aksara; tanpa tanda, pecahan atau garis atas.",
+  "morseTitle": "Penterjemah kod Morse",
+  "morseDesc": "Tukar huruf A–Z dan digit 0–9 kepada kod Morse dan sebaliknya secara setempat.",
+  "morseMode": "Arah penukaran",
+  "morseEncode": "Teks kepada kod Morse",
+  "morseDecode": "Kod Morse kepada teks",
+  "morseInput": "Input",
+  "morseLimits": "Teks: sehingga 1000 aksara, A–Z dan 0–9 sahaja. Morse: sehingga 6000 aksara. Pisahkan huruf dengan ruang dan perkataan dengan /. Teks dinyahkod menggunakan huruf besar.",
+  "morseConvert": "Tukar",
+  "morseInvalid": "Semak arah, aksara dan had: 1000 aksara teks, 6000 aksara Morse. Gunakan ruang antara kod huruf dan / antara perkataan."
 }

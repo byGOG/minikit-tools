@@ -68,6 +68,12 @@ for (const locale of catalog) {
       assert.equal([...html.matchAll(/<h1[\s>]/g)].length,1,`${path}: one primary heading`);
       assert.ok(html.includes(`property="og:url" content="${url}"`),`${path}: share URL`);
       if (slug) {
+        if (slug === 'morse-code-translator') {
+          for (const key of ['morseTitle','morseDesc','morseMode','morseEncode','morseDecode','morseInput','morseLimits','morseConvert']) {
+            assert.equal(typeof d[key], 'string', `${path}: ${key} translation exists`);
+            assert.ok(html.includes(escapeHtml(d[key])), `${path}: ${key} is published`);
+          }
+        }
         if (slug === 'roman-numeral-converter') {
           for (const key of ['romanTitle','romanDesc','romanMode','romanToRoman','romanToDecimal','romanInput','romanLimits','romanConvert']) {
             assert.equal(typeof d[key], 'string', `${path}: ${key} translation exists`);

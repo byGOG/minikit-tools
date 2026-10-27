@@ -206,5 +206,9 @@
   "roman-numeral-converter": [
     "2026",
     "MMXXVI"
+  ],
+  "morse-code-translator": [
+    "SOS 123",
+    "... --- ... / .---- ..--- ...--"
   ]
 }

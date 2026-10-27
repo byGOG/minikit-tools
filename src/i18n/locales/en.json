@@ -673,5 +673,14 @@
   "romanInput": "Value to convert",
   "romanLimits": "Integers 1–3999; standard Roman numerals I–MMMCMXCIX. Up to 100 input characters. ASCII digits/letters only; lowercase accepted.",
   "romanConvert": "Convert",
-  "romanInvalid": "Enter an integer 1–3999 or a valid standard Roman numeral in the selected direction. Up to 100 characters; no signs, fractions or overlines."
+  "romanInvalid": "Enter an integer 1–3999 or a valid standard Roman numeral in the selected direction. Up to 100 characters; no signs, fractions or overlines.",
+  "morseTitle": "Morse code translator",
+  "morseDesc": "Convert letters A–Z and digits 0–9 to Morse code and back locally.",
+  "morseMode": "Conversion direction",
+  "morseEncode": "Text to Morse code",
+  "morseDecode": "Morse code to text",
+  "morseInput": "Input",
+  "morseLimits": "Text: up to 1000 characters, A–Z and 0–9 only. Morse: up to 6000 characters. Separate letters with spaces and words with /. Decoded text is uppercase.",
+  "morseConvert": "Convert",
+  "morseInvalid": "Check the direction, supported characters and limits: 1000 text characters, 6000 Morse characters. Use spaces between letter codes and / between words."
 }

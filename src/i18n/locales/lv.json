@@ -673,5 +673,14 @@
   "romanInput": "Pārveidojamā vērtība",
   "romanLimits": "Veseli skaitļi 1–3999; standarta romiešu skaitļi I–MMMCMXCIX. Līdz 100 ievades rakstzīmēm. Tikai ASCII cipari/burti; pieņem arī mazos burtus.",
   "romanConvert": "Pārveidot",
-  "romanInvalid": "Izvēlētajā virzienā ievadiet veselu skaitli 1–3999 vai derīgu standarta romiešu skaitli. Līdz 100 rakstzīmēm; bez zīmēm, daļskaitļiem vai virssvītrām."
+  "romanInvalid": "Izvēlētajā virzienā ievadiet veselu skaitli 1–3999 vai derīgu standarta romiešu skaitli. Līdz 100 rakstzīmēm; bez zīmēm, daļskaitļiem vai virssvītrām.",
+  "morseTitle": "Morzes koda tulkotājs",
+  "morseDesc": "Lokāli pārveidojiet burtus A–Z un ciparus 0–9 Morzes kodā un otrādi.",
+  "morseMode": "Pārveidošanas virziens",
+  "morseEncode": "Teksts uz Morzes kodu",
+  "morseDecode": "Morzes kods uz tekstu",
+  "morseInput": "Ievade",
+  "morseLimits": "Teksts: līdz 1000 rakstzīmēm, tikai A–Z un 0–9. Morze: līdz 6000 rakstzīmēm. Burtus atdaliet ar atstarpēm, vārdus ar /. Atkodētais teksts ir lielajiem burtiem.",
+  "morseConvert": "Pārveidot",
+  "morseInvalid": "Pārbaudiet virzienu, rakstzīmes un ierobežojumus: 1000 teksta rakstzīmes, 6000 Morzes rakstzīmes. Atstarpes starp burtu kodiem, / starp vārdiem."
 }

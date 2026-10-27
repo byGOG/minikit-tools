@@ -673,5 +673,14 @@
   "romanInput": "Om te rekenen waarde",
   "romanLimits": "Gehele getallen 1–3999; standaard Romeinse cijfers I–MMMCMXCIX. Maximaal 100 invoertekens. Alleen ASCII-cijfers/-letters; kleine letters zijn toegestaan.",
   "romanConvert": "Omrekenen",
-  "romanInvalid": "Voer een geheel getal 1–3999 of een geldig standaard Romeins getal in voor de gekozen richting. Maximaal 100 tekens; geen tekens, breuken of bovenstrepen."
+  "romanInvalid": "Voer een geheel getal 1–3999 of een geldig standaard Romeins getal in voor de gekozen richting. Maximaal 100 tekens; geen tekens, breuken of bovenstrepen.",
+  "morseTitle": "Morsecodevertaler",
+  "morseDesc": "Zet letters A–Z en cijfers 0–9 lokaal om naar morsecode en terug.",
+  "morseMode": "Omzettingsrichting",
+  "morseEncode": "Tekst naar morsecode",
+  "morseDecode": "Morsecode naar tekst",
+  "morseInput": "Invoer",
+  "morseLimits": "Tekst: maximaal 1000 tekens, alleen A–Z en 0–9. Morse: maximaal 6000 tekens. Scheid letters met spaties en woorden met /. Gedecodeerde tekst is in hoofdletters.",
+  "morseConvert": "Omzetten",
+  "morseInvalid": "Controleer richting, tekens en grenzen: 1000 teksttekens, 6000 morsetekens. Gebruik spaties tussen lettercodes en / tussen woorden."
 }

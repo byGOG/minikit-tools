@@ -51,4 +51,10 @@ Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, do
 
 | İş | Sahip | Kabul ölçütü | Durum |
 |---|---|---|---|
-| TOOL-003 | Yeni araç geliştirici + içerik + kalite | 1–3999 ↔ standart Roma rakamları, 100 karakter sınırı, geçersiz biçimleri reddetme, 50 dil, rehber, bağımsız test ve canlı kontrol | Kod ve yerel doğrulama tamam: 124 birim + 53 dil + 226 tarayıcı testi. CI ve canlı yayın kanıtı sonuç raporunda. |
+| TOOL-003 | Yeni araç geliştirici + içerik + kalite | 1–3999 ↔ standart Roma rakamları, 100 karakter sınırı, geçersiz biçimleri reddetme, 50 dil, rehber, bağımsız test ve canlı kontrol | Tamamlandı; PR #42 birleştirildi. 124 birim + 53 dil + 226 tarayıcı testi ve canlıda 10 kontrol geçti. |
+
+## Mors kodu turu — 27 Ekim 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| TOOL-004 | Yeni araç geliştirici + içerik + kalite | A–Z/0–9 iki yönlü Mors, ham 1000/6000 karakter sınırı, boş kelime ve bilinmeyen kodu reddetme, 50 dil, rehber, bağımsız test ve canlı kontrol | Kod, 130 birim ve 53 dil testi tamam; yeni Mors tarayıcı kontrolleri geçti. Tam Linux CI ve canlı yayın kanıtı sonuç raporunda. |

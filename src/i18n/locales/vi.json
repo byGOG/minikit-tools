@@ -673,5 +673,14 @@
   "romanInput": "Giá trị cần chuyển",
   "romanLimits": "Số nguyên 1–3999; số La Mã chuẩn I–MMMCMXCIX. Tối đa 100 ký tự đầu vào. Chỉ chữ số/chữ cái ASCII; chấp nhận chữ thường.",
   "romanConvert": "Chuyển đổi",
-  "romanInvalid": "Nhập số nguyên 1–3999 hoặc số La Mã chuẩn hợp lệ theo chiều đã chọn. Tối đa 100 ký tự; không có dấu, phân số hoặc gạch trên."
+  "romanInvalid": "Nhập số nguyên 1–3999 hoặc số La Mã chuẩn hợp lệ theo chiều đã chọn. Tối đa 100 ký tự; không có dấu, phân số hoặc gạch trên.",
+  "morseTitle": "Trình dịch mã Morse",
+  "morseDesc": "Chuyển đổi cục bộ chữ cái A–Z và chữ số 0–9 sang mã Morse và ngược lại.",
+  "morseMode": "Chiều chuyển đổi",
+  "morseEncode": "Văn bản sang mã Morse",
+  "morseDecode": "Mã Morse sang văn bản",
+  "morseInput": "Đầu vào",
+  "morseLimits": "Văn bản: tối đa 1000 ký tự, chỉ A–Z và 0–9. Morse: tối đa 6000 ký tự. Tách chữ bằng khoảng trắng và từ bằng /. Văn bản giải mã là chữ hoa.",
+  "morseConvert": "Chuyển đổi",
+  "morseInvalid": "Kiểm tra chiều, ký tự và giới hạn: 1000 ký tự văn bản, 6000 ký tự Morse. Khoảng trắng giữa mã chữ cái và / giữa các từ."
 }
