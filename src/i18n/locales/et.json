@@ -682,5 +682,14 @@
   "morseInput": "Sisend",
   "morseLimits": "Tekst: kuni 1000 märki, ainult A–Z ja 0–9. Morse: kuni 6000 märki. Eralda tähed tühikutega ja sõnad märgiga /. Dekodeeritud tekst on suurtähtedega.",
   "morseConvert": "Teisenda",
-  "morseInvalid": "Kontrolli suunda, märke ja piire: 1000 tekstimärki, 6000 morsemärki. Tähekoodide vahele tühikud, sõnade vahele /."
+  "morseInvalid": "Kontrolli suunda, märke ja piire: 1000 tekstimärki, 6000 morsemärki. Tähekoodide vahele tühikud, sõnade vahele /.",
+  "gradientTitle": "CSS-värviülemineku generaator",
+  "gradientDesc": "Loo kahevärviline lineaarne üleminek, vaata eelvaadet ja kopeeri CSS kohapeal.",
+  "gradientStart": "Algusvärv",
+  "gradientEnd": "Lõppvärv",
+  "gradientAngle": "Nurk kraadides",
+  "gradientLimits": "Kasuta HEX-värve #RGB või #RRGGBB ja täisarvulist nurka 0–360°. Kaks läbipaistmatut värvi; ainult lineaarsed üleminekud.",
+  "gradientGenerate": "Loo üleminek",
+  "gradientPreview": "Ülemineku eelvaade",
+  "gradientInvalid": "Sisesta kehtivad #RGB/#RRGGBB värvid ja täisarvuline nurk 0–360°. Iga värvisisend võib sisaldada kuni 32 märki."
 }

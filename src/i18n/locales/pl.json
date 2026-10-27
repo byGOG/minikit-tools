@@ -682,5 +682,14 @@
   "morseInput": "Dane wejściowe",
   "morseLimits": "Tekst: do 1000 znaków, tylko A–Z i 0–9. Morse: do 6000 znaków. Oddzielaj litery spacjami, słowa znakiem /. Odkodowany tekst jest wielkimi literami.",
   "morseConvert": "Konwertuj",
-  "morseInvalid": "Sprawdź kierunek, znaki i limity: 1000 znaków tekstu, 6000 znaków Morse’a. Spacje między kodami liter, / między słowami."
+  "morseInvalid": "Sprawdź kierunek, znaki i limity: 1000 znaków tekstu, 6000 znaków Morse’a. Spacje między kodami liter, / między słowami.",
+  "gradientTitle": "Generator gradientów CSS",
+  "gradientDesc": "Utwórz dwukolorowy gradient liniowy, zobacz podgląd i skopiuj CSS lokalnie.",
+  "gradientStart": "Kolor początkowy",
+  "gradientEnd": "Kolor końcowy",
+  "gradientAngle": "Kąt w stopniach",
+  "gradientLimits": "Użyj kolorów HEX #RGB lub #RRGGBB i całkowitego kąta 0–360°. Dwa nieprzezroczyste kolory; tylko gradienty liniowe.",
+  "gradientGenerate": "Generuj gradient",
+  "gradientPreview": "Podgląd gradientu",
+  "gradientInvalid": "Podaj poprawne kolory #RGB/#RRGGBB i całkowity kąt 0–360°. Każde pole koloru może zawierać do 32 znaków."
 }

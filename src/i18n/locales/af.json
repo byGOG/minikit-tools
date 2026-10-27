@@ -682,5 +682,14 @@
   "morseInput": "Invoer",
   "morseLimits": "Teks: tot 1000 karakters, slegs A–Z en 0–9. Morse: tot 6000 karakters. Skei letters met spasies en woorde met /. Ontsyferde teks is in hoofletters.",
   "morseConvert": "Skakel om",
-  "morseInvalid": "Kontroleer rigting, ondersteunde karakters en perke: 1000 tekskarakters, 6000 Morsekarakters. Gebruik spasies tussen letterkodes en / tussen woorde."
+  "morseInvalid": "Kontroleer rigting, ondersteunde karakters en perke: 1000 tekskarakters, 6000 Morsekarakters. Gebruik spasies tussen letterkodes en / tussen woorde.",
+  "gradientTitle": "CSS-kleurverloopskepper",
+  "gradientDesc": "Skep ’n tweekleurige lineêre verloop, bekyk dit en kopieer die CSS plaaslik.",
+  "gradientStart": "Beginkleur",
+  "gradientEnd": "Eindkleur",
+  "gradientAngle": "Hoek in grade",
+  "gradientLimits": "Gebruik #RGB- of #RRGGBB-HEX-kleure en ’n heelgetalhoek van 0–360°. Twee ondeursigtige kleure; slegs lineêre verlope.",
+  "gradientGenerate": "Skep verloop",
+  "gradientPreview": "Verloopvoorskou",
+  "gradientInvalid": "Voer geldige #RGB/#RRGGBB-kleure en ’n heelgetalhoek van 0–360° in. Elke kleurinvoer mag hoogstens 32 karakters bevat."
 }

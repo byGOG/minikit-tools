@@ -210,5 +210,9 @@
   "morse-code-translator": [
     "SOS 123",
     "... --- ... / .---- ..--- ...--"
+  ],
+  "css-gradient-generator": [
+    "#155c42 → #c7f36b · 90°",
+    "background: linear-gradient(90deg, #155c42 0%, #c7f36b 100%);"
   ]
 }

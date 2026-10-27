@@ -682,5 +682,14 @@
   "morseInput": "Entrée",
   "morseLimits": "Texte : jusqu’à 1000 caractères, uniquement A–Z et 0–9. Morse : jusqu’à 6000 caractères. Séparez les lettres par des espaces et les mots par /. Le texte décodé est en majuscules.",
   "morseConvert": "Convertir",
-  "morseInvalid": "Vérifiez le sens, les caractères et les limites : 1000 caractères de texte, 6000 de Morse. Espaces entre les codes des lettres, / entre les mots."
+  "morseInvalid": "Vérifiez le sens, les caractères et les limites : 1000 caractères de texte, 6000 de Morse. Espaces entre les codes des lettres, / entre les mots.",
+  "gradientTitle": "Générateur de dégradés CSS",
+  "gradientDesc": "Créez un dégradé linéaire à deux couleurs, prévisualisez-le et copiez le CSS localement.",
+  "gradientStart": "Couleur de départ",
+  "gradientEnd": "Couleur de fin",
+  "gradientAngle": "Angle en degrés",
+  "gradientLimits": "Utilisez des couleurs HEX #RGB ou #RRGGBB et un angle entier de 0–360°. Deux couleurs opaques ; dégradés linéaires uniquement.",
+  "gradientGenerate": "Générer le dégradé",
+  "gradientPreview": "Aperçu du dégradé",
+  "gradientInvalid": "Saisissez des couleurs #RGB/#RRGGBB valides et un angle entier de 0–360°. Chaque saisie de couleur accepte au maximum 32 caractères."
 }

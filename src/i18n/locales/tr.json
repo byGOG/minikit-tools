@@ -682,5 +682,14 @@
   "morseInput": "Girdi",
   "morseLimits": "Metin: en fazla 1000 karakter, yalnız A–Z ve 0–9. Mors: en fazla 6000 karakter. Harfleri boşlukla, kelimeleri / ile ayır. Çözülen metin büyük harflidir.",
   "morseConvert": "Dönüştür",
-  "morseInvalid": "Yönü, desteklenen karakterleri ve sınırları kontrol et: 1000 metin, 6000 Mors karakteri. Harf kodlarını boşlukla, kelimeleri / ile ayır."
+  "morseInvalid": "Yönü, desteklenen karakterleri ve sınırları kontrol et: 1000 metin, 6000 Mors karakteri. Harf kodlarını boşlukla, kelimeleri / ile ayır.",
+  "gradientTitle": "CSS renk geçişi oluşturucu",
+  "gradientDesc": "İki renkli doğrusal geçiş oluştur, önizle ve CSS kodunu yerel olarak kopyala.",
+  "gradientStart": "Başlangıç rengi",
+  "gradientEnd": "Bitiş rengi",
+  "gradientAngle": "Derece cinsinden açı",
+  "gradientLimits": "#RGB veya #RRGGBB HEX renk ve 0–360° tam sayı açı kullan. İki opak renk; yalnız doğrusal geçişler.",
+  "gradientGenerate": "Geçiş oluştur",
+  "gradientPreview": "Geçiş önizlemesi",
+  "gradientInvalid": "Geçerli #RGB/#RRGGBB renkler ve 0–360° tam sayı açı gir. Her renk girdisi en fazla 32 karakter olabilir."
 }

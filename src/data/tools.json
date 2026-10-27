@@ -1066,5 +1066,17 @@
       "morseConvert"
     ],
     "category": "text"
+  },
+  {
+    "slug": "css-gradient-generator",
+    "title": "gradientTitle",
+    "desc": "gradientDesc",
+    "anchor": "css-gradient-tool",
+    "steps": [
+      "gradientStart",
+      "gradientEnd",
+      "gradientGenerate"
+    ],
+    "category": "image"
   }
 ]

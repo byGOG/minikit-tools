@@ -682,5 +682,14 @@
   "morseInput": "Input",
   "morseLimits": "Text: up to 1000 characters, A–Z and 0–9 only. Morse: up to 6000 characters. Separate letters with spaces and words with /. Decoded text is uppercase.",
   "morseConvert": "Convert",
-  "morseInvalid": "Check the direction, supported characters and limits: 1000 text characters, 6000 Morse characters. Use spaces between letter codes and / between words."
+  "morseInvalid": "Check the direction, supported characters and limits: 1000 text characters, 6000 Morse characters. Use spaces between letter codes and / between words.",
+  "gradientTitle": "CSS gradient generator",
+  "gradientDesc": "Create a two-color linear gradient, preview it and copy the CSS locally.",
+  "gradientStart": "Start color",
+  "gradientEnd": "End color",
+  "gradientAngle": "Angle in degrees",
+  "gradientLimits": "Use #RGB or #RRGGBB HEX colors and a whole-number angle 0–360°. Two opaque colors; linear gradients only.",
+  "gradientGenerate": "Generate gradient",
+  "gradientPreview": "Gradient preview",
+  "gradientInvalid": "Enter valid #RGB/#RRGGBB colors and a whole-number angle 0–360°. Each color input may contain at most 32 characters."
 }

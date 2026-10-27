@@ -682,5 +682,14 @@
   "morseInput": "Inndata",
   "morseLimits": "Tekst: opptil 1000 tegn, bare A–Z og 0–9. Morse: opptil 6000 tegn. Skill bokstaver med mellomrom og ord med /. Dekodet tekst er i store bokstaver.",
   "morseConvert": "Konverter",
-  "morseInvalid": "Sjekk retning, tegn og grenser: 1000 teksttegn, 6000 morsetegn. Bruk mellomrom mellom bokstavkoder og / mellom ord."
+  "morseInvalid": "Sjekk retning, tegn og grenser: 1000 teksttegn, 6000 morsetegn. Bruk mellomrom mellom bokstavkoder og / mellom ord.",
+  "gradientTitle": "CSS-gradientgenerator",
+  "gradientDesc": "Lag en lineær gradient med to farger, forhåndsvis og kopier CSS lokalt.",
+  "gradientStart": "Startfarge",
+  "gradientEnd": "Sluttfarge",
+  "gradientAngle": "Vinkel i grader",
+  "gradientLimits": "Bruk HEX-farger #RGB eller #RRGGBB og en heltallsvinkel på 0–360°. To ugjennomsiktige farger; bare lineære gradienter.",
+  "gradientGenerate": "Generer gradient",
+  "gradientPreview": "Forhåndsvisning av gradient",
+  "gradientInvalid": "Skriv inn gyldige #RGB/#RRGGBB-farger og en heltallsvinkel på 0–360°. Hvert fargefelt kan inneholde høyst 32 tegn."
 }

@@ -6,6 +6,7 @@ import {compareJson} from '../src/scripts/structured-core.ts';
 import {generateLoremIpsum} from '../src/scripts/lorem-ipsum-core.ts';
 import {convertRoman} from '../src/scripts/roman-numerals-core.ts';
 import {convertMorse} from '../src/scripts/morse-code-core.ts';
+import {createGradient} from '../src/scripts/gradient-core.ts';
 
 const examples=JSON.parse(await readFile(new URL('../src/data/tool-examples.json',import.meta.url),'utf8'));
 const locales=JSON.parse(await readFile(new URL('../src/i18n/catalog.json',import.meta.url),'utf8'));
@@ -40,4 +41,10 @@ test('published Morse example works in both directions',()=>{
  const [input,expected]=examples['morse-code-translator'];
  assert.equal(convertMorse(input,'encode'),expected);
  assert.equal(convertMorse(expected,'decode'),input);
+});
+
+test('published CSS gradient example matches the real declaration',()=>{
+ const [input,expected]=examples['css-gradient-generator'];
+ assert.equal(input,'#155c42 → #c7f36b · 90°');
+ assert.equal(createGradient('#155c42','#c7f36b',90).css,expected);
 });
