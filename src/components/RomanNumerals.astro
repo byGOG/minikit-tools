@@ -1,0 +1,32 @@
+---
+import { Hash, ShieldCheck, ArrowRight } from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const str = (key: string) => (tr as Record<string, string>)[key] ?? key;
+---
+<article class="tool-card roman-numeral-card" id="roman-numeral-tool">
+  <div class="card-top"><span class="tool-icon icon-blue"><Hash size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="romanTitle">{str('romanTitle')}</h3>
+  <p data-i18n="romanDesc">{str('romanDesc')}</p>
+  <div class="roman-options">
+    <label class="field-label" for="roman-mode" data-i18n="romanMode">{str('romanMode')}</label>
+    <select class="text-input" id="roman-mode"><option value="to-roman" data-i18n="romanToRoman">{str('romanToRoman')}</option><option value="to-decimal" data-i18n="romanToDecimal">{str('romanToDecimal')}</option></select>
+    <label class="field-label" for="roman-input" data-i18n="romanInput">{str('romanInput')}</label>
+    <input class="text-input" id="roman-input" type="text" dir="ltr" autocomplete="off" spellcheck="false" aria-describedby="roman-limits"/>
+    <small class="roman-hint" id="roman-limits" data-i18n="romanLimits">{str('romanLimits')}</small>
+  </div>
+  <button class="button-primary full" id="roman-convert" data-i18n="romanConvert">{str('romanConvert')}</button>
+  <label class="field-label roman-result-label" for="roman-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="roman-output" readonly dir="ltr" spellcheck="false"></textarea>
+  <p class="tool-feedback" id="roman-feedback" role="status" aria-live="polite"></p>
+  <div class="text-tool-actions"><button class="button-secondary full" id="roman-copy" data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id="roman-clear" data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="roman-numeral-converter" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
+<style is:global>
+.roman-options{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.roman-options .field-label{margin:0}
+.roman-options input,.roman-options select{width:100%;min-width:0}
+.roman-hint{font-size:12px;line-height:1.65;color:#526258}
+.roman-result-label{margin-top:14px}
+.roman-numeral-card textarea{min-height:90px}
+</style>

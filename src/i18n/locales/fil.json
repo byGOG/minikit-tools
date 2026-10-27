@@ -664,5 +664,14 @@
   "loremWordsPerParagraph": "Mga salita bawat talata",
   "loremLimits": "1–50 talata, 5–200 salita bawat isa; hanggang 10,000 salita. Tekstong Latin ang resulta anuman ang wika ng interface.",
   "loremGenerate": "Bumuo ng teksto",
-  "loremInvalid": "Maglagay ng buong bilang: 1–50 talata at 5–200 salita bawat talata."
+  "loremInvalid": "Maglagay ng buong bilang: 1–50 talata at 5–200 salita bawat talata.",
+  "romanTitle": "Tagapagpalit ng Roman numeral",
+  "romanDesc": "I-convert nang lokal ang buong bilang 1–3999 sa Roman numeral at pabalik.",
+  "romanMode": "Direksiyon ng conversion",
+  "romanToRoman": "Bilang tungo sa Roman numeral",
+  "romanToDecimal": "Roman numeral tungo sa bilang",
+  "romanInput": "Halagang iko-convert",
+  "romanLimits": "Buong bilang 1–3999; karaniwang Roman numeral I–MMMCMXCIX. Hanggang 100 character ng input. ASCII na digit/titik lang; tinatanggap ang maliliit na titik.",
+  "romanConvert": "I-convert",
+  "romanInvalid": "Maglagay ng buong bilang 1–3999 o wastong karaniwang Roman numeral sa napiling direksiyon. Hanggang 100 character; walang sign, fraction o guhit sa itaas."
 }

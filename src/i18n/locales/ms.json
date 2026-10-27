@@ -664,5 +664,14 @@
   "loremWordsPerParagraph": "Perkataan setiap perenggan",
   "loremLimits": "1–50 perenggan, setiap satu 5–200 perkataan; maksimum 10,000 perkataan. Hasil ialah teks pengisi Latin tanpa mengira bahasa antara muka.",
   "loremGenerate": "Jana teks",
-  "loremInvalid": "Masukkan nombor bulat: 1–50 perenggan dan 5–200 perkataan setiap perenggan."
+  "loremInvalid": "Masukkan nombor bulat: 1–50 perenggan dan 5–200 perkataan setiap perenggan.",
+  "romanTitle": "Penukar angka Rom",
+  "romanDesc": "Tukar integer 1–3999 kepada angka Rom dan sebaliknya secara setempat.",
+  "romanMode": "Arah penukaran",
+  "romanToRoman": "Nombor kepada angka Rom",
+  "romanToDecimal": "Angka Rom kepada nombor",
+  "romanInput": "Nilai untuk ditukar",
+  "romanLimits": "Integer 1–3999; angka Rom standard I–MMMCMXCIX. Sehingga 100 aksara input. Digit/huruf ASCII sahaja; huruf kecil diterima.",
+  "romanConvert": "Tukar",
+  "romanInvalid": "Masukkan integer 1–3999 atau angka Rom standard yang sah mengikut arah dipilih. Sehingga 100 aksara; tanpa tanda, pecahan atau garis atas."
 }

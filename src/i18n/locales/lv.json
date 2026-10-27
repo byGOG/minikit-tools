@@ -664,5 +664,14 @@
   "loremWordsPerParagraph": "Vārdi rindkopā",
   "loremLimits": "1–50 rindkopas, katrā 5–200 vārdi; ne vairāk kā 10 000 vārdu. Rezultāts ir latīņu aizvietotājteksts neatkarīgi no saskarnes valodas.",
   "loremGenerate": "Ģenerēt tekstu",
-  "loremInvalid": "Ievadiet veselus skaitļus: 1–50 rindkopas un 5–200 vārdus rindkopā."
+  "loremInvalid": "Ievadiet veselus skaitļus: 1–50 rindkopas un 5–200 vārdus rindkopā.",
+  "romanTitle": "Romiešu skaitļu pārveidotājs",
+  "romanDesc": "Lokāli pārveidojiet veselus skaitļus 1–3999 romiešu skaitļos un otrādi.",
+  "romanMode": "Pārveidošanas virziens",
+  "romanToRoman": "Skaitlis uz romiešu skaitli",
+  "romanToDecimal": "Romiešu skaitlis uz skaitli",
+  "romanInput": "Pārveidojamā vērtība",
+  "romanLimits": "Veseli skaitļi 1–3999; standarta romiešu skaitļi I–MMMCMXCIX. Līdz 100 ievades rakstzīmēm. Tikai ASCII cipari/burti; pieņem arī mazos burtus.",
+  "romanConvert": "Pārveidot",
+  "romanInvalid": "Izvēlētajā virzienā ievadiet veselu skaitli 1–3999 vai derīgu standarta romiešu skaitli. Līdz 100 rakstzīmēm; bez zīmēm, daļskaitļiem vai virssvītrām."
 }

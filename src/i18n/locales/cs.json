@@ -664,5 +664,14 @@
   "loremWordsPerParagraph": "Slova na odstavec",
   "loremLimits": "1–50 odstavců, každý po 5–200 slovech; nejvýše 10 000 slov. Výstup je latinský zástupný text bez ohledu na jazyk rozhraní.",
   "loremGenerate": "Vygenerovat text",
-  "loremInvalid": "Zadejte celá čísla: 1–50 odstavců a 5–200 slov na odstavec."
+  "loremInvalid": "Zadejte celá čísla: 1–50 odstavců a 5–200 slov na odstavec.",
+  "romanTitle": "Převodník římských číslic",
+  "romanDesc": "Převádějte místně celá čísla 1–3999 na římské číslice a zpět.",
+  "romanMode": "Směr převodu",
+  "romanToRoman": "Číslo na římské číslice",
+  "romanToDecimal": "Římské číslice na číslo",
+  "romanInput": "Hodnota k převodu",
+  "romanLimits": "Celá čísla 1–3999; standardní římské číslice I–MMMCMXCIX. Nejvýše 100 vstupních znaků. Pouze číslice/písmena ASCII; malá písmena jsou přijímána.",
+  "romanConvert": "Převést",
+  "romanInvalid": "Zadejte celé číslo 1–3999 nebo platné standardní římské číslo ve zvoleném směru. Nejvýše 100 znaků; bez znamének, zlomků a nadtržítek."
 }

@@ -664,5 +664,14 @@
   "loremWordsPerParagraph": "Paragraf başına kelime",
   "loremLimits": "1–50 paragraf, her biri 5–200 kelime; en fazla 10.000 kelime. Arayüz dilinden bağımsız olarak çıktı Latince yer tutucu metindir.",
   "loremGenerate": "Metin oluştur",
-  "loremInvalid": "Tam sayı gir: 1–50 paragraf ve paragraf başına 5–200 kelime."
+  "loremInvalid": "Tam sayı gir: 1–50 paragraf ve paragraf başına 5–200 kelime.",
+  "romanTitle": "Roma rakamı dönüştürücü",
+  "romanDesc": "1–3999 arasındaki tam sayıları Roma rakamlarına ve tersine yerel olarak dönüştür.",
+  "romanMode": "Dönüştürme yönü",
+  "romanToRoman": "Sayıdan Roma rakamına",
+  "romanToDecimal": "Roma rakamından sayıya",
+  "romanInput": "Dönüştürülecek değer",
+  "romanLimits": "1–3999 arası tam sayılar; standart Roma rakamları I–MMMCMXCIX. En fazla 100 giriş karakteri. Yalnız ASCII rakam/harfleri; küçük harf kabul edilir.",
+  "romanConvert": "Dönüştür",
+  "romanInvalid": "Seçilen yönde 1–3999 arası tam sayı veya geçerli standart Roma rakamı gir. En fazla 100 karakter; işaret, kesir veya üst çizgi kullanma."
 }

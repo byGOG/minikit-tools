@@ -45,4 +45,10 @@ Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, do
 
 | İş | Sahip | Kabul ölçütü | Durum |
 |---|---|---|---|
-| TOOL-002 | Yeni araç geliştirici + içerik + kalite | Lorem Ipsum: 1–50 paragraf × 5–200 kelime, en fazla 10.000 kelime; tam sayım, girdi doğrulama, 50 dil, rehber, bağımsız testler ve canlı kontrol | Kod ve yerel doğrulama tamam: 118 birim + 53 dil + 214 tarayıcı testi. CI ve canlı yayın kanıtı sonuç raporunda. |
+| TOOL-002 | Yeni araç geliştirici + içerik + kalite | Lorem Ipsum: 1–50 paragraf × 5–200 kelime, en fazla 10.000 kelime; tam sayım, girdi doğrulama, 50 dil, rehber, bağımsız testler ve canlı kontrol | Tamamlandı; PR #41 birleştirildi. 118 birim + 53 dil + 214 tarayıcı testi ve canlıda 8 kontrol geçti. |
+
+## Roma rakamları turu — 27 Ekim 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| TOOL-003 | Yeni araç geliştirici + içerik + kalite | 1–3999 ↔ standart Roma rakamları, 100 karakter sınırı, geçersiz biçimleri reddetme, 50 dil, rehber, bağımsız test ve canlı kontrol | Kod ve yerel doğrulama tamam: 124 birim + 53 dil + 226 tarayıcı testi. CI ve canlı yayın kanıtı sonuç raporunda. |

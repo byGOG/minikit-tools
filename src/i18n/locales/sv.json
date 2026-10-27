@@ -664,5 +664,14 @@
   "loremWordsPerParagraph": "Ord per stycke",
   "loremLimits": "1–50 stycken med 5–200 ord vardera; högst 10 000 ord. Resultatet är latinsk platshållartext oavsett gränssnittets språk.",
   "loremGenerate": "Generera text",
-  "loremInvalid": "Ange heltal: 1–50 stycken och 5–200 ord per stycke."
+  "loremInvalid": "Ange heltal: 1–50 stycken och 5–200 ord per stycke.",
+  "romanTitle": "Omvandlare för romerska siffror",
+  "romanDesc": "Omvandla heltal 1–3999 till romerska siffror och tillbaka lokalt.",
+  "romanMode": "Omvandlingsriktning",
+  "romanToRoman": "Tal till romerska siffror",
+  "romanToDecimal": "Romerska siffror till tal",
+  "romanInput": "Värde att omvandla",
+  "romanLimits": "Heltal 1–3999; vanliga romerska tal I–MMMCMXCIX. Högst 100 inmatade tecken. Endast ASCII-siffror/-bokstäver; gemener godtas.",
+  "romanConvert": "Omvandla",
+  "romanInvalid": "Ange ett heltal 1–3999 eller ett giltigt vanligt romerskt tal i vald riktning. Högst 100 tecken; inga förtecken, bråk eller överstreck."
 }

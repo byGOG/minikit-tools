@@ -414,6 +414,7 @@ async function initialize() {
   if (document.body.dataset.page !== 'directory' && document.querySelector('#resize-tool,#crop-tool,#rotate-tool')) (await import('./image-editors')).setupImageEditors(t);
   if (document.body.dataset.page !== 'directory' && document.querySelector('#file-checksum-tool')) (await import('./file-checksum')).setupFileChecksum(t);
   if (document.body.dataset.page !== 'directory' && document.querySelector('#lorem-ipsum-tool')) (await import('./lorem-ipsum')).setupLoremIpsum(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#roman-numeral-tool')) (await import('./roman-numerals')).setupRomanNumerals(t);
   document.documentElement.dataset.toolsReady = "true";
 }
 void initialize();
