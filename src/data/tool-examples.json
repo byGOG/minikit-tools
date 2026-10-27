@@ -214,5 +214,9 @@
   "css-gradient-generator": [
     "#155c42 → #c7f36b · 90°",
     "background: linear-gradient(90deg, #155c42 0%, #c7f36b 100%);"
+  ],
+  "css-box-shadow-generator": [
+    "0px · 8px · 24px · 0px · #000000 · 20%",
+    "box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.2);"
   ]
 }

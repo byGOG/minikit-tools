@@ -691,5 +691,18 @@
   "gradientLimits": "使用 #RGB 或 #RRGGBB HEX 颜色及 0–360° 整数角度。仅支持两种不透明颜色的线性渐变。",
   "gradientGenerate": "生成渐变",
   "gradientPreview": "渐变预览",
-  "gradientInvalid": "请输入有效的 #RGB/#RRGGBB 颜色及 0–360° 整数角度。每个颜色输入最多 32 个字符。"
+  "gradientInvalid": "请输入有效的 #RGB/#RRGGBB 颜色及 0–360° 整数角度。每个颜色输入最多 32 个字符。",
+  "shadowTitle": "CSS 盒阴影生成器",
+  "shadowDesc": "调整盒阴影，在本地预览并复制 CSS。",
+  "shadowOffsetX": "水平偏移（px）",
+  "shadowOffsetY": "垂直偏移（px）",
+  "shadowBlur": "模糊半径（px）",
+  "shadowSpread": "扩展（px）",
+  "shadowColor": "阴影颜色",
+  "shadowOpacity": "不透明度（%）",
+  "shadowInset": "内阴影",
+  "shadowLimits": "整数：偏移/扩展 −100–100 px，模糊 0–200 px，不透明度 0–100%。HEX 颜色 #RGB/#RRGGBB。大阴影会在预览框边界被裁切。",
+  "shadowGenerate": "生成阴影",
+  "shadowPreview": "阴影预览",
+  "shadowInvalid": "请检查 HEX 颜色及整数范围：偏移/扩展 −100–100，模糊 0–200，不透明度 0–100。颜色输入最多 32 个字符。"
 }

@@ -691,5 +691,18 @@
   "gradientLimits": "Använd HEX-färger #RGB eller #RRGGBB och en heltalsvinkel på 0–360°. Två ogenomskinliga färger; endast linjära gradienter.",
   "gradientGenerate": "Generera gradient",
   "gradientPreview": "Förhandsvisning av gradient",
-  "gradientInvalid": "Ange giltiga #RGB/#RRGGBB-färger och en heltalsvinkel på 0–360°. Varje färginmatning får innehålla högst 32 tecken."
+  "gradientInvalid": "Ange giltiga #RGB/#RRGGBB-färger och en heltalsvinkel på 0–360°. Varje färginmatning får innehålla högst 32 tecken.",
+  "shadowTitle": "CSS-boxskuggenerator",
+  "shadowDesc": "Justera en boxskugga, förhandsvisa den och kopiera CSS lokalt.",
+  "shadowOffsetX": "Vågrät förskjutning (px)",
+  "shadowOffsetY": "Lodrät förskjutning (px)",
+  "shadowBlur": "Oskärperadie (px)",
+  "shadowSpread": "Spridning (px)",
+  "shadowColor": "Skuggfärg",
+  "shadowOpacity": "Opacitet (%)",
+  "shadowInset": "Inre skugga",
+  "shadowLimits": "Heltal: förskjutning/spridning −100–100 px, oskärpa 0–200 px, opacitet 0–100 %. HEX-färger #RGB/#RRGGBB. Stora skuggor klipps vid förhandsvisningsramen.",
+  "shadowGenerate": "Generera skugga",
+  "shadowPreview": "Förhandsvisning av skugga",
+  "shadowInvalid": "Kontrollera HEX-färg och heltalsgränser: förskjutning/spridning −100–100, oskärpa 0–200, opacitet 0–100. Färginmatning: högst 32 tecken."
 }

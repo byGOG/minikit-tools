@@ -691,5 +691,18 @@
   "gradientLimits": "#RGB veya #RRGGBB HEX renk ve 0–360° tam sayı açı kullan. İki opak renk; yalnız doğrusal geçişler.",
   "gradientGenerate": "Geçiş oluştur",
   "gradientPreview": "Geçiş önizlemesi",
-  "gradientInvalid": "Geçerli #RGB/#RRGGBB renkler ve 0–360° tam sayı açı gir. Her renk girdisi en fazla 32 karakter olabilir."
+  "gradientInvalid": "Geçerli #RGB/#RRGGBB renkler ve 0–360° tam sayı açı gir. Her renk girdisi en fazla 32 karakter olabilir.",
+  "shadowTitle": "CSS kutu gölgesi oluşturucu",
+  "shadowDesc": "Kutu gölgesini ayarla, önizle ve CSS kodunu yerel olarak kopyala.",
+  "shadowOffsetX": "Yatay kaydırma (px)",
+  "shadowOffsetY": "Dikey kaydırma (px)",
+  "shadowBlur": "Bulanıklık yarıçapı (px)",
+  "shadowSpread": "Yayılma (px)",
+  "shadowColor": "Gölge rengi",
+  "shadowOpacity": "Opaklık (%)",
+  "shadowInset": "İç gölge",
+  "shadowLimits": "Tam sayılar: kaydırma/yayılma −100–100 px, bulanıklık 0–200 px, opaklık %0–100. HEX #RGB/#RRGGBB renkler. Büyük gölgeler önizleme çerçevesinde kırpılır.",
+  "shadowGenerate": "Gölge oluştur",
+  "shadowPreview": "Gölge önizlemesi",
+  "shadowInvalid": "HEX rengini ve tam sayı sınırlarını kontrol et: kaydırma/yayılma −100–100, bulanıklık 0–200, opaklık 0–100. Renk girdisi en fazla 32 karakter."
 }

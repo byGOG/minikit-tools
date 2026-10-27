@@ -691,5 +691,18 @@
   "gradientLimits": "Użyj kolorów HEX #RGB lub #RRGGBB i całkowitego kąta 0–360°. Dwa nieprzezroczyste kolory; tylko gradienty liniowe.",
   "gradientGenerate": "Generuj gradient",
   "gradientPreview": "Podgląd gradientu",
-  "gradientInvalid": "Podaj poprawne kolory #RGB/#RRGGBB i całkowity kąt 0–360°. Każde pole koloru może zawierać do 32 znaków."
+  "gradientInvalid": "Podaj poprawne kolory #RGB/#RRGGBB i całkowity kąt 0–360°. Każde pole koloru może zawierać do 32 znaków.",
+  "shadowTitle": "Generator cieni CSS",
+  "shadowDesc": "Dostosuj cień pola, zobacz podgląd i skopiuj CSS lokalnie.",
+  "shadowOffsetX": "Przesunięcie poziome (px)",
+  "shadowOffsetY": "Przesunięcie pionowe (px)",
+  "shadowBlur": "Promień rozmycia (px)",
+  "shadowSpread": "Rozprzestrzenienie (px)",
+  "shadowColor": "Kolor cienia",
+  "shadowOpacity": "Krycie (%)",
+  "shadowInset": "Cień wewnętrzny",
+  "shadowLimits": "Liczby całkowite: przesunięcie/rozprzestrzenienie −100–100 px, rozmycie 0–200 px, krycie 0–100%. Kolory HEX #RGB/#RRGGBB. Duże cienie są przycinane do ramki podglądu.",
+  "shadowGenerate": "Generuj cień",
+  "shadowPreview": "Podgląd cienia",
+  "shadowInvalid": "Sprawdź kolor HEX i limity całkowite: przesunięcie/rozprzestrzenienie −100–100, rozmycie 0–200, krycie 0–100. Kolor: do 32 znaków."
 }

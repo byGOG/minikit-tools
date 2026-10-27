@@ -691,5 +691,18 @@
   "gradientLimits": "Použite HEX farby #RGB alebo #RRGGBB a celočíselný uhol 0–360°. Dve nepriehľadné farby; iba lineárne prechody.",
   "gradientGenerate": "Vytvoriť prechod",
   "gradientPreview": "Náhľad prechodu",
-  "gradientInvalid": "Zadajte platné farby #RGB/#RRGGBB a celočíselný uhol 0–360°. Každý farebný vstup môže mať najviac 32 znakov."
+  "gradientInvalid": "Zadajte platné farby #RGB/#RRGGBB a celočíselný uhol 0–360°. Každý farebný vstup môže mať najviac 32 znakov.",
+  "shadowTitle": "Generátor CSS tieňa boxu",
+  "shadowDesc": "Upravte tieň boxu, zobrazte náhľad a lokálne skopírujte CSS.",
+  "shadowOffsetX": "Vodorovný posun (px)",
+  "shadowOffsetY": "Zvislý posun (px)",
+  "shadowBlur": "Polomer rozmazania (px)",
+  "shadowSpread": "Rozšírenie (px)",
+  "shadowColor": "Farba tieňa",
+  "shadowOpacity": "Krytie (%)",
+  "shadowInset": "Vnútorný tieň",
+  "shadowLimits": "Celé čísla: posun/rozšírenie −100–100 px, rozmazanie 0–200 px, krytie 0–100 %. HEX farby #RGB/#RRGGBB. Veľké tiene sú orezané rámom náhľadu.",
+  "shadowGenerate": "Vytvoriť tieň",
+  "shadowPreview": "Náhľad tieňa",
+  "shadowInvalid": "Skontrolujte HEX farbu a celočíselné limity: posun/rozšírenie −100–100, rozmazanie 0–200, krytie 0–100. Farba: najviac 32 znakov."
 }

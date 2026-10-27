@@ -691,5 +691,18 @@
   "gradientLimits": "Použijte HEX barvy #RGB nebo #RRGGBB a celočíselný úhel 0–360°. Dvě neprůhledné barvy; pouze lineární přechody.",
   "gradientGenerate": "Vytvořit přechod",
   "gradientPreview": "Náhled přechodu",
-  "gradientInvalid": "Zadejte platné barvy #RGB/#RRGGBB a celočíselný úhel 0–360°. Každý barevný vstup může mít nejvýše 32 znaků."
+  "gradientInvalid": "Zadejte platné barvy #RGB/#RRGGBB a celočíselný úhel 0–360°. Každý barevný vstup může mít nejvýše 32 znaků.",
+  "shadowTitle": "Generátor CSS stínu boxu",
+  "shadowDesc": "Upravte stín boxu, zobrazte náhled a místně zkopírujte CSS.",
+  "shadowOffsetX": "Vodorovný posun (px)",
+  "shadowOffsetY": "Svislý posun (px)",
+  "shadowBlur": "Poloměr rozostření (px)",
+  "shadowSpread": "Rozšíření (px)",
+  "shadowColor": "Barva stínu",
+  "shadowOpacity": "Krytí (%)",
+  "shadowInset": "Vnitřní stín",
+  "shadowLimits": "Celá čísla: posun/rozšíření −100–100 px, rozostření 0–200 px, krytí 0–100 %. HEX barvy #RGB/#RRGGBB. Velké stíny jsou oříznuty rámečkem náhledu.",
+  "shadowGenerate": "Vytvořit stín",
+  "shadowPreview": "Náhled stínu",
+  "shadowInvalid": "Zkontrolujte HEX barvu a celočíselné limity: posun/rozšíření −100–100, rozostření 0–200, krytí 0–100. Barva: nejvýše 32 znaků."
 }

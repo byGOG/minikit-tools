@@ -691,5 +691,18 @@
   "gradientLimits": "Utilisez des couleurs HEX #RGB ou #RRGGBB et un angle entier de 0–360°. Deux couleurs opaques ; dégradés linéaires uniquement.",
   "gradientGenerate": "Générer le dégradé",
   "gradientPreview": "Aperçu du dégradé",
-  "gradientInvalid": "Saisissez des couleurs #RGB/#RRGGBB valides et un angle entier de 0–360°. Chaque saisie de couleur accepte au maximum 32 caractères."
+  "gradientInvalid": "Saisissez des couleurs #RGB/#RRGGBB valides et un angle entier de 0–360°. Chaque saisie de couleur accepte au maximum 32 caractères.",
+  "shadowTitle": "Générateur d’ombres CSS",
+  "shadowDesc": "Réglez une ombre de boîte, prévisualisez-la et copiez le CSS localement.",
+  "shadowOffsetX": "Décalage horizontal (px)",
+  "shadowOffsetY": "Décalage vertical (px)",
+  "shadowBlur": "Rayon de flou (px)",
+  "shadowSpread": "Étalement (px)",
+  "shadowColor": "Couleur de l’ombre",
+  "shadowOpacity": "Opacité (%)",
+  "shadowInset": "Ombre intérieure",
+  "shadowLimits": "Entiers : décalage/étalement −100–100 px, flou 0–200 px, opacité 0–100 %. Couleurs HEX #RGB/#RRGGBB. Les grandes ombres sont rognées au cadre d’aperçu.",
+  "shadowGenerate": "Générer l’ombre",
+  "shadowPreview": "Aperçu de l’ombre",
+  "shadowInvalid": "Vérifiez la couleur HEX et les limites entières : décalage/étalement −100–100, flou 0–200, opacité 0–100. Couleur : 32 caractères maximum."
 }

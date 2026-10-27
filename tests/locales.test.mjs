@@ -68,6 +68,12 @@ for (const locale of catalog) {
       assert.equal([...html.matchAll(/<h1[\s>]/g)].length,1,`${path}: one primary heading`);
       assert.ok(html.includes(`property="og:url" content="${url}"`),`${path}: share URL`);
       if (slug) {
+        if (slug === 'css-box-shadow-generator') {
+          for (const key of ['shadowTitle','shadowDesc','shadowOffsetX','shadowOffsetY','shadowBlur','shadowSpread','shadowColor','shadowOpacity','shadowInset','shadowLimits','shadowGenerate','shadowPreview']) {
+            assert.equal(typeof d[key], 'string', `${path}: ${key} translation exists`);
+            assert.ok(html.includes(escapeHtml(d[key])), `${path}: ${key} is published`);
+          }
+        }
         if (slug === 'css-gradient-generator') {
           for (const key of ['gradientTitle','gradientDesc','gradientStart','gradientEnd','gradientAngle','gradientLimits','gradientGenerate','gradientPreview']) {
             assert.equal(typeof d[key], 'string', `${path}: ${key} translation exists`);

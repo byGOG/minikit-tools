@@ -691,5 +691,18 @@
   "gradientLimits": "Upotrijebite HEX boje #RGB ili #RRGGBB i cjelobrojni kut 0–360°. Dvije neprozirne boje; samo linearni prijelazi.",
   "gradientGenerate": "Generiraj prijelaz",
   "gradientPreview": "Pregled prijelaza",
-  "gradientInvalid": "Unesite valjane boje #RGB/#RRGGBB i cjelobrojni kut 0–360°. Svaki unos boje smije imati najviše 32 znaka."
+  "gradientInvalid": "Unesite valjane boje #RGB/#RRGGBB i cjelobrojni kut 0–360°. Svaki unos boje smije imati najviše 32 znaka.",
+  "shadowTitle": "Generator CSS sjene okvira",
+  "shadowDesc": "Podesite sjenu okvira, pregledajte je i lokalno kopirajte CSS.",
+  "shadowOffsetX": "Vodoravni pomak (px)",
+  "shadowOffsetY": "Okomiti pomak (px)",
+  "shadowBlur": "Polumjer zamućenja (px)",
+  "shadowSpread": "Širenje (px)",
+  "shadowColor": "Boja sjene",
+  "shadowOpacity": "Neprozirnost (%)",
+  "shadowInset": "Unutarnja sjena",
+  "shadowLimits": "Cijeli brojevi: pomak/širenje −100–100 px, zamućenje 0–200 px, neprozirnost 0–100%. HEX boje #RGB/#RRGGBB. Velike sjene režu se okvirom pregleda.",
+  "shadowGenerate": "Generiraj sjenu",
+  "shadowPreview": "Pregled sjene",
+  "shadowInvalid": "Provjerite HEX boju i cjelobrojne granice: pomak/širenje −100–100, zamućenje 0–200, neprozirnost 0–100. Unos boje: do 32 znaka."
 }

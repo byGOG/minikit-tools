@@ -691,5 +691,18 @@
   "gradientLimits": "Usa colores HEX #RGB o #RRGGBB y un ángulo entero de 0–360°. Dos colores opacos; solo degradados lineales.",
   "gradientGenerate": "Generar degradado",
   "gradientPreview": "Vista previa del degradado",
-  "gradientInvalid": "Introduce colores #RGB/#RRGGBB válidos y un ángulo entero de 0–360°. Cada entrada de color admite hasta 32 caracteres."
+  "gradientInvalid": "Introduce colores #RGB/#RRGGBB válidos y un ángulo entero de 0–360°. Cada entrada de color admite hasta 32 caracteres.",
+  "shadowTitle": "Generador de sombras CSS",
+  "shadowDesc": "Ajusta una sombra de caja, previsualízala y copia el CSS localmente.",
+  "shadowOffsetX": "Desplazamiento horizontal (px)",
+  "shadowOffsetY": "Desplazamiento vertical (px)",
+  "shadowBlur": "Radio de desenfoque (px)",
+  "shadowSpread": "Expansión (px)",
+  "shadowColor": "Color de sombra",
+  "shadowOpacity": "Opacidad (%)",
+  "shadowInset": "Sombra interior",
+  "shadowLimits": "Enteros: desplazamiento/expansión −100–100 px, desenfoque 0–200 px, opacidad 0–100%. Colores HEX #RGB/#RRGGBB. Las sombras grandes se recortan en el marco de vista previa.",
+  "shadowGenerate": "Generar sombra",
+  "shadowPreview": "Vista previa de sombra",
+  "shadowInvalid": "Comprueba color HEX y límites enteros: desplazamiento/expansión −100–100, desenfoque 0–200, opacidad 0–100. Color: hasta 32 caracteres."
 }

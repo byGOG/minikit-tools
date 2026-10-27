@@ -691,5 +691,18 @@
   "gradientLimits": "Naudokite HEX spalvas #RGB arba #RRGGBB ir sveikąjį kampą 0–360°. Dvi nepermatomos spalvos; tik tiesiniai gradientai.",
   "gradientGenerate": "Kurti gradientą",
   "gradientPreview": "Gradiento peržiūra",
-  "gradientInvalid": "Įveskite galiojančias #RGB/#RRGGBB spalvas ir sveikąjį kampą 0–360°. Kiekviena spalvos įvestis gali turėti iki 32 ženklų."
+  "gradientInvalid": "Įveskite galiojančias #RGB/#RRGGBB spalvas ir sveikąjį kampą 0–360°. Kiekviena spalvos įvestis gali turėti iki 32 ženklų.",
+  "shadowTitle": "CSS dėžutės šešėlio generatorius",
+  "shadowDesc": "Reguliuokite dėžutės šešėlį, peržiūrėkite ir vietoje nukopijuokite CSS.",
+  "shadowOffsetX": "Horizontalus poslinkis (px)",
+  "shadowOffsetY": "Vertikalus poslinkis (px)",
+  "shadowBlur": "Suliejimo spindulys (px)",
+  "shadowSpread": "Išplitimas (px)",
+  "shadowColor": "Šešėlio spalva",
+  "shadowOpacity": "Nepermatomumas (%)",
+  "shadowInset": "Vidinis šešėlis",
+  "shadowLimits": "Sveikieji skaičiai: poslinkis/išplitimas −100–100 px, suliejimas 0–200 px, nepermatomumas 0–100%. HEX spalvos #RGB/#RRGGBB. Dideli šešėliai nukerpami peržiūros rėmu.",
+  "shadowGenerate": "Kurti šešėlį",
+  "shadowPreview": "Šešėlio peržiūra",
+  "shadowInvalid": "Patikrinkite HEX spalvą ir sveikųjų skaičių ribas: poslinkis/išplitimas −100–100, suliejimas 0–200, nepermatomumas 0–100. Spalvos įvestis: iki 32 ženklų."
 }

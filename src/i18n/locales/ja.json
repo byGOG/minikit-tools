@@ -691,5 +691,18 @@
   "gradientLimits": "#RGBまたは#RRGGBBのHEXカラーと0〜360°の整数角度を使用します。不透明な2色の線形グラデーションのみ対応します。",
   "gradientGenerate": "グラデーション生成",
   "gradientPreview": "グラデーションプレビュー",
-  "gradientInvalid": "有効な#RGB/#RRGGBBカラーと0〜360°の整数角度を入力してください。各色の入力は最大32文字です。"
+  "gradientInvalid": "有効な#RGB/#RRGGBBカラーと0〜360°の整数角度を入力してください。各色の入力は最大32文字です。",
+  "shadowTitle": "CSSボックスシャドウ生成ツール",
+  "shadowDesc": "ボックスの影を調整し、プレビューしてCSSをローカルでコピーします。",
+  "shadowOffsetX": "水平オフセット（px）",
+  "shadowOffsetY": "垂直オフセット（px）",
+  "shadowBlur": "ぼかし半径（px）",
+  "shadowSpread": "広がり（px）",
+  "shadowColor": "影の色",
+  "shadowOpacity": "不透明度（%）",
+  "shadowInset": "内側の影",
+  "shadowLimits": "整数：オフセット・広がり −100〜100 px、ぼかし 0〜200 px、不透明度 0〜100%。HEXカラー #RGB/#RRGGBB。大きな影はプレビュー枠で切り取られます。",
+  "shadowGenerate": "影を生成",
+  "shadowPreview": "影のプレビュー",
+  "shadowInvalid": "HEXカラーと整数範囲を確認してください：オフセット・広がり −100〜100、ぼかし 0〜200、不透明度 0〜100。色の入力は最大32文字です。"
 }

@@ -691,5 +691,18 @@
   "gradientLimits": "Gunakan warna HEX #RGB atau #RRGGBB dan sudut nombor bulat 0–360°. Dua warna legap; gradien linear sahaja.",
   "gradientGenerate": "Jana gradien",
   "gradientPreview": "Pratonton gradien",
-  "gradientInvalid": "Masukkan warna #RGB/#RRGGBB yang sah dan sudut nombor bulat 0–360°. Setiap input warna maksimum 32 aksara."
+  "gradientInvalid": "Masukkan warna #RGB/#RRGGBB yang sah dan sudut nombor bulat 0–360°. Setiap input warna maksimum 32 aksara.",
+  "shadowTitle": "Penjana bayang kotak CSS",
+  "shadowDesc": "Laraskan bayang kotak, pratonton dan salin CSS secara setempat.",
+  "shadowOffsetX": "Ofset mendatar (px)",
+  "shadowOffsetY": "Ofset menegak (px)",
+  "shadowBlur": "Jejari kabur (px)",
+  "shadowSpread": "Sebaran (px)",
+  "shadowColor": "Warna bayang",
+  "shadowOpacity": "Kelegapan (%)",
+  "shadowInset": "Bayang dalaman",
+  "shadowLimits": "Nombor bulat: ofset/sebaran −100–100 px, kabur 0–200 px, kelegapan 0–100%. Warna HEX #RGB/#RRGGBB. Bayang besar dipotong pada bingkai pratonton.",
+  "shadowGenerate": "Jana bayang",
+  "shadowPreview": "Pratonton bayang",
+  "shadowInvalid": "Semak warna HEX dan had nombor bulat: ofset/sebaran −100–100, kabur 0–200, kelegapan 0–100. Input warna: maksimum 32 aksara."
 }

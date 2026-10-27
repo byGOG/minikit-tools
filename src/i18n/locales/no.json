@@ -691,5 +691,18 @@
   "gradientLimits": "Bruk HEX-farger #RGB eller #RRGGBB og en heltallsvinkel på 0–360°. To ugjennomsiktige farger; bare lineære gradienter.",
   "gradientGenerate": "Generer gradient",
   "gradientPreview": "Forhåndsvisning av gradient",
-  "gradientInvalid": "Skriv inn gyldige #RGB/#RRGGBB-farger og en heltallsvinkel på 0–360°. Hvert fargefelt kan inneholde høyst 32 tegn."
+  "gradientInvalid": "Skriv inn gyldige #RGB/#RRGGBB-farger og en heltallsvinkel på 0–360°. Hvert fargefelt kan inneholde høyst 32 tegn.",
+  "shadowTitle": "CSS-boksskyggegenerator",
+  "shadowDesc": "Juster en boksskygge, forhåndsvis og kopier CSS lokalt.",
+  "shadowOffsetX": "Vannrett forskyvning (px)",
+  "shadowOffsetY": "Loddrett forskyvning (px)",
+  "shadowBlur": "Uskarphetsradius (px)",
+  "shadowSpread": "Spredning (px)",
+  "shadowColor": "Skyggefarge",
+  "shadowOpacity": "Opasitet (%)",
+  "shadowInset": "Indre skygge",
+  "shadowLimits": "Heltall: forskyvning/spredning −100–100 px, uskarphet 0–200 px, opasitet 0–100 %. HEX-farger #RGB/#RRGGBB. Store skygger klippes ved forhåndsvisningsrammen.",
+  "shadowGenerate": "Generer skygge",
+  "shadowPreview": "Forhåndsvisning av skygge",
+  "shadowInvalid": "Sjekk HEX-farge og heltallsgrenser: forskyvning/spredning −100–100, uskarphet 0–200, opasitet 0–100. Fargefelt: høyst 32 tegn."
 }
