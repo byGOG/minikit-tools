@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Hash yang diharapkan harus tepat 64 karakter heksadesimal.",
   "fileHashInvalidFile": "Pilih satu berkas berukuran maksimal 50 MiB.",
   "fileHashFailed": "Operasi tidak dapat diselesaikan. Gunakan peramban terkini yang mendukung Web Crypto dan HTTPS.",
-  "fileHashClear": "Bersihkan"
+  "fileHashClear": "Bersihkan",
+  "loremTitle": "Pembuat Lorem Ipsum",
+  "loremDesc": "Buat teks pengisi Latin untuk tata letak secara lokal dengan jumlah paragraf dan kata yang tepat.",
+  "loremParagraphs": "Paragraf",
+  "loremWordsPerParagraph": "Kata per paragraf",
+  "loremLimits": "1–50 paragraf, masing-masing 5–200 kata; maksimal 10.000 kata. Hasil berupa teks pengisi Latin, apa pun bahasa antarmukanya.",
+  "loremGenerate": "Buat teks",
+  "loremInvalid": "Masukkan bilangan bulat: 1–50 paragraf dan 5–200 kata per paragraf."
 }

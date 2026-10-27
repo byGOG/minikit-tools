@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Mã băm mong đợi phải có đúng 64 ký tự thập lục phân.",
   "fileHashInvalidFile": "Chọn một tệp có dung lượng tối đa 50 MiB.",
   "fileHashFailed": "Không thể hoàn tất. Hãy dùng trình duyệt mới hỗ trợ Web Crypto và HTTPS.",
-  "fileHashClear": "Xóa"
+  "fileHashClear": "Xóa",
+  "loremTitle": "Trình tạo Lorem Ipsum",
+  "loremDesc": "Tạo cục bộ văn bản mẫu tiếng Latin cho bố cục với số đoạn và số từ chính xác.",
+  "loremParagraphs": "Số đoạn",
+  "loremWordsPerParagraph": "Số từ mỗi đoạn",
+  "loremLimits": "1–50 đoạn, mỗi đoạn 5–200 từ; tối đa 10.000 từ. Kết quả là văn bản mẫu tiếng Latin, bất kể ngôn ngữ giao diện.",
+  "loremGenerate": "Tạo văn bản",
+  "loremInvalid": "Nhập số nguyên: 1–50 đoạn và 5–200 từ mỗi đoạn."
 }

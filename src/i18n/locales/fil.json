@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Dapat eksaktong 64 na hexadecimal na character ang inaasahang hash.",
   "fileHashInvalidFile": "Pumili ng isang file na hanggang 50 MiB.",
   "fileHashFailed": "Hindi natapos ang proseso. Gumamit ng bagong browser na may Web Crypto at HTTPS.",
-  "fileHashClear": "Burahin"
+  "fileHashClear": "Burahin",
+  "loremTitle": "Tagabuo ng Lorem Ipsum",
+  "loremDesc": "Gumawa nang lokal ng pansamantalang tekstong Latin para sa mga layout na may eksaktong bilang ng talata at salita.",
+  "loremParagraphs": "Mga talata",
+  "loremWordsPerParagraph": "Mga salita bawat talata",
+  "loremLimits": "1–50 talata, 5–200 salita bawat isa; hanggang 10,000 salita. Tekstong Latin ang resulta anuman ang wika ng interface.",
+  "loremGenerate": "Bumuo ng teksto",
+  "loremInvalid": "Maglagay ng buong bilang: 1–50 talata at 5–200 salita bawat talata."
 }

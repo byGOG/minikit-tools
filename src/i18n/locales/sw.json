@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Hashi inayotarajiwa lazima iwe na vibambo 64 vya heksadesimali kamili.",
   "fileHashInvalidFile": "Chagua faili moja yenye ukubwa usiozidi 50 MiB.",
   "fileHashFailed": "Imeshindwa kukamilisha. Tumia kivinjari cha kisasa chenye Web Crypto na HTTPS.",
-  "fileHashClear": "Futa"
+  "fileHashClear": "Futa",
+  "loremTitle": "Kizalishaji cha Lorem Ipsum",
+  "loremDesc": "Tengeneza maandishi ya mfano ya Kilatini kwa mipangilio kwenye kifaa, yenye idadi kamili ya aya na maneno.",
+  "loremParagraphs": "Aya",
+  "loremWordsPerParagraph": "Maneno kwa aya",
+  "loremLimits": "Aya 1–50, kila moja maneno 5–200; hadi maneno 10,000. Matokeo ni maandishi ya mfano ya Kilatini bila kujali lugha ya kiolesura.",
+  "loremGenerate": "Tengeneza maandishi",
+  "loremInvalid": "Weka namba kamili: aya 1–50 na maneno 5–200 kwa kila aya."
 }

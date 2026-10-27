@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Förväntad hash måste innehålla exakt 64 hexadecimala tecken.",
   "fileHashInvalidFile": "Välj en fil på högst 50 MiB.",
   "fileHashFailed": "Åtgärden kunde inte slutföras. Använd en uppdaterad webbläsare med Web Crypto och HTTPS.",
-  "fileHashClear": "Rensa"
+  "fileHashClear": "Rensa",
+  "loremTitle": "Lorem Ipsum-generator",
+  "loremDesc": "Skapa latinsk platshållartext för layouter lokalt med exakt antal stycken och ord.",
+  "loremParagraphs": "Stycken",
+  "loremWordsPerParagraph": "Ord per stycke",
+  "loremLimits": "1–50 stycken med 5–200 ord vardera; högst 10 000 ord. Resultatet är latinsk platshållartext oavsett gränssnittets språk.",
+  "loremGenerate": "Generera text",
+  "loremInvalid": "Ange heltal: 1–50 stycken och 5–200 ord per stycke."
 }

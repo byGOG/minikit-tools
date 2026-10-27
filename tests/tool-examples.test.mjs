@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {changeCase} from '../src/scripts/text-tools.ts';
 import {compareJson} from '../src/scripts/structured-core.ts';
+import {generateLoremIpsum} from '../src/scripts/lorem-ipsum-core.ts';
 
 const examples=JSON.parse(await readFile(new URL('../src/data/tool-examples.json',import.meta.url),'utf8'));
 const locales=JSON.parse(await readFile(new URL('../src/i18n/catalog.json',import.meta.url),'utf8'));
@@ -19,4 +20,10 @@ test('published JSON comparison example shows the real JSON Pointer result',()=>
  const result=compareJson(operands[0],operands[1]);
  assert.equal(result.equal,false);
  assert.equal(result.text,expected,'published output must match the tool output, including paths and formatting');
+});
+
+test('published Lorem Ipsum example matches the generated text',()=>{
+ const [input,expected]=examples['lorem-ipsum-generator'];
+ assert.equal(input,'1 × 5');
+ assert.equal(generateLoremIpsum(1,5),expected);
 });

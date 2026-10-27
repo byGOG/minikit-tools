@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "期待するハッシュは正確に64桁の16進文字で入力してください。",
   "fileHashInvalidFile": "50 MiB以下のファイルを1つ選択してください。",
   "fileHashFailed": "処理を完了できませんでした。Web Crypto対応の最新ブラウザとHTTPSを使用してください。",
-  "fileHashClear": "クリア"
+  "fileHashClear": "クリア",
+  "loremTitle": "Lorem Ipsum生成ツール",
+  "loremDesc": "段落数と単語数を正確に指定して、レイアウト用のラテン語ダミーテキストをローカルで生成します。",
+  "loremParagraphs": "段落数",
+  "loremWordsPerParagraph": "段落ごとの単語数",
+  "loremLimits": "1〜50段落、各5〜200語、合計最大10,000語。画面の言語に関係なく、出力はラテン語のダミーテキストです。",
+  "loremGenerate": "テキスト生成",
+  "loremInvalid": "整数を入力してください：1〜50段落、段落ごとに5〜200語。"
 }

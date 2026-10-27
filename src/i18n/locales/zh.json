@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "预期哈希必须恰好包含 64 个十六进制字符。",
   "fileHashInvalidFile": "请选择一个不超过 50 MiB 的文件。",
   "fileHashFailed": "无法完成操作。请使用支持 Web Crypto 的新版浏览器及 HTTPS 连接。",
-  "fileHashClear": "清除"
+  "fileHashClear": "清除",
+  "loremTitle": "Lorem Ipsum 生成器",
+  "loremDesc": "在本地生成用于布局的拉丁语占位文本，精确指定段落数和单词数。",
+  "loremParagraphs": "段落数",
+  "loremWordsPerParagraph": "每段单词数",
+  "loremLimits": "1–50 段，每段 5–200 个单词；最多 10,000 个单词。无论界面语言为何，输出均为拉丁语占位文本。",
+  "loremGenerate": "生成文本",
+  "loremInvalid": "请输入整数：1–50 段，每段 5–200 个单词。"
 }

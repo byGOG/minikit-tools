@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Beklenen özet tam 64 onaltılık karakter olmalı.",
   "fileHashInvalidFile": "En fazla 50 MiB boyutunda tek dosya seç.",
   "fileHashFailed": "İşlem tamamlanamadı. Web Crypto destekleyen güncel tarayıcı ve HTTPS bağlantısı kullan.",
-  "fileHashClear": "Temizle"
+  "fileHashClear": "Temizle",
+  "loremTitle": "Lorem Ipsum oluşturucu",
+  "loremDesc": "Düzenler için paragraf ve kelime sayısı tam olan Latince yer tutucu metni yerel olarak oluştur.",
+  "loremParagraphs": "Paragraflar",
+  "loremWordsPerParagraph": "Paragraf başına kelime",
+  "loremLimits": "1–50 paragraf, her biri 5–200 kelime; en fazla 10.000 kelime. Arayüz dilinden bağımsız olarak çıktı Latince yer tutucu metindir.",
+  "loremGenerate": "Metin oluştur",
+  "loremInvalid": "Tam sayı gir: 1–50 paragraf ve paragraf başına 5–200 kelime."
 }

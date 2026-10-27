@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Der erwartete Hash muss genau 64 Hexadezimalzeichen enthalten.",
   "fileHashInvalidFile": "Wähle eine Datei mit höchstens 50 MiB.",
   "fileHashFailed": "Der Vorgang konnte nicht abgeschlossen werden. Nutze einen aktuellen Browser mit Web Crypto und HTTPS.",
-  "fileHashClear": "Leeren"
+  "fileHashClear": "Leeren",
+  "loremTitle": "Lorem-Ipsum-Generator",
+  "loremDesc": "Erstelle lokal lateinischen Platzhaltertext für Layouts mit genauer Absatz- und Wortzahl.",
+  "loremParagraphs": "Absätze",
+  "loremWordsPerParagraph": "Wörter pro Absatz",
+  "loremLimits": "1–50 Absätze mit je 5–200 Wörtern; höchstens 10.000 Wörter. Die Ausgabe ist lateinischer Platzhaltertext, unabhängig von der Sprache der Oberfläche.",
+  "loremGenerate": "Text erzeugen",
+  "loremInvalid": "Gib ganze Zahlen ein: 1–50 Absätze und 5–200 Wörter pro Absatz."
 }

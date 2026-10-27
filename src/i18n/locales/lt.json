@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Tikėtiną maišą turi sudaryti tiksliai 64 šešioliktainiai simboliai.",
   "fileHashInvalidFile": "Pasirinkite vieną failą iki 50 MiB.",
   "fileHashFailed": "Nepavyko užbaigti veiksmo. Naudokite naują naršyklę su Web Crypto ir HTTPS.",
-  "fileHashClear": "Išvalyti"
+  "fileHashClear": "Išvalyti",
+  "loremTitle": "Lorem Ipsum generatorius",
+  "loremDesc": "Vietoje kurkite lotynišką pakaitinį tekstą maketams su tiksliu pastraipų ir žodžių skaičiumi.",
+  "loremParagraphs": "Pastraipos",
+  "loremWordsPerParagraph": "Žodžiai pastraipoje",
+  "loremLimits": "1–50 pastraipų po 5–200 žodžių; ne daugiau kaip 10 000 žodžių. Rezultatas yra lotyniškas pakaitinis tekstas, nepriklausomai nuo sąsajos kalbos.",
+  "loremGenerate": "Kurti tekstą",
+  "loremInvalid": "Įveskite sveikuosius skaičius: 1–50 pastraipų ir 5–200 žodžių pastraipoje."
 }

@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "De verwachte hash moet precies 64 hexadecimale tekens bevatten.",
   "fileHashInvalidFile": "Kies één bestand van maximaal 50 MiB.",
   "fileHashFailed": "De bewerking kon niet worden voltooid. Gebruik een actuele browser met Web Crypto en HTTPS.",
-  "fileHashClear": "Wissen"
+  "fileHashClear": "Wissen",
+  "loremTitle": "Lorem Ipsum-generator",
+  "loremDesc": "Maak lokaal Latijnse opvultekst voor lay-outs met een exact aantal alinea’s en woorden.",
+  "loremParagraphs": "Alinea’s",
+  "loremWordsPerParagraph": "Woorden per alinea",
+  "loremLimits": "1–50 alinea’s, elk 5–200 woorden; maximaal 10.000 woorden. De uitvoer is Latijnse opvultekst, ongeacht de taal van de interface.",
+  "loremGenerate": "Tekst genereren",
+  "loremInvalid": "Voer gehele getallen in: 1–50 alinea’s en 5–200 woorden per alinea."
 }

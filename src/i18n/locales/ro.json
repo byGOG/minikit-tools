@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Amprenta așteptată trebuie să conțină exact 64 de caractere hexazecimale.",
   "fileHashInvalidFile": "Alege un fișier de cel mult 50 MiB.",
   "fileHashFailed": "Operația nu a putut fi finalizată. Folosește un browser actualizat cu Web Crypto și HTTPS.",
-  "fileHashClear": "Șterge"
+  "fileHashClear": "Șterge",
+  "loremTitle": "Generator Lorem Ipsum",
+  "loremDesc": "Creează local text demonstrativ în latină pentru machete, cu un număr exact de paragrafe și cuvinte.",
+  "loremParagraphs": "Paragrafe",
+  "loremWordsPerParagraph": "Cuvinte pe paragraf",
+  "loremLimits": "1–50 de paragrafe, fiecare cu 5–200 de cuvinte; cel mult 10.000 de cuvinte. Rezultatul este text demonstrativ în latină, indiferent de limba interfeței.",
+  "loremGenerate": "Generează text",
+  "loremInvalid": "Introdu numere întregi: 1–50 de paragrafe și 5–200 de cuvinte pe paragraf."
 }

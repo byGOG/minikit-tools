@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Den forventede hashværdi skal indeholde præcis 64 hexadecimale tegn.",
   "fileHashInvalidFile": "Vælg én fil på højst 50 MiB.",
   "fileHashFailed": "Handlingen kunne ikke fuldføres. Brug en opdateret browser med Web Crypto og HTTPS.",
-  "fileHashClear": "Ryd"
+  "fileHashClear": "Ryd",
+  "loremTitle": "Lorem Ipsum-generator",
+  "loremDesc": "Opret lokalt latinsk pladsholdertekst til layout med præcist antal afsnit og ord.",
+  "loremParagraphs": "Afsnit",
+  "loremWordsPerParagraph": "Ord pr. afsnit",
+  "loremLimits": "1–50 afsnit med 5–200 ord hver; højst 10.000 ord. Resultatet er latinsk pladsholdertekst uanset brugerfladens sprog.",
+  "loremGenerate": "Generér tekst",
+  "loremInvalid": "Indtast hele tal: 1–50 afsnit og 5–200 ord pr. afsnit."
 }

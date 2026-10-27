@@ -858,5 +858,15 @@
       "heading": "Compare file bytes with SHA-256",
       "text": "Choose one file; the tool calculates SHA-256 from its original bytes in your browser without converting them to text. The file and its name are not sent to a server. Empty files are valid; the limit is 50 MiB (52,428,800 bytes). The entire file is loaded into memory, so memory use may increase. Optionally enter an expected digest of exactly 64 hexadecimal characters obtained separately from a trusted source. Taking both the file and digest from the same untrusted source does not establish authenticity. A match shows byte consistency only; it does not guarantee that the file is harmless or its source trustworthy. A one-byte change in content or metadata stored inside the file changes the digest; renaming the file alone does not change its bytes. SHA-256 is not encryption or a password-storage method. Changing the file or expected digest, or pressing Clear, invalidates the previous result. This logical cancellation does not physically stop an already started Web Crypto calculation; its stale result is discarded. A current browser with Web Crypto support and HTTPS is required."
     }
+  },
+  "lorem-ipsum-generator": {
+    "tr": {
+      "heading": "Düzen denemeleri için tam sayıda paragraf ve kelime",
+      "text": "Lorem Ipsum, sayfa ve uygulama taslaklarında metin alanlarını doldurmak içindir; gerçek bilgi veren bir makale veya Latince çeviri değildir. Arayüzün dili ne olursa olsun çıktı Latince yer tutucu metin olarak kalır. 1–50 paragraf ve paragraf başına 5–200 kelimeyi tam sayı olarak gir; en fazla 10.000 kelime oluşturulur. Kelimeler boşluk karakterleriyle ayrılan parçalar olarak sayılır; paragrafların arasında bir boş satır bulunur. Aynı değerler aynı metni üretir. Varsayılan ayar 3 paragraf ve paragraf başına 50 kelimedir. İşlem tarayıcıda yerel yapılır; metin sunucuya yüklenmez. Girdiyi değiştirmek eski çıktıyı geçersiz kılar. Metni kopyalayabilir veya Temizle ile çıktıyı silip 3/50 ayarlarına dönebilirsin."
+    },
+    "en": {
+      "heading": "Exact paragraph and word counts for layout mockups",
+      "text": "Lorem Ipsum fills text areas in page and application mockups; it is not a factual article or a Latin translation. Output remains Latin placeholder text regardless of the interface language. Enter whole numbers: 1–50 paragraphs and 5–200 words per paragraph, up to 10,000 words total. Words are counted as whitespace-separated tokens; paragraphs are separated by a blank line. The same settings produce the same text. Defaults are 3 paragraphs with 50 words each. Generation runs locally in your browser; no text is uploaded. Changing an input invalidates the old output. Copy the text, or use Clear to remove the output and restore the 3/50 defaults."
+    }
   }
 }

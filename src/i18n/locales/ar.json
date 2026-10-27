@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "يجب أن تتكون البصمة المتوقعة من 64 محرفًا سداسيًا عشريًا بالضبط.",
   "fileHashInvalidFile": "اختر ملفًا واحدًا بحجم لا يتجاوز 50 MiB.",
   "fileHashFailed": "تعذر إكمال العملية. استخدم متصفحًا حديثًا يدعم Web Crypto واتصال HTTPS.",
-  "fileHashClear": "مسح"
+  "fileHashClear": "مسح",
+  "loremTitle": "مولد Lorem Ipsum",
+  "loremDesc": "أنشئ محليًا نصًا لاتينيًا مؤقتًا للتصميمات بعدد دقيق من الفقرات والكلمات.",
+  "loremParagraphs": "الفقرات",
+  "loremWordsPerParagraph": "الكلمات لكل فقرة",
+  "loremLimits": "1–50 فقرة، كل منها 5–200 كلمة؛ بحد أقصى 10,000 كلمة. الناتج نص لاتيني مؤقت مهما كانت لغة الواجهة.",
+  "loremGenerate": "إنشاء النص",
+  "loremInvalid": "أدخل أعدادًا صحيحة: 1–50 فقرة و5–200 كلمة لكل فقرة."
 }

@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Hash dijangka mesti mengandungi tepat 64 aksara perenambelasan.",
   "fileHashInvalidFile": "Pilih satu fail sehingga 50 MiB.",
   "fileHashFailed": "Operasi tidak dapat diselesaikan. Gunakan pelayar terkini dengan sokongan Web Crypto dan HTTPS.",
-  "fileHashClear": "Kosongkan"
+  "fileHashClear": "Kosongkan",
+  "loremTitle": "Penjana Lorem Ipsum",
+  "loremDesc": "Jana teks pengisi Latin untuk susun atur secara setempat dengan bilangan perenggan dan perkataan yang tepat.",
+  "loremParagraphs": "Perenggan",
+  "loremWordsPerParagraph": "Perkataan setiap perenggan",
+  "loremLimits": "1–50 perenggan, setiap satu 5–200 perkataan; maksimum 10,000 perkataan. Hasil ialah teks pengisi Latin tanpa mengira bahasa antara muka.",
+  "loremGenerate": "Jana teks",
+  "loremInvalid": "Masukkan nombor bulat: 1–50 perenggan dan 5–200 perkataan setiap perenggan."
 }

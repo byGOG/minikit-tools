@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Die verwagte opsomming moet presies 64 heksadesimale karakters bevat.",
   "fileHashInvalidFile": "Kies een lêer van hoogstens 50 MiB.",
   "fileHashFailed": "Die bewerking kon nie voltooi word nie. Gebruik ’n moderne blaaier met Web Crypto en HTTPS.",
-  "fileHashClear": "Maak skoon"
+  "fileHashClear": "Maak skoon",
+  "loremTitle": "Lorem Ipsum-skepper",
+  "loremDesc": "Skep Latynse plekhouerteks vir uitlegte met ’n presiese paragraaf- en woordtelling, plaaslik op jou toestel.",
+  "loremParagraphs": "Paragrawe",
+  "loremWordsPerParagraph": "Woorde per paragraaf",
+  "loremLimits": "1–50 paragrawe, elk 5–200 woorde; hoogstens 10 000 woorde. Die uitvoer is Latynse plekhouerteks, ongeag die koppelvlaktaal.",
+  "loremGenerate": "Skep teks",
+  "loremInvalid": "Voer heelgetalle in: 1–50 paragrawe en 5–200 woorde per paragraaf."
 }

@@ -1,0 +1,30 @@
+---
+import { Text, ShieldCheck, ArrowRight } from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const str = (key: string) => (tr as Record<string, string>)[key] ?? key;
+---
+<article class="tool-card lorem-ipsum-card" id="lorem-ipsum-tool">
+  <div class="card-top"><span class="tool-icon icon-blue"><Text size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="loremTitle">{str('loremTitle')}</h3>
+  <p data-i18n="loremDesc">{str('loremDesc')}</p>
+  <div class="lorem-options">
+    <div><label class="field-label" for="lorem-paragraphs" data-i18n="loremParagraphs">{str('loremParagraphs')}</label><input class="text-input" id="lorem-paragraphs" type="number" min="1" max="50" step="1" value="3" required aria-describedby="lorem-limits"/></div>
+    <div><label class="field-label" for="lorem-words" data-i18n="loremWordsPerParagraph">{str('loremWordsPerParagraph')}</label><input class="text-input" id="lorem-words" type="number" min="5" max="200" step="1" value="50" required aria-describedby="lorem-limits"/></div>
+  </div>
+  <small class="lorem-hint" id="lorem-limits" data-i18n="loremLimits">{str('loremLimits')}</small>
+  <button class="button-primary full" id="lorem-generate" data-i18n="loremGenerate">{str('loremGenerate')}</button>
+  <label class="field-label lorem-result-label" for="lorem-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="lorem-output" readonly dir="ltr" spellcheck="false"></textarea>
+  <p class="tool-feedback" id="lorem-feedback" role="status" aria-live="polite"></p>
+  <div class="text-tool-actions"><button class="button-secondary full" id="lorem-copy" data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id="lorem-clear" data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="lorem-ipsum-generator" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
+<style is:global>
+.lorem-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.lorem-options input{width:100%;min-width:0}
+.lorem-hint{display:block;font-size:12px;line-height:1.65;color:#526258;margin:10px 0 14px}
+.lorem-result-label{margin-top:14px}
+.lorem-ipsum-card textarea{min-height:190px}
+@media(max-width:440px){.lorem-options{grid-template-columns:1fr}}
+</style>

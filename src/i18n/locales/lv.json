@@ -657,5 +657,12 @@
   "fileHashInvalidExpected": "Sagaidāmajai jaucējvērtībai jāsatur tieši 64 heksadecimālās rakstzīmes.",
   "fileHashInvalidFile": "Izvēlieties vienu failu līdz 50 MiB.",
   "fileHashFailed": "Darbību neizdevās pabeigt. Izmantojiet atjauninātu pārlūku ar Web Crypto un HTTPS.",
-  "fileHashClear": "Notīrīt"
+  "fileHashClear": "Notīrīt",
+  "loremTitle": "Lorem Ipsum ģenerators",
+  "loremDesc": "Lokāli izveidojiet latīņu aizvietotājtekstu maketiem ar precīzu rindkopu un vārdu skaitu.",
+  "loremParagraphs": "Rindkopas",
+  "loremWordsPerParagraph": "Vārdi rindkopā",
+  "loremLimits": "1–50 rindkopas, katrā 5–200 vārdi; ne vairāk kā 10 000 vārdu. Rezultāts ir latīņu aizvietotājteksts neatkarīgi no saskarnes valodas.",
+  "loremGenerate": "Ģenerēt tekstu",
+  "loremInvalid": "Ievadiet veselus skaitļus: 1–50 rindkopas un 5–200 vārdus rindkopā."
 }
