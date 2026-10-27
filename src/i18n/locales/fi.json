@@ -673,5 +673,14 @@
   "romanInput": "Muunnettava arvo",
   "romanLimits": "Kokonaisluvut 1–3999; tavanomaiset roomalaiset numerot I–MMMCMXCIX. Enintään 100 syötemerkkiä. Vain ASCII-numerot/-kirjaimet; pienet kirjaimet hyväksytään.",
   "romanConvert": "Muunna",
-  "romanInvalid": "Anna kokonaisluku 1–3999 tai kelvollinen tavanomainen roomalainen luku valitussa suunnassa. Enintään 100 merkkiä; ei etumerkkejä, murtolukuja tai yläviivoja."
+  "romanInvalid": "Anna kokonaisluku 1–3999 tai kelvollinen tavanomainen roomalainen luku valitussa suunnassa. Enintään 100 merkkiä; ei etumerkkejä, murtolukuja tai yläviivoja.",
+  "morseTitle": "Morsekoodin kääntäjä",
+  "morseDesc": "Muunna kirjaimet A–Z ja numerot 0–9 paikallisesti morsekoodiksi ja takaisin.",
+  "morseMode": "Muunnossuunta",
+  "morseEncode": "Teksti morsekoodiksi",
+  "morseDecode": "Morsekoodi tekstiksi",
+  "morseInput": "Syöte",
+  "morseLimits": "Teksti: enintään 1000 merkkiä, vain A–Z ja 0–9. Morse: enintään 6000 merkkiä. Erota kirjaimet välilyönneillä ja sanat merkillä /. Purettu teksti on suuraakkosin.",
+  "morseConvert": "Muunna",
+  "morseInvalid": "Tarkista suunta, merkit ja rajat: 1000 tekstimerkkiä, 6000 morsemerkkiä. Erota kirjainkoodit välilyönneillä ja sanat merkillä /."
 }

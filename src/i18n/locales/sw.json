@@ -673,5 +673,14 @@
   "romanInput": "Thamani ya kubadilisha",
   "romanLimits": "Nambari kamili 1–3999; nambari za Kirumi sanifu I–MMMCMXCIX. Hadi vibambo 100 vya ingizo. Tarakimu/herufi za ASCII pekee; herufi ndogo zinakubaliwa.",
   "romanConvert": "Badilisha",
-  "romanInvalid": "Weka nambari kamili 1–3999 au nambari halali ya Kirumi sanifu kwa mwelekeo uliochaguliwa. Hadi vibambo 100; bila ishara, sehemu au mistari ya juu."
+  "romanInvalid": "Weka nambari kamili 1–3999 au nambari halali ya Kirumi sanifu kwa mwelekeo uliochaguliwa. Hadi vibambo 100; bila ishara, sehemu au mistari ya juu.",
+  "morseTitle": "Mtafsiri wa msimbo wa Morse",
+  "morseDesc": "Badilisha herufi A–Z na tarakimu 0–9 kuwa msimbo wa Morse na kurudi kwenye kifaa.",
+  "morseMode": "Mwelekeo wa ubadilishaji",
+  "morseEncode": "Maandishi kwenda Morse",
+  "morseDecode": "Morse kwenda maandishi",
+  "morseInput": "Ingizo",
+  "morseLimits": "Maandishi: hadi vibambo 1000, A–Z na 0–9 pekee. Morse: hadi vibambo 6000. Tenganisha herufi kwa nafasi na maneno kwa /. Maandishi yaliyofasiriwa yana herufi kubwa.",
+  "morseConvert": "Badilisha",
+  "morseInvalid": "Kagua mwelekeo, vibambo na mipaka: vibambo 1000 vya maandishi, 6000 vya Morse. Nafasi kati ya misimbo ya herufi na / kati ya maneno."
 }

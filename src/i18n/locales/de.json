@@ -673,5 +673,14 @@
   "romanInput": "Umzurechnender Wert",
   "romanLimits": "Ganze Zahlen 1–3999; standardmäßige römische Zahlen I–MMMCMXCIX. Höchstens 100 Eingabezeichen. Nur ASCII-Ziffern/-Buchstaben; Kleinbuchstaben sind erlaubt.",
   "romanConvert": "Umrechnen",
-  "romanInvalid": "Gib je nach Richtung eine ganze Zahl von 1–3999 oder eine gültige standardmäßige römische Zahl ein. Höchstens 100 Zeichen; keine Vorzeichen, Brüche oder Überstriche."
+  "romanInvalid": "Gib je nach Richtung eine ganze Zahl von 1–3999 oder eine gültige standardmäßige römische Zahl ein. Höchstens 100 Zeichen; keine Vorzeichen, Brüche oder Überstriche.",
+  "morseTitle": "Morsecode-Übersetzer",
+  "morseDesc": "Wandle Buchstaben A–Z und Ziffern 0–9 lokal in Morsecode und zurück um.",
+  "morseMode": "Umwandlungsrichtung",
+  "morseEncode": "Text in Morsecode",
+  "morseDecode": "Morsecode in Text",
+  "morseInput": "Eingabe",
+  "morseLimits": "Text: bis zu 1000 Zeichen, nur A–Z und 0–9. Morse: bis zu 6000 Zeichen. Buchstaben mit Leerzeichen, Wörter mit / trennen. Decodierter Text ist in Großbuchstaben.",
+  "morseConvert": "Umwandeln",
+  "morseInvalid": "Prüfe Richtung, Zeichen und Grenzen: 1000 Textzeichen, 6000 Morsezeichen. Leerzeichen zwischen Buchstabencodes und / zwischen Wörtern verwenden."
 }

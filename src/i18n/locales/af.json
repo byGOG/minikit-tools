@@ -673,5 +673,14 @@
   "romanInput": "Waarde om om te skakel",
   "romanLimits": "Heelgetalle 1–3999; standaard Romeinse syfers I–MMMCMXCIX. Hoogstens 100 invoerkarakters. Slegs ASCII-syfers/letters; kleinletters word aanvaar.",
   "romanConvert": "Skakel om",
-  "romanInvalid": "Voer ’n heelgetal 1–3999 of geldige standaard Romeinse syfers in die gekose rigting in. Hoogstens 100 karakters; geen tekens, breuke of bostrepe nie."
+  "romanInvalid": "Voer ’n heelgetal 1–3999 of geldige standaard Romeinse syfers in die gekose rigting in. Hoogstens 100 karakters; geen tekens, breuke of bostrepe nie.",
+  "morseTitle": "Morsekodevertaler",
+  "morseDesc": "Skakel letters A–Z en syfers 0–9 plaaslik na Morsekode en terug om.",
+  "morseMode": "Omskakelrigting",
+  "morseEncode": "Teks na Morsekode",
+  "morseDecode": "Morsekode na teks",
+  "morseInput": "Invoer",
+  "morseLimits": "Teks: tot 1000 karakters, slegs A–Z en 0–9. Morse: tot 6000 karakters. Skei letters met spasies en woorde met /. Ontsyferde teks is in hoofletters.",
+  "morseConvert": "Skakel om",
+  "morseInvalid": "Kontroleer rigting, ondersteunde karakters en perke: 1000 tekskarakters, 6000 Morsekarakters. Gebruik spasies tussen letterkodes en / tussen woorde."
 }

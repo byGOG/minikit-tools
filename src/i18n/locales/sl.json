@@ -673,5 +673,14 @@
   "romanInput": "Vrednost za pretvorbo",
   "romanLimits": "Cela števila 1–3999; standardne rimske številke I–MMMCMXCIX. Do 100 vhodnih znakov. Samo številke/črke ASCII; male črke so dovoljene.",
   "romanConvert": "Pretvori",
-  "romanInvalid": "Vnesite celo število 1–3999 ali veljavno standardno rimsko število v izbrani smeri. Do 100 znakov; brez predznakov, ulomkov ali nadčrt."
+  "romanInvalid": "Vnesite celo število 1–3999 ali veljavno standardno rimsko število v izbrani smeri. Do 100 znakov; brez predznakov, ulomkov ali nadčrt.",
+  "morseTitle": "Prevajalnik Morsejeve kode",
+  "morseDesc": "Lokalno pretvorite črke A–Z in števke 0–9 v Morsejevo kodo in obratno.",
+  "morseMode": "Smer pretvorbe",
+  "morseEncode": "Besedilo v Morsejevo kodo",
+  "morseDecode": "Morsejeva koda v besedilo",
+  "morseInput": "Vnos",
+  "morseLimits": "Besedilo: do 1000 znakov, samo A–Z in 0–9. Morse: do 6000 znakov. Črke ločite s presledki, besede z /. Dekodirano besedilo je z velikimi črkami.",
+  "morseConvert": "Pretvori",
+  "morseInvalid": "Preverite smer, znake in omejitve: 1000 znakov besedila, 6000 znakov Morsejeve kode. Presledki med kodami črk in / med besedami."
 }

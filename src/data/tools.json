@@ -1054,5 +1054,17 @@
       "romanConvert"
     ],
     "category": "daily"
+  },
+  {
+    "slug": "morse-code-translator",
+    "title": "morseTitle",
+    "desc": "morseDesc",
+    "anchor": "morse-code-tool",
+    "steps": [
+      "morseMode",
+      "morseInput",
+      "morseConvert"
+    ],
+    "category": "text"
   }
 ]

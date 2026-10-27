@@ -673,5 +673,14 @@
   "romanInput": "Halagang iko-convert",
   "romanLimits": "Buong bilang 1–3999; karaniwang Roman numeral I–MMMCMXCIX. Hanggang 100 character ng input. ASCII na digit/titik lang; tinatanggap ang maliliit na titik.",
   "romanConvert": "I-convert",
-  "romanInvalid": "Maglagay ng buong bilang 1–3999 o wastong karaniwang Roman numeral sa napiling direksiyon. Hanggang 100 character; walang sign, fraction o guhit sa itaas."
+  "romanInvalid": "Maglagay ng buong bilang 1–3999 o wastong karaniwang Roman numeral sa napiling direksiyon. Hanggang 100 character; walang sign, fraction o guhit sa itaas.",
+  "morseTitle": "Tagasalin ng Morse code",
+  "morseDesc": "I-convert nang lokal ang mga titik A–Z at digit 0–9 sa Morse code at pabalik.",
+  "morseMode": "Direksiyon ng conversion",
+  "morseEncode": "Teksto sa Morse code",
+  "morseDecode": "Morse code sa teksto",
+  "morseInput": "Input",
+  "morseLimits": "Teksto: hanggang 1000 character, A–Z at 0–9 lang. Morse: hanggang 6000 character. Paghiwalayin ang mga titik gamit ang espasyo at salita gamit ang /. Malalaking titik ang na-decode na teksto.",
+  "morseConvert": "I-convert",
+  "morseInvalid": "Suriin ang direksiyon, character at limitasyon: 1000 character ng teksto, 6000 ng Morse. Gumamit ng espasyo sa pagitan ng code ng mga titik at / sa pagitan ng mga salita."
 }

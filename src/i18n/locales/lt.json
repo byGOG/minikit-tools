@@ -673,5 +673,14 @@
   "romanInput": "Konvertuojama reikšmė",
   "romanLimits": "Sveikieji skaičiai 1–3999; standartiniai romėniški skaičiai I–MMMCMXCIX. Iki 100 įvesties ženklų. Tik ASCII skaitmenys/raidės; priimamos mažosios raidės.",
   "romanConvert": "Konvertuoti",
-  "romanInvalid": "Pasirinkta kryptimi įveskite sveikąjį skaičių 1–3999 arba galiojantį standartinį romėnišką skaičių. Iki 100 ženklų; be ženklų, trupmenų ar viršutinių brūkšnių."
+  "romanInvalid": "Pasirinkta kryptimi įveskite sveikąjį skaičių 1–3999 arba galiojantį standartinį romėnišką skaičių. Iki 100 ženklų; be ženklų, trupmenų ar viršutinių brūkšnių.",
+  "morseTitle": "Morzės kodo vertėjas",
+  "morseDesc": "Vietoje konvertuokite raides A–Z ir skaitmenis 0–9 į Morzės kodą ir atgal.",
+  "morseMode": "Konvertavimo kryptis",
+  "morseEncode": "Tekstas į Morzės kodą",
+  "morseDecode": "Morzės kodas į tekstą",
+  "morseInput": "Įvestis",
+  "morseLimits": "Tekstas: iki 1000 ženklų, tik A–Z ir 0–9. Morzė: iki 6000 ženklų. Raides atskirkite tarpais, žodžius – /. Dekoduotas tekstas rašomas didžiosiomis raidėmis.",
+  "morseConvert": "Konvertuoti",
+  "morseInvalid": "Patikrinkite kryptį, ženklus ir ribas: 1000 teksto ženklų, 6000 Morzės ženklų. Tarp raidžių kodų naudokite tarpus, tarp žodžių – /."
 }

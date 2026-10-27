@@ -673,5 +673,14 @@
   "romanInput": "Átalakítandó érték",
   "romanLimits": "Egész számok 1–3999 között; szabványos római számok I–MMMCMXCIX. Legfeljebb 100 bemeneti karakter. Csak ASCII számjegyek/betűk; kisbetűk is megadhatók.",
   "romanConvert": "Átalakítás",
-  "romanInvalid": "Adjon meg 1–3999 közötti egész számot vagy érvényes szabványos római számot a kiválasztott irányban. Legfeljebb 100 karakter; előjel, tört és felülvonás nélkül."
+  "romanInvalid": "Adjon meg 1–3999 közötti egész számot vagy érvényes szabványos római számot a kiválasztott irányban. Legfeljebb 100 karakter; előjel, tört és felülvonás nélkül.",
+  "morseTitle": "Morzekód-fordító",
+  "morseDesc": "Alakítsa át helyben az A–Z betűket és a 0–9 számjegyeket morzekóddá és vissza.",
+  "morseMode": "Átalakítás iránya",
+  "morseEncode": "Szöveg morzekóddá",
+  "morseDecode": "Morzekód szöveggé",
+  "morseInput": "Bemenet",
+  "morseLimits": "Szöveg: legfeljebb 1000 karakter, csak A–Z és 0–9. Morze: legfeljebb 6000 karakter. Betűk között szóköz, szavak között / legyen. A dekódolt szöveg nagybetűs.",
+  "morseConvert": "Átalakítás",
+  "morseInvalid": "Ellenőrizze az irányt, karaktereket és korlátokat: 1000 szövegkarakter, 6000 morzekarakter. Betűkódok között szóköz, szavak között / legyen."
 }

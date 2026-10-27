@@ -673,5 +673,14 @@
   "romanInput": "Valor a converter",
   "romanLimits": "Inteiros 1–3999; números romanos padrão I–MMMCMXCIX. Até 100 caracteres de entrada. Apenas algarismos/letras ASCII; aceita minúsculas.",
   "romanConvert": "Converter",
-  "romanInvalid": "Introduza um inteiro 1–3999 ou um número romano padrão válido no sentido escolhido. Até 100 caracteres; sem sinais, frações ou traços superiores."
+  "romanInvalid": "Introduza um inteiro 1–3999 ou um número romano padrão válido no sentido escolhido. Até 100 caracteres; sem sinais, frações ou traços superiores.",
+  "morseTitle": "Tradutor de código Morse",
+  "morseDesc": "Converta localmente letras A–Z e algarismos 0–9 em código Morse e vice-versa.",
+  "morseMode": "Sentido da conversão",
+  "morseEncode": "Texto para código Morse",
+  "morseDecode": "Código Morse para texto",
+  "morseInput": "Entrada",
+  "morseLimits": "Texto: até 1000 caracteres, apenas A–Z e 0–9. Morse: até 6000 caracteres. Separe letras com espaços e palavras com /. O texto descodificado fica em maiúsculas.",
+  "morseConvert": "Converter",
+  "morseInvalid": "Verifique sentido, caracteres e limites: 1000 caracteres de texto, 6000 de Morse. Espaços entre códigos de letras e / entre palavras."
 }

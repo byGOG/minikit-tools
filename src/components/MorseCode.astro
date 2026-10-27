@@ -1,0 +1,33 @@
+---
+import { Radio, ShieldCheck, ArrowRight } from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const str = (key: string) => (tr as Record<string, string>)[key] ?? key;
+---
+<article class="tool-card morse-code-card" id="morse-code-tool">
+  <div class="card-top"><span class="tool-icon icon-blue"><Radio size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="morseTitle">{str('morseTitle')}</h3>
+  <p data-i18n="morseDesc">{str('morseDesc')}</p>
+  <div class="morse-options">
+    <label class="field-label" for="morse-mode" data-i18n="morseMode">{str('morseMode')}</label>
+    <select class="text-input" id="morse-mode"><option value="encode" data-i18n="morseEncode">{str('morseEncode')}</option><option value="decode" data-i18n="morseDecode">{str('morseDecode')}</option></select>
+    <label class="field-label" for="morse-input" data-i18n="morseInput">{str('morseInput')}</label>
+    <textarea class="text-input textarea" id="morse-input" dir="ltr" autocapitalize="off" autocorrect="off" spellcheck="false" aria-describedby="morse-limits"></textarea>
+    <small class="morse-hint" id="morse-limits" data-i18n="morseLimits">{str('morseLimits')}</small>
+  </div>
+  <button class="button-primary full" id="morse-convert" data-i18n="morseConvert">{str('morseConvert')}</button>
+  <label class="field-label morse-result-label" for="morse-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="morse-output" readonly dir="ltr" spellcheck="false"></textarea>
+  <p class="tool-feedback" id="morse-feedback" role="status" aria-live="polite"></p>
+  <div class="text-tool-actions"><button class="button-secondary full" id="morse-copy" data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id="morse-clear" data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="morse-code-translator" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
+<style is:global>
+.morse-options{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.morse-options .field-label{margin:0}
+.morse-options select{width:100%;min-width:0}
+.morse-hint{font-size:12px;line-height:1.65;color:#526258}
+.morse-result-label{margin-top:14px}
+.morse-code-card textarea{min-height:140px;overflow-wrap:anywhere}
+#morse-output{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+</style>

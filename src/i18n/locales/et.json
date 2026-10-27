@@ -673,5 +673,14 @@
   "romanInput": "Teisendatav väärtus",
   "romanLimits": "Täisarvud 1–3999; standardsed Rooma numbrid I–MMMCMXCIX. Kuni 100 sisendmärki. Ainult ASCII numbrid/tähed; väiketähed sobivad.",
   "romanConvert": "Teisenda",
-  "romanInvalid": "Sisesta valitud suunas täisarv 1–3999 või kehtiv standardne Rooma arv. Kuni 100 märki; ilma märkide, murdude ja ülakriipsudeta."
+  "romanInvalid": "Sisesta valitud suunas täisarv 1–3999 või kehtiv standardne Rooma arv. Kuni 100 märki; ilma märkide, murdude ja ülakriipsudeta.",
+  "morseTitle": "Morsekoodi tõlkija",
+  "morseDesc": "Teisenda tähti A–Z ja numbreid 0–9 kohapeal morsekoodiks ja tagasi.",
+  "morseMode": "Teisenduse suund",
+  "morseEncode": "Tekst morsekoodiks",
+  "morseDecode": "Morsekood tekstiks",
+  "morseInput": "Sisend",
+  "morseLimits": "Tekst: kuni 1000 märki, ainult A–Z ja 0–9. Morse: kuni 6000 märki. Eralda tähed tühikutega ja sõnad märgiga /. Dekodeeritud tekst on suurtähtedega.",
+  "morseConvert": "Teisenda",
+  "morseInvalid": "Kontrolli suunda, märke ja piire: 1000 tekstimärki, 6000 morsemärki. Tähekoodide vahele tühikud, sõnade vahele /."
 }

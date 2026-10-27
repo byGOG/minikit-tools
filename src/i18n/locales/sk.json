@@ -673,5 +673,14 @@
   "romanInput": "Hodnota na prevod",
   "romanLimits": "Celé čísla 1–3999; štandardné rímske číslice I–MMMCMXCIX. Najviac 100 vstupných znakov. Iba číslice/písmená ASCII; malé písmená sú povolené.",
   "romanConvert": "Previesť",
-  "romanInvalid": "Zadajte celé číslo 1–3999 alebo platné štandardné rímske číslo vo zvolenom smere. Najviac 100 znakov; bez znamienok, zlomkov a nadčiarknutí."
+  "romanInvalid": "Zadajte celé číslo 1–3999 alebo platné štandardné rímske číslo vo zvolenom smere. Najviac 100 znakov; bez znamienok, zlomkov a nadčiarknutí.",
+  "morseTitle": "Prekladač Morseovej abecedy",
+  "morseDesc": "Lokálne prevádzajte písmená A–Z a číslice 0–9 na Morseovu abecedu a späť.",
+  "morseMode": "Smer prevodu",
+  "morseEncode": "Text na Morseovu abecedu",
+  "morseDecode": "Morseova abeceda na text",
+  "morseInput": "Vstup",
+  "morseLimits": "Text: najviac 1000 znakov, iba A–Z a 0–9. Morse: najviac 6000 znakov. Písmená oddeľte medzerami a slová /. Dekódovaný text je veľkými písmenami.",
+  "morseConvert": "Previesť",
+  "morseInvalid": "Skontrolujte smer, znaky a limity: 1000 znakov textu, 6000 znakov Morseovej abecedy. Medzery medzi kódmi písmen a / medzi slovami."
 }
