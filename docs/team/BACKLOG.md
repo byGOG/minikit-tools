@@ -11,6 +11,14 @@ Koordinatör her turda bu listedeki somut işlerden bağımsız olanları ajanla
 | QA-001 | Kalite/güvenlik | Aynı PR güncellemeleri birbirini iptal eder; PR ve main yayın grupları farklıdır | Tamamlandı |
 | QA-002 | Kalite/güvenlik | Markdown önizlemesi dış kaynak isteği/çalıştırılabilir HTML taşımaz; iframe sandbox ve CSP testi iki motorda geçer | Tamamlandı |
 
+## Rol genişletme — 27 Ekim 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| TEAM-002 | Koordinatör | Yeni araç geliştirici ve ürün araştırma/UX/analitik rolleri tanımlı; yedi profil geçerli; aynı anda üç uzman sınırı korunuyor | Tamamlandı |
+
+Yeni araç geliştirme işine başlarken katalogda bulunmayan adaylar ürün araştırmasıyla değerlendirilir. Kullanıcı seçimi ekibe bıraktığında koordinatör uygun adayı seçip geliştirici, içerik ve kalite işlerini tamamlatır.
+
 ## Sonraki tur adayları
 
 - GitHub’daki mevcut Dependabot bağımlılık/Actions güncelleme önerilerini uyumluluk açısından incelemek; ana sürüm geçişlerini test etmeden birleştirmemek.
@@ -22,3 +30,5 @@ Koordinatör her turda bu listedeki somut işlerden bağımsız olanları ajanla
 108 birim testi, 53 dil/SEO testi ve 192 Chromium/WebKit testi geçti (toplam 353). Üç TOML rolü ve concurrency ayarı parse edilerek doğrulandı. PR/main concurrency anahtarlarının ayrıldığı ayrıca kontrol edildi. Astro check: sıfır hata, uyarı ve ipucu. İlk yerel geniş tarayıcı turu zaman aşımına uğramıştı; odaklı dört test ve sonraki tam 192 testlik tur başarılı tamamlandı.
 
 Koordinatörün PR/CI ve canlı yayın doğrulaması sonuç raporunda saklanır.
+
+Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, dosya/rol adı eşleşmesi, doküman bağlantıları ve üç uzman sınırı doğrulandı. Geliştirme, içerik ve kalite ajanları rol sınırlarını salt okunur olarak inceledi; gerekli bir düzeltme bulmadı. Bu tur uygulama kodunu veya araç kataloğunu değiştirmez.

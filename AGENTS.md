@@ -2,7 +2,9 @@
 
 ## Scope and coordination
 
-The user requested a coordinated development, SEO/content and quality/security team for MiniKit. For nontrivial work with independent parts, delegate bounded tasks to these three project agents and wait for their results. Small dependent tasks can stay with the coordinator. Use at most three specialists alongside the coordinator; do not spawn nested teams.
+The user requested a MiniKit specialist team, including a dedicated new-tool builder and useful supporting roles. The role pool contains seven profiles: maintenance development, new-tool building, product research, SEO/content, UX/accessibility, analytics/growth, and quality/security. For nontrivial work with independent parts, select the relevant roles, delegate bounded tasks, and wait for their results. Small dependent tasks can stay with the coordinator. Keep at most three specialists active alongside the coordinator; seven available profiles do not mean seven concurrent workers. Do not spawn nested teams.
+
+For a new-tool request, check the catalog for duplicates, use product research when selection needs evidence, then assign implementation to minikit_tool_builder. Use SEO/content for locale/guide work and quality/security for independent acceptance tests. The coordinator stages these roles within the three-specialist cap and owns shared-file assignments. When the user delegates tool selection, choose a reasonable candidate and complete it rather than stopping at a proposal. UX/accessibility reviews usability; analytics/growth evaluates source-backed outcomes when relevant data is available.
 
 Project roles live in `.codex/agents/`. Operational context and the shared backlog live in `docs/team/TEAM.md` and `docs/team/BACKLOG.md`. Model/reasoning settings inherit from the parent unless the user explicitly requests otherwise. These files define reusable roles; they do not start a daemon or create a recurring schedule.
 
