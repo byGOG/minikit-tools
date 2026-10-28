@@ -711,5 +711,15 @@
   "aspectHeight": "Height",
   "aspectCalculate": "Calculate ratio",
   "aspectLimits": "Each dimension must be a whole number from 1 to 100000. Calculates the simplified ratio only; does not resize.",
-  "aspectInvalid": "Enter whole numbers from 1 to 100000 for width and height."
+  "aspectInvalid": "Enter whole numbers from 1 to 100000 for width and height.",
+  "radiusTitle": "CSS border-radius generator",
+  "radiusDesc": "Set four corner radii, preview the shape and copy the CSS locally.",
+  "radiusTopLeft": "Top left (px)",
+  "radiusTopRight": "Top right (px)",
+  "radiusBottomRight": "Bottom right (px)",
+  "radiusBottomLeft": "Bottom left (px)",
+  "radiusLimits": "All corners: whole numbers 0–200 px, inclusive. The browser may scale large or overlapping radii to fit the shape.",
+  "radiusGenerate": "Generate CSS",
+  "radiusPreview": "Corner preview",
+  "radiusInvalid": "Enter a whole number from 0 to 200 for every corner."
 }

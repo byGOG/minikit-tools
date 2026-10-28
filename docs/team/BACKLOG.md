@@ -75,4 +75,10 @@ Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, do
 
 | İş | Sahip | Kabul ölçütü | Durum |
 |---|---|---|---|
-| TOOL-007 | Yeni araç geliştirici + içerik + kalite | 1–100000 tam sayı boyutlardan sadeleştirilmiş oran, 50 dil, rehber, bağımsız test ve canlı kontrol | Uygulama ve doğrulama sürüyor. |
+| TOOL-007 | Yeni araç geliştirici + içerik + kalite | 1–100000 tam sayı boyutlardan sadeleştirilmiş oran, 50 dil, rehber, bağımsız test ve canlı kontrol | Tamamlandı; PR #46 birleştirildi. 143 birim + 53 dil/SEO + 274 tarayıcı testi ve canlı kontroller geçti. |
+
+## CSS köşe yuvarlama turu — 28 Ekim 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| TOOL-008 | Yeni araç geliştirici + içerik + kalite | Dört fiziksel köşe için 0–200px tam sayı, güvenli önizleme/CSS kopyalama, 50 dil, rehber ve bağımsız testler | Yayın öncesi kontrol noktası; son PR/canlı kanıtı outputs/MINIKIT-BORDER-RADIUS-DOGRULAMA.json ve outputs/MINIKIT-DEVAM.md kayıtlarında tutulur. |

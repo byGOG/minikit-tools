@@ -711,5 +711,15 @@
   "aspectHeight": "Tinggi",
   "aspectCalculate": "Kira nisbah",
   "aspectLimits": "Setiap dimensi mestilah nombor bulat 1–100000. Mengira nisbah termudah sahaja; tidak mengubah saiz.",
-  "aspectInvalid": "Masukkan nombor bulat 1–100000 untuk lebar dan tinggi."
+  "aspectInvalid": "Masukkan nombor bulat 1–100000 untuk lebar dan tinggi.",
+  "radiusTitle": "Penjana bucu bulat CSS",
+  "radiusDesc": "Tetapkan jejari empat bucu, pratonton bentuk dan salin CSS secara setempat.",
+  "radiusTopLeft": "Kiri atas (px)",
+  "radiusTopRight": "Kanan atas (px)",
+  "radiusBottomRight": "Kanan bawah (px)",
+  "radiusBottomLeft": "Kiri bawah (px)",
+  "radiusLimits": "Semua bucu: nombor bulat 0–200 px, termasuk sempadan. Pelayar mungkin mengecilkan jejari besar atau bertindih supaya muat pada bentuk.",
+  "radiusGenerate": "Jana CSS",
+  "radiusPreview": "Pratonton bucu",
+  "radiusInvalid": "Masukkan nombor bulat 0–200 untuk setiap bucu."
 }

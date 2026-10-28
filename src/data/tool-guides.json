@@ -918,5 +918,15 @@
       "heading": "Reduce width and height to their simplest whole-number ratio",
       "text": "Enter width first and height second. Each dimension must be a positive whole number from 1 to 100000, inclusive; zero, negative and fractional values are invalid. Use the same unit for both dimensions, such as pixels for both. The tool divides both values by their greatest common divisor and returns width:height in simplest form. 1920 × 1080 gives 16:9; 1080 × 1920 gives 9:16. The result is a unitless ratio, not new pixel dimensions. This tool does not upload, crop or resize images. Calculation runs locally in your browser; entered dimensions are not sent to a server."
     }
+  },
+  "css-border-radius-generator": {
+    "tr": {
+      "heading": "Dört fiziksel köşe için CSS yarıçapları",
+      "text": "Değerleri fiziksel köşe sırasıyla gir: sol üst, sağ üst, sağ alt, sol alt. Bu sıra sağdan sola yazılan arayüzlerde de aynıdır; başlangıç/bitiş yönüne göre değişmez. Her köşe, sınırlar dâhil 0–200 arası tam sayı piksel yarıçapı alır; sıfır keskin köşe demektir. Yalnız px desteklenir; yüzde ve eğik çizgiyle ayrı yatay/dikey yarıçaplar belirleyen eliptik sözdizimi desteklenmez. Bir kenardaki yarıçaplar birlikte şekle sığmazsa tarayıcı CSS kurallarına göre yarıçapları orantılı küçültebilir; görünen yuvarlama öğenin boyutuna da bağlıdır. CSS oluştur ile şekli önizle, ardından tam border-radius bildirimini kopyalayıp bir CSS kuralının içine yapıştır. Örneğin 16, 32, 48, 0 değerleri border-radius: 16px 32px 48px 0px; üretir. Bu araç CSS kodu oluşturur; Görsel köşelerini yuvarlama aracından farklı olarak görsel dosyası yüklemez veya işlemez. İşlem tarayıcıda yereldir; girilen değerler ve CSS sunucuya gönderilmez."
+    },
+    "en": {
+      "heading": "CSS radii for four physical corners",
+      "text": "Enter values in physical corner order: top left, top right, bottom right, bottom left. This order stays the same in right-to-left interfaces; it does not follow logical start/end directions. Each corner takes a whole-number pixel radius from 0 to 200, inclusive; zero means a square corner. Only px is supported, not percentages or elliptical slash syntax with separate horizontal and vertical radii. If adjacent radii do not fit a side, the browser may proportionally reduce them under CSS rules; the visible rounding also depends on the element’s dimensions. Generate CSS to preview the shape, then copy the complete border-radius declaration into a CSS rule. For example, 16, 32, 48, 0 produces border-radius: 16px 32px 48px 0px;. This tool generates CSS; unlike the Round image corners tool, it does not upload or process image files. Processing is local in your browser; entered values and CSS are not sent to a server."
+    }
   }
 }

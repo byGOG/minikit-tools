@@ -711,5 +711,15 @@
   "aspectHeight": "Hoogte",
   "aspectCalculate": "Verhouding berekenen",
   "aspectLimits": "Elke afmeting moet een geheel getal van 1 tot 100000 zijn. Berekent alleen de vereenvoudigde verhouding; wijzigt geen formaat.",
-  "aspectInvalid": "Voer gehele getallen van 1 tot 100000 in voor breedte en hoogte."
+  "aspectInvalid": "Voer gehele getallen van 1 tot 100000 in voor breedte en hoogte.",
+  "radiusTitle": "CSS-generator voor afgeronde hoeken",
+  "radiusDesc": "Stel vier hoekstralen in, bekijk de vorm en kopieer de CSS lokaal.",
+  "radiusTopLeft": "Linksboven (px)",
+  "radiusTopRight": "Rechtsboven (px)",
+  "radiusBottomRight": "Rechtsonder (px)",
+  "radiusBottomLeft": "Linksonder (px)",
+  "radiusLimits": "Alle hoeken: gehele getallen 0–200 px, inclusief grenzen. De browser kan grote of overlappende stralen verkleinen zodat ze in de vorm passen.",
+  "radiusGenerate": "CSS genereren",
+  "radiusPreview": "Hoekvoorbeeld",
+  "radiusInvalid": "Voer voor elke hoek een geheel getal van 0 tot 200 in."
 }

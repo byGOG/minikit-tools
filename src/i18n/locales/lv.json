@@ -711,5 +711,15 @@
   "aspectHeight": "Augstums",
   "aspectCalculate": "Aprēķināt attiecību",
   "aspectLimits": "Katram izmēram jābūt veselam skaitlim 1–100000. Aprēķina tikai saīsināto attiecību; izmēru nemaina.",
-  "aspectInvalid": "Ievadiet platumu un augstumu kā veselus skaitļus 1–100000."
+  "aspectInvalid": "Ievadiet platumu un augstumu kā veselus skaitļus 1–100000.",
+  "radiusTitle": "CSS stūru noapaļošanas ģenerators",
+  "radiusDesc": "Iestatiet četru stūru rādiusus, priekšskatiet formu un lokāli kopējiet CSS.",
+  "radiusTopLeft": "Augšā pa kreisi (px)",
+  "radiusTopRight": "Augšā pa labi (px)",
+  "radiusBottomRight": "Apakšā pa labi (px)",
+  "radiusBottomLeft": "Apakšā pa kreisi (px)",
+  "radiusLimits": "Visi stūri: veseli skaitļi 0–200 px ieskaitot. Pārlūks var samazināt lielus vai pārklājošus rādiusus, lai tie ietilptu formā.",
+  "radiusGenerate": "Ģenerēt CSS",
+  "radiusPreview": "Stūru priekšskatījums",
+  "radiusInvalid": "Katram stūrim ievadiet veselu skaitli 0–200."
 }

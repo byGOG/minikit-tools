@@ -711,5 +711,15 @@
   "aspectHeight": "高さ",
   "aspectCalculate": "比率を計算",
   "aspectLimits": "各寸法は1〜100000の整数です。最も簡単な比率のみ計算し、サイズは変更しません。",
-  "aspectInvalid": "幅と高さに1〜100000の整数を入力してください。"
+  "aspectInvalid": "幅と高さに1〜100000の整数を入力してください。",
+  "radiusTitle": "CSS角丸生成ツール",
+  "radiusDesc": "4つの角の半径を設定し、形状をプレビューしてCSSをローカルでコピーします。",
+  "radiusTopLeft": "左上（px）",
+  "radiusTopRight": "右上（px）",
+  "radiusBottomRight": "右下（px）",
+  "radiusBottomLeft": "左下（px）",
+  "radiusLimits": "各角は0〜200 pxの整数で、両端を含みます。大きな半径や重なる半径は、形状に収まるようブラウザが縮小する場合があります。",
+  "radiusGenerate": "CSSを生成",
+  "radiusPreview": "角のプレビュー",
+  "radiusInvalid": "各角に0〜200の整数を入力してください。"
 }

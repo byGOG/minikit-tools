@@ -222,5 +222,9 @@
   "aspect-ratio-calculator": [
     "1920 × 1080",
     "16:9"
+  ],
+  "css-border-radius-generator": [
+    "16px · 32px · 48px · 0px",
+    "border-radius: 16px 32px 48px 0px;"
   ]
 }

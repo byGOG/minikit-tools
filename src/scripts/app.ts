@@ -419,6 +419,7 @@ async function initialize() {
   if (document.body.dataset.page !== 'directory' && document.querySelector('#css-gradient-tool')) (await import('./css-gradient')).setupCSSGradient(t);
   if (document.body.dataset.page !== 'directory' && document.querySelector('#css-shadow-tool')) (await import('./box-shadow')).setupBoxShadow(t);
   if (document.body.dataset.page !== 'directory' && document.querySelector('#aspect-ratio-tool')) (await import('./aspect-ratio')).setupAspectRatio(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#css-radius-tool')) (await import('./border-radius')).setupBorderRadius(t);
   document.documentElement.dataset.toolsReady = "true";
 }
 void initialize();

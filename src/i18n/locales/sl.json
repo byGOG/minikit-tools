@@ -711,5 +711,15 @@
   "aspectHeight": "Višina",
   "aspectCalculate": "Izračunaj razmerje",
   "aspectLimits": "Vsaka mera mora biti celo število 1–100000. Izračuna le okrajšano razmerje; velikosti ne spreminja.",
-  "aspectInvalid": "Vnesite celi števili 1–100000 za širino in višino."
+  "aspectInvalid": "Vnesite celi števili 1–100000 za širino in višino.",
+  "radiusTitle": "Generator zaobljenih kotov CSS",
+  "radiusDesc": "Nastavite polmere štirih kotov, oglejte si obliko in lokalno kopirajte CSS.",
+  "radiusTopLeft": "Zgoraj levo (px)",
+  "radiusTopRight": "Zgoraj desno (px)",
+  "radiusBottomRight": "Spodaj desno (px)",
+  "radiusBottomLeft": "Spodaj levo (px)",
+  "radiusLimits": "Vsi koti: cela števila 0–200 px vključno. Brskalnik lahko velike ali prekrivajoče se polmere zmanjša, da ustrezajo obliki.",
+  "radiusGenerate": "Ustvari CSS",
+  "radiusPreview": "Predogled kotov",
+  "radiusInvalid": "Za vsak kot vnesite celo število od 0 do 200."
 }

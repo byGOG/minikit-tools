@@ -711,5 +711,15 @@
   "aspectHeight": "Magasság",
   "aspectCalculate": "Arány kiszámítása",
   "aspectLimits": "Mindkét méret 1–100000 közötti egész szám legyen. Csak az egyszerűsített arányt számítja ki; nem méretez át.",
-  "aspectInvalid": "Adjon meg 1–100000 közötti egész számokat a szélességhez és magassághoz."
+  "aspectInvalid": "Adjon meg 1–100000 közötti egész számokat a szélességhez és magassághoz.",
+  "radiusTitle": "CSS saroklekerekítés-generátor",
+  "radiusDesc": "Állítsa be a négy sarok sugarát, tekintse meg az alakzatot, és másolja a CSS-t helyben.",
+  "radiusTopLeft": "Bal felső (px)",
+  "radiusTopRight": "Jobb felső (px)",
+  "radiusBottomRight": "Jobb alsó (px)",
+  "radiusBottomLeft": "Bal alsó (px)",
+  "radiusLimits": "Minden sarok: egész számok 0–200 px között, a határokkal együtt. A böngésző a nagy vagy átfedő sugarakat az alakzathoz igazítva csökkentheti.",
+  "radiusGenerate": "CSS létrehozása",
+  "radiusPreview": "Sarkok előnézete",
+  "radiusInvalid": "Adjon meg minden sarokhoz 0–200 közötti egész számot."
 }

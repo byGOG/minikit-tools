@@ -711,5 +711,15 @@
   "aspectHeight": "Höjd",
   "aspectCalculate": "Beräkna förhållande",
   "aspectLimits": "Varje dimension måste vara ett heltal från 1 till 100000. Beräknar endast det förkortade förhållandet; ändrar inte storlek.",
-  "aspectInvalid": "Ange heltal från 1 till 100000 för bredd och höjd."
+  "aspectInvalid": "Ange heltal från 1 till 100000 för bredd och höjd.",
+  "radiusTitle": "CSS-generator för rundade hörn",
+  "radiusDesc": "Ställ in fyra hörnradier, förhandsvisa formen och kopiera CSS lokalt.",
+  "radiusTopLeft": "Övre vänster (px)",
+  "radiusTopRight": "Övre höger (px)",
+  "radiusBottomRight": "Nedre höger (px)",
+  "radiusBottomLeft": "Nedre vänster (px)",
+  "radiusLimits": "Alla hörn: heltal 0–200 px inklusive. Webbläsaren kan skala ned stora eller överlappande radier för att passa formen.",
+  "radiusGenerate": "Generera CSS",
+  "radiusPreview": "Förhandsvisning av hörn",
+  "radiusInvalid": "Ange ett heltal från 0 till 200 för varje hörn."
 }

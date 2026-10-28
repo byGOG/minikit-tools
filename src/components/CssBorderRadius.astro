@@ -1,0 +1,39 @@
+---
+import { Square, ShieldCheck, ArrowRight } from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const str = (key: string) => (tr as Record<string, string>)[key] ?? key;
+const corners = [
+  { id: 'top-left', key: 'radiusTopLeft', value: 16 },
+  { id: 'top-right', key: 'radiusTopRight', value: 32 },
+  { id: 'bottom-right', key: 'radiusBottomRight', value: 48 },
+  { id: 'bottom-left', key: 'radiusBottomLeft', value: 0 },
+];
+---
+<article class="tool-card css-radius-card" id="css-radius-tool">
+  <div class="card-top"><span class="tool-icon icon-blue"><Square size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="radiusTitle">{str('radiusTitle')}</h3>
+  <p data-i18n="radiusDesc">{str('radiusDesc')}</p>
+  <div class="radius-options">
+    {corners.map(corner => <div><label class="field-label" for={`radius-${corner.id}`} data-i18n={corner.key}>{str(corner.key)}</label><input class="text-input" id={`radius-${corner.id}`} type="number" min="0" max="200" step="1" value={corner.value} required aria-describedby="radius-limits"/></div>)}
+  </div>
+  <small class="radius-hint" id="radius-limits" data-i18n="radiusLimits">{str('radiusLimits')}</small>
+  <button class="button-primary full" id="radius-generate" data-i18n="radiusGenerate">{str('radiusGenerate')}</button>
+  <p class="field-label radius-result-label" data-i18n="radiusPreview">{str('radiusPreview')}</p>
+  <div id="radius-preview" class="radius-preview" role="img" aria-label={str('radiusPreview')} data-i18n-aria="radiusPreview"><div id="radius-target" aria-hidden="true"></div></div>
+  <label class="field-label radius-result-label" for="radius-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="radius-output" readonly dir="ltr" spellcheck="false"></textarea>
+  <p class="tool-feedback" id="radius-feedback" role="status" aria-live="polite"></p>
+  <div class="text-tool-actions"><button class="button-secondary full" id="radius-copy" data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id="radius-clear" data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="css-border-radius-generator" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
+<style is:global>
+.radius-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.radius-options input{width:100%;min-width:0}
+.radius-hint{display:block;font-size:12px;line-height:1.65;color:#526258;margin:10px 0 14px}
+.radius-preview{min-width:0;display:flex;align-items:center;justify-content:center;padding:20px;overflow:hidden;border:1px solid #cbd5ce;border-radius:12px;background:#e5e7eb;direction:ltr}
+#radius-target{width:240px;max-width:100%;height:160px;background:#155c42;border-radius:0}
+.radius-result-label{margin-top:14px}
+.css-radius-card textarea{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;min-height:100px;overflow-wrap:anywhere}
+@media(max-width:440px){.radius-options{grid-template-columns:1fr}}
+</style>

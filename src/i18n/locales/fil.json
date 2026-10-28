@@ -711,5 +711,15 @@
   "aspectHeight": "Taas",
   "aspectCalculate": "Kalkulahin ang ratio",
   "aspectLimits": "Bawat sukat ay dapat buong bilang na 1–100000. Pinasimpleng ratio lang ang kinakalkula; hindi binabago ang laki.",
-  "aspectInvalid": "Maglagay ng buong bilang na 1–100000 para sa lapad at taas."
+  "aspectInvalid": "Maglagay ng buong bilang na 1–100000 para sa lapad at taas.",
+  "radiusTitle": "Tagabuo ng bilugang sulok sa CSS",
+  "radiusDesc": "Itakda ang radius ng apat na sulok, tingnan ang hugis at kopyahin ang CSS nang lokal.",
+  "radiusTopLeft": "Kaliwang itaas (px)",
+  "radiusTopRight": "Kanang itaas (px)",
+  "radiusBottomRight": "Kanang ibaba (px)",
+  "radiusBottomLeft": "Kaliwang ibaba (px)",
+  "radiusLimits": "Lahat ng sulok: buong bilang 0–200 px, kasama ang mga hangganan. Maaaring paliitin ng browser ang malalaki o magkapatong na radius upang magkasya sa hugis.",
+  "radiusGenerate": "Bumuo ng CSS",
+  "radiusPreview": "Preview ng mga sulok",
+  "radiusInvalid": "Maglagay ng buong bilang mula 0 hanggang 200 para sa bawat sulok."
 }

@@ -711,5 +711,15 @@
   "aspectHeight": "Altura",
   "aspectCalculate": "Calcular proporção",
   "aspectLimits": "Cada dimensão deve ser um inteiro de 1 a 100000. Calcula apenas a proporção simplificada; não redimensiona.",
-  "aspectInvalid": "Introduza inteiros de 1 a 100000 para a largura e altura."
+  "aspectInvalid": "Introduza inteiros de 1 a 100000 para a largura e altura.",
+  "radiusTitle": "Gerador de cantos arredondados CSS",
+  "radiusDesc": "Defina os raios dos quatro cantos, visualize a forma e copie o CSS localmente.",
+  "radiusTopLeft": "Superior esquerdo (px)",
+  "radiusTopRight": "Superior direito (px)",
+  "radiusBottomRight": "Inferior direito (px)",
+  "radiusBottomLeft": "Inferior esquerdo (px)",
+  "radiusLimits": "Todos os cantos: inteiros 0–200 px, inclusive. O navegador pode reduzir raios grandes ou sobrepostos para caberem na forma.",
+  "radiusGenerate": "Gerar CSS",
+  "radiusPreview": "Pré-visualização dos cantos",
+  "radiusInvalid": "Introduza um inteiro de 0 a 200 para cada canto."
 }

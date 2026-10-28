@@ -711,5 +711,15 @@
   "aspectHeight": "Tinggi",
   "aspectCalculate": "Hitung rasio",
   "aspectLimits": "Setiap dimensi harus bilangan bulat 1–100000. Hanya menghitung rasio sederhana; tidak mengubah ukuran.",
-  "aspectInvalid": "Masukkan bilangan bulat 1–100000 untuk lebar dan tinggi."
+  "aspectInvalid": "Masukkan bilangan bulat 1–100000 untuk lebar dan tinggi.",
+  "radiusTitle": "Pembuat sudut membulat CSS",
+  "radiusDesc": "Atur radius empat sudut, pratinjau bentuk dan salin CSS secara lokal.",
+  "radiusTopLeft": "Kiri atas (px)",
+  "radiusTopRight": "Kanan atas (px)",
+  "radiusBottomRight": "Kanan bawah (px)",
+  "radiusBottomLeft": "Kiri bawah (px)",
+  "radiusLimits": "Semua sudut: bilangan bulat 0–200 px, termasuk batas. Peramban dapat mengecilkan radius besar atau tumpang tindih agar sesuai bentuk.",
+  "radiusGenerate": "Buat CSS",
+  "radiusPreview": "Pratinjau sudut",
+  "radiusInvalid": "Masukkan bilangan bulat 0–200 untuk setiap sudut."
 }

@@ -7,6 +7,7 @@ import {generateLoremIpsum} from '../src/scripts/lorem-ipsum-core.ts';
 import {convertRoman} from '../src/scripts/roman-numerals-core.ts';
 import {convertMorse} from '../src/scripts/morse-code-core.ts';
 import {createGradient} from '../src/scripts/gradient-core.ts';
+import {createBorderRadius} from '../src/scripts/border-radius-core.ts';
 import {calculateAspectRatio} from '../src/scripts/aspect-ratio-core.ts';
 import {createBoxShadow} from '../src/scripts/box-shadow-core.ts';
 
@@ -61,4 +62,10 @@ test('published aspect ratio example matches the reduced ratio',()=>{
  const [input,expected]=examples['aspect-ratio-calculator'];
  assert.equal(input,'1920 × 1080');
  assert.equal(calculateAspectRatio(1920,1080).ratio,expected);
+});
+
+test('published CSS border-radius example matches the real declaration',()=>{
+ const [input,expected]=examples['css-border-radius-generator'];
+ assert.equal(input,'16px · 32px · 48px · 0px');
+ assert.equal(createBorderRadius(16,32,48,0).css,expected);
 });
