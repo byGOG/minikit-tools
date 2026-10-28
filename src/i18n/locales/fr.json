@@ -704,5 +704,12 @@
   "shadowLimits": "Entiers : décalage/étalement −100–100 px, flou 0–200 px, opacité 0–100 %. Couleurs HEX #RGB/#RRGGBB. Les grandes ombres sont rognées au cadre d’aperçu.",
   "shadowGenerate": "Générer l’ombre",
   "shadowPreview": "Aperçu de l’ombre",
-  "shadowInvalid": "Vérifiez la couleur HEX et les limites entières : décalage/étalement −100–100, flou 0–200, opacité 0–100. Couleur : 32 caractères maximum."
+  "shadowInvalid": "Vérifiez la couleur HEX et les limites entières : décalage/étalement −100–100, flou 0–200, opacité 0–100. Couleur : 32 caractères maximum.",
+  "aspectTitle": "Calculateur de rapport d’aspect",
+  "aspectDesc": "Calculez localement le rapport d’aspect simplifié à partir de la largeur et de la hauteur.",
+  "aspectWidth": "Largeur",
+  "aspectHeight": "Hauteur",
+  "aspectCalculate": "Calculer le rapport",
+  "aspectLimits": "Chaque dimension doit être un entier de 1 à 100000. Calcule uniquement le rapport simplifié ; aucun redimensionnement.",
+  "aspectInvalid": "Saisissez des entiers de 1 à 100000 pour la largeur et la hauteur."
 }

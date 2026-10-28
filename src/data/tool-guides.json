@@ -908,5 +908,15 @@
       "heading": "Copy a complete CSS declaration for one box shadow",
       "text": "Enter whole numbers: horizontal and vertical offsets and spread from −100 to 100 px, blur radius from 0 to 200 px, and opacity from 0 to 100%. Fractional and out-of-range values are rejected rather than adjusted. Positive horizontal/vertical offsets move the shadow right/down; negative spread shrinks it. Opacity is not a transparency percentage: 0% is invisible and 100% fully opaque, converted to CSS rgba alpha. Enter #RGB or #RRGGBB; the raw color input is limited to 32 characters before whitespace is trimmed. HEX is case-insensitive; #AbC is normalized to #aabbcc. HEX with alpha is unsupported; alpha comes from the opacity field. Unchecked Inner shadow produces an outer shadow; checked adds inset for an inner shadow. Only one box-shadow is generated; multiple shadows, arbitrary CSS, text-shadow and image downloads are unsupported. The preview frame clips large shadows; the generated CSS is not clipped and may extend beyond the styled element. After Generate shadow, copy the complete box-shadow declaration into a CSS rule. Any field change invalidates the old output and copy action and removes the preview target’s shadow. Clear removes output and restores defaults with an unshadowed preview: 0/8/24/0 px, #000000, 20% opacity, outer shadow. Processing is local in your browser; settings and CSS are not sent to a server."
     }
+  },
+  "aspect-ratio-calculator": {
+    "tr": {
+      "heading": "Genişlik ve yüksekliği en küçük tam sayı oranına indirgeme",
+      "text": "Genişliği önce, yüksekliği sonra gir. Her boyut 1 ile 100000 arasında, sınırlar dâhil pozitif tam sayı olmalıdır; sıfır, negatif veya kesirli değerler geçersizdir. İki boyutu aynı birimle belirt; örneğin ikisini de piksel kullan. Araç her iki değeri en büyük ortak bölenlerine bölerek genişlik:yükseklik sırasıyla sadeleştirir. 1920 × 1080, 16:9 verir; 1080 × 1920 ise 9:16 verir. Sonuç birimsiz bir orandır, yeni piksel boyutları değildir. Araç görsel yüklemez, kırpmaz veya yeniden boyutlandırmaz. İşlem tarayıcıda yerel yapılır; girilen boyutlar sunucuya gönderilmez."
+    },
+    "en": {
+      "heading": "Reduce width and height to their simplest whole-number ratio",
+      "text": "Enter width first and height second. Each dimension must be a positive whole number from 1 to 100000, inclusive; zero, negative and fractional values are invalid. Use the same unit for both dimensions, such as pixels for both. The tool divides both values by their greatest common divisor and returns width:height in simplest form. 1920 × 1080 gives 16:9; 1080 × 1920 gives 9:16. The result is a unitless ratio, not new pixel dimensions. This tool does not upload, crop or resize images. Calculation runs locally in your browser; entered dimensions are not sent to a server."
+    }
   }
 }

@@ -704,5 +704,12 @@
   "shadowLimits": "Celá čísla: posun/rozšíření −100–100 px, rozostření 0–200 px, krytí 0–100 %. HEX barvy #RGB/#RRGGBB. Velké stíny jsou oříznuty rámečkem náhledu.",
   "shadowGenerate": "Vytvořit stín",
   "shadowPreview": "Náhled stínu",
-  "shadowInvalid": "Zkontrolujte HEX barvu a celočíselné limity: posun/rozšíření −100–100, rozostření 0–200, krytí 0–100. Barva: nejvýše 32 znaků."
+  "shadowInvalid": "Zkontrolujte HEX barvu a celočíselné limity: posun/rozšíření −100–100, rozostření 0–200, krytí 0–100. Barva: nejvýše 32 znaků.",
+  "aspectTitle": "Kalkulačka poměru stran",
+  "aspectDesc": "Vypočítejte místně zjednodušený poměr stran ze šířky a výšky.",
+  "aspectWidth": "Šířka",
+  "aspectHeight": "Výška",
+  "aspectCalculate": "Vypočítat poměr",
+  "aspectLimits": "Každý rozměr musí být celé číslo 1–100000. Vypočítá se pouze zjednodušený poměr; velikost se nemění.",
+  "aspectInvalid": "Zadejte šířku a výšku jako celá čísla 1–100000."
 }

@@ -704,5 +704,12 @@
   "shadowLimits": "Gehele getallen: verschuiving/spreiding −100–100 px, vervaging 0–200 px, dekking 0–100%. HEX-kleuren #RGB/#RRGGBB. Grote schaduwen worden bij het voorbeeldkader afgesneden.",
   "shadowGenerate": "Schaduw genereren",
   "shadowPreview": "Schaduwvoorbeeld",
-  "shadowInvalid": "Controleer HEX-kleur en gehele grenzen: verschuiving/spreiding −100–100, vervaging 0–200, dekking 0–100. Kleurinvoer: maximaal 32 tekens."
+  "shadowInvalid": "Controleer HEX-kleur en gehele grenzen: verschuiving/spreiding −100–100, vervaging 0–200, dekking 0–100. Kleurinvoer: maximaal 32 tekens.",
+  "aspectTitle": "Beeldverhouding berekenen",
+  "aspectDesc": "Bereken de vereenvoudigde beeldverhouding lokaal uit breedte en hoogte.",
+  "aspectWidth": "Breedte",
+  "aspectHeight": "Hoogte",
+  "aspectCalculate": "Verhouding berekenen",
+  "aspectLimits": "Elke afmeting moet een geheel getal van 1 tot 100000 zijn. Berekent alleen de vereenvoudigde verhouding; wijzigt geen formaat.",
+  "aspectInvalid": "Voer gehele getallen van 1 tot 100000 in voor breedte en hoogte."
 }

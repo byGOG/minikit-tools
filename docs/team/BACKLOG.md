@@ -69,4 +69,10 @@ Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, do
 
 | İş | Sahip | Kabul ölçütü | Durum |
 |---|---|---|---|
-| TOOL-006 | Yeni araç geliştirici + içerik + kalite | Tek outer/inset box-shadow, tam sayı piksel/opacity sınırları, güvenli önizleme/CSS kopyalama, 50 dil, rehber, bağımsız test ve canlı kontrol | Kod, 139 birim, 53 dil ve yeni araca ait 10 tarayıcı kontrolü tamam; tam Linux CI ve canlı yayın kanıtı sonuç raporunda. |
+| TOOL-006 | Yeni araç geliştirici + içerik + kalite | Tek outer/inset box-shadow, tam sayı piksel/opacity sınırları, güvenli önizleme/CSS kopyalama, 50 dil, rehber, bağımsız test ve canlı kontrol | Tamamlandı; PR #45 birleştirildi. 139 birim + 53 dil + 262 tarayıcı testi ve canlı kontroller geçti. |
+
+## En boy oranı turu — 28 Ekim 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| TOOL-007 | Yeni araç geliştirici + içerik + kalite | 1–100000 tam sayı boyutlardan sadeleştirilmiş oran, 50 dil, rehber, bağımsız test ve canlı kontrol | Uygulama ve doğrulama sürüyor. |

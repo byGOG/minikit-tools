@@ -704,5 +704,12 @@
   "shadowLimits": "Egész számok: eltolás/kiterjedés −100–100 px, elmosás 0–200 px, fedettség 0–100%. HEX színek: #RGB/#RRGGBB. A nagy árnyékokat az előnézet kerete levágja.",
   "shadowGenerate": "Árnyék létrehozása",
   "shadowPreview": "Árnyék előnézete",
-  "shadowInvalid": "Ellenőrizze a HEX színt és egész korlátokat: eltolás/kiterjedés −100–100, elmosás 0–200, fedettség 0–100. Színbevitel: legfeljebb 32 karakter."
+  "shadowInvalid": "Ellenőrizze a HEX színt és egész korlátokat: eltolás/kiterjedés −100–100, elmosás 0–200, fedettség 0–100. Színbevitel: legfeljebb 32 karakter.",
+  "aspectTitle": "Képarány-kalkulátor",
+  "aspectDesc": "Számítsa ki helyben az egyszerűsített képarányt a szélességből és magasságból.",
+  "aspectWidth": "Szélesség",
+  "aspectHeight": "Magasság",
+  "aspectCalculate": "Arány kiszámítása",
+  "aspectLimits": "Mindkét méret 1–100000 közötti egész szám legyen. Csak az egyszerűsített arányt számítja ki; nem méretez át.",
+  "aspectInvalid": "Adjon meg 1–100000 közötti egész számokat a szélességhez és magassághoz."
 }

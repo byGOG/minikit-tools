@@ -704,5 +704,12 @@
   "shadowLimits": "Veseli skaitļi: nobīde/izplešanās −100–100 px, izpludinājums 0–200 px, necaurspīdīgums 0–100%. HEX krāsas #RGB/#RRGGBB. Lielas ēnas tiek apgrieztas priekšskatījuma rāmī.",
   "shadowGenerate": "Ģenerēt ēnu",
   "shadowPreview": "Ēnas priekšskatījums",
-  "shadowInvalid": "Pārbaudiet HEX krāsu un veselo skaitļu robežas: nobīde/izplešanās −100–100, izpludinājums 0–200, necaurspīdīgums 0–100. Krāsas ievade: līdz 32 rakstzīmēm."
+  "shadowInvalid": "Pārbaudiet HEX krāsu un veselo skaitļu robežas: nobīde/izplešanās −100–100, izpludinājums 0–200, necaurspīdīgums 0–100. Krāsas ievade: līdz 32 rakstzīmēm.",
+  "aspectTitle": "Malu attiecības kalkulators",
+  "aspectDesc": "Lokāli aprēķiniet saīsināto malu attiecību no platuma un augstuma.",
+  "aspectWidth": "Platums",
+  "aspectHeight": "Augstums",
+  "aspectCalculate": "Aprēķināt attiecību",
+  "aspectLimits": "Katram izmēram jābūt veselam skaitlim 1–100000. Aprēķina tikai saīsināto attiecību; izmēru nemaina.",
+  "aspectInvalid": "Ievadiet platumu un augstumu kā veselus skaitļus 1–100000."
 }

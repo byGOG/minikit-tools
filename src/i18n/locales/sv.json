@@ -704,5 +704,12 @@
   "shadowLimits": "Heltal: förskjutning/spridning −100–100 px, oskärpa 0–200 px, opacitet 0–100 %. HEX-färger #RGB/#RRGGBB. Stora skuggor klipps vid förhandsvisningsramen.",
   "shadowGenerate": "Generera skugga",
   "shadowPreview": "Förhandsvisning av skugga",
-  "shadowInvalid": "Kontrollera HEX-färg och heltalsgränser: förskjutning/spridning −100–100, oskärpa 0–200, opacitet 0–100. Färginmatning: högst 32 tecken."
+  "shadowInvalid": "Kontrollera HEX-färg och heltalsgränser: förskjutning/spridning −100–100, oskärpa 0–200, opacitet 0–100. Färginmatning: högst 32 tecken.",
+  "aspectTitle": "Bildförhållandekalkylator",
+  "aspectDesc": "Beräkna det förkortade bildförhållandet lokalt från bredd och höjd.",
+  "aspectWidth": "Bredd",
+  "aspectHeight": "Höjd",
+  "aspectCalculate": "Beräkna förhållande",
+  "aspectLimits": "Varje dimension måste vara ett heltal från 1 till 100000. Beräknar endast det förkortade förhållandet; ändrar inte storlek.",
+  "aspectInvalid": "Ange heltal från 1 till 100000 för bredd och höjd."
 }

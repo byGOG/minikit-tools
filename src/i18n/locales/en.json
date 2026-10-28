@@ -704,5 +704,12 @@
   "shadowLimits": "Whole numbers: offsets/spread −100–100 px, blur 0–200 px, opacity 0–100%. HEX #RGB/#RRGGBB colors. Large shadows are clipped to the preview frame.",
   "shadowGenerate": "Generate shadow",
   "shadowPreview": "Shadow preview",
-  "shadowInvalid": "Check HEX color and whole-number limits: offsets/spread −100–100, blur 0–200, opacity 0–100. Color input: at most 32 characters."
+  "shadowInvalid": "Check HEX color and whole-number limits: offsets/spread −100–100, blur 0–200, opacity 0–100. Color input: at most 32 characters.",
+  "aspectTitle": "Aspect ratio calculator",
+  "aspectDesc": "Calculate the simplified aspect ratio from width and height locally.",
+  "aspectWidth": "Width",
+  "aspectHeight": "Height",
+  "aspectCalculate": "Calculate ratio",
+  "aspectLimits": "Each dimension must be a whole number from 1 to 100000. Calculates the simplified ratio only; does not resize.",
+  "aspectInvalid": "Enter whole numbers from 1 to 100000 for width and height."
 }

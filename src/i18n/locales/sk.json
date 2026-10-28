@@ -704,5 +704,12 @@
   "shadowLimits": "Celé čísla: posun/rozšírenie −100–100 px, rozmazanie 0–200 px, krytie 0–100 %. HEX farby #RGB/#RRGGBB. Veľké tiene sú orezané rámom náhľadu.",
   "shadowGenerate": "Vytvoriť tieň",
   "shadowPreview": "Náhľad tieňa",
-  "shadowInvalid": "Skontrolujte HEX farbu a celočíselné limity: posun/rozšírenie −100–100, rozmazanie 0–200, krytie 0–100. Farba: najviac 32 znakov."
+  "shadowInvalid": "Skontrolujte HEX farbu a celočíselné limity: posun/rozšírenie −100–100, rozmazanie 0–200, krytie 0–100. Farba: najviac 32 znakov.",
+  "aspectTitle": "Kalkulačka pomeru strán",
+  "aspectDesc": "Lokálne vypočítajte zjednodušený pomer strán zo šírky a výšky.",
+  "aspectWidth": "Šírka",
+  "aspectHeight": "Výška",
+  "aspectCalculate": "Vypočítať pomer",
+  "aspectLimits": "Každý rozmer musí byť celé číslo 1–100000. Vypočíta iba zjednodušený pomer; veľkosť nemení.",
+  "aspectInvalid": "Zadajte šírku a výšku ako celé čísla 1–100000."
 }

@@ -704,5 +704,12 @@
   "shadowLimits": "Bilangan bulat: offset/sebaran −100–100 px, blur 0–200 px, opasitas 0–100%. Warna HEX #RGB/#RRGGBB. Bayangan besar dipotong pada bingkai pratinjau.",
   "shadowGenerate": "Buat bayangan",
   "shadowPreview": "Pratinjau bayangan",
-  "shadowInvalid": "Periksa warna HEX dan batas bilangan bulat: offset/sebaran −100–100, blur 0–200, opasitas 0–100. Masukan warna: maksimal 32 karakter."
+  "shadowInvalid": "Periksa warna HEX dan batas bilangan bulat: offset/sebaran −100–100, blur 0–200, opasitas 0–100. Masukan warna: maksimal 32 karakter.",
+  "aspectTitle": "Kalkulator rasio aspek",
+  "aspectDesc": "Hitung rasio aspek sederhana dari lebar dan tinggi secara lokal.",
+  "aspectWidth": "Lebar",
+  "aspectHeight": "Tinggi",
+  "aspectCalculate": "Hitung rasio",
+  "aspectLimits": "Setiap dimensi harus bilangan bulat 1–100000. Hanya menghitung rasio sederhana; tidak mengubah ukuran.",
+  "aspectInvalid": "Masukkan bilangan bulat 1–100000 untuk lebar dan tinggi."
 }

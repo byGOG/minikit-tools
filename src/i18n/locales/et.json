@@ -704,5 +704,12 @@
   "shadowLimits": "Täisarvud: nihe/laienemine −100–100 px, hägusus 0–200 px, läbipaistmatus 0–100%. HEX-värvid #RGB/#RRGGBB. Suured varjud lõigatakse eelvaateraamiga.",
   "shadowGenerate": "Loo vari",
   "shadowPreview": "Varju eelvaade",
-  "shadowInvalid": "Kontrolli HEX-värvi ja täisarvupiire: nihe/laienemine −100–100, hägusus 0–200, läbipaistmatus 0–100. Värvisisend: kuni 32 märki."
+  "shadowInvalid": "Kontrolli HEX-värvi ja täisarvupiire: nihe/laienemine −100–100, hägusus 0–200, läbipaistmatus 0–100. Värvisisend: kuni 32 märki.",
+  "aspectTitle": "Kuvasuhte kalkulaator",
+  "aspectDesc": "Arvuta kohapeal lihtsustatud kuvasuhe laiuse ja kõrguse põhjal.",
+  "aspectWidth": "Laius",
+  "aspectHeight": "Kõrgus",
+  "aspectCalculate": "Arvuta suhe",
+  "aspectLimits": "Iga mõõde peab olema täisarv 1–100000. Arvutatakse ainult lihtsustatud suhe; suurust ei muudeta.",
+  "aspectInvalid": "Sisesta laiuseks ja kõrguseks täisarvud 1–100000."
 }

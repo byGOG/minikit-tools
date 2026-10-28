@@ -704,5 +704,12 @@
   "shadowLimits": "Buong bilang: offset/paglawak −100–100 px, pagkalabo 0–200 px, opacity 0–100%. HEX #RGB/#RRGGBB na kulay. Pinuputol sa frame ng preview ang malalaking anino.",
   "shadowGenerate": "Bumuo ng anino",
   "shadowPreview": "Preview ng anino",
-  "shadowInvalid": "Suriin ang HEX na kulay at buong bilang: offset/paglawak −100–100, pagkalabo 0–200, opacity 0–100. Input ng kulay: hanggang 32 character."
+  "shadowInvalid": "Suriin ang HEX na kulay at buong bilang: offset/paglawak −100–100, pagkalabo 0–200, opacity 0–100. Input ng kulay: hanggang 32 character.",
+  "aspectTitle": "Kalkulador ng aspect ratio",
+  "aspectDesc": "Kalkulahin nang lokal ang pinasimpleng ratio mula sa lapad at taas.",
+  "aspectWidth": "Lapad",
+  "aspectHeight": "Taas",
+  "aspectCalculate": "Kalkulahin ang ratio",
+  "aspectLimits": "Bawat sukat ay dapat buong bilang na 1–100000. Pinasimpleng ratio lang ang kinakalkula; hindi binabago ang laki.",
+  "aspectInvalid": "Maglagay ng buong bilang na 1–100000 para sa lapad at taas."
 }

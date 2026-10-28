@@ -704,5 +704,12 @@
   "shadowLimits": "Tam sayılar: kaydırma/yayılma −100–100 px, bulanıklık 0–200 px, opaklık %0–100. HEX #RGB/#RRGGBB renkler. Büyük gölgeler önizleme çerçevesinde kırpılır.",
   "shadowGenerate": "Gölge oluştur",
   "shadowPreview": "Gölge önizlemesi",
-  "shadowInvalid": "HEX rengini ve tam sayı sınırlarını kontrol et: kaydırma/yayılma −100–100, bulanıklık 0–200, opaklık 0–100. Renk girdisi en fazla 32 karakter."
+  "shadowInvalid": "HEX rengini ve tam sayı sınırlarını kontrol et: kaydırma/yayılma −100–100, bulanıklık 0–200, opaklık 0–100. Renk girdisi en fazla 32 karakter.",
+  "aspectTitle": "En boy oranı hesaplayıcı",
+  "aspectDesc": "Genişlik ve yükseklikten sadeleştirilmiş en boy oranını yerel olarak hesapla.",
+  "aspectWidth": "Genişlik",
+  "aspectHeight": "Yükseklik",
+  "aspectCalculate": "Oranı hesapla",
+  "aspectLimits": "Her boyut 1–100000 arası tam sayı olmalı. Yalnız sadeleştirilmiş oran hesaplanır; yeniden boyutlandırma yapılmaz.",
+  "aspectInvalid": "Genişlik ve yükseklik için 1–100000 arası tam sayı gir."
 }
