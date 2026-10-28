@@ -711,5 +711,15 @@
   "aspectHeight": "Wysokość",
   "aspectCalculate": "Oblicz proporcje",
   "aspectLimits": "Każdy wymiar musi być liczbą całkowitą 1–100000. Oblicza tylko uproszczone proporcje; nie zmienia rozmiaru.",
-  "aspectInvalid": "Wpisz liczby całkowite 1–100000 dla szerokości i wysokości."
+  "aspectInvalid": "Wpisz liczby całkowite 1–100000 dla szerokości i wysokości.",
+  "radiusTitle": "Generator zaokrąglonych rogów CSS",
+  "radiusDesc": "Ustaw promienie czterech rogów, zobacz kształt i skopiuj CSS lokalnie.",
+  "radiusTopLeft": "Lewy górny (px)",
+  "radiusTopRight": "Prawy górny (px)",
+  "radiusBottomRight": "Prawy dolny (px)",
+  "radiusBottomLeft": "Lewy dolny (px)",
+  "radiusLimits": "Wszystkie rogi: liczby całkowite 0–200 px włącznie. Przeglądarka może zmniejszyć duże lub nakładające się promienie, by dopasować je do kształtu.",
+  "radiusGenerate": "Generuj CSS",
+  "radiusPreview": "Podgląd rogów",
+  "radiusInvalid": "Wpisz liczbę całkowitą od 0 do 200 dla każdego rogu."
 }

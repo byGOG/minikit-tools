@@ -711,5 +711,15 @@
   "aspectHeight": "Hauteur",
   "aspectCalculate": "Calculer le rapport",
   "aspectLimits": "Chaque dimension doit être un entier de 1 à 100000. Calcule uniquement le rapport simplifié ; aucun redimensionnement.",
-  "aspectInvalid": "Saisissez des entiers de 1 à 100000 pour la largeur et la hauteur."
+  "aspectInvalid": "Saisissez des entiers de 1 à 100000 pour la largeur et la hauteur.",
+  "radiusTitle": "Générateur d’angles arrondis CSS",
+  "radiusDesc": "Réglez les rayons des quatre coins, prévisualisez la forme et copiez le CSS localement.",
+  "radiusTopLeft": "Haut gauche (px)",
+  "radiusTopRight": "Haut droit (px)",
+  "radiusBottomRight": "Bas droit (px)",
+  "radiusBottomLeft": "Bas gauche (px)",
+  "radiusLimits": "Tous les coins : entiers 0–200 px, bornes incluses. Le navigateur peut réduire les grands rayons ou ceux qui se chevauchent pour les adapter à la forme.",
+  "radiusGenerate": "Générer le CSS",
+  "radiusPreview": "Aperçu des coins",
+  "radiusInvalid": "Saisissez un entier de 0 à 200 pour chaque coin."
 }

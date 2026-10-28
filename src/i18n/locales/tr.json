@@ -711,5 +711,15 @@
   "aspectHeight": "Yükseklik",
   "aspectCalculate": "Oranı hesapla",
   "aspectLimits": "Her boyut 1–100000 arası tam sayı olmalı. Yalnız sadeleştirilmiş oran hesaplanır; yeniden boyutlandırma yapılmaz.",
-  "aspectInvalid": "Genişlik ve yükseklik için 1–100000 arası tam sayı gir."
+  "aspectInvalid": "Genişlik ve yükseklik için 1–100000 arası tam sayı gir.",
+  "radiusTitle": "CSS köşe yuvarlama oluşturucu",
+  "radiusDesc": "Dört köşe yarıçapını ayarla, şekli önizle ve CSS kodunu yerel olarak kopyala.",
+  "radiusTopLeft": "Sol üst (px)",
+  "radiusTopRight": "Sağ üst (px)",
+  "radiusBottomRight": "Sağ alt (px)",
+  "radiusBottomLeft": "Sol alt (px)",
+  "radiusLimits": "Tüm köşeler: sınırlar dâhil 0–200 px tam sayı. Tarayıcı büyük veya birleşen yarıçapları şekle sığdırabilir.",
+  "radiusGenerate": "CSS oluştur",
+  "radiusPreview": "Köşe önizlemesi",
+  "radiusInvalid": "Her köşe için 0–200 arası tam sayı gir."
 }

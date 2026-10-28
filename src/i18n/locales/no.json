@@ -711,5 +711,15 @@
   "aspectHeight": "Høyde",
   "aspectCalculate": "Beregn forhold",
   "aspectLimits": "Hver dimensjon må være et heltall fra 1 til 100000. Beregner bare det forkortede forholdet; endrer ikke størrelse.",
-  "aspectInvalid": "Skriv inn heltall fra 1 til 100000 for bredde og høyde."
+  "aspectInvalid": "Skriv inn heltall fra 1 til 100000 for bredde og høyde.",
+  "radiusTitle": "CSS-generator for avrundede hjørner",
+  "radiusDesc": "Still inn fire hjørneradier, forhåndsvis formen og kopier CSS lokalt.",
+  "radiusTopLeft": "Øverst til venstre (px)",
+  "radiusTopRight": "Øverst til høyre (px)",
+  "radiusBottomRight": "Nederst til høyre (px)",
+  "radiusBottomLeft": "Nederst til venstre (px)",
+  "radiusLimits": "Alle hjørner: heltall 0–200 px inklusive. Nettleseren kan skalere ned store eller overlappende radier for å passe formen.",
+  "radiusGenerate": "Generer CSS",
+  "radiusPreview": "Forhåndsvisning av hjørner",
+  "radiusInvalid": "Skriv inn et heltall fra 0 til 200 for hvert hjørne."
 }

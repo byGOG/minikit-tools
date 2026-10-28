@@ -711,5 +711,15 @@
   "aspectHeight": "Kõrgus",
   "aspectCalculate": "Arvuta suhe",
   "aspectLimits": "Iga mõõde peab olema täisarv 1–100000. Arvutatakse ainult lihtsustatud suhe; suurust ei muudeta.",
-  "aspectInvalid": "Sisesta laiuseks ja kõrguseks täisarvud 1–100000."
+  "aspectInvalid": "Sisesta laiuseks ja kõrguseks täisarvud 1–100000.",
+  "radiusTitle": "CSS-nurkade ümardamise generaator",
+  "radiusDesc": "Määra nelja nurga raadiused, vaata kuju ja kopeeri CSS kohapeal.",
+  "radiusTopLeft": "Ülal vasakul (px)",
+  "radiusTopRight": "Ülal paremal (px)",
+  "radiusBottomRight": "All paremal (px)",
+  "radiusBottomLeft": "All vasakul (px)",
+  "radiusLimits": "Kõik nurgad: täisarvud 0–200 px, piirid kaasa arvatud. Brauser võib suuri või kattuvaid raadiuseid kuju järgi vähendada.",
+  "radiusGenerate": "Loo CSS",
+  "radiusPreview": "Nurkade eelvaade",
+  "radiusInvalid": "Sisesta iga nurga jaoks täisarv 0–200."
 }

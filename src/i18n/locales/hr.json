@@ -711,5 +711,15 @@
   "aspectHeight": "Visina",
   "aspectCalculate": "Izračunaj omjer",
   "aspectLimits": "Svaka dimenzija mora biti cijeli broj 1–100000. Računa se samo skraćeni omjer; veličina se ne mijenja.",
-  "aspectInvalid": "Unesite cijele brojeve 1–100000 za širinu i visinu."
+  "aspectInvalid": "Unesite cijele brojeve 1–100000 za širinu i visinu.",
+  "radiusTitle": "Generator CSS zaobljenih kutova",
+  "radiusDesc": "Postavite polumjere četiri kuta, pregledajte oblik i lokalno kopirajte CSS.",
+  "radiusTopLeft": "Gore lijevo (px)",
+  "radiusTopRight": "Gore desno (px)",
+  "radiusBottomRight": "Dolje desno (px)",
+  "radiusBottomLeft": "Dolje lijevo (px)",
+  "radiusLimits": "Svi kutovi: cijeli brojevi 0–200 px uključivo. Preglednik može smanjiti velike ili preklapajuće polumjere da stanu u oblik.",
+  "radiusGenerate": "Generiraj CSS",
+  "radiusPreview": "Pregled kutova",
+  "radiusInvalid": "Unesite cijeli broj od 0 do 200 za svaki kut."
 }

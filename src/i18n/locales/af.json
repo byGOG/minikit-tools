@@ -711,5 +711,15 @@
   "aspectHeight": "Hoogte",
   "aspectCalculate": "Bereken verhouding",
   "aspectLimits": "Elke afmeting moet ’n heelgetal van 1–100000 wees. Bereken slegs die vereenvoudigde verhouding; verander nie grootte nie.",
-  "aspectInvalid": "Voer heelgetalle van 1–100000 vir breedte en hoogte in."
+  "aspectInvalid": "Voer heelgetalle van 1–100000 vir breedte en hoogte in.",
+  "radiusTitle": "CSS-hoekafrondingskepper",
+  "radiusDesc": "Stel vier hoekradiusse, bekyk die vorm en kopieer die CSS plaaslik.",
+  "radiusTopLeft": "Links bo (px)",
+  "radiusTopRight": "Regs bo (px)",
+  "radiusBottomRight": "Regs onder (px)",
+  "radiusBottomLeft": "Links onder (px)",
+  "radiusLimits": "Alle hoeke: heelgetalle 0–200 px, grense ingesluit. Die blaaier kan groot of oorvleuelende radiusse verklein om te pas.",
+  "radiusGenerate": "Skep CSS",
+  "radiusPreview": "Hoekvoorskou",
+  "radiusInvalid": "Voer vir elke hoek ’n heelgetal van 0 tot 200 in."
 }

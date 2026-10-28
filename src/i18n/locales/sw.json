@@ -711,5 +711,15 @@
   "aspectHeight": "Urefu",
   "aspectCalculate": "Kokotoa uwiano",
   "aspectLimits": "Kila kipimo kiwe nambari kamili 1–100000. Hukokotoa uwiano uliorahisishwa pekee; hakibadili ukubwa.",
-  "aspectInvalid": "Weka nambari kamili 1–100000 kwa upana na urefu."
+  "aspectInvalid": "Weka nambari kamili 1–100000 kwa upana na urefu.",
+  "radiusTitle": "Kizalishaji cha pembe za mviringo za CSS",
+  "radiusDesc": "Weka nusu kipenyo cha pembe nne, uone umbo na unakili CSS kwenye kifaa.",
+  "radiusTopLeft": "Juu kushoto (px)",
+  "radiusTopRight": "Juu kulia (px)",
+  "radiusBottomRight": "Chini kulia (px)",
+  "radiusBottomLeft": "Chini kushoto (px)",
+  "radiusLimits": "Pembe zote: nambari kamili 0–200 px, mipaka ikiwemo. Kivinjari kinaweza kupunguza thamani kubwa au zinazoingiliana ili zitoshee umbo.",
+  "radiusGenerate": "Unda CSS",
+  "radiusPreview": "Hakikisho la pembe",
+  "radiusInvalid": "Weka nambari kamili kutoka 0 hadi 200 kwa kila pembe."
 }

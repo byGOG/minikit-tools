@@ -1102,5 +1102,17 @@
       "aspectCalculate"
     ],
     "category": "image"
+  },
+  {
+    "slug": "css-border-radius-generator",
+    "title": "radiusTitle",
+    "desc": "radiusDesc",
+    "anchor": "css-radius-tool",
+    "steps": [
+      "radiusTopLeft",
+      "radiusTopRight",
+      "radiusGenerate"
+    ],
+    "category": "image"
   }
 ]

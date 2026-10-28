@@ -711,5 +711,15 @@
   "aspectHeight": "Výška",
   "aspectCalculate": "Vypočítať pomer",
   "aspectLimits": "Každý rozmer musí byť celé číslo 1–100000. Vypočíta iba zjednodušený pomer; veľkosť nemení.",
-  "aspectInvalid": "Zadajte šírku a výšku ako celé čísla 1–100000."
+  "aspectInvalid": "Zadajte šírku a výšku ako celé čísla 1–100000.",
+  "radiusTitle": "Generátor CSS zaoblenia rohov",
+  "radiusDesc": "Nastavte polomery štyroch rohov, zobrazte náhľad tvaru a lokálne skopírujte CSS.",
+  "radiusTopLeft": "Vľavo hore (px)",
+  "radiusTopRight": "Vpravo hore (px)",
+  "radiusBottomRight": "Vpravo dole (px)",
+  "radiusBottomLeft": "Vľavo dole (px)",
+  "radiusLimits": "Všetky rohy: celé čísla 0–200 px vrátane. Prehliadač môže veľké či prekrývajúce sa polomery zmenšiť podľa tvaru.",
+  "radiusGenerate": "Vytvoriť CSS",
+  "radiusPreview": "Náhľad rohov",
+  "radiusInvalid": "Zadajte celé číslo od 0 do 200 pre každý roh."
 }

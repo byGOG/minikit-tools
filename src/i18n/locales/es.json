@@ -711,5 +711,15 @@
   "aspectHeight": "Alto",
   "aspectCalculate": "Calcular relación",
   "aspectLimits": "Cada dimensión debe ser un entero entre 1 y 100000. Solo calcula la relación simplificada; no cambia el tamaño.",
-  "aspectInvalid": "Introduce enteros entre 1 y 100000 para el ancho y alto."
+  "aspectInvalid": "Introduce enteros entre 1 y 100000 para el ancho y alto.",
+  "radiusTitle": "Generador de esquinas redondeadas CSS",
+  "radiusDesc": "Ajusta los radios de cuatro esquinas, previsualiza la forma y copia el CSS localmente.",
+  "radiusTopLeft": "Superior izquierda (px)",
+  "radiusTopRight": "Superior derecha (px)",
+  "radiusBottomRight": "Inferior derecha (px)",
+  "radiusBottomLeft": "Inferior izquierda (px)",
+  "radiusLimits": "Todas las esquinas: enteros 0–200 px, inclusive. El navegador puede reducir radios grandes o superpuestos para ajustarlos a la forma.",
+  "radiusGenerate": "Generar CSS",
+  "radiusPreview": "Vista previa de esquinas",
+  "radiusInvalid": "Introduce un entero de 0 a 200 para cada esquina."
 }

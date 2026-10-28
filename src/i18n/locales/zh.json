@@ -711,5 +711,15 @@
   "aspectHeight": "高度",
   "aspectCalculate": "计算比例",
   "aspectLimits": "每个尺寸必须为 1–100000 的整数。仅计算最简比例，不调整尺寸。",
-  "aspectInvalid": "请为宽度和高度输入 1–100000 的整数。"
+  "aspectInvalid": "请为宽度和高度输入 1–100000 的整数。",
+  "radiusTitle": "CSS 圆角生成器",
+  "radiusDesc": "设置四个角的半径，在本地预览形状并复制 CSS。",
+  "radiusTopLeft": "左上（px）",
+  "radiusTopRight": "右上（px）",
+  "radiusBottomRight": "右下（px）",
+  "radiusBottomLeft": "左下（px）",
+  "radiusLimits": "所有角均为 0–200 px 的整数，包含两端。浏览器可能缩小过大或重叠的半径，使其适合形状。",
+  "radiusGenerate": "生成 CSS",
+  "radiusPreview": "圆角预览",
+  "radiusInvalid": "请为每个角输入 0–200 的整数。"
 }

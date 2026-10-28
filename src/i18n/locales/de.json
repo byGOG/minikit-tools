@@ -711,5 +711,15 @@
   "aspectHeight": "Höhe",
   "aspectCalculate": "Verhältnis berechnen",
   "aspectLimits": "Jede Abmessung muss eine ganze Zahl von 1 bis 100000 sein. Berechnet nur das gekürzte Verhältnis; ändert keine Größe.",
-  "aspectInvalid": "Gib für Breite und Höhe ganze Zahlen von 1 bis 100000 ein."
+  "aspectInvalid": "Gib für Breite und Höhe ganze Zahlen von 1 bis 100000 ein.",
+  "radiusTitle": "CSS-Eckenrundungsgenerator",
+  "radiusDesc": "Stelle vier Eckenradien ein, zeige die Formvorschau und kopiere das CSS lokal.",
+  "radiusTopLeft": "Oben links (px)",
+  "radiusTopRight": "Oben rechts (px)",
+  "radiusBottomRight": "Unten rechts (px)",
+  "radiusBottomLeft": "Unten links (px)",
+  "radiusLimits": "Alle Ecken: ganze Zahlen 0–200 px einschließlich. Der Browser kann große oder überlappende Radien an die Form anpassen.",
+  "radiusGenerate": "CSS erstellen",
+  "radiusPreview": "Eckenvorschau",
+  "radiusInvalid": "Gib für jede Ecke eine ganze Zahl von 0 bis 200 ein."
 }

@@ -711,5 +711,15 @@
   "aspectHeight": "Korkeus",
   "aspectCalculate": "Laske kuvasuhde",
   "aspectLimits": "Kummankin mitan on oltava kokonaisluku 1–100000. Laskee vain supistetun suhteen; ei muuta kokoa.",
-  "aspectInvalid": "Anna leveydeksi ja korkeudeksi kokonaisluvut 1–100000."
+  "aspectInvalid": "Anna leveydeksi ja korkeudeksi kokonaisluvut 1–100000.",
+  "radiusTitle": "CSS-kulmien pyöristysgeneraattori",
+  "radiusDesc": "Aseta neljän kulman säteet, esikatsele muotoa ja kopioi CSS paikallisesti.",
+  "radiusTopLeft": "Vasen yläkulma (px)",
+  "radiusTopRight": "Oikea yläkulma (px)",
+  "radiusBottomRight": "Oikea alakulma (px)",
+  "radiusBottomLeft": "Vasen alakulma (px)",
+  "radiusLimits": "Kaikki kulmat: kokonaisluvut 0–200 px, rajat mukaan lukien. Selain voi pienentää suuria tai päällekkäisiä säteitä muotoon sopiviksi.",
+  "radiusGenerate": "Luo CSS",
+  "radiusPreview": "Kulmien esikatselu",
+  "radiusInvalid": "Anna jokaiselle kulmalle kokonaisluku 0–200."
 }

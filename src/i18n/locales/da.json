@@ -711,5 +711,15 @@
   "aspectHeight": "Højde",
   "aspectCalculate": "Beregn forhold",
   "aspectLimits": "Hver dimension skal være et helt tal fra 1 til 100000. Beregner kun det forkortede forhold; ændrer ikke størrelse.",
-  "aspectInvalid": "Indtast hele tal fra 1 til 100000 for bredde og højde."
+  "aspectInvalid": "Indtast hele tal fra 1 til 100000 for bredde og højde.",
+  "radiusTitle": "CSS-generator til afrundede hjørner",
+  "radiusDesc": "Indstil fire hjørneradier, se formen og kopiér CSS lokalt.",
+  "radiusTopLeft": "Øverst til venstre (px)",
+  "radiusTopRight": "Øverst til højre (px)",
+  "radiusBottomRight": "Nederst til højre (px)",
+  "radiusBottomLeft": "Nederst til venstre (px)",
+  "radiusLimits": "Alle hjørner: hele tal 0–200 px inklusive. Browseren kan skalere store eller overlappende radier, så de passer til formen.",
+  "radiusGenerate": "Generér CSS",
+  "radiusPreview": "Forhåndsvisning af hjørner",
+  "radiusInvalid": "Indtast et helt tal fra 0 til 200 for hvert hjørne."
 }

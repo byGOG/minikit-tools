@@ -711,5 +711,15 @@
   "aspectHeight": "Altezza",
   "aspectCalculate": "Calcola rapporto",
   "aspectLimits": "Ogni dimensione deve essere un intero da 1 a 100000. Calcola solo il rapporto semplificato; non ridimensiona.",
-  "aspectInvalid": "Inserisci interi da 1 a 100000 per larghezza e altezza."
+  "aspectInvalid": "Inserisci interi da 1 a 100000 per larghezza e altezza.",
+  "radiusTitle": "Generatore di angoli arrotondati CSS",
+  "radiusDesc": "Imposta i raggi dei quattro angoli, visualizza la forma e copia il CSS localmente.",
+  "radiusTopLeft": "In alto a sinistra (px)",
+  "radiusTopRight": "In alto a destra (px)",
+  "radiusBottomRight": "In basso a destra (px)",
+  "radiusBottomLeft": "In basso a sinistra (px)",
+  "radiusLimits": "Tutti gli angoli: interi 0–200 px, estremi inclusi. Il browser può ridurre raggi grandi o sovrapposti per adattarli alla forma.",
+  "radiusGenerate": "Genera CSS",
+  "radiusPreview": "Anteprima degli angoli",
+  "radiusInvalid": "Inserisci un intero da 0 a 200 per ogni angolo."
 }

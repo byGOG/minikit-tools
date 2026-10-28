@@ -711,5 +711,15 @@
   "aspectHeight": "높이",
   "aspectCalculate": "비율 계산",
   "aspectLimits": "각 치수는 1–100000의 정수여야 합니다. 기약 비율만 계산하며 크기를 변경하지 않습니다.",
-  "aspectInvalid": "너비와 높이에 1–100000의 정수를 입력하세요."
+  "aspectInvalid": "너비와 높이에 1–100000의 정수를 입력하세요.",
+  "radiusTitle": "CSS 모서리 둥글기 생성기",
+  "radiusDesc": "네 모서리의 반경을 설정하고 모양을 미리 본 뒤 CSS를 로컬에서 복사합니다.",
+  "radiusTopLeft": "왼쪽 위 (px)",
+  "radiusTopRight": "오른쪽 위 (px)",
+  "radiusBottomRight": "오른쪽 아래 (px)",
+  "radiusBottomLeft": "왼쪽 아래 (px)",
+  "radiusLimits": "모든 모서리: 양 끝을 포함한 0–200 px 정수. 크거나 겹치는 반경은 모양에 맞게 브라우저가 축소할 수 있습니다.",
+  "radiusGenerate": "CSS 생성",
+  "radiusPreview": "모서리 미리보기",
+  "radiusInvalid": "각 모서리에 0–200의 정수를 입력하세요."
 }

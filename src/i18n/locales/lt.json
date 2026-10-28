@@ -711,5 +711,15 @@
   "aspectHeight": "Aukštis",
   "aspectCalculate": "Skaičiuoti santykį",
   "aspectLimits": "Kiekvienas matmuo turi būti sveikasis skaičius 1–100000. Skaičiuoja tik supaprastintą santykį; dydžio nekeičia.",
-  "aspectInvalid": "Įveskite pločio ir aukščio sveikuosius skaičius 1–100000."
+  "aspectInvalid": "Įveskite pločio ir aukščio sveikuosius skaičius 1–100000.",
+  "radiusTitle": "CSS kampų apvalinimo generatorius",
+  "radiusDesc": "Nustatykite keturių kampų spindulius, peržiūrėkite formą ir vietoje nukopijuokite CSS.",
+  "radiusTopLeft": "Viršuje kairėje (px)",
+  "radiusTopRight": "Viršuje dešinėje (px)",
+  "radiusBottomRight": "Apačioje dešinėje (px)",
+  "radiusBottomLeft": "Apačioje kairėje (px)",
+  "radiusLimits": "Visi kampai: sveikieji skaičiai 0–200 px imtinai. Naršyklė gali sumažinti didelius ar persidengiančius spindulius pagal formą.",
+  "radiusGenerate": "Kurti CSS",
+  "radiusPreview": "Kampų peržiūra",
+  "radiusInvalid": "Kiekvienam kampui įveskite sveikąjį skaičių 0–200."
 }

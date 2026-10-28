@@ -68,6 +68,12 @@ for (const locale of catalog) {
       assert.equal([...html.matchAll(/<h1[\s>]/g)].length,1,`${path}: one primary heading`);
       assert.ok(html.includes(`property="og:url" content="${url}"`),`${path}: share URL`);
       if (slug) {
+        if (slug === 'css-border-radius-generator') {
+          for (const key of ['radiusTitle','radiusDesc','radiusTopLeft','radiusTopRight','radiusBottomRight','radiusBottomLeft','radiusLimits','radiusGenerate','radiusPreview']) {
+            assert.equal(typeof d[key], 'string', `${path}: ${key} translation exists`);
+            assert.ok(html.includes(escapeHtml(d[key])), `${path}: ${key} is published`);
+          }
+        }
         if (slug === 'aspect-ratio-calculator') {
           for (const key of ['aspectTitle','aspectDesc','aspectWidth','aspectHeight','aspectLimits','aspectCalculate']) {
             assert.equal(typeof d[key], 'string', `${path}: ${key} translation exists`);

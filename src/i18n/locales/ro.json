@@ -711,5 +711,15 @@
   "aspectHeight": "Înălțime",
   "aspectCalculate": "Calculează raportul",
   "aspectLimits": "Fiecare dimensiune trebuie să fie un întreg 1–100000. Calculează doar raportul simplificat; nu redimensionează.",
-  "aspectInvalid": "Introdu întregi 1–100000 pentru lățime și înălțime."
+  "aspectInvalid": "Introdu întregi 1–100000 pentru lățime și înălțime.",
+  "radiusTitle": "Generator de colțuri rotunjite CSS",
+  "radiusDesc": "Setează razele celor patru colțuri, previzualizează forma și copiază CSS local.",
+  "radiusTopLeft": "Stânga sus (px)",
+  "radiusTopRight": "Dreapta sus (px)",
+  "radiusBottomRight": "Dreapta jos (px)",
+  "radiusBottomLeft": "Stânga jos (px)",
+  "radiusLimits": "Toate colțurile: întregi 0–200 px, inclusiv limitele. Browserul poate micșora razele mari sau suprapuse pentru a încăpea în formă.",
+  "radiusGenerate": "Generează CSS",
+  "radiusPreview": "Previzualizarea colțurilor",
+  "radiusInvalid": "Introdu un întreg de la 0 la 200 pentru fiecare colț."
 }
