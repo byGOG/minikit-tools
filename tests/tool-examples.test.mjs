@@ -7,6 +7,7 @@ import {generateLoremIpsum} from '../src/scripts/lorem-ipsum-core.ts';
 import {convertRoman} from '../src/scripts/roman-numerals-core.ts';
 import {convertMorse} from '../src/scripts/morse-code-core.ts';
 import {createGradient} from '../src/scripts/gradient-core.ts';
+import {calculateFraction} from '../src/scripts/fraction-core.ts';
 import {convertBinary} from '../src/scripts/text-binary-core.ts';
 import {createBorderRadius} from '../src/scripts/border-radius-core.ts';
 import {calculateAspectRatio} from '../src/scripts/aspect-ratio-core.ts';
@@ -75,4 +76,10 @@ test('published binary example matches UTF-8 bytes in both directions',()=>{
  const [input,expected]=examples['text-binary-converter'];
  assert.equal(convertBinary(input,'encode'),expected);
  assert.equal(convertBinary(expected,'decode'),input);
+});
+
+test('published fraction example matches exact reduced arithmetic',()=>{
+ const [input,expected]=examples['fraction-calculator'];
+ assert.equal(input,'1/2 + 1/3');
+ assert.equal(calculateFraction(1,2,1,3,'add').text,expected);
 });

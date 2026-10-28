@@ -730,5 +730,17 @@
   "binaryInput": "入力",
   "binaryLimits": "テキスト：最大5000 UTF-16コード単位。バイナリ入力：空白区切りの8ビット群で最大135000文字、15000バイト。有効なUTF-8のみ対応し、不正な列は置換せず拒否します。",
   "binaryConvert": "変換",
-  "binaryInvalid": "方向・制限・入力を確認してください。有効なUnicodeテキスト、または有効なUTF-8を表す空白区切りの正確に8桁の2進数群を使用してください。"
+  "binaryInvalid": "方向・制限・入力を確認してください。有効なUnicodeテキスト、または有効なUTF-8を表す空白区切りの正確に8桁の2進数群を使用してください。",
+  "fractionTitle": "分数計算ツール",
+  "fractionDesc": "2つの分数の加減乗除をローカルで行い、正確な既約の結果を求めます。",
+  "fractionNumerator": "分子",
+  "fractionDenominator": "分母",
+  "fractionOperation": "演算",
+  "fractionAdd": "足す",
+  "fractionSubtract": "引く",
+  "fractionMultiply": "掛ける",
+  "fractionDivide": "割る",
+  "fractionLimits": "各分子・分母：−1000000000〜1000000000の整数。分母は0にできません。割り算では2番目の分数の分子も0にできません。",
+  "fractionInvalid": "範囲内の整数、0以外の分母を入力してください。割り算では2番目の分子も0以外にしてください。",
+  "fractionCalculate": "計算"
 }

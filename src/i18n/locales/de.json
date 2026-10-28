@@ -730,5 +730,17 @@
   "binaryInput": "Eingabe",
   "binaryLimits": "Text: bis zu 5000 UTF-16-Codeeinheiten. Binäreingabe: bis zu 135000 Zeichen und 15000 Bytes in durch Leerraum getrennten 8-Bit-Gruppen. Nur gültiges UTF-8; ungültige Folgen werden abgelehnt, nicht ersetzt.",
   "binaryConvert": "Umwandeln",
-  "binaryInvalid": "Prüfe Richtung, Grenzen und Eingabe. Verwende gültigen Unicode-Text oder durch Leerraum getrennte Gruppen aus genau 8 Binärziffern, die gültiges UTF-8 codieren."
+  "binaryInvalid": "Prüfe Richtung, Grenzen und Eingabe. Verwende gültigen Unicode-Text oder durch Leerraum getrennte Gruppen aus genau 8 Binärziffern, die gültiges UTF-8 codieren.",
+  "fractionTitle": "Bruchrechner",
+  "fractionDesc": "Addiere, subtrahiere, multipliziere oder dividiere zwei Brüche lokal mit einem exakten gekürzten Ergebnis.",
+  "fractionNumerator": "Zähler",
+  "fractionDenominator": "Nenner",
+  "fractionOperation": "Rechenart",
+  "fractionAdd": "Addieren",
+  "fractionSubtract": "Subtrahieren",
+  "fractionMultiply": "Multiplizieren",
+  "fractionDivide": "Dividieren",
+  "fractionLimits": "Jeder Zähler/Nenner: ganze Zahlen −1000000000–1000000000. Nenner dürfen nicht null sein; beim Dividieren auch nicht der Zähler des zweiten Bruchs.",
+  "fractionInvalid": "Gib ganze Zahlen innerhalb der Grenzen, Nenner ungleich null und beim Dividieren einen zweiten Zähler ungleich null ein.",
+  "fractionCalculate": "Berechnen"
 }

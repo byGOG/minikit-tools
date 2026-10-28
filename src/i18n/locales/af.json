@@ -730,5 +730,17 @@
   "binaryInput": "Invoer",
   "binaryLimits": "Teks: tot 5000 UTF-16-kode-eenhede. Binêre invoer: tot 135000 karakters en 15000 grepe in spasiegeskeide 8-bis-groepe. Slegs geldige UTF-8; ongeldige rye word verwerp, nie vervang nie.",
   "binaryConvert": "Skakel om",
-  "binaryInvalid": "Kontroleer rigting, perke en invoer. Gebruik geldige Unicode-teks of witruimtegeskeide groepe van presies 8 binêre syfers wat geldige UTF-8 kodeer."
+  "binaryInvalid": "Kontroleer rigting, perke en invoer. Gebruik geldige Unicode-teks of witruimtegeskeide groepe van presies 8 binêre syfers wat geldige UTF-8 kodeer.",
+  "fractionTitle": "Breukrekenaar",
+  "fractionDesc": "Tel twee breuke plaaslik op, trek af, vermenigvuldig of deel met ’n presiese vereenvoudigde resultaat.",
+  "fractionNumerator": "Teller",
+  "fractionDenominator": "Noemer",
+  "fractionOperation": "Bewerking",
+  "fractionAdd": "Tel op",
+  "fractionSubtract": "Trek af",
+  "fractionMultiply": "Vermenigvuldig",
+  "fractionDivide": "Deel",
+  "fractionLimits": "Elke teller/noemer: heelgetalle −1000000000–1000000000. Noemers mag nie nul wees nie; by deling mag die tweede breuk se teller ook nie nul wees nie.",
+  "fractionInvalid": "Voer heelgetalle binne die perke, nie-nul noemers en by deling ’n nie-nul tweede teller in.",
+  "fractionCalculate": "Bereken"
 }

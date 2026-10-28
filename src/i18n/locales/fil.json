@@ -730,5 +730,17 @@
   "binaryInput": "Input",
   "binaryLimits": "Teksto: hanggang 5000 UTF-16 code unit. Binary: hanggang 135000 character at 15000 byte sa 8-bit na grupong may pagitan. Wastong UTF-8 lang; tinatanggihan ang maling sequence, hindi pinapalitan.",
   "binaryConvert": "I-convert",
-  "binaryInvalid": "Suriin ang direksiyon, limitasyon at input. Gumamit ng wastong Unicode na teksto o grupong may eksaktong 8 binary digit na pinaghiwalay ng whitespace at kumakatawan sa wastong UTF-8."
+  "binaryInvalid": "Suriin ang direksiyon, limitasyon at input. Gumamit ng wastong Unicode na teksto o grupong may eksaktong 8 binary digit na pinaghiwalay ng whitespace at kumakatawan sa wastong UTF-8.",
+  "fractionTitle": "Kalkulador ng fraction",
+  "fractionDesc": "Magdagdag, magbawas, mag-multiply o mag-divide ng dalawang fraction nang lokal na may eksaktong pinasimpleng resulta.",
+  "fractionNumerator": "Numerator",
+  "fractionDenominator": "Denominator",
+  "fractionOperation": "Operasyon",
+  "fractionAdd": "Magdagdag",
+  "fractionSubtract": "Magbawas",
+  "fractionMultiply": "Mag-multiply",
+  "fractionDivide": "Mag-divide",
+  "fractionLimits": "Bawat numerator/denominator: buong bilang −1000000000–1000000000. Hindi maaaring zero ang denominator; sa division, hindi rin zero ang numerator ng ikalawang fraction.",
+  "fractionInvalid": "Maglagay ng buong bilang sa limitasyon, hindi zero na denominator at, sa division, hindi zero na ikalawang numerator.",
+  "fractionCalculate": "Kalkulahin"
 }

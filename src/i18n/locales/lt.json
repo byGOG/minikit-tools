@@ -730,5 +730,17 @@
   "binaryInput": "Įvestis",
   "binaryLimits": "Tekstas: iki 5000 UTF-16 kodo vienetų. Dvejetainė įvestis: iki 135000 ženklų ir 15000 baitų tarpais atskirtose 8 bitų grupėse. Tik galiojantis UTF-8; klaidingos sekos atmetamos, ne pakeičiamos.",
   "binaryConvert": "Konvertuoti",
-  "binaryInvalid": "Patikrinkite kryptį, ribas ir įvestį. Naudokite galiojantį Unicode tekstą arba tiksliai 8 dvejetainių skaitmenų grupes, atskirtas tarpais ir koduojančias galiojantį UTF-8."
+  "binaryInvalid": "Patikrinkite kryptį, ribas ir įvestį. Naudokite galiojantį Unicode tekstą arba tiksliai 8 dvejetainių skaitmenų grupes, atskirtas tarpais ir koduojančias galiojantį UTF-8.",
+  "fractionTitle": "Trupmenų skaičiuoklė",
+  "fractionDesc": "Vietoje sudėkite, atimkite, dauginkite ar dalykite dvi trupmenas ir gaukite tikslų suprastintą rezultatą.",
+  "fractionNumerator": "Skaitiklis",
+  "fractionDenominator": "Vardiklis",
+  "fractionOperation": "Veiksmas",
+  "fractionAdd": "Sudėti",
+  "fractionSubtract": "Atimti",
+  "fractionMultiply": "Dauginti",
+  "fractionDivide": "Dalyti",
+  "fractionLimits": "Kiekvienas skaitiklis/vardiklis: sveikieji skaičiai −1000000000–1000000000. Vardikliai negali būti nulis; dalijant ir antros trupmenos skaitiklis negali būti nulis.",
+  "fractionInvalid": "Įveskite sveikuosius skaičius ribose, nenulinius vardiklius ir dalijant nenulinį antrą skaitiklį.",
+  "fractionCalculate": "Skaičiuoti"
 }

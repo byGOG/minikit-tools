@@ -730,5 +730,17 @@
   "binaryInput": "Input",
   "binaryLimits": "Tekst: op til 5000 UTF-16-kodeenheder. Binært input: op til 135000 tegn og 15000 byte i 8-bit-grupper adskilt af mellemrum. Kun gyldig UTF-8; ugyldige sekvenser afvises, ikke erstattes.",
   "binaryConvert": "Konvertér",
-  "binaryInvalid": "Kontrollér retning, grænser og input. Brug gyldig Unicode-tekst eller grupper på præcis 8 binære cifre adskilt af blanktegn, der koder gyldig UTF-8."
+  "binaryInvalid": "Kontrollér retning, grænser og input. Brug gyldig Unicode-tekst eller grupper på præcis 8 binære cifre adskilt af blanktegn, der koder gyldig UTF-8.",
+  "fractionTitle": "Brøkregner",
+  "fractionDesc": "Læg to brøker sammen, træk fra, gang eller dividér lokalt med et nøjagtigt forkortet resultat.",
+  "fractionNumerator": "Tæller",
+  "fractionDenominator": "Nævner",
+  "fractionOperation": "Regneart",
+  "fractionAdd": "Læg sammen",
+  "fractionSubtract": "Træk fra",
+  "fractionMultiply": "Gang",
+  "fractionDivide": "Dividér",
+  "fractionLimits": "Hver tæller/nævner: hele tal −1000000000–1000000000. Nævnere må ikke være nul; ved division må den anden brøks tæller heller ikke være nul.",
+  "fractionInvalid": "Indtast hele tal inden for grænserne, nævnere forskellig fra nul og ved division en anden tæller forskellig fra nul.",
+  "fractionCalculate": "Beregn"
 }

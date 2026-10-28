@@ -730,5 +730,17 @@
   "binaryInput": "Đầu vào",
   "binaryLimits": "Văn bản: tối đa 5000 đơn vị mã UTF-16. Nhị phân: tối đa 135000 ký tự và 15000 byte trong nhóm 8 bit cách nhau bằng khoảng trắng. Chỉ UTF-8 hợp lệ; chuỗi sai bị từ chối, không thay thế.",
   "binaryConvert": "Chuyển đổi",
-  "binaryInvalid": "Kiểm tra chiều, giới hạn và đầu vào. Dùng văn bản Unicode hợp lệ hoặc nhóm đúng 8 chữ số nhị phân, tách bằng khoảng trắng và mã hóa UTF-8 hợp lệ."
+  "binaryInvalid": "Kiểm tra chiều, giới hạn và đầu vào. Dùng văn bản Unicode hợp lệ hoặc nhóm đúng 8 chữ số nhị phân, tách bằng khoảng trắng và mã hóa UTF-8 hợp lệ.",
+  "fractionTitle": "Máy tính phân số",
+  "fractionDesc": "Cộng, trừ, nhân hoặc chia hai phân số cục bộ với kết quả chính xác tối giản.",
+  "fractionNumerator": "Tử số",
+  "fractionDenominator": "Mẫu số",
+  "fractionOperation": "Phép tính",
+  "fractionAdd": "Cộng",
+  "fractionSubtract": "Trừ",
+  "fractionMultiply": "Nhân",
+  "fractionDivide": "Chia",
+  "fractionLimits": "Mỗi tử số/mẫu số: số nguyên −1000000000–1000000000. Mẫu số không được bằng 0; khi chia, tử số của phân số thứ hai cũng không được bằng 0.",
+  "fractionInvalid": "Nhập số nguyên trong giới hạn, mẫu số khác 0 và khi chia tử số thứ hai khác 0.",
+  "fractionCalculate": "Tính"
 }

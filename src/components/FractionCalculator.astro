@@ -1,0 +1,38 @@
+---
+import { Calculator, ShieldCheck, ArrowRight } from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const str = (key: string) => (tr as Record<string, string>)[key] ?? key;
+const operands = [
+  { key: 'valueA', numerator: 'a', denominator: 'b', n: 1, d: 2 },
+  { key: 'valueB', numerator: 'c', denominator: 'd', n: 1, d: 3 },
+];
+---
+<article class="tool-card fraction-card" id="fraction-tool">
+  <div class="card-top"><span class="tool-icon icon-blue"><Calculator size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="fractionTitle">{str('fractionTitle')}</h3>
+  <p data-i18n="fractionDesc">{str('fractionDesc')}</p>
+  <div class="fraction-operands">
+    {operands.map(operand => <fieldset class="fraction-operand"><legend data-i18n={operand.key}>{str(operand.key)}</legend><label class="field-label" for={`fraction-${operand.numerator}`} data-i18n="fractionNumerator">{str('fractionNumerator')}</label><input class="text-input" id={`fraction-${operand.numerator}`} type="number" min="-1000000000" max="1000000000" step="1" value={operand.n} required aria-describedby="fraction-limits"/><div class="fraction-divider" aria-hidden="true"></div><label class="field-label" for={`fraction-${operand.denominator}`} data-i18n="fractionDenominator">{str('fractionDenominator')}</label><input class="text-input" id={`fraction-${operand.denominator}`} type="number" min="-1000000000" max="1000000000" step="1" value={operand.d} required aria-describedby="fraction-limits"/></fieldset>)}
+  </div>
+  <label class="field-label" for="fraction-operation" data-i18n="fractionOperation">{str('fractionOperation')}</label>
+  <select class="text-input" id="fraction-operation"><option value="add" data-i18n="fractionAdd">{str('fractionAdd')}</option><option value="subtract" data-i18n="fractionSubtract">{str('fractionSubtract')}</option><option value="multiply" data-i18n="fractionMultiply">{str('fractionMultiply')}</option><option value="divide" data-i18n="fractionDivide">{str('fractionDivide')}</option></select>
+  <small class="fraction-hint" id="fraction-limits" data-i18n="fractionLimits">{str('fractionLimits')}</small>
+  <button class="button-primary full" id="fraction-calculate" data-i18n="fractionCalculate">{str('fractionCalculate')}</button>
+  <label class="field-label fraction-result-label" for="fraction-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="fraction-output" readonly dir="ltr" spellcheck="false"></textarea>
+  <p class="tool-feedback" id="fraction-feedback" role="status" aria-live="polite"></p>
+  <div class="text-tool-actions"><button class="button-secondary full" id="fraction-copy" data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id="fraction-clear" data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="fraction-calculator" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
+<style is:global>
+.fraction-operands{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:14px}
+.fraction-operand{min-width:0;border:1px solid #cbd5ce;border-radius:10px;padding:12px}
+.fraction-operand legend{font-size:13px;font-weight:600;padding:0 5px}
+.fraction-operand input,.fraction-card select{width:100%;min-width:0}
+.fraction-divider{height:1px;background:#86988d;margin-top:10px}
+.fraction-hint{display:block;font-size:12px;line-height:1.65;color:#526258;margin:10px 0 14px}
+.fraction-result-label{margin-top:14px}
+.fraction-card textarea{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;min-height:80px}
+@media(max-width:440px){.fraction-operands{grid-template-columns:1fr}}
+</style>

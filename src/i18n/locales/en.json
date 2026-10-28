@@ -730,5 +730,17 @@
   "binaryInput": "Input",
   "binaryLimits": "Text: up to 5000 UTF-16 code units. Binary input: up to 135000 characters and 15000 bytes in space-separated 8-bit groups. Valid UTF-8 only; invalid sequences are rejected, not replaced.",
   "binaryConvert": "Convert",
-  "binaryInvalid": "Check the direction, limits and input. Use valid Unicode text or whitespace-separated groups of exactly 8 binary digits encoding valid UTF-8."
+  "binaryInvalid": "Check the direction, limits and input. Use valid Unicode text or whitespace-separated groups of exactly 8 binary digits encoding valid UTF-8.",
+  "fractionTitle": "Fraction calculator",
+  "fractionDesc": "Add, subtract, multiply or divide two fractions locally with an exact simplified result.",
+  "fractionNumerator": "Numerator",
+  "fractionDenominator": "Denominator",
+  "fractionOperation": "Operation",
+  "fractionAdd": "Add",
+  "fractionSubtract": "Subtract",
+  "fractionMultiply": "Multiply",
+  "fractionDivide": "Divide",
+  "fractionLimits": "Each numerator/denominator: integers −1000000000–1000000000. Denominators must not be zero; for division, the second fraction’s numerator must not be zero.",
+  "fractionInvalid": "Enter integers within the limits, nonzero denominators and, for division, a nonzero second numerator.",
+  "fractionCalculate": "Calculate"
 }

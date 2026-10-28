@@ -730,5 +730,17 @@
   "binaryInput": "Ingizo",
   "binaryLimits": "Maandishi: hadi vitengo 5000 vya msimbo UTF-16. Binari: hadi vibambo 135000 na baiti 15000 katika makundi ya biti 8 yenye nafasi. UTF-8 halali pekee; mifululizo batili hukataliwa, haibadilishwi.",
   "binaryConvert": "Badilisha",
-  "binaryInvalid": "Kagua mwelekeo, mipaka na ingizo. Tumia maandishi halali ya Unicode au makundi ya tarakimu 8 za binari hasa, yaliyotenganishwa kwa nafasi, yanayowakilisha UTF-8 halali."
+  "binaryInvalid": "Kagua mwelekeo, mipaka na ingizo. Tumia maandishi halali ya Unicode au makundi ya tarakimu 8 za binari hasa, yaliyotenganishwa kwa nafasi, yanayowakilisha UTF-8 halali.",
+  "fractionTitle": "Kikokotoo cha sehemu",
+  "fractionDesc": "Jumlisha, toa, zidisha au gawa sehemu mbili kwenye kifaa kwa matokeo sahihi yaliyorahisishwa.",
+  "fractionNumerator": "Kiasi cha juu",
+  "fractionDenominator": "Kigawanyo",
+  "fractionOperation": "Operesheni",
+  "fractionAdd": "Jumlisha",
+  "fractionSubtract": "Toa",
+  "fractionMultiply": "Zidisha",
+  "fractionDivide": "Gawa",
+  "fractionLimits": "Kila kiasi cha juu/kigawanyo: nambari kamili −1000000000–1000000000. Vigawanyo visiwe sifuri; kwa kugawa, kiasi cha juu cha sehemu ya pili pia kisiwe sifuri.",
+  "fractionInvalid": "Weka nambari kamili ndani ya mipaka, vigawanyo visivyo sifuri na kwa kugawa kiasi cha juu cha pili kisicho sifuri.",
+  "fractionCalculate": "Kokotoa"
 }

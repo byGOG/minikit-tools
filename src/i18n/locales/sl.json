@@ -730,5 +730,17 @@
   "binaryInput": "Vnos",
   "binaryLimits": "Besedilo: do 5000 kodnih enot UTF-16. Binarni vnos: do 135000 znakov in 15000 bajtov v 8-bitnih skupinah s presledki. Samo veljaven UTF-8; neveljavna zaporedja so zavrnjena, ne zamenjana.",
   "binaryConvert": "Pretvori",
-  "binaryInvalid": "Preverite smer, omejitve in vnos. Uporabite veljavno besedilo Unicode ali skupine natanko 8 binarnih števk, ločene z belimi znaki, ki kodirajo veljaven UTF-8."
+  "binaryInvalid": "Preverite smer, omejitve in vnos. Uporabite veljavno besedilo Unicode ali skupine natanko 8 binarnih števk, ločene z belimi znaki, ki kodirajo veljaven UTF-8.",
+  "fractionTitle": "Kalkulator ulomkov",
+  "fractionDesc": "Lokalno seštejte, odštejte, množite ali delite dva ulomka z natančnim okrajšanim rezultatom.",
+  "fractionNumerator": "Števec",
+  "fractionDenominator": "Imenovalec",
+  "fractionOperation": "Operacija",
+  "fractionAdd": "Seštej",
+  "fractionSubtract": "Odštej",
+  "fractionMultiply": "Množi",
+  "fractionDivide": "Deli",
+  "fractionLimits": "Vsak števec/imenovalec: cela števila −1000000000–1000000000. Imenovalci ne smejo biti nič; pri deljenju tudi števec drugega ulomka ne sme biti nič.",
+  "fractionInvalid": "Vnesite cela števila v mejah, neničelne imenovalce in pri deljenju neničelni drugi števec.",
+  "fractionCalculate": "Izračunaj"
 }

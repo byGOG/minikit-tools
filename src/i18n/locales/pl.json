@@ -730,5 +730,17 @@
   "binaryInput": "Dane wejściowe",
   "binaryLimits": "Tekst: do 5000 jednostek kodowych UTF-16. Kod binarny: do 135000 znaków i 15000 bajtów w 8-bitowych grupach ze spacjami. Tylko poprawny UTF-8; błędne sekwencje są odrzucane, nie zastępowane.",
   "binaryConvert": "Konwertuj",
-  "binaryInvalid": "Sprawdź kierunek, limity i dane. Użyj poprawnego tekstu Unicode lub grup dokładnie 8 cyfr binarnych oddzielonych białymi znakami, kodujących poprawny UTF-8."
+  "binaryInvalid": "Sprawdź kierunek, limity i dane. Użyj poprawnego tekstu Unicode lub grup dokładnie 8 cyfr binarnych oddzielonych białymi znakami, kodujących poprawny UTF-8.",
+  "fractionTitle": "Kalkulator ułamków",
+  "fractionDesc": "Dodawaj, odejmuj, mnóż lub dziel dwa ułamki lokalnie z dokładnym skróconym wynikiem.",
+  "fractionNumerator": "Licznik",
+  "fractionDenominator": "Mianownik",
+  "fractionOperation": "Działanie",
+  "fractionAdd": "Dodaj",
+  "fractionSubtract": "Odejmij",
+  "fractionMultiply": "Pomnóż",
+  "fractionDivide": "Podziel",
+  "fractionLimits": "Każdy licznik/mianownik: liczby całkowite −1000000000–1000000000. Mianowniki nie mogą być zerem; przy dzieleniu także licznik drugiego ułamka nie może być zerem.",
+  "fractionInvalid": "Wpisz liczby całkowite w granicach, niezerowe mianowniki i przy dzieleniu niezerowy drugi licznik.",
+  "fractionCalculate": "Oblicz"
 }

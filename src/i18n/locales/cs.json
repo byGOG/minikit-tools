@@ -730,5 +730,17 @@
   "binaryInput": "Vstup",
   "binaryLimits": "Text: nejvýše 5000 kódových jednotek UTF-16. Binární vstup: nejvýše 135000 znaků a 15000 bajtů v 8bitových skupinách s mezerami. Pouze platné UTF-8; neplatné sekvence se odmítají, nenahrazují.",
   "binaryConvert": "Převést",
-  "binaryInvalid": "Zkontrolujte směr, limity a vstup. Použijte platný Unicode text nebo skupiny přesně 8 binárních číslic oddělené bílými znaky kódující platné UTF-8."
+  "binaryInvalid": "Zkontrolujte směr, limity a vstup. Použijte platný Unicode text nebo skupiny přesně 8 binárních číslic oddělené bílými znaky kódující platné UTF-8.",
+  "fractionTitle": "Kalkulačka zlomků",
+  "fractionDesc": "Místně sčítejte, odčítejte, násobte nebo dělte dva zlomky s přesným zkráceným výsledkem.",
+  "fractionNumerator": "Čitatel",
+  "fractionDenominator": "Jmenovatel",
+  "fractionOperation": "Operace",
+  "fractionAdd": "Sčítání",
+  "fractionSubtract": "Odčítání",
+  "fractionMultiply": "Násobení",
+  "fractionDivide": "Dělení",
+  "fractionLimits": "Každý čitatel/jmenovatel: celá čísla −1000000000–1000000000. Jmenovatele nesmí být nula; při dělení ani čitatel druhého zlomku.",
+  "fractionInvalid": "Zadejte celá čísla v mezích, nenulové jmenovatele a při dělení nenulového druhého čitatele.",
+  "fractionCalculate": "Vypočítat"
 }

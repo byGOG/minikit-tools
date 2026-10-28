@@ -68,6 +68,12 @@ for (const locale of catalog) {
       assert.equal([...html.matchAll(/<h1[\s>]/g)].length,1,`${path}: one primary heading`);
       assert.ok(html.includes(`property="og:url" content="${url}"`),`${path}: share URL`);
       if (slug) {
+        if (slug === 'fraction-calculator') {
+          for (const key of ['fractionTitle','fractionDesc','fractionNumerator','fractionDenominator','fractionOperation','fractionAdd','fractionSubtract','fractionMultiply','fractionDivide','fractionLimits','fractionCalculate']) {
+            assert.equal(typeof d[key], 'string', `${path}: ${key} translation exists`);
+            assert.ok(html.includes(escapeHtml(d[key])), `${path}: ${key} is published`);
+          }
+        }
         if (slug === 'text-binary-converter') {
           for (const key of ['binaryTitle','binaryDesc','binaryMode','binaryEncode','binaryDecode','binaryInput','binaryLimits','binaryConvert']) {
             assert.equal(typeof d[key], 'string', `${path}: ${key} translation exists`);

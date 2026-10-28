@@ -730,5 +730,17 @@
   "binaryInput": "Intrare",
   "binaryLimits": "Text: cel mult 5000 de unități de cod UTF-16. Binar: cel mult 135000 de caractere și 15000 de octeți în grupuri de 8 biți separate prin spații. Doar UTF-8 valid; secvențele invalide sunt respinse, nu înlocuite.",
   "binaryConvert": "Convertește",
-  "binaryInvalid": "Verifică direcția, limitele și intrarea. Folosește text Unicode valid sau grupuri de exact 8 cifre binare separate prin spații albe, care codifică UTF-8 valid."
+  "binaryInvalid": "Verifică direcția, limitele și intrarea. Folosește text Unicode valid sau grupuri de exact 8 cifre binare separate prin spații albe, care codifică UTF-8 valid.",
+  "fractionTitle": "Calculator de fracții",
+  "fractionDesc": "Adună, scade, înmulțește sau împarte două fracții local, cu rezultat exact simplificat.",
+  "fractionNumerator": "Numărător",
+  "fractionDenominator": "Numitor",
+  "fractionOperation": "Operație",
+  "fractionAdd": "Adună",
+  "fractionSubtract": "Scade",
+  "fractionMultiply": "Înmulțește",
+  "fractionDivide": "Împarte",
+  "fractionLimits": "Fiecare numărător/numitor: întregi −1000000000–1000000000. Numitorii nu pot fi zero; la împărțire nici numărătorul celei de-a doua fracții nu poate fi zero.",
+  "fractionInvalid": "Introdu întregi în limite, numitori nenuli și, la împărțire, un al doilea numărător nenul.",
+  "fractionCalculate": "Calculează"
 }

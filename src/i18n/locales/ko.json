@@ -730,5 +730,17 @@
   "binaryInput": "입력",
   "binaryLimits": "텍스트: 최대 5000 UTF-16 코드 단위. 이진수: 공백으로 구분한 8비트 그룹, 최대 135000자 및 15000바이트. 유효한 UTF-8만 허용하며 잘못된 시퀀스는 대체하지 않고 거부합니다.",
   "binaryConvert": "변환",
-  "binaryInvalid": "방향, 제한, 입력을 확인하세요. 유효한 유니코드 텍스트 또는 유효한 UTF-8을 나타내는 공백 구분 8자리 이진수 그룹을 사용하세요."
+  "binaryInvalid": "방향, 제한, 입력을 확인하세요. 유효한 유니코드 텍스트 또는 유효한 UTF-8을 나타내는 공백 구분 8자리 이진수 그룹을 사용하세요.",
+  "fractionTitle": "분수 계산기",
+  "fractionDesc": "두 분수를 로컬에서 더하고 빼고 곱하고 나누어 정확한 기약 결과를 구합니다.",
+  "fractionNumerator": "분자",
+  "fractionDenominator": "분모",
+  "fractionOperation": "연산",
+  "fractionAdd": "더하기",
+  "fractionSubtract": "빼기",
+  "fractionMultiply": "곱하기",
+  "fractionDivide": "나누기",
+  "fractionLimits": "각 분자/분모: −1000000000–1000000000의 정수. 분모는 0일 수 없으며 나눗셈에서는 두 번째 분수의 분자도 0일 수 없습니다.",
+  "fractionInvalid": "범위 내 정수와 0이 아닌 분모를 입력하세요. 나눗셈에서는 두 번째 분자도 0이 아니어야 합니다.",
+  "fractionCalculate": "계산"
 }

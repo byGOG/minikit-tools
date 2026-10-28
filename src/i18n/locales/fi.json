@@ -730,5 +730,17 @@
   "binaryInput": "Syöte",
   "binaryLimits": "Teksti: enintään 5000 UTF-16-koodiyksikköä. Binäärisyöte: enintään 135000 merkkiä ja 15000 tavua välilyönnein erotettuina 8 bitin ryhminä. Vain kelvollinen UTF-8; virheelliset jaksot hylätään, ei korvata.",
   "binaryConvert": "Muunna",
-  "binaryInvalid": "Tarkista suunta, rajat ja syöte. Käytä kelvollista Unicode-tekstiä tai tyhjemerkein erotettuja täsmälleen 8 binäärinumeron ryhmiä, jotka koodaavat kelvollista UTF-8:aa."
+  "binaryInvalid": "Tarkista suunta, rajat ja syöte. Käytä kelvollista Unicode-tekstiä tai tyhjemerkein erotettuja täsmälleen 8 binäärinumeron ryhmiä, jotka koodaavat kelvollista UTF-8:aa.",
+  "fractionTitle": "Murtolukulaskuri",
+  "fractionDesc": "Laske kahden murtoluvun summa, erotus, tulo tai osamäärä paikallisesti tarkkana supistettuna tuloksena.",
+  "fractionNumerator": "Osoittaja",
+  "fractionDenominator": "Nimittäjä",
+  "fractionOperation": "Laskutoimitus",
+  "fractionAdd": "Yhteenlasku",
+  "fractionSubtract": "Vähennyslasku",
+  "fractionMultiply": "Kertolasku",
+  "fractionDivide": "Jakolasku",
+  "fractionLimits": "Jokainen osoittaja/nimittäjä: kokonaisluvut −1000000000–1000000000. Nimittäjä ei saa olla nolla; jakolaskussa ei myöskään toisen murtoluvun osoittaja.",
+  "fractionInvalid": "Anna kokonaisluvut rajoissa, nollasta poikkeavat nimittäjät ja jakolaskussa nollasta poikkeava toinen osoittaja.",
+  "fractionCalculate": "Laske"
 }

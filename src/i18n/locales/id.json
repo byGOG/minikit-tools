@@ -730,5 +730,17 @@
   "binaryInput": "Masukan",
   "binaryLimits": "Teks: maksimal 5000 unit kode UTF-16. Biner: maksimal 135000 karakter dan 15000 byte dalam kelompok 8-bit dipisahkan spasi. Hanya UTF-8 valid; urutan tidak valid ditolak, bukan diganti.",
   "binaryConvert": "Konversi",
-  "binaryInvalid": "Periksa arah, batas dan masukan. Gunakan teks Unicode valid atau kelompok tepat 8 digit biner dipisahkan whitespace yang menyandi UTF-8 valid."
+  "binaryInvalid": "Periksa arah, batas dan masukan. Gunakan teks Unicode valid atau kelompok tepat 8 digit biner dipisahkan whitespace yang menyandi UTF-8 valid.",
+  "fractionTitle": "Kalkulator pecahan",
+  "fractionDesc": "Tambah, kurangi, kalikan atau bagi dua pecahan secara lokal dengan hasil tepat yang disederhanakan.",
+  "fractionNumerator": "Pembilang",
+  "fractionDenominator": "Penyebut",
+  "fractionOperation": "Operasi",
+  "fractionAdd": "Tambah",
+  "fractionSubtract": "Kurangi",
+  "fractionMultiply": "Kalikan",
+  "fractionDivide": "Bagi",
+  "fractionLimits": "Setiap pembilang/penyebut: bilangan bulat −1000000000–1000000000. Penyebut tidak boleh nol; untuk pembagian, pembilang pecahan kedua juga tidak boleh nol.",
+  "fractionInvalid": "Masukkan bilangan bulat dalam batas, penyebut bukan nol dan, untuk pembagian, pembilang kedua bukan nol.",
+  "fractionCalculate": "Hitung"
 }

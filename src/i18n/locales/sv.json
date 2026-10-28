@@ -730,5 +730,17 @@
   "binaryInput": "Indata",
   "binaryLimits": "Text: högst 5000 UTF-16-kodenheter. Binärt: högst 135000 tecken och 15000 byte i 8-bitars grupper med mellanslag. Endast giltig UTF-8; ogiltiga sekvenser avvisas, inte ersätts.",
   "binaryConvert": "Omvandla",
-  "binaryInvalid": "Kontrollera riktning, gränser och indata. Använd giltig Unicode-text eller grupper med exakt 8 binära siffror, skilda med blanktecken, som kodar giltig UTF-8."
+  "binaryInvalid": "Kontrollera riktning, gränser och indata. Använd giltig Unicode-text eller grupper med exakt 8 binära siffror, skilda med blanktecken, som kodar giltig UTF-8.",
+  "fractionTitle": "Bråkräknare",
+  "fractionDesc": "Addera, subtrahera, multiplicera eller dividera två bråk lokalt med ett exakt förkortat resultat.",
+  "fractionNumerator": "Täljare",
+  "fractionDenominator": "Nämnare",
+  "fractionOperation": "Räknesätt",
+  "fractionAdd": "Addera",
+  "fractionSubtract": "Subtrahera",
+  "fractionMultiply": "Multiplicera",
+  "fractionDivide": "Dividera",
+  "fractionLimits": "Varje täljare/nämnare: heltal −1000000000–1000000000. Nämnare får inte vara noll; vid division får inte heller det andra bråkets täljare vara noll.",
+  "fractionInvalid": "Ange heltal inom gränserna, nämnare skilda från noll och vid division en andra täljare skild från noll.",
+  "fractionCalculate": "Beräkna"
 }
