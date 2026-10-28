@@ -730,5 +730,17 @@
   "binaryInput": "Bemenet",
   "binaryLimits": "Szöveg: legfeljebb 5000 UTF-16 kódegység. Bináris bemenet: legfeljebb 135000 karakter és 15000 bájt, szóközzel elválasztott 8 bites csoportokban. Csak érvényes UTF-8; a hibás sorozatokat elutasítja, nem helyettesíti.",
   "binaryConvert": "Átalakítás",
-  "binaryInvalid": "Ellenőrizze az irányt, korlátokat és bemenetet. Használjon érvényes Unicode-szöveget vagy üres karakterekkel elválasztott, pontosan 8 bináris számjegyes csoportokat, amelyek érvényes UTF-8-at kódolnak."
+  "binaryInvalid": "Ellenőrizze az irányt, korlátokat és bemenetet. Használjon érvényes Unicode-szöveget vagy üres karakterekkel elválasztott, pontosan 8 bináris számjegyes csoportokat, amelyek érvényes UTF-8-at kódolnak.",
+  "fractionTitle": "Törtszámológép",
+  "fractionDesc": "Adjon össze, vonjon ki, szorozzon vagy osszon két törtet helyben, pontos egyszerűsített eredménnyel.",
+  "fractionNumerator": "Számláló",
+  "fractionDenominator": "Nevező",
+  "fractionOperation": "Művelet",
+  "fractionAdd": "Összeadás",
+  "fractionSubtract": "Kivonás",
+  "fractionMultiply": "Szorzás",
+  "fractionDivide": "Osztás",
+  "fractionLimits": "Minden számláló/nevező: egész szám −1000000000–1000000000 között. A nevező nem lehet nulla; osztáskor a második tört számlálója sem.",
+  "fractionInvalid": "Adjon meg határokon belüli egész számokat, nem nulla nevezőket és osztáskor nem nulla második számlálót.",
+  "fractionCalculate": "Számítás"
 }

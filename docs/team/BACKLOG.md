@@ -87,4 +87,10 @@ Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, do
 
 | İş | Sahip | Kabul ölçütü | Durum |
 |---|---|---|---|
-| TOOL-009 | Yeni araç geliştirici + içerik + kalite | UTF-8 metin ↔ 8 bit gruplar, Unicode ve girdi sınırları, 50 dil, rehber ve bağımsız testler | Yayın öncesi kontrol noktası; son PR/canlı kanıtı outputs/MINIKIT-TEXT-BINARY-DOGRULAMA.json ve outputs/MINIKIT-DEVAM.md kayıtlarında tutulur. |
+| TOOL-009 | Yeni araç geliştirici + içerik + kalite | UTF-8 metin ↔ 8 bit gruplar, Unicode ve girdi sınırları, 50 dil, rehber ve bağımsız testler | Tamamlandı; PR #48 birleştirildi. 152 birim + 53 dil/SEO + 302 tarayıcı testi ve canlı kontroller geçti. |
+
+## Kesir hesaplayıcı turu — 29 Ekim 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| TOOL-010 | Yeni araç geliştirici + içerik + kalite | İki kesirde dört işlem, tam aritmetik/sadeleştirme, sıfır ve sayı sınırları, 50 dil, rehber ve bağımsız testler | Yayın öncesi kontrol noktası; son PR/canlı kanıtı outputs/MINIKIT-FRACTION-DOGRULAMA.json ve outputs/MINIKIT-DEVAM.md kayıtlarında tutulur. |

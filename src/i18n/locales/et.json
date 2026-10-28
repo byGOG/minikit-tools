@@ -730,5 +730,17 @@
   "binaryInput": "Sisend",
   "binaryLimits": "Tekst: kuni 5000 UTF-16 koodiühikut. Kahendsisend: kuni 135000 märki ja 15000 baiti tühikutega eraldatud 8-bitistes rühmades. Ainult kehtiv UTF-8; vigased jadad lükatakse tagasi, neid ei asendata.",
   "binaryConvert": "Teisenda",
-  "binaryInvalid": "Kontrolli suunda, piire ja sisendit. Kasuta kehtivat Unicode-teksti või tühimärkidega eraldatud täpselt 8 kahendnumbriga rühmi, mis kodeerivad kehtivat UTF-8."
+  "binaryInvalid": "Kontrolli suunda, piire ja sisendit. Kasuta kehtivat Unicode-teksti või tühimärkidega eraldatud täpselt 8 kahendnumbriga rühmi, mis kodeerivad kehtivat UTF-8.",
+  "fractionTitle": "Murdude kalkulaator",
+  "fractionDesc": "Liida, lahuta, korruta või jaga kahte murdu kohapeal täpse taandatud tulemusega.",
+  "fractionNumerator": "Lugeja",
+  "fractionDenominator": "Nimetaja",
+  "fractionOperation": "Tehe",
+  "fractionAdd": "Liida",
+  "fractionSubtract": "Lahuta",
+  "fractionMultiply": "Korruta",
+  "fractionDivide": "Jaga",
+  "fractionLimits": "Iga lugeja/nimetaja: täisarvud −1000000000–1000000000. Nimetajad ei tohi olla null; jagamisel ei tohi teise murru lugeja olla null.",
+  "fractionInvalid": "Sisesta piirides täisarvud, nullist erinevad nimetajad ja jagamisel nullist erinev teine lugeja.",
+  "fractionCalculate": "Arvuta"
 }

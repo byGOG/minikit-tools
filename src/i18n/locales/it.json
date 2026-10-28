@@ -730,5 +730,17 @@
   "binaryInput": "Input",
   "binaryLimits": "Testo: massimo 5000 unità di codice UTF-16. Binario: massimo 135000 caratteri e 15000 byte in gruppi di 8 bit separati da spazi. Solo UTF-8 valido; le sequenze errate vengono rifiutate, non sostituite.",
   "binaryConvert": "Converti",
-  "binaryInvalid": "Controlla direzione, limiti e input. Usa testo Unicode valido o gruppi di esattamente 8 cifre binarie separati da spazi bianchi che codificano UTF-8 valido."
+  "binaryInvalid": "Controlla direzione, limiti e input. Usa testo Unicode valido o gruppi di esattamente 8 cifre binarie separati da spazi bianchi che codificano UTF-8 valido.",
+  "fractionTitle": "Calcolatrice di frazioni",
+  "fractionDesc": "Somma, sottrai, moltiplica o dividi due frazioni localmente con un risultato esatto semplificato.",
+  "fractionNumerator": "Numeratore",
+  "fractionDenominator": "Denominatore",
+  "fractionOperation": "Operazione",
+  "fractionAdd": "Somma",
+  "fractionSubtract": "Sottrai",
+  "fractionMultiply": "Moltiplica",
+  "fractionDivide": "Dividi",
+  "fractionLimits": "Ogni numeratore/denominatore: interi −1000000000–1000000000. I denominatori non possono essere zero; nella divisione neppure il numeratore della seconda frazione.",
+  "fractionInvalid": "Inserisci interi nei limiti, denominatori diversi da zero e, nella divisione, un secondo numeratore diverso da zero.",
+  "fractionCalculate": "Calcola"
 }

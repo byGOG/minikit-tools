@@ -730,5 +730,17 @@
   "binaryInput": "Unos",
   "binaryLimits": "Tekst: do 5000 UTF-16 kodnih jedinica. Binarni unos: do 135000 znakova i 15000 bajtova u 8-bitnim skupinama s razmacima. Samo valjani UTF-8; nevaljani nizovi se odbijaju, ne zamjenjuju.",
   "binaryConvert": "Pretvori",
-  "binaryInvalid": "Provjerite smjer, granice i unos. Upotrijebite valjani Unicode tekst ili skupine od točno 8 binarnih znamenki odvojene bjelinama koje kodiraju valjani UTF-8."
+  "binaryInvalid": "Provjerite smjer, granice i unos. Upotrijebite valjani Unicode tekst ili skupine od točno 8 binarnih znamenki odvojene bjelinama koje kodiraju valjani UTF-8.",
+  "fractionTitle": "Kalkulator razlomaka",
+  "fractionDesc": "Lokalno zbrojite, oduzmite, pomnožite ili podijelite dva razlomka s točnim skraćenim rezultatom.",
+  "fractionNumerator": "Brojnik",
+  "fractionDenominator": "Nazivnik",
+  "fractionOperation": "Operacija",
+  "fractionAdd": "Zbroji",
+  "fractionSubtract": "Oduzmi",
+  "fractionMultiply": "Pomnoži",
+  "fractionDivide": "Podijeli",
+  "fractionLimits": "Svaki brojnik/nazivnik: cijeli brojevi −1000000000–1000000000. Nazivnici ne smiju biti nula; pri dijeljenju ni brojnik drugog razlomka.",
+  "fractionInvalid": "Unesite cijele brojeve u granicama, nenulte nazivnike i pri dijeljenju nenulti drugi brojnik.",
+  "fractionCalculate": "Izračunaj"
 }

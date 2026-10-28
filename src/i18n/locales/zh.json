@@ -730,5 +730,17 @@
   "binaryInput": "输入",
   "binaryLimits": "文本：最多 5000 个 UTF-16 代码单元。二进制输入：空白分隔的 8 位组，最多 135000 个字符和 15000 字节。仅支持有效 UTF-8；无效序列将被拒绝，不会替换。",
   "binaryConvert": "转换",
-  "binaryInvalid": "请检查方向、限制和输入。使用有效 Unicode 文本，或空白分隔的恰好 8 位二进制数字组，且须表示有效 UTF-8。"
+  "binaryInvalid": "请检查方向、限制和输入。使用有效 Unicode 文本，或空白分隔的恰好 8 位二进制数字组，且须表示有效 UTF-8。",
+  "fractionTitle": "分数计算器",
+  "fractionDesc": "在本地对两个分数进行加减乘除，得到精确的最简结果。",
+  "fractionNumerator": "分子",
+  "fractionDenominator": "分母",
+  "fractionOperation": "运算",
+  "fractionAdd": "加",
+  "fractionSubtract": "减",
+  "fractionMultiply": "乘",
+  "fractionDivide": "除",
+  "fractionLimits": "每个分子/分母：−1000000000–1000000000 的整数。分母不能为 0；除法中第二个分数的分子也不能为 0。",
+  "fractionInvalid": "请输入范围内的整数、非零分母；除法还需第二个分子非零。",
+  "fractionCalculate": "计算"
 }

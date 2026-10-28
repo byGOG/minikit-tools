@@ -730,5 +730,17 @@
   "binaryInput": "Girdi",
   "binaryLimits": "Metin: en fazla 5000 UTF-16 kod birimi. İkili girdi: boşlukla ayrılmış 8 bitlik gruplarda en fazla 135000 karakter ve 15000 bayt. Yalnız geçerli UTF-8; hatalı diziler değiştirilmeden reddedilir.",
   "binaryConvert": "Dönüştür",
-  "binaryInvalid": "Yönü, sınırları ve girdiyi kontrol et. Geçerli Unicode metin veya geçerli UTF-8 kodlayan, boşlukla ayrılmış tam 8 ikili basamaklı gruplar kullan."
+  "binaryInvalid": "Yönü, sınırları ve girdiyi kontrol et. Geçerli Unicode metin veya geçerli UTF-8 kodlayan, boşlukla ayrılmış tam 8 ikili basamaklı gruplar kullan.",
+  "fractionTitle": "Kesir hesaplayıcı",
+  "fractionDesc": "İki kesri yerel olarak topla, çıkar, çarp veya böl; tam ve sadeleştirilmiş sonuç al.",
+  "fractionNumerator": "Pay",
+  "fractionDenominator": "Payda",
+  "fractionOperation": "İşlem",
+  "fractionAdd": "Topla",
+  "fractionSubtract": "Çıkar",
+  "fractionMultiply": "Çarp",
+  "fractionDivide": "Böl",
+  "fractionLimits": "Her pay/payda: −1000000000–1000000000 arası tam sayı. Paydalar sıfır olamaz; bölmede ikinci kesrin payı da sıfır olamaz.",
+  "fractionInvalid": "Sınırlar içinde tam sayılar, sıfır olmayan paydalar ve bölmede sıfır olmayan ikinci pay gir.",
+  "fractionCalculate": "Hesapla"
 }

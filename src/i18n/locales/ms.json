@@ -730,5 +730,17 @@
   "binaryInput": "Input",
   "binaryLimits": "Teks: sehingga 5000 unit kod UTF-16. Binari: sehingga 135000 aksara dan 15000 bait dalam kumpulan 8-bit dipisahkan ruang. UTF-8 sah sahaja; jujukan tidak sah ditolak, bukan diganti.",
   "binaryConvert": "Tukar",
-  "binaryInvalid": "Semak arah, had dan input. Gunakan teks Unicode sah atau kumpulan tepat 8 digit binari dipisahkan ruang putih yang mengekod UTF-8 sah."
+  "binaryInvalid": "Semak arah, had dan input. Gunakan teks Unicode sah atau kumpulan tepat 8 digit binari dipisahkan ruang putih yang mengekod UTF-8 sah.",
+  "fractionTitle": "Kalkulator pecahan",
+  "fractionDesc": "Tambah, tolak, darab atau bahagi dua pecahan secara setempat dengan hasil tepat yang dipermudah.",
+  "fractionNumerator": "Pengangka",
+  "fractionDenominator": "Penyebut",
+  "fractionOperation": "Operasi",
+  "fractionAdd": "Tambah",
+  "fractionSubtract": "Tolak",
+  "fractionMultiply": "Darab",
+  "fractionDivide": "Bahagi",
+  "fractionLimits": "Setiap pengangka/penyebut: integer −1000000000–1000000000. Penyebut tidak boleh sifar; bagi pembahagian, pengangka pecahan kedua juga tidak boleh sifar.",
+  "fractionInvalid": "Masukkan integer dalam had, penyebut bukan sifar dan, bagi pembahagian, pengangka kedua bukan sifar.",
+  "fractionCalculate": "Kira"
 }

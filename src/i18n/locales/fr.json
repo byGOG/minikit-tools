@@ -730,5 +730,17 @@
   "binaryInput": "Entrée",
   "binaryLimits": "Texte : jusqu’à 5000 unités de code UTF-16. Binaire : jusqu’à 135000 caractères et 15000 octets en groupes de 8 bits séparés par des espaces. UTF-8 valide uniquement ; les séquences invalides sont rejetées, pas remplacées.",
   "binaryConvert": "Convertir",
-  "binaryInvalid": "Vérifiez sens, limites et entrée. Utilisez du texte Unicode valide ou des groupes d’exactement 8 chiffres binaires séparés par des blancs encodant de l’UTF-8 valide."
+  "binaryInvalid": "Vérifiez sens, limites et entrée. Utilisez du texte Unicode valide ou des groupes d’exactement 8 chiffres binaires séparés par des blancs encodant de l’UTF-8 valide.",
+  "fractionTitle": "Calculatrice de fractions",
+  "fractionDesc": "Additionnez, soustrayez, multipliez ou divisez deux fractions localement avec un résultat exact simplifié.",
+  "fractionNumerator": "Numérateur",
+  "fractionDenominator": "Dénominateur",
+  "fractionOperation": "Opération",
+  "fractionAdd": "Additionner",
+  "fractionSubtract": "Soustraire",
+  "fractionMultiply": "Multiplier",
+  "fractionDivide": "Diviser",
+  "fractionLimits": "Chaque numérateur/dénominateur : entiers −1000000000–1000000000. Dénominateurs non nuls ; pour une division, le numérateur de la deuxième fraction doit aussi être non nul.",
+  "fractionInvalid": "Saisissez des entiers dans les limites, des dénominateurs non nuls et, pour une division, un deuxième numérateur non nul.",
+  "fractionCalculate": "Calculer"
 }

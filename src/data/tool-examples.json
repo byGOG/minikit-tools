@@ -230,5 +230,9 @@
   "text-binary-converter": [
     "A",
     "01000001"
+  ],
+  "fraction-calculator": [
+    "1/2 + 1/3",
+    "5/6"
   ]
 }
