@@ -1114,5 +1114,17 @@
       "radiusGenerate"
     ],
     "category": "image"
+  },
+  {
+    "slug": "text-binary-converter",
+    "title": "binaryTitle",
+    "desc": "binaryDesc",
+    "anchor": "text-binary-tool",
+    "steps": [
+      "binaryMode",
+      "binaryInput",
+      "binaryConvert"
+    ],
+    "category": "developer"
   }
 ]

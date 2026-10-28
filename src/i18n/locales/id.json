@@ -721,5 +721,14 @@
   "radiusLimits": "Semua sudut: bilangan bulat 0–200 px, termasuk batas. Peramban dapat mengecilkan radius besar atau tumpang tindih agar sesuai bentuk.",
   "radiusGenerate": "Buat CSS",
   "radiusPreview": "Pratinjau sudut",
-  "radiusInvalid": "Masukkan bilangan bulat 0–200 untuk setiap sudut."
+  "radiusInvalid": "Masukkan bilangan bulat 0–200 untuk setiap sudut.",
+  "binaryTitle": "Konverter teks UTF-8 dan biner",
+  "binaryDesc": "Ubah teks Unicode menjadi kelompok byte UTF-8 8-bit dan sebaliknya secara lokal.",
+  "binaryMode": "Arah konversi",
+  "binaryEncode": "Teks ke biner",
+  "binaryDecode": "Biner ke teks",
+  "binaryInput": "Masukan",
+  "binaryLimits": "Teks: maksimal 5000 unit kode UTF-16. Biner: maksimal 135000 karakter dan 15000 byte dalam kelompok 8-bit dipisahkan spasi. Hanya UTF-8 valid; urutan tidak valid ditolak, bukan diganti.",
+  "binaryConvert": "Konversi",
+  "binaryInvalid": "Periksa arah, batas dan masukan. Gunakan teks Unicode valid atau kelompok tepat 8 digit biner dipisahkan whitespace yang menyandi UTF-8 valid."
 }

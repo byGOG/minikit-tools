@@ -721,5 +721,14 @@
   "radiusLimits": "All corners: whole numbers 0–200 px, inclusive. The browser may scale large or overlapping radii to fit the shape.",
   "radiusGenerate": "Generate CSS",
   "radiusPreview": "Corner preview",
-  "radiusInvalid": "Enter a whole number from 0 to 200 for every corner."
+  "radiusInvalid": "Enter a whole number from 0 to 200 for every corner.",
+  "binaryTitle": "UTF-8 text to binary converter",
+  "binaryDesc": "Convert Unicode text to 8-bit UTF-8 byte groups and back locally.",
+  "binaryMode": "Conversion direction",
+  "binaryEncode": "Text to binary",
+  "binaryDecode": "Binary to text",
+  "binaryInput": "Input",
+  "binaryLimits": "Text: up to 5000 UTF-16 code units. Binary input: up to 135000 characters and 15000 bytes in space-separated 8-bit groups. Valid UTF-8 only; invalid sequences are rejected, not replaced.",
+  "binaryConvert": "Convert",
+  "binaryInvalid": "Check the direction, limits and input. Use valid Unicode text or whitespace-separated groups of exactly 8 binary digits encoding valid UTF-8."
 }

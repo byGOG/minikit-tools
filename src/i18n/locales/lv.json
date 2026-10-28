@@ -721,5 +721,14 @@
   "radiusLimits": "Visi stūri: veseli skaitļi 0–200 px ieskaitot. Pārlūks var samazināt lielus vai pārklājošus rādiusus, lai tie ietilptu formā.",
   "radiusGenerate": "Ģenerēt CSS",
   "radiusPreview": "Stūru priekšskatījums",
-  "radiusInvalid": "Katram stūrim ievadiet veselu skaitli 0–200."
+  "radiusInvalid": "Katram stūrim ievadiet veselu skaitli 0–200.",
+  "binaryTitle": "UTF-8 teksta un binārā koda pārveidotājs",
+  "binaryDesc": "Lokāli pārveidojiet Unicode tekstu 8 bitu UTF-8 baitu grupās un otrādi.",
+  "binaryMode": "Pārveidošanas virziens",
+  "binaryEncode": "Teksts uz bināro kodu",
+  "binaryDecode": "Binārais kods uz tekstu",
+  "binaryInput": "Ievade",
+  "binaryLimits": "Teksts: līdz 5000 UTF-16 koda vienībām. Binārā ievade: līdz 135000 rakstzīmēm un 15000 baitiem ar atstarpēm atdalītās 8 bitu grupās. Tikai derīgs UTF-8; nederīgas secības noraida, neaizstāj.",
+  "binaryConvert": "Pārveidot",
+  "binaryInvalid": "Pārbaudiet virzienu, robežas un ievadi. Lietojiet derīgu Unicode tekstu vai tieši 8 bināro ciparu grupas, kas atdalītas ar tukšumzīmēm un kodē derīgu UTF-8."
 }

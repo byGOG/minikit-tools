@@ -721,5 +721,14 @@
   "radiusLimits": "Pembe zote: nambari kamili 0–200 px, mipaka ikiwemo. Kivinjari kinaweza kupunguza thamani kubwa au zinazoingiliana ili zitoshee umbo.",
   "radiusGenerate": "Unda CSS",
   "radiusPreview": "Hakikisho la pembe",
-  "radiusInvalid": "Weka nambari kamili kutoka 0 hadi 200 kwa kila pembe."
+  "radiusInvalid": "Weka nambari kamili kutoka 0 hadi 200 kwa kila pembe.",
+  "binaryTitle": "Kibadilishaji cha maandishi UTF-8 na binari",
+  "binaryDesc": "Badilisha maandishi ya Unicode kuwa makundi ya baiti za UTF-8 za biti 8 na kurudi kwenye kifaa.",
+  "binaryMode": "Mwelekeo wa ubadilishaji",
+  "binaryEncode": "Maandishi kwenda binari",
+  "binaryDecode": "Binari kwenda maandishi",
+  "binaryInput": "Ingizo",
+  "binaryLimits": "Maandishi: hadi vitengo 5000 vya msimbo UTF-16. Binari: hadi vibambo 135000 na baiti 15000 katika makundi ya biti 8 yenye nafasi. UTF-8 halali pekee; mifululizo batili hukataliwa, haibadilishwi.",
+  "binaryConvert": "Badilisha",
+  "binaryInvalid": "Kagua mwelekeo, mipaka na ingizo. Tumia maandishi halali ya Unicode au makundi ya tarakimu 8 za binari hasa, yaliyotenganishwa kwa nafasi, yanayowakilisha UTF-8 halali."
 }

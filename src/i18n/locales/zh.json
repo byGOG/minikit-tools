@@ -721,5 +721,14 @@
   "radiusLimits": "所有角均为 0–200 px 的整数，包含两端。浏览器可能缩小过大或重叠的半径，使其适合形状。",
   "radiusGenerate": "生成 CSS",
   "radiusPreview": "圆角预览",
-  "radiusInvalid": "请为每个角输入 0–200 的整数。"
+  "radiusInvalid": "请为每个角输入 0–200 的整数。",
+  "binaryTitle": "UTF-8 文本与二进制转换器",
+  "binaryDesc": "在本地将 Unicode 文本转换为 8 位 UTF-8 字节组，或反向转换。",
+  "binaryMode": "转换方向",
+  "binaryEncode": "文本转二进制",
+  "binaryDecode": "二进制转文本",
+  "binaryInput": "输入",
+  "binaryLimits": "文本：最多 5000 个 UTF-16 代码单元。二进制输入：空白分隔的 8 位组，最多 135000 个字符和 15000 字节。仅支持有效 UTF-8；无效序列将被拒绝，不会替换。",
+  "binaryConvert": "转换",
+  "binaryInvalid": "请检查方向、限制和输入。使用有效 Unicode 文本，或空白分隔的恰好 8 位二进制数字组，且须表示有效 UTF-8。"
 }

@@ -226,5 +226,9 @@
   "css-border-radius-generator": [
     "16px · 32px · 48px · 0px",
     "border-radius: 16px 32px 48px 0px;"
+  ],
+  "text-binary-converter": [
+    "A",
+    "01000001"
   ]
 }

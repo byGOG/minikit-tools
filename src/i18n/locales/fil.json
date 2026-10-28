@@ -721,5 +721,14 @@
   "radiusLimits": "Lahat ng sulok: buong bilang 0–200 px, kasama ang mga hangganan. Maaaring paliitin ng browser ang malalaki o magkapatong na radius upang magkasya sa hugis.",
   "radiusGenerate": "Bumuo ng CSS",
   "radiusPreview": "Preview ng mga sulok",
-  "radiusInvalid": "Maglagay ng buong bilang mula 0 hanggang 200 para sa bawat sulok."
+  "radiusInvalid": "Maglagay ng buong bilang mula 0 hanggang 200 para sa bawat sulok.",
+  "binaryTitle": "Tagapagpalit ng UTF-8 na teksto at binary",
+  "binaryDesc": "I-convert nang lokal ang Unicode na teksto sa 8-bit na UTF-8 byte group at pabalik.",
+  "binaryMode": "Direksiyon ng conversion",
+  "binaryEncode": "Teksto sa binary",
+  "binaryDecode": "Binary sa teksto",
+  "binaryInput": "Input",
+  "binaryLimits": "Teksto: hanggang 5000 UTF-16 code unit. Binary: hanggang 135000 character at 15000 byte sa 8-bit na grupong may pagitan. Wastong UTF-8 lang; tinatanggihan ang maling sequence, hindi pinapalitan.",
+  "binaryConvert": "I-convert",
+  "binaryInvalid": "Suriin ang direksiyon, limitasyon at input. Gumamit ng wastong Unicode na teksto o grupong may eksaktong 8 binary digit na pinaghiwalay ng whitespace at kumakatawan sa wastong UTF-8."
 }

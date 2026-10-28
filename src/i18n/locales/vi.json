@@ -721,5 +721,14 @@
   "radiusLimits": "Mọi góc: số nguyên 0–200 px, gồm cả hai đầu. Trình duyệt có thể giảm bán kính lớn hoặc chồng lấn để vừa hình dạng.",
   "radiusGenerate": "Tạo CSS",
   "radiusPreview": "Xem trước góc",
-  "radiusInvalid": "Nhập số nguyên từ 0 đến 200 cho mỗi góc."
+  "radiusInvalid": "Nhập số nguyên từ 0 đến 200 cho mỗi góc.",
+  "binaryTitle": "Chuyển đổi văn bản UTF-8 và nhị phân",
+  "binaryDesc": "Chuyển đổi cục bộ văn bản Unicode sang nhóm byte UTF-8 8 bit và ngược lại.",
+  "binaryMode": "Chiều chuyển đổi",
+  "binaryEncode": "Văn bản sang nhị phân",
+  "binaryDecode": "Nhị phân sang văn bản",
+  "binaryInput": "Đầu vào",
+  "binaryLimits": "Văn bản: tối đa 5000 đơn vị mã UTF-16. Nhị phân: tối đa 135000 ký tự và 15000 byte trong nhóm 8 bit cách nhau bằng khoảng trắng. Chỉ UTF-8 hợp lệ; chuỗi sai bị từ chối, không thay thế.",
+  "binaryConvert": "Chuyển đổi",
+  "binaryInvalid": "Kiểm tra chiều, giới hạn và đầu vào. Dùng văn bản Unicode hợp lệ hoặc nhóm đúng 8 chữ số nhị phân, tách bằng khoảng trắng và mã hóa UTF-8 hợp lệ."
 }

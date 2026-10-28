@@ -721,5 +721,14 @@
   "radiusLimits": "Tutti gli angoli: interi 0–200 px, estremi inclusi. Il browser può ridurre raggi grandi o sovrapposti per adattarli alla forma.",
   "radiusGenerate": "Genera CSS",
   "radiusPreview": "Anteprima degli angoli",
-  "radiusInvalid": "Inserisci un intero da 0 a 200 per ogni angolo."
+  "radiusInvalid": "Inserisci un intero da 0 a 200 per ogni angolo.",
+  "binaryTitle": "Convertitore di testo UTF-8 e binario",
+  "binaryDesc": "Converti localmente testo Unicode in gruppi di byte UTF-8 da 8 bit e viceversa.",
+  "binaryMode": "Direzione della conversione",
+  "binaryEncode": "Testo in binario",
+  "binaryDecode": "Binario in testo",
+  "binaryInput": "Input",
+  "binaryLimits": "Testo: massimo 5000 unità di codice UTF-16. Binario: massimo 135000 caratteri e 15000 byte in gruppi di 8 bit separati da spazi. Solo UTF-8 valido; le sequenze errate vengono rifiutate, non sostituite.",
+  "binaryConvert": "Converti",
+  "binaryInvalid": "Controlla direzione, limiti e input. Usa testo Unicode valido o gruppi di esattamente 8 cifre binarie separati da spazi bianchi che codificano UTF-8 valido."
 }
