@@ -721,5 +721,14 @@
   "radiusLimits": "Kõik nurgad: täisarvud 0–200 px, piirid kaasa arvatud. Brauser võib suuri või kattuvaid raadiuseid kuju järgi vähendada.",
   "radiusGenerate": "Loo CSS",
   "radiusPreview": "Nurkade eelvaade",
-  "radiusInvalid": "Sisesta iga nurga jaoks täisarv 0–200."
+  "radiusInvalid": "Sisesta iga nurga jaoks täisarv 0–200.",
+  "binaryTitle": "UTF-8 teksti ja kahendkoodi teisendaja",
+  "binaryDesc": "Teisenda Unicode-tekst kohapeal 8-bitisteks UTF-8 baidirühmadeks ja tagasi.",
+  "binaryMode": "Teisenduse suund",
+  "binaryEncode": "Tekst kahendkoodiks",
+  "binaryDecode": "Kahendkood tekstiks",
+  "binaryInput": "Sisend",
+  "binaryLimits": "Tekst: kuni 5000 UTF-16 koodiühikut. Kahendsisend: kuni 135000 märki ja 15000 baiti tühikutega eraldatud 8-bitistes rühmades. Ainult kehtiv UTF-8; vigased jadad lükatakse tagasi, neid ei asendata.",
+  "binaryConvert": "Teisenda",
+  "binaryInvalid": "Kontrolli suunda, piire ja sisendit. Kasuta kehtivat Unicode-teksti või tühimärkidega eraldatud täpselt 8 kahendnumbriga rühmi, mis kodeerivad kehtivat UTF-8."
 }

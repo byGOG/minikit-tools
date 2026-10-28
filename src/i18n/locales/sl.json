@@ -721,5 +721,14 @@
   "radiusLimits": "Vsi koti: cela števila 0–200 px vključno. Brskalnik lahko velike ali prekrivajoče se polmere zmanjša, da ustrezajo obliki.",
   "radiusGenerate": "Ustvari CSS",
   "radiusPreview": "Predogled kotov",
-  "radiusInvalid": "Za vsak kot vnesite celo število od 0 do 200."
+  "radiusInvalid": "Za vsak kot vnesite celo število od 0 do 200.",
+  "binaryTitle": "Pretvornik besedila UTF-8 in binarnega zapisa",
+  "binaryDesc": "Lokalno pretvorite besedilo Unicode v 8-bitne skupine bajtov UTF-8 in obratno.",
+  "binaryMode": "Smer pretvorbe",
+  "binaryEncode": "Besedilo v binarni zapis",
+  "binaryDecode": "Binarni zapis v besedilo",
+  "binaryInput": "Vnos",
+  "binaryLimits": "Besedilo: do 5000 kodnih enot UTF-16. Binarni vnos: do 135000 znakov in 15000 bajtov v 8-bitnih skupinah s presledki. Samo veljaven UTF-8; neveljavna zaporedja so zavrnjena, ne zamenjana.",
+  "binaryConvert": "Pretvori",
+  "binaryInvalid": "Preverite smer, omejitve in vnos. Uporabite veljavno besedilo Unicode ali skupine natanko 8 binarnih števk, ločene z belimi znaki, ki kodirajo veljaven UTF-8."
 }

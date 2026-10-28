@@ -721,5 +721,14 @@
   "radiusLimits": "Semua bucu: nombor bulat 0–200 px, termasuk sempadan. Pelayar mungkin mengecilkan jejari besar atau bertindih supaya muat pada bentuk.",
   "radiusGenerate": "Jana CSS",
   "radiusPreview": "Pratonton bucu",
-  "radiusInvalid": "Masukkan nombor bulat 0–200 untuk setiap bucu."
+  "radiusInvalid": "Masukkan nombor bulat 0–200 untuk setiap bucu.",
+  "binaryTitle": "Penukar teks UTF-8 dan binari",
+  "binaryDesc": "Tukar teks Unicode kepada kumpulan bait UTF-8 8-bit dan sebaliknya secara setempat.",
+  "binaryMode": "Arah penukaran",
+  "binaryEncode": "Teks kepada binari",
+  "binaryDecode": "Binari kepada teks",
+  "binaryInput": "Input",
+  "binaryLimits": "Teks: sehingga 5000 unit kod UTF-16. Binari: sehingga 135000 aksara dan 15000 bait dalam kumpulan 8-bit dipisahkan ruang. UTF-8 sah sahaja; jujukan tidak sah ditolak, bukan diganti.",
+  "binaryConvert": "Tukar",
+  "binaryInvalid": "Semak arah, had dan input. Gunakan teks Unicode sah atau kumpulan tepat 8 digit binari dipisahkan ruang putih yang mengekod UTF-8 sah."
 }

@@ -721,5 +721,14 @@
   "radiusLimits": "Alle Ecken: ganze Zahlen 0–200 px einschließlich. Der Browser kann große oder überlappende Radien an die Form anpassen.",
   "radiusGenerate": "CSS erstellen",
   "radiusPreview": "Eckenvorschau",
-  "radiusInvalid": "Gib für jede Ecke eine ganze Zahl von 0 bis 200 ein."
+  "radiusInvalid": "Gib für jede Ecke eine ganze Zahl von 0 bis 200 ein.",
+  "binaryTitle": "UTF-8-Text-Binär-Konverter",
+  "binaryDesc": "Wandle Unicode-Text lokal in 8-Bit-UTF-8-Bytegruppen und zurück um.",
+  "binaryMode": "Umwandlungsrichtung",
+  "binaryEncode": "Text in Binär",
+  "binaryDecode": "Binär in Text",
+  "binaryInput": "Eingabe",
+  "binaryLimits": "Text: bis zu 5000 UTF-16-Codeeinheiten. Binäreingabe: bis zu 135000 Zeichen und 15000 Bytes in durch Leerraum getrennten 8-Bit-Gruppen. Nur gültiges UTF-8; ungültige Folgen werden abgelehnt, nicht ersetzt.",
+  "binaryConvert": "Umwandeln",
+  "binaryInvalid": "Prüfe Richtung, Grenzen und Eingabe. Verwende gültigen Unicode-Text oder durch Leerraum getrennte Gruppen aus genau 8 Binärziffern, die gültiges UTF-8 codieren."
 }

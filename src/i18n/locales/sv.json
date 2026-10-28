@@ -721,5 +721,14 @@
   "radiusLimits": "Alla hörn: heltal 0–200 px inklusive. Webbläsaren kan skala ned stora eller överlappande radier för att passa formen.",
   "radiusGenerate": "Generera CSS",
   "radiusPreview": "Förhandsvisning av hörn",
-  "radiusInvalid": "Ange ett heltal från 0 till 200 för varje hörn."
+  "radiusInvalid": "Ange ett heltal från 0 till 200 för varje hörn.",
+  "binaryTitle": "Konverterare för UTF-8-text och binärt",
+  "binaryDesc": "Omvandla Unicode-text lokalt till 8-bitars UTF-8-bytegrupper och tillbaka.",
+  "binaryMode": "Omvandlingsriktning",
+  "binaryEncode": "Text till binärt",
+  "binaryDecode": "Binärt till text",
+  "binaryInput": "Indata",
+  "binaryLimits": "Text: högst 5000 UTF-16-kodenheter. Binärt: högst 135000 tecken och 15000 byte i 8-bitars grupper med mellanslag. Endast giltig UTF-8; ogiltiga sekvenser avvisas, inte ersätts.",
+  "binaryConvert": "Omvandla",
+  "binaryInvalid": "Kontrollera riktning, gränser och indata. Använd giltig Unicode-text eller grupper med exakt 8 binära siffror, skilda med blanktecken, som kodar giltig UTF-8."
 }

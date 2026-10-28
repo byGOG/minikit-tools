@@ -721,5 +721,14 @@
   "radiusLimits": "Minden sarok: egész számok 0–200 px között, a határokkal együtt. A böngésző a nagy vagy átfedő sugarakat az alakzathoz igazítva csökkentheti.",
   "radiusGenerate": "CSS létrehozása",
   "radiusPreview": "Sarkok előnézete",
-  "radiusInvalid": "Adjon meg minden sarokhoz 0–200 közötti egész számot."
+  "radiusInvalid": "Adjon meg minden sarokhoz 0–200 közötti egész számot.",
+  "binaryTitle": "UTF-8 szöveg és bináris átalakító",
+  "binaryDesc": "Alakítsa át helyben a Unicode-szöveget 8 bites UTF-8 bájtcsoportokká és vissza.",
+  "binaryMode": "Átalakítás iránya",
+  "binaryEncode": "Szöveg binárissá",
+  "binaryDecode": "Bináris szöveggé",
+  "binaryInput": "Bemenet",
+  "binaryLimits": "Szöveg: legfeljebb 5000 UTF-16 kódegység. Bináris bemenet: legfeljebb 135000 karakter és 15000 bájt, szóközzel elválasztott 8 bites csoportokban. Csak érvényes UTF-8; a hibás sorozatokat elutasítja, nem helyettesíti.",
+  "binaryConvert": "Átalakítás",
+  "binaryInvalid": "Ellenőrizze az irányt, korlátokat és bemenetet. Használjon érvényes Unicode-szöveget vagy üres karakterekkel elválasztott, pontosan 8 bináris számjegyes csoportokat, amelyek érvényes UTF-8-at kódolnak."
 }

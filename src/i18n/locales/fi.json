@@ -721,5 +721,14 @@
   "radiusLimits": "Kaikki kulmat: kokonaisluvut 0–200 px, rajat mukaan lukien. Selain voi pienentää suuria tai päällekkäisiä säteitä muotoon sopiviksi.",
   "radiusGenerate": "Luo CSS",
   "radiusPreview": "Kulmien esikatselu",
-  "radiusInvalid": "Anna jokaiselle kulmalle kokonaisluku 0–200."
+  "radiusInvalid": "Anna jokaiselle kulmalle kokonaisluku 0–200.",
+  "binaryTitle": "UTF-8-tekstin ja binäärin muunnin",
+  "binaryDesc": "Muunna Unicode-teksti paikallisesti 8-bittisiksi UTF-8-tavuryhmiksi ja takaisin.",
+  "binaryMode": "Muunnossuunta",
+  "binaryEncode": "Teksti binääriksi",
+  "binaryDecode": "Binääri tekstiksi",
+  "binaryInput": "Syöte",
+  "binaryLimits": "Teksti: enintään 5000 UTF-16-koodiyksikköä. Binäärisyöte: enintään 135000 merkkiä ja 15000 tavua välilyönnein erotettuina 8 bitin ryhminä. Vain kelvollinen UTF-8; virheelliset jaksot hylätään, ei korvata.",
+  "binaryConvert": "Muunna",
+  "binaryInvalid": "Tarkista suunta, rajat ja syöte. Käytä kelvollista Unicode-tekstiä tai tyhjemerkein erotettuja täsmälleen 8 binäärinumeron ryhmiä, jotka koodaavat kelvollista UTF-8:aa."
 }

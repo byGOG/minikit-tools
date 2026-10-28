@@ -721,5 +721,14 @@
   "radiusLimits": "Alle hoeken: gehele getallen 0–200 px, inclusief grenzen. De browser kan grote of overlappende stralen verkleinen zodat ze in de vorm passen.",
   "radiusGenerate": "CSS genereren",
   "radiusPreview": "Hoekvoorbeeld",
-  "radiusInvalid": "Voer voor elke hoek een geheel getal van 0 tot 200 in."
+  "radiusInvalid": "Voer voor elke hoek een geheel getal van 0 tot 200 in.",
+  "binaryTitle": "UTF-8-tekst-binaire converter",
+  "binaryDesc": "Zet Unicode-tekst lokaal om naar 8-bits UTF-8-bytegroepen en terug.",
+  "binaryMode": "Omzettingsrichting",
+  "binaryEncode": "Tekst naar binair",
+  "binaryDecode": "Binair naar tekst",
+  "binaryInput": "Invoer",
+  "binaryLimits": "Tekst: maximaal 5000 UTF-16-code-eenheden. Binair: maximaal 135000 tekens en 15000 bytes in 8-bits groepen met spaties. Alleen geldige UTF-8; ongeldige reeksen worden geweigerd, niet vervangen.",
+  "binaryConvert": "Omzetten",
+  "binaryInvalid": "Controleer richting, grenzen en invoer. Gebruik geldige Unicode-tekst of door witruimte gescheiden groepen van precies 8 binaire cijfers die geldige UTF-8 coderen."
 }

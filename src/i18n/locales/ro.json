@@ -721,5 +721,14 @@
   "radiusLimits": "Toate colțurile: întregi 0–200 px, inclusiv limitele. Browserul poate micșora razele mari sau suprapuse pentru a încăpea în formă.",
   "radiusGenerate": "Generează CSS",
   "radiusPreview": "Previzualizarea colțurilor",
-  "radiusInvalid": "Introdu un întreg de la 0 la 200 pentru fiecare colț."
+  "radiusInvalid": "Introdu un întreg de la 0 la 200 pentru fiecare colț.",
+  "binaryTitle": "Convertor de text UTF-8 și binar",
+  "binaryDesc": "Convertește local text Unicode în grupuri de octeți UTF-8 de 8 biți și invers.",
+  "binaryMode": "Direcția conversiei",
+  "binaryEncode": "Text în binar",
+  "binaryDecode": "Binar în text",
+  "binaryInput": "Intrare",
+  "binaryLimits": "Text: cel mult 5000 de unități de cod UTF-16. Binar: cel mult 135000 de caractere și 15000 de octeți în grupuri de 8 biți separate prin spații. Doar UTF-8 valid; secvențele invalide sunt respinse, nu înlocuite.",
+  "binaryConvert": "Convertește",
+  "binaryInvalid": "Verifică direcția, limitele și intrarea. Folosește text Unicode valid sau grupuri de exact 8 cifre binare separate prin spații albe, care codifică UTF-8 valid."
 }

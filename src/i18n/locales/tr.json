@@ -721,5 +721,14 @@
   "radiusLimits": "Tüm köşeler: sınırlar dâhil 0–200 px tam sayı. Tarayıcı büyük veya birleşen yarıçapları şekle sığdırabilir.",
   "radiusGenerate": "CSS oluştur",
   "radiusPreview": "Köşe önizlemesi",
-  "radiusInvalid": "Her köşe için 0–200 arası tam sayı gir."
+  "radiusInvalid": "Her köşe için 0–200 arası tam sayı gir.",
+  "binaryTitle": "UTF-8 metin ve ikili dönüştürücü",
+  "binaryDesc": "Unicode metni 8 bitlik UTF-8 bayt gruplarına ve tersine yerel olarak dönüştür.",
+  "binaryMode": "Dönüştürme yönü",
+  "binaryEncode": "Metinden ikiliye",
+  "binaryDecode": "İkiliden metne",
+  "binaryInput": "Girdi",
+  "binaryLimits": "Metin: en fazla 5000 UTF-16 kod birimi. İkili girdi: boşlukla ayrılmış 8 bitlik gruplarda en fazla 135000 karakter ve 15000 bayt. Yalnız geçerli UTF-8; hatalı diziler değiştirilmeden reddedilir.",
+  "binaryConvert": "Dönüştür",
+  "binaryInvalid": "Yönü, sınırları ve girdiyi kontrol et. Geçerli Unicode metin veya geçerli UTF-8 kodlayan, boşlukla ayrılmış tam 8 ikili basamaklı gruplar kullan."
 }

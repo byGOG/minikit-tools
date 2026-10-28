@@ -721,5 +721,14 @@
   "radiusLimits": "Alle hoeke: heelgetalle 0–200 px, grense ingesluit. Die blaaier kan groot of oorvleuelende radiusse verklein om te pas.",
   "radiusGenerate": "Skep CSS",
   "radiusPreview": "Hoekvoorskou",
-  "radiusInvalid": "Voer vir elke hoek ’n heelgetal van 0 tot 200 in."
+  "radiusInvalid": "Voer vir elke hoek ’n heelgetal van 0 tot 200 in.",
+  "binaryTitle": "UTF-8-teks na binêr-omskakelaar",
+  "binaryDesc": "Skakel Unicode-teks plaaslik na 8-bis UTF-8-greepgroepe en terug om.",
+  "binaryMode": "Omskakelrigting",
+  "binaryEncode": "Teks na binêr",
+  "binaryDecode": "Binêr na teks",
+  "binaryInput": "Invoer",
+  "binaryLimits": "Teks: tot 5000 UTF-16-kode-eenhede. Binêre invoer: tot 135000 karakters en 15000 grepe in spasiegeskeide 8-bis-groepe. Slegs geldige UTF-8; ongeldige rye word verwerp, nie vervang nie.",
+  "binaryConvert": "Skakel om",
+  "binaryInvalid": "Kontroleer rigting, perke en invoer. Gebruik geldige Unicode-teks of witruimtegeskeide groepe van presies 8 binêre syfers wat geldige UTF-8 kodeer."
 }

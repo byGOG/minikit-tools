@@ -721,5 +721,14 @@
   "radiusLimits": "Visi kampai: sveikieji skaičiai 0–200 px imtinai. Naršyklė gali sumažinti didelius ar persidengiančius spindulius pagal formą.",
   "radiusGenerate": "Kurti CSS",
   "radiusPreview": "Kampų peržiūra",
-  "radiusInvalid": "Kiekvienam kampui įveskite sveikąjį skaičių 0–200."
+  "radiusInvalid": "Kiekvienam kampui įveskite sveikąjį skaičių 0–200.",
+  "binaryTitle": "UTF-8 teksto ir dvejetainio kodo keitiklis",
+  "binaryDesc": "Vietoje konvertuokite Unicode tekstą į 8 bitų UTF-8 baitų grupes ir atgal.",
+  "binaryMode": "Konvertavimo kryptis",
+  "binaryEncode": "Tekstas į dvejetainį kodą",
+  "binaryDecode": "Dvejetainis kodas į tekstą",
+  "binaryInput": "Įvestis",
+  "binaryLimits": "Tekstas: iki 5000 UTF-16 kodo vienetų. Dvejetainė įvestis: iki 135000 ženklų ir 15000 baitų tarpais atskirtose 8 bitų grupėse. Tik galiojantis UTF-8; klaidingos sekos atmetamos, ne pakeičiamos.",
+  "binaryConvert": "Konvertuoti",
+  "binaryInvalid": "Patikrinkite kryptį, ribas ir įvestį. Naudokite galiojantį Unicode tekstą arba tiksliai 8 dvejetainių skaitmenų grupes, atskirtas tarpais ir koduojančias galiojantį UTF-8."
 }

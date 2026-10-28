@@ -721,5 +721,14 @@
   "radiusLimits": "Svi kutovi: cijeli brojevi 0–200 px uključivo. Preglednik može smanjiti velike ili preklapajuće polumjere da stanu u oblik.",
   "radiusGenerate": "Generiraj CSS",
   "radiusPreview": "Pregled kutova",
-  "radiusInvalid": "Unesite cijeli broj od 0 do 200 za svaki kut."
+  "radiusInvalid": "Unesite cijeli broj od 0 do 200 za svaki kut.",
+  "binaryTitle": "Pretvarač UTF-8 teksta i binarnog zapisa",
+  "binaryDesc": "Lokalno pretvorite Unicode tekst u 8-bitne skupine UTF-8 bajtova i obrnuto.",
+  "binaryMode": "Smjer pretvorbe",
+  "binaryEncode": "Tekst u binarni zapis",
+  "binaryDecode": "Binarni zapis u tekst",
+  "binaryInput": "Unos",
+  "binaryLimits": "Tekst: do 5000 UTF-16 kodnih jedinica. Binarni unos: do 135000 znakova i 15000 bajtova u 8-bitnim skupinama s razmacima. Samo valjani UTF-8; nevaljani nizovi se odbijaju, ne zamjenjuju.",
+  "binaryConvert": "Pretvori",
+  "binaryInvalid": "Provjerite smjer, granice i unos. Upotrijebite valjani Unicode tekst ili skupine od točno 8 binarnih znamenki odvojene bjelinama koje kodiraju valjani UTF-8."
 }

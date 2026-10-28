@@ -721,5 +721,14 @@
   "radiusLimits": "모든 모서리: 양 끝을 포함한 0–200 px 정수. 크거나 겹치는 반경은 모양에 맞게 브라우저가 축소할 수 있습니다.",
   "radiusGenerate": "CSS 생성",
   "radiusPreview": "모서리 미리보기",
-  "radiusInvalid": "각 모서리에 0–200의 정수를 입력하세요."
+  "radiusInvalid": "각 모서리에 0–200의 정수를 입력하세요.",
+  "binaryTitle": "UTF-8 텍스트·이진수 변환기",
+  "binaryDesc": "유니코드 텍스트를 8비트 UTF-8 바이트 그룹으로 또는 그 반대로 로컬에서 변환합니다.",
+  "binaryMode": "변환 방향",
+  "binaryEncode": "텍스트를 이진수로",
+  "binaryDecode": "이진수를 텍스트로",
+  "binaryInput": "입력",
+  "binaryLimits": "텍스트: 최대 5000 UTF-16 코드 단위. 이진수: 공백으로 구분한 8비트 그룹, 최대 135000자 및 15000바이트. 유효한 UTF-8만 허용하며 잘못된 시퀀스는 대체하지 않고 거부합니다.",
+  "binaryConvert": "변환",
+  "binaryInvalid": "방향, 제한, 입력을 확인하세요. 유효한 유니코드 텍스트 또는 유효한 UTF-8을 나타내는 공백 구분 8자리 이진수 그룹을 사용하세요."
 }

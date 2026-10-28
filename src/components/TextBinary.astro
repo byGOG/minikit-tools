@@ -1,0 +1,32 @@
+---
+import { Binary, ShieldCheck, ArrowRight } from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const str = (key: string) => (tr as Record<string, string>)[key] ?? key;
+---
+<article class="tool-card text-binary-card" id="text-binary-tool">
+  <div class="card-top"><span class="tool-icon icon-blue"><Binary size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="binaryTitle">{str('binaryTitle')}</h3>
+  <p data-i18n="binaryDesc">{str('binaryDesc')}</p>
+  <div class="binary-options">
+    <label class="field-label" for="binary-mode" data-i18n="binaryMode">{str('binaryMode')}</label>
+    <select class="text-input" id="binary-mode"><option value="encode" data-i18n="binaryEncode">{str('binaryEncode')}</option><option value="decode" data-i18n="binaryDecode">{str('binaryDecode')}</option></select>
+    <label class="field-label" for="binary-input" data-i18n="binaryInput">{str('binaryInput')}</label>
+    <textarea class="text-input textarea" id="binary-input" dir="auto" spellcheck="false" aria-describedby="binary-limits"></textarea>
+    <small class="binary-hint" id="binary-limits" data-i18n="binaryLimits">{str('binaryLimits')}</small>
+  </div>
+  <button class="button-primary full" id="binary-convert" data-i18n="binaryConvert">{str('binaryConvert')}</button>
+  <label class="field-label binary-result-label" for="binary-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="binary-output" readonly dir="ltr" spellcheck="false"></textarea>
+  <p class="tool-feedback" id="binary-feedback" role="status" aria-live="polite"></p>
+  <div class="text-tool-actions"><button class="button-secondary full" id="binary-copy" data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id="binary-clear" data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="text-binary-converter" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
+<style is:global>
+.binary-options{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.binary-options .field-label{margin:0}
+.binary-options select{width:100%;min-width:0}
+.binary-hint{font-size:12px;line-height:1.65;color:#526258}
+.binary-result-label{margin-top:14px}
+.text-binary-card textarea{min-height:150px;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+</style>

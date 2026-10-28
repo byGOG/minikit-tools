@@ -721,5 +721,14 @@
   "radiusLimits": "Wszystkie rogi: liczby całkowite 0–200 px włącznie. Przeglądarka może zmniejszyć duże lub nakładające się promienie, by dopasować je do kształtu.",
   "radiusGenerate": "Generuj CSS",
   "radiusPreview": "Podgląd rogów",
-  "radiusInvalid": "Wpisz liczbę całkowitą od 0 do 200 dla każdego rogu."
+  "radiusInvalid": "Wpisz liczbę całkowitą od 0 do 200 dla każdego rogu.",
+  "binaryTitle": "Konwerter tekstu UTF-8 i kodu binarnego",
+  "binaryDesc": "Zamieniaj lokalnie tekst Unicode na 8-bitowe grupy bajtów UTF-8 i odwrotnie.",
+  "binaryMode": "Kierunek konwersji",
+  "binaryEncode": "Tekst na kod binarny",
+  "binaryDecode": "Kod binarny na tekst",
+  "binaryInput": "Dane wejściowe",
+  "binaryLimits": "Tekst: do 5000 jednostek kodowych UTF-16. Kod binarny: do 135000 znaków i 15000 bajtów w 8-bitowych grupach ze spacjami. Tylko poprawny UTF-8; błędne sekwencje są odrzucane, nie zastępowane.",
+  "binaryConvert": "Konwertuj",
+  "binaryInvalid": "Sprawdź kierunek, limity i dane. Użyj poprawnego tekstu Unicode lub grup dokładnie 8 cyfr binarnych oddzielonych białymi znakami, kodujących poprawny UTF-8."
 }

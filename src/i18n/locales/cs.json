@@ -721,5 +721,14 @@
   "radiusLimits": "Všechny rohy: celá čísla 0–200 px včetně. Prohlížeč může velké či překrývající se poloměry zmenšit podle tvaru.",
   "radiusGenerate": "Vytvořit CSS",
   "radiusPreview": "Náhled rohů",
-  "radiusInvalid": "Zadejte celé číslo od 0 do 200 pro každý roh."
+  "radiusInvalid": "Zadejte celé číslo od 0 do 200 pro každý roh.",
+  "binaryTitle": "Převodník UTF-8 textu a binárního zápisu",
+  "binaryDesc": "Převádějte místně Unicode text na 8bitové skupiny bajtů UTF-8 a zpět.",
+  "binaryMode": "Směr převodu",
+  "binaryEncode": "Text na binární zápis",
+  "binaryDecode": "Binární zápis na text",
+  "binaryInput": "Vstup",
+  "binaryLimits": "Text: nejvýše 5000 kódových jednotek UTF-16. Binární vstup: nejvýše 135000 znaků a 15000 bajtů v 8bitových skupinách s mezerami. Pouze platné UTF-8; neplatné sekvence se odmítají, nenahrazují.",
+  "binaryConvert": "Převést",
+  "binaryInvalid": "Zkontrolujte směr, limity a vstup. Použijte platný Unicode text nebo skupiny přesně 8 binárních číslic oddělené bílými znaky kódující platné UTF-8."
 }

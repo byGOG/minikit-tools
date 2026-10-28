@@ -721,5 +721,14 @@
   "radiusLimits": "各角は0〜200 pxの整数で、両端を含みます。大きな半径や重なる半径は、形状に収まるようブラウザが縮小する場合があります。",
   "radiusGenerate": "CSSを生成",
   "radiusPreview": "角のプレビュー",
-  "radiusInvalid": "各角に0〜200の整数を入力してください。"
+  "radiusInvalid": "各角に0〜200の整数を入力してください。",
+  "binaryTitle": "UTF-8テキスト・バイナリ変換ツール",
+  "binaryDesc": "Unicodeテキストを8ビットのUTF-8バイト列に、またはその逆にローカルで変換します。",
+  "binaryMode": "変換方向",
+  "binaryEncode": "テキストからバイナリ",
+  "binaryDecode": "バイナリからテキスト",
+  "binaryInput": "入力",
+  "binaryLimits": "テキスト：最大5000 UTF-16コード単位。バイナリ入力：空白区切りの8ビット群で最大135000文字、15000バイト。有効なUTF-8のみ対応し、不正な列は置換せず拒否します。",
+  "binaryConvert": "変換",
+  "binaryInvalid": "方向・制限・入力を確認してください。有効なUnicodeテキスト、または有効なUTF-8を表す空白区切りの正確に8桁の2進数群を使用してください。"
 }
