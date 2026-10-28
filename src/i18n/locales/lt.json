@@ -704,5 +704,12 @@
   "shadowLimits": "Sveikieji skaičiai: poslinkis/išplitimas −100–100 px, suliejimas 0–200 px, nepermatomumas 0–100%. HEX spalvos #RGB/#RRGGBB. Dideli šešėliai nukerpami peržiūros rėmu.",
   "shadowGenerate": "Kurti šešėlį",
   "shadowPreview": "Šešėlio peržiūra",
-  "shadowInvalid": "Patikrinkite HEX spalvą ir sveikųjų skaičių ribas: poslinkis/išplitimas −100–100, suliejimas 0–200, nepermatomumas 0–100. Spalvos įvestis: iki 32 ženklų."
+  "shadowInvalid": "Patikrinkite HEX spalvą ir sveikųjų skaičių ribas: poslinkis/išplitimas −100–100, suliejimas 0–200, nepermatomumas 0–100. Spalvos įvestis: iki 32 ženklų.",
+  "aspectTitle": "Kraštinių santykio skaičiuoklė",
+  "aspectDesc": "Vietoje apskaičiuokite supaprastintą kraštinių santykį iš pločio ir aukščio.",
+  "aspectWidth": "Plotis",
+  "aspectHeight": "Aukštis",
+  "aspectCalculate": "Skaičiuoti santykį",
+  "aspectLimits": "Kiekvienas matmuo turi būti sveikasis skaičius 1–100000. Skaičiuoja tik supaprastintą santykį; dydžio nekeičia.",
+  "aspectInvalid": "Įveskite pločio ir aukščio sveikuosius skaičius 1–100000."
 }

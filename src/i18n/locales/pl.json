@@ -704,5 +704,12 @@
   "shadowLimits": "Liczby całkowite: przesunięcie/rozprzestrzenienie −100–100 px, rozmycie 0–200 px, krycie 0–100%. Kolory HEX #RGB/#RRGGBB. Duże cienie są przycinane do ramki podglądu.",
   "shadowGenerate": "Generuj cień",
   "shadowPreview": "Podgląd cienia",
-  "shadowInvalid": "Sprawdź kolor HEX i limity całkowite: przesunięcie/rozprzestrzenienie −100–100, rozmycie 0–200, krycie 0–100. Kolor: do 32 znaków."
+  "shadowInvalid": "Sprawdź kolor HEX i limity całkowite: przesunięcie/rozprzestrzenienie −100–100, rozmycie 0–200, krycie 0–100. Kolor: do 32 znaków.",
+  "aspectTitle": "Kalkulator proporcji obrazu",
+  "aspectDesc": "Oblicz lokalnie uproszczone proporcje na podstawie szerokości i wysokości.",
+  "aspectWidth": "Szerokość",
+  "aspectHeight": "Wysokość",
+  "aspectCalculate": "Oblicz proporcje",
+  "aspectLimits": "Każdy wymiar musi być liczbą całkowitą 1–100000. Oblicza tylko uproszczone proporcje; nie zmienia rozmiaru.",
+  "aspectInvalid": "Wpisz liczby całkowite 1–100000 dla szerokości i wysokości."
 }

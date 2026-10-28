@@ -704,5 +704,12 @@
   "shadowLimits": "Heltall: forskyvning/spredning −100–100 px, uskarphet 0–200 px, opasitet 0–100 %. HEX-farger #RGB/#RRGGBB. Store skygger klippes ved forhåndsvisningsrammen.",
   "shadowGenerate": "Generer skygge",
   "shadowPreview": "Forhåndsvisning av skygge",
-  "shadowInvalid": "Sjekk HEX-farge og heltallsgrenser: forskyvning/spredning −100–100, uskarphet 0–200, opasitet 0–100. Fargefelt: høyst 32 tegn."
+  "shadowInvalid": "Sjekk HEX-farge og heltallsgrenser: forskyvning/spredning −100–100, uskarphet 0–200, opasitet 0–100. Fargefelt: høyst 32 tegn.",
+  "aspectTitle": "Kalkulator for sideforhold",
+  "aspectDesc": "Beregn det forkortede sideforholdet fra bredde og høyde lokalt.",
+  "aspectWidth": "Bredde",
+  "aspectHeight": "Høyde",
+  "aspectCalculate": "Beregn forhold",
+  "aspectLimits": "Hver dimensjon må være et heltall fra 1 til 100000. Beregner bare det forkortede forholdet; endrer ikke størrelse.",
+  "aspectInvalid": "Skriv inn heltall fra 1 til 100000 for bredde og høyde."
 }

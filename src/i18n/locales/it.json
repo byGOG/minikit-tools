@@ -704,5 +704,12 @@
   "shadowLimits": "Interi: spostamento/espansione −100–100 px, sfocatura 0–200 px, opacità 0–100%. Colori HEX #RGB/#RRGGBB. Le ombre grandi vengono ritagliate nella cornice di anteprima.",
   "shadowGenerate": "Genera ombra",
   "shadowPreview": "Anteprima dell’ombra",
-  "shadowInvalid": "Controlla colore HEX e limiti interi: spostamento/espansione −100–100, sfocatura 0–200, opacità 0–100. Colore: massimo 32 caratteri."
+  "shadowInvalid": "Controlla colore HEX e limiti interi: spostamento/espansione −100–100, sfocatura 0–200, opacità 0–100. Colore: massimo 32 caratteri.",
+  "aspectTitle": "Calcolatore del rapporto d’aspetto",
+  "aspectDesc": "Calcola localmente il rapporto d’aspetto semplificato da larghezza e altezza.",
+  "aspectWidth": "Larghezza",
+  "aspectHeight": "Altezza",
+  "aspectCalculate": "Calcola rapporto",
+  "aspectLimits": "Ogni dimensione deve essere un intero da 1 a 100000. Calcola solo il rapporto semplificato; non ridimensiona.",
+  "aspectInvalid": "Inserisci interi da 1 a 100000 per larghezza e altezza."
 }

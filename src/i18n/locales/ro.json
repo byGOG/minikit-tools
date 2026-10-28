@@ -704,5 +704,12 @@
   "shadowLimits": "Întregi: deplasare/extindere −100–100 px, estompare 0–200 px, opacitate 0–100%. Culori HEX #RGB/#RRGGBB. Umbrele mari sunt decupate la cadrul de previzualizare.",
   "shadowGenerate": "Generează umbră",
   "shadowPreview": "Previzualizarea umbrei",
-  "shadowInvalid": "Verifică culoarea HEX și limitele întregi: deplasare/extindere −100–100, estompare 0–200, opacitate 0–100. Culoare: cel mult 32 de caractere."
+  "shadowInvalid": "Verifică culoarea HEX și limitele întregi: deplasare/extindere −100–100, estompare 0–200, opacitate 0–100. Culoare: cel mult 32 de caractere.",
+  "aspectTitle": "Calculator de raport de aspect",
+  "aspectDesc": "Calculează local raportul de aspect simplificat din lățime și înălțime.",
+  "aspectWidth": "Lățime",
+  "aspectHeight": "Înălțime",
+  "aspectCalculate": "Calculează raportul",
+  "aspectLimits": "Fiecare dimensiune trebuie să fie un întreg 1–100000. Calculează doar raportul simplificat; nu redimensionează.",
+  "aspectInvalid": "Introdu întregi 1–100000 pentru lățime și înălțime."
 }

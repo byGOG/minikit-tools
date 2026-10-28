@@ -218,5 +218,9 @@
   "css-box-shadow-generator": [
     "0px · 8px · 24px · 0px · #000000 · 20%",
     "box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.2);"
+  ],
+  "aspect-ratio-calculator": [
+    "1920 × 1080",
+    "16:9"
   ]
 }

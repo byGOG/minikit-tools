@@ -704,5 +704,12 @@
   "shadowLimits": "Cijeli brojevi: pomak/širenje −100–100 px, zamućenje 0–200 px, neprozirnost 0–100%. HEX boje #RGB/#RRGGBB. Velike sjene režu se okvirom pregleda.",
   "shadowGenerate": "Generiraj sjenu",
   "shadowPreview": "Pregled sjene",
-  "shadowInvalid": "Provjerite HEX boju i cjelobrojne granice: pomak/širenje −100–100, zamućenje 0–200, neprozirnost 0–100. Unos boje: do 32 znaka."
+  "shadowInvalid": "Provjerite HEX boju i cjelobrojne granice: pomak/širenje −100–100, zamućenje 0–200, neprozirnost 0–100. Unos boje: do 32 znaka.",
+  "aspectTitle": "Kalkulator omjera stranica",
+  "aspectDesc": "Lokalno izračunajte skraćeni omjer stranica iz širine i visine.",
+  "aspectWidth": "Širina",
+  "aspectHeight": "Visina",
+  "aspectCalculate": "Izračunaj omjer",
+  "aspectLimits": "Svaka dimenzija mora biti cijeli broj 1–100000. Računa se samo skraćeni omjer; veličina se ne mijenja.",
+  "aspectInvalid": "Unesite cijele brojeve 1–100000 za širinu i visinu."
 }

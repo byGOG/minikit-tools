@@ -704,5 +704,12 @@
   "shadowLimits": "Cela števila: odmik/razširitev −100–100 px, zameglitev 0–200 px, neprosojnost 0–100%. HEX barve #RGB/#RRGGBB. Velike sence so odrezane z okvirjem predogleda.",
   "shadowGenerate": "Ustvari senco",
   "shadowPreview": "Predogled sence",
-  "shadowInvalid": "Preverite HEX barvo in celoštevilske meje: odmik/razširitev −100–100, zameglitev 0–200, neprosojnost 0–100. Barva: največ 32 znakov."
+  "shadowInvalid": "Preverite HEX barvo in celoštevilske meje: odmik/razširitev −100–100, zameglitev 0–200, neprosojnost 0–100. Barva: največ 32 znakov.",
+  "aspectTitle": "Kalkulator razmerja stranic",
+  "aspectDesc": "Lokalno izračunajte okrajšano razmerje stranic iz širine in višine.",
+  "aspectWidth": "Širina",
+  "aspectHeight": "Višina",
+  "aspectCalculate": "Izračunaj razmerje",
+  "aspectLimits": "Vsaka mera mora biti celo število 1–100000. Izračuna le okrajšano razmerje; velikosti ne spreminja.",
+  "aspectInvalid": "Vnesite celi števili 1–100000 za širino in višino."
 }

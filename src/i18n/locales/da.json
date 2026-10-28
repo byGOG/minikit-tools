@@ -704,5 +704,12 @@
   "shadowLimits": "Hele tal: forskydning/spredning −100–100 px, sløring 0–200 px, opacitet 0–100 %. HEX-farver #RGB/#RRGGBB. Store skygger beskæres af forhåndsvisningens ramme.",
   "shadowGenerate": "Generér skygge",
   "shadowPreview": "Forhåndsvisning af skygge",
-  "shadowInvalid": "Kontrollér HEX-farve og heltalsgrænser: forskydning/spredning −100–100, sløring 0–200, opacitet 0–100. Farveinput: højst 32 tegn."
+  "shadowInvalid": "Kontrollér HEX-farve og heltalsgrænser: forskydning/spredning −100–100, sløring 0–200, opacitet 0–100. Farveinput: højst 32 tegn.",
+  "aspectTitle": "Beregner til billedformat",
+  "aspectDesc": "Beregn lokalt det forkortede forhold mellem bredde og højde.",
+  "aspectWidth": "Bredde",
+  "aspectHeight": "Højde",
+  "aspectCalculate": "Beregn forhold",
+  "aspectLimits": "Hver dimension skal være et helt tal fra 1 til 100000. Beregner kun det forkortede forhold; ændrer ikke størrelse.",
+  "aspectInvalid": "Indtast hele tal fra 1 til 100000 for bredde og højde."
 }

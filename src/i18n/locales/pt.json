@@ -704,5 +704,12 @@
   "shadowLimits": "Inteiros: deslocamento/expansão −100–100 px, desfoque 0–200 px, opacidade 0–100%. Cores HEX #RGB/#RRGGBB. As sombras grandes são recortadas na moldura de pré-visualização.",
   "shadowGenerate": "Gerar sombra",
   "shadowPreview": "Pré-visualização da sombra",
-  "shadowInvalid": "Verifique a cor HEX e os limites inteiros: deslocamento/expansão −100–100, desfoque 0–200, opacidade 0–100. Cor: até 32 caracteres."
+  "shadowInvalid": "Verifique a cor HEX e os limites inteiros: deslocamento/expansão −100–100, desfoque 0–200, opacidade 0–100. Cor: até 32 caracteres.",
+  "aspectTitle": "Calculadora de proporção",
+  "aspectDesc": "Calcule localmente a proporção simplificada a partir da largura e altura.",
+  "aspectWidth": "Largura",
+  "aspectHeight": "Altura",
+  "aspectCalculate": "Calcular proporção",
+  "aspectLimits": "Cada dimensão deve ser um inteiro de 1 a 100000. Calcula apenas a proporção simplificada; não redimensiona.",
+  "aspectInvalid": "Introduza inteiros de 1 a 100000 para a largura e altura."
 }

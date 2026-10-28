@@ -1090,5 +1090,17 @@
       "shadowGenerate"
     ],
     "category": "image"
+  },
+  {
+    "slug": "aspect-ratio-calculator",
+    "title": "aspectTitle",
+    "desc": "aspectDesc",
+    "anchor": "aspect-ratio-tool",
+    "steps": [
+      "aspectWidth",
+      "aspectHeight",
+      "aspectCalculate"
+    ],
+    "category": "image"
   }
 ]

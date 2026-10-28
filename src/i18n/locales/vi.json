@@ -704,5 +704,12 @@
   "shadowLimits": "Số nguyên: độ lệch/độ lan −100–100 px, làm mờ 0–200 px, độ đục 0–100%. Màu HEX #RGB/#RRGGBB. Bóng lớn bị cắt tại khung xem trước.",
   "shadowGenerate": "Tạo bóng",
   "shadowPreview": "Xem trước bóng",
-  "shadowInvalid": "Kiểm tra màu HEX và giới hạn số nguyên: độ lệch/độ lan −100–100, làm mờ 0–200, độ đục 0–100. Ô màu: tối đa 32 ký tự."
+  "shadowInvalid": "Kiểm tra màu HEX và giới hạn số nguyên: độ lệch/độ lan −100–100, làm mờ 0–200, độ đục 0–100. Ô màu: tối đa 32 ký tự.",
+  "aspectTitle": "Máy tính tỷ lệ khung hình",
+  "aspectDesc": "Tính cục bộ tỷ lệ khung hình tối giản từ chiều rộng và chiều cao.",
+  "aspectWidth": "Chiều rộng",
+  "aspectHeight": "Chiều cao",
+  "aspectCalculate": "Tính tỷ lệ",
+  "aspectLimits": "Mỗi kích thước phải là số nguyên 1–100000. Chỉ tính tỷ lệ tối giản; không đổi kích thước.",
+  "aspectInvalid": "Nhập số nguyên 1–100000 cho chiều rộng và chiều cao."
 }

@@ -704,5 +704,12 @@
   "shadowLimits": "Heelgetalle: verskuiwing/spreiding −100–100 px, vervaging 0–200 px, ondeursigtigheid 0–100%. HEX #RGB/#RRGGBB-kleure. Groot skaduwees word by die voorskouraam afgesny.",
   "shadowGenerate": "Skep skadu",
   "shadowPreview": "Skaduvoorskou",
-  "shadowInvalid": "Kontroleer HEX-kleur en heelgetalgrense: verskuiwing/spreiding −100–100, vervaging 0–200, ondeursigtigheid 0–100. Kleurinvoer: hoogstens 32 karakters."
+  "shadowInvalid": "Kontroleer HEX-kleur en heelgetalgrense: verskuiwing/spreiding −100–100, vervaging 0–200, ondeursigtigheid 0–100. Kleurinvoer: hoogstens 32 karakters.",
+  "aspectTitle": "Aspekverhoudingberekenaar",
+  "aspectDesc": "Bereken die vereenvoudigde aspekverhouding plaaslik uit breedte en hoogte.",
+  "aspectWidth": "Breedte",
+  "aspectHeight": "Hoogte",
+  "aspectCalculate": "Bereken verhouding",
+  "aspectLimits": "Elke afmeting moet ’n heelgetal van 1–100000 wees. Bereken slegs die vereenvoudigde verhouding; verander nie grootte nie.",
+  "aspectInvalid": "Voer heelgetalle van 1–100000 vir breedte en hoogte in."
 }

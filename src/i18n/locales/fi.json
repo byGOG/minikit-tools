@@ -704,5 +704,12 @@
   "shadowLimits": "Kokonaisluvut: siirtymä/leviäminen −100–100 px, sumennus 0–200 px, peittävyys 0–100 %. HEX-värit #RGB/#RRGGBB. Suuret varjot rajataan esikatselukehykseen.",
   "shadowGenerate": "Luo varjo",
   "shadowPreview": "Varjon esikatselu",
-  "shadowInvalid": "Tarkista HEX-väri ja kokonaislukurajat: siirtymä/leviäminen −100–100, sumennus 0–200, peittävyys 0–100. Värisyöte: enintään 32 merkkiä."
+  "shadowInvalid": "Tarkista HEX-väri ja kokonaislukurajat: siirtymä/leviäminen −100–100, sumennus 0–200, peittävyys 0–100. Värisyöte: enintään 32 merkkiä.",
+  "aspectTitle": "Kuvasuhdelaskuri",
+  "aspectDesc": "Laske supistettu kuvasuhde paikallisesti leveydestä ja korkeudesta.",
+  "aspectWidth": "Leveys",
+  "aspectHeight": "Korkeus",
+  "aspectCalculate": "Laske kuvasuhde",
+  "aspectLimits": "Kummankin mitan on oltava kokonaisluku 1–100000. Laskee vain supistetun suhteen; ei muuta kokoa.",
+  "aspectInvalid": "Anna leveydeksi ja korkeudeksi kokonaisluvut 1–100000."
 }

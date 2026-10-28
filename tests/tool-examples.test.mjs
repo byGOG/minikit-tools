@@ -7,6 +7,7 @@ import {generateLoremIpsum} from '../src/scripts/lorem-ipsum-core.ts';
 import {convertRoman} from '../src/scripts/roman-numerals-core.ts';
 import {convertMorse} from '../src/scripts/morse-code-core.ts';
 import {createGradient} from '../src/scripts/gradient-core.ts';
+import {calculateAspectRatio} from '../src/scripts/aspect-ratio-core.ts';
 import {createBoxShadow} from '../src/scripts/box-shadow-core.ts';
 
 const examples=JSON.parse(await readFile(new URL('../src/data/tool-examples.json',import.meta.url),'utf8'));
@@ -54,4 +55,10 @@ test('published CSS box-shadow example matches the real declaration',()=>{
  const [input,expected]=examples['css-box-shadow-generator'];
  assert.equal(input,'0px · 8px · 24px · 0px · #000000 · 20%');
  assert.equal(createBoxShadow({x:0,y:8,blur:24,spread:0,color:'#000000',opacity:20,inset:false}).css,expected);
+});
+
+test('published aspect ratio example matches the reduced ratio',()=>{
+ const [input,expected]=examples['aspect-ratio-calculator'];
+ assert.equal(input,'1920 × 1080');
+ assert.equal(calculateAspectRatio(1920,1080).ratio,expected);
 });

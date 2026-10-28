@@ -704,5 +704,12 @@
   "shadowLimits": "Nombor bulat: ofset/sebaran −100–100 px, kabur 0–200 px, kelegapan 0–100%. Warna HEX #RGB/#RRGGBB. Bayang besar dipotong pada bingkai pratonton.",
   "shadowGenerate": "Jana bayang",
   "shadowPreview": "Pratonton bayang",
-  "shadowInvalid": "Semak warna HEX dan had nombor bulat: ofset/sebaran −100–100, kabur 0–200, kelegapan 0–100. Input warna: maksimum 32 aksara."
+  "shadowInvalid": "Semak warna HEX dan had nombor bulat: ofset/sebaran −100–100, kabur 0–200, kelegapan 0–100. Input warna: maksimum 32 aksara.",
+  "aspectTitle": "Kalkulator nisbah aspek",
+  "aspectDesc": "Kira nisbah aspek termudah daripada lebar dan tinggi secara setempat.",
+  "aspectWidth": "Lebar",
+  "aspectHeight": "Tinggi",
+  "aspectCalculate": "Kira nisbah",
+  "aspectLimits": "Setiap dimensi mestilah nombor bulat 1–100000. Mengira nisbah termudah sahaja; tidak mengubah saiz.",
+  "aspectInvalid": "Masukkan nombor bulat 1–100000 untuk lebar dan tinggi."
 }

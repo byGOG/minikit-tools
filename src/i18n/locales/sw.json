@@ -704,5 +704,12 @@
   "shadowLimits": "Nambari kamili: uhamisho/kuenea −100–100 px, ukungu 0–200 px, kutopitisha mwanga 0–100%. Rangi za HEX #RGB/#RRGGBB. Vivuli vikubwa hukatwa kwenye fremu ya hakikisho.",
   "shadowGenerate": "Unda kivuli",
   "shadowPreview": "Hakikisho la kivuli",
-  "shadowInvalid": "Kagua rangi ya HEX na mipaka kamili: uhamisho/kuenea −100–100, ukungu 0–200, kutopitisha mwanga 0–100. Ingizo la rangi: hadi vibambo 32."
+  "shadowInvalid": "Kagua rangi ya HEX na mipaka kamili: uhamisho/kuenea −100–100, ukungu 0–200, kutopitisha mwanga 0–100. Ingizo la rangi: hadi vibambo 32.",
+  "aspectTitle": "Kikokotoo cha uwiano wa vipimo",
+  "aspectDesc": "Kokotoa uwiano uliorahisishwa kutoka upana na urefu kwenye kifaa.",
+  "aspectWidth": "Upana",
+  "aspectHeight": "Urefu",
+  "aspectCalculate": "Kokotoa uwiano",
+  "aspectLimits": "Kila kipimo kiwe nambari kamili 1–100000. Hukokotoa uwiano uliorahisishwa pekee; hakibadili ukubwa.",
+  "aspectInvalid": "Weka nambari kamili 1–100000 kwa upana na urefu."
 }

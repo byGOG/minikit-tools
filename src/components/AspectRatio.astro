@@ -1,0 +1,30 @@
+---
+import { Ratio, ShieldCheck, ArrowRight } from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const str = (key: string) => (tr as Record<string, string>)[key] ?? key;
+---
+<article class="tool-card aspect-ratio-card" id="aspect-ratio-tool">
+  <div class="card-top"><span class="tool-icon icon-blue"><Ratio size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="aspectTitle">{str('aspectTitle')}</h3>
+  <p data-i18n="aspectDesc">{str('aspectDesc')}</p>
+  <div class="aspect-options">
+    <div><label class="field-label" for="aspect-width" data-i18n="aspectWidth">{str('aspectWidth')}</label><input class="text-input" id="aspect-width" type="number" min="1" max="100000" step="1" value="1920" required aria-describedby="aspect-limits"/></div>
+    <div><label class="field-label" for="aspect-height" data-i18n="aspectHeight">{str('aspectHeight')}</label><input class="text-input" id="aspect-height" type="number" min="1" max="100000" step="1" value="1080" required aria-describedby="aspect-limits"/></div>
+  </div>
+  <small class="aspect-hint" id="aspect-limits" data-i18n="aspectLimits">{str('aspectLimits')}</small>
+  <button class="button-primary full" id="aspect-calculate" data-i18n="aspectCalculate">{str('aspectCalculate')}</button>
+  <label class="field-label aspect-result-label" for="aspect-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="aspect-output" readonly dir="ltr" spellcheck="false"></textarea>
+  <p class="tool-feedback" id="aspect-feedback" role="status" aria-live="polite"></p>
+  <div class="text-tool-actions"><button class="button-secondary full" id="aspect-copy" data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id="aspect-clear" data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="aspect-ratio-calculator" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
+<style is:global>
+.aspect-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.aspect-options input{width:100%;min-width:0}
+.aspect-hint{display:block;font-size:12px;line-height:1.65;color:#526258;margin:10px 0 14px}
+.aspect-result-label{margin-top:14px}
+.aspect-ratio-card textarea{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;min-height:80px}
+@media(max-width:440px){.aspect-options{grid-template-columns:1fr}}
+</style>

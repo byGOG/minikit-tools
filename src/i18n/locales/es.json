@@ -704,5 +704,12 @@
   "shadowLimits": "Enteros: desplazamiento/expansión −100–100 px, desenfoque 0–200 px, opacidad 0–100%. Colores HEX #RGB/#RRGGBB. Las sombras grandes se recortan en el marco de vista previa.",
   "shadowGenerate": "Generar sombra",
   "shadowPreview": "Vista previa de sombra",
-  "shadowInvalid": "Comprueba color HEX y límites enteros: desplazamiento/expansión −100–100, desenfoque 0–200, opacidad 0–100. Color: hasta 32 caracteres."
+  "shadowInvalid": "Comprueba color HEX y límites enteros: desplazamiento/expansión −100–100, desenfoque 0–200, opacidad 0–100. Color: hasta 32 caracteres.",
+  "aspectTitle": "Calculadora de relación de aspecto",
+  "aspectDesc": "Calcula localmente la relación de aspecto simplificada a partir del ancho y alto.",
+  "aspectWidth": "Ancho",
+  "aspectHeight": "Alto",
+  "aspectCalculate": "Calcular relación",
+  "aspectLimits": "Cada dimensión debe ser un entero entre 1 y 100000. Solo calcula la relación simplificada; no cambia el tamaño.",
+  "aspectInvalid": "Introduce enteros entre 1 y 100000 para el ancho y alto."
 }

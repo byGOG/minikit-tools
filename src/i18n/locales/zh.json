@@ -704,5 +704,12 @@
   "shadowLimits": "整数：偏移/扩展 −100–100 px，模糊 0–200 px，不透明度 0–100%。HEX 颜色 #RGB/#RRGGBB。大阴影会在预览框边界被裁切。",
   "shadowGenerate": "生成阴影",
   "shadowPreview": "阴影预览",
-  "shadowInvalid": "请检查 HEX 颜色及整数范围：偏移/扩展 −100–100，模糊 0–200，不透明度 0–100。颜色输入最多 32 个字符。"
+  "shadowInvalid": "请检查 HEX 颜色及整数范围：偏移/扩展 −100–100，模糊 0–200，不透明度 0–100。颜色输入最多 32 个字符。",
+  "aspectTitle": "宽高比计算器",
+  "aspectDesc": "在本地根据宽度和高度计算最简宽高比。",
+  "aspectWidth": "宽度",
+  "aspectHeight": "高度",
+  "aspectCalculate": "计算比例",
+  "aspectLimits": "每个尺寸必须为 1–100000 的整数。仅计算最简比例，不调整尺寸。",
+  "aspectInvalid": "请为宽度和高度输入 1–100000 的整数。"
 }
