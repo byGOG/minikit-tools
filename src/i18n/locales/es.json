@@ -748,5 +748,14 @@
   "decimalFractionInput": "Número decimal",
   "decimalFractionLimits": "Dígitos ASCII; +/− opcional. Hasta 12 dígitos enteros y 12 decimales; 64 caracteres de entrada sin recortar. Punto o coma como separador decimal, no de miles. Sin exponentes ni decimales periódicos.",
   "decimalFractionInvalid": "Introduce un decimal finito dentro de los límites. Sin separador de miles, exponente, separador decimal final ni notación de fracción.",
-  "decimalFractionConvert": "Convertir"
+  "decimalFractionConvert": "Convertir",
+  "randomNumberTitle": "Generador de números aleatorios",
+  "randomNumberDesc": "Genera enteros aleatorios localmente en el intervalo elegido, incluidos los extremos, uno por línea.",
+  "randomNumberMin": "Mínimo",
+  "randomNumberMax": "Máximo",
+  "randomNumberCount": "Cantidad",
+  "randomNumberGenerate": "Generar números",
+  "randomNumberLimits": "Mínimo/máximo: enteros −1000000000–1000000000, mínimo ≤ máximo. Cantidad: 1–100. Se permiten repeticiones.",
+  "randomNumberInvalid": "Introduce enteros ASCII dentro de los límites: mínimo ≤ máximo y cantidad 1–100. Sin decimales ni notación científica.",
+  "randomNumberUnavailable": "La fuente de aleatoriedad del navegador no está disponible. Inténtalo de nuevo."
 }

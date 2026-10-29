@@ -748,5 +748,14 @@
   "decimalFractionInput": "Decimalni broj",
   "decimalFractionLimits": "ASCII znamenke; neobavezno +/−. Do 12 cijelih i 12 decimalnih znamenki; 64 sirova znaka. Točka ili zarez kao decimalni separator, ne tisućica. Bez eksponenata i periodičnih decimala.",
   "decimalFractionInvalid": "Unesite konačni decimalni broj u granicama. Bez separatora tisućica, eksponenta, završnog decimalnog separatora ili zapisa razlomka.",
-  "decimalFractionConvert": "Pretvori"
+  "decimalFractionConvert": "Pretvori",
+  "randomNumberTitle": "Generator slučajnih brojeva",
+  "randomNumberDesc": "Lokalno generirajte slučajne cijele brojeve u odabranom rasponu uključujući granice, po jedan u retku.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maksimum",
+  "randomNumberCount": "Količina",
+  "randomNumberGenerate": "Generiraj brojeve",
+  "randomNumberLimits": "Minimum/maksimum: cijeli brojevi −1000000000–1000000000, minimum ≤ maksimum. Količina: 1–100. Ponavljanja su dopuštena.",
+  "randomNumberInvalid": "Unesite ASCII cijele brojeve u granicama: minimum ≤ maksimum i količina 1–100. Bez decimala ili znanstvenog zapisa.",
+  "randomNumberUnavailable": "Izvor slučajnosti preglednika nije dostupan. Pokušajte ponovno."
 }

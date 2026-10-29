@@ -748,5 +748,14 @@
   "decimalFractionInput": "מספר עשרוני",
   "decimalFractionLimits": "ספרות ASCII; סימן +/− לבחירה. עד 12 ספרות שלמות ו-12 עשרוניות; 64 תווי קלט גולמי. נקודה או פסיק כמפריד עשרוני, לא אלפים. ללא מעריכים או עשרוניים מחזוריים.",
   "decimalFractionInvalid": "הזינו מספר עשרוני סופי בטווח. ללא מפריד אלפים, מעריך, מפריד עשרוני בסוף או כתיב שבר.",
-  "decimalFractionConvert": "המרה"
+  "decimalFractionConvert": "המרה",
+  "randomNumberTitle": "מחולל מספרים אקראיים",
+  "randomNumberDesc": "צרו מקומית מספרים שלמים אקראיים בטווח שנבחר כולל הקצוות, אחד בכל שורה.",
+  "randomNumberMin": "מינימום",
+  "randomNumberMax": "מקסימום",
+  "randomNumberCount": "כמות",
+  "randomNumberGenerate": "יצירת מספרים",
+  "randomNumberLimits": "מינימום/מקסימום: שלמים −1000000000–1000000000, מינימום ≤ מקסימום. כמות: 1–100. מותרות חזרות.",
+  "randomNumberInvalid": "הזינו שלמים בספרות ASCII בטווח: מינימום ≤ מקסימום וכמות 1–100. ללא עשרוניים או כתיב מדעי.",
+  "randomNumberUnavailable": "מקור האקראיות של הדפדפן אינו זמין. נסו שוב."
 }

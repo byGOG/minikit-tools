@@ -748,5 +748,14 @@
   "decimalFractionInput": "Decimaltal",
   "decimalFractionLimits": "ASCII-siffror; valfritt +/−. Högst 12 heltals- och 12 decimalsiffror; 64 råa indatatecken. Punkt eller komma som decimaltecken, inte tusenavskiljare. Inga exponenter eller periodiska decimaler.",
   "decimalFractionInvalid": "Ange ett avslutande decimaltal inom gränserna. Ingen tusenavskiljare, exponent, avslutande decimaltecken eller bråknotation.",
-  "decimalFractionConvert": "Omvandla"
+  "decimalFractionConvert": "Omvandla",
+  "randomNumberTitle": "Slumptalsgenerator",
+  "randomNumberDesc": "Skapa slumpmässiga heltal lokalt i valt intervall inklusive gränserna, ett per rad.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maximum",
+  "randomNumberCount": "Antal",
+  "randomNumberGenerate": "Generera tal",
+  "randomNumberLimits": "Minimum/maximum: heltal −1000000000–1000000000, minimum ≤ maximum. Antal: 1–100. Upprepningar är tillåtna.",
+  "randomNumberInvalid": "Ange ASCII-heltal inom gränserna: minimum ≤ maximum och antal 1–100. Inga decimaler eller vetenskaplig notation.",
+  "randomNumberUnavailable": "Webbläsarens slumpkälla är inte tillgänglig. Försök igen."
 }

@@ -748,5 +748,14 @@
   "decimalFractionInput": "Dešimtainis skaičius",
   "decimalFractionLimits": "ASCII skaitmenys; pasirenkamas +/−. Iki 12 sveikosios ir 12 trupmeninės dalies skaitmenų; 64 neapdoroti ženklai. Taškas ar kablelis – dešimtainis skirtukas, ne tūkstančių. Be laipsnių ir periodinių trupmenų.",
   "decimalFractionInvalid": "Įveskite baigtinį dešimtainį skaičių ribose. Be tūkstančių skirtuko, laipsnio, galinio dešimtainio skirtuko ar trupmenos užrašo.",
-  "decimalFractionConvert": "Konvertuoti"
+  "decimalFractionConvert": "Konvertuoti",
+  "randomNumberTitle": "Atsitiktinių skaičių generatorius",
+  "randomNumberDesc": "Vietoje generuokite atsitiktinius sveikuosius skaičius pasirinktame intervale su ribomis, po vieną eilutėje.",
+  "randomNumberMin": "Minimumas",
+  "randomNumberMax": "Maksimumas",
+  "randomNumberCount": "Kiekis",
+  "randomNumberGenerate": "Generuoti skaičius",
+  "randomNumberLimits": "Minimumas/maksimumas: sveikieji skaičiai −1000000000–1000000000, minimumas ≤ maksimumas. Kiekis: 1–100. Pasikartojimai leidžiami.",
+  "randomNumberInvalid": "Įveskite ASCII sveikuosius skaičius ribose: minimumas ≤ maksimumas ir kiekis 1–100. Be dešimtainių ar mokslinio užrašo.",
+  "randomNumberUnavailable": "Naršyklės atsitiktinumo šaltinis nepasiekiamas. Bandykite dar kartą."
 }

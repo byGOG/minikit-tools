@@ -748,5 +748,14 @@
   "decimalFractionInput": "Decimālskaitlis",
   "decimalFractionLimits": "ASCII cipari; izvēles +/−. Līdz 12 veseliem un 12 decimāldaļas cipariem; 64 sākotnējās rakstzīmes. Punkts vai komats ir decimālatdalītājs, ne tūkstošu. Bez kāpinātājiem un periodiskiem decimālskaitļiem.",
   "decimalFractionInvalid": "Ievadiet galīgu decimālskaitli robežās. Bez tūkstošu atdalītāja, kāpinātāja, decimālatdalītāja beigās vai daļskaitļa pieraksta.",
-  "decimalFractionConvert": "Pārveidot"
+  "decimalFractionConvert": "Pārveidot",
+  "randomNumberTitle": "Nejaušu skaitļu ģenerators",
+  "randomNumberDesc": "Lokāli ģenerējiet nejaušus veselus skaitļus izvēlētajā diapazonā ar robežām, pa vienam rindā.",
+  "randomNumberMin": "Minimums",
+  "randomNumberMax": "Maksimums",
+  "randomNumberCount": "Skaits",
+  "randomNumberGenerate": "Ģenerēt skaitļus",
+  "randomNumberLimits": "Minimums/maksimums: veseli skaitļi −1000000000–1000000000, minimums ≤ maksimums. Skaits: 1–100. Atkārtojumi ir atļauti.",
+  "randomNumberInvalid": "Ievadiet ASCII veselus skaitļus robežās: minimums ≤ maksimums un skaits 1–100. Bez decimālskaitļiem vai zinātniskā pieraksta.",
+  "randomNumberUnavailable": "Pārlūka nejaušības avots nav pieejams. Mēģiniet vēlreiz."
 }

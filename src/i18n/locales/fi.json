@@ -748,5 +748,14 @@
   "decimalFractionInput": "Desimaaliluku",
   "decimalFractionLimits": "ASCII-numerot; valinnainen +/−. Enintään 12 kokonais- ja 12 desimaalinumeroa; 64 alkuperäistä syötemerkkiä. Piste tai pilkku desimaalierottimeksi, ei tuhansille. Ei eksponentteja tai jaksollisia desimaaleja.",
   "decimalFractionInvalid": "Anna päättyvä desimaaliluku rajoissa. Ei tuhaterottimia, eksponenttia, loppuun jäävää desimaalierotinta tai murtolukumerkintää.",
-  "decimalFractionConvert": "Muunna"
+  "decimalFractionConvert": "Muunna",
+  "randomNumberTitle": "Satunnaislukugeneraattori",
+  "randomNumberDesc": "Luo satunnaisia kokonaislukuja paikallisesti valitulta väliltä rajat mukaan lukien, yksi riville.",
+  "randomNumberMin": "Minimi",
+  "randomNumberMax": "Maksimi",
+  "randomNumberCount": "Määrä",
+  "randomNumberGenerate": "Luo luvut",
+  "randomNumberLimits": "Minimi/maksimi: kokonaisluvut −1000000000–1000000000, minimi ≤ maksimi. Määrä: 1–100. Toistot sallitaan.",
+  "randomNumberInvalid": "Anna ASCII-kokonaisluvut rajoissa: minimi ≤ maksimi ja määrä 1–100. Ei desimaaleja tai tieteellistä merkintää.",
+  "randomNumberUnavailable": "Selaimen satunnaislähde ei ole käytettävissä. Yritä uudelleen."
 }

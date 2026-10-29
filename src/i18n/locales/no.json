@@ -748,5 +748,14 @@
   "decimalFractionInput": "Desimaltall",
   "decimalFractionLimits": "ASCII-sifre; valgfritt +/−. Opptil 12 heltalls- og 12 desimalsifre; 64 rå inndatategn. Punktum eller komma som desimaltegn, ikke tusenskille. Ingen eksponenter eller periodiske desimaler.",
   "decimalFractionInvalid": "Skriv inn en avsluttende desimal innenfor grensene. Ingen tusenskille, eksponent, avsluttende desimaltegn eller brøknotasjon.",
-  "decimalFractionConvert": "Konverter"
+  "decimalFractionConvert": "Konverter",
+  "randomNumberTitle": "Generator for tilfeldige tall",
+  "randomNumberDesc": "Generer tilfeldige heltall lokalt i valgt intervall inkludert grensene, ett per linje.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maksimum",
+  "randomNumberCount": "Antall",
+  "randomNumberGenerate": "Generer tall",
+  "randomNumberLimits": "Minimum/maksimum: heltall −1000000000–1000000000, minimum ≤ maksimum. Antall: 1–100. Gjentakelser er tillatt.",
+  "randomNumberInvalid": "Skriv inn ASCII-heltall innenfor grensene: minimum ≤ maksimum og antall 1–100. Ingen desimaler eller vitenskapelig notasjon.",
+  "randomNumberUnavailable": "Nettleserens tilfeldighetskilde er utilgjengelig. Prøv igjen."
 }

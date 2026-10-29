@@ -748,5 +748,14 @@
   "decimalFractionInput": "Tizedes szám",
   "decimalFractionLimits": "ASCII számjegyek; opcionális +/−. Legfeljebb 12 egész és 12 tizedesjegy; 64 nyers beviteli karakter. Pont vagy vessző a tizedesjel, nem ezreselválasztó. Nincs kitevő vagy szakaszos tizedes.",
   "decimalFractionInvalid": "Adjon meg véges tizedes számot a határokon belül. Ezreselválasztó, kitevő, záró tizedesjel és törtalak nélkül.",
-  "decimalFractionConvert": "Átalakítás"
+  "decimalFractionConvert": "Átalakítás",
+  "randomNumberTitle": "Véletlenszám-generátor",
+  "randomNumberDesc": "Készítsen helyben véletlen egész számokat a választott tartományban, a határokkal együtt, soronként egyet.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maximum",
+  "randomNumberCount": "Darabszám",
+  "randomNumberGenerate": "Számok generálása",
+  "randomNumberLimits": "Minimum/maximum: egész számok −1000000000–1000000000 között, minimum ≤ maximum. Darabszám: 1–100. Ismétlődés megengedett.",
+  "randomNumberInvalid": "Adjon meg ASCII egész számokat a határokon belül: minimum ≤ maximum és darabszám 1–100. Tizedes és tudományos jelölés nélkül.",
+  "randomNumberUnavailable": "A böngésző véletlenforrása nem érhető el. Próbálja újra."
 }

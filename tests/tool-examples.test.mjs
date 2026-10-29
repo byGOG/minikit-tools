@@ -7,6 +7,7 @@ import {generateLoremIpsum} from '../src/scripts/lorem-ipsum-core.ts';
 import {convertRoman} from '../src/scripts/roman-numerals-core.ts';
 import {convertMorse} from '../src/scripts/morse-code-core.ts';
 import {createGradient} from '../src/scripts/gradient-core.ts';
+import {generateRandomNumbers} from '../src/scripts/random-number-core.ts';
 import {decimalToFraction} from '../src/scripts/decimal-fraction-core.ts';
 import {calculateFraction} from '../src/scripts/fraction-core.ts';
 import {convertBinary} from '../src/scripts/text-binary-core.ts';
@@ -89,4 +90,10 @@ test('published decimal example matches exact reduced fraction',()=>{
  const [input,expected]=examples['decimal-to-fraction'];
  assert.equal(decimalToFraction(input).text,expected);
  assert.equal(decimalToFraction(input.replace('.',',')).text,expected);
+});
+
+test('published fixed-range random-number example is guaranteed',()=>{
+ const [input,expected]=examples['random-number-generator'];
+ assert.equal(input,'7–7 · 3');
+ assert.equal(generateRandomNumbers(7,7,3).join('\n'),expected);
 });

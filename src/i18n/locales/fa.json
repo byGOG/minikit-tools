@@ -748,5 +748,14 @@
   "decimalFractionInput": "عدد اعشاری",
   "decimalFractionLimits": "ارقام ASCII؛ +/− اختیاری. حداکثر 12 رقم صحیح و 12 اعشاری؛ 64 نویسه خام. نقطه یا ویرگول جداکننده اعشار است، نه هزارگان. بدون توان یا اعشار متناوب.",
   "decimalFractionInvalid": "عدد اعشاری مختوم در محدوده وارد کنید. بدون جداکننده هزارگان، توان، جداکننده اعشار در انتها یا نمایش کسری.",
-  "decimalFractionConvert": "تبدیل"
+  "decimalFractionConvert": "تبدیل",
+  "randomNumberTitle": "سازنده اعداد تصادفی",
+  "randomNumberDesc": "اعداد صحیح تصادفی را محلی در بازه انتخابی با احتساب دو حد، هرکدام در یک خط، بسازید.",
+  "randomNumberMin": "کمینه",
+  "randomNumberMax": "بیشینه",
+  "randomNumberCount": "تعداد",
+  "randomNumberGenerate": "ساخت اعداد",
+  "randomNumberLimits": "کمینه/بیشینه: اعداد صحیح −1000000000–1000000000، کمینه ≤ بیشینه. تعداد: 1–100. تکرار اعداد مجاز است.",
+  "randomNumberInvalid": "اعداد صحیح ASCII در محدوده وارد کنید: کمینه ≤ بیشینه و تعداد 1–100. بدون اعشار یا نمایش علمی.",
+  "randomNumberUnavailable": "منبع تصادفی مرورگر در دسترس نیست. دوباره تلاش کنید."
 }

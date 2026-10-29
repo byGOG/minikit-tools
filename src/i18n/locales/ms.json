@@ -748,5 +748,14 @@
   "decimalFractionInput": "Nombor perpuluhan",
   "decimalFractionLimits": "Digit ASCII; +/− pilihan. Sehingga 12 digit bulat dan 12 perpuluhan; 64 aksara mentah. Titik atau koma sebagai pemisah perpuluhan, bukan ribuan. Tiada eksponen atau perpuluhan berulang.",
   "decimalFractionInvalid": "Masukkan perpuluhan terhingga dalam had. Tanpa pemisah ribuan, eksponen, pemisah perpuluhan di hujung atau notasi pecahan.",
-  "decimalFractionConvert": "Tukar"
+  "decimalFractionConvert": "Tukar",
+  "randomNumberTitle": "Penjana nombor rawak",
+  "randomNumberDesc": "Jana integer rawak secara setempat dalam julat pilihan termasuk sempadan, satu setiap baris.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maksimum",
+  "randomNumberCount": "Bilangan",
+  "randomNumberGenerate": "Jana nombor",
+  "randomNumberLimits": "Minimum/maksimum: integer −1000000000–1000000000, minimum ≤ maksimum. Bilangan: 1–100. Pengulangan dibenarkan.",
+  "randomNumberInvalid": "Masukkan integer ASCII dalam had: minimum ≤ maksimum dan bilangan 1–100. Tanpa perpuluhan atau notasi saintifik.",
+  "randomNumberUnavailable": "Sumber rawak pelayar tidak tersedia. Cuba lagi."
 }
