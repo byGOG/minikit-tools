@@ -99,4 +99,10 @@ Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, do
 
 | İş | Sahip | Kabul ölçütü | Durum |
 |---|---|---|---|
-| TOOL-011 | Yeni araç geliştirici + içerik + kalite | Nokta/virgülle sonlu ondalıktan tam sadeleştirilmiş kesir, sayı/ham girdi sınırları, 50 dil, rehber ve bağımsız testler | Yayın öncesi kontrol noktası; son PR/canlı kanıtı outputs/MINIKIT-DECIMAL-FRACTION-DOGRULAMA.json ve outputs/MINIKIT-DEVAM.md kayıtlarında tutulur. |
+| TOOL-011 | Yeni araç geliştirici + içerik + kalite | Nokta/virgülle sonlu ondalıktan tam sadeleştirilmiş kesir, sayı/ham girdi sınırları, 50 dil, rehber ve bağımsız testler | Tamamlandı; PR #50 birleştirildi. 162 birim + 53 dil/SEO + 330 tarayıcı testi ve canlı kontroller geçti. |
+
+## Rastgele sayı üretici turu — 30 Ekim 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| TOOL-012 | Yeni araç geliştirici + içerik + kalite | Dahil alt/üst sınır, 1–100 tam sayı, tekrara izin verme ve Web Crypto kaynağı, 50 dil, rehber ve bağımsız testler | Yayın öncesi kontrol noktası; son PR/canlı kanıtı outputs/MINIKIT-RANDOM-NUMBER-DOGRULAMA.json ve outputs/MINIKIT-DEVAM.md kayıtlarında tutulur. |

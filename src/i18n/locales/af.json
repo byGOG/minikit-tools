@@ -748,5 +748,14 @@
   "decimalFractionInput": "Desimale getal",
   "decimalFractionLimits": "ASCII-syfers; opsionele +/−. Tot 12 heel- en 12 desimale syfers; 64 rou invoerkarakters. Punt of komma is die desimale skeier, nie ’n duisendeskeier nie. Geen eksponente of herhalende desimale nie.",
   "decimalFractionInvalid": "Voer ’n eindigende desimaal binne die perke in. Geen duisendeskeiers, eksponent, desimale skeier aan die einde of breuknotasie nie.",
-  "decimalFractionConvert": "Skakel om"
+  "decimalFractionConvert": "Skakel om",
+  "randomNumberTitle": "Ewekansige getalskepper",
+  "randomNumberDesc": "Skep ewekansige heelgetalle plaaslik in jou gekose reeks, grense ingesluit, een per reël.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maksimum",
+  "randomNumberCount": "Aantal",
+  "randomNumberGenerate": "Skep getalle",
+  "randomNumberLimits": "Minimum/maksimum: heelgetalle −1000000000–1000000000, minimum ≤ maksimum. Aantal: 1–100. Getalle mag herhaal.",
+  "randomNumberInvalid": "Voer ASCII-heelgetalle binne die perke in: minimum ≤ maksimum en aantal 1–100. Geen desimale of wetenskaplike notasie nie.",
+  "randomNumberUnavailable": "Die blaaier se ewekansigheidsbron is onbeskikbaar. Probeer weer."
 }

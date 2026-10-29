@@ -423,6 +423,7 @@ async function initialize() {
   if (document.body.dataset.page !== 'directory' && document.querySelector('#text-binary-tool')) (await import('./text-binary')).setupTextBinary(t);
   if (document.body.dataset.page !== 'directory' && document.querySelector('#fraction-tool')) (await import('./fraction')).setupFractionCalculator(t);
   if (document.body.dataset.page !== 'directory' && document.querySelector('#decimal-fraction-tool')) (await import('./decimal-fraction')).setupDecimalFraction(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#random-number-tool')) (await import('./random-number')).setupRandomNumber(t);
   document.documentElement.dataset.toolsReady = "true";
 }
 void initialize();

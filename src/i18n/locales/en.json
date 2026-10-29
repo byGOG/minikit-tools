@@ -748,5 +748,14 @@
   "decimalFractionInput": "Decimal number",
   "decimalFractionLimits": "ASCII digits; optional +/−. Up to 12 integer and 12 decimal digits; 64 raw input characters. Use a dot or comma as the decimal separator, not for thousands. No exponents or repeating decimals.",
   "decimalFractionInvalid": "Enter a terminating decimal within the limits. No thousands separators, exponent, trailing decimal separator or fraction notation.",
-  "decimalFractionConvert": "Convert"
+  "decimalFractionConvert": "Convert",
+  "randomNumberTitle": "Random number generator",
+  "randomNumberDesc": "Generate random whole numbers in your chosen inclusive range locally, one per line.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maximum",
+  "randomNumberCount": "Count",
+  "randomNumberGenerate": "Generate numbers",
+  "randomNumberLimits": "Minimum/maximum: integers −1000000000–1000000000, minimum ≤ maximum. Count: 1–100. Repeated numbers are allowed.",
+  "randomNumberInvalid": "Enter ASCII integers within the limits: minimum ≤ maximum and count 1–100. No decimals or scientific notation.",
+  "randomNumberUnavailable": "The browser’s randomness source is unavailable. Try again."
 }

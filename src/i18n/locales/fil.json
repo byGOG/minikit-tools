@@ -748,5 +748,14 @@
   "decimalFractionInput": "Desimal na bilang",
   "decimalFractionLimits": "ASCII digit; opsyonal na +/−. Hanggang 12 integer at 12 decimal digit; 64 raw input character. Tuldok o kuwit para sa decimal, hindi libuhan. Walang exponent o umuulit na decimal.",
   "decimalFractionInvalid": "Maglagay ng nagtatapos na decimal sa limitasyon. Walang libuhang separator, exponent, panghuling decimal separator o fraction notation.",
-  "decimalFractionConvert": "I-convert"
+  "decimalFractionConvert": "I-convert",
+  "randomNumberTitle": "Tagabuo ng random na bilang",
+  "randomNumberDesc": "Bumuo nang lokal ng random na buong bilang sa napiling saklaw, kasama ang mga hangganan, isa bawat linya.",
+  "randomNumberMin": "Pinakamababa",
+  "randomNumberMax": "Pinakamataas",
+  "randomNumberCount": "Dami",
+  "randomNumberGenerate": "Bumuo ng mga bilang",
+  "randomNumberLimits": "Pinakamababa/pinakamataas: buong bilang −1000000000–1000000000, pinakamababa ≤ pinakamataas. Dami: 1–100. Puwedeng maulit ang mga bilang.",
+  "randomNumberInvalid": "Maglagay ng ASCII na buong bilang sa limitasyon: pinakamababa ≤ pinakamataas at dami 1–100. Walang decimal o scientific notation.",
+  "randomNumberUnavailable": "Hindi magagamit ang pinagmumulan ng randomness ng browser. Subukan muli."
 }

@@ -748,5 +748,14 @@
   "decimalFractionInput": "Decimaal getal",
   "decimalFractionLimits": "ASCII-cijfers; optioneel +/−. Maximaal 12 gehele en 12 decimale cijfers; 64 ruwe invoertekens. Punt of komma als decimaalteken, niet voor duizendtallen. Geen exponenten of repeterende decimalen.",
   "decimalFractionInvalid": "Voer een eindige decimaal binnen de grenzen in. Geen duizendtalscheiding, exponent, afsluitend decimaalteken of breuknotatie.",
-  "decimalFractionConvert": "Omzetten"
+  "decimalFractionConvert": "Omzetten",
+  "randomNumberTitle": "Willekeurige-getallengenerator",
+  "randomNumberDesc": "Genereer lokaal willekeurige gehele getallen in het gekozen bereik inclusief grenzen, één per regel.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maximum",
+  "randomNumberCount": "Aantal",
+  "randomNumberGenerate": "Getallen genereren",
+  "randomNumberLimits": "Minimum/maximum: gehele getallen −1000000000–1000000000, minimum ≤ maximum. Aantal: 1–100. Herhalingen zijn toegestaan.",
+  "randomNumberInvalid": "Voer ASCII-gehele getallen binnen de grenzen in: minimum ≤ maximum en aantal 1–100. Geen decimalen of wetenschappelijke notatie.",
+  "randomNumberUnavailable": "De willekeurigheidsbron van de browser is niet beschikbaar. Probeer opnieuw."
 }

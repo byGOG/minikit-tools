@@ -748,5 +748,14 @@
   "decimalFractionInput": "Nombre décimal",
   "decimalFractionLimits": "Chiffres ASCII ; +/− facultatif. Jusqu’à 12 chiffres entiers et 12 décimaux ; 64 caractères bruts. Point ou virgule comme séparateur décimal, pas de milliers. Sans exposants ni décimaux périodiques.",
   "decimalFractionInvalid": "Saisissez un décimal fini dans les limites. Sans séparateur de milliers, exposant, séparateur décimal final ni notation fractionnaire.",
-  "decimalFractionConvert": "Convertir"
+  "decimalFractionConvert": "Convertir",
+  "randomNumberTitle": "Générateur de nombres aléatoires",
+  "randomNumberDesc": "Générez localement des entiers aléatoires dans l’intervalle choisi, bornes incluses, un par ligne.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maximum",
+  "randomNumberCount": "Quantité",
+  "randomNumberGenerate": "Générer les nombres",
+  "randomNumberLimits": "Minimum/maximum : entiers −1000000000–1000000000, minimum ≤ maximum. Quantité : 1–100. Répétitions autorisées.",
+  "randomNumberInvalid": "Saisissez des entiers ASCII dans les limites : minimum ≤ maximum et quantité 1–100. Sans décimales ni notation scientifique.",
+  "randomNumberUnavailable": "La source aléatoire du navigateur est indisponible. Réessayez."
 }

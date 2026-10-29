@@ -748,5 +748,14 @@
   "decimalFractionInput": "Decimalno število",
   "decimalFractionLimits": "Števke ASCII; izbirni +/−. Do 12 celih in 12 decimalnih števk; 64 surovih znakov. Pika ali vejica je decimalno ločilo, ne ločilo tisočic. Brez eksponentov in periodičnih decimalk.",
   "decimalFractionInvalid": "Vnesite končno decimalno število v mejah. Brez ločil tisočic, eksponenta, končnega decimalnega ločila ali zapisa ulomka.",
-  "decimalFractionConvert": "Pretvori"
+  "decimalFractionConvert": "Pretvori",
+  "randomNumberTitle": "Generator naključnih števil",
+  "randomNumberDesc": "Lokalno ustvarite naključna cela števila v izbranem razponu z mejami, eno na vrstico.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maksimum",
+  "randomNumberCount": "Število",
+  "randomNumberGenerate": "Ustvari števila",
+  "randomNumberLimits": "Minimum/maksimum: cela števila −1000000000–1000000000, minimum ≤ maksimum. Število: 1–100. Ponovitve so dovoljene.",
+  "randomNumberInvalid": "Vnesite cela števila ASCII v mejah: minimum ≤ maksimum in število 1–100. Brez decimalk ali znanstvenega zapisa.",
+  "randomNumberUnavailable": "Vir naključnosti brskalnika ni na voljo. Poskusite znova."
 }

@@ -748,5 +748,14 @@
   "decimalFractionInput": "Dezimalzahl",
   "decimalFractionLimits": "ASCII-Ziffern; optional +/−. Bis zu 12 ganze und 12 Dezimalstellen; 64 rohe Eingabezeichen. Punkt oder Komma als Dezimaltrennzeichen, nicht für Tausender. Keine Exponenten oder periodischen Dezimalzahlen.",
   "decimalFractionInvalid": "Gib eine endliche Dezimalzahl innerhalb der Grenzen ein. Keine Tausendertrennzeichen, Exponenten, abschließenden Dezimaltrennzeichen oder Bruchschreibweise.",
-  "decimalFractionConvert": "Umwandeln"
+  "decimalFractionConvert": "Umwandeln",
+  "randomNumberTitle": "Zufallszahlengenerator",
+  "randomNumberDesc": "Erzeuge lokal zufällige ganze Zahlen im gewählten Bereich einschließlich der Grenzen, eine pro Zeile.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maximum",
+  "randomNumberCount": "Anzahl",
+  "randomNumberGenerate": "Zahlen erzeugen",
+  "randomNumberLimits": "Minimum/Maximum: ganze Zahlen −1000000000–1000000000, Minimum ≤ Maximum. Anzahl: 1–100. Wiederholungen sind erlaubt.",
+  "randomNumberInvalid": "Gib ASCII-Ganzzahlen innerhalb der Grenzen ein: Minimum ≤ Maximum und Anzahl 1–100. Keine Dezimalzahlen oder wissenschaftliche Schreibweise.",
+  "randomNumberUnavailable": "Die Zufallsquelle des Browsers ist nicht verfügbar. Versuche es erneut."
 }

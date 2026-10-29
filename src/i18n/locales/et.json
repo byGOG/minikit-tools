@@ -748,5 +748,14 @@
   "decimalFractionInput": "Kümnendarv",
   "decimalFractionLimits": "ASCII numbrid; valikuline +/−. Kuni 12 täisosa ja 12 murdosa numbrit; 64 algset sisendmärki. Punkt või koma on kümnenderaldaja, mitte tuhandete eraldaja. Astendaja ja perioodilised murrud ei sobi.",
   "decimalFractionInvalid": "Sisesta piirides lõplik kümnendmurd. Ilma tuhandete eraldaja, astendaja, lõpus oleva kümnenderaldaja või murrukirjata.",
-  "decimalFractionConvert": "Teisenda"
+  "decimalFractionConvert": "Teisenda",
+  "randomNumberTitle": "Juhuarvude generaator",
+  "randomNumberDesc": "Loo kohapeal juhuslikud täisarvud valitud vahemikus koos piiridega, üks rea kohta.",
+  "randomNumberMin": "Miinimum",
+  "randomNumberMax": "Maksimum",
+  "randomNumberCount": "Arv",
+  "randomNumberGenerate": "Loo arvud",
+  "randomNumberLimits": "Miinimum/maksimum: täisarvud −1000000000–1000000000, miinimum ≤ maksimum. Arv: 1–100. Kordused on lubatud.",
+  "randomNumberInvalid": "Sisesta piirides ASCII täisarvud: miinimum ≤ maksimum ja arv 1–100. Ilma kümnendmurdude või teadusliku kirjapildita.",
+  "randomNumberUnavailable": "Brauseri juhuslikkuse allikas pole saadaval. Proovi uuesti."
 }

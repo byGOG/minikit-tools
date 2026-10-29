@@ -748,5 +748,14 @@
   "decimalFractionInput": "Bilangan desimal",
   "decimalFractionLimits": "Digit ASCII; +/− opsional. Maksimal 12 digit bulat dan 12 desimal; 64 karakter mentah. Titik atau koma sebagai pemisah desimal, bukan ribuan. Tanpa eksponen atau desimal berulang.",
   "decimalFractionInvalid": "Masukkan desimal berhingga dalam batas. Tanpa pemisah ribuan, eksponen, pemisah desimal di akhir atau notasi pecahan.",
-  "decimalFractionConvert": "Konversi"
+  "decimalFractionConvert": "Konversi",
+  "randomNumberTitle": "Pembuat angka acak",
+  "randomNumberDesc": "Buat bilangan bulat acak secara lokal dalam rentang pilihan termasuk batasnya, satu per baris.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maksimum",
+  "randomNumberCount": "Jumlah",
+  "randomNumberGenerate": "Buat angka",
+  "randomNumberLimits": "Minimum/maksimum: bilangan bulat −1000000000–1000000000, minimum ≤ maksimum. Jumlah: 1–100. Angka boleh berulang.",
+  "randomNumberInvalid": "Masukkan bilangan bulat ASCII dalam batas: minimum ≤ maksimum dan jumlah 1–100. Tanpa desimal atau notasi ilmiah.",
+  "randomNumberUnavailable": "Sumber keacakan peramban tidak tersedia. Coba lagi."
 }

@@ -748,5 +748,14 @@
   "decimalFractionInput": "小数",
   "decimalFractionLimits": "ASCII数字、任意の+/−。整数部・小数部は各最大12桁、元の入力は最大64文字。ピリオドまたはカンマは小数点であり、桁区切りではありません。指数・循環小数は非対応です。",
   "decimalFractionInvalid": "範囲内の有限小数を入力してください。桁区切り、指数、末尾の小数点、分数表記は使えません。",
-  "decimalFractionConvert": "変換"
+  "decimalFractionConvert": "変換",
+  "randomNumberTitle": "乱数生成ツール",
+  "randomNumberDesc": "指定範囲の両端を含むランダムな整数をローカルで生成し、1行に1つ表示します。",
+  "randomNumberMin": "最小値",
+  "randomNumberMax": "最大値",
+  "randomNumberCount": "個数",
+  "randomNumberGenerate": "数値を生成",
+  "randomNumberLimits": "最小値・最大値：−1000000000〜1000000000の整数、最小値 ≤ 最大値。個数：1〜100。数値の重複を許可します。",
+  "randomNumberInvalid": "範囲内のASCII整数を入力してください：最小値 ≤ 最大値、個数1〜100。小数・指数表記は使えません。",
+  "randomNumberUnavailable": "ブラウザの乱数源を利用できません。再試行してください。"
 }

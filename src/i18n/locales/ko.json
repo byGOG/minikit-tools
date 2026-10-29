@@ -748,5 +748,14 @@
   "decimalFractionInput": "소수",
   "decimalFractionLimits": "ASCII 숫자, 선택적 +/−. 정수부와 소수부 각각 최대 12자리, 원본 입력 최대 64자. 점 또는 쉼표는 소수 구분자이며 천 단위 구분자가 아닙니다. 지수와 순환소수는 지원하지 않습니다.",
   "decimalFractionInvalid": "범위 내 유한소수를 입력하세요. 천 단위 구분자, 지수, 끝의 소수점, 분수 표기는 사용할 수 없습니다.",
-  "decimalFractionConvert": "변환"
+  "decimalFractionConvert": "변환",
+  "randomNumberTitle": "난수 생성기",
+  "randomNumberDesc": "선택한 범위의 양 끝을 포함하는 임의의 정수를 로컬에서 생성하고 한 줄에 하나씩 표시합니다.",
+  "randomNumberMin": "최솟값",
+  "randomNumberMax": "최댓값",
+  "randomNumberCount": "개수",
+  "randomNumberGenerate": "숫자 생성",
+  "randomNumberLimits": "최솟값/최댓값: −1000000000–1000000000의 정수, 최솟값 ≤ 최댓값. 개수: 1–100. 중복을 허용합니다.",
+  "randomNumberInvalid": "범위 내 ASCII 정수를 입력하세요: 최솟값 ≤ 최댓값, 개수 1–100. 소수와 지수 표기는 허용되지 않습니다.",
+  "randomNumberUnavailable": "브라우저의 난수 원본을 사용할 수 없습니다. 다시 시도하세요."
 }

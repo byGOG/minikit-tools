@@ -748,5 +748,14 @@
   "decimalFractionInput": "Ondalık sayı",
   "decimalFractionLimits": "ASCII rakamlar; isteğe bağlı +/−. En fazla 12 tam ve 12 ondalık basamak; ham girdi 64 karakter. Nokta veya virgül ondalık ayırıcıdır, binlik ayırıcı değildir. Üstel veya devirli sayı yok.",
   "decimalFractionInvalid": "Sınırlar içinde sonlu ondalık sayı gir. Binlik ayırıcı, üstel gösterim, sonda ondalık ayırıcı veya kesir gösterimi kullanma.",
-  "decimalFractionConvert": "Dönüştür"
+  "decimalFractionConvert": "Dönüştür",
+  "randomNumberTitle": "Rastgele sayı üretici",
+  "randomNumberDesc": "Seçtiğin aralıkta, uçlar dâhil rastgele tam sayıları yerel olarak satır başına bir tane üret.",
+  "randomNumberMin": "En küçük değer",
+  "randomNumberMax": "En büyük değer",
+  "randomNumberCount": "Adet",
+  "randomNumberGenerate": "Sayı üret",
+  "randomNumberLimits": "En küçük/en büyük: −1000000000–1000000000 arası tam sayılar, en küçük ≤ en büyük. Adet: 1–100. Sayılar tekrar edebilir.",
+  "randomNumberInvalid": "Sınırlar içinde ASCII tam sayılar gir: en küçük ≤ en büyük ve adet 1–100. Ondalık veya bilimsel gösterim kullanma.",
+  "randomNumberUnavailable": "Tarayıcının rastgelelik kaynağı kullanılamıyor. Yeniden dene."
 }

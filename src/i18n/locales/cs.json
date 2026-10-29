@@ -748,5 +748,14 @@
   "decimalFractionInput": "Desetinné číslo",
   "decimalFractionLimits": "Číslice ASCII; volitelné +/−. Až 12 celých a 12 desetinných číslic; 64 původních znaků. Tečka či čárka je desetinný oddělovač, ne tisíců. Bez exponentů a periodických čísel.",
   "decimalFractionInvalid": "Zadejte konečné desetinné číslo v mezích. Bez oddělovačů tisíců, exponentu, koncového desetinného oddělovače či zlomkového zápisu.",
-  "decimalFractionConvert": "Převést"
+  "decimalFractionConvert": "Převést",
+  "randomNumberTitle": "Generátor náhodných čísel",
+  "randomNumberDesc": "Generujte místně náhodná celá čísla ve zvoleném rozsahu včetně mezí, jedno na řádek.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maximum",
+  "randomNumberCount": "Počet",
+  "randomNumberGenerate": "Vygenerovat čísla",
+  "randomNumberLimits": "Minimum/maximum: celá čísla −1000000000–1000000000, minimum ≤ maximum. Počet: 1–100. Čísla se mohou opakovat.",
+  "randomNumberInvalid": "Zadejte ASCII celá čísla v mezích: minimum ≤ maximum a počet 1–100. Bez desetinných čísel či vědeckého zápisu.",
+  "randomNumberUnavailable": "Zdroj náhodnosti prohlížeče není dostupný. Zkuste to znovu."
 }

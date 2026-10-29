@@ -748,5 +748,14 @@
   "decimalFractionInput": "Număr zecimal",
   "decimalFractionLimits": "Cifre ASCII; +/− opțional. Până la 12 cifre întregi și 12 zecimale; 64 de caractere brute. Punct sau virgulă ca separator zecimal, nu de mii. Fără exponenți sau zecimale periodice.",
   "decimalFractionInvalid": "Introdu un zecimal finit în limite. Fără separator de mii, exponent, separator zecimal final sau notație fracționară.",
-  "decimalFractionConvert": "Convertește"
+  "decimalFractionConvert": "Convertește",
+  "randomNumberTitle": "Generator de numere aleatorii",
+  "randomNumberDesc": "Generează local întregi aleatorii în intervalul ales, inclusiv limitele, unul pe linie.",
+  "randomNumberMin": "Minim",
+  "randomNumberMax": "Maxim",
+  "randomNumberCount": "Cantitate",
+  "randomNumberGenerate": "Generează numere",
+  "randomNumberLimits": "Minim/maxim: întregi −1000000000–1000000000, minim ≤ maxim. Cantitate: 1–100. Repetările sunt permise.",
+  "randomNumberInvalid": "Introdu întregi ASCII în limite: minim ≤ maxim și cantitate 1–100. Fără zecimale sau notație științifică.",
+  "randomNumberUnavailable": "Sursa aleatorie a browserului nu este disponibilă. Încearcă din nou."
 }

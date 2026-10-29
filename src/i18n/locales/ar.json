@@ -748,5 +748,14 @@
   "decimalFractionInput": "عدد عشري",
   "decimalFractionLimits": "أرقام ASCII؛ +/− اختياري. حتى 12 خانة صحيحة و12 عشرية؛ 64 محرفًا خامًا. النقطة أو الفاصلة للفصل العشري لا للآلاف. لا أسس ولا أعداد عشرية دورية.",
   "decimalFractionInvalid": "أدخل عددًا عشريًا منتهيًا ضمن الحدود. دون فواصل آلاف أو أسس أو فاصل عشري أخير أو صيغة كسر.",
-  "decimalFractionConvert": "تحويل"
+  "decimalFractionConvert": "تحويل",
+  "randomNumberTitle": "مولد أعداد عشوائية",
+  "randomNumberDesc": "ولّد أعدادًا صحيحة عشوائية محليًا ضمن النطاق المختار شاملًا الحدين، عددًا في كل سطر.",
+  "randomNumberMin": "الحد الأدنى",
+  "randomNumberMax": "الحد الأقصى",
+  "randomNumberCount": "العدد",
+  "randomNumberGenerate": "توليد الأعداد",
+  "randomNumberLimits": "الحدان: أعداد صحيحة −1000000000–1000000000، الأدنى ≤ الأقصى. العدد: 1–100. يُسمح بتكرار الأعداد.",
+  "randomNumberInvalid": "أدخل أعدادًا صحيحة بأرقام ASCII ضمن الحدود: الأدنى ≤ الأقصى والعدد 1–100. دون كسور عشرية أو صيغة علمية.",
+  "randomNumberUnavailable": "مصدر العشوائية في المتصفح غير متاح. حاول مجددًا."
 }

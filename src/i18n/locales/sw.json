@@ -748,5 +748,14 @@
   "decimalFractionInput": "Nambari ya desimali",
   "decimalFractionLimits": "Tarakimu za ASCII; +/− ya hiari. Hadi tarakimu 12 za sehemu kamili na 12 za desimali; ingizo ghafi vibambo 64. Nukta au koma ni kitenganishi cha desimali, si maelfu. Bila vielelezo au desimali zinazojirudia.",
   "decimalFractionInvalid": "Weka desimali inayoisha ndani ya mipaka. Bila kitenganishi cha maelfu, kielelezo, kitenganishi cha desimali mwishoni au maandishi ya sehemu.",
-  "decimalFractionConvert": "Badilisha"
+  "decimalFractionConvert": "Badilisha",
+  "randomNumberTitle": "Kizalishaji cha nambari nasibu",
+  "randomNumberDesc": "Tengeneza nambari kamili nasibu kwenye kifaa katika eneo ulilochagua pamoja na mipaka, moja kila mstari.",
+  "randomNumberMin": "Kiwango cha chini",
+  "randomNumberMax": "Kiwango cha juu",
+  "randomNumberCount": "Idadi",
+  "randomNumberGenerate": "Tengeneza nambari",
+  "randomNumberLimits": "Viwango: nambari kamili −1000000000–1000000000, chini ≤ juu. Idadi: 1–100. Kurudia kunaruhusiwa.",
+  "randomNumberInvalid": "Weka nambari kamili za ASCII ndani ya mipaka: chini ≤ juu na idadi 1–100. Bila desimali au maandishi ya kisayansi.",
+  "randomNumberUnavailable": "Chanzo cha unasibu cha kivinjari hakipatikani. Jaribu tena."
 }

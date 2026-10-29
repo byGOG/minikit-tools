@@ -748,5 +748,14 @@
   "decimalFractionInput": "Số thập phân",
   "decimalFractionLimits": "Chữ số ASCII; +/− tùy chọn. Tối đa 12 chữ số nguyên và 12 chữ số thập phân; đầu vào gốc 64 ký tự. Chấm hoặc phẩy là dấu thập phân, không phải hàng nghìn. Không số mũ hay thập phân tuần hoàn.",
   "decimalFractionInvalid": "Nhập số thập phân hữu hạn trong giới hạn. Không dấu hàng nghìn, số mũ, dấu thập phân cuối hoặc dạng phân số.",
-  "decimalFractionConvert": "Chuyển đổi"
+  "decimalFractionConvert": "Chuyển đổi",
+  "randomNumberTitle": "Trình tạo số ngẫu nhiên",
+  "randomNumberDesc": "Tạo số nguyên ngẫu nhiên cục bộ trong khoảng đã chọn gồm cả hai đầu, mỗi dòng một số.",
+  "randomNumberMin": "Nhỏ nhất",
+  "randomNumberMax": "Lớn nhất",
+  "randomNumberCount": "Số lượng",
+  "randomNumberGenerate": "Tạo số",
+  "randomNumberLimits": "Nhỏ nhất/lớn nhất: số nguyên −1000000000–1000000000, nhỏ nhất ≤ lớn nhất. Số lượng: 1–100. Cho phép số lặp lại.",
+  "randomNumberInvalid": "Nhập số nguyên ASCII trong giới hạn: nhỏ nhất ≤ lớn nhất và số lượng 1–100. Không số thập phân hay ký hiệu khoa học.",
+  "randomNumberUnavailable": "Nguồn ngẫu nhiên của trình duyệt không khả dụng. Hãy thử lại."
 }

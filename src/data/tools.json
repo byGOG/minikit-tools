@@ -1150,5 +1150,17 @@
       "copyResult"
     ],
     "category": "daily"
+  },
+  {
+    "slug": "random-number-generator",
+    "title": "randomNumberTitle",
+    "desc": "randomNumberDesc",
+    "anchor": "random-number-tool",
+    "steps": [
+      "randomNumberMin",
+      "randomNumberMax",
+      "randomNumberGenerate"
+    ],
+    "category": "daily"
   }
 ]

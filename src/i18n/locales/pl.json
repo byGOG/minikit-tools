@@ -748,5 +748,14 @@
   "decimalFractionInput": "Liczba dziesiętna",
   "decimalFractionLimits": "Cyfry ASCII; opcjonalny +/−. Do 12 cyfr całkowitych i 12 po przecinku; 64 surowe znaki. Kropka lub przecinek to separator dziesiętny, nie tysięcy. Bez wykładników i rozwinięć okresowych.",
   "decimalFractionInvalid": "Wpisz skończoną liczbę dziesiętną w granicach. Bez separatora tysięcy, wykładnika, końcowego separatora dziesiętnego i zapisu ułamkowego.",
-  "decimalFractionConvert": "Konwertuj"
+  "decimalFractionConvert": "Konwertuj",
+  "randomNumberTitle": "Generator liczb losowych",
+  "randomNumberDesc": "Generuj lokalnie losowe liczby całkowite w wybranym zakresie wraz z granicami, po jednej w wierszu.",
+  "randomNumberMin": "Minimum",
+  "randomNumberMax": "Maksimum",
+  "randomNumberCount": "Liczba",
+  "randomNumberGenerate": "Generuj liczby",
+  "randomNumberLimits": "Minimum/maksimum: liczby całkowite −1000000000–1000000000, minimum ≤ maksimum. Liczba: 1–100. Powtórzenia dozwolone.",
+  "randomNumberInvalid": "Wpisz całkowite liczby ASCII w granicach: minimum ≤ maksimum i liczba 1–100. Bez ułamków dziesiętnych i notacji naukowej.",
+  "randomNumberUnavailable": "Źródło losowości przeglądarki jest niedostępne. Spróbuj ponownie."
 }
