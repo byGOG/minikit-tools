@@ -742,5 +742,11 @@
   "fractionDivide": "Dividér",
   "fractionLimits": "Hver tæller/nævner: hele tal −1000000000–1000000000. Nævnere må ikke være nul; ved division må den anden brøks tæller heller ikke være nul.",
   "fractionInvalid": "Indtast hele tal inden for grænserne, nævnere forskellig fra nul og ved division en anden tæller forskellig fra nul.",
-  "fractionCalculate": "Beregn"
+  "fractionCalculate": "Beregn",
+  "decimalFractionTitle": "Decimal til brøk-konverter",
+  "decimalFractionDesc": "Konvertér en afsluttet decimal til en nøjagtig forkortet brøk lokalt uden afrunding.",
+  "decimalFractionInput": "Decimaltal",
+  "decimalFractionLimits": "ASCII-cifre; valgfrit +/−. Op til 12 heltals- og 12 decimalcifre; 64 rå inputtegn. Punktum eller komma er decimaltegn, ikke tusindtalsseparator. Ingen eksponenter eller periodiske decimaler.",
+  "decimalFractionInvalid": "Indtast en afsluttet decimal inden for grænserne. Ingen tusindtalsseparator, eksponent, afsluttende decimaltegn eller brøknotation.",
+  "decimalFractionConvert": "Konvertér"
 }

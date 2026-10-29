@@ -742,5 +742,11 @@
   "fractionDivide": "Dividieren",
   "fractionLimits": "Jeder Zähler/Nenner: ganze Zahlen −1000000000–1000000000. Nenner dürfen nicht null sein; beim Dividieren auch nicht der Zähler des zweiten Bruchs.",
   "fractionInvalid": "Gib ganze Zahlen innerhalb der Grenzen, Nenner ungleich null und beim Dividieren einen zweiten Zähler ungleich null ein.",
-  "fractionCalculate": "Berechnen"
+  "fractionCalculate": "Berechnen",
+  "decimalFractionTitle": "Dezimalzahl-in-Bruch-Konverter",
+  "decimalFractionDesc": "Wandle eine endliche Dezimalzahl lokal in einen exakten gekürzten Bruch um, ohne Rundung.",
+  "decimalFractionInput": "Dezimalzahl",
+  "decimalFractionLimits": "ASCII-Ziffern; optional +/−. Bis zu 12 ganze und 12 Dezimalstellen; 64 rohe Eingabezeichen. Punkt oder Komma als Dezimaltrennzeichen, nicht für Tausender. Keine Exponenten oder periodischen Dezimalzahlen.",
+  "decimalFractionInvalid": "Gib eine endliche Dezimalzahl innerhalb der Grenzen ein. Keine Tausendertrennzeichen, Exponenten, abschließenden Dezimaltrennzeichen oder Bruchschreibweise.",
+  "decimalFractionConvert": "Umwandeln"
 }

@@ -742,5 +742,11 @@
   "fractionDivide": "Dividera",
   "fractionLimits": "Varje täljare/nämnare: heltal −1000000000–1000000000. Nämnare får inte vara noll; vid division får inte heller det andra bråkets täljare vara noll.",
   "fractionInvalid": "Ange heltal inom gränserna, nämnare skilda från noll och vid division en andra täljare skild från noll.",
-  "fractionCalculate": "Beräkna"
+  "fractionCalculate": "Beräkna",
+  "decimalFractionTitle": "Decimal-till-bråk-konverterare",
+  "decimalFractionDesc": "Omvandla ett avslutande decimaltal lokalt till ett exakt förkortat bråk, utan avrundning.",
+  "decimalFractionInput": "Decimaltal",
+  "decimalFractionLimits": "ASCII-siffror; valfritt +/−. Högst 12 heltals- och 12 decimalsiffror; 64 råa indatatecken. Punkt eller komma som decimaltecken, inte tusenavskiljare. Inga exponenter eller periodiska decimaler.",
+  "decimalFractionInvalid": "Ange ett avslutande decimaltal inom gränserna. Ingen tusenavskiljare, exponent, avslutande decimaltecken eller bråknotation.",
+  "decimalFractionConvert": "Omvandla"
 }

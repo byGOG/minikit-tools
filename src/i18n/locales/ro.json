@@ -742,5 +742,11 @@
   "fractionDivide": "Împarte",
   "fractionLimits": "Fiecare numărător/numitor: întregi −1000000000–1000000000. Numitorii nu pot fi zero; la împărțire nici numărătorul celei de-a doua fracții nu poate fi zero.",
   "fractionInvalid": "Introdu întregi în limite, numitori nenuli și, la împărțire, un al doilea numărător nenul.",
-  "fractionCalculate": "Calculează"
+  "fractionCalculate": "Calculează",
+  "decimalFractionTitle": "Convertor de zecimal în fracție",
+  "decimalFractionDesc": "Convertește local un zecimal finit într-o fracție exactă simplificată, fără rotunjire.",
+  "decimalFractionInput": "Număr zecimal",
+  "decimalFractionLimits": "Cifre ASCII; +/− opțional. Până la 12 cifre întregi și 12 zecimale; 64 de caractere brute. Punct sau virgulă ca separator zecimal, nu de mii. Fără exponenți sau zecimale periodice.",
+  "decimalFractionInvalid": "Introdu un zecimal finit în limite. Fără separator de mii, exponent, separator zecimal final sau notație fracționară.",
+  "decimalFractionConvert": "Convertește"
 }

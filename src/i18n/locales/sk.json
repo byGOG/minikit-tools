@@ -742,5 +742,11 @@
   "fractionDivide": "Deliť",
   "fractionLimits": "Každý čitateľ/menovateľ: celé čísla −1000000000–1000000000. Menovatele nesmú byť nula; pri delení ani čitateľ druhého zlomku.",
   "fractionInvalid": "Zadajte celé čísla v medziach, nenulové menovatele a pri delení nenulového druhého čitateľa.",
-  "fractionCalculate": "Vypočítať"
+  "fractionCalculate": "Vypočítať",
+  "decimalFractionTitle": "Prevodník desatinného čísla na zlomok",
+  "decimalFractionDesc": "Lokálne preveďte konečné desatinné číslo na presný skrátený zlomok bez zaokrúhlenia.",
+  "decimalFractionInput": "Desatinné číslo",
+  "decimalFractionLimits": "Číslice ASCII; voliteľné +/−. Až 12 celých a 12 desatinných číslic; 64 pôvodných znakov. Bodka či čiarka je desatinný oddeľovač, nie tisícov. Bez exponentov a periodických čísel.",
+  "decimalFractionInvalid": "Zadajte konečné desatinné číslo v medziach. Bez oddeľovačov tisícov, exponentu, koncového desatinného oddeľovača či zlomkového zápisu.",
+  "decimalFractionConvert": "Previesť"
 }

@@ -742,5 +742,11 @@
   "fractionDivide": "除",
   "fractionLimits": "每个分子/分母：−1000000000–1000000000 的整数。分母不能为 0；除法中第二个分数的分子也不能为 0。",
   "fractionInvalid": "请输入范围内的整数、非零分母；除法还需第二个分子非零。",
-  "fractionCalculate": "计算"
+  "fractionCalculate": "计算",
+  "decimalFractionTitle": "小数转分数转换器",
+  "decimalFractionDesc": "在本地将有限小数转换为精确的最简分数，不进行舍入。",
+  "decimalFractionInput": "小数",
+  "decimalFractionLimits": "ASCII 数字，可选 +/−。整数和小数部分各最多 12 位；原始输入最多 64 字符。点或逗号用作小数分隔符，不是千位分隔符。不支持指数或循环小数。",
+  "decimalFractionInvalid": "请输入范围内的有限小数。不得含千位分隔符、指数、末尾小数分隔符或分数格式。",
+  "decimalFractionConvert": "转换"
 }

@@ -742,5 +742,11 @@
   "fractionDivide": "Podziel",
   "fractionLimits": "Każdy licznik/mianownik: liczby całkowite −1000000000–1000000000. Mianowniki nie mogą być zerem; przy dzieleniu także licznik drugiego ułamka nie może być zerem.",
   "fractionInvalid": "Wpisz liczby całkowite w granicach, niezerowe mianowniki i przy dzieleniu niezerowy drugi licznik.",
-  "fractionCalculate": "Oblicz"
+  "fractionCalculate": "Oblicz",
+  "decimalFractionTitle": "Konwerter liczby dziesiętnej na ułamek",
+  "decimalFractionDesc": "Zamień skończoną liczbę dziesiętną lokalnie na dokładny skrócony ułamek, bez zaokrąglania.",
+  "decimalFractionInput": "Liczba dziesiętna",
+  "decimalFractionLimits": "Cyfry ASCII; opcjonalny +/−. Do 12 cyfr całkowitych i 12 po przecinku; 64 surowe znaki. Kropka lub przecinek to separator dziesiętny, nie tysięcy. Bez wykładników i rozwinięć okresowych.",
+  "decimalFractionInvalid": "Wpisz skończoną liczbę dziesiętną w granicach. Bez separatora tysięcy, wykładnika, końcowego separatora dziesiętnego i zapisu ułamkowego.",
+  "decimalFractionConvert": "Konwertuj"
 }

@@ -93,4 +93,10 @@ Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, do
 
 | İş | Sahip | Kabul ölçütü | Durum |
 |---|---|---|---|
-| TOOL-010 | Yeni araç geliştirici + içerik + kalite | İki kesirde dört işlem, tam aritmetik/sadeleştirme, sıfır ve sayı sınırları, 50 dil, rehber ve bağımsız testler | Yayın öncesi kontrol noktası; son PR/canlı kanıtı outputs/MINIKIT-FRACTION-DOGRULAMA.json ve outputs/MINIKIT-DEVAM.md kayıtlarında tutulur. |
+| TOOL-010 | Yeni araç geliştirici + içerik + kalite | İki kesirde dört işlem, tam aritmetik/sadeleştirme, sıfır ve sayı sınırları, 50 dil, rehber ve bağımsız testler | Tamamlandı; PR #49 birleştirildi. 157 birim + 53 dil/SEO + 316 tarayıcı testi ve canlı kontroller geçti. |
+
+## Ondalıktan kesre turu — 29 Ekim 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| TOOL-011 | Yeni araç geliştirici + içerik + kalite | Nokta/virgülle sonlu ondalıktan tam sadeleştirilmiş kesir, sayı/ham girdi sınırları, 50 dil, rehber ve bağımsız testler | Yayın öncesi kontrol noktası; son PR/canlı kanıtı outputs/MINIKIT-DECIMAL-FRACTION-DOGRULAMA.json ve outputs/MINIKIT-DEVAM.md kayıtlarında tutulur. |

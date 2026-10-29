@@ -742,5 +742,11 @@
   "fractionDivide": "Delen",
   "fractionLimits": "Elke teller/noemer: gehele getallen −1000000000–1000000000. Noemers mogen niet nul zijn; bij delen ook de teller van de tweede breuk niet.",
   "fractionInvalid": "Voer gehele getallen binnen de grenzen in, noemers ongelijk aan nul en bij delen een tweede teller ongelijk aan nul.",
-  "fractionCalculate": "Berekenen"
+  "fractionCalculate": "Berekenen",
+  "decimalFractionTitle": "Decimaal-naar-breuk-converter",
+  "decimalFractionDesc": "Zet een eindige decimaal lokaal om naar een exacte vereenvoudigde breuk, zonder afronding.",
+  "decimalFractionInput": "Decimaal getal",
+  "decimalFractionLimits": "ASCII-cijfers; optioneel +/−. Maximaal 12 gehele en 12 decimale cijfers; 64 ruwe invoertekens. Punt of komma als decimaalteken, niet voor duizendtallen. Geen exponenten of repeterende decimalen.",
+  "decimalFractionInvalid": "Voer een eindige decimaal binnen de grenzen in. Geen duizendtalscheiding, exponent, afsluitend decimaalteken of breuknotatie.",
+  "decimalFractionConvert": "Omzetten"
 }

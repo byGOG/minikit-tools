@@ -742,5 +742,11 @@
   "fractionDivide": "Bagi",
   "fractionLimits": "Setiap pembilang/penyebut: bilangan bulat −1000000000–1000000000. Penyebut tidak boleh nol; untuk pembagian, pembilang pecahan kedua juga tidak boleh nol.",
   "fractionInvalid": "Masukkan bilangan bulat dalam batas, penyebut bukan nol dan, untuk pembagian, pembilang kedua bukan nol.",
-  "fractionCalculate": "Hitung"
+  "fractionCalculate": "Hitung",
+  "decimalFractionTitle": "Konverter desimal ke pecahan",
+  "decimalFractionDesc": "Ubah desimal berhingga menjadi pecahan tepat yang disederhanakan secara lokal, tanpa pembulatan.",
+  "decimalFractionInput": "Bilangan desimal",
+  "decimalFractionLimits": "Digit ASCII; +/− opsional. Maksimal 12 digit bulat dan 12 desimal; 64 karakter mentah. Titik atau koma sebagai pemisah desimal, bukan ribuan. Tanpa eksponen atau desimal berulang.",
+  "decimalFractionInvalid": "Masukkan desimal berhingga dalam batas. Tanpa pemisah ribuan, eksponen, pemisah desimal di akhir atau notasi pecahan.",
+  "decimalFractionConvert": "Konversi"
 }

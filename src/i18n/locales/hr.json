@@ -742,5 +742,11 @@
   "fractionDivide": "Podijeli",
   "fractionLimits": "Svaki brojnik/nazivnik: cijeli brojevi −1000000000–1000000000. Nazivnici ne smiju biti nula; pri dijeljenju ni brojnik drugog razlomka.",
   "fractionInvalid": "Unesite cijele brojeve u granicama, nenulte nazivnike i pri dijeljenju nenulti drugi brojnik.",
-  "fractionCalculate": "Izračunaj"
+  "fractionCalculate": "Izračunaj",
+  "decimalFractionTitle": "Pretvarač decimalnog broja u razlomak",
+  "decimalFractionDesc": "Lokalno pretvorite konačni decimalni broj u točan skraćeni razlomak, bez zaokruživanja.",
+  "decimalFractionInput": "Decimalni broj",
+  "decimalFractionLimits": "ASCII znamenke; neobavezno +/−. Do 12 cijelih i 12 decimalnih znamenki; 64 sirova znaka. Točka ili zarez kao decimalni separator, ne tisućica. Bez eksponenata i periodičnih decimala.",
+  "decimalFractionInvalid": "Unesite konačni decimalni broj u granicama. Bez separatora tisućica, eksponenta, završnog decimalnog separatora ili zapisa razlomka.",
+  "decimalFractionConvert": "Pretvori"
 }

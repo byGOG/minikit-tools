@@ -742,5 +742,11 @@
   "fractionDivide": "Böl",
   "fractionLimits": "Her pay/payda: −1000000000–1000000000 arası tam sayı. Paydalar sıfır olamaz; bölmede ikinci kesrin payı da sıfır olamaz.",
   "fractionInvalid": "Sınırlar içinde tam sayılar, sıfır olmayan paydalar ve bölmede sıfır olmayan ikinci pay gir.",
-  "fractionCalculate": "Hesapla"
+  "fractionCalculate": "Hesapla",
+  "decimalFractionTitle": "Ondalıktan kesre dönüştürücü",
+  "decimalFractionDesc": "Sonlu ondalık sayıyı yuvarlamadan kesin ve sadeleştirilmiş kesre yerel olarak dönüştür.",
+  "decimalFractionInput": "Ondalık sayı",
+  "decimalFractionLimits": "ASCII rakamlar; isteğe bağlı +/−. En fazla 12 tam ve 12 ondalık basamak; ham girdi 64 karakter. Nokta veya virgül ondalık ayırıcıdır, binlik ayırıcı değildir. Üstel veya devirli sayı yok.",
+  "decimalFractionInvalid": "Sınırlar içinde sonlu ondalık sayı gir. Binlik ayırıcı, üstel gösterim, sonda ondalık ayırıcı veya kesir gösterimi kullanma.",
+  "decimalFractionConvert": "Dönüştür"
 }

@@ -422,6 +422,7 @@ async function initialize() {
   if (document.body.dataset.page !== 'directory' && document.querySelector('#css-radius-tool')) (await import('./border-radius')).setupBorderRadius(t);
   if (document.body.dataset.page !== 'directory' && document.querySelector('#text-binary-tool')) (await import('./text-binary')).setupTextBinary(t);
   if (document.body.dataset.page !== 'directory' && document.querySelector('#fraction-tool')) (await import('./fraction')).setupFractionCalculator(t);
+  if (document.body.dataset.page !== 'directory' && document.querySelector('#decimal-fraction-tool')) (await import('./decimal-fraction')).setupDecimalFraction(t);
   document.documentElement.dataset.toolsReady = "true";
 }
 void initialize();
