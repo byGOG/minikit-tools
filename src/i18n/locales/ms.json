@@ -742,5 +742,11 @@
   "fractionDivide": "Bahagi",
   "fractionLimits": "Setiap pengangka/penyebut: integer −1000000000–1000000000. Penyebut tidak boleh sifar; bagi pembahagian, pengangka pecahan kedua juga tidak boleh sifar.",
   "fractionInvalid": "Masukkan integer dalam had, penyebut bukan sifar dan, bagi pembahagian, pengangka kedua bukan sifar.",
-  "fractionCalculate": "Kira"
+  "fractionCalculate": "Kira",
+  "decimalFractionTitle": "Penukar perpuluhan kepada pecahan",
+  "decimalFractionDesc": "Tukar perpuluhan terhingga kepada pecahan tepat yang dipermudah secara setempat, tanpa pembundaran.",
+  "decimalFractionInput": "Nombor perpuluhan",
+  "decimalFractionLimits": "Digit ASCII; +/− pilihan. Sehingga 12 digit bulat dan 12 perpuluhan; 64 aksara mentah. Titik atau koma sebagai pemisah perpuluhan, bukan ribuan. Tiada eksponen atau perpuluhan berulang.",
+  "decimalFractionInvalid": "Masukkan perpuluhan terhingga dalam had. Tanpa pemisah ribuan, eksponen, pemisah perpuluhan di hujung atau notasi pecahan.",
+  "decimalFractionConvert": "Tukar"
 }

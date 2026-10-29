@@ -742,5 +742,11 @@
   "fractionDivide": "割る",
   "fractionLimits": "各分子・分母：−1000000000〜1000000000の整数。分母は0にできません。割り算では2番目の分数の分子も0にできません。",
   "fractionInvalid": "範囲内の整数、0以外の分母を入力してください。割り算では2番目の分子も0以外にしてください。",
-  "fractionCalculate": "計算"
+  "fractionCalculate": "計算",
+  "decimalFractionTitle": "小数から分数への変換ツール",
+  "decimalFractionDesc": "有限小数を丸めず、正確な既約分数にローカルで変換します。",
+  "decimalFractionInput": "小数",
+  "decimalFractionLimits": "ASCII数字、任意の+/−。整数部・小数部は各最大12桁、元の入力は最大64文字。ピリオドまたはカンマは小数点であり、桁区切りではありません。指数・循環小数は非対応です。",
+  "decimalFractionInvalid": "範囲内の有限小数を入力してください。桁区切り、指数、末尾の小数点、分数表記は使えません。",
+  "decimalFractionConvert": "変換"
 }

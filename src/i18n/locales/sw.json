@@ -742,5 +742,11 @@
   "fractionDivide": "Gawa",
   "fractionLimits": "Kila kiasi cha juu/kigawanyo: nambari kamili −1000000000–1000000000. Vigawanyo visiwe sifuri; kwa kugawa, kiasi cha juu cha sehemu ya pili pia kisiwe sifuri.",
   "fractionInvalid": "Weka nambari kamili ndani ya mipaka, vigawanyo visivyo sifuri na kwa kugawa kiasi cha juu cha pili kisicho sifuri.",
-  "fractionCalculate": "Kokotoa"
+  "fractionCalculate": "Kokotoa",
+  "decimalFractionTitle": "Kibadilishaji cha desimali kuwa sehemu",
+  "decimalFractionDesc": "Badilisha desimali inayoisha kuwa sehemu sahihi iliyorahisishwa kwenye kifaa, bila kukadiria.",
+  "decimalFractionInput": "Nambari ya desimali",
+  "decimalFractionLimits": "Tarakimu za ASCII; +/− ya hiari. Hadi tarakimu 12 za sehemu kamili na 12 za desimali; ingizo ghafi vibambo 64. Nukta au koma ni kitenganishi cha desimali, si maelfu. Bila vielelezo au desimali zinazojirudia.",
+  "decimalFractionInvalid": "Weka desimali inayoisha ndani ya mipaka. Bila kitenganishi cha maelfu, kielelezo, kitenganishi cha desimali mwishoni au maandishi ya sehemu.",
+  "decimalFractionConvert": "Badilisha"
 }

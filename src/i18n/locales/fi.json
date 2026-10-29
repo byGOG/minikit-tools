@@ -742,5 +742,11 @@
   "fractionDivide": "Jakolasku",
   "fractionLimits": "Jokainen osoittaja/nimittäjä: kokonaisluvut −1000000000–1000000000. Nimittäjä ei saa olla nolla; jakolaskussa ei myöskään toisen murtoluvun osoittaja.",
   "fractionInvalid": "Anna kokonaisluvut rajoissa, nollasta poikkeavat nimittäjät ja jakolaskussa nollasta poikkeava toinen osoittaja.",
-  "fractionCalculate": "Laske"
+  "fractionCalculate": "Laske",
+  "decimalFractionTitle": "Desimaaliluvun murtolukumuunnin",
+  "decimalFractionDesc": "Muunna päättyvä desimaaliluku paikallisesti tarkaksi supistetuksi murtoluvuksi pyöristämättä.",
+  "decimalFractionInput": "Desimaaliluku",
+  "decimalFractionLimits": "ASCII-numerot; valinnainen +/−. Enintään 12 kokonais- ja 12 desimaalinumeroa; 64 alkuperäistä syötemerkkiä. Piste tai pilkku desimaalierottimeksi, ei tuhansille. Ei eksponentteja tai jaksollisia desimaaleja.",
+  "decimalFractionInvalid": "Anna päättyvä desimaaliluku rajoissa. Ei tuhaterottimia, eksponenttia, loppuun jäävää desimaalierotinta tai murtolukumerkintää.",
+  "decimalFractionConvert": "Muunna"
 }

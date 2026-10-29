@@ -742,5 +742,11 @@
   "fractionDivide": "Jaga",
   "fractionLimits": "Iga lugeja/nimetaja: täisarvud −1000000000–1000000000. Nimetajad ei tohi olla null; jagamisel ei tohi teise murru lugeja olla null.",
   "fractionInvalid": "Sisesta piirides täisarvud, nullist erinevad nimetajad ja jagamisel nullist erinev teine lugeja.",
-  "fractionCalculate": "Arvuta"
+  "fractionCalculate": "Arvuta",
+  "decimalFractionTitle": "Kümnendmurru harilikuks murruks teisendaja",
+  "decimalFractionDesc": "Teisenda lõplik kümnendmurd kohapeal täpseks taandatud murruks ilma ümardamata.",
+  "decimalFractionInput": "Kümnendarv",
+  "decimalFractionLimits": "ASCII numbrid; valikuline +/−. Kuni 12 täisosa ja 12 murdosa numbrit; 64 algset sisendmärki. Punkt või koma on kümnenderaldaja, mitte tuhandete eraldaja. Astendaja ja perioodilised murrud ei sobi.",
+  "decimalFractionInvalid": "Sisesta piirides lõplik kümnendmurd. Ilma tuhandete eraldaja, astendaja, lõpus oleva kümnenderaldaja või murrukirjata.",
+  "decimalFractionConvert": "Teisenda"
 }

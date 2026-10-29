@@ -742,5 +742,11 @@
   "fractionDivide": "Divide",
   "fractionLimits": "Each numerator/denominator: integers −1000000000–1000000000. Denominators must not be zero; for division, the second fraction’s numerator must not be zero.",
   "fractionInvalid": "Enter integers within the limits, nonzero denominators and, for division, a nonzero second numerator.",
-  "fractionCalculate": "Calculate"
+  "fractionCalculate": "Calculate",
+  "decimalFractionTitle": "Decimal to fraction converter",
+  "decimalFractionDesc": "Convert a terminating decimal to an exact simplified fraction locally, without rounding.",
+  "decimalFractionInput": "Decimal number",
+  "decimalFractionLimits": "ASCII digits; optional +/−. Up to 12 integer and 12 decimal digits; 64 raw input characters. Use a dot or comma as the decimal separator, not for thousands. No exponents or repeating decimals.",
+  "decimalFractionInvalid": "Enter a terminating decimal within the limits. No thousands separators, exponent, trailing decimal separator or fraction notation.",
+  "decimalFractionConvert": "Convert"
 }

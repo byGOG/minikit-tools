@@ -1,0 +1,25 @@
+---
+import { Calculator, ShieldCheck, ArrowRight } from 'lucide-astro';
+import tr from '../i18n/locales/tr.json';
+const str = (key: string) => (tr as Record<string, string>)[key] ?? key;
+---
+<article class="tool-card decimal-fraction-card" id="decimal-fraction-tool">
+  <div class="card-top"><span class="tool-icon icon-blue"><Calculator size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
+  <h3 data-i18n="decimalFractionTitle">{str('decimalFractionTitle')}</h3>
+  <p data-i18n="decimalFractionDesc">{str('decimalFractionDesc')}</p>
+  <label class="field-label" for="decimal-fraction-input" data-i18n="decimalFractionInput">{str('decimalFractionInput')}</label>
+  <input class="text-input" id="decimal-fraction-input" type="text" dir="ltr" value="0.125" autocomplete="off" spellcheck="false" aria-describedby="decimal-fraction-limits"/>
+  <small class="decimal-fraction-hint" id="decimal-fraction-limits" data-i18n="decimalFractionLimits">{str('decimalFractionLimits')}</small>
+  <button class="button-primary full" id="decimal-fraction-convert" data-i18n="decimalFractionConvert">{str('decimalFractionConvert')}</button>
+  <label class="field-label decimal-fraction-result-label" for="decimal-fraction-output" data-i18n="textResult">{tr.textResult}</label>
+  <textarea class="text-input textarea text-result" id="decimal-fraction-output" readonly dir="ltr" spellcheck="false"></textarea>
+  <p class="tool-feedback" id="decimal-fraction-feedback" role="status" aria-live="polite"></p>
+  <div class="text-tool-actions"><button class="button-secondary full" id="decimal-fraction-copy" data-i18n="copyResult" disabled>{tr.copyResult}</button><button class="button-secondary full" id="decimal-fraction-clear" data-i18n="clearText">{tr.clearText}</button></div>
+  <div class="card-meta"><ShieldCheck size={14}/><span data-i18n="localWord">{tr.localWord}</span></div>
+  <a class="tool-more" data-tool-page="decimal-to-fraction" href="#tools"><span data-i18n="navCta">{tr.navCta}</span><ArrowRight size={14}/></a>
+</article>
+<style is:global>
+.decimal-fraction-hint{display:block;font-size:12px;line-height:1.65;color:#526258;margin:10px 0 14px}
+.decimal-fraction-result-label{margin-top:14px}
+.decimal-fraction-card textarea{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;min-height:80px;overflow-wrap:anywhere}
+</style>

@@ -742,5 +742,11 @@
   "fractionDivide": "나누기",
   "fractionLimits": "각 분자/분모: −1000000000–1000000000의 정수. 분모는 0일 수 없으며 나눗셈에서는 두 번째 분수의 분자도 0일 수 없습니다.",
   "fractionInvalid": "범위 내 정수와 0이 아닌 분모를 입력하세요. 나눗셈에서는 두 번째 분자도 0이 아니어야 합니다.",
-  "fractionCalculate": "계산"
+  "fractionCalculate": "계산",
+  "decimalFractionTitle": "소수를 분수로 변환",
+  "decimalFractionDesc": "유한소수를 반올림 없이 정확한 기약분수로 로컬에서 변환합니다.",
+  "decimalFractionInput": "소수",
+  "decimalFractionLimits": "ASCII 숫자, 선택적 +/−. 정수부와 소수부 각각 최대 12자리, 원본 입력 최대 64자. 점 또는 쉼표는 소수 구분자이며 천 단위 구분자가 아닙니다. 지수와 순환소수는 지원하지 않습니다.",
+  "decimalFractionInvalid": "범위 내 유한소수를 입력하세요. 천 단위 구분자, 지수, 끝의 소수점, 분수 표기는 사용할 수 없습니다.",
+  "decimalFractionConvert": "변환"
 }

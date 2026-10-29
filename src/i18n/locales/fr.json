@@ -742,5 +742,11 @@
   "fractionDivide": "Diviser",
   "fractionLimits": "Chaque numérateur/dénominateur : entiers −1000000000–1000000000. Dénominateurs non nuls ; pour une division, le numérateur de la deuxième fraction doit aussi être non nul.",
   "fractionInvalid": "Saisissez des entiers dans les limites, des dénominateurs non nuls et, pour une division, un deuxième numérateur non nul.",
-  "fractionCalculate": "Calculer"
+  "fractionCalculate": "Calculer",
+  "decimalFractionTitle": "Convertisseur de décimal en fraction",
+  "decimalFractionDesc": "Convertissez un décimal fini en fraction exacte simplifiée localement, sans arrondi.",
+  "decimalFractionInput": "Nombre décimal",
+  "decimalFractionLimits": "Chiffres ASCII ; +/− facultatif. Jusqu’à 12 chiffres entiers et 12 décimaux ; 64 caractères bruts. Point ou virgule comme séparateur décimal, pas de milliers. Sans exposants ni décimaux périodiques.",
+  "decimalFractionInvalid": "Saisissez un décimal fini dans les limites. Sans séparateur de milliers, exposant, séparateur décimal final ni notation fractionnaire.",
+  "decimalFractionConvert": "Convertir"
 }

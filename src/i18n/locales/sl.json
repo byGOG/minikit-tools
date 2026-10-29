@@ -742,5 +742,11 @@
   "fractionDivide": "Deli",
   "fractionLimits": "Vsak števec/imenovalec: cela števila −1000000000–1000000000. Imenovalci ne smejo biti nič; pri deljenju tudi števec drugega ulomka ne sme biti nič.",
   "fractionInvalid": "Vnesite cela števila v mejah, neničelne imenovalce in pri deljenju neničelni drugi števec.",
-  "fractionCalculate": "Izračunaj"
+  "fractionCalculate": "Izračunaj",
+  "decimalFractionTitle": "Pretvornik decimalnega števila v ulomek",
+  "decimalFractionDesc": "Lokalno pretvorite končno decimalno število v natančen okrajšan ulomek brez zaokroževanja.",
+  "decimalFractionInput": "Decimalno število",
+  "decimalFractionLimits": "Števke ASCII; izbirni +/−. Do 12 celih in 12 decimalnih števk; 64 surovih znakov. Pika ali vejica je decimalno ločilo, ne ločilo tisočic. Brez eksponentov in periodičnih decimalk.",
+  "decimalFractionInvalid": "Vnesite končno decimalno število v mejah. Brez ločil tisočic, eksponenta, končnega decimalnega ločila ali zapisa ulomka.",
+  "decimalFractionConvert": "Pretvori"
 }

@@ -742,5 +742,11 @@
   "fractionDivide": "Dalīt",
   "fractionLimits": "Katrs skaitītājs/saucējs: veseli skaitļi −1000000000–1000000000. Saucēji nedrīkst būt nulle; dalot arī otrā daļskaitļa skaitītājs nedrīkst būt nulle.",
   "fractionInvalid": "Ievadiet veselus skaitļus robežās, nenulles saucējus un dalot nenulles otro skaitītāju.",
-  "fractionCalculate": "Aprēķināt"
+  "fractionCalculate": "Aprēķināt",
+  "decimalFractionTitle": "Decimālskaitļa pārveidotājs par daļskaitli",
+  "decimalFractionDesc": "Lokāli pārveidojiet galīgu decimālskaitli precīzā saīsinātā daļskaitlī bez noapaļošanas.",
+  "decimalFractionInput": "Decimālskaitlis",
+  "decimalFractionLimits": "ASCII cipari; izvēles +/−. Līdz 12 veseliem un 12 decimāldaļas cipariem; 64 sākotnējās rakstzīmes. Punkts vai komats ir decimālatdalītājs, ne tūkstošu. Bez kāpinātājiem un periodiskiem decimālskaitļiem.",
+  "decimalFractionInvalid": "Ievadiet galīgu decimālskaitli robežās. Bez tūkstošu atdalītāja, kāpinātāja, decimālatdalītāja beigās vai daļskaitļa pieraksta.",
+  "decimalFractionConvert": "Pārveidot"
 }

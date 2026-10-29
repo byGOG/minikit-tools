@@ -742,5 +742,11 @@
   "fractionDivide": "Dalyti",
   "fractionLimits": "Kiekvienas skaitiklis/vardiklis: sveikieji skaičiai −1000000000–1000000000. Vardikliai negali būti nulis; dalijant ir antros trupmenos skaitiklis negali būti nulis.",
   "fractionInvalid": "Įveskite sveikuosius skaičius ribose, nenulinius vardiklius ir dalijant nenulinį antrą skaitiklį.",
-  "fractionCalculate": "Skaičiuoti"
+  "fractionCalculate": "Skaičiuoti",
+  "decimalFractionTitle": "Dešimtainio skaičiaus keitiklis į trupmeną",
+  "decimalFractionDesc": "Vietoje konvertuokite baigtinį dešimtainį skaičių į tikslią suprastintą trupmeną, neapvalindami.",
+  "decimalFractionInput": "Dešimtainis skaičius",
+  "decimalFractionLimits": "ASCII skaitmenys; pasirenkamas +/−. Iki 12 sveikosios ir 12 trupmeninės dalies skaitmenų; 64 neapdoroti ženklai. Taškas ar kablelis – dešimtainis skirtukas, ne tūkstančių. Be laipsnių ir periodinių trupmenų.",
+  "decimalFractionInvalid": "Įveskite baigtinį dešimtainį skaičių ribose. Be tūkstančių skirtuko, laipsnio, galinio dešimtainio skirtuko ar trupmenos užrašo.",
+  "decimalFractionConvert": "Konvertuoti"
 }

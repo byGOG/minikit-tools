@@ -742,5 +742,11 @@
   "fractionDivide": "Dividi",
   "fractionLimits": "Ogni numeratore/denominatore: interi −1000000000–1000000000. I denominatori non possono essere zero; nella divisione neppure il numeratore della seconda frazione.",
   "fractionInvalid": "Inserisci interi nei limiti, denominatori diversi da zero e, nella divisione, un secondo numeratore diverso da zero.",
-  "fractionCalculate": "Calcola"
+  "fractionCalculate": "Calcola",
+  "decimalFractionTitle": "Convertitore da decimale a frazione",
+  "decimalFractionDesc": "Converti un decimale finito in una frazione esatta semplificata localmente, senza arrotondare.",
+  "decimalFractionInput": "Numero decimale",
+  "decimalFractionLimits": "Cifre ASCII; +/− facoltativo. Fino a 12 cifre intere e 12 decimali; 64 caratteri grezzi. Punto o virgola come separatore decimale, non delle migliaia. Nessun esponente o decimale periodico.",
+  "decimalFractionInvalid": "Inserisci un decimale finito nei limiti. Senza separatori delle migliaia, esponenti, separatore decimale finale o notazione frazionaria.",
+  "decimalFractionConvert": "Converti"
 }

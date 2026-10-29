@@ -742,5 +742,11 @@
   "fractionDivide": "Chia",
   "fractionLimits": "Mỗi tử số/mẫu số: số nguyên −1000000000–1000000000. Mẫu số không được bằng 0; khi chia, tử số của phân số thứ hai cũng không được bằng 0.",
   "fractionInvalid": "Nhập số nguyên trong giới hạn, mẫu số khác 0 và khi chia tử số thứ hai khác 0.",
-  "fractionCalculate": "Tính"
+  "fractionCalculate": "Tính",
+  "decimalFractionTitle": "Chuyển đổi số thập phân sang phân số",
+  "decimalFractionDesc": "Chuyển cục bộ số thập phân hữu hạn thành phân số chính xác tối giản, không làm tròn.",
+  "decimalFractionInput": "Số thập phân",
+  "decimalFractionLimits": "Chữ số ASCII; +/− tùy chọn. Tối đa 12 chữ số nguyên và 12 chữ số thập phân; đầu vào gốc 64 ký tự. Chấm hoặc phẩy là dấu thập phân, không phải hàng nghìn. Không số mũ hay thập phân tuần hoàn.",
+  "decimalFractionInvalid": "Nhập số thập phân hữu hạn trong giới hạn. Không dấu hàng nghìn, số mũ, dấu thập phân cuối hoặc dạng phân số.",
+  "decimalFractionConvert": "Chuyển đổi"
 }

@@ -742,5 +742,11 @@
   "fractionDivide": "Osztás",
   "fractionLimits": "Minden számláló/nevező: egész szám −1000000000–1000000000 között. A nevező nem lehet nulla; osztáskor a második tört számlálója sem.",
   "fractionInvalid": "Adjon meg határokon belüli egész számokat, nem nulla nevezőket és osztáskor nem nulla második számlálót.",
-  "fractionCalculate": "Számítás"
+  "fractionCalculate": "Számítás",
+  "decimalFractionTitle": "Tizedesből tört átalakító",
+  "decimalFractionDesc": "Alakítson véges tizedes számot helyben pontos egyszerűsített törtté, kerekítés nélkül.",
+  "decimalFractionInput": "Tizedes szám",
+  "decimalFractionLimits": "ASCII számjegyek; opcionális +/−. Legfeljebb 12 egész és 12 tizedesjegy; 64 nyers beviteli karakter. Pont vagy vessző a tizedesjel, nem ezreselválasztó. Nincs kitevő vagy szakaszos tizedes.",
+  "decimalFractionInvalid": "Adjon meg véges tizedes számot a határokon belül. Ezreselválasztó, kitevő, záró tizedesjel és törtalak nélkül.",
+  "decimalFractionConvert": "Átalakítás"
 }

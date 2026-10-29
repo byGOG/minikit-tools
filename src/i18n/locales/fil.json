@@ -742,5 +742,11 @@
   "fractionDivide": "Mag-divide",
   "fractionLimits": "Bawat numerator/denominator: buong bilang −1000000000–1000000000. Hindi maaaring zero ang denominator; sa division, hindi rin zero ang numerator ng ikalawang fraction.",
   "fractionInvalid": "Maglagay ng buong bilang sa limitasyon, hindi zero na denominator at, sa division, hindi zero na ikalawang numerator.",
-  "fractionCalculate": "Kalkulahin"
+  "fractionCalculate": "Kalkulahin",
+  "decimalFractionTitle": "Tagapagpalit ng decimal sa fraction",
+  "decimalFractionDesc": "I-convert ang nagtatapos na decimal sa eksaktong pinasimpleng fraction nang lokal, walang pag-round.",
+  "decimalFractionInput": "Desimal na bilang",
+  "decimalFractionLimits": "ASCII digit; opsyonal na +/−. Hanggang 12 integer at 12 decimal digit; 64 raw input character. Tuldok o kuwit para sa decimal, hindi libuhan. Walang exponent o umuulit na decimal.",
+  "decimalFractionInvalid": "Maglagay ng nagtatapos na decimal sa limitasyon. Walang libuhang separator, exponent, panghuling decimal separator o fraction notation.",
+  "decimalFractionConvert": "I-convert"
 }
