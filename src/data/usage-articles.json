@@ -1,0 +1,266 @@
+[
+  {
+    "slug": "assignment-word-count-reading-time",
+    "toolSlugs": [
+      "word-counter",
+      "reading-time"
+    ],
+    "tr": {
+      "title": "Ödevin kelime sayısını ve okuma süresini nasıl kontrol edersin?",
+      "description": "Başlık, kaynakça ve alıntıları ayırarak ödev uzunluğunu kontrol et; kelime sayımı ile tahmini okuma süresinin farkını örneklerle öğren.",
+      "sections": [
+        {
+          "heading": "Önce hangi bölümün sayılacağını belirle",
+          "paragraphs": [
+            "Ödev için “en az 500 kelime” denildiğinde önce yönergede hangi bölümlerin dahil edildiğine bak. Başlık, dipnot, tablo, alıntı ve kaynakçanın dahil olup olmaması teslim kuralına bağlıdır. MiniKit metnin ödevdeki rolünü bilmez; kutuya yapıştırdığın bölümün tamamını sayar. Bu yüzden yalnız ana metin isteniyorsa önce onu seçip kopyala. Kaynakçayı ayrı tut ve sayıya dahil edip etmediğini kendi notuna yaz.",
+            "Belgenin asıl kopyasını koru. PDF veya bir web sayfasından kopyalama, satır sonlarını ve bazı karakterleri değiştirebilir. Sayaçtaki metni asıl belgeyle karşılaştır; özellikle iki sütunlu sayfalarda cümlelerin sırası karışmış olabilir. Sayım kontrolü, belgenin biçimlendirmesini veya kaynak gösteriminin doğruluğunu denetlemez."
+          ]
+        },
+        {
+          "heading": "Küçük bir örnekle sayımı doğrula",
+          "paragraphs": [
+            "Kelime sayacını açıp “Bugün kısa bir metin yazdım.” cümlesini tırnaklar olmadan yapıştır. Türkçe sayfada modern tarayıcıyla sonuç 5 kelimedir. Ardından kendi ana metnini yapıştır; kelime ve karakter alanları yazarken otomatik güncellenir. Ayrı bir hesaplama düğmesine basman gerekmez. Örneği yükle düğmesi de kutuyu bilinen bir örnekle doldurur; kendi metnini değiştirmeden önce kopyasını aldığından emin ol.",
+            "Sonuç hedefin altındaysa yalnız sayıyı artırmak için gereksiz cümleler eklemek yerine eksik açıklamaları kontrol et. Hedefin üzerindeyse tekrar eden ifadeleri sadeleştir. Her düzenlemeden sonra son sürümü yeniden yapıştır; eski bir taslağın sayısını teslim edeceğin metnin sayısı sanma."
+          ]
+        },
+        {
+          "heading": "Kelime ile karakter sayısı neden aynı şey değildir?",
+          "paragraphs": [
+            "Kelime sayısı, karakter sınırı olan bir forma doğrudan çevrilemez. Boşluklar, noktalama işaretleri ve satır sonları karakter sayımına katılır. Tarayıcı destekliyorsa MiniKit kelimeleri sayfa diline göre ayırır, görünen karakterleri grafem kümeleri olarak sayar. Destek yoksa kelimeler boşluklardan ayrılır ve karakterler Unicode kod noktalarıyla sayılır. Emoji veya birleşik işaretler kullanan metinlerde bu fark özellikle önemlidir.",
+            "Teslim sistemi farklı bir sayım yöntemi kullanıyorsa küçük farklar oluşabilir. Son karar için kurumunun veya teslim formunun kendi sayacını esas al. MiniKit hızlı bir ön kontrol sağlar; başka bir sistemin hangi parçaları saydığını kendiliğinden tespit etmez."
+          ]
+        },
+        {
+          "heading": "Okuma süresini bir planlama tahmini olarak kullan",
+          "paragraphs": [
+            "Kelime sayacının Türkçe ve İngilizce sayfalarındaki okuma süresi dakikada 200 kelime varsayımıyla hesaplanır. Bu nedenle 400 kelimelik bir metin yaklaşık 2 dakika gösterir. Bir dakikadan kısa süreler saniyeye, daha uzun süreler tam dakikaya yukarı yuvarlanır. Çince ve Japonca sayfalarda hesap, dakikada 500 karakter üzerinden yapılır. Sayfa dilini metne uygun seçmek önemlidir.",
+            "Ayrı Okuma süresi aracında ise okuma hızını dakikada 80–1000 kelime arasında seçebilirsin. Bu araç sayfa diline göre kelimeleri sayar ve seçtiğin hıza göre saniye cinsinden süre verir: 400 kelime, dakikada 200 kelimede 120 saniyedir. Kelime sayacındaki Çince/Japonca karakter kuralı bu ayrı araca uygulanmaz. İki aracın süre gösterimini karşılaştırırken seçili hız ile yuvarlama biçimini de kontrol et.",
+            "Bu süre sesli sunum süresi değildir. Duraklamalar, slayt değiştirme, teknik terimler ve dinleyiciye soru sorma süreyi değiştirir. Sunum hazırlıyorsan metni bir kez sesli okuyup gerçek süreyi ölç; sayaçtaki tahmini yalnız ilk planı yapmak için kullan."
+          ]
+        },
+        {
+          "heading": "Son kontrolde sınırı ve gizliliği hatırla",
+          "paragraphs": [
+            "Girdi sınırı 100000 UTF-16 kod birimidir; bu sınır ekranda görünen karakter sayısıyla birebir aynı değildir. Çok uzun belgeleri mantıklı bölümlere ayırıp ayrı kontrol et ve hangi bölümleri topladığını kaydet. Metin sayımı tarayıcıda yapılır; araç metnini işlemek için sunucuya göndermez. Paylaşılan bir bilgisayarda işin bitince kutuyu temizle ve asıl belgeni kendi güvenli konumunda sakla."
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "How to check an assignment’s word count and reading time",
+      "description": "Separate the body, references and quotations before checking an assignment, then use worked examples to understand word counts and estimated reading time.",
+      "sections": [
+        {
+          "heading": "Decide which parts belong in the count",
+          "paragraphs": [
+            "Before checking a requirement such as “at least 500 words”, read the assignment instructions. Whether titles, footnotes, tables, quotations and references count depends on the submission rules. MiniKit does not know which role a passage has in your document: it counts the text you paste. If the requirement applies only to the main body, copy that section first. Keep your references separate and note which sections you included.",
+            "Preserve the original document. Copying from a PDF or website can change line breaks or individual characters. Compare the pasted text with the source, especially when copying a two-column page that may mix sentence order. A word-count check does not validate formatting, citations or the academic quality of the work."
+          ]
+        },
+        {
+          "heading": "Try a small example before checking your draft",
+          "paragraphs": [
+            "Open the word counter and paste “Today I wrote a short paragraph.” without the quotation marks. On the English page in a modern browser, that sentence has 6 words. Then paste the body of your assignment. Word and character totals update as you type, so there is no separate calculation step. The Load example button replaces the field with a known sample; keep a copy of your draft before using it.",
+            "If you are below the target, check for explanations or evidence that the reader still needs. If you are above it, look for repeated ideas and unnecessary wording. Paste the final edited version again before submission so that you are checking the document you will actually hand in rather than an earlier draft."
+          ]
+        },
+        {
+          "heading": "Understand why words and characters differ",
+          "paragraphs": [
+            "A word total cannot be converted directly into a character allowance. Spaces, punctuation and line breaks contribute to the character total. Where supported, MiniKit segments words using the page language and counts visible characters as grapheme clusters. Without that browser support, words are split on whitespace and characters are counted as Unicode code points. Emoji and combining marks make this distinction particularly relevant.",
+            "Your submission system may use another counting method or exclude different sections. If its result differs slightly, use the institution’s rules and the submission system’s own total for the final decision. MiniKit provides a quick preliminary check; it cannot automatically discover another system’s counting policy."
+          ]
+        },
+        {
+          "heading": "Use reading time to plan, then rehearse",
+          "paragraphs": [
+            "The word counter’s English and Turkish pages estimate reading time at 200 words per minute. A passage of 400 words therefore shows about 2 minutes. Times below a minute are rounded up to seconds, while longer estimates are rounded up to whole minutes. Chinese and Japanese pages use 500 characters per minute instead. Select a page language that matches the text when checking the result.",
+            "The separate Reading time tool lets you select a speed between 80 and 1000 words per minute. It counts words using the page language and reports a duration in seconds at your selected speed: 400 words at 200 words per minute give 120 seconds. The word counter’s Chinese/Japanese character rule does not apply to this separate tool. When comparing the tools, check both the selected speed and the rounding or display format.",
+            "This is not a measurement of a spoken presentation. Pauses, slide changes, unfamiliar vocabulary and questions for the audience all affect the duration. For a presentation, read the finished script aloud and time it. Use the displayed estimate to make an initial plan, then use your rehearsal to decide what fits the allotted time."
+          ]
+        },
+        {
+          "heading": "Finish with a limit and privacy check",
+          "paragraphs": [
+            "The field accepts up to 100000 UTF-16 code units, which is not necessarily the same as its displayed character count. For a longer document, check clear sections separately and keep track of which totals you combine. Text counting takes place in the browser; the tool does not send the text to a server for processing. On a shared computer, clear the field when you finish and keep the original document in your own safe location."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "sort-and-deduplicate-lists",
+    "toolSlugs": [
+      "text-sorter",
+      "duplicate-line-remover",
+      "whitespace-cleaner"
+    ],
+    "tr": {
+      "title": "Bir listeyi alfabetik sıraya koyma ve tekrarlarını temizleme",
+      "description": "Her kaydı ayrı satıra yerleştir; doğal sayı sıralamasını, tekrar karşılaştırma seçeneklerini ve ilk kaydı koruyan temizleme akışını örneklerle uygula.",
+      "sections": [
+        {
+          "heading": "Listeyi işlem yapmadan önce hazırla",
+          "paragraphs": [
+            "Alışveriş maddeleri, dosya adları veya konu başlıkları karışık geldiğinde önce her öğeyi ayrı satıra yerleştir. Metin sıralayıcı virgülle ayrılmış tek bir satırı kendiliğinden öğelere bölmez. Bir satır “elma, armut, muz” içeriyorsa bu üç ayrı kayıt değil, tek satır olarak kalır. Listeyi hazırlarken başlık ve açıklama satırlarını dışarıda tut; aksi halde onlar da diğer kayıtlarla birlikte sıralanır.",
+            "Asıl listenin kopyasını sakla ve işlem sırasını belirle. Yalnız düzenli bir görünüm istiyorsan sıralama yeterlidir. Her kayıttan bir tane kalmasını istiyorsan önce yinelenen satır temizleyiciyi kullan, sonucu kopyala ve metin sıralayıcıya yapıştır. Böylece hangi işlemin neyi değiştirdiğini ayrı ayrı kontrol edebilirsin."
+          ]
+        },
+        {
+          "heading": "Doğal sıralamayı dosya adlarıyla dene",
+          "paragraphs": [
+            "Metin sıralayıcıya satır başına bir öğe olacak şekilde dosya10, dosya2 ve dosya1 yaz. Artan sırada sonuç dosya1, dosya2, dosya10 olur. Sayılar doğal karşılaştırıldığı için 10, 2’nin önüne yalnız ilk rakamı 1 olduğu için geçmez. Aynı şekilde yalnız 10, 2, 1 satırlarını girersen artan sonuç 1, 2, 10 olur. Azalan yönü seçtiğinde sıra tersine döner.",
+            "Alfabetik karşılaştırma sayfanın diline göre yapılır. Büyük/küçük harf ve aksanlar da karşılaştırmaya katılır; özel harflerin yeri tarayıcının dil verilerine bağlı olabilir. Türkçe isimler için Türkçe sayfayı kullan ve özellikle I, İ, ı, i içeren kayıtları son kontrolde gözden geçir. Bu araç soyadı veya tarih gibi bir sütunu kendiliğinden tanımaz; satırın tamamını karşılaştırır."
+          ]
+        },
+        {
+          "heading": "Tekrarları silmeden önce eşitlik kuralını seç",
+          "paragraphs": [
+            "Yinelenen satır temizleyicide varsayılan karşılaştırma büyük/küçük harfi ve baştaki/sondaki boşlukları korur. Elma ve elma farklı yazımlardır. Büyük/küçük harfi yok say seçeneğini açarsan aynı harflerin farklı boyutları tekrar kabul edilebilir. Boşlukları kırp seçeneği, karşılaştırmada satır kenarlarındaki boşlukları yok sayar. Önemli ayrıntı: bu seçenek korunan satırın metnini yeniden yazmaz; ilk satırın özgün biçimi kalır.",
+            "Örnek olarak ilk satıra “ Elma ”, ikinciye “elma”, üçüncüye “Armut” yaz; tırnakları ekleme. Türkçe sayfada iki seçeneği de açınca ikinci satır kaldırılır, ilk satır kenar boşluklarıyla ve Armut satırıyla korunur. İlk kaydı koruma davranışı, hangi yazımın sonuçta kalacağını belirler. İstediğin yazım farklıysa temizlemeden önce ilk kaydı düzenle."
+          ]
+        },
+        {
+          "heading": "Boş satırları ve benzer kayıtları ayrıca kontrol et",
+          "paragraphs": [
+            "Sıralayıcı yinelenen kayıtları veya boş satırları silmez. Tekrar temizleyici de bütün boş satırları yok eden bir işlem değildir: birden fazla eşit boş satır varsa ilkini koruyabilir. Gereksiz satırları ve boşlukları düzeltmek istiyorsan ilgili temizleme seçeneklerini ayrıca değerlendir. Boşluk temizliğini tekrar silmeden önce yapmak, hangi kayıtların eşit kabul edildiğini değiştirebilir; bu nedenle sonucu her adımda incele.",
+            "Tekrar temizleme benzer anlamlı kayıtları birleştirmez. “elma” ile “elmalar” veya farklı yazılmış iki adres aynı kayıt olarak anlaşılmaz. Unicode NFC normalleştirmesi karşılaştırmaya katılır; bu, tüm benzer görünen sembollerin eşit sayılacağı anlamına gelmez. Sonucu kullanmadan önce kayıt sayısını ve örnek birkaç satırı asıl listeyle karşılaştır."
+          ]
+        },
+        {
+          "heading": "Sonucu güvenle kullan",
+          "paragraphs": [
+            "İki metin aracı da en fazla 100000 UTF-16 kod birimi kabul eder. Çok büyük listeleri bölüyorsan farklı parçalardaki tekrarlar tek işlemde karşılaşmayacağından gözden kaçabilir. Sonucu kopyaladıktan sonra hedef uygulamada satırların ayrı kaldığını kontrol et. İşlemler tarayıcıda yapılır; liste içerikleri işlenmek için sunucuya gönderilmez. Paylaşılan cihazda işin bitince giriş ve sonucu temizle."
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "How to alphabetize a list and remove repeated lines",
+      "description": "Put one record on each line, compare natural number sorting with duplicate removal, and choose the matching rules before keeping the first occurrence.",
+      "sections": [
+        {
+          "heading": "Prepare one record per line",
+          "paragraphs": [
+            "For shopping items, filenames or topic lists, start by placing each item on a separate line. The text sorter does not automatically split a comma-separated row into individual records. A line containing “apple, pear, banana” remains one line, rather than becoming three items. Leave headings and explanatory notes outside the input unless you want those lines sorted with the records as well.",
+            "Keep a copy of the original and decide which operations you need. Sorting alone is enough if you only want a readable order. If you want a single copy of each record, run the duplicate line remover first, copy its result and paste it into the text sorter. Separating these steps makes it easier to see which operation changed the list."
+          ]
+        },
+        {
+          "heading": "Try natural order with numbered filenames",
+          "paragraphs": [
+            "Enter file10, file2 and file1, putting each on its own line. Ascending order produces file1, file2, file10. The sorter compares numbers naturally, so 10 does not come before 2 simply because its first digit is 1. Entering just the lines 10, 2, 1 similarly produces 1, 2, 10. Select descending order to reverse the comparison direction.",
+            "Alphabetical comparison uses the page language. Case and accents also participate, and the position of special letters can depend on the browser’s locale data. Choose the page language that fits the list, then inspect names containing special letters. The tool compares the complete line: it does not automatically recognize a surname, date or another column inside a record."
+          ]
+        },
+        {
+          "heading": "Choose the duplicate matching rules first",
+          "paragraphs": [
+            "The duplicate line remover’s default comparison distinguishes case and leading or trailing spaces. Apple and apple are different spellings. Enable Ignore case when differently capitalized versions should count as repeats. Enable Trim spaces to ignore spaces at the edges when comparing lines. An important detail is that this setting does not rewrite the surviving line: the first occurrence keeps its original spelling and surrounding spaces.",
+            "For a concrete example, enter “ Apple ” on the first line, “apple” on the second and “Pear” on the third, without quotation marks. On the English page, enable both options. The second line is removed, leaving the original first line with its spaces and the Pear line. If you prefer another spelling, edit the first occurrence before removing duplicates."
+          ]
+        },
+        {
+          "heading": "Review blank lines and similar records separately",
+          "paragraphs": [
+            "The sorter preserves both repeated records and blank lines. Duplicate removal is not the same as deleting every blank line either: when identical empty lines repeat, the first can remain. If you also need whitespace cleanup, consider those options separately. Cleaning whitespace before deduplication can change which records match, so review the result after each operation rather than assuming every cleanup has the same effect.",
+            "Deduplication does not merge records with similar meanings. “apple” and “apples”, or two differently written addresses, are not automatically understood as the same item. NFC Unicode normalization participates in matching, but that does not make every visually similar symbol equal. Compare the final record count and a few sample lines with the original before using the result elsewhere."
+          ]
+        },
+        {
+          "heading": "Check the final copy and input limit",
+          "paragraphs": [
+            "Both text tools accept up to 100000 UTF-16 code units. If you divide a large list into batches, duplicates in different batches will not meet in the same operation and may remain. After copying the result, check that your destination application preserves one record per line. Processing happens in the browser; list contents are not sent to a server for processing. Clear the input and result when you finish on a shared device."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "discount-percentage-change-explained",
+    "toolSlugs": [
+      "percentage-calculator",
+      "discount-calculator"
+    ],
+    "tr": {
+      "title": "İndirim tutarı, yüzde oranı ve yüzde değişimi nasıl ayrılır?",
+      "description": "200 üzerinden %15 indirim, 30/200 oranı ve 100’den 120’ye değişim örnekleriyle doğru yüzde hesabını seç; art arda indirimleri kontrol et.",
+      "sections": [
+        {
+          "heading": "Sorunun hangi değeri istediğini belirle",
+          "paragraphs": [
+            "Yüzdeli sorularda önce aradığın sonucun tutar mı, oran mı, değişim mi olduğunu belirle. “200’ün %15’i kaç?” bir tutar ister. “30, 200’ün yüzde kaçı?” bir oran ister. “100’den 120’ye çıktı; ne kadar arttı?” ise başlangıca göre değişimi sorar. Aynı sayılar farklı kutulara yazıldığında başka sorulara cevap verebilir; yalnız yüzde işaretine bakarak mod seçme.",
+            "MiniKit yüzde hesaplayıcısında üç mod bulunur. Modu değiştirince alan açıklamaları ve formül ipucu da değişir; önce bunları oku. Örneği yükle düğmesi seçili moda uygun değerleri yerleştirip sonucu hesaplar. Kendi sayılarını girmeden önce örnekte hangi kutunun neyi temsil ettiğini kontrol etmek yanlış başlangıç değerini seçmeyi önler."
+          ]
+        },
+        {
+          "heading": "200 üzerinden %15 indirim örneği",
+          "paragraphs": [
+            "Yüzde tutarını bulmak için bir değerin yüzdesi modunda yüzde alanına 15, toplam değer alanına 200 yaz. Hesap 15 / 100 × 200 = 30 verir. Bu 30 indirim tutarıdır; ödenecek son fiyat değildir. Son fiyatı bulmak için 200 − 30 = 170 hesaplanır. Yalnız yüzde hesaplayıcısındaki 30 sonucunu fiyat diye okumamak gerekir.",
+            "İndirim hesaplayıcı bu iki sonucu birlikte gösterir. Fiyat 200 ve indirim 15 girildiğinde son fiyat 170.00, tasarruf 30.00 olur. Girdi hangi para birimindeyse sonuç da aynı birimdedir; araç döviz dönüşümü yapmaz. Vergi, kargo ve ek ücretleri kendiliğinden eklemez. Gerçek alışveriş toplamıyla karşılaştırırken bu kalemleri ayrıca kontrol et."
+          ]
+        },
+        {
+          "heading": "Bir parçanın bütüne oranını bul",
+          "paragraphs": [
+            "“30, 200’ün yüzde kaçı?” sorusunda oran modunu seç. Parça alanı 30, bütün alanı 200 olmalıdır. Formül 30 / 200 × 100 = %15’tir. Alanları ters çevirirsen başka bir oran hesaplarsın. Bütün sıfır olamaz; sıfıra bölme tanımlı olmadığından araç bu girdiyle sonuç üretmez. Parçayı ve bütünü aynı birimle ifade et.",
+            "Bu mod bir hedefin tamamlanma oranını da kontrol edebilir: 200 kayıttan 30’u işlendiğinde tamamlanma %15’tir. Ancak yüzdeyi yorumlamadan önce “bütün”ün hangi kayıtları kapsadığını netleştir. Araç sayılara matematik uygular; listenin kapsamını, eksik kayıtları veya iki sayının aynı döneme ait olup olmadığını denetlemez."
+          ]
+        },
+        {
+          "heading": "Artış ile düşüşte başlangıç değeri değişir",
+          "paragraphs": [
+            "Değişim modunda ilk değer 100, son değer 120 ise sonuç %20’dir. Ters yönde, ilk değer 120 ve son değer 100 olduğunda sonuç yaklaşık −%16,6666666667 olur. İki değişimin yüzdesi aynı değildir; çünkü payda başlangıç değeridir. MiniKit formülü (son − ilk) / |ilk| × 100 olarak uygular. Negatif başlangıçlarda da paydada mutlak değer kullanılır; sıfır başlangıç kabul edilmez.",
+            "Art arda indirimlerde yüzdeleri doğrudan toplama. 200’e önce %20 indirim uygulanınca 160 kalır. 160’a %10 daha indirim uygulanınca 144 kalır. Toplam tasarruf 56, ilk fiyata göre indirim %28’dir; %30 değildir. Her adımın yeni fiyatını sonraki adımın başlangıç fiyatı olarak kullan."
+          ]
+        },
+        {
+          "heading": "Sayı biçimi ve yuvarlamayı son kontrolde incele",
+          "paragraphs": [
+            "Ondalık için nokta veya virgül kullan, binlik ayracı yazma; örneğin bin iki yüzü 1200 olarak gir. İndirim aracında fiyat 0 ile 1 trilyon, indirim %0 ile %100 arasında olmalıdır; sonuçlar iki ondalıkla gösterilir. Yüzde hesaplayıcı yaklaşık JavaScript aritmetiği kullanır ve 12 anlamlı basamak gösterir. Yuvarlamadan kaynaklanan küçük farkları kontrol et. Değerler tarayıcıda işlenir; bu hesaplar fiyat veya kazanç garantisi oluşturmaz."
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "Discount amount, percentage ratio and percentage change explained",
+      "description": "Choose the right calculation using 15% off 200, the ratio 30/200 and a change from 100 to 120, then check how successive discounts combine.",
+      "sections": [
+        {
+          "heading": "Identify what the question asks for",
+          "paragraphs": [
+            "Before entering numbers, decide whether you need an amount, a ratio or a change. “What is 15% of 200?” asks for an amount. “What percentage of 200 is 30?” asks for a ratio. “It increased from 100 to 120; by how much?” asks for a change relative to the starting value. The same numbers can answer different questions when placed in different fields.",
+            "MiniKit’s percentage calculator has three modes. Switching modes updates the field labels and formula hint, so read those before calculating. Load example fills the fields for the selected mode and calculates the result. Try that example first to confirm what each field represents, then replace the values with your own."
+          ]
+        },
+        {
+          "heading": "Work through 15% off a price of 200",
+          "paragraphs": [
+            "To find the percentage amount, choose the percentage-of-a-value mode, enter 15 as the percentage and 200 as the total value. The calculation is 15 / 100 × 200 = 30. That 30 is the discount amount, not the final price. Subtract it from the original price: 200 − 30 = 170. Reading the percentage amount as the amount payable would answer the wrong question.",
+            "The discount calculator displays both figures together. A price of 200 and a discount of 15 produce a final price of 170.00 and savings of 30.00. Results use the same currency unit as the input; the tool does not convert currencies. It does not automatically add tax, shipping or other charges, so check those separately when comparing the calculation with a checkout total."
+          ]
+        },
+        {
+          "heading": "Calculate a part as a percentage of a whole",
+          "paragraphs": [
+            "For “What percentage of 200 is 30?”, select ratio mode. Enter 30 as the part and 200 as the whole. The formula is 30 / 200 × 100 = 15%. Reversing the fields calculates a different ratio. The whole cannot be zero because division by zero is undefined. Express the part and whole in matching units before entering them.",
+            "This mode can also check progress: completing 30 records out of 200 gives 15%. Define which records belong in the whole before interpreting that number. The tool performs arithmetic; it does not check whether records are missing, whether the totals cover the same period or whether you selected the right scope."
+          ]
+        },
+        {
+          "heading": "Keep track of the starting value",
+          "paragraphs": [
+            "In change mode, an initial value of 100 and final value of 120 give 20%. In the reverse direction, an initial value of 120 and final value of 100 give approximately −16.6666666667%. Those percentages differ because the starting value is the denominator. MiniKit uses (final − initial) / |initial| × 100. It also uses the absolute initial value for negative baselines and rejects a zero baseline.",
+            "Do not simply add successive discount percentages. Starting with 200, a 20% discount leaves 160. A further 10% discount on 160 leaves 144. Total savings are 56, which is 28% of the original price, rather than 30%. Carry each new price forward as the starting price for the next step."
+          ]
+        },
+        {
+          "heading": "Check number formatting and rounding",
+          "paragraphs": [
+            "Use a dot or comma for decimals without thousands separators: enter twelve hundred as 1200. The discount tool accepts prices from zero to one trillion and discounts from 0% to 100%; it displays results to two decimal places. The percentage calculator uses approximate JavaScript arithmetic and displays 12 significant digits. Review small rounding differences before using the result elsewhere. Values are processed in your browser; these calculations do not establish a guaranteed price or financial outcome."
+          ]
+        }
+      ]
+    }
+  }
+]

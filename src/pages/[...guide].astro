@@ -1,0 +1,9 @@
+---
+import UsageGuide from '../components/UsageGuide.astro';
+import articles from '../data/usage-articles.json';
+export function getStaticPaths(){
+ return (['tr','en'] as const).flatMap(locale=>[undefined,...articles.map(a=>a.slug)].map(slug=>({params:{guide:(locale==='tr'?'':'en/')+'guides'+(slug?'/'+slug:'')},props:{locale,slug}})));
+}
+const {locale,slug}=Astro.props;
+---
+<UsageGuide locale={locale} slug={slug} />

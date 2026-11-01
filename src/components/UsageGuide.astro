@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import articles from '../data/usage-articles.json';
+import tools from '../data/tools.json';
+import tr from '../i18n/locales/tr.json';
+import en from '../i18n/locales/en.json';
+interface Props { locale: 'tr'|'en'; slug?: string }
+const {locale,slug}=Astro.props;
+const article=articles.find(a=>a.slug===slug);
+const content=article?.[locale];
+const base=import.meta.env.BASE_URL.replace(/\/$/,'')+'/';
+const prefix=locale==='tr'?'':'en/';
+const path=(lang:string,s?:string)=>base+(lang==='tr'?'':'en/')+'guides/'+(s?s+'/':'');
+const text=locale==='tr'?{guides:'Kullanım rehberleri',intro:'Gerçek örneklerle günlük bir işi tamamla; her rehber seni ilgili ücretsiz araca götürür.',tools:'İlgili araçları aç',all:'Tüm rehberler',privacy:'Gizlilik',contact:'İletişim',skip:'İçeriğe geç',toc:'Bu rehberde',other:'Diğer rehberler'}:{guides:'Usage guides',intro:'Complete an everyday task with worked examples. Each guide links to the free tools you need.',tools:'Open the related tools',all:'All guides',privacy:'Privacy',contact:'Contact',skip:'Skip to content',toc:'In this guide',other:'More guides'};
+const title=content?.title||text.guides;
+const description=content?.description||text.intro;
+const canonical=new URL(path(locale,slug),Astro.site).href;
+const dictionary:Record<string,string>=locale==='tr'?tr:en;
+const schema=content?{'@context':'https://schema.org','@type':'Article',headline:title,description,inLanguage:locale,mainEntityOfPage:canonical,author:{'@type':'Organization',name:'MiniKit'},publisher:{'@type':'Organization',name:'MiniKit'}}:{'@context':'https://schema.org','@type':'CollectionPage',name:title,description,inLanguage:locale,url:canonical};
+---
+<Layout title={`${title} — MiniKit`} description={description} lang={locale} advertisements={false} canonical={canonical}>
+ <Fragment slot="head">
+  {(['tr','en'] as const).map(code=><link rel="alternate" hreflang={code} href={new URL(path(code,slug),Astro.site).href} />)}
+  <link rel="alternate" hreflang="x-default" href={new URL(path('tr',slug),Astro.site).href} />
+  <meta property="og:url" content={canonical} />
+ </Fragment>
+ <a class="guide-skip" href="#content">{text.skip}</a>
+ <div class="usage-shell">
+  <header><a class="usage-brand" href={`${base}${prefix}`}>minikit.</a><nav aria-label={locale==='tr'?'Ana gezinme':'Main navigation'}><a href={path(locale)}>{text.guides}</a><a class="guide-language" href={path(locale==='tr'?'en':'tr',slug)} hreflang={locale==='tr'?'en':'tr'} lang={locale==='tr'?'en':'tr'}>{locale==='tr'?'English':'Türkçe'}</a></nav></header>
+  <main id="content" tabindex="-1">
+   <nav class="guide-breadcrumb" aria-label="Breadcrumb"><a href={`${base}${prefix}`}>MiniKit</a> / <a href={path(locale)}>{text.guides}</a></nav>
+   <article class="usage-article">
+    <h1>{title}</h1><p class="usage-lead">{description}</p>
+    {content&&article?<>
+     <aside class="usage-tools"><h2>{text.tools}</h2><ul>{article.toolSlugs.map(s=>{const tool=tools.find(t=>t.slug===s);return tool&&<li><a data-guide-tool={s} href={`${base}${prefix}tools/${s}/`}>{dictionary[tool.title]} →</a></li>})}</ul></aside>
+     <nav class="guide-toc" aria-label={text.toc}><b>{text.toc}</b><ol>{content.sections.map((s,i)=><li><a href={`#step-${i+1}`}>{s.heading}</a></li>)}</ol></nav>
+     {content.sections.map((s,i)=><section id={`step-${i+1}`}><h2>{s.heading}</h2>{s.paragraphs.map(p=><p>{p}</p>)}</section>)}
+     <aside class="usage-tools"><h2>{text.other}</h2><ul>{articles.filter(a=>a.slug!==slug).map(a=><li><a href={path(locale,a.slug)}>{a[locale].title}</a></li>)}</ul><a href={path(locale)}>{text.all} →</a></aside>
+    </>:<div class="usage-list">{articles.map(a=><section><h2><a href={path(locale,a.slug)}>{a[locale].title}</a></h2><p>{a[locale].description}</p></section>)}</div>}
+   </article>
+  </main>
+  <footer><a href={`${base}privacy/`}>{text.privacy}</a><a href={`${base}contact/`}>{text.contact}</a><span>© {new Date().getFullYear()} MiniKit</span></footer>
+ </div>
+ <script type="application/ld+json" set:html={JSON.stringify(schema).replaceAll('<','\\u003c')} />
+</Layout>
+<style is:global>
+body{margin:0;background:#f8faf7;color:#173a2b;font-family:system-ui,sans-serif}.usage-shell{max-width:900px;margin:auto;padding:0 22px}.usage-shell header{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:25px 0;border-bottom:1px solid #dce5d7}.usage-brand{font-size:25px;font-weight:800;text-decoration:none}.usage-shell nav,.usage-shell footer{display:flex;gap:20px;flex-wrap:wrap}.usage-shell a{color:#155c42;text-underline-offset:4px;overflow-wrap:anywhere}.usage-shell a:focus-visible,.guide-skip:focus{outline:3px solid #739c59;outline-offset:4px}.guide-breadcrumb{font-size:13px;padding:24px 0}.usage-article{background:#fff;border:1px solid #e0eadb;border-radius:20px;padding:clamp(20px,5vw,50px)}.usage-article h1{font-size:clamp(29px,5vw,44px);line-height:1.2;letter-spacing:-1px;overflow-wrap:anywhere;margin-top:0}.usage-article h2{font-size:23px;line-height:1.4;margin-top:32px;overflow-wrap:anywhere}.usage-article p,.usage-article li{line-height:1.85;color:#43594c;overflow-wrap:anywhere}.usage-lead{font-size:18px}.usage-tools{padding:18px 22px;background:#eef5e9;border-radius:12px;margin:28px 0}.usage-tools h2{margin-top:0;font-size:20px}.usage-tools ul{padding-left:20px}.guide-toc{display:block!important;padding:20px 0}.guide-toc ol{padding-left:22px}.usage-article section{scroll-margin-top:20px}.usage-list section+section{border-top:1px solid #e0eadb;margin-top:28px}.usage-shell footer{padding:28px 0;font-size:13px}.guide-skip{position:absolute;top:0;left:20px;transform:translateY(-120%);background:#fff;padding:10px}.guide-skip:focus{transform:translateY(0)}@media(max-width:480px){.usage-shell{padding:0 16px}.usage-shell header{align-items:flex-start}.usage-shell header nav{gap:12px;font-size:13px}.usage-tools{padding:16px}.usage-article h2{font-size:21px}}
+</style>

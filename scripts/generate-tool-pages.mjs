@@ -7,6 +7,7 @@ const labels=JSON.parse(await readFile('src/data/directory-labels.json','utf8'))
 const templates=new Map();
 const examples=JSON.parse(await readFile('src/data/tool-examples.json','utf8'));
 const guides=JSON.parse(await readFile(new URL('../src/data/tool-guides.json',import.meta.url),'utf8'));
+const articles=JSON.parse(await readFile('src/data/usage-articles.json','utf8'));
 const tools = JSON.parse(await readFile(new URL('../src/data/tools.json', import.meta.url), 'utf8'));
 const locales=catalog.map(({code})=>({code,path:localePath(code)}));
 for (const locale of locales) {
@@ -14,6 +15,9 @@ for (const locale of locales) {
  let home=await readFile(file,'utf8');
  home=home.replace(/<a class="tool-more" data-tool-page="([^"]+)" href="[^"]*"/g,(_m,slug)=>'<a class="tool-more" data-tool-page="'+slug+'" href="'+siteBase+locale.path+'tools/'+slug+'/"');
  const {document}=parseHTML(home);
+ if(['tr','en'].includes(locale.code)){
+  const link=document.createElement('a');link.href=siteBase+locale.path+'guides/';link.textContent=locale.code==='tr'?'Kullanım rehberleri':'Usage guides';link.className='usage-guides-link';document.querySelector('.footer-right')?.prepend(link);
+ }
  const grid=document.querySelector('.tool-grid');
  const cards=new Map([...grid.querySelectorAll(':scope > .tool-card')].map(card=>[card.id,card.outerHTML]));
  if(cards.size!==tools.length)throw Error('Tool card/catalog mismatch: '+locale.code);
@@ -74,7 +78,7 @@ for(const tool of tools){
   const faq='<section class="seo-faq"><h2>'+esc(words[1])+'</h2><details><summary>'+esc(words[2])+'</summary><p>'+esc(privacyAnswer)+'</p></details><details><summary>'+esc(words[3])+'</summary><p>'+esc(freeAnswer)+'</p></details></section>';
   const sample=examples[tool.slug];
   const example=sample?'<section class="tool-example"><h2>'+esc(labels[locale.code].example)+'</h2><pre dir="ltr">'+esc(sample[0])+'</pre><p aria-hidden="true">↓</p><pre dir="ltr">'+esc(sample[1])+'</pre></section>':'';
-  html=html.replace('</main>',(focusTool?'<section class="seo-guide tool-usage-guide">'+guideBody+'</section>':'')+example+(focusTool?relatedHtml:'')+faq+'</main>');
+  html=html.replace('</main>',(focusTool?'<section class="seo-guide tool-usage-guide">'+guideBody+'</section>':'')+example+(focusTool?relatedHtml:'')+faq+(['tr','en'].includes(locale.code)&&articles.some(article=>article.toolSlugs.includes(tool.slug))?'<aside class="related-tools usage-reading"><h2>'+esc(locale.code==='tr'?'Uygulamalı rehberler':'Practical guides')+'</h2><ul>'+articles.filter(article=>article.toolSlugs.includes(tool.slug)).map(article=>'<li><a href="'+siteBase+locale.path+'guides/'+article.slug+'/">'+esc(article[locale.code].title)+'</a></li>').join('')+'</ul><a href="'+siteBase+locale.path+'guides/">'+esc(locale.code==='tr'?'Tüm kullanım rehberleri':'All usage guides')+'</a></aside>':'')+'</main>');
   const schema={'@context':'https://schema.org','@graph':[
    {'@type':'WebApplication',name:titleText,applicationCategory:'UtilitiesApplication',operatingSystem:'Any',isAccessibleForFree:true,description:descText,url:toolUrl,inLanguage:locale.code,offers:{'@type':'Offer',price:'0',priceCurrency:'USD'}},
    {'@type':'FAQPage',mainEntity:[
@@ -93,6 +97,7 @@ for(const tool of tools){
   newUrls.push('<url><loc>'+xml(toolUrl)+'</loc>'+alternateTags+'<xhtml:link rel="alternate" hreflang="x-default" href="'+xml(defaultUrl)+'" /></url>');
  }
 }
+for(const code of ['tr','en'])for(const slug of ['',...articles.map(a=>a.slug+'/')])newUrls.push('<url><loc>'+xml(new URL(localePath(code)+'guides/'+slug,rootUrl).href)+'</loc></url>');
 for (const page of ['privacy/', 'contact/']) newUrls.push('<url><loc>'+xml(new URL(page, rootUrl).href)+'</loc></url>');
 sitemap=sitemap.replace('</urlset>',newUrls.join('')+'</urlset>').replace(/<xhtml:link[^>]*\/>/g,'');
 const entries=[...sitemap.matchAll(/<url>[\s\S]*?<\/url>/g)].map(match=>match[0]);
