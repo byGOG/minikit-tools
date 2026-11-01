@@ -21,12 +21,20 @@
   },
   "word-counter": {
     "tr": {
-      "heading": "Metindeki kelime ve karakterleri sayma",
-      "text": "Metnini yazdığında sonuçlar güncellenir. Boşlukla ayrılan kelimeler, karakterler ve tahmini okuma süresi gösterilir. Okuma süresi yaklaşık bir değerdir; metnin dili ve okuyucunun hızı sonucu değiştirebilir."
+      "heading": "Kelime, karakter ve tahmini okuma süresini birlikte kontrol et",
+      "text": "Metni yaz veya yapıştır; sonuçlar otomatik güncellenir. En fazla 100000 UTF-16 kod birimi girilebilir; bu sınır görünen karakter sayısı değildir. Tarayıcı destekliyorsa kelimeler sayfanın diline göre Intl.Segmenter ile, karakterler grafem kümeleri olarak sayılır; boşluklar karakter sayısına dahildir. Destek yoksa kelimeler boşlukla, karakterler Unicode kod noktalarıyla sayılır. Okuma süresi yaklaşık 200 kelime/dakika; Çince ve Japonca sayfalarda 500 karakter/dakika temelindedir. Yuvarlanan süre kişisel okuma hızını ölçmez. Metin tarayıcıda kalır."
     },
     "en": {
-      "heading": "Count words and characters in text",
-      "text": "Results update as you type. The tool shows whitespace-separated words, characters and an estimated reading time. Reading time is approximate and depends on the language and the reader’s pace."
+      "heading": "Check words, characters and estimated reading time together",
+      "text": "Type or paste text; results update automatically. The limit is 100000 UTF-16 code units, not visible characters. Where supported, Intl.Segmenter counts words using the page language and characters as grapheme clusters; whitespace is included in the character count. Without that support, words are split on whitespace and characters counted as Unicode code points. Reading time estimates 200 words per minute, or 500 characters per minute on Chinese and Japanese pages. Rounded time does not measure your personal reading speed. Text stays in your browser."
+    },
+    "pl": {
+      "heading": "Sprawdź słowa, znaki i szacowany czas czytania",
+      "text": "Wpisz lub wklej tekst, a wyniki zaktualizują się automatycznie. Limit to 100000 jednostek kodowych UTF-16, nie widocznych znaków. Jeśli przeglądarka obsługuje Intl.Segmenter, słowa liczone są według języka strony, a znaki jako klastry grafemów; spacje też są znakami. Bez tej funkcji słowa rozdzielają białe znaki, a znaki liczone są jako punkty kodowe Unicode. Czas czytania zakłada 200 słów na minutę; na stronach chińskiej i japońskiej 500 znaków. To zaokrąglony szacunek, nie pomiar Twojego tempa. Tekst zostaje w przeglądarce."
+    },
+    "sv": {
+      "heading": "Kontrollera ord, tecken och uppskattad lästid",
+      "text": "Skriv eller klistra in text så uppdateras resultatet automatiskt. Gränsen är 100000 UTF-16-kodenheter, inte synliga tecken. Om webbläsaren stöder Intl.Segmenter räknas ord enligt sidans språk och tecken som grafemkluster; blanktecken ingår i teckenantalet. Annars delas ord vid blanktecken och tecken räknas som Unicode-kodpunkter. Lästiden antar 200 ord per minut, eller 500 tecken per minut på kinesiska och japanska sidor. Den avrundade tiden är en uppskattning, inte ett mått på din läshastighet. Texten stannar i webbläsaren."
     }
   },
   "color-converter": {
@@ -61,12 +69,16 @@
   },
   "text-sorter": {
     "tr": {
-      "heading": "Satır satır metin sıralama",
-      "text": "Öğeleri ayrı satırlara yazıp artan veya azalan sıralamayı seç. Sayı içeren etiketlerde doğal sıralama uygulanır. Dil seçimi harflerin sırasını etkileyebilir."
+      "heading": "Satırları alfabetik ve doğal sayı sırasıyla düzenle",
+      "text": "Her satıra bir öğe yazıp A–Z veya Z–A yönünü seç. Sıralama sayfanın dilini kullanan Intl.Collator ile yapılır; sayılar doğal karşılaştırılır, bu yüzden artan sırada 10, 2, 1 satırları 1, 2, 10 olur. Harf boyutu ve aksanlar karşılaştırmada dikkate alınır; alfabe düzeni dile ve tarayıcının dil verilerine bağlıdır. Boş satırlar ve yinelenen öğeler silinmez. Girdi en fazla 100000 UTF-16 kod birimidir. Metin tarayıcıda kalır; sıralama sunucuya gönderilmez."
     },
     "en": {
-      "heading": "Sort a list of text lines",
-      "text": "Enter one item per line and choose ascending or descending order. Natural sorting is applied to labels containing numbers. The selected language can affect the ordering of letters."
+      "heading": "Sort lines alphabetically with natural number order",
+      "text": "Put one item on each line and choose A–Z or Z–A. Sorting uses Intl.Collator with the page language; numbers compare naturally, so ascending lines 10, 2, 1 become 1, 2, 10. Case and accents participate in comparison; alphabet order depends on the language and the browser’s locale data. Empty lines and duplicate entries are preserved rather than removed. Input is limited to 100000 UTF-16 code units. Text stays in the browser; sorting does not send it to a server."
+    },
+    "it": {
+      "heading": "Metti le righe in ordine alfabetico e numerico naturale",
+      "text": "Inserisci un elemento per riga e scegli A–Z oppure Z–A. L’ordinamento usa Intl.Collator nella lingua della pagina; i numeri seguono l’ordine naturale: le righe 10, 2, 1 diventano 1, 2, 10 in ordine crescente. Maiuscole e accenti partecipano al confronto; l’ordine dipende dalla lingua e dai dati locali del browser. Righe vuote e duplicati vengono conservati. Il limite è 100000 unità di codice UTF-16. Il testo resta nel browser e non viene inviato al server."
     }
   },
   "json-formatter": {
@@ -121,12 +133,28 @@
   },
   "percentage-calculator": {
     "tr": {
-      "heading": "Yüzde, oran ve değişim hesaplama",
-      "text": "Bir sayının yüzdesini, iki sayının oranını veya yüzde değişimini seç. Örneğin 200’ün %15’i 30’dur. 100’den 120’ye çıkış %20 artıştır. Başlangıç değeri sıfırsa yüzde değişimi tanımlı değildir."
+      "heading": "Yüzde, parça/bütün oranı veya yüzde değişimi seç",
+      "text": "Bir değerin yüzdesi modunda 15 ve 200 gir: %15 × 200 = 30. Oran modunda parça 30, bütün 200 ise sonuç %15’tir; bütün sıfır olamaz. Değişimde ilk 100, son 120 ise %20 bulunur. Formül (son − ilk) / |ilk| × 100’dür; negatif ilk değerde de mutlak değer kullanılır, sıfır başlangıç tanımsızdır. Sonuçlar JavaScript ondalık aritmetiğiyle yaklaşık hesaplanıp 12 anlamlı basamakla gösterilir. Bu matematik aracıdır, finansal öneri değildir. Değerler tarayıcında kalır."
     },
     "en": {
-      "heading": "Calculate percentages, ratios and changes",
-      "text": "Choose percentage of a number, ratio of two numbers or percentage change. For example, 15% of 200 is 30. Going from 100 to 120 is a 20% increase. Percentage change is undefined when the initial value is zero."
+      "heading": "Choose percentage amount, part-to-whole ratio or change",
+      "text": "For a percentage of a value, enter 15 and 200: 15% × 200 = 30. In ratio mode, part 30 and whole 200 give 15%; the whole cannot be zero. For change, initial 100 and final 120 give 20%. The formula is (final − initial) / |initial| × 100, using the absolute initial value even for negative baselines; zero is undefined. JavaScript decimal arithmetic produces approximate results shown with 12 significant digits. This is a maths tool, not financial advice. Values stay in your browser."
+    },
+    "hr": {
+      "heading": "Odaberite postotak vrijednosti, omjer ili promjenu",
+      "text": "Za postotak vrijednosti unesite 15 i 200: 15% × 200 = 30. U načinu omjera dio 30 i cjelina 200 daju 15%; cjelina ne smije biti nula. Za promjenu početna vrijednost 100 i završna 120 daju 20%. Formula je (završna − početna) / |početna| × 100; i negativna početna vrijednost koristi apsolutnu vrijednost, a nulta nije definirana. JavaScript daje približan rezultat s 12 značajnih znamenki. Alat služi matematici, nije financijski savjet. Vrijednosti ostaju u pregledniku."
+    },
+    "sr": {
+      "heading": "Изаберите проценат вредности, однос или промену",
+      "text": "За проценат вредности унесите 15 и 200: 15% × 200 = 30. У режиму односа део 30 и целина 200 дају 15%; целина не сме бити нула. За промену почетна вредност 100 и крајња 120 дају 20%. Формула је (крајња − почетна) / |почетна| × 100; и за негативну почетну вредност користи се апсолутна вредност, а нула није дефинисана. JavaScript даје приближан резултат са 12 значајних цифара. Ово је математички алат, не финансијски савет. Вредности остају у прегледачу."
+    },
+    "ko": {
+      "heading": "값의 백분율, 부분과 전체의 비율 또는 변화율 선택",
+      "text": "값의 백분율 모드에서 15와 200을 입력하면 15% × 200 = 30입니다. 비율 모드에서 부분 30과 전체 200은 15%이며 전체는 0일 수 없습니다. 변화율에서 초기값 100과 최종값 120은 20%입니다. 공식은 (최종값 − 초기값) / |초기값| × 100입니다. 초기값이 음수여도 절댓값을 사용하며 0에서의 변화율은 정의되지 않습니다. JavaScript 연산의 근삿값을 유효숫자 12자리로 표시합니다. 금융 조언이 아닌 수학 도구입니다. 값은 브라우저에 남습니다."
+    },
+    "bg": {
+      "heading": "Изберете процент от стойност, отношение или промяна",
+      "text": "За процент от стойност въведете 15 и 200: 15% × 200 = 30. При отношение част 30 и цяло 200 дават 15%; цялото не може да е нула. При промяна начална стойност 100 и крайна 120 дават 20%. Формулата е (крайна − начална) / |начална| × 100; използва се абсолютната начална стойност и при отрицателни числа, а нулата е недефинирана. JavaScript дава приблизителен резултат с 12 значещи цифри. Това е математически инструмент, не финансов съвет. Стойностите остават в браузъра."
     }
   },
   "image-resizer": {

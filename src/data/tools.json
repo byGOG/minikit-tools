@@ -33,7 +33,14 @@
       "words",
       "readTime"
     ],
-    "category": "text"
+    "category": "text",
+    "seoTitle": "wordSeoTitle",
+    "related": [
+      "reading-time",
+      "word-frequency",
+      "text-sorter",
+      "case-converter"
+    ]
   },
   {
     "slug": "color-converter",
@@ -81,7 +88,14 @@
       "sortOrder",
       "copyResult"
     ],
-    "category": "text"
+    "category": "text",
+    "seoTitle": "sortSeoTitle",
+    "related": [
+      "duplicate-line-remover",
+      "line-numbering",
+      "case-converter",
+      "word-counter"
+    ]
   },
   {
     "slug": "json-formatter",
@@ -153,7 +167,14 @@
       "valueA",
       "calculate"
     ],
-    "category": "daily"
+    "category": "daily",
+    "seoTitle": "percentSeoTitle",
+    "related": [
+      "discount-calculator",
+      "proportion-calculator",
+      "fraction-calculator",
+      "decimal-to-fraction"
+    ]
   },
   {
     "slug": "image-resizer",

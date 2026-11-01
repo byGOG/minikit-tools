@@ -1,7 +1,8 @@
+import {calculatePercentage} from '../src/scripts/everyday-tools.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {changeCase} from '../src/scripts/text-tools.ts';
+import {changeCase, sortLines} from '../src/scripts/text-tools.ts';
 import {compareJson} from '../src/scripts/structured-core.ts';
 import {generateLoremIpsum} from '../src/scripts/lorem-ipsum-core.ts';
 import {convertRoman} from '../src/scripts/roman-numerals-core.ts';
@@ -96,4 +97,11 @@ test('published fixed-range random-number example is guaranteed',()=>{
  const [input,expected]=examples['random-number-generator'];
  assert.equal(input,'7–7 · 3');
  assert.equal(generateRandomNumbers(7,7,3).join('\n'),expected);
+});
+
+test('focused tool examples match sorting and percentage behavior',()=>{
+ const [sortInput,sortExpected]=examples['text-sorter'];
+ for(const {code} of locales)assert.equal(sortLines(sortInput,code),sortExpected,code);
+ assert.equal(examples['percentage-calculator'][0],'200 × 15%');
+ assert.equal(String(calculatePercentage(15,200,'of')),examples['percentage-calculator'][1]);
 });

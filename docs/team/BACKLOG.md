@@ -105,4 +105,10 @@ Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, do
 
 | İş | Sahip | Kabul ölçütü | Durum |
 |---|---|---|---|
-| TOOL-012 | Yeni araç geliştirici + içerik + kalite | Dahil alt/üst sınır, 1–100 tam sayı, tekrara izin verme ve Web Crypto kaynağı, 50 dil, rehber ve bağımsız testler | Yayın öncesi kontrol noktası; son PR/canlı kanıtı outputs/MINIKIT-RANDOM-NUMBER-DOGRULAMA.json ve outputs/MINIKIT-DEVAM.md kayıtlarında tutulur. |
+| TOOL-012 | Yeni araç geliştirici + içerik + kalite | Dahil alt/üst sınır, 1–100 tam sayı, tekrara izin verme ve Web Crypto kaynağı, 50 dil, rehber ve bağımsız testler | Tamamlandı; PR #51 birleştirildi. 167 birim + 53 dil/SEO + 346 tarayıcı testi ve canlı kontroller geçti. |
+
+## Gösterim alan araçlara odaklanma — 1 Kasım 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| GROW-001 | Koordinatör + geliştirme + içerik + kalite | Gösterim alan yüzde, kelime ve sıralama araçlarında başlık/açıklama, örnek eylemleri, anlaşılır alanlar ve formdan sonra rehber; 50 dil ve mevcut araçlar korunur | Yayın öncesi kontrol noktası; son PR/canlı kanıtı outputs/MINIKIT-SEARCH-FOCUS-DOGRULAMA.json ve outputs/MINIKIT-DEVAM.md kayıtlarında tutulur. |
