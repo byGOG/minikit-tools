@@ -254,3 +254,9 @@ Generate 1–100 integers in an inclusive custom range, with minimum and maximum
 ## Search-focus improvements
 
 Word counter, text sorter and percentage calculator have dedicated localized search titles, clearer descriptions and example actions. Their compact introductions keep input forms above longer instructions. Percentage labels and formula hints follow the selected operation; changing mode invalidates the previous result. Search Console impressions inform this first focus group; no ranking or revenue outcome is guaranteed. All 97 tools, 50 locales and 4902 canonical URLs are preserved.
+
+### Practical usage guides
+
+`/guides/` and `/en/guides/` collect three task-oriented articles in Turkish and English. Content lives in `src/data/usage-articles.json`; `src/pages/[...guide].astro` renders the indexes and articles with canonical URLs, reciprocal language links and Article/CollectionPage metadata. These editorial pages are published only in the two languages actually written. All 50 existing tool languages remain available.
+
+The home/footer and relevant tool pages link to the guides. Worked examples explain word-count scope, natural sorting and duplicate handling, and the difference between discount amounts, percentage ratios and percentage changes. Run `pnpm run build` before `pnpm run test:locales` to validate built article links and sitemap coverage. Browser tests follow the article-to-tool journeys without sending tool inputs to analytics.

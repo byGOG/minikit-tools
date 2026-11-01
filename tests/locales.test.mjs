@@ -8,8 +8,10 @@ const advertising = JSON.parse(await readFile(new URL('../src/data/advertising.j
 const toolCatalog = JSON.parse(await readFile(new URL('../src/data/tools.json', import.meta.url), 'utf8'));
 const seoTitleKeys = new Map(toolCatalog.map(tool=>[tool.slug,tool.seoTitle]));
 const tools = toolCatalog.map(({slug,title,desc}) => [slug,title,desc]);
-const pageCount = catalog.length * (tools.length + 1) + 2;
-const expectedUrls = new Set(['privacy/', 'contact/'].map(path=>new URL(path, rootUrl).href));
+const articles=JSON.parse(await readFile('src/data/usage-articles.json','utf8'));
+const guidePaths=['','en/'].flatMap(prefix=>[prefix+'guides/',...articles.map(a=>prefix+'guides/'+a.slug+'/')]);
+const pageCount = catalog.length * (tools.length + 1) + 2 + guidePaths.length;
+const expectedUrls = new Set(['privacy/', 'contact/',...guidePaths].map(path=>new URL(path, rootUrl).href));
 
 test('all 50 dictionaries are complete and contain balanced allowed markup', () => {
   assert.equal(catalog.length, 50);
