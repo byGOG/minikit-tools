@@ -34,9 +34,11 @@ const cards=[
   {id==='percent' && <>
    <label class="field-label" for="percent-mode" data-i18n="percentMode">{tr.percentMode}</label>
    <select class="text-input" id="percent-mode"><option value="of" data-i18n="percentOf">{tr.percentOf}</option><option value="ratio" data-i18n="percentRatio">{tr.percentRatio}</option><option value="change" data-i18n="percentChange">{tr.percentChange}</option></select>
-   <label class="field-label" for="percent-a" data-i18n="valueA">{tr.valueA}</label><input class="text-input" id="percent-a" type="text" inputmode="decimal" maxlength="100" value="15" aria-describedby="percent-number-hint"/>
-   <label class="field-label" for="percent-b" data-i18n="valueB">{tr.valueB}</label><input class="text-input" id="percent-b" type="text" inputmode="decimal" maxlength="100" value="200" aria-describedby="percent-number-hint"/>
+   <label class="field-label" id="percent-a-label" for="percent-a" data-i18n="percentAmountLabel">{tr.percentAmountLabel}</label><input class="text-input" id="percent-a" type="text" inputmode="decimal" maxlength="100" value="15" aria-describedby="percent-number-hint percent-formula-hint"/>
+   <label class="field-label" id="percent-b-label" for="percent-b" data-i18n="percentTotalLabel">{tr.percentTotalLabel}</label><input class="text-input" id="percent-b" type="text" inputmode="decimal" maxlength="100" value="200" aria-describedby="percent-number-hint percent-formula-hint"/>
    <small id="percent-number-hint" class="number-hint" data-i18n="numberHint">{tr.numberHint}</small>
+   <small id="percent-formula-hint" class="number-hint" data-i18n="percentOfHint">{tr.percentOfHint}</small>
+   <button type="button" class="button-secondary full" id="percent-example" data-i18n="loadExample">{tr.loadExample}</button>
    <button class="button-primary full" id="calculate-percent" data-i18n="calculate">{tr.calculate}</button>
   </>}
   <label class="field-label" for={`${id}-output`} data-i18n="textResult">{tr.textResult}</label>

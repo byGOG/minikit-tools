@@ -6,6 +6,7 @@ import { changeCase, removeDuplicateLines, sortLines } from './text-tools';
 import tr from '../i18n/locales/tr.json';
 import en from '../i18n/locales/en.json';
 import catalog from '../i18n/catalog.json';
+import toolExamples from '../data/tool-examples.json';
 
 type Lang = string;
 const translations: Record<Lang, Record<string, string>> = { tr, en };
@@ -51,8 +52,9 @@ function applyLanguage(next: Lang) {
       ? localizedDescription
       : lang === 'tr' ? 'Görselini dönüştür, QR kod oluştur, metnini say ve renklerini çevir. Ücretsiz, hızlı ve gizli.' : 'Convert images, generate QR codes, count words and convert colors. Free, fast and private.';
   }
-  if ($('#word-input')) { $('#word-count').textContent = String(countWords($<HTMLTextAreaElement>('#word-input').value)); updateReadTime(); }
+  if ($('#word-input')) updateWordStats();
   if ($('#color-hex')) updateColorFromHex();
+  updatePercentLabels();
   updateMobileNav();
   updateTextTools();
 }
@@ -73,6 +75,13 @@ function updateReadTime() {
   const count = countWords(value);
   const minutes = lang === 'zh' || lang === 'ja' ? countCharacters(value) / 500 : count / 200;
   $('#read-time').textContent = count === 0 ? `0 ${t('sec')}` : minutes < 1 ? `${Math.max(1, Math.ceil(minutes * 60))} ${t('sec')}` : `${Math.ceil(minutes)} ${t('min')}`;
+}
+
+function updateWordStats() {
+  const value = $<HTMLTextAreaElement>('#word-input').value;
+  $('#word-count').textContent = String(countWords(value));
+  $('#char-count').textContent = String(countCharacters(value));
+  updateReadTime();
 }
 
 function hexToRgb(hex: string) {
@@ -207,8 +216,13 @@ if ($('#qr-input')) {
   input.addEventListener('input', resetQr);
 }
 if ($('#word-input')) {
-$('#word-input').addEventListener('input', (event) => { const value = (event.target as HTMLTextAreaElement).value; $('#word-count').textContent = String(countWords(value)); $('#char-count').textContent = String(countCharacters(value)); updateReadTime(); });
-$('#clear-text').addEventListener('click', () => { ($('#word-input') as HTMLTextAreaElement).value = ''; $('#word-count').textContent = '0'; $('#char-count').textContent = '0'; updateReadTime(); showToast(t('cleared')); });
+  $('#word-input').addEventListener('input', updateWordStats);
+  $('#word-example').addEventListener('click', () => {
+    const input = $<HTMLTextAreaElement>('#word-input');
+    input.value = toolExamples['word-counter'][0];
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+  $('#clear-text').addEventListener('click', () => { $<HTMLTextAreaElement>('#word-input').value = ''; updateWordStats(); showToast(t('cleared')); });
 }
 if ($('#color-hex')) {
 $('#color-picker').addEventListener('input', (event) => { $<HTMLInputElement>('#color-hex').value = (event.target as HTMLInputElement).value.toUpperCase(); updateColorFromHex(); });
@@ -244,6 +258,11 @@ function updateTextTools() {
   if ($('#sort-input')) setTextResult('sort-output', sortLines($<HTMLTextAreaElement>('#sort-input').value, lang, $<HTMLSelectElement>('#sort-order').value === 'desc'));
 }
 for (const id of ['case-input', 'dedupe-input', 'sort-input']) $(`#${id}`)?.addEventListener('input', updateTextTools);
+$('#sort-example')?.addEventListener('click', () => {
+  const input = $<HTMLTextAreaElement>('#sort-input');
+  input.value = toolExamples['text-sorter'][0];
+  input.dispatchEvent(new Event('input', { bubbles: true }));
+});
 for (const id of ['dedupe-ignore-case', 'dedupe-trim', 'sort-order']) $(`#${id}`)?.addEventListener('change', updateTextTools);
 for (const mode of ['upper', 'lower'] as const) {
   $(`#case-${mode}`)?.addEventListener('click', () => {
@@ -335,8 +354,23 @@ $('#convert-unit')?.addEventListener('click', () => {
     $('#unit-feedback').textContent = t('ready');
   } catch { showEverydayError('unit', 'unitInvalid'); }
 });
-for (const id of ['percent-mode','percent-a','percent-b']) $(`#${id}`)?.addEventListener('input', () => clearEverydayResult('percent'));
-$('#calculate-percent')?.addEventListener('click', () => {
+function updatePercentLabels() {
+  const select = $<HTMLSelectElement>('#percent-mode');
+  if (!select) return;
+  const mode = select.value as PercentageMode;
+  const keys: Record<PercentageMode, readonly [string, string, string]> = {
+    of: ['percentAmountLabel', 'percentTotalLabel', 'percentOfHint'],
+    ratio: ['percentPartLabel', 'percentWholeLabel', 'percentRatioHint'],
+    change: ['percentInitialLabel', 'percentFinalLabel', 'percentChangeHint'],
+  };
+  for (const [index, id] of ['percent-a-label', 'percent-b-label', 'percent-formula-hint'].entries()) {
+    const element = $(`#${id}`);
+    element.dataset.i18n = keys[mode][index];
+    element.textContent = t(keys[mode][index]);
+  }
+}
+
+function calculatePercent() {
   clearEverydayResult('percent');
   try {
     const mode = $<HTMLSelectElement>('#percent-mode').value as PercentageMode;
@@ -344,7 +378,22 @@ $('#calculate-percent')?.addEventListener('click', () => {
     setTextResult('percent-output', formatNumericResult(result) + (mode === 'of' ? '' : '%'));
     $('#percent-feedback').textContent = t('ready');
   } catch { showEverydayError('percent', 'percentInvalid'); }
+}
+for (const id of ['percent-a', 'percent-b']) $(`#${id}`)?.addEventListener('input', () => clearEverydayResult('percent'));
+$('#percent-mode')?.addEventListener('change', () => {
+  updatePercentLabels();
+  clearEverydayResult('percent');
 });
+$('#calculate-percent')?.addEventListener('click', calculatePercent);
+$('#percent-example')?.addEventListener('click', () => {
+  const mode = $<HTMLSelectElement>('#percent-mode').value as PercentageMode;
+  const examples: Record<PercentageMode, readonly [string, string]> = { of: ['15', '200'], ratio: ['30', '200'], change: ['100', '120'] };
+  $<HTMLInputElement>('#percent-a').value = examples[mode][0];
+  $<HTMLInputElement>('#percent-b').value = examples[mode][1];
+  updatePercentLabels();
+  calculatePercent();
+});
+if (translations[lang]) updatePercentLabels();
 const mobileNav = document.createElement('nav'); mobileNav.id = 'mobile-nav'; mobileNav.className = 'mobile-nav'; mobileNav.setAttribute('aria-label', t('mobileNavigation'));
 mobileNav.innerHTML = '<a href="#tools" data-mobile-nav="navTools"></a><a href="#why" data-mobile-nav="navWhy"></a><a href="#privacy" data-mobile-nav="navPrivacy"></a>';
 document.querySelector('.site-header')?.insertAdjacentElement('afterend', mobileNav);

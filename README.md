@@ -250,3 +250,7 @@ Convert a finite plain decimal into its exact reduced fraction using BigInt arit
 ## Random number generator
 
 Generate 1–100 integers in an inclusive custom range, with minimum and maximum each between -1000000000 and 1000000000. Repeats are allowed; results appear one per line. Uses the existing Web Crypto randomIndex helper with rejection sampling to avoid modulo bias. Equal minimum/maximum yields that value repeatedly without needing randomness. Defaults are 1–100 with 10 results. Raw UI fields accept ASCII integer notation, rejecting fractional/scientific inputs before Number conversion. Edits clear output; Clear restores defaults. Missing or failed randomness gives a translated error and no partial result. No dependencies or network service; labels and limits cover all 50 locales.
+
+## Search-focus improvements
+
+Word counter, text sorter and percentage calculator have dedicated localized search titles, clearer descriptions and example actions. Their compact introductions keep input forms above longer instructions. Percentage labels and formula hints follow the selected operation; changing mode invalidates the previous result. Search Console impressions inform this first focus group; no ranking or revenue outcome is guaranteed. All 97 tools, 50 locales and 4902 canonical URLs are preserved.

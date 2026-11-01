@@ -43,11 +43,13 @@ for(const tool of tools){
   const words=['guideHow','guideFaq','guidePrivacyQuestion','guideFreeQuestion','guideFormatQuestion','guideWebp','guideJpeg','guidePng'].map((key)=>d[key]);
   const titleText=d[tool.title]||dictionaries.en[tool.title];
   const descText=d[tool.desc]||dictionaries.en[tool.desc];
-  const pageTitle=titleText+' — MiniKit';
+  const focusTool=Boolean(tool.seoTitle);
+  const pageTitle=(tool.seoTitle ? d[tool.seoTitle] : titleText)+' — MiniKit';
   const template=templates.get(locale.code);
   let html=template.html.replace('<!-- TOOL_SLOT -->',template.cards.get(tool.anchor));
-  const related=tools.filter(other=>other.category===tool.category&&other.slug!==tool.slug).slice(0,4);
-  html=html.replace('</main>','<aside class="related-tools"><h2>'+esc(labels[locale.code].related)+'</h2><ul>'+related.map(other=>'<li><a href="'+siteBase+locale.path+'tools/'+other.slug+'/">'+esc(d[other.title])+'</a></li>').join('')+'</ul></aside></main>');
+  const related=tool.related ? tool.related.map(slug=>{const other=tools.find(item=>item.slug===slug);if(!other || slug===tool.slug)throw Error('Invalid related tool: '+slug);return other;}) : tools.filter(other=>other.category===tool.category&&other.slug!==tool.slug).slice(0,4);
+  const relatedHtml='<aside class="related-tools"><h2>'+esc(labels[locale.code].related)+'</h2><ul>'+related.map(other=>'<li><a href="'+siteBase+locale.path+'tools/'+other.slug+'/">'+esc(d[other.title])+'</a></li>').join('')+'</ul></aside>';
+  if(!focusTool) html=html.replace('</main>',relatedHtml+'</main>');
   html=html.replace(/<title>[\s\S]*?<\/title>/i,'<title>'+esc(pageTitle)+'</title>');
   html=html.replace(/(<meta\s+name="description"\s+content=")[^"]*("\s*\/?>)/i,'$1'+esc(descText)+'$2');
   html=html.replace(/(<meta\s+property="og:title"\s+content=")[^"]*("\s*\/?>)/i,'$1'+esc(pageTitle)+'$2');
@@ -60,18 +62,19 @@ for(const tool of tools){
   const target='#'+tool.anchor;
   html=html.replace(/<h1([^>]*)data-i18n="heroTitle"([^>]*)>([\s\S]*?)<\/h1>/, '<h2$1data-i18n="heroTitle"$2>$3</h2>');
   html=html.replace(/<body([^>]*)>/, '<body$1 data-current-tool="'+tool.anchor+'">');
-  const intro='<section class="seo-guide" aria-labelledby="guide-title"><nav aria-label="Breadcrumb"><a href="'+siteBase+locale.path+'">'+esc(d.navCta||dictionaries.en.navCta)+'</a> / '+esc(titleText)+'</nav><h1 id="guide-title">'+esc(titleText)+'</h1><p>'+esc(descText)+'</p><h2>'+esc(words[0])+'</h2><ol>'+steps+'</ol>'+
+  const guideBody='<h2>'+esc(words[0])+'</h2><ol>'+steps+'</ol>'+
    (tool.slug==='image-converter'?'<h2>'+esc(words[4])+'</h2><div class="format-grid"><article><b>WebP</b><p>'+esc(words[5])+'</p></article><article><b>JPEG</b><p>'+esc(words[6])+'</p></article><article><b>PNG</b><p>'+esc(words[7])+'</p></article></div>':'')+
    (guides[tool.slug]?.[locale.code]?'<h2>'+esc(guides[tool.slug][locale.code].heading)+'</h2><p>'+esc(guides[tool.slug][locale.code].text)+'</p>':'')+
-   (['json-to-yaml','yaml-to-json','json-compare'].includes(tool.slug)?'<p class="guide-limits">'+esc(d.structuredLimits)+'</p>':'')+
-   '<a class="button-primary" href="'+target+'">'+esc(d.navCta||dictionaries.en.navCta)+'</a></section>';
+   (['json-to-yaml','yaml-to-json','json-compare'].includes(tool.slug)?'<p class="guide-limits">'+esc(d.structuredLimits)+'</p>':'');
+  const intro='<section class="seo-guide" aria-labelledby="guide-title"><nav aria-label="Breadcrumb"><a href="'+siteBase+locale.path+'">'+esc(d.navCta||dictionaries.en.navCta)+'</a> / '+esc(titleText)+'</nav><h1 id="guide-title">'+esc(titleText)+'</h1><p>'+esc(descText)+'</p>'+(focusTool?'':guideBody)+
+   '<a class="button-primary" href="'+target+'">'+esc(focusTool?d.useTool:(d.navCta||dictionaries.en.navCta))+'</a></section>';
   html=html.replace('<main id="top">','<main id="top">'+intro);
   const privacyAnswer=d.privacyLead;
   const freeAnswer=d.heroProof||dictionaries.en.heroProof;
   const faq='<section class="seo-faq"><h2>'+esc(words[1])+'</h2><details><summary>'+esc(words[2])+'</summary><p>'+esc(privacyAnswer)+'</p></details><details><summary>'+esc(words[3])+'</summary><p>'+esc(freeAnswer)+'</p></details></section>';
   const sample=examples[tool.slug];
   const example=sample?'<section class="tool-example"><h2>'+esc(labels[locale.code].example)+'</h2><pre dir="ltr">'+esc(sample[0])+'</pre><p aria-hidden="true">↓</p><pre dir="ltr">'+esc(sample[1])+'</pre></section>':'';
-  html=html.replace('</main>',example+faq+'</main>');
+  html=html.replace('</main>',(focusTool?'<section class="seo-guide tool-usage-guide">'+guideBody+'</section>':'')+example+(focusTool?relatedHtml:'')+faq+'</main>');
   const schema={'@context':'https://schema.org','@graph':[
    {'@type':'WebApplication',name:titleText,applicationCategory:'UtilitiesApplication',operatingSystem:'Any',isAccessibleForFree:true,description:descText,url:toolUrl,inLanguage:locale.code,offers:{'@type':'Offer',price:'0',priceCurrency:'USD'}},
    {'@type':'FAQPage',mainEntity:[

@@ -6,6 +6,7 @@ import { catalog, dictionaries, escapeHtml, translatedHtml, localePath, rootUrl,
 
 const advertising = JSON.parse(await readFile(new URL('../src/data/advertising.json', import.meta.url), 'utf8'));
 const toolCatalog = JSON.parse(await readFile(new URL('../src/data/tools.json', import.meta.url), 'utf8'));
+const seoTitleKeys = new Map(toolCatalog.map(tool=>[tool.slug,tool.seoTitle]));
 const tools = toolCatalog.map(({slug,title,desc}) => [slug,title,desc]);
 const pageCount = catalog.length * (tools.length + 1) + 2;
 const expectedUrls = new Set(['privacy/', 'contact/'].map(path=>new URL(path, rootUrl).href));
@@ -43,7 +44,7 @@ for (const locale of catalog) {
       assert.equal(html.includes('googlesyndication.com'), advertising.enabled, `${path}: advertising activation`);
       assert.equal([...html.matchAll(/class="adsbygoogle"/g)].length, advertising.enabled ? 2 : 0, `${path}: manual ad units`);
       assert.ok(html.includes(`<html lang="${locale.code}" dir="${locale.dir}">`), `${path}: language/direction`);
-      const expectedTitle = d[title] + (slug ? ' — MiniKit' : '');
+      const expectedTitle = d[seoTitleKeys.get(slug) || title] + (slug ? ' — MiniKit' : '');
       assert.ok(html.includes(`<title>${escapeHtml(expectedTitle)}</title>`), `${path}: title`);
       assert.ok(html.includes(`name="description" content="${escapeHtml(d[description])}"`), `${path}: description`);
       assert.equal([...html.matchAll(/<link rel="canonical"[^>]*>/g)].length, 1, `${path}: single canonical`);
@@ -67,6 +68,21 @@ for (const locale of catalog) {
       if(!slug) for (const [tool] of tools) assert.ok(html.includes(`href="${siteBase}${prefix}tools/${tool}/"`), `${path}: tool link ${tool}`);
       assert.equal([...html.matchAll(/<h1[\s>]/g)].length,1,`${path}: one primary heading`);
       assert.ok(html.includes(`property="og:url" content="${url}"`),`${path}: share URL`);
+      if (seoTitleKeys.get(slug)) {
+        assert.equal(typeof d[seoTitleKeys.get(slug)], 'string', `${path}: search title translation exists`);
+        assert.equal(typeof d.useTool, 'string', `${path}: tool action translation exists`);
+        const focusedKeys = slug === 'word-counter' ? ['loadExample','wordInputHint'] : slug === 'text-sorter' ? ['loadExample','sortInputHint'] : ['loadExample','percentAmountLabel','percentTotalLabel','percentOfHint'];
+        for (const key of focusedKeys) {
+          assert.equal(typeof d[key], 'string', `${path}: ${key} exists`);
+          assert.ok(html.includes(escapeHtml(d[key])), `${path}: ${key} is published`);
+        }
+
+        assert.ok(html.includes(`property="og:title" content="${escapeHtml(expectedTitle)}"`), `${path}: focused share title`);
+        assert.ok(html.includes(`class="seo-guide tool-usage-guide"`), `${path}: instructions after tool`);
+        const anchor=toolCatalog.find(tool=>tool.slug===slug).anchor;
+        assert.ok(html.indexOf(`id="${anchor}"`) < html.indexOf('class="seo-guide tool-usage-guide"'), `${path}: input form before extended guide`);
+        assert.ok(html.includes(escapeHtml(d.useTool)), `${path}: localized primary tool action`);
+      }
       if (slug) {
         if (slug === 'random-number-generator') {
           for (const key of ['randomNumberTitle','randomNumberDesc','randomNumberMin','randomNumberMax','randomNumberCount','randomNumberGenerate','randomNumberLimits']) {

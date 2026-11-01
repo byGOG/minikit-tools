@@ -37,7 +37,9 @@ import tr from '../i18n/locales/tr.json';
   <div class="card-top"><span class="tool-icon icon-peach"><ListOrdered size={20}/></span><span class="tag-free" data-i18n="free">{tr.free}</span></div>
   <h3 data-i18n="sortTitle">{tr.sortTitle}</h3><p data-i18n="sortDesc">{tr.sortDesc}</p>
   <label class="field-label" for="sort-input" data-i18n="textInput">{tr.textInput}</label>
-  <textarea class="text-input textarea" id="sort-input" maxlength="100000" dir="auto" data-i18n-placeholder="linesHint" placeholder={tr.linesHint}></textarea>
+  <textarea class="text-input textarea" id="sort-input" maxlength="100000" dir="auto" aria-describedby="sort-input-hint" data-i18n-placeholder="linesHint" placeholder={tr.linesHint}></textarea>
+  <small id="sort-input-hint" class="number-hint" data-i18n="sortInputHint">{tr.sortInputHint}</small>
+  <button type="button" class="button-secondary full" id="sort-example" data-i18n="loadExample">{tr.loadExample}</button>
   <label class="field-label" for="sort-order" data-i18n="sortOrder">{tr.sortOrder}</label>
   <select class="text-input" id="sort-order"><option value="asc" data-i18n="ascending">{tr.ascending}</option><option value="desc" data-i18n="descending">{tr.descending}</option></select>
   <label class="field-label" for="sort-output" data-i18n="textResult">{tr.textResult}</label>
