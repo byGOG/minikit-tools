@@ -118,3 +118,9 @@ Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, do
 | İş | Sahip | Kabul ölçütü | Durum |
 |---|---|---|---|
 | GROW-002 | Koordinatör + içerik + kalite | Üç göreve yönelik özgün TR/EN rehber, iki dizin, çalışan araç bağlantıları, karşılıklı dil bağlantıları, canonical/sitemap, bağımsız örnek doğrulaması | Uygulama ve doğrulama sürüyor; son kanıt outputs/MINIKIT-USAGE-GUIDES-DOGRULAMA.json içinde tutulacak. |
+
+## Arama başlığı ve açıklama iyileştirmesi — 6 Kasım 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| GROW-003 | Koordinatör + SEO/içerik + kalite | Mevcut sorgularla uyumlu kelime, sıralama ve yüzde aracı başlık/açıklamaları; 7 dilde 9 araç sayfası, 50 dil yapısı ve gerçek işlevler korunur | İçerik incelemesi tamamlandı; derleme, dil/SEO doğrulaması ve yayın sürüyor. Değişiklik tıklama veya sıralama garantisi değildir. |
