@@ -17,6 +17,10 @@ for (const locale of locales) {
  const {document}=parseHTML(home);
  if(['tr','en'].includes(locale.code)){
   const link=document.createElement('a');link.href=siteBase+locale.path+'guides/';link.textContent=locale.code==='tr'?'Kullanım rehberleri':'Usage guides';link.className='usage-guides-link';document.querySelector('.footer-right')?.prepend(link);
+  const about=document.createElement('a');
+  about.href=siteBase+locale.path+'about/';
+  about.textContent=locale.code==='tr'?'MiniKit hakkında':'About MiniKit';
+  document.querySelector('.footer-right')?.append(about);
  }
  const grid=document.querySelector('.tool-grid');
  const cards=new Map([...grid.querySelectorAll(':scope > .tool-card')].map(card=>[card.id,card.outerHTML]));
@@ -98,7 +102,7 @@ for(const tool of tools){
  }
 }
 for(const code of ['tr','en'])for(const slug of ['',...articles.map(a=>a.slug+'/')])newUrls.push('<url><loc>'+xml(new URL(localePath(code)+'guides/'+slug,rootUrl).href)+'</loc></url>');
-for (const page of ['privacy/', 'contact/']) newUrls.push('<url><loc>'+xml(new URL(page, rootUrl).href)+'</loc></url>');
+for (const page of ['privacy/', 'contact/', 'about/', 'en/about/']) newUrls.push('<url><loc>'+xml(new URL(page, rootUrl).href)+'</loc></url>');
 sitemap=sitemap.replace('</urlset>',newUrls.join('')+'</urlset>').replace(/<xhtml:link[^>]*\/>/g,'');
 const entries=[...sitemap.matchAll(/<url>[\s\S]*?<\/url>/g)].map(match=>match[0]);
 const chunks=[];

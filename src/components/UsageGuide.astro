@@ -39,7 +39,7 @@ const schema=content?{'@context':'https://schema.org','@type':'Article',headline
     </>:<div class="usage-list">{articles.map(a=><section><h2><a href={path(locale,a.slug)}>{a[locale].title}</a></h2><p>{a[locale].description}</p></section>)}</div>}
    </article>
   </main>
-  <footer><a href={`${base}privacy/`}>{text.privacy}</a><a href={`${base}contact/`}>{text.contact}</a><span>© {new Date().getFullYear()} MiniKit</span></footer>
+  <footer><a href={`${base}${prefix}about/`}>{locale==='tr'?'MiniKit hakkında':'About MiniKit'}</a><a href={`${base}privacy/`}>{text.privacy}</a><a href={`${base}contact/`}>{text.contact}</a><span>© {new Date().getFullYear()} MiniKit</span></footer>
  </div>
  <script type="application/ld+json" set:html={JSON.stringify(schema).replaceAll('<','\\u003c')} />
 </Layout>

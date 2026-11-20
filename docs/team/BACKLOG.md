@@ -124,3 +124,9 @@ Rol genişletmesi: yedi TOML profilinin zorunlu alanları, benzersiz adları, do
 | İş | Sahip | Kabul ölçütü | Durum |
 |---|---|---|---|
 | GROW-003 | Koordinatör + SEO/içerik + kalite | Mevcut sorgularla uyumlu kelime, sıralama ve yüzde aracı başlık/açıklamaları; 7 dilde 9 araç sayfası, 50 dil yapısı ve gerçek işlevler korunur | İçerik incelemesi tamamlandı; derleme, dil/SEO doğrulaması ve yayın sürüyor. Değişiklik tıklama veya sıralama garantisi değildir. |
+
+## İçerik ve reklam incelemesi — 20 Kasım 2026
+
+| İş | Sahip | Kabul ölçütü | Durum |
+|---|---|---|---|
+| GROW-004 | Koordinatör + SEO/içerik + kalite | ads.txt/crawler/index kontrolleri, gerçek örneklerle 5 dilde 15 odak araç rehberi, TR/EN çalışma yöntemi sayfaları, bağlantı ve sitemap doğrulaması, yayın sonrası AdSense yeniden incelemesi | Kaynak kontrolleri ve içerik hazır; doğrulama ve yayın sürüyor. ads.txt canlıda doğru ve HTTP200, Google canlı URL testi başarılı; manuel işlem/güvenlik raporlarında sorun yok. Onay ve sıralama kararları Google'a ait. |
