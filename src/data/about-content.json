@@ -1,0 +1,82 @@
+{
+  "tr": {
+    "title": "MiniKit hakkında ve araçların çalışma yöntemi",
+    "description": "MiniKit araçlarının tarayıcıda nasıl çalıştığını, sonuçların sınırlarını, örneklerin doğrulanmasını ve geri bildirim yolunu öğren.",
+    "sections": [
+      {
+        "heading": "Bir işi tamamlamaya odaklanan küçük araçlar",
+        "paragraphs": [
+          "MiniKit; metin düzenleme, görsel işleme, dosya dönüştürme ve günlük hesaplar için tarayıcıda çalışan araçlar sunar. Her aracın ayrı sayfasında girdi alanları, sonuç bölümü ve ilgili araçlara bağlantılar bulunur. Katalogda arama yapabilir veya araçları kategoriye göre süzebilirsin. Dil seçimi, desteklenen arayüz metinlerini ve dile bağlı işlemlerin kullandığı dili değiştirir.",
+          "Araç sayfasındaki açıklama ve sınırları giriş yapmadan önce oku. Birbirine benzeyen işlemler farklı soruları yanıtlayabilir. Örneğin yüzde tutarı hesaplamak, indirimden sonraki fiyatı bulmakla aynı işlem değildir. Kullanım rehberleri bu ayrımları örnek giriş ve sonuçlarla açıklar."
+        ]
+      },
+      {
+        "heading": "Girdinin işlendiği yer",
+        "paragraphs": [
+          "Araçların metin, görsel, PDF, ses ve hesaplama işlemleri tarayıcıdaki JavaScript işlevleriyle yürütülür. Araç girdileri, dosya içerikleri ve üretilen sonuçlar işlenmek üzere MiniKit sunucusuna yüklenmez. Dosya seçmek, cihazındaki özgün dosyanın üzerine yazmaz; çıktı indirdiğinde yeni bir dosya oluşur.",
+          "Siteyi açmak, barındırma ve ziyaret ölçümü hizmetlerine ağ isteği gönderir. İşleme için gereken gizlilik bilgisi ile sayfa ziyareti ölçümü farklı kapsamlardır. Barındırma, ölçüm, yerel depolama ve güncel reklam durumunun ayrıntıları gizlilik politikasında yer alır. Paylaşılan cihazda işin bitince girişleri temizle ve indirdiğin dosyaları kontrol et."
+        ]
+      },
+      {
+        "heading": "Tarayıcı desteği ve sonuçların sınırları",
+        "paragraphs": [
+          "JavaScript etkin, güncel bir tarayıcı kullan. Bazı araçlar Web Crypto, Canvas, Web Worker veya Intl.Segmenter gibi tarayıcı özelliklerine dayanır. Desteklenmeyen bir özellik, yetersiz bellek veya çok büyük bir dosya işlemi engelleyebilir. Dosya türü, boyut ve girdi sınırları araca göre değişir; ilgili sayfadaki sınırları kontrol et.",
+          "Metin sıralaması dil verilerine, görsel çıktısı tarayıcının biçim desteğine, sayısal sonuçlar ise kullanılan aritmetik ve yuvarlamaya bağlıdır. Bir kelime sayımı, ödevindeki hangi bölümlerin sayılması gerektiğini belirlemez. Dosya özeti eşleşmesi dosyanın güvenilirliğini tek başına doğrulamaz. Önemli bir sonuç için özgün verini koru ve sonucu görevine uygun biçimde kontrol et."
+        ]
+      },
+      {
+        "heading": "Örnekler ve değişiklikler nasıl doğrulanır?",
+        "paragraphs": [
+          "MiniKit’in kaynak deposunda araç işlevlerini sınayan birim testleri, üretilen dil sayfalarını ve bağlantıları denetleyen kontroller, ayrıca gerçek tarayıcı akışlarını çalıştıran testler bulunur. Kod ve içerik değişiklikleri bu kontrollerle incelenebilir. Test kapsamı geliştikçe hatalar düzeltilebilir; bir testin geçmesi her dosya ve tarayıcıda aynı sonucu garanti etmez.",
+          "Rehberlerdeki çalışma örnekleri mevcut aracın yaptığı işleme göre hazırlanır. Sayı biçimi, sıfıra bölme, Unicode, satır sonları ve çıktı sınırları gibi ayrıntılar sonuç yorumunu etkileyebilir. Bir örneğin kendi girdinle uyuşmadığını düşünüyorsan araç adı, sayfa dili ve hassas bilgi içermeyen küçük bir örnekle geri bildirim ver."
+        ]
+      },
+      {
+        "heading": "Kaynak kodu ve geri bildirim",
+        "paragraphs": [
+          "Kaynak kodu, mevcut testler ve değişiklik geçmişi herkese açık MiniKit GitHub deposunda incelenebilir. Hata veya iyileştirme önerilerini GitHub bildirimleri üzerinden iletebilirsin. Bildirimler herkese açık olduğundan kişisel dosya, parola, erişim anahtarı veya başka hassas bilgiler ekleme. İletişim sayfası ilgili bağlantıları sunar."
+        ]
+      }
+    ]
+  },
+  "en": {
+    "title": "About MiniKit and how the tools work",
+    "description": "Learn how MiniKit processes inputs in your browser, what limits affect results, how examples are checked and where to report a problem.",
+    "sections": [
+      {
+        "heading": "Small tools for completing a specific task",
+        "paragraphs": [
+          "MiniKit provides browser tools for text editing, image processing, file conversion and everyday calculations. Each tool has its own page with input controls, a result area and links to related tools. Search the catalog or filter by category to find a task. Selecting a language changes supported interface text and the locale used by language-sensitive operations.",
+          "Read the tool’s instructions and limits before entering data. Similar operations can answer different questions. Finding a percentage amount, for example, differs from finding the final price after a discount. Practical guides explain these distinctions with inputs and expected results."
+        ]
+      },
+      {
+        "heading": "Where your input is processed",
+        "paragraphs": [
+          "Text, image, PDF, audio and calculation tools run through JavaScript in your browser. Tool inputs, file contents and generated results are not uploaded to a MiniKit server for processing. Selecting a file does not overwrite the original on your device. Downloading an output creates a separate file.",
+          "Opening the website sends network requests to hosting and visit-measurement services. Processing an input and measuring a page visit involve different data. The privacy policy describes hosting, analytics, local storage and the current advertising configuration. Clear inputs when you finish on a shared device and check files you download."
+        ]
+      },
+      {
+        "heading": "Browser support and limits on results",
+        "paragraphs": [
+          "Use a current browser with JavaScript enabled. Some tools rely on features such as Web Crypto, Canvas, Web Workers or Intl.Segmenter. Missing browser support, insufficient memory or a large file can prevent an operation. File formats, size limits and input limits vary by tool, so check the specific page.",
+          "Text sorting depends on locale data, image output depends on the browser’s format support, and numeric results depend on arithmetic and rounding. A word count does not decide which parts of an assignment should count toward its limit. A matching file digest alone does not establish that a file is trustworthy. Keep your original data and check important results against the task you need to complete."
+        ]
+      },
+      {
+        "heading": "How examples and changes can be checked",
+        "paragraphs": [
+          "The MiniKit source repository contains unit tests for tool functions, checks for generated language pages and links, and tests that run real browser workflows. Code and content changes can be reviewed against these checks. Test coverage can improve as issues are found. A passing test does not guarantee the same result for every file and browser.",
+          "Worked examples are written to match the operation implemented by the tool. Number formatting, division by zero, Unicode, line endings and output limits can affect interpretation. If an example behaves differently for you, report the tool name, page language and a small sample that contains no sensitive information."
+        ]
+      },
+      {
+        "heading": "Source code and feedback",
+        "paragraphs": [
+          "The public MiniKit GitHub repository provides source code, existing tests and change history. Report problems or suggest improvements through GitHub issues. Issues are public, so leave out personal files, passwords, access keys and other sensitive information. The contact page provides the relevant links."
+        ]
+      }
+    ]
+  }
+}

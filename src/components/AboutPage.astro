@@ -1,0 +1,32 @@
+---
+import PolicyPage from './PolicyPage.astro';
+import content from '../data/about-content.json';
+
+interface Props { locale: 'tr' | 'en' }
+const {locale} = Astro.props;
+const page = content[locale];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '') + '/';
+const route = (language: 'tr' | 'en') => `${base}${language === 'en' ? 'en/' : ''}about/`;
+---
+<PolicyPage title={page.title} description={page.description} lang={locale}>
+  <Fragment slot="head">
+    {(['tr', 'en'] as const).map(language =>
+      <link rel="alternate" hreflang={language} href={new URL(route(language), Astro.site).href} />
+    )}
+    <link rel="alternate" hreflang="x-default" href={new URL(route('tr'), Astro.site).href} />
+  </Fragment>
+  <p>{page.description}</p>
+  <p><a href={route(locale === 'tr' ? 'en' : 'tr')} hreflang={locale === 'tr' ? 'en' : 'tr'}>{locale === 'tr' ? 'English' : 'Türkçe'}</a></p>
+  {page.sections.map(section => <section>
+    <h2>{section.heading}</h2>
+    {section.paragraphs.map(paragraph => <p>{paragraph}</p>)}
+  </section>)}
+  <section>
+    <h2>{locale === 'tr' ? 'Proje bağlantıları' : 'Project links'}</h2>
+    <ul>
+      <li><a href="https://github.com/byGOG/minikit-tools">{locale === 'tr' ? 'MiniKit kaynak kodu ve değişiklik geçmişi' : 'MiniKit source code and change history'}</a></li>
+      <li><a href="https://github.com/byGOG/minikit-tools/issues">{locale === 'tr' ? 'Hata bildir veya öneri paylaş' : 'Report an issue or suggest an improvement'}</a></li>
+      <li><a href={`${base}${locale === 'en' ? 'en/' : ''}guides/`}>{locale === 'tr' ? 'Örneklerle kullanım rehberleri' : 'Worked usage guides'}</a></li>
+    </ul>
+  </section>
+</PolicyPage>
